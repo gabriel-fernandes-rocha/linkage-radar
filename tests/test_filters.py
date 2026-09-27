@@ -60,7 +60,7 @@ def test_judge_filters_by_confidence(monkeypatch):
         {"id": 1, "relevante": False, "confianca": 0.9, "motivo": "vendas", "resumo_pt": ""},
         {"id": 2, "relevante": True, "confianca": 0.6, "motivo": "talvez", "resumo_pt": "Paper."},
     ])
-    monkeypatch.setattr(llm_judge, "_anthropic", lambda model, content: "Aqui:\n" + fake)
+    monkeypatch.setattr(llm_judge, "_anthropic", lambda model, content, system: "Aqui:\n" + fake)
     cfg = load_config()
     out = llm_judge.judge(items, cfg)
     assert [it["titulo"] for it in out] == [RELEVANT[0]["titulo"]]
@@ -68,7 +68,7 @@ def test_judge_filters_by_confidence(monkeypatch):
 
 
 def test_judge_drops_batch_on_garbage(monkeypatch):
-    monkeypatch.setattr(llm_judge, "_anthropic", lambda model, content: "desculpe, não sei")
+    monkeypatch.setattr(llm_judge, "_anthropic", lambda model, content, system: "desculpe, não sei")
     assert llm_judge.judge([dict(RELEVANT[0])], load_config()) == []
 
 

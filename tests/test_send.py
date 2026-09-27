@@ -20,4 +20,16 @@ def test_empty_day():
 def test_long_message_truncated():
     msg = build_message(_rep(10), "https://site")
     assert len(msg) <= MAX_CHARS
-    assert "Vagas: 10" in msg and "Ver tudo: https://site" in msg
+    assert "Vagas novas: 10" in msg and "Ver tudo: https://site" in msg
+
+
+def test_callmebot_split_respects_encoded_limit():
+    from urllib.parse import quote_plus
+
+    from notify.callmebot import MAX_ENCODED, split
+
+    text = "\n".join(f"📡 linha {i} com acentuação e emoji 🎓 https://exemplo.com/{'x' * 40}" for i in range(30))
+    parts = split(text)
+    assert len(parts) > 1
+    assert all(len(quote_plus(p)) <= MAX_ENCODED for p in parts)
+    assert "\n".join(parts) == text  # nada se perde

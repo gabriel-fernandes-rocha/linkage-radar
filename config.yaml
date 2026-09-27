@@ -22,6 +22,22 @@ web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   events_weekdays: [0, 3]   # eventos mudam pouco: segunda e quinta
   events_max_uses: 3
 
+serpapi:                    # plano grátis ~250 buscas/mês: LinkedIn ~30 + eventos ~8 + vagas ~120
+  jobs_searches_per_day: 4
+  jobs_pages_per_term: 2
+
+open_jobs:
+  max_age_days: 60          # vaga sai da lista de abertas depois disso, mesmo sem confirmação de fechamento
+
+# Seu perfil — o juiz usa isto para dar a nota de encaixe das vagas
+perfil: >-
+  Engenheiro de dados (CIDACS/Fiocruz, desde 2024) especializado em record linkage, resolução de entidades
+  e matching determinístico/probabilístico em produção com bilhões de registros (saúde, proteção social,
+  registro civil). Pipeline completo: ingestão, normalização, blocking, scoring, classificação e QA.
+  Stack: Spark, Python, SQL, Elasticsearch, Splink, RapidFuzz, scikit-learn. Mestrado em Ciência da
+  Computação (UFBA) em andamento; MBA Big Data. Inglês intermediário, espanhol básico.
+  Mora em Salvador-BA: aceita remoto (Brasil ou mundo) e presencial/híbrido no Brasil.
+
 limits:
   max_jobs: 10
   max_events: 5
@@ -37,10 +53,13 @@ queries:
     - "record linkage"
     - "entity matching"
     - "data matching"
-    - "master data management matching"
+    - "master data management matching engineer"
     - "geocoding engineer"
     - "address matching"
     - "deduplication data engineer"
+    - "identity resolution engineer"
+    - "splink"
+    - "data linkage analyst"
   papers:
     - "record linkage"
     - "entity resolution"

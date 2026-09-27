@@ -17,12 +17,17 @@ async function getJSON(path) {
   return r.json();
 }
 
-const RENDER = {
-  vagas: (v) => `
-    <h3>${esc(v.titulo)}</h3>
-    <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}</p>
+const jobHTML = (v, withAge = false) => `
+    <h3>${withAge && v.nova ? '<span class="badge">NOVA</span>' : ""}${esc(v.titulo)}</h3>
+    <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}${
+      withAge && v.desde ? " · desde " + fmtDate(v.desde) : ""}</p>
+    ${v.encaixe ? `<p class="why"><span class="fit">Encaixe ${Math.round(v.encaixe * 100)}%</span>${
+      v.nota_perfil ? " — " + esc(v.nota_perfil) : ""}</p>` : ""}
     ${v.motivo ? `<p class="why">✔ ${esc(v.motivo)}</p>` : ""}
-    <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`,
+    <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`;
+
+const RENDER = {
+  vagas: (v) => jobHTML(v),
   papers: (p) => `
     <h3>${esc(p.titulo)}</h3>
     <p class="meta">${esc(p.autores)}${p.data ? " · " + esc(p.data) : ""} · ${esc(p.fonte)}</p>
@@ -90,7 +95,24 @@ async function load(day) {
   }
 }
 
+async function loadOpenJobs() {
+  const card = $("#abertas");
+  try {
+    const jobs = await getJSON("data/open_jobs.json");
+    $(".count", card).textContent = jobs.length;
+    const checked = jobs.map((j) => j.verificada_em).sort().pop();
+    $("#abertas-atualizado").textContent = checked ? `Última verificação: ${fmtDate(checked)}.` : "";
+    $(".list", card).innerHTML = jobs.length
+      ? jobs.map((j) => `<article class="item">${jobHTML(j, true)}</article>`).join("")
+      : `<p class="empty">Nenhuma vaga aberta no momento ✅</p>`;
+  } catch {
+    $(".count", card).textContent = 0;
+    $(".list", card).innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
+  }
+}
+
 (async function init() {
+  loadOpenJobs();
   const sel = $("#day");
   let dates = [];
   try {

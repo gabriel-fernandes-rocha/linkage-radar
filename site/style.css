@@ -103,3 +103,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
   display: flex; flex-direction: column; gap: 4px;
   font-size: .75rem; color: var(--muted);
 }
+
+.badge {
+  display: inline-block; font-size: .7rem; font-weight: 700; vertical-align: middle;
+  border-radius: 6px; padding: 1px 7px; margin-right: 6px;
+  background: var(--ok); color: #fff;
+}
+.fit { font-weight: 600; color: var(--accent); }
+#abertas .list { display: grid; gap: 0 24px; }
+@media (min-width: 820px) { #abertas .list { grid-template-columns: 1fr 1fr; } #abertas .item:nth-child(2) { border-top: 0; padding-top: 4px; } }

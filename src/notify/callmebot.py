@@ -1,17 +1,54 @@
-"""WhatsApp grátis via CallMeBot (https://www.callmebot.com/blog/free-api-whatsapp-messages/)."""
+"""WhatsApp grátis via CallMeBot (https://www.callmebot.com/blog/free-api-whatsapp-messages/).
+
+Limite descoberto na prática: a URL inteira corta em ~1024 caracteres. Como emojis viram 12
+caracteres (%F0%9F%93%A1) e acentos 6, o texto é dividido em partes pelo tamanho CODIFICADO.
+"""
 import os
+import time
+from urllib.parse import quote_plus
 
 import requests
 
+from common import log
+
+MAX_ENCODED = 850  # folga para phone + apikey + endereço da API dentro dos ~1024
+
+
+def split(text: str, limit: int = MAX_ENCODED) -> list[str]:
+    parts, cur = [], ""
+    for line in text.split("\n"):
+        cand = f"{cur}\n{line}" if cur else line
+        if len(quote_plus(cand)) <= limit:
+            cur = cand
+            continue
+        if cur:
+            parts.append(cur)
+        while len(quote_plus(line)) > limit:  # linha sozinha grande demais: corta
+            n = len(line)
+            while len(quote_plus(line[:n])) > limit:
+                n -= 10
+            parts.append(line[:n])
+            line = line[n:]
+        cur = line
+    if cur:
+        parts.append(cur)
+    return parts
+
 
 def send(text: str) -> None:
-    phone = os.environ["WHATSAPP_PHONE"]        # ex.: +5575999999999
+    phone = os.environ["WHATSAPP_PHONE"]        # ex.: +557588493983 (como o CallMeBot registrou)
     apikey = os.environ["CALLMEBOT_APIKEY"]
-    r = requests.get(
-        "https://api.callmebot.com/whatsapp.php",
-        params={"phone": phone, "text": text, "apikey": apikey},
-        timeout=60,
-    )
-    r.raise_for_status()
-    if "error" in r.text.lower() and "queued" not in r.text.lower():
-        raise RuntimeError(f"CallMeBot respondeu: {r.text[:300]}")
+    parts = split(text)
+    for i, part in enumerate(parts, 1):
+        r = requests.get(
+            "https://api.callmebot.com/whatsapp.php",
+            params={"phone": phone, "text": part, "apikey": apikey},
+            timeout=60,
+        )
+        r.raise_for_status()
+        answer = " ".join(r.text.split())[:200]
+        log.info("callmebot parte %d/%d: %s", i, len(parts), answer)
+        if "error" in r.text.lower() and "queued" not in r.text.lower():
+            raise RuntimeError(f"CallMeBot respondeu: {answer}")
+        if i < len(parts):
+            time.sleep(8)  # o CallMeBot recusa mensagens em sequência muito rápida

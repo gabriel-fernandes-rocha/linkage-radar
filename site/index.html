@@ -26,7 +26,12 @@
   <main>
     <p id="status" class="status">Carregando…</p>
     <div class="grid">
-      <section class="card" id="vagas"><h2>💼 Vagas <span class="count"></span></h2><div class="list"></div></section>
+      <section class="card wide" id="abertas">
+        <h2>📋 Todas as vagas abertas no seu perfil <span class="count"></span></h2>
+        <p class="meta">Revalidadas todo dia: vaga que fecha sai da lista. <span id="abertas-atualizado"></span></p>
+        <div class="list"></div>
+      </section>
+      <section class="card" id="vagas"><h2>💼 Vagas novas <span class="count"></span></h2><div class="list"></div></section>
       <section class="card" id="papers"><h2>📄 Publicações <span class="count"></span></h2><div class="list"></div></section>
       <section class="card" id="eventos"><h2>📅 Eventos no Brasil <span class="count"></span></h2><div class="list"></div></section>
       <section class="card" id="linkedin"><h2>🔗 No LinkedIn <span class="count"></span></h2><div class="list"></div></section>

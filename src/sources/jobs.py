@@ -3,9 +3,9 @@ from __future__ import annotations
 
 import os
 import re
-from datetime import timedelta
+from datetime import date
 
-from common import clean, get, item, log, today
+from common import clean, get, item, log
 
 
 def _job(title, url, company, location, text, source):
@@ -23,7 +23,7 @@ def adzuna(cfg):
             r = get(
                 f"https://api.adzuna.com/v1/api/jobs/{country}/search/1",
                 params={"app_id": app_id, "app_key": key, "what_phrase": q,
-                        "max_days_old": 3, "results_per_page": 20},
+                        "max_days_old": 30, "results_per_page": 20},
             )
             for j in r.json().get("results", []):
                 out.append(_job(j.get("title"), j.get("redirect_url"),
@@ -94,12 +94,11 @@ def hn_who_is_hiring(cfg):
     if not hits:
         return []
     story = hits[0]["objectID"]
-    since = int((today(cfg) - timedelta(days=3)).timestamp())
-    out = []
+    out = []  # thread inteira do mês: vagas ainda abertas, o dedup evita repetição
     for q in cfg["queries"]["jobs"]:
         res = get("https://hn.algolia.com/api/v1/search",
                   params={"query": f'"{q}"', "tags": f"comment,story_{story}",
-                          "numericFilters": f"created_at_i>{since}", "hitsPerPage": 20}).json()
+                          "hitsPerPage": 20}).json()
         for c in res["hits"]:
             text = clean(c.get("comment_text"), 2000)
             first = re.split(r"\|| - ", text)[0][:80]
@@ -109,18 +108,44 @@ def hn_who_is_hiring(cfg):
 
 
 def serpapi_google_jobs(cfg):
+    """Google Jobs (agrega LinkedIn, Indeed, Glassdoor, sites de empresas...). Sem filtro de data:
+    traz as vagas ABERTAS; o dedup garante que só as novas vão para o juiz.
+
+    Rodízio de termos (sem aspas — o Google Jobs não aceita frase exata) e paginação,
+    limitado por `serpapi.jobs_searches_per_day` para caber no plano grátis.
+    """
     key = os.getenv("SERPAPI_KEY")
     if not key:
         return []
-    out = []
-    # 1 busca/dia com OR para caber nas 100 buscas grátis/mês
-    q = " OR ".join(f'"{t}"' for t in cfg["queries"]["jobs"][:4])
-    data = get("https://serpapi.com/search.json",
-               params={"engine": "google_jobs", "q": q, "api_key": key, "chips": "date_posted:3days"}).json()
-    for j in data.get("jobs_results", []):
-        link = (j.get("apply_options") or [{}])[0].get("link") or j.get("share_link", "")
-        out.append(_job(j.get("title"), link, j.get("company_name"), j.get("location"),
-                        j.get("description"), "Google Jobs"))
+    per_day = cfg.get("serpapi", {}).get("jobs_searches_per_day", 4)
+    pages = cfg.get("serpapi", {}).get("jobs_pages_per_term", 2)
+    terms = cfg["queries"]["jobs"]
+    start = (date.today().toordinal() * max(per_day // pages, 1)) % len(terms)
+    out, used, i = [], 0, 0
+    while used < per_day and i < len(terms):
+        q = terms[(start + i) % len(terms)].replace('"', "")
+        i += 1
+        token = None
+        for _ in range(pages):
+            if used >= per_day:
+                break
+            params = {"engine": "google_jobs", "q": q, "api_key": key}
+            if token:
+                params["next_page_token"] = token
+            used += 1
+            try:
+                data = get("https://serpapi.com/search.json", params=params, timeout=60).json()
+            except Exception as e:  # uma busca falhar não descarta as outras
+                log.warning("jobs/google '%s' falhou: %s", q, e)
+                break
+            for j in data.get("jobs_results", []):
+                link = (j.get("apply_options") or [{}])[0].get("link") or j.get("share_link", "")
+                out.append(_job(j.get("title"), link, j.get("company_name"), j.get("location"),
+                                j.get("description"), "Google Jobs"))
+            token = (data.get("serpapi_pagination") or {}).get("next_page_token")
+            if not token:
+                break
+    log.info("jobs/google: %d buscas SerpAPI", used)
     return out
 
 

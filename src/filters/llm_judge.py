@@ -23,8 +23,16 @@ Eventos já encerrados = reprovar.
 evento) sobre esses temas. Autopromoção vazia, clickbait ou menção de passagem = reprovar.
 
 Para cada item, responda um objeto: {"id": <id>, "relevante": bool, "confianca": 0-1, \
-"motivo": "1 frase em português", "resumo_pt": "até 2 frases em português, fiel ao texto"}.
+"motivo": "1 frase em português", "resumo_pt": "até 2 frases em português, fiel ao texto", \
+"encaixe": 0-1, "nota_perfil": "1 frase"}.
+"encaixe" e "nota_perfil" valem só para vagas: o quanto a vaga combina com o PERFIL DO LEITOR abaixo \
+(senioridade, stack, idioma, localização/modalidade — presencial fora do Brasil exige visto e reduz muito o \
+encaixe; remoto global ou no Brasil é ideal). Para outros tipos, use encaixe 0 e nota_perfil "".
 Responda SOMENTE com um array JSON com um objeto por item, na mesma ordem."""
+
+
+def _system(cfg: dict) -> str:
+    return SYSTEM + "\n\nPERFIL DO LEITOR:\n" + cfg.get("perfil", "")
 
 
 def _payload(batch: list[dict]) -> str:
@@ -46,28 +54,28 @@ def _parse(text: str) -> list[dict]:
     return json.loads(m.group(0))
 
 
-def _anthropic(model: str, content: str) -> str:
+def _anthropic(model: str, content: str, system: str) -> str:
     import anthropic
 
     client = anthropic.Anthropic()
     resp = client.messages.create(
         model=model,
         max_tokens=4000,
-        system=SYSTEM,
+        system=system,
         messages=[{"role": "user", "content": content}],
     )
     log.info("judge: tokens in=%s out=%s", resp.usage.input_tokens, resp.usage.output_tokens)
     return "".join(b.text for b in resp.content if b.type == "text")
 
 
-def _gemini(model: str, content: str) -> str:
+def _gemini(model: str, content: str, system: str) -> str:
     import requests
 
     key = os.environ["GEMINI_API_KEY"]
     r = requests.post(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         params={"key": key},
-        json={"systemInstruction": {"parts": [{"text": SYSTEM}]},
+        json={"systemInstruction": {"parts": [{"text": system}]},
               "contents": [{"parts": [{"text": content}]}],
               "generationConfig": {"responseMimeType": "application/json"}},
         timeout=60,
@@ -91,7 +99,7 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
     for start in range(0, len(items), size):
         batch = items[start:start + size]
         try:
-            verdicts = _parse(call(llm["model"], _payload(batch)))
+            verdicts = _parse(call(llm["model"], _payload(batch), _system(cfg)))
         except Exception as e:
             log.warning("judge: lote falhou (%s) — itens descartados (precisão > recall)", e)
             continue
@@ -103,5 +111,7 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
             if v.get("relevante") is True and float(v.get("confianca", 0)) >= min_conf:
                 it.update(motivo=v.get("motivo", ""), resumo=v.get("resumo_pt", ""),
                           confianca=round(float(v["confianca"]), 2))
+                if it["tipo"] == "vaga" or "/jobs/view/" in it.get("url", ""):
+                    it.update(encaixe=round(float(v.get("encaixe") or 0), 2), nota_perfil=v.get("nota_perfil", ""))
                 approved.append(it)
     return approved

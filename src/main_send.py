@@ -28,7 +28,8 @@ def _first_sentence(text: str) -> str:
 def _line(kind: str, it: dict) -> str:
     if kind == "vagas":
         where = f" ({it['local']})" if it.get("local") else ""
-        return f"• [Vaga] {_short(it['titulo'], 70)} – {it.get('empresa', '')}{where} {it['url']}"
+        fit = f" · encaixe {round(it['encaixe'] * 100)}%" if it.get("encaixe") else ""
+        return f"• [Vaga] {_short(it['titulo'], 70)} – {it.get('empresa', '')}{where}{fit} {it['url']}"
     if kind == "eventos":
         when = f" ({it['data']})" if it.get("data") else ""
         return f"• [Evento] {_short(it['titulo'], 80)}{when} {it['url']}"
@@ -44,8 +45,11 @@ def build_message(rep: dict, site_url: str) -> str:
     sections = {k: rep.get(k, []) for k in kinds}
     header = [
         f"📡 Linkage Radar — {d:%d/%m}",
-        "💼 Vagas: {} | 📅 Eventos: {} | 📄 Papers: {} | 🔗 LinkedIn: {}".format(*(len(sections[k]) for k in kinds)),
+        "💼 Vagas novas: {} | 📅 Eventos: {} | 📄 Papers: {} | 🔗 LinkedIn: {}".format(*(len(sections[k]) for k in kinds)),
     ]
+    abertas = rep.get("vagas_abertas_total")
+    if abertas is not None:
+        header.append(f"📋 Vagas abertas no seu perfil: {abertas} (lista completa no site)")
     footer = []
     aula = rep.get("aula")
     if aula:
