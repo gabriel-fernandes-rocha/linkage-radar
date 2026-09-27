@@ -25,38 +25,53 @@ def _first_sentence(text: str) -> str:
     return _short((text or "").split(". ")[0].rstrip("."), 140)
 
 
-def build_message(rep: dict, site_url: str, top: int | None = None) -> str:
+def _line(kind: str, it: dict) -> str:
+    if kind == "vagas":
+        where = f" ({it['local']})" if it.get("local") else ""
+        return f"• [Vaga] {_short(it['titulo'], 70)} – {it.get('empresa', '')}{where} {it['url']}"
+    if kind == "eventos":
+        when = f" ({it['data']})" if it.get("data") else ""
+        return f"• [Evento] {_short(it['titulo'], 80)}{when} {it['url']}"
+    if kind == "papers":
+        resumo = _short(_first_sentence(it.get("resumo", "")), 90)
+        return f"• [Paper] {_short(it['titulo'], 80)}" + (f" – {resumo}" if resumo else "") + f" {it['url']}"
+    return f"• [LinkedIn] {_short(_first_sentence(it.get('resumo') or it['titulo']), 90)} {it['url']}"
+
+
+def build_message(rep: dict, site_url: str) -> str:
     d = date.fromisoformat(rep["data"])
-    vagas, eventos, papers, posts = (rep.get(k, []) for k in ("vagas", "eventos", "papers", "linkedin"))
-    lines = [
+    kinds = ("vagas", "eventos", "papers", "linkedin")
+    sections = {k: rep.get(k, []) for k in kinds}
+    header = [
         f"📡 Linkage Radar — {d:%d/%m}",
-        f"💼 Vagas: {len(vagas)} | 📅 Eventos: {len(eventos)} | 📄 Papers: {len(papers)} | 🔗 LinkedIn: {len(posts)}",
+        "💼 Vagas: {} | 📅 Eventos: {} | 📄 Papers: {} | 🔗 LinkedIn: {}".format(*(len(sections[k]) for k in kinds)),
     ]
-    cut = (lambda xs: xs[:top]) if top else (lambda xs: xs)
-    for v in cut(vagas):
-        where = f" ({v['local']})" if v.get("local") else ""
-        lines.append(f"• [Vaga] {_short(v['titulo'], 70)} – {v.get('empresa', '')}{where} {v['url']}")
-    for e in cut(eventos):
-        when = f" ({e['data']})" if e.get("data") else ""
-        lines.append(f"• [Evento] {_short(e['titulo'], 80)}{when} {e['url']}")
-    for p in cut(papers):
-        resumo = _first_sentence(p.get("resumo", ""))
-        lines.append(f"• [Paper] {_short(p['titulo'], 90)}" + (f" – {resumo}" if resumo else "") + f" {p['url']}")
-    for p in cut(posts):
-        lines.append(f"• [LinkedIn] {_first_sentence(p.get('resumo') or p['titulo'])} {p['url']}")
-    if not (vagas or eventos or papers or posts):
-        lines.append("Nada novo hoje ✅")
+    footer = []
     aula = rep.get("aula")
     if aula:
-        hook = _first_sentence(aula.get("explicacao", ""))
-        lines.append(f"🎓 Aula {aula['dia']}: {aula['titulo']}" + (f" — {hook}" if hook else ""))
-    lines.append(f"Ver tudo: {site_url}")
-    msg = "\n".join(lines)
-    if len(msg) > MAX_CHARS and top is None:
-        return build_message(rep, site_url, top=3)
-    if len(msg) > MAX_CHARS and top and top > 1:
-        return build_message(rep, site_url, top=top - 1)
-    return msg
+        hook = _short(_first_sentence(aula.get("explicacao", "")), 110)
+        footer.append(f"🎓 Aula {aula['dia']}: {aula['titulo']}" + (f" — {hook}" if hook else ""))
+    footer.append(f"Ver tudo: {site_url}")
+
+    total = sum(len(v) for v in sections.values())
+    if not total:
+        return "\n".join(header + ["Nada novo hoje ✅"] + footer)
+
+    # Preenche alternando entre seções (1º de cada, depois 2º de cada...) enquanto couber
+    chosen = {k: [] for k in kinds}
+    budget = MAX_CHARS - len("\n".join(header + footer)) - 40  # reserva para "(+N no site)"
+    for rank in range(max(len(v) for v in sections.values())):
+        for k in kinds:
+            if rank < len(sections[k]):
+                line = _line(k, sections[k][rank])
+                if len(line) + 1 <= budget:
+                    chosen[k].append(line)
+                    budget -= len(line) + 1
+    body = [line for k in kinds for line in chosen[k]]
+    hidden = total - len(body)
+    if hidden:
+        body.append(f"(+{hidden} no site)")
+    return "\n".join(header + body + footer)
 
 
 def load_report(cfg: dict, day: str | None) -> dict:

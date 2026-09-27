@@ -17,6 +17,10 @@ from common import clean, get, log
 WEB_SEARCH_TOOL = "web_search_20250305"  # variante suportada pelo Claude Haiku 4.5
 
 
+def has_serpapi() -> bool:
+    return bool(os.getenv("SERPAPI_KEY"))
+
+
 def serpapi(query: str, recency: str = "qdr:w") -> list[dict]:
     key = os.getenv("SERPAPI_KEY")
     if not key:

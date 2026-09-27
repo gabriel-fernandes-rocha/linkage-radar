@@ -7,6 +7,7 @@ import os
 import re
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 import requests
@@ -49,5 +50,15 @@ def clean(text: str | None, limit: int = 1500) -> str:
     return text[:limit]
 
 
+TRACKING = re.compile(r"^(utm_\w+|gclid|fbclid|trk\w*|ref|refId|trackingId|src)$", re.I)
+
+
+def clean_url(url: str) -> str:
+    """Remove parâmetros de rastreamento (utm_*, trk...) — URLs mais curtas no WhatsApp."""
+    parts = urlsplit(url or "")
+    query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True) if not TRACKING.match(k)]
+    return urlunsplit(parts._replace(query=urlencode(query)))
+
+
 def item(kind: str, title: str, url: str, **extra) -> dict:
-    return {"tipo": kind, "titulo": clean(title, 300), "url": url, **extra}
+    return {"tipo": kind, "titulo": clean(title, 300), "url": clean_url(url), **extra}

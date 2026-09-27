@@ -16,11 +16,11 @@ def collect(cfg: dict) -> list[dict]:
 
     q = "(" + " OR ".join(f'"{t}"' for t in terms) + ") (" + " OR ".join(f"site:{s}" for s in sites) + ")"
     try:
-        raw = websearch.serpapi(q, recency="qdr:m")
+        raw = websearch.serpapi(q, recency="qdr:y")
     except Exception as e:
         log.warning("events/serpapi falhou: %s", e)
 
-    if not raw:
+    if not raw and not websearch.has_serpapi():  # SerpAPI vazio = nada novo (não gasta à toa)
         try:
             raw = websearch.claude_search(
                 cfg,

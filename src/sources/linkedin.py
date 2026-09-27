@@ -22,7 +22,7 @@ def collect(cfg: dict) -> list[dict]:
     except Exception as e:
         log.warning("linkedin/serpapi falhou: %s", e)
 
-    if not raw:
+    if not raw and not websearch.has_serpapi():  # SerpAPI vazio = nada novo (não gasta à toa)
         try:
             raw = websearch.claude_search(
                 cfg,
