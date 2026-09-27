@@ -50,6 +50,16 @@ def clean(text: str | None, limit: int = 1500) -> str:
     return text[:limit]
 
 
+def no_dash(text: str) -> str:
+    """Remove travessões (— e –), que deixam o texto com cara de gerado por IA."""
+    if not text:
+        return text
+    text = re.sub(r"\s*[—–]\s*(?=\d)", "-", text)          # intervalos: 40k–50k -> 40k-50k
+    text = re.sub(r"\s+[—–]\s+", ", ", text)               # "A — B" -> "A, B"
+    text = re.sub(r"[—–]", "-", text)
+    return re.sub(r",\s*,", ",", text)
+
+
 TRACKING = re.compile(r"^(utm_\w+|gclid|fbclid|trk\w*|ref|refId|trackingId|src)$", re.I)
 
 

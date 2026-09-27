@@ -5,7 +5,7 @@
   "titulo": "O que é record linkage e por que ele existe",
   "explicacao": "Record linkage é o processo de identificar registros que se referem à mesma entidade (pessoa, empresa, endereço) em uma ou mais bases, quando não existe um identificador único confiável. Ele existe porque dados são coletados por sistemas diferentes, com objetivos diferentes, e ninguém combinou antes uma chave comum. Sem linkage, cada base conta uma parte da história; com linkage, conseguimos acompanhar trajetórias: nascer, adoecer, receber um benefício, morrer. O desafio é que os mesmos atributos (nome, data de nascimento, nome da mãe) chegam com erros, abreviações e lacunas.",
   "exemplo": "'MARIA APARECIDA DOS SANTOS, 12/03/1985' no SINASC e 'MARIA AP. SANTOS, 12/03/1985' no CadÚnico: mesma pessoa?",
-  "pergunta_reflexao": "Quais perguntas de pesquisa do CIDACS seriam impossíveis sem linkage?"
+  "pergunta_reflexao": "Que perguntas de negócio ou de pesquisa seriam impossíveis de responder sem linkage?"
  },
  {
   "dia": 2,
@@ -59,7 +59,7 @@
   "dia": 8,
   "modulo": "1. Fundamentos",
   "titulo": "Pares, espaço de comparação e explosão quadrática",
-  "explicacao": "Comparar cada registro de A com cada registro de B gera |A|×|B| pares. Com 10 milhões de cada lado, são 10¹⁴ comparações — inviável. Porém quase todos esses pares são obviamente não-matches. Por isso o espaço de comparação precisa ser reduzido antes de comparar (blocking). Entender essa explosão quadrática é o que diferencia um script de linkage de um pipeline de produção.",
+  "explicacao": "Comparar cada registro de A com cada registro de B gera |A|×|B| pares. Com 10 milhões de cada lado, são 10¹⁴ comparações, inviável. Porém quase todos esses pares são obviamente não-matches. Por isso o espaço de comparação precisa ser reduzido antes de comparar (blocking). Entender essa explosão quadrática é o que diferencia um script de linkage de um pipeline de produção.",
   "exemplo": "10⁷ × 10⁷ = 10¹⁴ pares; a 10⁷ comparações/s levaria ~4 meses.",
   "pergunta_reflexao": "Qual é a razão entre matches reais e pares possíveis nas bases com que você trabalha?"
  },
@@ -68,7 +68,7 @@
   "modulo": "1. Fundamentos",
   "titulo": "Match, não-match e possível match",
   "explicacao": "Em linkage probabilístico, cada par cai em uma de três classes: match (acima do limiar superior), não-match (abaixo do limiar inferior) e possível match (entre os dois). A zona intermediária é onde mora a incerteza e costuma ir para revisão manual ou regras adicionais. O tamanho dessa zona é uma decisão de custo: estreitá-la reduz revisão humana, mas aumenta erros.",
-  "exemplo": "Score ≥ 12: match; score ≤ 4: não-match; 4–12: revisão.",
+  "exemplo": "Score ≥ 12: match; score ≤ 4: não-match; 4-12: revisão.",
   "pergunta_reflexao": "Quantos pares por dia uma equipe consegue revisar manualmente com qualidade?"
  },
  {
@@ -117,7 +117,7 @@
   "titulo": "Linkage 1-para-1, 1-para-N e N-para-N",
   "explicacao": "Cardinalidade define quantos links um registro pode ter. 1-para-1: cada nascido vivo tem no máximo um óbito. 1-para-N: uma pessoa tem várias internações. N-para-N: deduplicação com vários registros por pessoa em ambas as bases. Impor a restrição correta (ex.: atribuição ótima, ficando com o melhor par) melhora a precisão; impor a errada descarta links verdadeiros.",
   "exemplo": "Óbito ligado a dois nascidos vivos diferentes: violação de 1-para-1 → manter o de maior score.",
-  "pergunta_reflexao": "Qual restrição de cardinalidade vale para o linkage CadÚnico–SIH?"
+  "pergunta_reflexao": "Qual restrição de cardinalidade vale para o linkage CadÚnico-SIH?"
  },
  {
   "dia": 16,
@@ -147,17 +147,17 @@
   "dia": 19,
   "modulo": "1. Fundamentos",
   "titulo": "Breve história: de Newcombe (1959) a Fellegi-Sunter (1969)",
-  "explicacao": "Em 1959, Howard Newcombe e colegas propuseram usar frequências de valores para ligar registros vitais no Canadá — a semente do linkage probabilístico. Em 1969, Ivan Fellegi e Alan Sunter formalizaram a teoria: dado um vetor de comparação, a regra ótima compara a razão de probabilidades m/u com limiares. Desde então, o modelo ganhou EM para estimar parâmetros (Winkler), métodos bayesianos e, mais recentemente, ML e deep learning.",
+  "explicacao": "Em 1959, Howard Newcombe e colegas propuseram usar frequências de valores para ligar registros vitais no Canadá, a semente do linkage probabilístico. Em 1969, Ivan Fellegi e Alan Sunter formalizaram a teoria: dado um vetor de comparação, a regra ótima compara a razão de probabilidades m/u com limiares. Desde então, o modelo ganhou EM para estimar parâmetros (Winkler), métodos bayesianos e, mais recentemente, ML e deep learning.",
   "exemplo": "Newcombe (1959) → Fellegi-Sunter (1969) → Winkler/EM (anos 1980-90) → ML/DL (2010+).",
   "pergunta_reflexao": "Por que um modelo de 1969 ainda é o padrão em saúde pública?"
  },
  {
   "dia": 20,
   "modulo": "1. Fundamentos",
-  "titulo": "Linkage no Brasil: do RecLink ao CIDACS-RL",
-  "explicacao": "No Brasil, o linkage de bases de saúde ganhou força com ferramentas como o RecLink (Camargo Jr. e Coeli), baseado em Fellegi-Sunter, muito usado em estudos epidemiológicos. Com o volume da Coorte de 100 Milhões, o CIDACS desenvolveu o CIDACS-RL, que usa indexação e busca em Elasticsearch para escalar o linkage a centenas de milhões de registros. Conhecer essa trajetória ajuda a contextualizar seu trabalho.",
-  "exemplo": "RecLink: desktop, pareamento em blocos. CIDACS-RL: indexação + busca aproximada em escala.",
-  "pergunta_reflexao": "Que limitações do RecLink motivaram soluções baseadas em busca indexada?"
+  "titulo": "Ferramentas de linkage: do RecLink aos motores de busca indexada",
+  "explicacao": "Evolução das ferramentas de record linkage: desde softwares monolíticos como RecLink até arquiteturas modernas com indexação. RecLink é determinístico e baseado em regras explícitas. Elasticsearch, Solr e abordagens em Spark permitem buscas fuzzy em escala, combinando análise textual com probabilidade. A escolha depende de volume, latência e complexidade dos dados. Ferramentas modernas integram tokenização, stemming e matching probabilístico.",
+  "exemplo": "RecLink usa bloqueio exato (CEP + sobrenome); Elasticsearch usa analyzers customizados (remover acentos, lowercase, ngrams) para encontrar 'Silva' e 'Sylva' na mesma busca, recuperando variações com score de relevância.",
+  "pergunta_reflexao": "Qual é o gargalo real na sua infraestrutura hoje: a indexação, a comparação ou a lógica de decisão? Investir em ferramentas novas resolve isso?"
  },
  {
   "dia": 21,
@@ -179,7 +179,7 @@
   "dia": 23,
   "modulo": "1. Fundamentos",
   "titulo": "Linkage e ciência: por que coortes dependem dele",
-  "explicacao": "Coortes administrativas dependem de linkage: sem ele, não há como seguir a mesma pessoa entre um benefício social e um desfecho de saúde. A validade dos resultados científicos depende diretamente da qualidade do linkage — e erros de linkage raramente são aleatórios. Por isso artigos sérios reportam como o linkage foi feito e sua qualidade estimada.",
+  "explicacao": "Coortes administrativas dependem de linkage: sem ele, não há como seguir a mesma pessoa entre um benefício social e um desfecho de saúde. A validade dos resultados científicos depende diretamente da qualidade do linkage, e erros de linkage raramente são aleatórios. Por isso artigos sérios reportam como o linkage foi feito e sua qualidade estimada.",
   "exemplo": "Efeito do Bolsa Família sobre mortalidade infantil exige ligar CadÚnico, SINASC e SIM.",
   "pergunta_reflexao": "Se o linkage falha mais para mães jovens, que efeito isso teria num estudo de mortalidade infantil?"
  },
@@ -323,15 +323,15 @@
   "dia": 41,
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "Sexo, raça/cor e variáveis categóricas",
-  "explicacao": "Variáveis categóricas no SUS (sexo M/F, raça IBGE) exigem padronização rigorosa antes do linkage. Normalize valores: 'MASCULINO'→'M', 'Pardo'→'03'. Crie dicionários de mapeamento explícitos por fonte. Trate inconsistências como valor faltante estrategicamente—não apague. Em produção, documente regras de negócio: campos vazios em UBS diferem de 'IGNORADO' em SINAN.",
-  "exemplo": "df.withColumn('sexo_std', when(col('sexo').isin('M','1','masculino'), 'M').otherwise('F')) – mapeie variações em uma única representação canônica.",
+  "explicacao": "Variáveis categóricas no SUS (sexo M/F, raça IBGE) exigem padronização rigorosa antes do linkage. Normalize valores: 'MASCULINO'→'M', 'Pardo'→'03'. Crie dicionários de mapeamento explícitos por fonte. Trate inconsistências como valor faltante estrategicamente-não apague. Em produção, documente regras de negócio: campos vazios em UBS diferem de 'IGNORADO' em SINAN.",
+  "exemplo": "df.withColumn('sexo_std', when(col('sexo').isin('M','1','masculino'), 'M').otherwise('F')), mapeie variações em uma única representação canônica.",
   "pergunta_reflexao": "Quando você recebe sexo='N' ou raça='OUTROS', isso é erro de coleta ou dado real que merece representação própria no seu modelo de linkage?"
  },
  {
   "dia": 42,
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "CPF, CNS e NIS: validação de dígitos verificadores",
-  "explicacao": "CPF, CNS e NIS possuem dígitos verificadores que validam integridade. Implemente validação antes de usar como chave. CPF usa módulo 11 em dois dígitos; CNS tem estrutura específica. Não descarte valores inválidos—sinalize para investigação. Em bases SUS, CNS frequentemente vem vazio ou inválido. Validação reduz falsos positivos ao usar esses identificadores em blocking.",
+  "explicacao": "CPF, CNS e NIS possuem dígitos verificadores que validam integridade. Implemente validação antes de usar como chave. CPF usa módulo 11 em dois dígitos; CNS tem estrutura específica. Não descarte valores inválidos-sinalize para investigação. Em bases SUS, CNS frequentemente vem vazio ou inválido. Validação reduz falsos positivos ao usar esses identificadores em blocking.",
   "exemplo": "def valida_cpf(cpf): s1 = sum(int(cpf[i])*(10-i) for i in range(9)) % 11; return int(cpf[9]) == (0 if s1<2 else 11-s1)",
   "pergunta_reflexao": "Você já testou quantos registros da sua base SUS falham na validação de CNS e o que seus algoritmos fazem nesse caso?"
  },
@@ -339,8 +339,8 @@
   "dia": 43,
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "Tratamento de valores sentinela (99999, 'IGNORADO')",
-  "explicacao": "Valores sentinela ('IGNORADO', '99999', '999999999') representam ausência ou recusa. Não os trate como dados reais. Crie coluna booleana `foi_informado` ou substitua por null explicitamente. Em matching, sentinelas devem contribuir negativamente (aumentar peso de não-match) ou ser ignoradas. Diferentes fontes usam convenções distintas—documente cada uma.",
-  "exemplo": "df.withColumn('idade', when(col('idade').isin(99, 999), None).otherwise(col('idade'))) – converta sentinelas para null e ajuste comparadores.",
+  "explicacao": "Valores sentinela ('IGNORADO', '99999', '999999999') representam ausência ou recusa. Não os trate como dados reais. Crie coluna booleana `foi_informado` ou substitua por null explicitamente. Em matching, sentinelas devem contribuir negativamente (aumentar peso de não-match) ou ser ignoradas. Diferentes fontes usam convenções distintas-documente cada uma.",
+  "exemplo": "df.withColumn('idade', when(col('idade').isin(99, 999), None).otherwise(col('idade'))), converta sentinelas para null e ajuste comparadores.",
   "pergunta_reflexao": "Seus pesos de matching no Splink tratam null e sentinela de forma diferente, ou ambos caem no mesmo comportamento padrão?"
  },
  {
@@ -348,7 +348,7 @@
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "Fonética: por que o som importa",
   "explicacao": "Fonética resolve variações ortográficas: 'Silva'='Sylva', 'José'='Josê'. No português, som importa mais que grafia em nomes. Algoritmos fonéticos convertem strings em códigos fonéticos para comparação. Essenciais em linkage quando OCR ou ditação introduz erros, ou há variação regional/histórica. Complementam distância de string, não substituem.",
-  "exemplo": "Soundex('Silva')='S410', Soundex('Sylva')='S410' – nomes diferentes, mesmo código. Use em segundo nível de blocking.",
+  "exemplo": "Soundex('Silva')='S410', Soundex('Sylva')='S410', nomes diferentes, mesmo código. Use em segundo nível de blocking.",
   "pergunta_reflexao": "No seu Elasticsearch de SUS, você já testou queries com phonetic analyzers ou fica apenas em string similarity?"
  },
  {
@@ -356,14 +356,14 @@
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "Soundex: algoritmo e limitações",
   "explicacao": "Soundex: primeiro caractere + 3 dígitos (consoantes mapeadas, vogais ignoradas). Algoritmo mais antigo, design americano, limitado. Colapsa nomes diferentes ('Jackson', 'Jakson'). Em português, falha com dígrafos (CH, LH). Útil como filtro rápido, barato computacionalmente. Mantenha como feature, mas não confie exclusivamente.",
-  "exemplo": "Soundex('Joao')='J000', Soundex('João')='J000' – acentos removidos, ambas colapsam.",
+  "exemplo": "Soundex('Joao')='J000', Soundex('João')='J000', acentos removidos, ambas colapsam.",
   "pergunta_reflexao": "Você já mediu recall e precision do Soundex vs. Metaphone nos nomes da sua base SUS realmente? Qual capta mais verdadeiros pares?"
  },
  {
   "dia": 46,
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "Metaphone e Double Metaphone",
-  "explicacao": "Metaphone melhora Soundex: codifica combinações de letras, trata dígrafos melhor. Double Metaphone gera dois códigos (primário + alternativo) para maior flexibilidade. Mais robusto em inglês/português. Captura variações fonéticas reais melhor. Ainda não perfeito para português—não trata CH='X' ou LH corretamente. Mais caro que Soundex, melhor recall.",
+  "explicacao": "Metaphone melhora Soundex: codifica combinações de letras, trata dígrafos melhor. Double Metaphone gera dois códigos (primário + alternativo) para maior flexibilidade. Mais robusto em inglês/português. Captura variações fonéticas reais melhor. Ainda não perfeito para português-não trata CH='X' ou LH corretamente. Mais caro que Soundex, melhor recall.",
   "exemplo": "Metaphone('Silva')='XLF', Metaphone('Sylva')='XLF'; DoubleMetaphone('Garcia')=('KRK','KHR')",
   "pergunta_reflexao": "Vale a pena computar Double Metaphone para todos os nomes no seu indexing inicial, ou você prefere usá-lo apenas no matching de pares candidatos?"
  },
@@ -371,8 +371,8 @@
   "dia": 47,
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "NYSIIS e Caverphone",
-  "explicacao": "NYSIIS (New York State Identification and Intelligence System): 6+ caracteres, preserva primeiras letras, trata vogais nas extremidades. Histórico policial americano. Caverphone: desenvolvido para nomes galeses, mais agressivo. Ambos menos comuns em produção brasileira. NYSIIS por vezes supera Soundex em datasets específicos. Teste antes de adotar—contexto importa.",
-  "exemplo": "NYSIIS('Williams')='WALAN'; Caverphone('Smith')='XMT0' – lógicas de redução diferentes.",
+  "explicacao": "NYSIIS (New York State Identification and Intelligence System): 6+ caracteres, preserva primeiras letras, trata vogais nas extremidades. Histórico policial americano. Caverphone: desenvolvido para nomes galeses, mais agressivo. Ambos menos comuns em produção brasileira. NYSIIS por vezes supera Soundex em datasets específicos. Teste antes de adotar-contexto importa.",
+  "exemplo": "NYSIIS('Williams')='WALAN'; Caverphone('Smith')='XMT0', lógicas de redução diferentes.",
   "pergunta_reflexao": "Seus dados SUS têm nomes com origem germânica, japonesa ou árabe frequentes? Esses algoritmos anglo-americanos capturam bem essas fonéticas?"
  },
  {
@@ -380,14 +380,14 @@
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "BuscaBR: fonética para o português",
   "explicacao": "BuscaBR: algoritmo fonético desenvolvido para português. Trata dígrafos: CH→X, LH→L, NH→N. Mapeia variações brasileiras ('Souza'='Souza', 'Sousa'). Integra-se bem com Elasticsearch e Python. Menos conhecido que Soundex, mas superior em bases SUS. Preferível quando nomes são predominantemente portugueses. Valide em seu corpus antes de rollout.",
-  "exemplo": "BuscaBR('Chaves')=BuscaBR('Xaves') – dígrafos harmonizados para português.",
+  "exemplo": "BuscaBR('Chaves')=BuscaBR('Xaves'), dígrafos harmonizados para português.",
   "pergunta_reflexao": "Você já avaliou BuscaBR em produção ou segue usando algoritmos anglo-americanos por inércia tecnológica?"
  },
  {
   "dia": 49,
   "modulo": "2. Pré-processamento e padronização",
   "titulo": "Fonética em português: armadilhas (CH, X, LH, NH)",
-  "explicacao": "Armadilhas fonéticas em português: 'CH' soa como 'X' (Chaves≠Xaves em grafia, som igual); 'LH' soa como 'L' mouillé (Filha≠Fila graficamente, próximas soneticamente); 'NH' similar. Acentos desaparecem ('Pará'='Para'). Não-nativos frequentemente escrevem errado. OCR confunde facilmente. Algoritmos genéricos não capturam—use BuscaBR ou dicionário customizado.",
+  "explicacao": "Armadilhas fonéticas em português: 'CH' soa como 'X' (Chaves≠Xaves em grafia, som igual); 'LH' soa como 'L' mouillé (Filha≠Fila graficamente, próximas soneticamente); 'NH' similar. Acentos desaparecem ('Pará'='Para'). Não-nativos frequentemente escrevem errado. OCR confunde facilmente. Algoritmos genéricos não capturam-use BuscaBR ou dicionário customizado.",
   "exemplo": "OCR lê 'Filha' como 'Filiia'. Fonética genérica falha. BuscaBR('Filha')≠'Filiia' ainda, mas reconhece a origem comum melhor que Soundex.",
   "pergunta_reflexao": "Seus registros SUS vieram de papel digitado (OCR) ou dados nativos? A proporção de erros de CH/LH/NH varia conforme a fonte?"
  },
@@ -565,7 +565,7 @@
   "titulo": "Q-grams e bigramas",
   "explicacao": "Q-grams são substrings de comprimento q. Para 'João' com q=2: 'jã', 'ão'. Bigramas são q-grams com q=2. Úteis para capturar padrões locais de caracteres. Duas strings similares compartilham muitos q-grams iguais, mesmo com erros de digitação. Base para várias métricas de comparação em linkage.",
   "exemplo": "'silva' com q=2: ['si','il','lv','va']. 'silua' compartilha 3 dos 4 bigramas, sinalizando alta similaridade.",
-  "pergunta_reflexao": "No seu pipeline do SUS, strings com transposição de caracteres (ex: 'Antônia' vs 'Antonia') perdem bigramas válidos—como você escolhe q para minimizar isso sem aumentar falsos positivos?"
+  "pergunta_reflexao": "No seu pipeline do SUS, strings com transposição de caracteres (ex: 'Antônia' vs 'Antonia') perdem bigramas válidos-como você escolhe q para minimizar isso sem aumentar falsos positivos?"
  },
  {
   "dia": 72,
@@ -581,7 +581,7 @@
   "titulo": "Dice e Sørensen",
   "explicacao": "Dice (ou Sørensen) é similar a Jaccard, mas privilegia interseção: 2*|A∩B| / (|A|+|B|). Menos sensível a tamanho dos conjuntos que Jaccard. Retorna [0,1]. Particularmente útil quando você quer penalizar menos a falta de alguns q-grams. Comum em sistemas de deduplicação.",
   "exemplo": "Mesmos sets anteriores: Dice = 2*2 / (4+4) = 0.5. Jaccard deu 0.33. Dice é mais generoso com pequenas diferenças.",
-  "pergunta_reflexao": "Em bases de saúde, nomes muito curtos (ex: 'Ana', 'Eva') perdem mais peso com Dice do que Jaccard—qual métrica você escolheria para evitar falsos negativos em crianças?"
+  "pergunta_reflexao": "Em bases de saúde, nomes muito curtos (ex: 'Ana', 'Eva') perdem mais peso com Dice do que Jaccard-qual métrica você escolheria para evitar falsos negativos em crianças?"
  },
  {
   "dia": 74,
@@ -795,7 +795,7 @@
   "dia": 100,
   "modulo": "4. Blocking e indexação",
   "titulo": "Sorted neighborhood",
-  "explicacao": "Sorted Neighborhood: ordena registros por chave, compara janelas deslizantes (p.ex., vizinhos próximos). Menos rígido que blocking exato—capture variações sem perder por typo na chave. Eficiente em listas grandes. Trade-off: ordem depende da chave; variações fora da vizinhança ainda se perdem.",
+  "explicacao": "Sorted Neighborhood: ordena registros por chave, compara janelas deslizantes (p.ex., vizinhos próximos). Menos rígido que blocking exato-capture variações sem perder por typo na chave. Eficiente em listas grandes. Trade-off: ordem depende da chave; variações fora da vizinhança ainda se perdem.",
   "exemplo": "Ordena por nome alfabético. Janela de tamanho 50. 'Silva, Maria' está na pos. 5000; compara com 4975-5025. 'Sylva, Maria' próximo alfabeticamente, provavelmente na janela. Sem sorted neighborhood, blocos separados.",
   "pergunta_reflexao": "Sorted Neighborhood seria melhor que seu blocking atual em datasets com muitas variações fonéticas ou de ordem de campos?"
  },
@@ -883,7 +883,7 @@
   "dia": 111,
   "modulo": "4. Blocking e indexação",
   "titulo": "Pair completeness e pairs quality",
-  "explicacao": "Pair completeness mede quantos pares verdadeiros seu blocking captura (recall dos pares). Pairs quality mede a proporção de pares verdadeiros entre os candidatos gerados (precisão). Um bom blocking equilibra ambos: captura a maioria dos matches sem gerar ruído excessivo. Em produção, 95% de completeness com 10% de quality é melhor que 99% de completeness com 1% de quality—menos candidatos para comparar reduz custo.",
+  "explicacao": "Pair completeness mede quantos pares verdadeiros seu blocking captura (recall dos pares). Pairs quality mede a proporção de pares verdadeiros entre os candidatos gerados (precisão). Um bom blocking equilibra ambos: captura a maioria dos matches sem gerar ruído excessivo. Em produção, 95% de completeness com 10% de quality é melhor que 99% de completeness com 1% de quality-menos candidatos para comparar reduz custo.",
   "exemplo": "Se 1000 matches existem e blocking retorna 950 matches em 5000 pares candidatos: completeness = 95%, quality = 950/5000 = 19%.",
   "pergunta_reflexao": "No SUS, você prioriza capturar todos os duplicados (completeness) ou reduzir processamento (quality)? Como isso muda entre cadastros vivos e históricos?"
  },
@@ -892,7 +892,7 @@
   "modulo": "4. Blocking e indexação",
   "titulo": "Blocos gigantes e skew",
   "explicacao": "Blocos gigantes ocorrem quando muitos registros compartilham valores comuns (ex: cidade='São Paulo'). Isso causa skew: poucos blocos concentram maioria dos pares, criando gargalos no Spark. O problema é quadrático: um bloco com 100k registros gera 5 bilhões de pares. Detectar skew antecipadamente permite estratégias como sub-blocking ou salting.",
-  "exemplo": "SELECT bloco, COUNT(*) as tamanho FROM registros GROUP BY bloco ORDER BY tamanho DESC LIMIT 10 — se top 10 blocos > 50% dos pares, há skew.",
+  "exemplo": "SELECT bloco, COUNT(*) as tamanho FROM registros GROUP BY bloco ORDER BY tamanho DESC LIMIT 10, se top 10 blocos > 50% dos pares, há skew.",
   "pergunta_reflexao": "Quais atributos no seu atual blocking causam maiores blocos gigantes? Como você identifica isso antes de rodar em produção?"
  },
  {
@@ -900,7 +900,7 @@
   "modulo": "4. Blocking e indexação",
   "titulo": "Blocking em Spark: joins e particionamento",
   "explicacao": "Em Spark, blocking é implementado via join entre a tabela consigo mesma usando chave de blocking. O particionamento é crítico: se particiona por bloco_id, registros do mesmo bloco ficam juntos (eficiente). Mas com skew, uma partição fica muito maior, causando out-of-memory. A alternativa é reparticionamento inteligente ou usar explode() para replicar registros em múltiplas chaves.",
-  "exemplo": "df.join(df, 'bloco_id').filter('id_esquerda < id_direita') — o join naturalmente agrupa por bloco_id se particionado corretamente.",
+  "exemplo": "df.join(df, 'bloco_id').filter('id_esquerda < id_direita'), o join naturalmente agrupa por bloco_id se particionado corretamente.",
   "pergunta_reflexao": "Seus joins de blocking em Spark distribuem bem o skew de cidades grandes, ou concentra em poucas partições?"
  },
  {
@@ -908,7 +908,7 @@
   "modulo": "4. Blocking e indexação",
   "titulo": "Salting para blocos desbalanceados",
   "explicacao": "Salting adiciona variação artificial à chave de blocking para quebrar blocos gigantes. Ao invés de blocagem por 'cidade', usa 'cidade + salt aleatório (0-9)'. Cria 10 sub-blocos menores. Porém, pares podem ficar em sub-blocos diferentes, então precisa rodar blocking com múltiplos salts para garantir completeness. Trade-off: mais passes de blocking vs. melhor distribuição.",
-  "exemplo": "df['chave'] = df['cidade'] + '_' + (hash(df['id']) % 10) — multiplica blocos por 10, reduzindo tamanho médio.",
+  "exemplo": "df['chave'] = df['cidade'] + '_' + (hash(df['id']) % 10), multiplica blocos por 10, reduzindo tamanho médio.",
   "pergunta_reflexao": "Quantos salts você precisaria para garantir que não perde matches verdadeiros entre registros com mesmo salt?"
  },
  {
@@ -916,7 +916,7 @@
   "modulo": "4. Blocking e indexação",
   "titulo": "Blocking em Splink: blocking rules",
   "explicacao": "Splink define blocking rules em YAML/Python. Permite composição: 'bloco_1 OR bloco_2', capturando pares que passam por qualquer regra. Internamente, Splink otimiza: se regra_1 < regra_2, usa regra_1 primeiro (menos candidatos). Splink também estima pair completeness automaticamente usando técnicas de captura-recaptura, sem saber verdade absoluta.",
-  "exemplo": "blocking_rules = ['l.cpf = r.cpf', 'l.nome = r.nome AND l.data_nasc = r.data_nasc'] — Splink retorna união de ambas as regras.",
+  "exemplo": "blocking_rules = ['l.cpf = r.cpf', 'l.nome = r.nome AND l.data_nasc = r.data_nasc'], Splink retorna união de ambas as regras.",
   "pergunta_reflexao": "Suas blocking rules em produção no SUS estão bem ordenadas (mais seletivas primeiro) ou Splink já otimiza isso automaticamente?"
  },
  {
@@ -924,7 +924,7 @@
   "modulo": "4. Blocking e indexação",
   "titulo": "Blocking com Elasticsearch como índice de candidatos",
   "explicacao": "Elasticsearch indexa registros como documentos. Blocking consulta o índice: para cada registro A, busca similares (termo, fuzzy, BM25). Elasticsearch retorna candidatos ordenados por relevância. Vantagem: suporta queries complexas (phonetic, ngram) nativamente. Desvantagem: latência de rede; adequado para linkage online, não batch. Para SUS, útil em API de deduplicação real-time.",
-  "exemplo": "GET pessoas/_search { 'query': { 'match': { 'nome': { 'query': 'João Silva', 'fuzziness': 'AUTO' } } } } — retorna 50 candidatos em < 100ms.",
+  "exemplo": "GET pessoas/_search { 'query': { 'match': { 'nome': { 'query': 'João Silva', 'fuzziness': 'AUTO' } } } }, retorna 50 candidatos em < 100ms.",
   "pergunta_reflexao": "Para seu caso de uso no SUS (batch ou real-time), Elasticsearch seria mais rápido que Spark join, ou apenas complementaria blocking estático?"
  },
  {
@@ -1013,7 +1013,7 @@
   "titulo": "Fellegi-Sunter: formulação",
   "explicacao": "Fellegi-Sunter (FS) é modelo probabilístico clássico para record linkage. Ideia: comparar pares e atribuir pesos baseados em concordância de atributos. Para cada campo, calcula-se P(concordância|match) e P(concordância|não-match). Resultado final é score que discrimina matches de não-matches. É determinístico mas adaptável via EM. Splink implementa FS com extensões modernas.",
   "exemplo": "Pair (João Silva, João Silveira): nome tem 95% concordância. FS: peso alto se P(95% concordância|match) > P(95% concordância|não-match).",
-  "pergunta_reflexao": "No Splink que vocês usam no SUS, como vocês obtêm as probabilidades m e u inicialmente—estimativas brutas ou dados históricos?"
+  "pergunta_reflexao": "No Splink que vocês usam no SUS, como vocês obtêm as probabilidades m e u inicialmente-estimativas brutas ou dados históricos?"
  },
  {
   "dia": 128,
@@ -1091,7 +1091,7 @@
   "dia": 137,
   "modulo": "5. Modelo Fellegi-Sunter e EM",
   "titulo": "Estimando m com pares rotulados",
-  "explicacao": "Estimar 'm' (probabilidade de concordância sob match) com pares rotulados: usar dataset de matches conhecidos (gold standard, revisão manual). Calcular proporção de concordância por campo entre pares sabidamente verdadeiros. Método direto, não enviesado, mas exige custo de anotação manual—trade-off clássico.",
+  "explicacao": "Estimar 'm' (probabilidade de concordância sob match) com pares rotulados: usar dataset de matches conhecidos (gold standard, revisão manual). Calcular proporção de concordância por campo entre pares sabidamente verdadeiros. Método direto, não enviesado, mas exige custo de anotação manual-trade-off clássico.",
   "exemplo": "200 pares rotulados como match verdadeiro: 198 concordam em CPF → m_CPF=0.99. 180 concordam em data nasc → m_data=0.90. Simples, robusto.",
   "pergunta_reflexao": "Seu dataset de validação SUS (pares rotulados) representa bem a distribuição de erros em produção, ou é viesiado para casos óbvios?"
  },
@@ -1115,7 +1115,7 @@
   "dia": 140,
   "modulo": "5. Modelo Fellegi-Sunter e EM",
   "titulo": "Convergência e mínimos locais no EM",
-  "explicacao": "EM converge para máximo local, não global. Qualidade depende da inicialização. Critérios de parada: mudança em log-likelihood < threshold ou iterações máximas. Não há garantia de achar melhor modelo global—múltiplas rodadas com sementes diferentes ajudam. Em produção, validar contra holdout (pares rotulados) é essencial.",
+  "explicacao": "EM converge para máximo local, não global. Qualidade depende da inicialização. Critérios de parada: mudança em log-likelihood < threshold ou iterações máximas. Não há garantia de achar melhor modelo global-múltiplas rodadas com sementes diferentes ajudam. Em produção, validar contra holdout (pares rotulados) é essencial.",
   "exemplo": "Seed 1: EM converge a m=0.95, F1=0.88. Seed 2: m=0.87, F1=0.91. Seed 2 é melhor. Usar seed 2 em produção. Ou ensemble os 10 seeds.",
   "pergunta_reflexao": "No seu pipeline Spark+Splink, você testa múltiplas inicializações de EM? Como balanceia custo computacional vs. risco de ficar em mínimo local ruim?"
  },
@@ -1227,7 +1227,7 @@
   "dia": 154,
   "modulo": "5. Modelo Fellegi-Sunter e EM",
   "titulo": "Estudo de caso: modelo FS para dados do SUS",
-  "explicacao": "Aplicar Fellegi-Sunter em dados reais exige: definir comparadores (Levenshtein, fonético, exato), escolher prior P(match), iterar EM com dados de treinamento, validar com hold-out set. Dados SUS têm ruído de OCR, variação de grafia e valores missing frequentes—preprocessamento é crítico antes do modelo.",
+  "explicacao": "Aplicar Fellegi-Sunter em dados reais exige: definir comparadores (Levenshtein, fonético, exato), escolher prior P(match), iterar EM com dados de treinamento, validar com hold-out set. Dados SUS têm ruído de OCR, variação de grafia e valores missing frequentes-preprocessamento é crítico antes do modelo.",
   "exemplo": "Comparadores: CPF (exato, peso alto), nome (Levenshtein+fonético), data_nasc (exato). Se CPF match=1, score do par salta; se não-match, veta o par.",
   "pergunta_reflexao": "Qual é o custo de um falso positivo versus falso negativo no contexto de deduplicação de pacientes SUS? Como isso deveria influenciar sua estratégia de threshold?"
  },
@@ -1259,7 +1259,7 @@
   "dia": 158,
   "modulo": "6. Avaliação",
   "titulo": "Matriz de confusão para pares",
-  "explicacao": "Para pares, matriz de confusão é 2×2: TN (correto não-match), FP (falso positivo: dizemos match, é não-match), FN (falso negativo: dizemos não-match, é match), TP (verdadeiro match). Decisão vem de threshold no score. Cada threshold gera uma matriz diferente—trade-off clássico.",
+  "explicacao": "Para pares, matriz de confusão é 2×2: TN (correto não-match), FP (falso positivo: dizemos match, é não-match), FN (falso negativo: dizemos não-match, é match), TP (verdadeiro match). Decisão vem de threshold no score. Cada threshold gera uma matriz diferente-trade-off clássico.",
   "exemplo": "Threshold=0.7: TP=80, FP=5, FN=20, TN=895. Threshold=0.5: TP=95, FP=20, FN=5, TN=880. Sensibilidade sobe, especificidade cai.",
   "pergunta_reflexao": "Como você escolheria threshold para deduplicação SUS sabendo que duplicatas causam medicação duplicada, mas falsos positivos mesclam pacientes diferentes?"
  },
@@ -1275,7 +1275,7 @@
   "dia": 160,
   "modulo": "6. Avaliação",
   "titulo": "Recall (sensibilidade)",
-  "explicacao": "Recall (sensibilidade) = TP / (TP + FN): entre os matches verdadeiros, quantos você encontrou? Detecta incompletude. Recall baixo significa pares legítimos foram perdidos—crítico em contextos clínicos onde não unificar duplicatas causa fragmentação de histórico médico. Complementa precisão.",
+  "explicacao": "Recall (sensibilidade) = TP / (TP + FN): entre os matches verdadeiros, quantos você encontrou? Detecta incompletude. Recall baixo significa pares legítimos foram perdidos-crítico em contextos clínicos onde não unificar duplicatas causa fragmentação de histórico médico. Complementa precisão.",
   "exemplo": "Existem 1000 duplicatas reais; você encontrou 950. Recall=0.95. Os 50 FN ficam como pacientes separados no SUS→ 50 históricos médicos incompletos.",
   "pergunta_reflexao": "Como você comunicaria trade-off entre precisão e recall a gestores que querem ambas próximas de 1.0?"
  },
@@ -1763,7 +1763,7 @@
   "dia": 221,
   "modulo": "8. Geocodificação como linkage",
   "titulo": "Endereço como registro estruturado",
-  "explicacao": "Geocodificação é linkage de endereços contra bases de referência geográfica. Um endereço é um registro estruturado (logradouro, número, bairro, município, UF, CEP) que precisa ser normalizado, parsificado e comparado com gazetteers. O desafio é que endereços têm variabilidade ortográfica, incompletude e inconsistência de delimitadores—similares aos problemas de linkage tradicional, mas com semântica espacial.",
+  "explicacao": "Geocodificação é linkage de endereços contra bases de referência geográfica. Um endereço é um registro estruturado (logradouro, número, bairro, município, UF, CEP) que precisa ser normalizado, parsificado e comparado com gazetteers. O desafio é que endereços têm variabilidade ortográfica, incompletude e inconsistência de delimitadores-similares aos problemas de linkage tradicional, mas com semântica espacial.",
   "exemplo": "Rua das Flores, 123 - SP vs RUA DAS FLORES 123 SÃO PAULO: mesmo após normalização case/acentos, precisam resolver o bairro (faltante no primeiro) contra uma base de endereços conhecidos.",
   "pergunta_reflexao": "Nas suas experiências com SUS, você já enfrentou situações onde o endereço estava incompleto e precisou usar CEP ou bairro para deduplicar registros? Como isso mudaria sua estratégia de bloqueio?"
  },
@@ -1852,7 +1852,7 @@
   "modulo": "8. Geocodificação como linkage",
   "titulo": "Interpolação de número ao longo do segmento",
   "explicacao": "Após localizar o segmento de rua (trecho entre dois cruzamentos), interpole o número fornecido. Se segmento começa em 100 e termina em 200 em 500 metros, número 150 estará a ~250 metros do início. Calcule: posição = (número - inicial) / (final - inicial) × comprimento_segmento. Retorna coordenada aproximada no meio da rua, não exata. Essencial quando não há base de pontos de endereço individuais.",
-  "exemplo": "Segmento: números 100–200 (1000m). Número 150 → posição 50% × 1000m = 500m do início.",
+  "exemplo": "Segmento: números 100-200 (1000m). Número 150 → posição 50% × 1000m = 500m do início.",
   "pergunta_reflexao": "Em sua experiência com dados do SUS, qual é a margem de erro aceitável dessa interpolação para análises epidemiológicas?"
  },
  {
@@ -1883,7 +1883,7 @@
   "dia": 236,
   "modulo": "8. Geocodificação como linkage",
   "titulo": "Score de confiança da geocodificação",
-  "explicacao": "Score de confiança quantifica certeza no match: combinação de fuzzy score do logradouro, completude do endereço, distância do ponto esperado. Varia 0–100 ou 0–1. Não é probabilidade estatística, mas ranking heurístico. Após linkage, use threshold: score > 0.80 → use; 0.60–0.80 → revisar; < 0.60 → falha. Documenta decisões e rastreabilidade em produção.",
+  "explicacao": "Score de confiança quantifica certeza no match: combinação de fuzzy score do logradouro, completude do endereço, distância do ponto esperado. Varia 0-100 ou 0-1. Não é probabilidade estatística, mas ranking heurístico. Após linkage, use threshold: score > 0.80 → use; 0.60-0.80 → revisar; < 0.60 → falha. Documenta decisões e rastreabilidade em produção.",
   "exemplo": "score = 0.7 × fuzzy_logradouro + 0.2 × completude_endereco + 0.1 × penalty_distancia.",
   "pergunta_reflexao": "Qual threshold de confiança sua equipe adota em produção, e ele varia conforme domínio de aplicação (vigilância vs. planejamento)?"
  },
@@ -1932,7 +1932,7 @@
   "modulo": "8. Geocodificação como linkage",
   "titulo": "Blocking espacial e índices geográficos",
   "explicacao": "Blocking espacial divide o espaço geográfico em quadrantes, clusters ou células de grid para reduzir comparações. Índices geográficos (quadtree, R-tree) permitem buscar vizinhos próximos de um ponto. No Elasticsearch, geo_distance queries e geo_bounding_box criam blocos. Você só compara endereços dentro da mesma célula, acelerando linkage massivo mantendo precisão.",
-  "exemplo": "SELECT * FROM endereco WHERE ST_DWithin(geom, ponto_query, 500) — retorna endereços num raio de 500m; em Elasticsearch: {\"geo_distance\": {\"distance\": \"500m\", \"localização\": ponto}}",
+  "exemplo": "SELECT * FROM endereco WHERE ST_DWithin(geom, ponto_query, 500), retorna endereços num raio de 500m; em Elasticsearch: {\"geo_distance\": {\"distance\": \"500m\", \"localização\": ponto}}",
   "pergunta_reflexao": "Se você usar células de grid muito pequenas (ex: 100m), qual risco você corre com endereços próximos à fronteira de células?"
  },
  {
@@ -2019,9 +2019,9 @@
   "dia": 253,
   "modulo": "9. Escalabilidade",
   "titulo": "Quando o linkage deixa de caber em uma máquina",
-  "explicacao": "Linkage cresce com O(n²): 100 milhões de registros = 10 bilhões de comparações. Uma máquina (32 GB RAM, 8 cores) não aguenta. Estratégia: bloqueio reduz espaço (ex: por CEP, reduce comparações para milhões), paralelização com Spark/Dask distribui cálculo. Threshold de qualidade deve aumentar em escala (menos candidatos processados). Monitoramento: tempo, memória, taxa de match vs expectativa.",
-  "exemplo": "100M registros sem bloqueio: 5×10^15 comparações. Com bloqueio por CEP (média 50k registros/bloco): 5M×(50k)²/2 = 6×10^12 comparações. Redução de ~800×. Com 100 workers Spark: ~1 hora vs meses serial.",
-  "pergunta_reflexao": "No seu workflow atual com dados SUS, qual atributo de bloqueio (CEP, bairro, soundex do nome) causaria maior desbalanceamento de partições em Spark?"
+  "explicacao": "Linkage determinístico em um servidor funciona até milhões de registros. Bilhões exigem computação distribuída: Spark, Dask ou plataformas em nuvem. O desafio não é só storage, mas produto cartesiano de comparações. Estratégias: pré-bloqueio agressivo, particionar por chave, usar broadcast joins. Custo computacional cresce com O(n²) sem bloqueio. Monitorar shuffle, memory spill e gravidade dos erros é crítico.",
+  "exemplo": "100 milhões de pacientes: sem bloqueio, 10 trilhões de pares. Com bloqueio por CEP + primeiras 3 letras do nome, reduz para 50 bilhões de pares viáveis, rodando em cluster de 10 nós em horas.",
+  "pergunta_reflexao": "Você já mediu quanto tempo a comparação consome versus quanto o bloqueio economiza? Essa razão guia se você precisa de mais máquinas ou melhores regras?"
  },
  {
   "dia": 254,
@@ -2108,7 +2108,7 @@
   "modulo": "9. Escalabilidade",
   "titulo": "Clustering de pares em entidades",
   "explicacao": "Após gerar pares candidatos e scores (Splink), você deve agrupar pares em clusters de entidades. Problema: um par (A,B) com score alto não garante que (B,C) também formem cluster coeso. Usar limiar simples gera clusters gigantes (tudo conectado). Clustering agrupa pares com decisões de match/não-match. Várias estratégias: union-find, MCL, spectral clustering.",
-  "exemplo": "Pares: (João Silva–João S.) score 0.95, (João S.–João da Silva) 0.92. Threshold 0.9 ligaria todos; clustering agrupa (A,B,C) só se arestas coesas. Componentes conexas encontram clusters.",
+  "exemplo": "Pares: (João Silva-João S.) score 0.95, (João S.-João da Silva) 0.92. Threshold 0.9 ligaria todos; clustering agrupa (A,B,C) só se arestas coesas. Componentes conexas encontram clusters.",
   "pergunta_reflexao": "Ao migrar do Splink puro para componentes conexas, qual métrica de qualidade você monitoraria para detectar degradação?"
  },
  {
@@ -2116,7 +2116,7 @@
   "modulo": "9. Escalabilidade",
   "titulo": "Fecho transitivo e componentes conexos",
   "explicacao": "Fecho transitivo garante que se A≡B e B≡C, então A≡C (propriedade de equivalência). Componentes conexos são o equivalente em grafos: vértices (registros) conectados por arestas (pares com match=True). Implementa-se com union-find ou BFS/DFS. Spark SQL + window functions fazem iteratively ou GraphFrames resolve em uma passada. Crucial: arestas devem ser simétricas e transitivas.",
-  "exemplo": "Grafo: A–B (match), B–C (match). Union-find: union(A,B), union(B,C) → find(A)=find(C). Componente {A,B,C} representa uma entidade.",
+  "exemplo": "Grafo: A-B (match), B-C (match). Union-find: union(A,B), union(B,C) → find(A)=find(C). Componente {A,B,C} representa uma entidade.",
   "pergunta_reflexao": "Você já enfrentou casos onde a transitividade quebraria a qualidade (ex.: A≡B e B≡C mas A≠C biologicamente)? Como tratou?"
  },
  {
@@ -2466,18 +2466,18 @@
  {
   "dia": 309,
   "modulo": "11. Casos reais em saúde pública",
-  "titulo": "A Coorte de 100 Milhões de Brasileiros",
-  "explicacao": "A Coorte de 100 Milhões de Brasileiros (estudo prospectivo do CIDACS/UFBA) exemplifica escala máxima de linkage no Brasil: dados administrativos (SUS, CadÚnico, registros civis) linkados longitudinalmente para rastrear saúde, pobreza, determinantes sociais em população representativa. Desafios: volume massivo (Spark distribuído), privacidade (PPRL em escala), qualidade (duplicatas em CadÚnico), governança (múltiplas instituições).",
-  "exemplo": "100M registros SUS linkados a CadÚnico → identificar pobreza extrema → rastrear uso de saúde 5 anos → analisar trajetórias. Linkage probabilístico em Spark; saída: agregados por município, não dados brutos.",
-  "pergunta_reflexao": "Seu expertise em Spark + Elasticsearch você acha capaz de escalar linkage para 100M registros? Qual seria o gargalo (CPU, I/O, memória, network)?"
+  "titulo": "Grandes coortes administrativas: como são construídas",
+  "explicacao": "Coortes em saúde pública integram múltiplas fontes: hospitais, laboratórios, vigilância, cadastros demográficos. Cada fonte tem identificadores e qualidades diferentes. Linkage aqui não é binário: três pacientes podem ser a mesma pessoa com evidências parciais. Requer consenso multidisciplinar, validação com amostra manual, documentação de decisões de negócio. Metadados sobre completude e confiabilidade são tão importantes quanto os matches.",
+  "exemplo": "Hospital A usa CPF, Lab B usa nome+data, Vigilância usa CNES+data. Linkagem cria ID único para seguir paciente entre sistemas. Validação: epidemiologista confere 200 pares aleatórios para calibrar thresholds.",
+  "pergunta_reflexao": "Como você documentaria as decisões de bloqueio e matching para que um epidemiologista entenda e confie no linkage de uma coorte de mil pacientes?"
  },
  {
   "dia": 310,
   "modulo": "11. Casos reais em saúde pública",
-  "titulo": "CIDACS: infraestrutura e missão",
-  "explicacao": "CIDACS (Centro de Integração de Dados e Conhecimentos para Saúde, UFBA) é infraestrutura de pesquisa que centraliza linkage de bases públicas brasileiras (SUS, CadÚnico, mortalidade, censos) em ambiente seguro. Missão: democratizar acesso a dados linkados para pesquisa epidemiológica, sem vazamento. Arquitetura: ingestão federada, linkage determinístico/probabilístico, sala segura com Spark, governança tripartite (UFBA, instituições, órgãos públicos).",
-  "exemplo": "Pesquisador solicita coorte: 'diabéticos SUS linkados a renda/educação, 2015-2023'. CIDACS linkage, valida, entrega em sala segura. Pesquisador analisa, publica agregados. Dados brutos nunca saem.",
-  "pergunta_reflexao": "Se CIDACS oferecesse acesso a seus dados linkados (como pesquisador convidado), qual seria seu primeiro projeto e por que linkage é essencial?"
+  "titulo": "Infraestruturas de dados para linkage em larga escala",
+  "explicacao": "Infraestrutura para linkage em saúde pública demanda: governança (dicionário de dados, metadados), isolamento de dados (LGPD, sigilo), reproducibilidade (versionamento de regras), e auditoria. Data lakes estruturados em bronze, prata e ouro. Pipelines Airflow ou similar orquestram ingestão, limpeza, linkage e validação. Monitoramento de qualidade contínuo: taxa de matches, duplicatas emergentes, mudanças no padrão de dados.",
+  "exemplo": "Governo municipal: bronze recebe dados brutos diários de 5 secretarias, prata padroniza e valida, ouro vincula registros com histórico de versões. Dashboard mostra cobertura por rua e duplicatas suspeitas.",
+  "pergunta_reflexao": "Se você precisasse reexecutar linkage de 2 anos atrás com dados novos, suas regras e metadados permitiriam reproducibilidade total?"
  },
  {
   "dia": 311,
@@ -2491,7 +2491,7 @@
   "dia": 312,
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "Bolsa Família e desfechos de saúde",
-  "explicacao": "Linkage Bolsa Família–SUS estuda impacto de transferência de renda em desfechos sanitários (internações, vacinas, pré-natal). Requer sincronização temporal: data de inscrição, primeira bolsa, eventos de saúde. Complexidade: beneficiários dinâmicos (entrada/saída); saúde com atraso de registro; causalidade confundida por seleção. Validação crítica: comparar coortes de elegíveis dentro/fora do programa.",
+  "explicacao": "Linkage Bolsa Família-SUS estuda impacto de transferência de renda em desfechos sanitários (internações, vacinas, pré-natal). Requer sincronização temporal: data de inscrição, primeira bolsa, eventos de saúde. Complexidade: beneficiários dinâmicos (entrada/saída); saúde com atraso de registro; causalidade confundida por seleção. Validação crítica: comparar coortes de elegíveis dentro/fora do programa.",
   "exemplo": "Indivíduo sai do CadÚnico (mudança de renda) em jan/2020; internação por pneumonia em mar/2020 será atribuída a qual status de cobertura?",
   "pergunta_reflexao": "Como você definiria a janela temporal para atribuir um desfecho a um período de elegibilidade ao Bolsa Família?"
  },
@@ -2500,7 +2500,7 @@
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "SIM: Sistema de Informação sobre Mortalidade",
   "explicacao": "SIM registra todas as mortes no Brasil via atestado. Linkage é crítico pois mortes podem estar subnotificadas em outros sistemas. Desafios principais: nomes de óbitos frequentemente incompletos; endereços genéricos (hospital, asilo); data nascimento às vezes estimada. Oportunidade: vincular SIM com SINASC (mesmo indivíduo) para rastrear trajetória vital inteira.",
-  "exemplo": "Óbito: 'Maria Silva, 75a, Hosp. Estadual'; SINASC: 'Maria da Silva Santos, 1945-08-15, São Paulo-SP' — match por fuzzy no sobrenome + data.",
+  "exemplo": "Óbito: 'Maria Silva, 75a, Hosp. Estadual'; SINASC: 'Maria da Silva Santos, 1945-08-15, São Paulo-SP', match por fuzzy no sobrenome + data.",
   "pergunta_reflexao": "Em casos de óbito sem documentação civil (pessoa em situação de rua, migrante), qual campo você priorizaria no SIM para linkage?"
  },
  {
@@ -2516,7 +2516,7 @@
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "SINAN: agravos de notificação",
   "explicacao": "SINAN coleta notificações compulsórias (dengue, tuberculose, COVID). Linkage é essencial porque casos se repetem: mesma pessoa notificada em semanas/meses diferentes por laboratório, hospital ou unidade distintos. Desafios: duplicação massiva (10-40% em dengue); nome/telefone variável; sem CPF; rápida evolução do paciente. Requer algoritmos de deduplicação em janela temporal curta.",
-  "exemplo": "SINAN dengue jan/2023: 'João', 28a, endereço incompleto, sem CPF; jan/2023 semana depois: 'Joao Silva', mesmo bairro — R=0.95 por Jaro-Winkler mas é mesmo caso?",
+  "exemplo": "SINAN dengue jan/2023: 'João', 28a, endereço incompleto, sem CPF; jan/2023 semana depois: 'Joao Silva', mesmo bairro, R=0.95 por Jaro-Winkler mas é mesmo caso?",
   "pergunta_reflexao": "Em surto rápido (COVID, dengue), qual é o custo de falsos positivos (mesclar dois casos) versus falsos negativos (não detectar duplicata)?"
  },
  {
@@ -2524,23 +2524,23 @@
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "SIH: internações hospitalares",
   "explicacao": "SIH registra internações hospitalares via AIH (Autorização de Internação Hospitalar). Linkage cria histórico de hospitalizações: morbidade crônica, reinternações, transferências. Desafios: múltiplas AIH para mesma internação (split em salas diferentes); pacientes sem identidade estável (via hospital); timestamps imprecisos. CPF presente em ~70% dos casos; endereço menos confiável que CadÚnico.",
-  "exemplo": "3 AIHs mesma data em hospital: leito clínico, UTI, cirurgia — são 1 internação ou 3? Data de entrada/saída diferem por horas.",
+  "exemplo": "3 AIHs mesma data em hospital: leito clínico, UTI, cirurgia, são 1 internação ou 3? Data de entrada/saída diferem por horas.",
   "pergunta_reflexao": "Você usaria SIH para estimar prevalência de comorbidades? Como evitaria contar a mesma internação múltiplas vezes?"
  },
  {
   "dia": 317,
   "modulo": "11. Casos reais em saúde pública",
-  "titulo": "Linkage CadÚnico–SIM",
-  "explicacao": "Linkage CadÚnico–SIM permite estimar mortalidade em população pobre/vulnerável. Estratégia: CPF + nome + data nascimento em duas etapas. Etapa 1: bloqueio por CPF (precisão alta, cobertura limitada). Etapa 2: bloqueio por soundex(nome) + ano nascimento para CPF faltante. Validação: comparar taxas de mortalidade versus modelos demográficos esperados.",
+  "titulo": "Linkage CadÚnico-SIM",
+  "explicacao": "Linkage CadÚnico-SIM permite estimar mortalidade em população pobre/vulnerável. Estratégia: CPF + nome + data nascimento em duas etapas. Etapa 1: bloqueio por CPF (precisão alta, cobertura limitada). Etapa 2: bloqueio por soundex(nome) + ano nascimento para CPF faltante. Validação: comparar taxas de mortalidade versus modelos demográficos esperados.",
   "exemplo": "CadÚnico 10M, SIM 1.1M óbitos/ano; linkage esperado ~1-2% dos vivos; se %=5%, investigar vazamento de dados ou erro sistêmico de bloqueio.",
   "pergunta_reflexao": "Se a cobertura de CPF no CadÚnico é 85% e no SIM é 70%, qual porcentagem máxima de óbitos você poderia linkar com segurança?"
  },
  {
   "dia": 318,
   "modulo": "11. Casos reais em saúde pública",
-  "titulo": "Linkage SINASC–SIM: mortalidade infantil",
-  "explicacao": "Linkage SINASC–SIM estuda mortalidade infantil e neonatal. Mesma mãe + mesmo período (0-364 dias) + data parto = morte precoce. Desafios: RN não tem CPF ao nascer; foco em nome completo, data nascimento precisa; óbitos fora de maternidade (casa, outro estado) têm dados incompletos no SIM. Requer análise de gestational age para diferenciar neonatal de pós-neonatal.",
-  "exemplo": "SINASC: RN 'Carlos Eduardo Santos', 2023-03-15, mãe 'Rosana Santos'; SIM: 'Carlos E. Santos', óbito 2023-04-10, endereço diferente — Jaro-Winkler ~0.89 em nome, mas data morte apenas 26 dias depois (coerente).",
+  "titulo": "Linkage SINASC-SIM: mortalidade infantil",
+  "explicacao": "Linkage SINASC-SIM estuda mortalidade infantil e neonatal. Mesma mãe + mesmo período (0-364 dias) + data parto = morte precoce. Desafios: RN não tem CPF ao nascer; foco em nome completo, data nascimento precisa; óbitos fora de maternidade (casa, outro estado) têm dados incompletos no SIM. Requer análise de gestational age para diferenciar neonatal de pós-neonatal.",
+  "exemplo": "SINASC: RN 'Carlos Eduardo Santos', 2023-03-15, mãe 'Rosana Santos'; SIM: 'Carlos E. Santos', óbito 2023-04-10, endereço diferente, Jaro-Winkler ~0.89 em nome, mas data morte apenas 26 dias depois (coerente).",
   "pergunta_reflexao": "Óbitos de RN fora do hospital podem estar registrados com endereço da mãe no SIM, mas qual é o risco de linkar um RN a um óbito de indivíduo sem relação?"
  },
  {
@@ -2548,7 +2548,7 @@
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "Linkage para tuberculose e hanseníase",
   "explicacao": "Tuberculose e hanseníase em SINAN requerem deduplicação e linkage com resultados de teste (LACEN/LPC). Desafios: TB recorrente versus novo caso (decisão clínica, não técnica); hanseníase com longos períodos de latência; nomes podem mudar (casamento, migração). Linkage de diagnósticos: mesma pessoa, mesmo agravo, diferença > 1 ano = novo episódio; < 6 meses = recaída.",
-  "exemplo": "SINAN TB: 'José', 45a, set/2022, positivo; jan/2023: 'José Silva', 45a, mesmo município, positivo novamente — recaída (6 meses) ou novo contato de TB?",
+  "exemplo": "SINAN TB: 'José', 45a, set/2022, positivo; jan/2023: 'José Silva', 45a, mesmo município, positivo novamente, recaída (6 meses) ou novo contato de TB?",
   "pergunta_reflexao": "Como você distinguiria entre reinfecção, recaída e falha terapêutica apenas com registros de SINAN sem prontuário clínico?"
  },
  {
@@ -2651,7 +2651,7 @@
   "dia": 332,
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "Lições aprendidas em produção",
-  "explicacao": "Em produção SUS, lições cruciais emergem: qualidade de input varia dramaticamente entre regiões; blocking inadequado causa timeout em Spark; oculto viés de cobertura em populações marginalizadas. Versionamento de regras é essencial—mudança em pesos Fellegi-Sunter impacta milhões. Monitoramento contínuo de taxa de match e distribuição de scores detecta anomalias. Documentação de decisões (por que excluir campo X?) viabiliza auditoria e replicação.",
+  "explicacao": "Em produção SUS, lições cruciais emergem: qualidade de input varia dramaticamente entre regiões; blocking inadequado causa timeout em Spark; oculto viés de cobertura em populações marginalizadas. Versionamento de regras é essencial-mudança em pesos Fellegi-Sunter impacta milhões. Monitoramento contínuo de taxa de match e distribuição de scores detecta anomalias. Documentação de decisões (por que excluir campo X?) viabiliza auditoria e replicação.",
   "exemplo": "Versão 1.2: aumentar peso de CPF→0.9 reduziu falsos positivos em 15%, mas perdeu 8% de matches em registros antigos sem CPF. Trade-off documentado e reversível.",
   "pergunta_reflexao": "Como você estruturaria CI/CD para mudar regras de linkage sem interromper pipelines noturnos que alimentam painéis públicos?"
  },
@@ -2659,7 +2659,7 @@
   "dia": 333,
   "modulo": "11. Casos reais em saúde pública",
   "titulo": "Revisão do módulo 11",
-  "explicacao": "Consolidação do módulo 11: linkage em saúde pública é engenharia social, não apenas técnica. Decisões sobre sensibilidade vs. especificidade refletem impacto real em políticas públicas. Casos reais revelam que automatizar 100% é armadilha—deixar margem para revisão humana em scores borderline é melhor que forçar decisão binária. Governança de dados e rastreabilidade superam sofisticação de algoritmos.",
+  "explicacao": "Consolidação do módulo 11: linkage em saúde pública é engenharia social, não apenas técnica. Decisões sobre sensibilidade vs. especificidade refletem impacto real em políticas públicas. Casos reais revelam que automatizar 100% é armadilha-deixar margem para revisão humana em scores borderline é melhor que forçar decisão binária. Governança de dados e rastreabilidade superam sofisticação de algoritmos.",
   "exemplo": "Scores 0.5-0.7: aplicar heurística (mesma data nascimento exata?) antes de descartar. Encontrou 2% de verdadeiros matches que modelo puro descartaria.",
   "pergunta_reflexao": "Qual seria seu critério para decidir se um score borderline deve ser revisado manualmente ou descartado em produção?"
  },
@@ -2716,7 +2716,7 @@
   "modulo": "12. Revisão e tópicos avançados",
   "titulo": "Revisão: ML e LLMs",
   "explicacao": "Revisão avançada: ML e LLMs expandem horizonte. ML supervisionado (gradient boosting, neural nets) aprendem pesos automaticamente, substituindo Fellegi-Sunter manual. LLMs geram features textuais (semântica de endereço), ou até inferem intenção (\"Silva\" vs \"Silveira\" em contexto). Desafios: dados rotulados para treino (caro em saúde), interpretabilidade (black-box inaceitável em auditoria), generalização a novas regiões. Hibridação (regras + ML) oferece balanço prático.",
-  "exemplo": "BERT fine-tuned em pares SUS identificou sutilezas que Jaro-Winkler perdia (45% recall↑), mas foi 10x mais lento—batching em GPU viabilizou.",
+  "exemplo": "BERT fine-tuned em pares SUS identificou sutilezas que Jaro-Winkler perdia (45% recall↑), mas foi 10x mais lento-batching em GPU viabilizou.",
   "pergunta_reflexao": "Vale investir em modelo ML sofisticado se 85% da variância de erro já é capturada por regras simples e bem-calibradas no seu contexto?"
  },
  {
@@ -2898,24 +2898,24 @@
  {
   "dia": 363,
   "modulo": "12. Revisão e tópicos avançados",
-  "titulo": "Seu mestrado e o linkage: conectando pesquisa e prática",
-  "explicacao": "O linkage em produção (SUS, Spark, Splink) é laboratório vivo para pesquisa. Seus desafios reais—escalabilidade, qualidade heterogênea, mudanças temporais—são problemas abertos. Articule como experimentos locais informam hipóteses; como métrica de linkage se torna contribuição científica; como publicar sem violar confidencialidade. Mestrado amplifica seu impacto prático.",
-  "exemplo": "Problema produção: determinístico não escala. Hipótese mestrado: clustering hierárquico + probabilístico reduz falsos positivos. Paper: validação em dataset sintético + impacto SUS anonimizado.",
-  "pergunta_reflexao": "Quais resultados de seu pipeline atual poderiam se tornar paper se generalizados e validados rigorosamente?"
+  "titulo": "Mestrado e mercado: conectando pesquisa e prática",
+  "explicacao": "Pesquisa em record linkage explora métodos novos: aprendizado ativo, neural networks, graph-based matching. Indústria prioriza: robustez, explicabilidade, manutenibilidade e custo. Doutorado permite especializar em algoritmos; mestrado profissional em pipeline e arquitetura. Mercado internacional (EUA, Europa, Ásia) valoriza publication e open source. Brasil cresce em demanda de linkage para saúde pública, governo e varejo: há carreira sólida sem sair do país.",
+  "exemplo": "Publicar artigo sobre linkage com dados públicos de saúde eleva perfil global. Contribuir em Splink (open source) demonstra expertise. Bancos brasileiros contratam especialistas em linkage para detecção de fraude.",
+  "pergunta_reflexao": "Qual seu objetivo: ser especialista técnico em um domínio (saúde, finança), ou pesquisador de métodos? Qual desses caminhos alinha melhor com seu mercado-alvo?"
  },
  {
   "dia": 364,
   "modulo": "12. Revisão e tópicos avançados",
   "titulo": "Grandes perguntas em aberto em record linkage",
-  "explicacao": "Record linkage permanece em aberto: escalabilidade a escala web (bilhões), linkage dinâmico e incremental, explicabilidade de decisões (IA responsável), fusão de múltiplas fontes heterogêneas com confiança calibrada, e transferência entre domínios. No Brasil, SUS e IBGE impõem desafios únicos. Pesquisa aplicada aqui tem valor alto.",
-  "exemplo": "Aberto: como atualizar scores linkage incrementalmente quando 10% dos registros SUS mudam mensalmente sem reprocessar tudo?",
-  "pergunta_reflexao": "Qual dessas perguntas abertas você enfrentou ou enfrentará em seus projetos? Como você resolveu (ou gostaria de resolver)?"
+  "explicacao": "Questões ainda sem resposta consensual: Como medir qualidade de linkage sem ground truth completo? Como capturar mudanças longitudinais (um CPF, múltiplas pessoas)? Como lidar com privacidade diferencial em linkage? Como automatizar detecção de regras sem expert humano? Aprendizado de máquina promete, mas exige labeled data raro. Pesquisa ativa em semi-supervised e self-supervised matching.",
+  "exemplo": "Mulher casada muda de nome: é match ou não? Sistema atual diz sim, mas 1% dos matches quebram após 6 meses por mudanças. Pesquisa: como modelar transações demográficas?",
+  "pergunta_reflexao": "Qual dessas questões em aberto você já enfrentou na prática? Como resolveu manualmente e por que não automatizia?"
  },
  {
   "dia": 365,
   "modulo": "12. Revisão e tópicos avançados",
   "titulo": "Encerramento do ano e plano para o próximo ciclo",
-  "explicacao": "Você percorreu fundamentos, métodos probabilísticos e determinísticos, escalabilidade, privacidade e além. Consolidou prática (Spark, Splink, SUS) com teoria (mestrado). Para o próximo ciclo: escolha 1–2 contribuições focadas, articule com comunidade, implemente em produção, publique. Linkage é campo em crescimento; sua perspectiva Brasil é rara.",
+  "explicacao": "Você percorreu fundamentos, métodos probabilísticos e determinísticos, escalabilidade, privacidade e além. Consolidou prática (Spark, Splink, SUS) com teoria (mestrado). Para o próximo ciclo: escolha 1-2 contribuições focadas, articule com comunidade, implemente em produção, publique. Linkage é campo em crescimento; sua perspectiva Brasil é rara.",
   "exemplo": "Ciclo próximo: (1) Publicar benchmark Splink vs. métodos clássicos em dados SUS anonimizados; (2) Implementar PPRL incremental em pipeline atual.",
   "pergunta_reflexao": "Qual é seu objetivo principal para os próximos 12 meses: aprofundar um método, resolver um problema do SUS ou publicar pesquisa?"
  }

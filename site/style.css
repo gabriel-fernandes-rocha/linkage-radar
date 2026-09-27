@@ -112,3 +112,18 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .fit { font-weight: 600; color: var(--accent); }
 #abertas .list { display: grid; gap: 0 24px; }
 @media (min-width: 820px) { #abertas .list { grid-template-columns: 1fr 1fr; } #abertas .item:nth-child(2) { border-top: 0; padding-top: 4px; } }
+
+.reqs { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 8px; }
+.chip { font-size: .72rem; border-radius: 999px; padding: 1px 8px; border: 1px solid var(--line); }
+.chip.must { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
+.chip.nice { color: var(--muted); }
+#skills select { margin: 4px 0 10px; }
+.bar-row { display: grid; grid-template-columns: minmax(120px, 46%) 1fr 38px; gap: 8px; align-items: center; padding: 3px 0; font-size: .85rem; }
+.bar-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar { display: flex; height: 12px; background: var(--line); border-radius: 6px; overflow: hidden; }
+.bar-must { background: var(--accent); }
+.bar-nice { background: color-mix(in srgb, var(--accent) 35%, transparent); }
+.bar-pct { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.legend { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: middle; }
+.legend.must { background: var(--accent); }
+.legend.nice { background: color-mix(in srgb, var(--accent) 35%, transparent); }

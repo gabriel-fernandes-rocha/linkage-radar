@@ -12,10 +12,10 @@ import sys
 import time
 from datetime import date, timedelta
 
-from common import DATA, load_config, log, today
+from common import DATA, load_config, log, no_dash, today
 
 MAX_CHARS = 2600  # o envio é dividido em partes pelo limite do CallMeBot
-TOP_OPEN = 5
+TOP_JOBS = 3
 
 
 def _short(text: str, n: int) -> str:
@@ -28,82 +28,54 @@ def _first_sentence(text: str) -> str:
 
 
 def _compat(it: dict) -> str:
-    return f"🎯 {round(it['encaixe'] * 100)}% compatível · " if it.get("encaixe") else ""
+    return f"🎯 {round(it['encaixe'] * 100)}% compatível" if it.get("encaixe") else "🎯 compatibilidade n/d"
 
 
 def _by_compat(jobs: list[dict]) -> list[dict]:
     return sorted(jobs, key=lambda j: j.get("encaixe", 0), reverse=True)
 
 
-def _line(kind: str, it: dict) -> str:
-    if kind in ("vagas", "abertas"):
-        where = f" ({it['local']})" if it.get("local") else ""
-        return f"• {_compat(it)}{_short(it['titulo'], 70)} – {it.get('empresa', '')}{where} {it['url']}"
-    if kind == "eventos":
-        when = f" ({it['data']})" if it.get("data") else ""
-        return f"• [Evento] {_short(it['titulo'], 80)}{when} {it['url']}"
-    if kind == "papers":
-        resumo = _short(_first_sentence(it.get("resumo", "")), 90)
-        return f"• [Paper] {_short(it['titulo'], 80)}" + (f" – {resumo}" if resumo else "") + f" {it['url']}"
-    return f"• [LinkedIn] {_short(_first_sentence(it.get('resumo') or it['titulo']), 90)} {it['url']}"
-
-
-TITLES = {
-    "vagas": "💼 VAGAS NOVAS (mais compatíveis primeiro)",
-    "abertas": "📋 VAGAS ABERTAS MAIS COMPATÍVEIS COM VOCÊ",
-    "eventos": "📅 EVENTOS NO BRASIL",
-    "papers": "📄 PUBLICAÇÕES",
-    "linkedin": "🔗 NO LINKEDIN",
-}
+def _job_block(pos: int, it: dict, is_new: bool) -> list[str]:
+    where = f" · {it['local']}" if it.get("local") else ""
+    lines = [f"{pos}. {'🆕 ' if is_new else ''}{_short(it['titulo'], 80)}",
+             f"   {it.get('empresa') or it.get('fonte', '')}{where}",
+             f"   {_compat(it)}"]
+    must = (it.get("requisitos") or {}).get("obrigatorios", [])
+    if must:
+        lines.append(f"   Pede: {', '.join(must[:6])}")
+    lines.append(f"   {it['url']}")
+    return lines
 
 
 def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None) -> str:
-    """Mensagem 1: vagas, eventos, papers e LinkedIn (a aula vai numa mensagem própria)."""
+    """Mensagem 1: só as 3 vagas mais compatíveis (abertas, incluindo as de hoje) + contadores."""
     d = date.fromisoformat(rep["data"])
     new_urls = {j["url"] for j in rep.get("vagas", [])}
-    sections = {
-        "vagas": _by_compat(rep.get("vagas", [])),
-        # as abertas mais compatíveis que NÃO são de hoje (as de hoje já aparecem acima)
-        "abertas": [j for j in _by_compat(open_jobs or []) if j["url"] not in new_urls][:TOP_OPEN],
-        "eventos": rep.get("eventos", []),
-        "papers": rep.get("papers", []),
-        "linkedin": rep.get("linkedin", []),
-    }
-    abertas = rep.get("vagas_abertas_total", len(open_jobs or []))
-    header = [
-        f"📡 Linkage Radar — {d:%d/%m}",
-        f"💼 Vagas novas: {len(sections['vagas'])} | 📋 Abertas no seu perfil: {abertas}",
-        f"📅 Eventos: {len(sections['eventos'])} | 📄 Papers: {len(sections['papers'])} | "
-        f"🔗 LinkedIn: {len(sections['linkedin'])}",
-        "🎯 = compatibilidade da vaga com o seu perfil (stack, senioridade, idioma e local)",
-    ]
-    footer = [f"Ver tudo: {site_url}"]
-    total = sum(len(v) for v in sections.values())
-    if not total:
-        return "\n".join(header + ["", "Nada novo hoje ✅"] + footer)
+    pool = {j["url"]: j for j in (open_jobs or [])}
+    for j in rep.get("vagas", []):
+        pool.setdefault(j["url"], j)
+    top = _by_compat(list(pool.values()))[:TOP_JOBS]
 
-    budget = MAX_CHARS - len("\n".join(header + footer))
-    body = []
-    for kind, items in sections.items():
-        if not items:
-            continue
-        block = ["", TITLES[kind]]
-        shown = 0
-        for it in items:
-            line = _line(kind, it)
-            cost = len(line) + 1 + (len("\n".join(block)) + 1 if not shown else 0)
-            if cost > budget:
-                break
-            if not shown:
-                budget -= len("\n".join(block)) + 1
-            block.append(line)
-            budget -= len(line) + 1
-            shown += 1
-        if shown:
-            if shown < len(items) and kind != "abertas":
-                block.append(f"(+{len(items) - shown} no site)")
-            body += block
-    return "\n".join(header + body + ["", *footer])
+    lines = [
+        f"📡 Linkage Radar | {d:%d/%m}",
+        f"💼 {len(new_urls)} vagas novas hoje · 📋 {rep.get('vagas_abertas_total', len(pool))} abertas no seu perfil",
+        "",
+    ]
+    if top:
+        lines.append(f"🏆 TOP {len(top)} VAGAS MAIS COMPATÍVEIS COM VOCÊ")
+        for i, job in enumerate(top, 1):
+            lines += _job_block(i, job, job["url"] in new_urls) + [""]
+    else:
+        lines += ["Nenhuma vaga aberta no seu perfil hoje ✅", ""]
+    extras = [f"{n} {label}" for n, label in (
+        (len(rep.get("papers", [])), "📄 papers"),
+        (len(rep.get("linkedin", [])), "🔗 posts"),
+        (len(rep.get("eventos", [])), "📅 eventos"),
+    ) if n]
+    if extras:
+        lines.append("No site também: " + " · ".join(extras))
+    lines.append(f"Todas as vagas e o ranking de requisitos: {site_url}")
+    return no_dash("\n".join(lines))
 
 
 def build_lesson_message(rep: dict, site_url: str) -> str | None:
@@ -112,7 +84,7 @@ def build_lesson_message(rep: dict, site_url: str) -> str | None:
     if not a or not a.get("explicacao"):
         return None
     parts = [
-        f"🎓 Aula {a['dia']} de 365 — {a['titulo']}",
+        f"🎓 Aula {a['dia']} de 365: {a['titulo']}",
         f"📚 {a['modulo']}",
         "",
         a["explicacao"].strip(),
@@ -122,7 +94,7 @@ def build_lesson_message(rep: dict, site_url: str) -> str | None:
     if a.get("pergunta_reflexao"):
         parts += ["", "🤔 Para pensar:", a["pergunta_reflexao"].strip()]
     parts += ["", f"Aulas anteriores: {site_url}"]
-    return "\n".join(parts)
+    return no_dash("\n".join(parts))
 
 
 def load_report(cfg: dict, day: str | None) -> dict:

@@ -1,4 +1,4 @@
-// Linkage Radar — site estático. Lê data/index.json e data/AAAA-MM-DD.json.
+// Linkage Radar: site estático. Lê data/index.json e data/AAAA-MM-DD.json.
 // Localmente (python -m http.server na raiz do repo, abrindo /site/) os dados ficam em ../
 const BASE = location.pathname.includes("/site/") ? "../" : "./";
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -17,12 +17,19 @@ async function getJSON(path) {
   return r.json();
 }
 
+const reqHTML = (r) => {
+  if (!r || !(r.obrigatorios?.length || r.desejaveis?.length)) return "";
+  const chips = (xs, cls) => xs.map((x) => `<span class="chip ${cls}">${esc(x)}</span>`).join("");
+  return `<p class="reqs">${chips(r.obrigatorios || [], "must")}${chips(r.desejaveis || [], "nice")}</p>`;
+};
+
 const jobHTML = (v, withAge = false) => `
     <h3>${withAge && v.nova ? '<span class="badge">NOVA</span>' : ""}${esc(v.titulo)}</h3>
     <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}${
       withAge && v.desde ? " · desde " + fmtDate(v.desde) : ""}</p>
     ${v.encaixe ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span>${
-      v.nota_perfil ? " — " + esc(v.nota_perfil) : ""}</p>` : ""}
+      v.nota_perfil ? ". " + esc(v.nota_perfil) : ""}</p>` : ""}
+    ${reqHTML(v.requisitos)}
     ${v.motivo ? `<p class="why">✔ ${esc(v.motivo)}</p>` : ""}
     <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`;
 
@@ -113,8 +120,36 @@ async function loadOpenJobs() {
   }
 }
 
+let skillsData = null;
+function renderSkills(period) {
+  const d = skillsData?.[period];
+  const card = $("#skills");
+  if (!d || !d.ranking.length) {
+    $(".list", card).innerHTML = `<p class="meta">O ranking aparece após a próxima coleta.</p>`;
+    return;
+  }
+  $("#skills-n").textContent = `${d.vagas_analisadas} vagas analisadas`;
+  const max = d.ranking[0].vagas;
+  $(".list", card).innerHTML = d.ranking.slice(0, 30).map((s) => `
+    <div class="bar-row" title="${s.obrigatorio} como obrigatório, ${s.desejavel} como desejável">
+      <span class="bar-name">${esc(s.nome)}</span>
+      <span class="bar"><span class="bar-must" style="width:${(100 * s.obrigatorio) / max}%"></span><span class="bar-nice" style="width:${(100 * s.desejavel) / max}%"></span></span>
+      <span class="bar-pct">${s.pct}%</span>
+    </div>`).join("");
+}
+
+async function loadSkills() {
+  try {
+    skillsData = await getJSON("data/skills.json");
+  } catch {}
+  const sel = $("#skills-period");
+  sel.addEventListener("change", () => renderSkills(sel.value));
+  renderSkills(sel.value);
+}
+
 (async function init() {
   loadOpenJobs();
+  loadSkills();
   const sel = $("#day");
   let dates = [];
   try {

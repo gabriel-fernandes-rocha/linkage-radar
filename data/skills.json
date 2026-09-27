@@ -1,0 +1,885 @@
+{
+ "atualizado_em": "2026-09-28",
+ "geral": {
+  "vagas_analisadas": 18,
+  "ranking": [
+   {
+    "nome": "Entity Resolution",
+    "vagas": 13,
+    "pct": 72,
+    "obrigatorio": 13,
+    "desejavel": 0
+   },
+   {
+    "nome": "SQL",
+    "vagas": 9,
+    "pct": 50,
+    "obrigatorio": 9,
+    "desejavel": 0
+   },
+   {
+    "nome": "Record Linkage",
+    "vagas": 8,
+    "pct": 44,
+    "obrigatorio": 8,
+    "desejavel": 0
+   },
+   {
+    "nome": "Python",
+    "vagas": 7,
+    "pct": 39,
+    "obrigatorio": 7,
+    "desejavel": 0
+   },
+   {
+    "nome": "Master Data Management",
+    "vagas": 7,
+    "pct": 39,
+    "obrigatorio": 5,
+    "desejavel": 2
+   },
+   {
+    "nome": "Machine Learning",
+    "vagas": 6,
+    "pct": 33,
+    "obrigatorio": 3,
+    "desejavel": 3
+   },
+   {
+    "nome": "Spark",
+    "vagas": 5,
+    "pct": 28,
+    "obrigatorio": 5,
+    "desejavel": 0
+   },
+   {
+    "nome": "Databricks",
+    "vagas": 5,
+    "pct": 28,
+    "obrigatorio": 4,
+    "desejavel": 1
+   },
+   {
+    "nome": "Identity Resolution",
+    "vagas": 5,
+    "pct": 28,
+    "obrigatorio": 5,
+    "desejavel": 0
+   },
+   {
+    "nome": "Data Quality",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 4,
+    "desejavel": 0
+   },
+   {
+    "nome": "Data Governance",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 3,
+    "desejavel": 1
+   },
+   {
+    "nome": "Deduplication",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 4,
+    "desejavel": 0
+   },
+   {
+    "nome": "Probabilistic Matching",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 3,
+    "desejavel": 1
+   },
+   {
+    "nome": "AWS",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 1,
+    "desejavel": 2
+   },
+   {
+    "nome": "Distributed Systems",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 3,
+    "desejavel": 0
+   },
+   {
+    "nome": "NLP",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 2,
+    "desejavel": 1
+   },
+   {
+    "nome": "Splink",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 2,
+    "desejavel": 1
+   },
+   {
+    "nome": "LLMs",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 1,
+    "desejavel": 2
+   },
+   {
+    "nome": "Snowflake",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 3,
+    "desejavel": 0
+   },
+   {
+    "nome": "Golden Records",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 2,
+    "desejavel": 1
+   },
+   {
+    "nome": "Delta Lake",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Knowledge Graphs",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 0,
+    "desejavel": 2
+   },
+   {
+    "nome": "Elasticsearch",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 0,
+    "desejavel": 2
+   },
+   {
+    "nome": "Blocking",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "API Integration",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "HubSpot",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Fuzzy Matching",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "CRM",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "PostgreSQL",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Modeling",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Survivorship",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Ad Tech",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Java",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "GCP",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Hugging Face",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "spaCy",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "API Design",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Record Linking",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Tableau",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Lineage",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "MDM Platforms",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "FHIR",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "HL7",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Healthcare Data",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "HIPAA",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Matching",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Azure",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "MLflow",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Production ML Pipelines",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Power BI",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Large-Scale Data Systems",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Functional Programming",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Clojure",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Cloud Platforms",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Candidate Generation",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Transliteration",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Algolia",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Typesense",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Fellegi-Sunter",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Multilingual Data",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   }
+  ]
+ },
+ "ultimos_90_dias": {
+  "vagas_analisadas": 18,
+  "ranking": [
+   {
+    "nome": "Entity Resolution",
+    "vagas": 13,
+    "pct": 72,
+    "obrigatorio": 13,
+    "desejavel": 0
+   },
+   {
+    "nome": "SQL",
+    "vagas": 9,
+    "pct": 50,
+    "obrigatorio": 9,
+    "desejavel": 0
+   },
+   {
+    "nome": "Record Linkage",
+    "vagas": 8,
+    "pct": 44,
+    "obrigatorio": 8,
+    "desejavel": 0
+   },
+   {
+    "nome": "Python",
+    "vagas": 7,
+    "pct": 39,
+    "obrigatorio": 7,
+    "desejavel": 0
+   },
+   {
+    "nome": "Master Data Management",
+    "vagas": 7,
+    "pct": 39,
+    "obrigatorio": 5,
+    "desejavel": 2
+   },
+   {
+    "nome": "Machine Learning",
+    "vagas": 6,
+    "pct": 33,
+    "obrigatorio": 3,
+    "desejavel": 3
+   },
+   {
+    "nome": "Spark",
+    "vagas": 5,
+    "pct": 28,
+    "obrigatorio": 5,
+    "desejavel": 0
+   },
+   {
+    "nome": "Databricks",
+    "vagas": 5,
+    "pct": 28,
+    "obrigatorio": 4,
+    "desejavel": 1
+   },
+   {
+    "nome": "Identity Resolution",
+    "vagas": 5,
+    "pct": 28,
+    "obrigatorio": 5,
+    "desejavel": 0
+   },
+   {
+    "nome": "Data Quality",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 4,
+    "desejavel": 0
+   },
+   {
+    "nome": "Data Governance",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 3,
+    "desejavel": 1
+   },
+   {
+    "nome": "Deduplication",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 4,
+    "desejavel": 0
+   },
+   {
+    "nome": "Probabilistic Matching",
+    "vagas": 4,
+    "pct": 22,
+    "obrigatorio": 3,
+    "desejavel": 1
+   },
+   {
+    "nome": "AWS",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 1,
+    "desejavel": 2
+   },
+   {
+    "nome": "Distributed Systems",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 3,
+    "desejavel": 0
+   },
+   {
+    "nome": "NLP",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 2,
+    "desejavel": 1
+   },
+   {
+    "nome": "Splink",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 2,
+    "desejavel": 1
+   },
+   {
+    "nome": "LLMs",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 1,
+    "desejavel": 2
+   },
+   {
+    "nome": "Snowflake",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 3,
+    "desejavel": 0
+   },
+   {
+    "nome": "Golden Records",
+    "vagas": 3,
+    "pct": 17,
+    "obrigatorio": 2,
+    "desejavel": 1
+   },
+   {
+    "nome": "Delta Lake",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Knowledge Graphs",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 0,
+    "desejavel": 2
+   },
+   {
+    "nome": "Elasticsearch",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 0,
+    "desejavel": 2
+   },
+   {
+    "nome": "Blocking",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "API Integration",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "HubSpot",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Fuzzy Matching",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "CRM",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "PostgreSQL",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Modeling",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Survivorship",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Ad Tech",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Java",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "GCP",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
+    "nome": "Hugging Face",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "spaCy",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "API Design",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Record Linking",
+    "vagas": 2,
+    "pct": 11,
+    "obrigatorio": 2,
+    "desejavel": 0
+   },
+   {
+    "nome": "Tableau",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Lineage",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "MDM Platforms",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "FHIR",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "HL7",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Healthcare Data",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "HIPAA",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Matching",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Azure",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "MLflow",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Production ML Pipelines",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Power BI",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Large-Scale Data Systems",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Functional Programming",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Clojure",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Cloud Platforms",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Candidate Generation",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Transliteration",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Algolia",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Typesense",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Fellegi-Sunter",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Multilingual Data",
+    "vagas": 1,
+    "pct": 6,
+    "obrigatorio": 0,
+    "desejavel": 1
+   }
+  ]
+ },
+ "senioridade": [
+  [
+   "senior",
+   12
+  ],
+  [
+   "pleno",
+   4
+  ],
+  [
+   "staff/principal",
+   2
+  ]
+ ],
+ "modalidade": [
+  [
+   "nao_informado",
+   11
+  ],
+  [
+   "presencial",
+   3
+  ],
+  [
+   "remoto",
+   2
+  ],
+  [
+   "hibrido",
+   2
+  ]
+ ]
+}

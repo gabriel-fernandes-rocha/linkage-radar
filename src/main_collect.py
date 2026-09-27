@@ -12,10 +12,11 @@ import json
 from datetime import timedelta
 
 import lesson
+import job_archive
 import open_jobs
 from common import DATA, load_config, log, today
 from dedup import Seen, unique
-from filters import keywords, llm_judge
+from filters import keywords, llm_judge, requirements
 from sources import events, jobs, linkedin, papers
 
 SECTIONS = [  # (chave no JSON, módulo, limite em config.limits)
@@ -45,7 +46,8 @@ def run(use_llm: bool = True, full_scan: bool = False) -> dict:
     stats = {}
     approved_all: dict[str, list[dict]] = {}
     raw_jobs: list[dict] = []
-    bootstrap = not open_jobs.PATH.exists()  # 1ª vez: rejulga vagas já vistas para montar a carteira
+    # 1ª vez: rejulga vagas já vistas para montar a carteira e o arquivo com requisitos
+    bootstrap = not (open_jobs.PATH.exists() and job_archive.ARCHIVE.exists())
 
     for key, module, limit_key in SECTIONS:
         raw = module.collect(cfg)
@@ -70,6 +72,9 @@ def run(use_llm: bool = True, full_scan: bool = False) -> dict:
                 it["tipo"], it["fonte"] = "vaga", "LinkedIn Jobs"
             approved_all["vagas"] += posted_jobs
             report["vagas"] = (report["vagas"] + posted_jobs)[: cfg["limits"]["max_jobs"]]
+        if use_llm and key in ("vagas", "linkedin"):  # requisitos antes de descartar o texto
+            requirements.extract([it for it in approved_all.get("vagas", []) + approved
+                                  if it["tipo"] == "vaga" and "requisitos" not in it], cfg)
         approved_all[key] = list(approved)
         final = approved[: cfg["limits"][limit_key]]
         for it in final:
@@ -84,6 +89,9 @@ def run(use_llm: bool = True, full_scan: bool = False) -> dict:
     else:
         abertas = open_jobs.load()
     report["vagas_abertas_total"] = len(abertas)
+    if use_llm:
+        archive = job_archive.update(approved_all.get("vagas", []), abertas, day)
+        report["vagas_arquivadas_total"] = len(archive)
 
     report["aula"] = lesson.for_date(cfg, edition.date())
     report["estatisticas"] = stats

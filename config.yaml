@@ -22,7 +22,7 @@ web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   events_weekdays: [0, 3]   # eventos mudam pouco: segunda e quinta
   events_max_uses: 3
 
-serpapi:                    # plano grátis ~250 buscas/mês: LinkedIn ~30 + eventos ~8 + vagas ~120
+serpapi:                    # plano grátis ~250 buscas/mês: LinkedIn ~30 + posts de vagas ~30 + eventos ~8 + vagas ~120
   jobs_searches_per_day: 4
   jobs_pages_per_term: 2
 
@@ -31,7 +31,7 @@ open_jobs:
 
 # Seu perfil — o juiz usa isto para dar a nota de encaixe das vagas
 perfil: >-
-  Engenheiro de dados (CIDACS/Fiocruz, desde 2024) especializado em record linkage, resolução de entidades
+  Engenheiro de dados (instituto de pesquisa em saúde pública, desde 2024) especializado em record linkage, resolução de entidades
   e matching determinístico/probabilístico em produção com bilhões de registros (saúde, proteção social,
   registro civil). Pipeline completo: ingestão, normalização, blocking, scoring, classificação e QA.
   Stack: Spark, Python, SQL, Elasticsearch, Splink, RapidFuzz, scikit-learn. Mestrado em Ciência da
@@ -76,6 +76,13 @@ queries:
     - "entity resolution"
     - "geocodificação"
     - "vinculação de bases de dados"
+  social_jobs:                # vagas anunciadas em posts de redes sociais
+    - "entity resolution"
+    - "record linkage"
+    - "entity matching"
+    - "identity resolution"
+    - "data matching"
+    - "master data management"
   linkedin:
     - "record linkage"
     - "entity resolution"
@@ -84,6 +91,15 @@ queries:
     - "pareamento de registros"
     - "address matching geocoding"
     - "splink"
+
+social_sites:
+  - linkedin.com/posts
+  - x.com
+  - twitter.com
+  - reddit.com
+  - facebook.com
+  - instagram.com
+  - threads.net
 
 event_sites:          # buscas "site:" para eventos no Brasil
   - sympla.com.br

@@ -21,16 +21,15 @@ import syllabus  # noqa: E402
 OUT = ROOT / "curriculum" / "lessons.json"
 MODEL = "claude-haiku-4-5"
 
-PROMPT = """Você é professor de Record Linkage / Entity Resolution / Geocodificação, ensinando um engenheiro \
-de dados brasileiro que já trabalha com linkage em produção (Spark, Python, Splink, Elasticsearch, bases do SUS) \
-e faz mestrado em Ciência da Computação. Escreva as aulas abaixo em português do Brasil.
+PROMPT = """Você é professor de Record Linkage / Entity Resolution / Geocodificação, ensinando um engenheiro de dados brasileiro que quer crescer na carreira e no mercado (Brasil e exterior). Ele já trabalha com linkage em produção (Spark, Python, SQL, Splink, Elasticsearch). Escreva as aulas abaixo em português do Brasil.
 
 Para cada aula, gere:
 - "explicacao": no máximo 120 palavras, tom de professor, tecnicamente correta, concreta
 - "exemplo": curto (1-3 linhas; pode ser um mini-cálculo, trecho de código ou caso real)
-- "pergunta_reflexao": 1 pergunta que faça pensar na prática dele
+- "pergunta_reflexao": 1 pergunta que faça pensar na prática profissional dele
 
-Não invente citações, números de artigos ou estatísticas específicas. Responda SOMENTE um array JSON:
+Regras: não cite o nome do empregador dele nem de instituições específicas onde ele trabalha (ex.: CIDACS, Fiocruz); use exemplos de mercado (bancos, varejo, saúde, governo, big techs). Não use travessão (— ou –): use vírgula, dois-pontos ou ponto. Não invente citações, números de artigos ou estatísticas específicas.
+Responda SOMENTE um array JSON:
 [{"dia": n, "explicacao": "...", "exemplo": "...", "pergunta_reflexao": "..."}]
 
 Aulas (dia, módulo, título):

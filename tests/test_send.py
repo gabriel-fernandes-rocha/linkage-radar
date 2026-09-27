@@ -7,20 +7,21 @@ from main_send import MAX_CHARS, build_lesson_message, build_message  # noqa: E4
 
 
 def _rep(n):
-    job = {"titulo": "Entity Resolution Engineer " * 3, "empresa": "X", "local": "Remoto", "url": "https://x.co/" + "a" * 60}
-    return {"data": "2026-09-28", "vagas": [job] * n, "eventos": [], "papers": [], "linkedin": [],
+    jobs = [{"titulo": "Entity Resolution Engineer — Remote", "empresa": "X", "local": "Remoto",
+             "url": f"https://x.co/{i}", "encaixe": i / 10} for i in range(n)]
+    return {"data": "2026-09-28", "vagas": jobs, "eventos": [], "papers": [], "linkedin": [],
             "aula": {"dia": 1, "titulo": "Intro", "explicacao": "Record linkage liga registros. Mais texto."}}
 
 
 def test_empty_day():
     msg = build_message(_rep(0), "https://site")
-    assert "Nada novo hoje ✅" in msg and "28/09" in msg
+    assert "Nenhuma vaga aberta" in msg and "28/09" in msg
 
 
 def test_long_message_truncated():
     msg = build_message(_rep(10), "https://site")
     assert len(msg) <= MAX_CHARS
-    assert "Vagas novas: 10" in msg and "Ver tudo: https://site" in msg
+    assert "10 vagas novas hoje" in msg and msg.count("🎯") == 3 and "—" not in msg
 
 
 def test_jobs_sorted_by_compatibility():

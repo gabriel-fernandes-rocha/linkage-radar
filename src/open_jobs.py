@@ -57,8 +57,12 @@ def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: i
     listed_today = {_norm_url(j["url"]) for j in raw_jobs}
     current = load()
     known = {_norm_url(j["url"]) for j in current}
+    fresh = {_norm_url(j["url"]): j for j in new_jobs}
     kept = []
     for job in current:
+        upd = fresh.get(_norm_url(job["url"]))
+        if upd:  # reavaliada hoje: atualiza compatibilidade/requisitos, mantém a data de entrada
+            job.update({k: v for k, v in upd.items() if k not in ("texto", "desde", "nova")})
         age = (date.fromisoformat(day) - date.fromisoformat(job["desde"])).days
         if age > max_age_days:
             log.info("open_jobs: expirou (%dd) %s", age, job["titulo"])

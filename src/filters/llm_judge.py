@@ -5,7 +5,7 @@ import json
 import os
 import re
 
-from common import get, log
+from common import get, log, no_dash
 
 SYSTEM = """Você avalia se itens são relevantes para um especialista em Record Linkage / Entity Matching / \
 Entity Resolution (qualquer tipo de entidade) e Geocodificação tratada como problema de linkage \
@@ -16,6 +16,7 @@ Regras por tipo:
 - vaga: aprove SOMENTE se o foco principal da função for entity matching / record linkage / entity \
 resolution / deduplicação de registros / MDM matching, ou geocodificação / address matching. Vagas genéricas \
 de dados, BI, GIS ou ML que só citam o termo de passagem = reprovar.
+- vaga vinda de POST em rede social (fonte "Post · ..."): aprove só se o post anunciar uma vaga concreta e aberta (quem contrata, qual função) com foco no tema. Post genérico de "open to work", curso ou opinião = reprovar.
 - evento: aprove somente se o tema central for isso E for no Brasil (ou online com organização/foco brasileiro claro). \
 Eventos já encerrados = reprovar.
 - paper: aprove se o problema central for linkage / ER / matching de registros ou entidades / geocodificação.
@@ -28,6 +29,7 @@ Para cada item, responda um objeto: {"id": <id>, "relevante": bool, "confianca":
 "encaixe" e "nota_perfil" valem só para vagas: o quanto a vaga combina com o PERFIL DO LEITOR abaixo \
 (senioridade, stack, idioma, localização/modalidade — presencial fora do Brasil exige visto e reduz muito o \
 encaixe; remoto global ou no Brasil é ideal). Para outros tipos, use encaixe 0 e nota_perfil "".
+Nunca use travessão (— ou –) nos textos: use vírgula, dois-pontos ou ponto.
 Responda SOMENTE com um array JSON com um objeto por item, na mesma ordem."""
 
 
@@ -109,9 +111,9 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
             except (KeyError, ValueError, IndexError, TypeError):
                 continue
             if v.get("relevante") is True and float(v.get("confianca", 0)) >= min_conf:
-                it.update(motivo=v.get("motivo", ""), resumo=v.get("resumo_pt", ""),
+                it.update(motivo=no_dash(v.get("motivo", "")), resumo=no_dash(v.get("resumo_pt", "")),
                           confianca=round(float(v["confianca"]), 2))
                 if it["tipo"] == "vaga" or "/jobs/view/" in it.get("url", ""):
-                    it.update(encaixe=round(float(v.get("encaixe") or 0), 2), nota_perfil=v.get("nota_perfil", ""))
+                    it.update(encaixe=round(float(v.get("encaixe") or 0), 2), nota_perfil=no_dash(v.get("nota_perfil", "")))
                 approved.append(it)
     return approved

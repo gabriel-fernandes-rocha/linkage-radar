@@ -11,7 +11,7 @@ import requests
 
 from common import log
 
-MAX_ENCODED = 850  # folga para phone + apikey + endereço da API dentro dos ~1024
+MAX_ENCODED = 900  # folga para phone + apikey + endereço da API dentro dos ~1024
 
 
 def split(text: str, limit: int = MAX_ENCODED) -> list[str]:

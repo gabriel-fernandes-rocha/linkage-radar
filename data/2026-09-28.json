@@ -1,8 +1,54 @@
 {
   "data": "2026-09-28",
-  "gerado_em": "2026-09-27T18:26-03:00",
+  "gerado_em": "2026-09-27T19:02-03:00",
   "llm": true,
   "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Scientist - Onshore (B)",
+      "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
+      "empresa": "V4C.ai",
+      "local": "Remoto · United States",
+      "fonte": "Workable",
+      "score": 8,
+      "motivo": "Data Scientist em healthcare com MDM, análise de data quality, deduplicação e entity-resolution em datasets de member/provider/patient, alinhado com saúde e linkage.",
+      "resumo": "V4C.ai busca Data Scientist em Databricks e Python para soluções healthcare com foco em MDM, data quality, deduplicação e entity-resolution entre member, provider e patient datasets em Databricks/PySpark.",
+      "confianca": 0.85,
+      "encaixe": 0.75,
+      "nota_perfil": "Alinha perfeitamente em domain (healthcare), stack (Databricks, Python, PySpark, SQL) e especialização (MDM, entity-resolution, deduplicação), remoto nos US; espanhol não requerido, inglês intermediário suficiente.",
+      "requisitos": {
+        "obrigatorios": [
+          "Databricks",
+          "Spark",
+          "Python",
+          "SQL",
+          "Machine Learning",
+          "Master Data Management",
+          "Entity Resolution",
+          "Data Matching",
+          "Deduplication",
+          "Delta Lake",
+          "Data Governance",
+          "Data Quality",
+          "Data Lineage"
+        ],
+        "desejaveis": [
+          "Healthcare Data",
+          "HIPAA",
+          "MDM Platforms",
+          "Azure",
+          "AWS",
+          "MLflow",
+          "Power BI",
+          "Tableau",
+          "FHIR",
+          "HL7",
+          "Production ML Pipelines"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado"
+    },
     {
       "tipo": "vaga",
       "titulo": "Lead Software Development Engineer",
@@ -11,81 +57,155 @@
       "local": "Remoto · Argentina",
       "fonte": "Himalayas",
       "score": 3,
-      "motivo": "Foco central: identity resolution patentado resolvendo bilhões de registros conflitantes em horas; alinhamento direto com record linkage e entity resolution em escala.",
-      "resumo": "Lead Software Development Engineer em Amperity, empresa especializada em identity resolution que transforma bilhões de registros messy/conflitantes em perfis de clientes precisos. Reconstrução da plataforma como AI-first, fundamental para resolução de identidades em escala.",
+      "motivo": "Core business é identity resolution: resolve bilhões de registros contraditórios em um único indivíduo, problema central de record linkage e entity resolution em produção.",
+      "resumo": "Amperity é especializada em identity resolution patentizada para bilhões de registros, resolvendo conflitos e criando visão única do cliente. Contrata lead engineer para reconstruir empresa como IA-first.",
       "confianca": 0.88,
       "encaixe": 0.7,
-      "nota_perfil": "Match técnico excelente (ER/identity resolution, bilhões registros, AI/agents), remoto Argentina é viável (Brasil), mas stack não detalha Spark/Python/Splink; posição sênior de eng. software pode ter foco menos hands-on em matching."
+      "nota_perfil": "Perfeita sinergia técnica (identity resolution em escala), mas remoto na Argentina: não há indicação de foco em saúde/proteção social; salário e timezone podem ser desafio.",
+      "requisitos": {
+        "obrigatorios": [
+          "Distributed Systems",
+          "Cloud Platforms",
+          "Large-Scale Data Systems",
+          "Clojure"
+        ],
+        "desejaveis": [
+          "Functional Programming",
+          "Machine Learning",
+          "Knowledge Graphs",
+          "Probabilistic Matching"
+        ]
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "remoto"
     },
     {
       "tipo": "vaga",
-      "titulo": "Principal Product Manager - Identity",
-      "url": "https://himalayas.app/companies/zoominfo/jobs/principal-product-manager-identity",
-      "empresa": "ZoomInfo",
-      "local": "Remoto · United States",
+      "titulo": "Senior Data Engineer — Entity Resolution / Record Linkage",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Senior-Data-Engineer-Entity-Resolution-Record-Linkage_~022097747252088515405/",
+      "empresa": "Upwork",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "score": 15,
+      "motivo": "Vaga especializada em entity resolution e record linkage com foco em deduplicação e matching sem identificadores únicos confiáveis, problema central da expertise do leitor.",
+      "resumo": "Senior Data Engineer para entity resolution de base de 40-50k registros de livros hebraicos antigos. Desafio principal é matching sem identificadores confiáveis, lidando com múltiplas transliterações e fontes inconsistentes.",
+      "confianca": 0.95,
+      "encaixe": 0.65,
+      "nota_perfil": "Perfeitamente alinhado ao core da especialidade (ER, record linkage, deduplicação); scale pequena mas problema técnico sofisticado; Upwork permite trabalho remoto global.",
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Record Linkage",
+          "Deduplication",
+          "Blocking",
+          "Candidate Generation",
+          "Probabilistic Matching"
+        ],
+        "desejaveis": [
+          "Fellegi-Sunter",
+          "Splink",
+          "fastLink",
+          "Master Data Management",
+          "Knowledge Graphs",
+          "NLP",
+          "LLMs",
+          "Multilingual Data",
+          "Transliteration",
+          "Elasticsearch",
+          "Typesense",
+          "Algolia"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado"
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Integration Engineer - Customer Data Platform (CDP)",
+      "url": "https://himalayas.app/companies/blend360/jobs/integration-engineer-customer-data-platform-cdp",
+      "empresa": "Blend360",
+      "local": "Remoto · Argentina",
       "fonte": "Himalayas",
-      "score": 4,
-      "motivo": "Foco central em identity resolution engine, visitor-to-person e IP-to-company matching — core de record linkage e entity resolution.",
-      "resumo": "Principal PM para liderar estratégia de identity resolution engine em ZoomInfo, responsável por desanonimizar tráfego web, linkar visitantes a empresas/contatos e melhorar taxas de matching. Trabalho direto em resolução de identidades em escala massiva.",
-      "confianca": 0.85,
-      "encaixe": 0.5,
-      "nota_perfil": "Alto relevância técnica em ER/matching, mas é posição de PM remota nos EUA (não requer presença física, porém foco executivo diverge do perfil de eng. dados); requer visa/relocação implícita."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Senior Software Engineer",
-      "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
-      "empresa": "ZoomInfo",
-      "local": "Remoto · United States",
-      "fonte": "Himalayas",
-      "score": 4,
-      "motivo": "Foco explícito em entity resolution, attribute selection, data quality de 400M perfis; sistemas backend em larga escala para transformar dados fragmentados em contatos confiáveis.",
-      "resumo": "Senior Software Engineer na Person Data team de ZoomInfo, construindo sistemas Java de alta throughput que resolvem entidades, selecionam atributos e garantem qualidade de dados de 400 milhões de perfis de contato. Trabalho em infraestrutura de dados e resolução de identidades em escala distribuída.",
-      "confianca": 0.9,
-      "encaixe": 0.45,
-      "nota_perfil": "Match perfeito em ER/entity resolution e escala, mas stack é Java (não Python/Spark principal), remoto EUA pode exigir visa, e foco é engenharia de software vs. dados."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Senior Data Engineer - Financial Crime",
-      "url": "https://jobs.workable.com/view/54WNBXrf7xvDupUZaEakXH/hybrid-senior-data-engineer---financial-crime-in-ho-chi-minh-city-at-gotymex",
-      "empresa": "GoTymeX",
-      "local": "Ho Chi Minh City, Vietnam",
-      "fonte": "Workable",
-      "score": 4,
-      "motivo": "Menciona explicitamente entity resolution, fraud detection e compliance; pipelines em PySpark/Python/SQL em Databricks em larga escala — alinhado com stack e problema.",
-      "resumo": "Senior Data Engineer em Financial Crime (GotymeX), responsável por pipelines de dados em Databricks/PySpark que alimentam fraude detection e entity resolution. Trabalho com datasets complexos e modelos para detecção de risco em tempo real e batch.",
+      "score": 5,
+      "motivo": "Menciona explicitamente data matching, identity resolution e gerenciamento de customer identifiers, embora context seja CDP genérico.",
+      "resumo": "Integration Engineer para CDP (Customer Data Platform) responsável por design de integrações, data pipelines, data matching, identity resolution e gerenciamento de customer identifiers cross-systems. Remoto Argentina.",
       "confianca": 0.8,
-      "encaixe": 0.3,
-      "nota_perfil": "Stack e escala ideais (PySpark, SQL, Databricks), entity resolution presente, mas localização é Vietnam (presencial exigido), fora Brasil; contexto é fraude/crime financeiro, não saúde/proteção social."
+      "encaixe": 0.65,
+      "nota_perfil": "Vaga remota na Argentina com foco em identity resolution e data matching, alinhada com especialidade, stack e modalidade do leitor, embora CDP seja contexto mais genérico que healthtech.",
+      "requisitos": {
+        "obrigatorios": [
+          "API Integration",
+          "REST APIs",
+          "Python",
+          "SQL",
+          "Snowflake",
+          "Identity Resolution",
+          "Audience Matching",
+          "Data Quality"
+        ],
+        "desejaveis": [
+          "CDP",
+          "mParticle",
+          "Segment",
+          "LiveRamp",
+          "Braze",
+          "First-Party Data Activation",
+          "Marketing Technology",
+          "AWS",
+          "Databricks",
+          "Data Governance"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "nao_informado"
     },
     {
       "tipo": "vaga",
-      "titulo": "Staff/Senior Data Scientist, Entity Resolution Team",
-      "url": "https://www.linkedin.com/jobs/view/staff-senior-data-scientist-entity-resolution-team-at-enigma-technologies-inc-4469243125",
-      "empresa": "Enigma Technologies, Inc.",
-      "local": "New York, NY",
+      "titulo": "Enterprise TAM Pipeline (Waterfall API Enrichment, Entity Resolution & Partner Mapping) - Contract to Hire",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Enterprise-TAM-Pipeline-Waterfall-API-Enrichment-Entity-Resolution-Partner-Mapping_~022098143497837661689/",
+      "empresa": "Upwork",
+      "local": "Anywhere",
       "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Vaga explicitamente para Entity Resolution Team; end-to-end desde dados brutos até pipelines e modelos em escala; impacto direto em acurácia e scalability.",
-      "resumo": "Data Scientist para Enigma Entity Resolution Team; trabalhar com transformação de dados em larga escala, modelos estatísticos e pipelines escaláveis em pequeno business intelligence. Responsável por resolver problemas end-to-end (dados brutos a interface cliente) melhorando acurácia.",
-      "confianca": 0.95,
-      "encaixe": 0.65,
-      "nota_perfil": "Presencial New York (exige visto); alinha com stack de ML/data science; Entity Resolution é core, mas foco em small business (não billions de registros); senior é bom nível."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Senior/Staff Data Engineer, Entity Resolution Team",
-      "url": "https://bebee.com/us/jobs/senior-data-engineer-entity-resolution-team-enigma-corporation--lensa-7428_f686229b75d5c13eec49ca7bdacb7cb1fbad8b4b4ee11c397785fb96174fbda9",
-      "empresa": "Enigma Corporation",
-      "local": "United States",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Vaga explicitamente focada em Entity Resolution como core team, com responsabilidades diretas em design e manutenção de pipelines de dados e modelos.",
-      "resumo": "Senior/Staff Data Engineer para equipe de Entity Resolution em empresa de business intelligence. Responsável por design, construção e manutenção de plataforma de dados de pequenas empresas, colaborando em pipelines escaláveis e modelos desde dados brutos até interface do cliente.",
-      "confianca": 0.95,
-      "encaixe": 0.65,
-      "nota_perfil": "Alinhamento técnico perfeito (ER, pipelines, scalabilidade), mas localização nos EUA exige visto e reduz significativamente o encaixe; sem menção de stack específico."
+      "score": 11,
+      "motivo": "Vaga focada em TAM pipeline com entity resolution, deduplicação algorítmica e hierarquias parent-child, alinhada a matching determinístico e account resolution.",
+      "resumo": "GTM Engineer/Data Architect para construir base de dados TAM automatizada com hierarquias parent-child, matching de stakeholders e SI networks via APIs e deduplicação algorítmica. Trabalho em manutenção de integridade de dados de alto volume.",
+      "confianca": 0.85,
+      "encaixe": 0.55,
+      "nota_perfil": "Record linkage de accounts e entidades é núcleo, porém contexto GTM/SaaS difere do perfil saúde/pública; Upwork remoto global viabiliza.",
+      "requisitos": {
+        "obrigatorios": [
+          "Clay",
+          "n8n",
+          "Python",
+          "API Integration",
+          "B2B data APIs",
+          "Entity Resolution",
+          "Fuzzy Matching",
+          "Splink",
+          "Record Linkage",
+          "LLMs",
+          "Email Verification",
+          "SQL",
+          "PostgreSQL",
+          "Supabase",
+          "CRM",
+          "HubSpot",
+          "Attio",
+          "MX Verification"
+        ],
+        "desejaveis": [
+          "Make",
+          "Apollo API",
+          "Prospeo",
+          "Findymail",
+          "Dropcontact",
+          "Crossbeam",
+          "GLEIF",
+          "LEI"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "nao_informado"
     },
     {
       "tipo": "vaga",
@@ -94,73 +214,233 @@
       "empresa": "Anagha Techno Soft",
       "local": "United States",
       "fonte": "Google Jobs",
-      "score": 14,
-      "motivo": "Vaga de MDM Architect com foco direto em Identity Resolution, Entity Matching determinístico/probabilístico, Golden Records e matching de entidades — exatamente o core da especialidade.",
-      "resumo": "Procura-se arquiteto MDM para desenhar e implementar soluções empresariais de resolução de identidade, customer 360 e mastering de dados em Databricks/Lakehouse. Responsabilidades incluem design de frameworks de entity resolution determinístico/probabilístico, resolução de duplicatas de clientes e empresas.",
-      "confianca": 0.92,
-      "encaixe": 0.55,
-      "nota_perfil": "Alinhamento técnico perfeito (identity resolution, matching, MDM), mas remoto para EST (fuso incompatível), contrato temporário e sem menção de Spark/Python favoritos do leitor."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Senior Data Scientist — Entity Resolution & Data Pipelines",
-      "url": "https://www.jobleads.com/us/job/senior-data-scientist-entity-resolution-data-pipelines--new-york--e50915c209bd545fc44716ec14e2f94d9",
-      "empresa": "Enigma Technologies, Inc.",
-      "local": "New York, NY",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Senior Data Scientist em Entity Resolution team com responsabilidade end-to-end em dados brutos, modelos e pipelines escaláveis; core match com especialização.",
-      "resumo": "Senior Data Scientist para Enigma Entity Resolution Team; ownership end-to-end (dados brutos → modelos → pipelines escaláveis → interface), impactando acurácia e scalability da plataforma de dados.",
-      "confianca": 0.92,
-      "encaixe": 0.6,
-      "nota_perfil": "Presencial New York (exige visto, reduz encaixe); Entity Resolution é especialização perfeita; senioridade alinha com perfil, mas localização prejudica muito."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Quantexa Developer (Contract) - Real-Time Entity Resolution Specialist",
-      "url": "https://talents.vaia.com/companies/coelate-technologies/florida/quantexa-developer-contract-real-time-entity-resolution-specialist-73255733/",
-      "empresa": "Coelate Technologies",
-      "local": "New York",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Vaga especializada em entity resolution real-time e batch usando Quantexa, com foco em desenvolvimento de módulos críticos para ER.",
-      "resumo": "Senior Data Engineer contract para desenvolvimento e configuração de módulos Quantexa em batch e real-time entity resolution. Requer skills em Scala, GCP, ETL e certificação Quantexa; posição sênior em data warehousing e big data.",
+      "score": 16,
+      "motivo": "Vaga focada em MDM, Identity Resolution, Entity Matching determinístico/probabilístico e Golden Records, alinhada perfeitamente com especialidade em record linkage e matching.",
+      "resumo": "MDM Architect remoto para design e implementação de soluções de resolução de identidade e entity matching em arquitetura Databricks/Lakehouse. Responsabilidades incluem framework de entity resolution determinístico/probabilístico, deduplicação de registros e estratégia de Golden Records.",
       "confianca": 0.92,
       "encaixe": 0.5,
-      "nota_perfil": "Foco técnico forte em ER e pipelines, mas stack (Scala, GCP, Quantexa) diverge do esperado (Spark, Python, Elasticsearch); presencial em NY reduz encaixe; contract position é menos estável."
+      "nota_perfil": "Stack técnico alinhado (matching, probabilístico), porém empresa EUA com foco em EST business hours reduz viabilidade; contrato e expertise Databricks são diferenciais.",
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "Customer 360",
+          "Identity Resolution",
+          "Entity Resolution",
+          "Fuzzy Matching",
+          "Probabilistic Matching",
+          "Golden Records",
+          "Survivorship",
+          "Deduplication",
+          "Data Governance",
+          "Data Quality",
+          "Data Stewardship",
+          "SQL",
+          "Data Modeling",
+          "Cloud Data Platform",
+          "Databricks",
+          "Delta Lake",
+          "Spark"
+        ],
+        "desejaveis": [
+          "Unity Catalog",
+          "Salesforce",
+          "HubSpot",
+          "Dynamics 365",
+          "Dun & Bradstreet",
+          "ZoomInfo",
+          "Graph Database",
+          "Relationship Intelligence"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto"
     },
     {
       "tipo": "vaga",
-      "titulo": "Senior Data Engineer - Entity Resolution and Record Matching",
-      "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-entity-resolution-and-record-matching-at-ethos-talent-advisory-4467923358",
-      "empresa": "ETHOS - Talent & Advisory",
-      "local": "United States",
+      "titulo": "Senior Software Engineer",
+      "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
+      "empresa": "ZoomInfo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 9,
+      "motivo": "ZoomInfo Person Data team trabalha com entity resolution, deduplicação, e transformação de dados fragmentados em accurate contact profiles com 400M registros.",
+      "resumo": "Senior Software Engineer na ZoomInfo Person Data team para construir sistemas Java de alta throughput que processam dados fragmentados e os transformam em perfis de contato precisos, resolvendo desafios de entity resolution e data quality em escala de 400 milhões de registros.",
+      "confianca": 0.88,
+      "encaixe": 0.45,
+      "nota_perfil": "Especialização em entity resolution e deduplicação alinha perfeitamente, mas exige Java/backend em US remoto; stack de Python/Spark não é mencionado.",
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Backend Systems",
+          "Distributed Systems",
+          "Data Processing Pipelines",
+          "Kafka",
+          "Entity Resolution",
+          "Record Linkage",
+          "Data Deduplication"
+        ],
+        "desejaveis": [
+          "GCP",
+          "GCS",
+          "BigQuery",
+          "Solr",
+          "Elasticsearch",
+          "Machine Learning",
+          "CRM",
+          "Ad Tech"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado"
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Software Engineer 5 - Ads Identity Graph",
+      "url": "https://explore.jobs.netflix.net/careers/job/790315141428-software-engineer-5-ads-identity-graph-new-york-new-york-united-states-of-america?domain=netflix.com&microsite=netflix.com",
+      "empresa": "Netflix",
+      "local": "New York, NY (+3 others)",
       "fonte": "Google Jobs",
-      "score": 6,
-      "motivo": "Vaga de Senior Data Engineer explicitamente sobre entity resolution e record matching com Python, SQL e pipelines escaláveis — alinhamento máximo com stack e expertise do leitor.",
-      "resumo": "Procura-se Senior Data Engineer para desenhar e operar pipelines de entity resolution em escala empresarial, decidindo quando dois registros descrevem a mesma pessoa. Exige proficiência em Python, SQL avançado e decisões sobre thresholds probabilísticos.",
-      "confianca": 0.91,
+      "score": 4,
+      "motivo": "Vaga focada em Identity Graph e Identity Resolution, que são aplicações diretas de entity resolution e matching para ads.",
+      "resumo": "Software Engineer 5 na Netflix para trabalhar no Ads Identity Graph, desenvolvendo serviços de Identity Resolution e aumentar cobertura de identificadores com matching de dados publicitários. Foco em resolver identidades e proteger privacidade.",
+      "confianca": 0.82,
+      "encaixe": 0.45,
+      "nota_perfil": "Localização em New York exige visto; stack não mencionado explicitamente, mas o domínio técnico (identity resolution) é altamente relevante.",
+      "requisitos": {
+        "obrigatorios": [
+          "Identity Graph",
+          "Identity Resolution",
+          "Deterministic Matching",
+          "Probabilistic Matching",
+          "Spark",
+          "Distributed Systems",
+          "Data Governance",
+          "Privacy",
+          "Consent Management",
+          "DSP",
+          "Ad Tech"
+        ],
+        "desejaveis": [
+          "CTV",
+          "Machine Learning",
+          "Targeting Experimentation",
+          "GDPR",
+          "CCPA",
+          "CPRA",
+          "Privacy Enhancing Technologies",
+          "Data Clean Rooms"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado"
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Entity Resolution Associate (R-19562)",
+      "url": "https://tsenta.com/jobs/dun-bradstreet-entity-resolution-associate-r-19562-d4614346-a2c8-4618-a9b5-26e0032c1f20",
+      "empresa": "Dun & Bradstreet",
+      "local": "Vienna, VA",
+      "fonte": "Google Jobs",
+      "score": 10,
+      "motivo": "Vaga de Entity Resolution Associate com foco direto em entity matching, GSA EVS program, SLA de match accuracy e exception rates.",
+      "resumo": "Dun & Bradstreet busca especialista em Entity Resolution para programa GSA EVS, responsável por avaliar entity matching, identificar gaps em match logic e garantir performance de SLAs de accuracy e exception rates.",
+      "confianca": 0.95,
       "encaixe": 0.35,
-      "nota_perfil": "Stack e problema técnico são perfeitos (entity resolution, Python, SQL, escala), mas exigência de 5 dias presencial/semana nos EUA e clearance federal tornam impraticável."
+      "nota_perfil": "Experiência exata em entity resolution, mas presencial em Vienna VA (exige visto, fora do Brasil) reduz encaixe significativamente; stack não mencionado.",
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "AWS",
+          "GCP",
+          "Snowflake",
+          "Entity Resolution",
+          "Data Analysis",
+          "Statistical Analysis",
+          "Data Visualization",
+          "Matching Logic",
+          "Precision",
+          "Recall"
+        ],
+        "desejaveis": [
+          "SAM.gov",
+          "GSA Data",
+          "Statistical Engagements",
+          "Microsoft Office"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "nao_informado"
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Solution Engineer, Master Data Management (MDM) - Reltio",
+      "url": "https://www.tealhq.com/job/senior-solution-engineer-master-data-management-mdm_7ea1a5aeed7cf52e9a388dac65686e59c024f",
+      "empresa": "Global Payment Holding Company",
+      "local": "Alpharetta, GA",
+      "fonte": "Google Jobs",
+      "score": 11,
+      "motivo": "Vaga de MDM Solution Engineer (Reltio) focada em master data management, single source of truth e entity resolution para customer/merchant, alinhada ao core de record linkage.",
+      "resumo": "Senior Solution Engineer MDM (Reltio) em companhia de pagamentos global para design e construção de capacidades de master data management e resolução de entidades de customer/merchant. Foco em trusted data foundation e single source of truth.",
+      "confianca": 0.82,
+      "encaixe": 0.35,
+      "nota_perfil": "MDM e entity resolution relevantes mas cargo é solução engineer (não engineering de pipeline); presencial preferido em GA, EUA; Reltio é ferramenta comercial diferente da stack técnica.",
+      "requisitos": {
+        "obrigatorios": [
+          "Reltio",
+          "Master Data Management",
+          "Data Modeling",
+          "Entity Resolution",
+          "Golden Records",
+          "Match and Merge",
+          "Survivorship",
+          "Stewardship Workflows",
+          "Data Quality",
+          "Standardization",
+          "Validation",
+          "Matching",
+          "Enrichment",
+          "Hierarchies",
+          "Crosswalks",
+          "Reference Data Management",
+          "APIs",
+          "ETL",
+          "ELT",
+          "Integration Hubs",
+          "Connectors",
+          "Event-Driven Architecture",
+          "SQL",
+          "Snowflake",
+          "Jira",
+          "Azure DevOps"
+        ],
+        "desejaveis": [
+          "Reltio Certifications",
+          "Platform Migration",
+          "MDM Modernization"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado"
     }
   ],
   "eventos": [],
   "papers": [],
   "linkedin": [],
   "vagas_abertas_total": 18,
+  "vagas_arquivadas_total": 18,
   "aula": {
     "dia": 1,
     "modulo": "1. Fundamentos",
     "titulo": "O que é record linkage e por que ele existe",
     "explicacao": "Record linkage é o processo de identificar registros que se referem à mesma entidade (pessoa, empresa, endereço) em uma ou mais bases, quando não existe um identificador único confiável. Ele existe porque dados são coletados por sistemas diferentes, com objetivos diferentes, e ninguém combinou antes uma chave comum. Sem linkage, cada base conta uma parte da história; com linkage, conseguimos acompanhar trajetórias: nascer, adoecer, receber um benefício, morrer. O desafio é que os mesmos atributos (nome, data de nascimento, nome da mãe) chegam com erros, abreviações e lacunas.",
     "exemplo": "'MARIA APARECIDA DOS SANTOS, 12/03/1985' no SINASC e 'MARIA AP. SANTOS, 12/03/1985' no CadÚnico: mesma pessoa?",
-    "pergunta_reflexao": "Quais perguntas de pesquisa do CIDACS seriam impossíveis sem linkage?"
+    "pergunta_reflexao": "Que perguntas de negócio ou de pesquisa seriam impossíveis de responder sem linkage?"
   },
   "estatisticas": {
     "vagas": {
-      "brutos": 2774,
-      "pos_palavras_chave": 4,
-      "aprovados": 4
+      "brutos": 2832,
+      "pos_palavras_chave": 54,
+      "aprovados": 10
     },
     "eventos": {
       "brutos": 0,
@@ -174,7 +454,7 @@
     },
     "linkedin": {
       "brutos": 8,
-      "pos_palavras_chave": 2,
+      "pos_palavras_chave": 0,
       "aprovados": 0
     }
   }

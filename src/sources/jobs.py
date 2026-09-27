@@ -9,7 +9,7 @@ from common import clean, get, item, log
 
 
 def _job(title, url, company, location, text, source):
-    return item("vaga", title, url, empresa=company or "", local=location or "", fonte=source, texto=clean(text))
+    return item("vaga", title, url, empresa=company or "", local=location or "", fonte=source, texto=clean(text, 8000))
 
 
 def adzuna(cfg):
@@ -208,8 +208,25 @@ def weworkremotely(cfg):
     return out
 
 
+def social_posts(cfg):
+    """Vagas anunciadas em POSTS (feed do LinkedIn, X/Twitter, Reddit, Facebook, Instagram...).
+    Quem posta no feed costuma ser o próprio time/recrutador: são as melhores vagas.
+    1 busca/dia no Google (via SerpAPI), só posts da última semana."""
+    from sources import websearch
+
+    terms = " OR ".join(f'"{t}"' for t in cfg["queries"]["social_jobs"])
+    hiring = '("hiring" OR "we are hiring" OR "join our team" OR "contratando" OR "vaga" OR "estamos contratando")'
+    sites = " OR ".join(f"site:{s}" for s in cfg.get("social_sites", []))
+    out = []
+    for r in websearch.serpapi(f"({terms}) {hiring} ({sites})", recency="qdr:w"):
+        domain = re.sub(r"^https?://([^/]+).*", r"", r["url"]).replace("www.", "")
+        out.append(item("vaga", r["titulo"], r["url"], empresa="", local="", fonte=f"Post · {domain}",
+                        texto=r["texto"], social=True))
+    return out
+
+
 SOURCES = [adzuna, remoteok, remotive, greenhouse, lever, ashby, hn_who_is_hiring, serpapi_google_jobs,
-           gupy, himalayas, jobicy, workable, weworkremotely]
+           gupy, himalayas, jobicy, workable, weworkremotely, social_posts]
 
 
 def collect(cfg: dict) -> list[dict]:
