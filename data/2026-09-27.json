@@ -1,103 +1,43 @@
 {
   "data": "2026-09-27",
-  "gerado_em": "2026-09-27T16:44-03:00",
+  "gerado_em": "2026-09-27T17:50-03:00",
   "llm": true,
-  "vagas": [
-    {
-      "tipo": "vaga",
-      "titulo": "Staff Data Scientist, Entity Resolution — Onsite LA, Equity",
-      "url": "https://www.jobleads.com/us/job/staff-data-scientist-entity-resolution-onsite-la-equity--los-angeles--e2ebabf5eadb730a11c4400da92289749",
-      "empresa": "Enigma",
-      "local": "Los Angeles, CA",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Vaga explicitamente focada em Entity Resolution como responsabilidade principal, com requisitos técnicos específicos para o domínio.",
-      "resumo": "Enigma busca Staff/Senior Data Scientist para time de Entity Resolution em Los Angeles. Foco em design de soluções end-to-end, melhoria de acurácia e escalabilidade em plataforma robusta, requer 6-8+ anos de experiência e proficiência em Databricks, Spark, Python e ML/AI.",
-      "confianca": 0.98
-    }
-  ],
+  "vagas": [],
   "eventos": [],
-  "papers": [
-    {
-      "tipo": "paper",
-      "titulo": "BELXTR: Biomedical Entity Linking via Contextualized Token Retrieval",
-      "url": "https://arxiv.org/abs/2609.25859",
-      "autores": "Samuele Garda et al.",
-      "data": "2026-09-22",
-      "fonte": "OpenAlex",
-      "score": 4,
-      "motivo": "Paper sobre biomedical entity linking, que é um caso específico de entity resolution/record linkage focado em desambiguação de menções biomédicas contra bases de conhecimento.",
-      "resumo": "Propõe BELXTR, modelo de embedding multi-vetor para entity linking biomédico que desambigua menções a entidades em knowledge bases. Testa em dez corpora e cinco KBs, melhorando state-of-the-art em tarefas de resolução de entidades.",
-      "confianca": 0.92
-    },
-    {
-      "tipo": "paper",
-      "titulo": "The Same Ledger, Different Verdicts: How Measurement Specification Determines On-Chain Concentration",
-      "url": "https://arxiv.org/abs/2609.24176",
-      "autores": "Jintao Liu et al.",
-      "data": "2026-09-21",
-      "fonte": "OpenAlex",
-      "score": 3,
-      "motivo": "Paper que demonstra como entity resolution (resolução de endereços/entidades blockchain) afeta análises de concentração em cadeias; entity resolution é uma das quatro escolhas metodológicas críticas estudadas.",
-      "resumo": "Analisa como especificações de medição, incluindo entity resolution, impactam conclusões sobre descentralização em blockchains ERC-20. Mostra que decisões de entity resolution movem índices HHI de forma substancial (fator de 21 em UNI).",
-      "confianca": 0.88
-    }
-  ],
+  "papers": [],
   "linkedin": [
     {
       "tipo": "linkedin",
-      "titulo": "Infosolve Launches Free MDM & Data Quality Learning Hub",
-      "url": "https://www.linkedin.com/posts/infosolve-technologies-inc_free-master-data-management-course-activity-7508218106562125826-5O3m",
+      "titulo": "Staff/Senior Data Scientist, Entity Resolution Team",
+      "url": "https://www.linkedin.com/jobs/view/staff-senior-data-scientist-entity-resolution-team-at-enigma-technologies-inc-4469243125",
+      "data": "há 5 dias",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Anúncio de vaga específica para Data Scientist em Entity Resolution Team, alinhado completamente com o escopo de especialização.",
+      "resumo": "Vaga aberta para Data Scientist sênior em um Entity Resolution Team, com responsabilidade de moldar a trajetória de produtos relacionados. Foco direto na especialização em entity resolution.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Lewis Guess' Post",
+      "url": "https://www.linkedin.com/posts/lewisguess_graph-data-is-enhanced-with-entity-resolution-activity-7508254069803671553-t7i8",
       "data": "",
       "fonte": "LinkedIn",
-      "score": 5,
-      "motivo": "Anúncio concreto de hub educacional sobre MDM e entity resolution, com foco em governança.",
-      "resumo": "Infosolve lança hub gratuito de aprendizado em MDM e qualidade de dados com foco em entity resolution e workflows de governança. Iniciativa de educação empresarial sobre esses temas.",
+      "score": 3,
+      "motivo": "Post discute como entity resolution funciona como backbone de knowledge graphs em bancos de dados gráficos, tema técnico central ao campo.",
+      "resumo": "Post explora como entity resolution potencializa dados gráficos ao organizar knowledge graphs. A resolução de entidades em graph databases fornece a base estrutural para representação de relacionamentos complexos.",
+      "confianca": 0.88
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "DarkScope Entity Resolution Platform Review",
+      "url": "https://www.linkedin.com/posts/boriskusovski_darkscope-goes-beyond-just-entity-resolution-activity-7508527123842650113-e4OD",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post discute tecnicamente a plataforma DarkScope focada em Entity Resolution, mencionando funcionalidades específicas de visualização de entidades e relacionamentos.",
+      "resumo": "Review da plataforma DarkScope que oferece Entity Resolution com interface abrangente para visualizar entidades e seus relacionamentos. A plataforma vai além de ER puro, fornecendo uma camada de apresentação completa.",
       "confianca": 0.85
-    },
-    {
-      "tipo": "linkedin",
-      "titulo": "Commotion is hiring a Senior Machine Learning Engineer ...",
-      "url": "https://www.linkedin.com/posts/arthirajendran_commotion-is-hiring-a-senior-machine-learning-activity-7508582676941938688-WFl2",
-      "data": "",
-      "fonte": "LinkedIn",
-      "score": 3,
-      "motivo": "Vaga específica onde entity resolution é mencionado como tema core de ML engineering, junto com graph algorithms.",
-      "resumo": "Vaga de Senior ML Engineer em Commotion com entity resolution e graph algorithms como competências centrais. Foco em ML clássico e propriedade end-to-end.",
-      "confianca": 0.85
-    },
-    {
-      "tipo": "linkedin",
-      "titulo": "AVM Consulting Inc's Post",
-      "url": "https://www.linkedin.com/posts/avm-co_avmconsulting-ai-dataengineering-activity-7509457846191726592-nlnT",
-      "data": "",
-      "fonte": "LinkedIn",
-      "score": 4,
-      "motivo": "Menção técnica e concreta de entity resolution como parte central do serviço de consultoria em dados.",
-      "resumo": "AVM Consulting oferece serviços em entity resolution, qualidade de dados e avaliação de IA/ML para transformação de dados brutos em insights. Foco em soluções técnicas.",
-      "confianca": 0.8
-    },
-    {
-      "tipo": "linkedin",
-      "titulo": "The Laundering Network Already Knows Your Org Chart.",
-      "url": "https://www.linkedin.com/posts/stevet_the-laundering-network-already-knows-your-activity-7508144326883852289-4qMM",
-      "data": "",
-      "fonte": "LinkedIn",
-      "score": 3,
-      "motivo": "Entity resolution é técnica central mencionada em aplicação de análise de redes e reconciliação de fontes.",
-      "resumo": "Plataforma que usa entity resolution, análise de redes e reconciliação de fontes para organização de dados. Aplicação prática em contexto de inteligência.",
-      "confianca": 0.8
-    },
-    {
-      "tipo": "linkedin",
-      "titulo": "Why your agent forgets, and what fixes it | Alex N.",
-      "url": "https://www.linkedin.com/posts/alexcancode_why-your-agent-forgets-and-what-fixes-it-activity-7509266769300242432-XCai",
-      "data": "",
-      "fonte": "LinkedIn",
-      "score": 3,
-      "motivo": "Entity resolution discutido tecnicamente como solução específica para problema de consolidação de registros em agentes de IA.",
-      "resumo": "Explica uso técnico de entity resolution para mesclar registros duplicados em transcripts de agentes, permitindo confiabilidade em dados históricos. Aplicação concreta.",
-      "confianca": 0.8
     }
   ],
   "aula": {
@@ -111,8 +51,8 @@
   "estatisticas": {
     "vagas": {
       "brutos": 1950,
-      "pos_palavras_chave": 1,
-      "aprovados": 1
+      "pos_palavras_chave": 0,
+      "aprovados": 0
     },
     "eventos": {
       "brutos": 0,
@@ -121,13 +61,13 @@
     },
     "papers": {
       "brutos": 175,
-      "pos_palavras_chave": 3,
-      "aprovados": 2
+      "pos_palavras_chave": 0,
+      "aprovados": 0
     },
     "linkedin": {
-      "brutos": 8,
-      "pos_palavras_chave": 8,
-      "aprovados": 5
+      "brutos": 3,
+      "pos_palavras_chave": 3,
+      "aprovados": 3
     }
   }
 }
