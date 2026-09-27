@@ -149,7 +149,67 @@ def serpapi_google_jobs(cfg):
     return out
 
 
-SOURCES = [adzuna, remoteok, remotive, greenhouse, lever, ashby, hn_who_is_hiring, serpapi_google_jobs]
+def gupy(cfg):
+    """Gupy — maior portal de vagas do Brasil. A busca é só no título, então trazemos as vagas
+    de dados e o filtro/juiz encontram linkage/matching na descrição."""
+    out = []
+    for q in cfg.get("gupy_titles", []):
+        data = get("https://employability-portal.gupy.io/api/v1/jobs", params={"jobName": q, "limit": 100}).json()
+        for j in data.get("data", []):
+            local = "Remoto (Brasil)" if j.get("isRemoteWork") else ", ".join(x for x in (j.get("city"), j.get("state")) if x)
+            out.append(_job(j.get("name"), j.get("jobUrl"), (j.get("careerPageName") or "").strip(),
+                            local, j.get("description"), "Gupy"))
+    return out
+
+
+def himalayas(cfg):
+    out = []
+    for q in cfg["queries"]["jobs"]:
+        for j in get("https://himalayas.app/jobs/api/search", params={"q": q.replace('"', "")}).json().get("jobs", []):
+            local = ", ".join(j.get("locationRestrictions") or []) or "Remoto (mundo)"
+            out.append(_job(j.get("title"), j.get("applicationLink") or j.get("guid"), j.get("companyName"),
+                            f"Remoto · {local}", j.get("description"), "Himalayas"))
+    return out
+
+
+def jobicy(cfg):
+    out = []
+    for tag in ("data engineer", "data scientist", "machine learning"):
+        for j in get("https://jobicy.com/api/v2/remote-jobs", params={"count": 50, "tag": tag}).json().get("jobs", []):
+            out.append(_job(j.get("jobTitle"), j.get("url"), j.get("companyName"), f"Remoto · {j.get('jobGeo', '')}",
+                            j.get("jobDescription"), "Jobicy"))
+    return out
+
+
+def workable(cfg):
+    out = []
+    for q in cfg["queries"]["jobs"]:
+        for j in get("https://jobs.workable.com/api/v1/jobs", params={"query": q.replace('"', "")}).json().get("jobs", []):
+            loc = j.get("location") or {}
+            local = ", ".join(x for x in (loc.get("city"), loc.get("countryName")) if x)
+            if j.get("workplace") == "remote":
+                local = f"Remoto · {local}" if local else "Remoto"
+            out.append(_job(j.get("title"), j.get("url"), (j.get("company") or {}).get("title"), local,
+                            j.get("description"), "Workable"))
+    return out
+
+
+def weworkremotely(cfg):
+    import xml.etree.ElementTree as ET
+
+    out = []
+    for cat in ("remote-back-end-programming-jobs", "remote-full-stack-programming-jobs", "all-other-remote-jobs"):
+        root = ET.fromstring(get(f"https://weworkremotely.com/categories/{cat}.rss").content)
+        for it in root.iter("item"):
+            title = it.findtext("title", "")
+            company, _, role = title.partition(": ")
+            out.append(_job(role or title, it.findtext("link", ""), company, it.findtext("region", "") or "Remoto",
+                            it.findtext("description", ""), "We Work Remotely"))
+    return out
+
+
+SOURCES = [adzuna, remoteok, remotive, greenhouse, lever, ashby, hn_who_is_hiring, serpapi_google_jobs,
+           gupy, himalayas, jobicy, workable, weworkremotely]
 
 
 def collect(cfg: dict) -> list[dict]:

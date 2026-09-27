@@ -58,7 +58,7 @@ def run(use_llm: bool = True, full_scan: bool = False) -> dict:
         budget -= len(cands)
         if use_llm:
             approved = llm_judge.judge(cands, cfg)
-            approved.sort(key=lambda it: (it.get("confianca", 0), it["score"]), reverse=True)
+            approved.sort(key=lambda it: (it.get("encaixe", 0), it.get("confianca", 0), it["score"]), reverse=True)
             for it in cands:  # julgados (aprovados ou não) não são julgados de novo
                 seen.add(it, day)
         else:

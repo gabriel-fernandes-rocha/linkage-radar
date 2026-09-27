@@ -9,11 +9,13 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from datetime import date, timedelta
 
 from common import DATA, load_config, log, today
 
-MAX_CHARS = 1500
+MAX_CHARS = 2600  # o envio é dividido em partes pelo limite do CallMeBot
+TOP_OPEN = 5
 
 
 def _short(text: str, n: int) -> str:
@@ -25,11 +27,18 @@ def _first_sentence(text: str) -> str:
     return _short((text or "").split(". ")[0].rstrip("."), 140)
 
 
+def _compat(it: dict) -> str:
+    return f"🎯 {round(it['encaixe'] * 100)}% compatível · " if it.get("encaixe") else ""
+
+
+def _by_compat(jobs: list[dict]) -> list[dict]:
+    return sorted(jobs, key=lambda j: j.get("encaixe", 0), reverse=True)
+
+
 def _line(kind: str, it: dict) -> str:
-    if kind == "vagas":
+    if kind in ("vagas", "abertas"):
         where = f" ({it['local']})" if it.get("local") else ""
-        fit = f" · encaixe {round(it['encaixe'] * 100)}%" if it.get("encaixe") else ""
-        return f"• [Vaga] {_short(it['titulo'], 70)} – {it.get('empresa', '')}{where}{fit} {it['url']}"
+        return f"• {_compat(it)}{_short(it['titulo'], 70)} – {it.get('empresa', '')}{where} {it['url']}"
     if kind == "eventos":
         when = f" ({it['data']})" if it.get("data") else ""
         return f"• [Evento] {_short(it['titulo'], 80)}{when} {it['url']}"
@@ -39,43 +48,81 @@ def _line(kind: str, it: dict) -> str:
     return f"• [LinkedIn] {_short(_first_sentence(it.get('resumo') or it['titulo']), 90)} {it['url']}"
 
 
-def build_message(rep: dict, site_url: str) -> str:
+TITLES = {
+    "vagas": "💼 VAGAS NOVAS (mais compatíveis primeiro)",
+    "abertas": "📋 VAGAS ABERTAS MAIS COMPATÍVEIS COM VOCÊ",
+    "eventos": "📅 EVENTOS NO BRASIL",
+    "papers": "📄 PUBLICAÇÕES",
+    "linkedin": "🔗 NO LINKEDIN",
+}
+
+
+def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None) -> str:
+    """Mensagem 1: vagas, eventos, papers e LinkedIn (a aula vai numa mensagem própria)."""
     d = date.fromisoformat(rep["data"])
-    kinds = ("vagas", "eventos", "papers", "linkedin")
-    sections = {k: rep.get(k, []) for k in kinds}
+    new_urls = {j["url"] for j in rep.get("vagas", [])}
+    sections = {
+        "vagas": _by_compat(rep.get("vagas", [])),
+        # as abertas mais compatíveis que NÃO são de hoje (as de hoje já aparecem acima)
+        "abertas": [j for j in _by_compat(open_jobs or []) if j["url"] not in new_urls][:TOP_OPEN],
+        "eventos": rep.get("eventos", []),
+        "papers": rep.get("papers", []),
+        "linkedin": rep.get("linkedin", []),
+    }
+    abertas = rep.get("vagas_abertas_total", len(open_jobs or []))
     header = [
         f"📡 Linkage Radar — {d:%d/%m}",
-        "💼 Vagas novas: {} | 📅 Eventos: {} | 📄 Papers: {} | 🔗 LinkedIn: {}".format(*(len(sections[k]) for k in kinds)),
+        f"💼 Vagas novas: {len(sections['vagas'])} | 📋 Abertas no seu perfil: {abertas}",
+        f"📅 Eventos: {len(sections['eventos'])} | 📄 Papers: {len(sections['papers'])} | "
+        f"🔗 LinkedIn: {len(sections['linkedin'])}",
+        "🎯 = compatibilidade da vaga com o seu perfil (stack, senioridade, idioma e local)",
     ]
-    abertas = rep.get("vagas_abertas_total")
-    if abertas is not None:
-        header.append(f"📋 Vagas abertas no seu perfil: {abertas} (lista completa no site)")
-    footer = []
-    aula = rep.get("aula")
-    if aula:
-        hook = _short(_first_sentence(aula.get("explicacao", "")), 110)
-        footer.append(f"🎓 Aula {aula['dia']}: {aula['titulo']}" + (f" — {hook}" if hook else ""))
-    footer.append(f"Ver tudo: {site_url}")
-
+    footer = [f"Ver tudo: {site_url}"]
     total = sum(len(v) for v in sections.values())
     if not total:
-        return "\n".join(header + ["Nada novo hoje ✅"] + footer)
+        return "\n".join(header + ["", "Nada novo hoje ✅"] + footer)
 
-    # Preenche alternando entre seções (1º de cada, depois 2º de cada...) enquanto couber
-    chosen = {k: [] for k in kinds}
-    budget = MAX_CHARS - len("\n".join(header + footer)) - 40  # reserva para "(+N no site)"
-    for rank in range(max(len(v) for v in sections.values())):
-        for k in kinds:
-            if rank < len(sections[k]):
-                line = _line(k, sections[k][rank])
-                if len(line) + 1 <= budget:
-                    chosen[k].append(line)
-                    budget -= len(line) + 1
-    body = [line for k in kinds for line in chosen[k]]
-    hidden = total - len(body)
-    if hidden:
-        body.append(f"(+{hidden} no site)")
-    return "\n".join(header + body + footer)
+    budget = MAX_CHARS - len("\n".join(header + footer))
+    body = []
+    for kind, items in sections.items():
+        if not items:
+            continue
+        block = ["", TITLES[kind]]
+        shown = 0
+        for it in items:
+            line = _line(kind, it)
+            cost = len(line) + 1 + (len("\n".join(block)) + 1 if not shown else 0)
+            if cost > budget:
+                break
+            if not shown:
+                budget -= len("\n".join(block)) + 1
+            block.append(line)
+            budget -= len(line) + 1
+            shown += 1
+        if shown:
+            if shown < len(items) and kind != "abertas":
+                block.append(f"(+{len(items) - shown} no site)")
+            body += block
+    return "\n".join(header + body + ["", *footer])
+
+
+def build_lesson_message(rep: dict, site_url: str) -> str | None:
+    """Mensagem 2: a aula do dia completa, para ler no próprio WhatsApp."""
+    a = rep.get("aula")
+    if not a or not a.get("explicacao"):
+        return None
+    parts = [
+        f"🎓 Aula {a['dia']} de 365 — {a['titulo']}",
+        f"📚 {a['modulo']}",
+        "",
+        a["explicacao"].strip(),
+    ]
+    if a.get("exemplo"):
+        parts += ["", "💡 Exemplo:", a["exemplo"].strip()]
+    if a.get("pergunta_reflexao"):
+        parts += ["", "🤔 Para pensar:", a["pergunta_reflexao"].strip()]
+    parts += ["", f"Aulas anteriores: {site_url}"]
+    return "\n".join(parts)
 
 
 def load_report(cfg: dict, day: str | None) -> dict:
@@ -95,18 +142,28 @@ def main():
     args = ap.parse_args()
 
     cfg = load_config()
-    msg = build_message(load_report(cfg, args.date), cfg["site_url"])
+    rep = load_report(cfg, args.date)
+    import open_jobs
+
+    messages = [build_message(rep, cfg["site_url"], open_jobs.load())]
+    lesson_msg = build_lesson_message(rep, cfg["site_url"])
+    if lesson_msg:
+        messages.append(lesson_msg)
+
     wa = cfg.get("whatsapp", {})
     if args.dry_run or not wa.get("enabled", True):
-        print(msg)
-        print(f"\n({len(msg)} caracteres)")
+        for i, msg in enumerate(messages, 1):
+            print(f"===== MENSAGEM {i} ({len(msg)} caracteres) =====\n{msg}\n")
         return
     if wa.get("provider") == "twilio":
         from notify import twilio as provider
     else:
         from notify import callmebot as provider
-    provider.send(msg)
-    log.info("mensagem enviada (%d caracteres)", len(msg))
+    for i, msg in enumerate(messages, 1):
+        if i > 1:
+            time.sleep(10)
+        provider.send(msg)
+        log.info("mensagem %d/%d enviada (%d caracteres)", i, len(messages), len(msg))
 
 
 if __name__ == "__main__":

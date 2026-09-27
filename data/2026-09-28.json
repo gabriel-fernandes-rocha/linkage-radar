@@ -1,8 +1,64 @@
 {
   "data": "2026-09-28",
-  "gerado_em": "2026-09-27T18:14-03:00",
+  "gerado_em": "2026-09-27T18:26-03:00",
   "llm": true,
   "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Lead Software Development Engineer",
+      "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
+      "empresa": "Amperity",
+      "local": "Remoto · Argentina",
+      "fonte": "Himalayas",
+      "score": 3,
+      "motivo": "Foco central: identity resolution patentado resolvendo bilhões de registros conflitantes em horas; alinhamento direto com record linkage e entity resolution em escala.",
+      "resumo": "Lead Software Development Engineer em Amperity, empresa especializada em identity resolution que transforma bilhões de registros messy/conflitantes em perfis de clientes precisos. Reconstrução da plataforma como AI-first, fundamental para resolução de identidades em escala.",
+      "confianca": 0.88,
+      "encaixe": 0.7,
+      "nota_perfil": "Match técnico excelente (ER/identity resolution, bilhões registros, AI/agents), remoto Argentina é viável (Brasil), mas stack não detalha Spark/Python/Splink; posição sênior de eng. software pode ter foco menos hands-on em matching."
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Principal Product Manager - Identity",
+      "url": "https://himalayas.app/companies/zoominfo/jobs/principal-product-manager-identity",
+      "empresa": "ZoomInfo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 4,
+      "motivo": "Foco central em identity resolution engine, visitor-to-person e IP-to-company matching — core de record linkage e entity resolution.",
+      "resumo": "Principal PM para liderar estratégia de identity resolution engine em ZoomInfo, responsável por desanonimizar tráfego web, linkar visitantes a empresas/contatos e melhorar taxas de matching. Trabalho direto em resolução de identidades em escala massiva.",
+      "confianca": 0.85,
+      "encaixe": 0.5,
+      "nota_perfil": "Alto relevância técnica em ER/matching, mas é posição de PM remota nos EUA (não requer presença física, porém foco executivo diverge do perfil de eng. dados); requer visa/relocação implícita."
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Software Engineer",
+      "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
+      "empresa": "ZoomInfo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 4,
+      "motivo": "Foco explícito em entity resolution, attribute selection, data quality de 400M perfis; sistemas backend em larga escala para transformar dados fragmentados em contatos confiáveis.",
+      "resumo": "Senior Software Engineer na Person Data team de ZoomInfo, construindo sistemas Java de alta throughput que resolvem entidades, selecionam atributos e garantem qualidade de dados de 400 milhões de perfis de contato. Trabalho em infraestrutura de dados e resolução de identidades em escala distribuída.",
+      "confianca": 0.9,
+      "encaixe": 0.45,
+      "nota_perfil": "Match perfeito em ER/entity resolution e escala, mas stack é Java (não Python/Spark principal), remoto EUA pode exigir visa, e foco é engenharia de software vs. dados."
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer - Financial Crime",
+      "url": "https://jobs.workable.com/view/54WNBXrf7xvDupUZaEakXH/hybrid-senior-data-engineer---financial-crime-in-ho-chi-minh-city-at-gotymex",
+      "empresa": "GoTymeX",
+      "local": "Ho Chi Minh City, Vietnam",
+      "fonte": "Workable",
+      "score": 4,
+      "motivo": "Menciona explicitamente entity resolution, fraud detection e compliance; pipelines em PySpark/Python/SQL em Databricks em larga escala — alinhado com stack e problema.",
+      "resumo": "Senior Data Engineer em Financial Crime (GotymeX), responsável por pipelines de dados em Databricks/PySpark que alimentam fraude detection e entity resolution. Trabalho com datasets complexos e modelos para detecção de risco em tempo real e batch.",
+      "confianca": 0.8,
+      "encaixe": 0.3,
+      "nota_perfil": "Stack e escala ideais (PySpark, SQL, Databricks), entity resolution presente, mas localização é Vietnam (presencial exigido), fora Brasil; contexto é fraude/crime financeiro, não saúde/proteção social."
+    },
     {
       "tipo": "vaga",
       "titulo": "Staff/Senior Data Scientist, Entity Resolution Team",
@@ -86,62 +142,6 @@
       "confianca": 0.91,
       "encaixe": 0.35,
       "nota_perfil": "Stack e problema técnico são perfeitos (entity resolution, Python, SQL, escala), mas exigência de 5 dias presencial/semana nos EUA e clearance federal tornam impraticável."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Senior/Staff Data Engineer, Entity Resolution Team 2",
-      "url": "https://www.jobilize.com/job/us-al-all-cities-senior-staff-data-engineer-entity-resolution-team",
-      "empresa": "Enigma Corporation",
-      "local": "Alabama",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Senior/Staff Data Engineer em Entity Resolution team; design de pipelines escaláveis, data products end-to-end, foco em acurácia e scalability.",
-      "resumo": "Senior/Staff Data Engineer para Enigma Entity Resolution; design e manutenção de product de dados para small business, construção de pipelines escaláveis desde dados brutos até modelos e interface cliente.",
-      "confianca": 0.9,
-      "encaixe": 0.25,
-      "nota_perfil": "Presencial em Alabama (exige visto, reduz encaixe fortemente); Entity Resolution é foco perfeito; senioridade e responsabilidades alinhadas; mas localização geográfica é barreira severa."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Senior Data Engineer — Entity Resolution / Record Linkage",
-      "url": "https://www.upwork.com/freelance-jobs/apply/Senior-Data-Engineer-Entity-Resolution-Record-Linkage_~022097747252088515405/",
-      "empresa": "Upwork",
-      "local": "Anywhere",
-      "fonte": "Google Jobs",
-      "score": 8,
-      "motivo": "Projeto puramente de entity resolution e record linkage com desafios reais (sem IDs confiáveis, múltiplas transliterações, evitar falsos positivos) — exatamente o tipo de problema em que o leitor é especialista.",
-      "resumo": "Procura-se engenheiro sênior para construir camada de deduplicação e entity resolution em banco de dados de ~40k–50k livros hebraicos antigos. O desafio é matching sem identificadores únicos, com múltiplas formas de nomes e transliterações, priorizando precisão sobre escala.",
-      "confianca": 0.88,
-      "encaixe": 0.68,
-      "nota_perfil": "Problema central perfeito (record linkage, deduplicação, sem IDs), escala menor (40k–50k registros), remoto global ideal; porém não menciona stack específico ou localização no Brasil."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Staff Data Scientist, Entity Resolution — Onsite LA, Equity",
-      "url": "https://www.jobleads.com/us/job/staff-data-scientist-entity-resolution-onsite-la-equity--los-angeles--e2ebabf5eadb730a11c4400da92289749",
-      "empresa": "Enigma",
-      "local": "Los Angeles, CA",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Staff Data Scientist em Entity Resolution; Databricks, Spark SQL, PySpark, Python—stack quase perfeito; design end-to-end e scalability.",
-      "resumo": "Staff/Senior Data Scientist para Enigma Entity Resolution em Los Angeles (onsite); design de soluções end-to-end, melhoria de acurácia/scalability em plataforma robusta. Requer 6-8+ anos, Databricks, Spark SQL, PySpark, Python e ML/AI.",
-      "confianca": 0.88,
-      "encaixe": 0.35,
-      "nota_perfil": "Presencial Los Angeles (exige visto, reduz encaixe significativamente); stack (Spark, PySpark, Python) é excelente match; senioridade Staff alinha bem com experiência CIDACS; mas localização é grande desvantagem."
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Remote Identity Resolution Platform Lead",
-      "url": "https://www.jobleads.com/us/job/remote-identity-resolution-platform-lead--new-york--e08e54e27e10d4f3e5238ff545807fcac",
-      "empresa": "SentiLink",
-      "local": "New York, NY",
-      "fonte": "Google Jobs",
-      "score": 3,
-      "motivo": "Vaga de product/platform lead focada em identity resolution suite (prefill, completion, pinning), com responsabilidade direta sobre plataforma de dados e datasets críticos.",
-      "resumo": "Product leader para escalar suite de identity resolution em SentiLink, incluindo prefill, identity completion e pinning. Responsável pela plataforma de dados de datasets core e entrega confiável e escalável entre times.",
-      "confianca": 0.88,
-      "encaixe": 0.55,
-      "nota_perfil": "Relevância técnica em identity resolution, mas cargo é product/platform leader, não engenheiro; exige NYC presencial ou híbrido, aumentando fricção; foco em product pode não alinhar com perfil técnico."
     }
   ],
   "eventos": [],
@@ -158,9 +158,9 @@
   },
   "estatisticas": {
     "vagas": {
-      "brutos": 2060,
-      "pos_palavras_chave": 20,
-      "aprovados": 10
+      "brutos": 2774,
+      "pos_palavras_chave": 4,
+      "aprovados": 4
     },
     "eventos": {
       "brutos": 0,
@@ -173,8 +173,8 @@
       "aprovados": 0
     },
     "linkedin": {
-      "brutos": 3,
-      "pos_palavras_chave": 0,
+      "brutos": 8,
+      "pos_palavras_chave": 2,
       "aprovados": 0
     }
   }

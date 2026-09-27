@@ -21,7 +21,7 @@ const jobHTML = (v, withAge = false) => `
     <h3>${withAge && v.nova ? '<span class="badge">NOVA</span>' : ""}${esc(v.titulo)}</h3>
     <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}${
       withAge && v.desde ? " · desde " + fmtDate(v.desde) : ""}</p>
-    ${v.encaixe ? `<p class="why"><span class="fit">Encaixe ${Math.round(v.encaixe * 100)}%</span>${
+    ${v.encaixe ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span>${
       v.nota_perfil ? " — " + esc(v.nota_perfil) : ""}</p>` : ""}
     ${v.motivo ? `<p class="why">✔ ${esc(v.motivo)}</p>` : ""}
     <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`;
@@ -82,7 +82,9 @@ async function load(day) {
   $("#status").textContent = "Carregando…";
   try {
     const rep = await getJSON(`data/${day}.json`);
-    ["vagas", "papers", "eventos", "linkedin"].forEach((k) => renderSection(k, rep[k] || []));
+    const byCompat = (xs) => [...xs].sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
+    renderSection("vagas", byCompat(rep.vagas || []));
+    ["papers", "eventos", "linkedin"].forEach((k) => renderSection(k, rep[k] || []));
     $("#aula .lesson").innerHTML = lessonHTML(rep.aula);
     renderPastLessons(rep.aula);
     $("#status").textContent = `Edição de ${fmtDate(rep.data)}` + (rep.llm ? "" : " · ⚠ sem juiz LLM");
@@ -98,7 +100,7 @@ async function load(day) {
 async function loadOpenJobs() {
   const card = $("#abertas");
   try {
-    const jobs = await getJSON("data/open_jobs.json");
+    const jobs = (await getJSON("data/open_jobs.json")).sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
     $(".count", card).textContent = jobs.length;
     const checked = jobs.map((j) => j.verificada_em).sort().pop();
     $("#abertas-atualizado").textContent = checked ? `Última verificação: ${fmtDate(checked)}.` : "";

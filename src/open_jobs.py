@@ -53,7 +53,7 @@ def still_open(job: dict, listed_today: set[str]) -> bool:
 
 
 def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: int) -> list[dict]:
-    """Adiciona as novas, revalida as antigas e devolve a carteira ordenada (novas primeiro)."""
+    """Adiciona as novas, revalida as antigas e devolve a carteira ordenada (mais compatíveis primeiro)."""
     listed_today = {_norm_url(j["url"]) for j in raw_jobs}
     current = load()
     known = {_norm_url(j["url"]) for j in current}
@@ -74,7 +74,7 @@ def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: i
         job = {k: v for k, v in job.items() if k != "texto"}
         job.update(desde=day, verificada_em=day, nova=True)
         kept.append(job)
-    kept.sort(key=lambda j: (j["nova"], j.get("encaixe", 0), j["desde"]), reverse=True)
+    kept.sort(key=lambda j: (j.get("encaixe", 0), j["desde"]), reverse=True)
     save(kept)
     log.info("open_jobs: %d abertas (%d novas)", len(kept), sum(j["nova"] for j in kept))
     return kept

@@ -3,7 +3,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from main_send import MAX_CHARS, build_message  # noqa: E402
+from main_send import MAX_CHARS, build_lesson_message, build_message  # noqa: E402
 
 
 def _rep(n):
@@ -14,13 +14,28 @@ def _rep(n):
 
 def test_empty_day():
     msg = build_message(_rep(0), "https://site")
-    assert "Nada novo hoje ✅" in msg and "28/09" in msg and "Aula 1: Intro" in msg
+    assert "Nada novo hoje ✅" in msg and "28/09" in msg
 
 
 def test_long_message_truncated():
     msg = build_message(_rep(10), "https://site")
     assert len(msg) <= MAX_CHARS
     assert "Vagas novas: 10" in msg and "Ver tudo: https://site" in msg
+
+
+def test_jobs_sorted_by_compatibility():
+    rep = _rep(0)
+    rep["vagas"] = [{"titulo": "Baixa", "url": "u1", "encaixe": 0.3}, {"titulo": "Alta", "url": "u2", "encaixe": 0.9}]
+    msg = build_message(rep, "https://site")
+    assert msg.index("90% compatível") < msg.index("30% compatível")
+
+
+def test_lesson_message_is_complete():
+    rep = _rep(0)
+    rep["aula"] = {"dia": 3, "modulo": "1. Fundamentos", "titulo": "T", "explicacao": "E " * 100,
+                   "exemplo": "X", "pergunta_reflexao": "P?"}
+    msg = build_lesson_message(rep, "https://site")
+    assert ("E " * 100).strip() in msg and "💡 Exemplo:\nX" in msg and "🤔 Para pensar:\nP?" in msg
 
 
 def test_callmebot_split_respects_encoded_limit():

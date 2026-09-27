@@ -91,6 +91,14 @@ event_sites:          # buscas "site:" para eventos no Brasil
   - doity.com.br
   - meetup.com
 
+gupy_titles:                # a Gupy busca só no título da vaga
+  - "engenheiro de dados"
+  - "data engineer"
+  - "cientista de dados"
+  - "qualidade de dados"
+  - "engenheiro de machine learning"
+  - "analista de dados sênior"
+
 adzuna_countries: [br, us, gb, de, nl, ca, au, fr]
 
 # Empresas conhecidas por ER / linkage / geo (job boards públicos).
