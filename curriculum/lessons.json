@@ -1,0 +1,2922 @@
+[
+ {
+  "dia": 1,
+  "modulo": "1. Fundamentos",
+  "titulo": "O que é record linkage e por que ele existe",
+  "explicacao": "Record linkage é o processo de identificar registros que se referem à mesma entidade (pessoa, empresa, endereço) em uma ou mais bases, quando não existe um identificador único confiável. Ele existe porque dados são coletados por sistemas diferentes, com objetivos diferentes, e ninguém combinou antes uma chave comum. Sem linkage, cada base conta uma parte da história; com linkage, conseguimos acompanhar trajetórias: nascer, adoecer, receber um benefício, morrer. O desafio é que os mesmos atributos (nome, data de nascimento, nome da mãe) chegam com erros, abreviações e lacunas.",
+  "exemplo": "'MARIA APARECIDA DOS SANTOS, 12/03/1985' no SINASC e 'MARIA AP. SANTOS, 12/03/1985' no CadÚnico: mesma pessoa?",
+  "pergunta_reflexao": "Quais perguntas de pesquisa do CIDACS seriam impossíveis sem linkage?"
+ },
+ {
+  "dia": 2,
+  "modulo": "1. Fundamentos",
+  "titulo": "Entity resolution, record linkage e deduplicação: diferenças de nomenclatura",
+  "explicacao": "Os termos se sobrepõem. 'Record linkage' vem da estatística e da saúde pública (Newcombe, Fellegi-Sunter). 'Entity resolution' vem da ciência da computação e bancos de dados, com foco em agrupar registros em entidades. 'Deduplicação' é o caso de uma base só. 'Entity matching' costuma designar a etapa de decidir se um par é match, muito usada na literatura de ML. 'Data matching', 'merge/purge' e 'object identification' também aparecem. Saber os sinônimos é essencial para buscar literatura e vagas.",
+  "exemplo": "Buscar vagas só por 'record linkage' perde as que dizem 'entity resolution engineer'.",
+  "pergunta_reflexao": "Qual termo a sua área usa, e qual o mercado internacional usa?"
+ },
+ {
+  "dia": 3,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage entre bases vs deduplicação dentro de uma base",
+  "explicacao": "Linkage entre bases liga registros de fontes A e B (ex.: nascidos vivos × óbitos). Deduplicação encontra registros repetidos dentro da mesma base (ex.: a mesma pessoa cadastrada duas vezes no CadÚnico). A diferença muda o espaço de pares: entre bases são |A|×|B| pares; na deduplicação, n(n−1)/2. Também muda a restrição: em linkage entre bases, muitas vezes esperamos no máximo um par por registro (1-para-1), enquanto na deduplicação uma entidade pode ter vários registros.",
+  "exemplo": "Base com 1 milhão de registros → ~5×10¹¹ pares possíveis na deduplicação.",
+  "pergunta_reflexao": "No seu trabalho, qual dos dois cenários é mais comum e qual é mais difícil?"
+ },
+ {
+  "dia": 4,
+  "modulo": "1. Fundamentos",
+  "titulo": "O problema da ausência de chave única",
+  "explicacao": "Se todo registro tivesse um CPF correto e sempre preenchido, linkage seria um join. Na prática, identificadores únicos faltam, estão errados (dígito trocado), são reaproveitados ou nem existem naquela base. Por isso usamos quase-identificadores: nome, sexo, data de nascimento, nome da mãe, município. Nenhum sozinho identifica alguém, mas a combinação sim. O problema de linkage é, no fundo, decidir quanta evidência basta quando a chave perfeita não existe.",
+  "exemplo": "CPF preenchido em só 40% dos registros de uma base: o join por CPF perde 60% dos links.",
+  "pergunta_reflexao": "Mesmo quando existe um CPF, em que situações você não confiaria nele?"
+ },
+ {
+  "dia": 5,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage determinístico: regras exatas",
+  "explicacao": "No linkage determinístico, um par é match se satisfaz uma regra exata: por exemplo, nome padronizado igual E data de nascimento igual E município igual. É simples, rápido, explicável e costuma ter alta precisão. Seu ponto fraco é o recall: qualquer erro de digitação em um campo da regra faz o par ser perdido. Também é rígido diante de dados faltantes. É excelente como primeira etapa ou para gerar pares de treino de alta confiança.",
+  "exemplo": "Regra: soundex(nome) = soundex(nome) AND dt_nasc = dt_nasc AND cod_mun = cod_mun.",
+  "pergunta_reflexao": "Que regra determinística você usaria como 'âncora' de alta precisão numa base do SUS?"
+ },
+ {
+  "dia": 6,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage determinístico em etapas (multi-pass)",
+  "explicacao": "Para recuperar recall sem perder precisão, aplicamos várias regras em sequência (multi-pass). A primeira passada é a mais estrita; os pares encontrados saem do jogo. As passadas seguintes relaxam critérios (ex.: aceitam data com dia/mês trocado, ou nome com um caractere diferente) mas exigem outros campos. A ordem importa: regras estritas primeiro. Cada passada deve ser avaliada separadamente, pois a precisão tende a cair nas últimas.",
+  "exemplo": "Passo 1: nome+nasc+mãe exatos. Passo 2: fonético(nome)+nasc+mun. Passo 3: nome+ano nasc+mãe.",
+  "pergunta_reflexao": "Como você mediria a precisão de cada passada isoladamente?"
+ },
+ {
+  "dia": 7,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage probabilístico: a intuição",
+  "explicacao": "O linkage probabilístico trata cada campo como evidência. Concordar em um sobrenome raro é evidência forte; concordar em sexo é fraca; discordar em data de nascimento é evidência contra. Somamos essas evidências (pesos) e obtemos um score. Em vez de 'tudo ou nada', o método tolera erros em alguns campos se os outros concordam fortemente. A formalização clássica é Fellegi-Sunter, que veremos a fundo no módulo 5.",
+  "exemplo": "Nome igual + mãe igual + data com um dígito trocado → score alto mesmo sem concordância total.",
+  "pergunta_reflexao": "Por que concordar em 'SILVA' deveria valer menos do que concordar em 'WANDERLEY'?"
+ },
+ {
+  "dia": 8,
+  "modulo": "1. Fundamentos",
+  "titulo": "Pares, espaço de comparação e explosão quadrática",
+  "explicacao": "Comparar cada registro de A com cada registro de B gera |A|×|B| pares. Com 10 milhões de cada lado, são 10¹⁴ comparações — inviável. Porém quase todos esses pares são obviamente não-matches. Por isso o espaço de comparação precisa ser reduzido antes de comparar (blocking). Entender essa explosão quadrática é o que diferencia um script de linkage de um pipeline de produção.",
+  "exemplo": "10⁷ × 10⁷ = 10¹⁴ pares; a 10⁷ comparações/s levaria ~4 meses.",
+  "pergunta_reflexao": "Qual é a razão entre matches reais e pares possíveis nas bases com que você trabalha?"
+ },
+ {
+  "dia": 9,
+  "modulo": "1. Fundamentos",
+  "titulo": "Match, não-match e possível match",
+  "explicacao": "Em linkage probabilístico, cada par cai em uma de três classes: match (acima do limiar superior), não-match (abaixo do limiar inferior) e possível match (entre os dois). A zona intermediária é onde mora a incerteza e costuma ir para revisão manual ou regras adicionais. O tamanho dessa zona é uma decisão de custo: estreitá-la reduz revisão humana, mas aumenta erros.",
+  "exemplo": "Score ≥ 12: match; score ≤ 4: não-match; 4–12: revisão.",
+  "pergunta_reflexao": "Quantos pares por dia uma equipe consegue revisar manualmente com qualidade?"
+ },
+ {
+  "dia": 10,
+  "modulo": "1. Fundamentos",
+  "titulo": "Tipos de erro: falso positivo e falso negativo",
+  "explicacao": "Falso positivo: ligar registros de pessoas diferentes (ex.: homônimos). Falso negativo: deixar de ligar registros da mesma pessoa. Os dois viesam análises de formas diferentes: falsos positivos misturam trajetórias (um óbito atribuído à pessoa errada), falsos negativos subestimam eventos (óbitos 'somem'). Não existe limiar que zere ambos; o objetivo do estudo define qual erro é mais caro.",
+  "exemplo": "Estudo de mortalidade: falso negativo subestima a taxa de óbito da coorte.",
+  "pergunta_reflexao": "No seu projeto atual, qual erro é mais caro e por quê?"
+ },
+ {
+  "dia": 11,
+  "modulo": "1. Fundamentos",
+  "titulo": "O pipeline clássico de linkage de ponta a ponta",
+  "explicacao": "O pipeline clássico tem etapas: (1) ingestão e perfilamento; (2) limpeza e padronização; (3) blocking/indexação para gerar pares candidatos; (4) comparação campo a campo, gerando vetores de similaridade; (5) classificação (regras, Fellegi-Sunter ou ML); (6) clustering para formar entidades; (7) avaliação e revisão manual. Cada etapa tem seus erros, e erros de etapas iniciais se propagam: um blocking ruim nunca é consertado pelo classificador.",
+  "exemplo": "ingestão → padronização → blocking → comparação → classificação → clustering → avaliação",
+  "pergunta_reflexao": "Em qual etapa do seu pipeline você suspeita que mais links são perdidos?"
+ },
+ {
+  "dia": 12,
+  "modulo": "1. Fundamentos",
+  "titulo": "Variáveis identificadoras: diretas e quase-identificadores",
+  "explicacao": "Identificadores diretos apontam para uma pessoa (CPF, CNS, NIS). Quase-identificadores são atributos que, combinados, identificam: nome, data de nascimento, sexo, nome da mãe, endereço. Diretos são poderosos mas nem sempre presentes ou confiáveis; quase-identificadores estão quase sempre presentes, mas com erros. Um bom linkage combina os dois tipos e sabe o quanto confiar em cada um.",
+  "exemplo": "CNS igual mas data de nascimento muito diferente: possível CNS reaproveitado ou erro.",
+  "pergunta_reflexao": "Qual quase-identificador é mais confiável nas bases do SUS?"
+ },
+ {
+  "dia": 13,
+  "modulo": "1. Fundamentos",
+  "titulo": "Poder discriminante de uma variável",
+  "explicacao": "Poder discriminante é a capacidade de uma variável separar matches de não-matches. Sexo tem baixo poder (50% dos não-matches concordam por acaso). Data de nascimento completa tem alto poder (chance de concordância por acaso ~1/25.000). O poder também depende da qualidade: um campo discriminante mas mal preenchido ajuda pouco. Em Fellegi-Sunter, isso aparece na razão m/u.",
+  "exemplo": "u(sexo) ≈ 0,5; u(data nasc) ≈ 0,00004.",
+  "pergunta_reflexao": "Como estimar a probabilidade de coincidência por acaso de 'nome da mãe'?"
+ },
+ {
+  "dia": 14,
+  "modulo": "1. Fundamentos",
+  "titulo": "Qualidade de dados e seu impacto no linkage",
+  "explicacao": "Linkage herda todos os problemas da coleta: campos vazios, erros de digitação, formatos inconsistentes, valores padrão ('IGNORADO', 01/01/1900) e mudanças de sistema ao longo dos anos. Antes de modelar, perfile os dados: taxa de preenchimento, distribuição de valores, valores mais frequentes. Muitos 'falsos matches' nascem de valores sentinela que concordam entre si.",
+  "exemplo": "Duas pessoas com dt_nasc = 01/01/1900 concordam, mas é só o valor padrão do sistema.",
+  "pergunta_reflexao": "Quais valores sentinela você já encontrou nas bases com que trabalha?"
+ },
+ {
+  "dia": 15,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage 1-para-1, 1-para-N e N-para-N",
+  "explicacao": "Cardinalidade define quantos links um registro pode ter. 1-para-1: cada nascido vivo tem no máximo um óbito. 1-para-N: uma pessoa tem várias internações. N-para-N: deduplicação com vários registros por pessoa em ambas as bases. Impor a restrição correta (ex.: atribuição ótima, ficando com o melhor par) melhora a precisão; impor a errada descarta links verdadeiros.",
+  "exemplo": "Óbito ligado a dois nascidos vivos diferentes: violação de 1-para-1 → manter o de maior score.",
+  "pergunta_reflexao": "Qual restrição de cardinalidade vale para o linkage CadÚnico–SIH?"
+ },
+ {
+  "dia": 16,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage de bases longitudinais e eventos repetidos",
+  "explicacao": "Bases longitudinais registram eventos repetidos da mesma pessoa ao longo do tempo, e atributos mudam: endereço, sobrenome após casamento, até a grafia do nome. Linkage longitudinal precisa tolerar mudanças esperadas e usar a ordem temporal como evidência (um óbito não pode ocorrer antes do nascimento). Também precisa lidar com entidades que 'surgem' e 'desaparecem' das bases.",
+  "exemplo": "Sobrenome de solteira na certidão de nascimento e de casada no CadÚnico.",
+  "pergunta_reflexao": "Que restrições temporais você poderia usar para eliminar falsos matches?"
+ },
+ {
+  "dia": 17,
+  "modulo": "1. Fundamentos",
+  "titulo": "Clerical review: o papel do revisor humano",
+  "explicacao": "Clerical review é a revisão manual de pares incertos por pessoas treinadas. Serve para decidir possíveis matches, criar dados rotulados e estimar a qualidade do linkage. Precisa de protocolo: quais campos mostrar, critérios de decisão, dupla revisão numa amostra e medição da concordância entre revisores (kappa). É caro, então deve ser direcionado para onde a informação é maior.",
+  "exemplo": "Tela de revisão: par lado a lado, campos alinhados, diferenças destacadas, botões M / NM / ?",
+  "pergunta_reflexao": "Como garantir que dois revisores decidam de forma consistente?"
+ },
+ {
+  "dia": 18,
+  "modulo": "1. Fundamentos",
+  "titulo": "Ground truth: como obter pares verdadeiros",
+  "explicacao": "Ground truth são pares cuja condição de match é conhecida. Fontes: identificador único confiável num subconjunto (ex.: CPF validado), revisão manual, dados sintéticos com erros injetados, ou bases já ligadas por outro método validado. Cada fonte tem viés: pares com CPF podem ser 'mais fáceis' que a média. Um bom gold standard é amostrado de forma a representar os casos difíceis.",
+  "exemplo": "Usar CPF presente em ambas as bases como rótulo, depois avaliar o modelo sem usar o CPF.",
+  "pergunta_reflexao": "Que viés existe em avaliar o linkage só nos registros que têm CPF?"
+ },
+ {
+  "dia": 19,
+  "modulo": "1. Fundamentos",
+  "titulo": "Breve história: de Newcombe (1959) a Fellegi-Sunter (1969)",
+  "explicacao": "Em 1959, Howard Newcombe e colegas propuseram usar frequências de valores para ligar registros vitais no Canadá — a semente do linkage probabilístico. Em 1969, Ivan Fellegi e Alan Sunter formalizaram a teoria: dado um vetor de comparação, a regra ótima compara a razão de probabilidades m/u com limiares. Desde então, o modelo ganhou EM para estimar parâmetros (Winkler), métodos bayesianos e, mais recentemente, ML e deep learning.",
+  "exemplo": "Newcombe (1959) → Fellegi-Sunter (1969) → Winkler/EM (anos 1980-90) → ML/DL (2010+).",
+  "pergunta_reflexao": "Por que um modelo de 1969 ainda é o padrão em saúde pública?"
+ },
+ {
+  "dia": 20,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage no Brasil: do RecLink ao CIDACS-RL",
+  "explicacao": "No Brasil, o linkage de bases de saúde ganhou força com ferramentas como o RecLink (Camargo Jr. e Coeli), baseado em Fellegi-Sunter, muito usado em estudos epidemiológicos. Com o volume da Coorte de 100 Milhões, o CIDACS desenvolveu o CIDACS-RL, que usa indexação e busca em Elasticsearch para escalar o linkage a centenas de milhões de registros. Conhecer essa trajetória ajuda a contextualizar seu trabalho.",
+  "exemplo": "RecLink: desktop, pareamento em blocos. CIDACS-RL: indexação + busca aproximada em escala.",
+  "pergunta_reflexao": "Que limitações do RecLink motivaram soluções baseadas em busca indexada?"
+ },
+ {
+  "dia": 21,
+  "modulo": "1. Fundamentos",
+  "titulo": "Entity resolution em empresas: MDM e golden record",
+  "explicacao": "Em empresas, entity resolution aparece como Master Data Management (MDM): unificar clientes, fornecedores ou produtos espalhados em sistemas (CRM, ERP, e-commerce) em um 'golden record'. Além do matching, MDM envolve regras de sobrevivência (qual valor fica no registro mestre), governança e atualização contínua. Ferramentas: Informatica, Reltio, Tamr, Senzing. É um mercado com muitas vagas para quem domina matching.",
+  "exemplo": "Três cadastros do mesmo cliente → um golden record com o e-mail mais recente e o CPF validado.",
+  "pergunta_reflexao": "Quais habilidades do seu trabalho transferem diretamente para MDM?"
+ },
+ {
+  "dia": 22,
+  "modulo": "1. Fundamentos",
+  "titulo": "Entity resolution em grafos de conhecimento",
+  "explicacao": "Em grafos de conhecimento, ER decide se dois nós representam a mesma entidade do mundo real (ex.: 'IBM' e 'International Business Machines'). Aqui, além de atributos, as relações são evidência: dois autores com o mesmo nome e os mesmos coautores provavelmente são a mesma pessoa. Isso leva à ER coletiva, em que decisões de match se influenciam mutuamente.",
+  "exemplo": "Autor 'J. Silva' com coautores {A, B} e 'João Silva' com {A, B, C}: forte evidência de match.",
+  "pergunta_reflexao": "Como relações familiares (mãe, irmãos) poderiam servir de evidência no seu linkage?"
+ },
+ {
+  "dia": 23,
+  "modulo": "1. Fundamentos",
+  "titulo": "Linkage e ciência: por que coortes dependem dele",
+  "explicacao": "Coortes administrativas dependem de linkage: sem ele, não há como seguir a mesma pessoa entre um benefício social e um desfecho de saúde. A validade dos resultados científicos depende diretamente da qualidade do linkage — e erros de linkage raramente são aleatórios. Por isso artigos sérios reportam como o linkage foi feito e sua qualidade estimada.",
+  "exemplo": "Efeito do Bolsa Família sobre mortalidade infantil exige ligar CadÚnico, SINASC e SIM.",
+  "pergunta_reflexao": "Se o linkage falha mais para mães jovens, que efeito isso teria num estudo de mortalidade infantil?"
+ },
+ {
+  "dia": 24,
+  "modulo": "1. Fundamentos",
+  "titulo": "Custo computacional vs qualidade: o trade-off central",
+  "explicacao": "Mais comparações e comparadores mais sofisticados geralmente aumentam a qualidade, mas custam tempo e dinheiro. Blocking agressivo é barato, mas perde matches; comparar tudo é caro. LLMs são precisos, mas caros por par. Todo projeto real escolhe um ponto nesse trade-off. Uma boa estratégia é cascata: filtros baratos primeiro, métodos caros só nos casos ambíguos.",
+  "exemplo": "Regra exata resolve 70% dos pares; modelo probabilístico, 25%; revisão humana, 5%.",
+  "pergunta_reflexao": "Onde no seu pipeline uma cascata economizaria mais?"
+ },
+ {
+  "dia": 25,
+  "modulo": "1. Fundamentos",
+  "titulo": "Documentando um linkage: reprodutibilidade",
+  "explicacao": "Um linkage precisa ser reprodutível: mesmas entradas e mesma configuração devem gerar os mesmos links. Documente versões das bases, regras de padronização, chaves de blocking, parâmetros do modelo, limiares, sementes aleatórias e métricas de qualidade. Guarde configurações em arquivos versionados (YAML/JSON) e não em código solto. Isso é essencial para auditoria, para publicação e para reprocessar quando uma base é atualizada.",
+  "exemplo": "linkage_config_v3.yaml + hash das bases de entrada + relatório de qualidade gerado automaticamente.",
+  "pergunta_reflexao": "Se você tivesse que refazer um linkage de 2 anos atrás, conseguiria?"
+ },
+ {
+  "dia": 26,
+  "modulo": "1. Fundamentos",
+  "titulo": "Glossário essencial de linkage",
+  "explicacao": "Glossário: par candidato (par que sai do blocking); vetor de comparação (similaridades por campo); m-probability (P(concordância | match)); u-probability (P(concordância | não-match)); match weight (log2(m/u)); limiar (threshold); cluster (conjunto de registros da mesma entidade); golden record (registro consolidado); PPRL (linkage com preservação de privacidade); clerical review (revisão manual).",
+  "exemplo": "match weight = log2(m/u) = log2(0,95/0,01) ≈ 6,6 bits",
+  "pergunta_reflexao": "Qual desses termos você usa com um nome diferente no dia a dia?"
+ },
+ {
+  "dia": 27,
+  "modulo": "1. Fundamentos",
+  "titulo": "Erros comuns de quem começa em linkage",
+  "explicacao": "Erros comuns: não padronizar antes de comparar; ignorar valores sentinela; blocking com uma chave só; avaliar apenas com pares fáceis; escolher limiar 'no olho'; não impor cardinalidade; esquecer o fecho transitivo (A=B, B=C, mas A≠C); não versionar configurações; tratar ausência de dados como discordância. Quase todos geram falsos positivos silenciosos.",
+  "exemplo": "Nome da mãe vazio nos dois registros tratado como 'concorda' → falsos matches em massa.",
+  "pergunta_reflexao": "Qual desses erros você já cometeu ou já viu em produção?"
+ },
+ {
+  "dia": 28,
+  "modulo": "1. Fundamentos",
+  "titulo": "Estudo de caso: deduplicar um cadastro de clientes",
+  "explicacao": "Estudo de caso: deduplicar 2 milhões de clientes. Passos: perfilar campos; padronizar nome, e-mail, telefone e endereço; blocking por (telefone), (e-mail) e (fonético do nome + CEP); comparar com Jaro-Winkler e igualdade; treinar Fellegi-Sunter com EM (ex.: Splink); definir limiar por revisão amostral; agrupar pares com componentes conexos; gerar golden record.",
+  "exemplo": "Resultado típico: 2.000.000 registros → 1.740.000 clientes únicos.",
+  "pergunta_reflexao": "Que regra de sobrevivência você usaria para escolher o telefone do golden record?"
+ },
+ {
+  "dia": 29,
+  "modulo": "1. Fundamentos",
+  "titulo": "Estudo de caso: ligar nascimentos e óbitos",
+  "explicacao": "Estudo de caso: ligar nascidos vivos (SINASC) e óbitos infantis (SIM). Variáveis comuns: nome da mãe, data de nascimento da criança, sexo, município, peso ao nascer (quando presente). Muitos óbitos neonatais não têm nome da criança, então o nome da mãe é crucial. Impõe-se 1-para-1 e a restrição temporal (óbito após nascimento, idade compatível).",
+  "exemplo": "Óbito sem nome da criança: linkage por nome da mãe + data de nascimento + município + sexo.",
+  "pergunta_reflexao": "Como o preenchimento do nome da criança no SIM afeta o recall desse linkage?"
+ },
+ {
+  "dia": 30,
+  "modulo": "1. Fundamentos",
+  "titulo": "Revisão do módulo 1",
+  "explicacao": "Revisão do módulo 1: linkage liga registros sem chave única usando quase-identificadores; pode ser determinístico (regras) ou probabilístico (pesos de evidência); o espaço de pares explode quadraticamente e exige blocking; erros FP e FN têm custos diferentes; o pipeline vai da padronização à avaliação; qualidade e reprodutibilidade são tão importantes quanto o algoritmo.",
+  "exemplo": "Resumo: dados sujos → padronizar → reduzir pares → comparar → decidir → agrupar → avaliar.",
+  "pergunta_reflexao": "Qual conceito deste módulo você explicaria para um colega novo primeiro?"
+ },
+ {
+  "dia": 31,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Por que padronizar antes de comparar",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 32,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Caixa, acentos e Unicode (NFKD)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 33,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Remoção de pontuação e espaços",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 34,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Stopwords em nomes: DE, DA, DOS, E",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 35,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Separação de nome, nome do meio e sobrenome",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 36,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Apelidos e nomes abreviados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 37,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Nomes compostos e ordem invertida",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 38,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Nomes de mãe como variável de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 39,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Padronização de datas e formatos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 40,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Datas faltantes, parciais e inválidas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 41,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Sexo, raça/cor e variáveis categóricas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 42,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "CPF, CNS e NIS: validação de dígitos verificadores",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 43,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Tratamento de valores sentinela (99999, 'IGNORADO')",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 44,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Fonética: por que o som importa",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 45,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Soundex: algoritmo e limitações",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 46,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Metaphone e Double Metaphone",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 47,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "NYSIIS e Caverphone",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 48,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "BuscaBR: fonética para o português",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 49,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Fonética em português: armadilhas (CH, X, LH, NH)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 50,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Padronização de endereços: visão geral",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 51,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Tipos de logradouro: R., RUA, AV., AVENIDA",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 52,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Números, complementos e 'S/N'",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 53,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Bairros, distritos e nomes informais",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 54,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "CEP como variável de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 55,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Municípios: códigos IBGE vs nomes",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 56,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Tokenização de strings",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 57,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Normalização de nomes de empresas (LTDA, S.A., ME)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 58,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Detecção de dados sintéticos e lixo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 59,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Perfilamento de dados (data profiling) antes do linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 60,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Pipeline de padronização reprodutível em Python",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 61,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Pré-processamento em escala com Spark",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 62,
+  "modulo": "2. Pré-processamento e padronização",
+  "titulo": "Revisão do módulo 2",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 63,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação exata vs aproximada",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 64,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Distância de Hamming",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 65,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Distância de Levenshtein",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 66,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Damerau-Levenshtein e transposições",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 67,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Similaridade de Jaro",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 68,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Jaro-Winkler e o bônus de prefixo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 69,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Por que Jaro-Winkler funciona bem para nomes",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 70,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Longest Common Subsequence",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 71,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Q-grams e bigramas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 72,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Coeficiente de Jaccard",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 73,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Dice e Sørensen",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 74,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Similaridade de cosseno com q-grams",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 75,
+  "modulo": "3. Comparação de strings",
+  "titulo": "TF-IDF para strings",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 76,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Monge-Elkan para strings multi-token",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 77,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Soft TF-IDF",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 78,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação de nomes com tokens fora de ordem",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 79,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação numérica: idade, datas e tolerâncias",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 80,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação de datas com trocas de dia/mês",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 81,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação geográfica: distância haversine",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 82,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Níveis de comparação (comparison levels)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 83,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Escolhendo limiares de similaridade",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 84,
+  "modulo": "3. Comparação de strings",
+  "titulo": "RapidFuzz na prática",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 85,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Performance: vetorização de comparações",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 86,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação com embeddings de caracteres",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 87,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparação de strings no Elasticsearch",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 88,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Fuzzy queries e n-gram analyzers no Elasticsearch",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 89,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Comparadores específicos por campo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 90,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Combinando comparadores em um vetor de comparação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 91,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Missing values na comparação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 92,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Avaliando comparadores com pares rotulados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 93,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Armadilhas: nomes comuns e similaridade alta enganosa",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 94,
+  "modulo": "3. Comparação de strings",
+  "titulo": "Revisão do módulo 3",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 95,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Por que blocking é obrigatório",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 96,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Standard blocking",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 97,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Escolha de chaves de blocking",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 98,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking com códigos fonéticos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 99,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Múltiplas passadas de blocking (união de regras)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 100,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Sorted neighborhood",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 101,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Sorted neighborhood adaptativo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 102,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Q-gram indexing",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 103,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Suffix array blocking",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 104,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Canopy clustering",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 105,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Locality Sensitive Hashing (LSH): intuição",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 106,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "MinHash para Jaccard",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 107,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "SimHash e LSH para cosseno",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 108,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking com embeddings e vizinhos aproximados (ANN)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 109,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Meta-blocking",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 110,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Métricas de blocking: reduction ratio",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 111,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Pair completeness e pairs quality",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 112,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocos gigantes e skew",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 113,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking em Spark: joins e particionamento",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 114,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Salting para blocos desbalanceados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 115,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking em Splink: blocking rules",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 116,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking com Elasticsearch como índice de candidatos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 117,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking aprendido (learned blocking)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 118,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking hierárquico para endereços",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 119,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking em linkage incremental",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 120,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Contando pares antes de rodar",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 121,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking e viés: quem fica de fora",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 122,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Estudo de caso: blocking em bilhões de registros",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 123,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Otimização de custo em cluster",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 124,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking para PPRL",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 125,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Blocking com LLMs e embeddings semânticos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 126,
+  "modulo": "4. Blocking e indexação",
+  "titulo": "Revisão do módulo 4",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 127,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Fellegi-Sunter: formulação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 128,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Probabilidade m",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 129,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Probabilidade u",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 130,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Pesos de concordância e discordância",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 131,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Match weight e log-verossimilhança",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 132,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Somando pesos: a hipótese de independência condicional",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 133,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Limiares superior e inferior",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 134,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Probabilidade de match posterior",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 135,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Prior: proporção de matches (lambda)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 136,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Estimando u por amostragem aleatória",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 137,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Estimando m com pares rotulados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 138,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Algoritmo EM: intuição",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 139,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "EM passo a passo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 140,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Convergência e mínimos locais no EM",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 141,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Pesos dependentes de frequência (term frequency)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 142,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Nomes raros vs nomes comuns",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 143,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Níveis parciais de concordância",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 144,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Missing values no Fellegi-Sunter",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 145,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Violação da independência condicional",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 146,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Fellegi-Sunter em Splink",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 147,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Lendo um waterfall chart de pesos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 148,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Treinando m e u separadamente no Splink",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 149,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Deterministic rules para estimar lambda",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 150,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Fellegi-Sunter vs regressão logística",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 151,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Bayesian record linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 152,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Modelos de mistura com mais de 2 classes",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 153,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Calibração de probabilidades de match",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 154,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Estudo de caso: modelo FS para dados do SUS",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 155,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Diagnóstico de um modelo mal treinado",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 156,
+  "modulo": "5. Modelo Fellegi-Sunter e EM",
+  "titulo": "Revisão do módulo 5",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 157,
+  "modulo": "6. Avaliação",
+  "titulo": "Por que avaliar é difícil em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 158,
+  "modulo": "6. Avaliação",
+  "titulo": "Matriz de confusão para pares",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 159,
+  "modulo": "6. Avaliação",
+  "titulo": "Precisão",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 160,
+  "modulo": "6. Avaliação",
+  "titulo": "Recall (sensibilidade)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 161,
+  "modulo": "6. Avaliação",
+  "titulo": "F1 e suas críticas em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 162,
+  "modulo": "6. Avaliação",
+  "titulo": "Curva precisão-recall",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 163,
+  "modulo": "6. Avaliação",
+  "titulo": "Escolhendo o limiar ótimo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 164,
+  "modulo": "6. Avaliação",
+  "titulo": "Avaliação em nível de par vs nível de cluster",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 165,
+  "modulo": "6. Avaliação",
+  "titulo": "Métricas de clustering: B-cubed, pairwise, CEAF",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 166,
+  "modulo": "6. Avaliação",
+  "titulo": "Amostragem para revisão manual",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 167,
+  "modulo": "6. Avaliação",
+  "titulo": "Amostragem estratificada por score",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 168,
+  "modulo": "6. Avaliação",
+  "titulo": "Clerical review: protocolos e concordância entre revisores",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 169,
+  "modulo": "6. Avaliação",
+  "titulo": "Gold standard sintético",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 170,
+  "modulo": "6. Avaliação",
+  "titulo": "Geradores de dados sintéticos (FEBRL, GeCo)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 171,
+  "modulo": "6. Avaliação",
+  "titulo": "Estimando precisão sem gold standard",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 172,
+  "modulo": "6. Avaliação",
+  "titulo": "Viés de linkage: o que é",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 173,
+  "modulo": "6. Avaliação",
+  "titulo": "Quem não é linkado: grupos sub-representados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 174,
+  "modulo": "6. Avaliação",
+  "titulo": "Impacto de erros de linkage em estimativas epidemiológicas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 175,
+  "modulo": "6. Avaliação",
+  "titulo": "Correção de viés de linkage (pesos, imputação)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 176,
+  "modulo": "6. Avaliação",
+  "titulo": "Sensibilidade: rodar com vários limiares",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 177,
+  "modulo": "6. Avaliação",
+  "titulo": "Relatando qualidade de linkage (GUILD)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 178,
+  "modulo": "6. Avaliação",
+  "titulo": "Monitoramento contínuo de qualidade em produção",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 179,
+  "modulo": "6. Avaliação",
+  "titulo": "Testes automatizados para pipelines de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 180,
+  "modulo": "6. Avaliação",
+  "titulo": "Painéis de qualidade de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 181,
+  "modulo": "6. Avaliação",
+  "titulo": "Estudo de caso: avaliando linkage nascimento-óbito",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 182,
+  "modulo": "6. Avaliação",
+  "titulo": "Erros sistemáticos: gêmeos, homônimos e famílias",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 183,
+  "modulo": "6. Avaliação",
+  "titulo": "Avaliando geocodificação: taxa de match e acurácia posicional",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 184,
+  "modulo": "6. Avaliação",
+  "titulo": "Revisão do módulo 6",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 185,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Linkage como classificação supervisionada",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 186,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Features a partir de vetores de comparação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 187,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Árvores, random forest e gradient boosting para matching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 188,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Desbalanceamento extremo de classes",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 189,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Active learning para rotular pares",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 190,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Dedupe (biblioteca) e active learning",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 191,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Magellan / py_entitymatching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 192,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "DeepMatcher",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 193,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Transformers para matching de registros",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 194,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Ditto: entity matching com modelos de linguagem",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 195,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Serialização de registros para modelos de linguagem",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 196,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Embeddings de sentenças para ER",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 197,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Sentence-BERT e bi-encoders",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 198,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Cross-encoders vs bi-encoders",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 199,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Busca vetorial para candidatos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 200,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Contrastive learning para matching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 201,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Transfer learning entre domínios",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 202,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Few-shot e zero-shot matching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 203,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "LLMs como juízes de pares",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 204,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Prompting para entity matching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 205,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Custo e latência de LLMs em matching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 206,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Cascatas: regra → modelo leve → LLM",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 207,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Explicabilidade de decisões de match",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 208,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Fairness em modelos de matching",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 209,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Benchmarks: Abt-Buy, Amazon-Google, DBLP-ACM",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 210,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Limitações dos benchmarks acadêmicos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 211,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Matching multimodal (texto + imagem)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 212,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Matching de produtos e catálogos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 213,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Matching de empresas e organizações",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 214,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Matching de publicações científicas e autores",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 215,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Author name disambiguation",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 216,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Entity linking com bases de conhecimento (Wikidata)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 217,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Estado da arte recente em ER com LLMs",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 218,
+  "modulo": "7. ML e Deep Learning para ER",
+  "titulo": "Revisão do módulo 7",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 219,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação: definição e tipos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 220,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação como problema de record linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 221,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Endereço como registro estruturado",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 222,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Address parsing: regras vs modelos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 223,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "libpostal: parsing e normalização",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 224,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Parsing de endereços brasileiros",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 225,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Gazetteers e bases de referência",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 226,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "CNEFE: o cadastro de endereços do IBGE",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 227,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Faces de logradouro e setores censitários",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 228,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "OpenStreetMap como referência",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 229,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Bases de CEP e suas limitações",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 230,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Matching hierárquico: UF → município → bairro → logradouro",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 231,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Matching de nomes de logradouro",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 232,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Interpolação de número ao longo do segmento",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 233,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação por ponto de endereço vs segmento",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 234,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Fallback: centroide de CEP, setor ou município",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 235,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Nível de precisão (match level) do resultado",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 236,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Score de confiança da geocodificação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 237,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação reversa",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 238,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocoders: Nominatim, Pelias, Photon",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 239,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocoders comerciais: Google, HERE, Esri",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 240,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação em lote e limites de API",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 241,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Construindo um geocodificador próprio com Elasticsearch",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 242,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Blocking espacial e índices geográficos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 243,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Endereços rurais e informais",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 244,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Favelas e comunidades: desafios de endereçamento",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 245,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Mudanças de nome de logradouros ao longo do tempo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 246,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação e privacidade (reidentificação)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 247,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Avaliando geocodificação com amostra auditada",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 248,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Viés geográfico: quem falha na geocodificação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 249,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Geocodificação em saúde pública",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 250,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "What3words, Plus Codes e alternativas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 251,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Estudo de caso: geocodificar endereços do SIM/SINASC",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 252,
+  "modulo": "8. Geocodificação como linkage",
+  "titulo": "Revisão do módulo 8",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 253,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Quando o linkage deixa de caber em uma máquina",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 254,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Spark: modelo de execução para linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 255,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Joins em Spark: broadcast vs shuffle",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 256,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Particionamento e skew em Spark",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 257,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Splink: arquitetura e backends (DuckDB, Spark)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 258,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Splink na prática: do treino à predição",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 259,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Zingg: ER escalável com active learning",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 260,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Senzing: ER em tempo real",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 261,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Elasticsearch como motor de candidatos em escala",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 262,
+  "modulo": "9. Escalabilidade",
+  "titulo": "DuckDB para linkage de médio porte",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 263,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Linkage incremental e streaming",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 264,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Clustering de pares em entidades",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 265,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Fecho transitivo e componentes conexos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 266,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Connected components em grafos gigantes (GraphFrames)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 267,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Problema do encadeamento: clusters gigantes",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 268,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Correlation clustering e corte de arestas fracas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 269,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Clustering hierárquico para ER",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 270,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Identificadores persistentes de entidade",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 271,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Versionamento de resultados de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 272,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Orquestração: Airflow e pipelines agendados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 273,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Custo de nuvem e otimização",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 274,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Formatos colunares: Parquet e Delta",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 275,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Observabilidade do pipeline",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 276,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Testes de regressão em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 277,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Estudo de caso: pipeline com bilhões de pares",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 278,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Estratégias de reprocessamento",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 279,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Paralelizando comparação de strings",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 280,
+  "modulo": "9. Escalabilidade",
+  "titulo": "GPU para similaridade em massa",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 281,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Arquitetura de referência de uma plataforma de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 282,
+  "modulo": "9. Escalabilidade",
+  "titulo": "Revisão do módulo 9",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 283,
+  "modulo": "10. Privacidade",
+  "titulo": "Por que privacidade importa em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 284,
+  "modulo": "10. Privacidade",
+  "titulo": "LGPD e dados de saúde",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 285,
+  "modulo": "10. Privacidade",
+  "titulo": "Anonimização vs pseudonimização",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 286,
+  "modulo": "10. Privacidade",
+  "titulo": "Modelo de terceiro confiável (trusted third party)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 287,
+  "modulo": "10. Privacidade",
+  "titulo": "Separação de identificadores e dados de conteúdo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 288,
+  "modulo": "10. Privacidade",
+  "titulo": "Privacy-preserving record linkage (PPRL): visão geral",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 289,
+  "modulo": "10. Privacidade",
+  "titulo": "Hashing de identificadores e suas fraquezas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 290,
+  "modulo": "10. Privacidade",
+  "titulo": "Bloom filters para PPRL",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 291,
+  "modulo": "10. Privacidade",
+  "titulo": "Comparando Bloom filters: Dice",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 292,
+  "modulo": "10. Privacidade",
+  "titulo": "Ataques a Bloom filters (frequency attacks)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 293,
+  "modulo": "10. Privacidade",
+  "titulo": "Hardening de Bloom filters",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 294,
+  "modulo": "10. Privacidade",
+  "titulo": "Cryptographic long-term keys (CLK)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 295,
+  "modulo": "10. Privacidade",
+  "titulo": "Anonlink e ferramentas de PPRL",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 296,
+  "modulo": "10. Privacidade",
+  "titulo": "Secure multiparty computation em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 297,
+  "modulo": "10. Privacidade",
+  "titulo": "Privacidade diferencial e linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 298,
+  "modulo": "10. Privacidade",
+  "titulo": "Blocking com preservação de privacidade",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 299,
+  "modulo": "10. Privacidade",
+  "titulo": "Avaliação de qualidade em PPRL",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 300,
+  "modulo": "10. Privacidade",
+  "titulo": "Governança e comitês de ética",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 301,
+  "modulo": "10. Privacidade",
+  "titulo": "Salas seguras e ambientes controlados",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 302,
+  "modulo": "10. Privacidade",
+  "titulo": "Risco de reidentificação após linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 303,
+  "modulo": "10. Privacidade",
+  "titulo": "Dados geográficos e reidentificação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 304,
+  "modulo": "10. Privacidade",
+  "titulo": "Termos de uso e acordos de compartilhamento",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 305,
+  "modulo": "10. Privacidade",
+  "titulo": "Auditoria e logs de acesso",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 306,
+  "modulo": "10. Privacidade",
+  "titulo": "Estudo de caso: PPRL em saúde pública",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 307,
+  "modulo": "10. Privacidade",
+  "titulo": "Revisão do módulo 10",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 308,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Por que linkage transformou a epidemiologia",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 309,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "A Coorte de 100 Milhões de Brasileiros",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 310,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "CIDACS: infraestrutura e missão",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 311,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "CadÚnico como base de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 312,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Bolsa Família e desfechos de saúde",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 313,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "SIM: Sistema de Informação sobre Mortalidade",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 314,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "SINASC: Nascidos Vivos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 315,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "SINAN: agravos de notificação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 316,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "SIH: internações hospitalares",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 317,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage CadÚnico–SIM",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 318,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage SINASC–SIM: mortalidade infantil",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 319,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage para tuberculose e hanseníase",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 320,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Coortes de nascimentos e Zika",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 321,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage para COVID-19: vacinação e desfechos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 322,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage longitudinal: trajetórias de vida",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 323,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Mães e filhos: linkage familiar",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 324,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Variáveis disponíveis nas bases do SUS",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 325,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Qualidade de preenchimento nas bases do SUS",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 326,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Viés de linkage em populações vulneráveis",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 327,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Publicando resultados baseados em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 328,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Experiências internacionais: Escócia, Austrália, Canadá",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 329,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Population Data BC e SAIL Databank",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 330,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage e avaliação de políticas públicas",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 331,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Linkage com dados de censo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 332,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Lições aprendidas em produção",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 333,
+  "modulo": "11. Casos reais em saúde pública",
+  "titulo": "Revisão do módulo 11",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 334,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: do problema ao pipeline",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 335,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: padronização e fonética",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 336,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: comparadores",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 337,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: blocking",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 338,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: Fellegi-Sunter",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 339,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: avaliação e viés",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 340,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: ML e LLMs",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 341,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: geocodificação",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 342,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: escala e grafos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 343,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Revisão: privacidade",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 344,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Linkage temporal e registros que mudam",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 345,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Linkage multi-fonte (mais de duas bases)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 346,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Resolução de entidades colaborativa (collective ER)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 347,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "ER em grafos heterogêneos",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 348,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Record linkage com dados textuais livres",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 349,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Linkage de dados históricos (censos antigos)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 350,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Incerteza de linkage propagada para análises",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 351,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Múltipla imputação de links",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 352,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Modelos bayesianos de ER em larga escala",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 353,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Agentes de IA para curadoria de linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 354,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Tendências de pesquisa em ER",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 355,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Como ler um paper de record linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 356,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Como escrever um paper de record linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 357,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Montando seu portfólio em linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 358,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Carreira: onde trabalham especialistas em ER",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 359,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Desenhe um pipeline de linkage do zero (exercício)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 360,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Desenhe um geocodificador do zero (exercício)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 361,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Desenhe um sistema de PPRL (exercício)",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 362,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Estudo livre: escolha um tema para aprofundar",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 363,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Seu mestrado e o linkage: conectando pesquisa e prática",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 364,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Grandes perguntas em aberto em record linkage",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ },
+ {
+  "dia": 365,
+  "modulo": "12. Revisão e tópicos avançados",
+  "titulo": "Encerramento do ano e plano para o próximo ciclo",
+  "explicacao": "",
+  "exemplo": "",
+  "pergunta_reflexao": ""
+ }
+]

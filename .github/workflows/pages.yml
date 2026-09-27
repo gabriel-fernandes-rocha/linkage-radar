@@ -1,0 +1,41 @@
+name: publicar site
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "curriculum/lessons.json"]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # pega o commit de dados recém-criado pela coleta
+      - name: Montar _site
+        run: |
+          mkdir -p _site/curriculum
+          cp -r site/* _site/
+          cp -r data _site/data
+          cp curriculum/lessons.json _site/curriculum/
+          rm -f _site/data/seen.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

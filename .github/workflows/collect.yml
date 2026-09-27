@@ -1,0 +1,46 @@
+name: coletar
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 23:00 local — gerado por scripts/update_cron.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: radar-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Coletar e filtrar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python src/main_collect.py
+      - name: Commit dos dados
+        run: |
+          git config user.name "linkage-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "radar: edição $(TZ=America/Sao_Paulo date -d tomorrow +%F)"
+          git push
+
+  deploy:
+    needs: collect
+    uses: ./.github/workflows/pages.yml

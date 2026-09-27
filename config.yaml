@@ -1,0 +1,82 @@
+# Linkage Radar — configuração (edite à vontade, sem mexer no código)
+timezone: America/Sao_Paulo
+send_time: "06:00"          # depois de mudar, rode: python scripts/update_cron.py
+collect_time: "23:00"
+curriculum_start: 2026-09-28
+
+whatsapp:
+  enabled: true
+  provider: callmebot       # callmebot | twilio
+  # número e apikey ficam em GitHub Secrets: WHATSAPP_PHONE, CALLMEBOT_APIKEY
+
+llm:
+  provider: anthropic       # anthropic | gemini
+  model: claude-haiku-4-5   # o modelo mais barato da Anthropic ($1 / $5 por milhão de tokens)
+  min_confidence: 0.8       # só entra no relatório se o juiz der >= 0.8
+  batch_size: 8             # itens julgados por chamada (menos chamadas = mais barato)
+  max_items_per_day: 80     # teto de itens enviados ao LLM por dia (trava de custo)
+
+web_search:                 # usado para LinkedIn e eventos (fontes sem API)
+  linkedin_weekdays: [0, 1, 2, 3, 4, 5, 6]   # 0=segunda ... 6=domingo
+  linkedin_max_uses: 2      # buscas por dia (US$ 0,01 cada)
+  events_weekdays: [0, 3]   # eventos mudam pouco: segunda e quinta
+  events_max_uses: 3
+
+limits:
+  max_jobs: 10
+  max_events: 5
+  max_papers: 5
+  max_linkedin: 5
+
+site_url: "https://SEU_USUARIO.github.io/linkage-radar/"
+
+# ---------- Fontes ----------
+queries:
+  jobs:
+    - "entity resolution"
+    - "record linkage"
+    - "entity matching"
+    - "data matching"
+    - "master data management matching"
+    - "geocoding engineer"
+    - "address matching"
+    - "deduplication data engineer"
+  papers:
+    - "record linkage"
+    - "entity resolution"
+    - "entity matching"
+    - "address matching"
+    - "geocoding"
+    - "data linkage"
+    - "deduplication"
+  events_br:
+    - "record linkage"
+    - "linkage de dados"
+    - "pareamento de registros"
+    - "resolução de entidades"
+    - "entity resolution"
+    - "geocodificação"
+    - "vinculação de bases de dados"
+  linkedin:
+    - "record linkage"
+    - "entity resolution"
+    - "entity matching"
+    - "linkage de dados"
+    - "pareamento de registros"
+    - "address matching geocoding"
+    - "splink"
+
+event_sites:          # buscas "site:" para eventos no Brasil
+  - sympla.com.br
+  - even3.com.br
+  - doity.com.br
+  - meetup.com
+
+adzuna_countries: [br, us, gb, de, nl, ca, au, fr]
+
+# Empresas conhecidas por ER / linkage / geo (job boards públicos).
+# Se um slug não existir, a fonte é simplesmente ignorada.
+companies:
+  greenhouse: [senzing, quantexa, mapbox, here, esri, palantir, precisely, databricks, reltio]
+  lever: [palantir, tamr, zingg, melissa, loqate, experian, lexisnexisrisk, informatica]
+  ashby: [tamr, zingg, senzing, quantexa]

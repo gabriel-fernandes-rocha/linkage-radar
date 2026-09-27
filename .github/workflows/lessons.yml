@@ -1,0 +1,29 @@
+name: gerar aulas (rodar 1 vez)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Gerar aulas que faltam (≈ US$ 0,50 no total)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/build_lessons.py
+      - name: Commit
+        run: |
+          git config user.name "linkage-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add curriculum/lessons.json
+          git diff --cached --quiet || git commit -m "aulas: gera cronograma de 365 aulas"
+          git push
