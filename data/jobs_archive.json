@@ -248,8 +248,9 @@
   "senioridade": "senior",
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-09-28"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-09-28",
+  "fechada_em": "2026-09-28"
  },
  {
   "titulo": "Senior Software Engineer",
@@ -415,8 +416,9 @@
   "senioridade": "senior",
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-09-28"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-09-28",
+  "fechada_em": "2026-09-28"
  },
  {
   "titulo": "Senior/Staff Data Engineer, Entity Resolution Team",
@@ -444,8 +446,9 @@
   "senioridade": "senior",
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-09-28"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-09-28",
+  "fechada_em": "2026-09-28"
  },
  {
   "titulo": "Senior Data Engineer - Entity Resolution and Record Matching",
@@ -530,8 +533,9 @@
   "senioridade": "senior",
   "modalidade": "hibrido",
   "primeira_vez": "2026-09-28",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-09-28"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-09-28",
+  "fechada_em": "2026-09-28"
  },
  {
   "titulo": "Senior Identity Resolution Engineer",
@@ -635,8 +639,9 @@
   "senioridade": "senior",
   "modalidade": "presencial",
   "primeira_vez": "2026-09-28",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-09-28"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-09-28",
+  "fechada_em": "2026-09-28"
  },
  {
   "titulo": "Knowledge Graph Engineer – Entity Resolution & Graph Analytics",
@@ -693,6 +698,53 @@
   },
   "senioridade": "pleno",
   "modalidade": "nao_informado",
+  "primeira_vez": "2026-09-28",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-09-28"
+ },
+ {
+  "titulo": "Senior Data Scientist, Entity Resolution — High-Impact & Equity",
+  "empresa": "Enigma",
+  "local": "United States",
+  "url": "https://www.jobleads.com/us/job/senior-data-scientist-entity-resolution-high-impact-equity--new-york--california--e9e3850d4cfaa4fc5da4a4623c32af11f",
+  "fonte": "Google Jobs",
+  "encaixe": 0.5,
+  "nota_perfil": "Vaga técnica core em ER pura, senioridade compatível (staff level); presencial em EUA exige visto e afasta do contexto Brasil; stack não especificado mas role é perfeita para especialista.",
+  "motivo": "Vaga core de Senior Data Scientist dedicado exclusivamente a Entity Resolution, end-to-end, com foco em modelos escaláveis, validação rigorosa e acurácia de dados.",
+  "resumo": "Enigma busca Staff/Senior Data Scientist para o time de Entity Resolution em Nova York. Responsabilidade de transformar dados brutos em modelos escaláveis, colaborar com cientistas, engenheiros e stakeholders, aplicar práticas estatísticas rigorosas e validação repetível.",
+  "requisitos": {
+   "obrigatorios": [
+    "Entity Resolution",
+    "Statistical Methods",
+    "Machine Learning"
+   ],
+   "desejaveis": []
+  },
+  "senioridade": "staff/principal",
+  "modalidade": "nao_informado",
+  "primeira_vez": "2026-09-28",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-09-28"
+ },
+ {
+  "titulo": "Product Manager, AI Platform — Entity Resolution at Scale",
+  "empresa": "Socket.dev",
+  "local": "Columbus, GA",
+  "url": "https://talents.vaia.com/companies/socket-dev/columbus/product-manager-ai-platform-entity-resolution-at-scale-148553442/",
+  "fonte": "Google Jobs",
+  "encaixe": 0.45,
+  "nota_perfil": "Vaga sênior de product management (não engenharia), presencial em Columbus fora do Brasil reduz encaixe; stack e domínio técnico perfeitos mas função é diferente da atual.",
+  "motivo": "Vaga core de entity resolution em escala (golden profile, matching rule-based e ML) com foco em governança e linhagem de dados, exatamente no domínio do leitor.",
+  "resumo": "JPMorgan Chase busca Product Manager para o time C360 responsável pela gestão do ciclo de vida completo de um universo de entidades global e perfil dourado confiável. A função envolve balancear matching baseado em regras e assistido por ML, com forte foco em governança e provenance.",
+  "requisitos": {
+   "obrigatorios": [
+    "Entity Resolution",
+    "Machine Learning"
+   ],
+   "desejaveis": []
+  },
+  "senioridade": "nao_informado",
+  "modalidade": "presencial",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
   "ultima_vez_aberta": "2026-09-28"
