@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
+import time
 from datetime import timedelta
 
 from common import clean, get, item, log, today
@@ -57,15 +58,20 @@ def _openalex_abstract(inv: dict | None) -> str:
 def openalex(queries: list[str], since) -> list[dict]:
     out = []
     for q in queries:
-        r = get(
-            "https://api.openalex.org/works",
-            params={
-                "search": q,
-                "filter": f"from_publication_date:{since},type:article|preprint",
-                "per-page": 25,
-                "mailto": "linkage-radar@example.com",
-            },
-        )
+        time.sleep(1)  # respeita o limite da API
+        try:
+            r = get(
+                "https://api.openalex.org/works",
+                params={
+                    "search": q,
+                    "filter": f"from_publication_date:{since},type:article|preprint",
+                    "per-page": 25,
+                    "mailto": "linkage.radar.bot@gmail.com",
+                },
+            )
+        except Exception as e:  # uma busca falhar não descarta as outras
+            log.warning("papers: busca '%s' falhou: %s", q, e)
+            continue
         for w in r.json().get("results", []):
             url = (w.get("primary_location") or {}).get("landing_page_url") or w.get("doi") or w.get("id")
             out.append(item(
@@ -82,16 +88,21 @@ def openalex(queries: list[str], since) -> list[dict]:
 
 def semantic_scholar(queries: list[str], since) -> list[dict]:
     out = []
-    for q in queries:
-        r = get(
-            "https://api.semanticscholar.org/graph/v1/paper/search",
-            params={
-                "query": q,
-                "publicationDateOrYear": f"{since}:",
-                "fields": "title,url,abstract,authors,publicationDate",
-                "limit": 20,
-            },
-        )
+    for q in queries[:3]:  # sem chave o limite é baixo: só os 3 termos principais
+        time.sleep(3)
+        try:
+            r = get(
+                "https://api.semanticscholar.org/graph/v1/paper/search",
+                params={
+                    "query": q,
+                    "publicationDateOrYear": f"{since}:",
+                    "fields": "title,url,abstract,authors,publicationDate",
+                    "limit": 20,
+                },
+            )
+        except Exception as e:  # uma busca falhar não descarta as outras
+            log.warning("papers: busca '%s' falhou: %s", q, e)
+            continue
         for p in r.json().get("data", []) or []:
             out.append(item(
                 "paper",

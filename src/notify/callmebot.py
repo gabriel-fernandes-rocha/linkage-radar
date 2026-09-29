@@ -11,10 +11,33 @@ import requests
 
 from common import log
 
-MAX_ENCODED = 900  # folga para phone + apikey + endereço da API dentro dos ~1024
+MAX_ENCODED = 930  # medido: a URL inteira corta em ~1030; o resto é endereço + phone + apikey
 
 
 def split(text: str, limit: int = MAX_ENCODED) -> list[str]:
+    """Divide preferindo quebras de parágrafo (linha em branco); só quebra linhas se precisar."""
+    if len(quote_plus(text)) <= limit:
+        return [text]
+    parts, cur = [], ""
+    for para in text.split("\n\n"):
+        cand = f"{cur}\n\n{para}" if cur else para
+        if len(quote_plus(cand)) <= limit:
+            cur = cand
+            continue
+        if cur:
+            parts.append(cur)
+        if len(quote_plus(para)) <= limit:
+            cur = para
+        else:
+            sub = _split_lines(para, limit)
+            parts += sub[:-1]
+            cur = sub[-1]
+    if cur:
+        parts.append(cur)
+    return parts
+
+
+def _split_lines(text: str, limit: int) -> list[str]:
     parts, cur = [], ""
     for line in text.split("\n"):
         cand = f"{cur}\n{line}" if cur else line

@@ -5,6 +5,7 @@ import html
 import logging
 import os
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -34,11 +35,23 @@ def today(cfg: dict | None = None) -> datetime:
     return datetime.now(tz)
 
 
-def get(url: str, **kw) -> requests.Response:
+def get(url: str, retries: int = 3, **kw) -> requests.Response:
+    """GET com novas tentativas (espera crescente) quando a API pede calma (429) ou oscila (5xx)."""
     headers = {"User-Agent": UA, **kw.pop("headers", {})}
-    r = requests.get(url, headers=headers, timeout=kw.pop("timeout", TIMEOUT), **kw)
-    r.raise_for_status()
-    return r
+    timeout = kw.pop("timeout", TIMEOUT)
+    for attempt in range(retries + 1):
+        try:
+            r = requests.get(url, headers=headers, timeout=timeout, **kw)
+        except (requests.ConnectionError, requests.Timeout):
+            if attempt == retries:
+                raise
+        else:
+            if r.status_code != 429 and r.status_code < 500 or attempt == retries:
+                r.raise_for_status()
+                return r
+            wait = r.headers.get("Retry-After", "")
+        time.sleep(int(wait) if wait.isdigit() and int(wait) <= 60 else 5 * 3 ** attempt)
+    raise RuntimeError("inalcançável")
 
 
 def clean(text: str | None, limit: int = 1500) -> str:

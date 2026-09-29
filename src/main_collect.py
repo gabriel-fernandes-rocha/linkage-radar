@@ -27,7 +27,7 @@ SECTIONS = [  # (chave no JSON, módulo, limite em config.limits)
 ]
 
 
-def run(use_llm: bool = True, full_scan: bool = False) -> dict:
+def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = False) -> dict | None:
     cfg = load_config()
     if full_scan:
         s = cfg.setdefault("serpapi", {})
@@ -36,6 +36,9 @@ def run(use_llm: bool = True, full_scan: bool = False) -> dict:
     # Coleta às 23h prepara a edição do dia seguinte (a que chega às 6h)
     edition = (now + timedelta(days=1)) if now.hour >= 18 else now
     day = edition.strftime("%Y-%m-%d")
+    if only_if_missing and (DATA / f"{day}.json").exists():
+        log.info("edição %s já coletada; nada a fazer", day)
+        return None
     seen = Seen()
     use_llm = use_llm and llm_judge.available(cfg)
     if not use_llm:
@@ -117,5 +120,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--varredura-completa", action="store_true")
+    ap.add_argument("--se-ainda-nao-coletou", action="store_true", help="usado pelo agendamento (evita coletar 2x)")
     args = ap.parse_args()
-    run(use_llm=not args.no_llm, full_scan=args.varredura_completa)
+    run(use_llm=not args.no_llm, full_scan=args.varredura_completa, only_if_missing=args.se_ainda_nao_coletou)

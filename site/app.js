@@ -147,7 +147,27 @@ async function loadSkills() {
   renderSkills(sel.value);
 }
 
+// Link curto do WhatsApp: #vaga-<sha1[:6] da URL> redireciona direto para a vaga
+async function sha1(text) {
+  const buf = await crypto.subtle.digest("SHA-1", new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function redirectToJob(id) {
+  $("#status").textContent = "Abrindo a vaga…";
+  const lists = await Promise.all(["data/open_jobs.json", "data/jobs_archive.json"].map((f) => getJSON(f).catch(() => [])));
+  for (const job of lists.flat()) {
+    if ((await sha1(job.url)).startsWith(id)) {
+      location.replace(job.url);
+      return true;
+    }
+  }
+  $("#status").textContent = "Vaga não encontrada (pode ter sido encerrada). Veja a lista abaixo.";
+  return false;
+}
+
 (async function init() {
+  if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
   loadOpenJobs();
   loadSkills();
   const sel = $("#day");

@@ -1,19 +1,45 @@
 name: enviar
 
+# O agendamento grátis do GitHub pode atrasar horas. Por isso há várias tentativas a partir das 06h
+# (horário de Brasília) + um gatilho logo após cada coleta. O próprio script garante:
+#   - nada antes de send_time (config.yaml);
+#   - nunca envia duas vezes no mesmo dia (data/sent.json);
+#   - espera a edição do dia ficar pronta (até 09h; depois envia a mais recente).
 on:
   schedule:
-    - cron: "0 9 * * *"   # 06:00 local — gerado por scripts/update_cron.py
+    - cron: "7 9 * * *"    # 06:07 BRT
+    - cron: "37 9 * * *"   # 06:37 BRT
+    - cron: "7 10 * * *"   # 07:07 BRT
+    - cron: "37 10 * * *"  # 07:37 BRT
+    - cron: "7 11 * * *"   # 08:07 BRT
+    - cron: "7 12 * * *"   # 09:07 BRT
+    - cron: "7 14 * * *"   # 11:07 BRT
+    - cron: "7 17 * * *"   # 14:07 BRT (última rede de segurança)
+  workflow_run:
+    workflows: [coletar]
+    types: [completed]
   workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Enviar agora mesmo se já tiver sido enviado hoje"
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: radar-data
+  cancel-in-progress: false
 
 jobs:
   send:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -26,4 +52,12 @@ jobs:
           TWILIO_SID: ${{ secrets.TWILIO_SID }}
           TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
           TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
-        run: python src/main_send.py
+        run: python src/main_send.py ${{ inputs.forcar && ' ' || '--agendado' }}
+      - name: Registrar envio
+        run: |
+          git config user.name "linkage-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/sent.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "radar: mensagens enviadas $(TZ=America/Sao_Paulo date +%F)"
+          git pull --rebase && git push
