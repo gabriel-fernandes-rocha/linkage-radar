@@ -1,0 +1,53 @@
+{
+  "data": "2026-09-29",
+  "gerado_em": "2026-09-29T05:04-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Mike Palei's Post",
+      "url": "https://www.linkedin.com/posts/mike-palei-4013203_cosine-similarity-is-the-default-answer-to-activity-7508487969788481536-CHDF",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 8,
+      "motivo": "Post técnico que discute diretamente deduplication, entity resolution e record linkage como problemas fundamentais de matching.",
+      "resumo": "Mike Palei aborda deduplicação, resolução de entidades e record linkage como problemas de decisão 'é o mesmo que?', destacando que um único similarity score frequentemente mascara questões mais complexas.",
+      "confianca": 0.85
+    }
+  ],
+  "vagas_abertas_total": 15,
+  "vagas_arquivadas_total": 20,
+  "aula": {
+    "dia": 2,
+    "modulo": "1. Fundamentos",
+    "titulo": "Entity resolution, record linkage e deduplicação: diferenças de nomenclatura",
+    "explicacao": "Os termos se sobrepõem. 'Record linkage' vem da estatística e da saúde pública (Newcombe, Fellegi-Sunter). 'Entity resolution' vem da ciência da computação e bancos de dados, com foco em agrupar registros em entidades. 'Deduplicação' é o caso de uma base só. 'Entity matching' costuma designar a etapa de decidir se um par é match, muito usada na literatura de ML. 'Data matching', 'merge/purge' e 'object identification' também aparecem. Saber os sinônimos é essencial para buscar literatura e vagas.",
+    "exemplo": "Buscar vagas só por 'record linkage' perde as que dizem 'entity resolution engineer'.",
+    "pergunta_reflexao": "Qual termo a sua área usa, e qual o mercado internacional usa?"
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2784,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 4,
+      "aprovados": 1
+    }
+  }
+}
