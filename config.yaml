@@ -22,9 +22,13 @@ web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   events_weekdays: [0, 3]   # eventos mudam pouco: segunda e quinta
   events_max_uses: 3
 
-serpapi:                    # plano grátis ~250 buscas/mês: LinkedIn ~30 + posts de vagas ~30 + eventos ~8 + vagas ~120
-  jobs_searches_per_day: 4
+serpapi:                    # plano grátis ~250 buscas/mês: LinkedIn ~30 + posts de vagas ~60 + eventos ~8 + vagas ~90 + rede ~60
+  jobs_searches_per_day: 3
   jobs_pages_per_term: 2
+
+network:
+  max_people: 5             # novas pessoas por dia
+  max_companies: 3          # novas empresas por dia
 
 open_jobs:
   max_age_days: 60          # vaga sai da lista de abertas depois disso, mesmo sem confirmação de fechamento
@@ -83,6 +87,23 @@ queries:
     - "identity resolution"
     - "data matching"
     - "master data management"
+  social_jobs_pt:             # posts de vaga no feed do LinkedIn, em português
+    - "entity resolution"
+    - "record linkage"
+    - "linkage de dados"
+    - "resolução de entidades"
+    - "qualidade de dados"
+    - "MDM"
+  network:                    # pessoas e empresas para seguir (1 termo por dia, em rodízio)
+    - "entity resolution"
+    - "record linkage"
+    - "identity resolution"
+    - "entity matching"
+    - "master data management"
+    - "splink"
+    - "data linkage"
+    - "address matching"
+    - "linkage de dados"
   linkedin:
     - "record linkage"
     - "entity resolution"

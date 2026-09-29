@@ -25,8 +25,10 @@ def serpapi(query: str, recency: str = "qdr:w") -> list[dict]:
     key = os.getenv("SERPAPI_KEY")
     if not key:
         return []
-    data = get("https://serpapi.com/search.json",
-               params={"engine": "google", "q": query, "api_key": key, "tbs": recency, "num": 20, "hl": "pt-BR"}).json()
+    params = {"engine": "google", "q": query, "api_key": key, "num": 20, "hl": "pt-BR"}
+    if recency:
+        params["tbs"] = recency
+    data = get("https://serpapi.com/search.json", params=params, timeout=60).json()
     return [{"titulo": r.get("title", ""), "url": r.get("link", ""), "texto": clean(r.get("snippet")),
              "data": r.get("date", "")} for r in data.get("organic_results", [])]
 

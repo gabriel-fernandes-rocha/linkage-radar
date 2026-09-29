@@ -104,6 +104,7 @@ def build_lesson_message(rep: dict, site_url: str) -> str | None:
         parts += ["", "Exemplo: " + a["exemplo"].strip()]
     if a.get("pergunta_reflexao"):
         parts += ["", "Para pensar: " + a["pergunta_reflexao"].strip()]
+    parts += ["", f"Plataforma: {site_url}"]
     return no_dash("\n".join(parts))
 
 

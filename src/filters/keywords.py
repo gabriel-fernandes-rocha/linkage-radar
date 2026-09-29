@@ -67,6 +67,6 @@ def central(it: dict) -> bool:
 
 def passes(it: dict) -> bool:
     it["score"] = score(it)
-    if it.get("tipo") in ("linkedin", "evento") or it.get("social"):
+    if it.get("tipo") in ("linkedin", "evento", "pessoa", "empresa") or it.get("social"):
         return it["score"] >= THRESHOLD_SEARCH
     return it["score"] >= THRESHOLD and central(it)

@@ -166,10 +166,38 @@ async function redirectToJob(id) {
   return false;
 }
 
+const NET_LIMIT = 15;
+async function loadNetwork(file, cardId, button) {
+  const card = $("#" + cardId);
+  let items = [];
+  try {
+    items = await getJSON(file);
+  } catch {}
+  $(".count", card).textContent = items.length;
+  if (!items.length) {
+    $(".list", card).innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
+    return;
+  }
+  const row = (x) => `<article class="item">
+      <h3>${x.novo ? '<span class="badge">NOVO</span>' : ""}${esc(x.nome || x.titulo)}</h3>
+      ${x.resumo ? `<p class="why">${esc(x.resumo)}</p>` : ""}
+      <p class="meta">${esc(x.fonte || "")}${x.desde ? " · desde " + fmtDate(x.desde) : ""}</p>
+      <a class="btn" href="${safeUrl(x.url)}" target="_blank" rel="noopener">${button}</a></article>`;
+  const render = (all) => {
+    const shown = all ? items : items.slice(0, NET_LIMIT);
+    $(".list", card).innerHTML = shown.map(row).join("") + (items.length > NET_LIMIT && !all
+      ? `<button class="btn more" type="button">Ver todas (${items.length})</button>` : "");
+    $(".more", card)?.addEventListener("click", () => render(true));
+  };
+  render(false);
+}
+
 (async function init() {
   if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
   loadOpenJobs();
   loadSkills();
+  loadNetwork("data/people.json", "pessoas", "Ver perfil");
+  loadNetwork("data/companies.json", "empresas", "Ver empresa");
   const sel = $("#day");
   let dates = [];
   try {

@@ -17,7 +17,7 @@ import open_jobs
 from common import DATA, load_config, log, today
 from dedup import Seen, unique
 from filters import keywords, llm_judge, requirements
-from sources import events, jobs, linkedin, papers
+from sources import events, jobs, linkedin, network, papers
 
 SECTIONS = [  # (chave no JSON, módulo, limite em config.limits)
     ("vagas", jobs, "max_jobs"),
@@ -95,6 +95,12 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
     if use_llm:
         archive = job_archive.update(approved_all.get("vagas", []), abertas, day)
         report["vagas_arquivadas_total"] = len(archive)
+
+    if use_llm:
+        judge_net = lambda items: llm_judge.judge(
+            [it for it in unique(items) if seen.is_new(it) and keywords.passes(it)], cfg)
+        report["rede"] = network.update(cfg, day, approved_all.get("linkedin", []),
+                                        approved_all.get("vagas", []), judge_net)
 
     report["aula"] = lesson.for_date(cfg, edition.date())
     report["estatisticas"] = stats

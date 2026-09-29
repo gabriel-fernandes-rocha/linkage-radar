@@ -17,6 +17,11 @@ Regras por tipo:
 resolution / deduplicação de registros / MDM matching, ou geocodificação / address matching. Vagas genéricas \
 de dados, BI, GIS ou ML que só citam o termo de passagem = reprovar.
 - vaga vinda de POST em rede social (fonte "Post · ..."): aprove só se o post anunciar uma vaga concreta e aberta (quem contrata, qual função) com foco no tema. Post genérico de "open to work", curso ou opinião = reprovar.
+- pessoa (perfil do LinkedIn): aprove se a pessoa claramente trabalha, pesquisa ou lidera algo cujo foco é \
+entity resolution / record linkage / MDM matching / identity resolution / geocodificação. No "resumo_pt" diga em \
+1 frase quem é (cargo e empresa SOMENTE se estiverem escritos no texto; nunca deduza a empresa). Recrutador genérico ou menção de passagem = reprovar.
+- empresa (página do LinkedIn): aprove se o produto/serviço central da empresa for esse tema (ou se ela for \
+referência no assunto). No "resumo_pt" diga em 1 frase o que ela faz.
 - evento: aprove somente se o tema central for isso E for no Brasil (ou online com organização/foco brasileiro claro). \
 Eventos já encerrados = reprovar.
 - paper: aprove se o problema central for linkage / ER / matching de registros ou entidades / geocodificação.
@@ -42,7 +47,7 @@ def _payload(batch: list[dict]) -> str:
     for i, it in enumerate(batch):
         rows.append({
             "id": i, "tipo": it["tipo"], "titulo": it["titulo"],
-            "empresa_ou_fonte": it.get("empresa") or it.get("fonte", ""),
+            "empresa_ou_fonte": "" if it["tipo"] in ("pessoa", "empresa") else (it.get("empresa") or it.get("fonte", "")),
             "local": it.get("local", ""), "data": it.get("data", ""),
             "texto": (it.get("texto") or "")[:1200],
         })

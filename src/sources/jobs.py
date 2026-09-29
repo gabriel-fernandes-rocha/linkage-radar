@@ -217,8 +217,19 @@ def social_posts(cfg):
     terms = " OR ".join(f'"{t}"' for t in cfg["queries"]["social_jobs"])
     hiring = '("hiring" OR "we are hiring" OR "join our team" OR "contratando" OR "vaga" OR "estamos contratando")'
     sites = " OR ".join(f"site:{s}" for s in cfg.get("social_sites", []))
+    queries = [f"({terms}) {hiring} ({sites})"]
+    pt = " OR ".join(f'"{t}"' for t in cfg["queries"].get("social_jobs_pt", []))
+    if pt:  # posts do feed do LinkedIn em português
+        queries.append(f'({pt}) ("vaga" OR "contratando" OR "oportunidade" OR "estamos contratando") '
+                       "site:linkedin.com/posts")
+    results = []
+    for q in queries:
+        try:
+            results += websearch.serpapi(q, recency="qdr:w")
+        except Exception as e:
+            log.warning("jobs/social '%s' falhou: %s", q[:40], e)
     out = []
-    for r in websearch.serpapi(f"({terms}) {hiring} ({sites})", recency="qdr:w"):
+    for r in results:
         domain = re.sub(r"^https?://([^/]+).*", r"", r["url"]).replace("www.", "")
         out.append(item("vaga", r["titulo"], r["url"], empresa="", local="", fonte=f"Post · {domain}",
                         texto=r["texto"], social=True))
