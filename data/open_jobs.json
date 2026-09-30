@@ -1,6 +1,34 @@
 [
   {
     "tipo": "vaga",
+    "titulo": "Amazon ML Challenge 2026",
+    "url": "https://www.kaggle.com/datasets/satwiksps/amazon-ml-challenge-2026",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · \u0001",
+    "social": true,
+    "score": 14,
+    "motivo": "Post anuncia desafio concreto com foco central em entity matching e record linkage de entidades de negócio com nomes e endereços ruidosos.",
+    "resumo": "Amazon ML Challenge 2026 com foco em multi-source business entity matching, entity resolution, record linkage e duplicate detection envolvendo nomes e endereços ruidosos.",
+    "confianca": 0.92,
+    "encaixe": 0.75,
+    "nota_perfil": "Alinhado com expertise em record linkage e matching, mas é desafio em plataforma pública (não vaga tradicional) e pode exigir relocalização para participação presencial.",
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Record Linkage",
+        "Duplicate Detection"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "desde": "2026-09-30",
+    "verificada_em": "2026-09-30",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Data Scientist - Onshore (B)",
     "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
     "empresa": "V4C.ai",
@@ -45,7 +73,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -78,7 +106,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -121,7 +149,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -164,7 +192,7 @@
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -215,7 +243,7 @@
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -242,7 +270,7 @@
     "senioridade": "staff/principal",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -283,7 +311,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -327,7 +355,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -353,7 +381,7 @@
     "senioridade": "nao_informado",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -393,70 +421,7 @@
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Engineer - Entity Resolution and Record Matching",
-    "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-entity-resolution-and-record-matching-at-ethos-talent-advisory-4467923358",
-    "empresa": "ETHOS - Talent & Advisory",
-    "local": "United States",
-    "fonte": "Google Jobs",
-    "score": 10,
-    "motivo": "Vaga altamente especializada em entity resolution e record matching probabilístico, com foco em pipelines Python/SQL em escala empresarial, perfeitamente alinhada ao core da expertise.",
-    "resumo": "Senior Data Engineer para design, construção e operação de pipelines de entity resolution que decidem quando dois registros descrevem mesma pessoa real. Envolve limpeza de dados de múltiplas fontes, otimização SQL em escala e probabilístico matching.",
-    "confianca": 0.94,
-    "encaixe": 0.25,
-    "nota_perfil": "Técnicamente perfeito (entity resolution, probabilístico, SQL, Python, produção em escala), porém exige 10+ anos mestrado ou 12+ anos bachelor, presencial 5 dias/semana em EUA descarta completamente por visto e modalidade.",
-    "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Record Linkage",
-        "Python",
-        "SQL",
-        "Regex",
-        "Blocking",
-        "Jaro-Winkler",
-        "Levenshtein",
-        "Soundex",
-        "Metaphone",
-        "Address Standardization",
-        "TF-IDF",
-        "Cosine Similarity",
-        "Splink",
-        "FastLink",
-        "Dedupe",
-        "recordlinkage",
-        "spaCy",
-        "NLTK",
-        "Hugging Face",
-        "Named Entity Recognition",
-        "scikit-learn",
-        "String Distance Metrics",
-        "Phonetic Encoding",
-        "Text Processing"
-      ],
-      "desejaveis": [
-        "Master Data Management",
-        "Golden Records",
-        "Single Customer View",
-        "Government Data",
-        "PostgreSQL",
-        "DB2",
-        "Oracle",
-        "SQL Server",
-        "Hadoop",
-        "Jenkins",
-        "CI/CD",
-        "Pipeline Scheduling",
-        "Monitoring Tools"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "presencial",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -485,7 +450,7 @@
     "senioridade": "senior",
     "modalidade": "hibrido",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -512,7 +477,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -542,7 +507,7 @@
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
   },
   {
@@ -604,7 +569,57 @@
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-09-29",
+    "verificada_em": "2026-09-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Yuliang LI",
+    "url": "https://scholar.google.gr/citations?user=ZomDhmYAAAAJ&hl=ja",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · \u0001",
+    "social": true,
+    "score": 4,
+    "motivo": "Post sobre pesquisador (Yuliang LI) cujo trabalho central é deep entity matching e transformers para entity matching, referência clara no tema.",
+    "resumo": "Yuliang LI, pesquisador cujos trabalhos principais incluem deep entity matching, entity resolution com transformers e effective entity matching.",
+    "confianca": 0.9,
+    "encaixe": 0.0,
+    "nota_perfil": "",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "desde": "2026-09-30",
+    "verificada_em": "2026-09-30",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "CaRL-EM: Cost-Aware Reinforcement Learning for Entity ...",
+    "url": "https://aclanthology.org/2026.acl-long.1258/",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · \u0001",
+    "social": true,
+    "score": 4,
+    "motivo": "Post apresenta paper ou trabalho sobre entity matching com LLMs, usando cost-aware reinforcement learning, foco central no tema.",
+    "resumo": "CaRL-EM: trabalho que aplica reinforcement learning com awareness de custo para entity matching, explorando uso de LLMs para entendimento contextual.",
+    "confianca": 0.88,
+    "encaixe": 0.0,
+    "nota_perfil": "",
+    "requisitos": {
+      "obrigatorios": [
+        "LLMs"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "desde": "2026-09-30",
+    "verificada_em": "2026-09-30",
+    "nova": true
   }
 ]

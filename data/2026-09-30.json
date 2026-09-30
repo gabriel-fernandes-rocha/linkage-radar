@@ -1,0 +1,128 @@
+{
+  "data": "2026-09-30",
+  "gerado_em": "2026-09-30T03:49-03:00",
+  "llm": true,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Amazon ML Challenge 2026",
+      "url": "https://www.kaggle.com/datasets/satwiksps/amazon-ml-challenge-2026",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · \u0001",
+      "social": true,
+      "score": 14,
+      "motivo": "Post anuncia desafio concreto com foco central em entity matching e record linkage de entidades de negócio com nomes e endereços ruidosos.",
+      "resumo": "Amazon ML Challenge 2026 com foco em multi-source business entity matching, entity resolution, record linkage e duplicate detection envolvendo nomes e endereços ruidosos.",
+      "confianca": 0.92,
+      "encaixe": 0.75,
+      "nota_perfil": "Alinhado com expertise em record linkage e matching, mas é desafio em plataforma pública (não vaga tradicional) e pode exigir relocalização para participação presencial.",
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Record Linkage",
+          "Duplicate Detection"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado"
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Yuliang LI",
+      "url": "https://scholar.google.gr/citations?user=ZomDhmYAAAAJ&hl=ja",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · \u0001",
+      "social": true,
+      "score": 4,
+      "motivo": "Post sobre pesquisador (Yuliang LI) cujo trabalho central é deep entity matching e transformers para entity matching, referência clara no tema.",
+      "resumo": "Yuliang LI, pesquisador cujos trabalhos principais incluem deep entity matching, entity resolution com transformers e effective entity matching.",
+      "confianca": 0.9,
+      "encaixe": 0.0,
+      "nota_perfil": "",
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado"
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "CaRL-EM: Cost-Aware Reinforcement Learning for Entity ...",
+      "url": "https://aclanthology.org/2026.acl-long.1258/",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · \u0001",
+      "social": true,
+      "score": 4,
+      "motivo": "Post apresenta paper ou trabalho sobre entity matching com LLMs, usando cost-aware reinforcement learning, foco central no tema.",
+      "resumo": "CaRL-EM: trabalho que aplica reinforcement learning com awareness de custo para entity matching, explorando uso de LLMs para entendimento contextual.",
+      "confianca": 0.88,
+      "encaixe": 0.0,
+      "nota_perfil": "",
+      "requisitos": {
+        "obrigatorios": [
+          "LLMs"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado"
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Billiger.de Products: A Bilingual Entity Matching Benchmark",
+      "url": "http://arxiv.org/abs/2609.37713v1",
+      "autores": "Aaron Steiner et al.",
+      "data": "2026-09-29",
+      "fonte": "arXiv",
+      "score": 4,
+      "motivo": "Paper cujo problema central é entity matching de produtos com benchmark bilíngue, validado com múltiplos matchers supervisionados.",
+      "resumo": "Introduz Billiger.de Products, um benchmark bilíngue (alemão e inglês) para entity matching de produtos em 13 categorias de consumo, com variantes que incluem corner cases e testes cross-language. Valida o benchmark com 6 matchers supervisionados e GPT-5.2.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 17,
+  "vagas_arquivadas_total": 23,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 3
+  },
+  "aula": {
+    "dia": 3,
+    "modulo": "1. Fundamentos",
+    "titulo": "Linkage entre bases vs deduplicação dentro de uma base",
+    "explicacao": "Linkage entre bases liga registros de fontes A e B (ex.: nascidos vivos × óbitos). Deduplicação encontra registros repetidos dentro da mesma base (ex.: a mesma pessoa cadastrada duas vezes no CadÚnico). A diferença muda o espaço de pares: entre bases são |A|×|B| pares; na deduplicação, n(n−1)/2. Também muda a restrição: em linkage entre bases, muitas vezes esperamos no máximo um par por registro (1-para-1), enquanto na deduplicação uma entidade pode ter vários registros.",
+    "exemplo": "Base com 1 milhão de registros → ~5×10¹¹ pares possíveis na deduplicação.",
+    "pergunta_reflexao": "No seu trabalho, qual dos dois cenários é mais comum e qual é mais difícil?"
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2800,
+      "pos_palavras_chave": 16,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 204,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  }
+}

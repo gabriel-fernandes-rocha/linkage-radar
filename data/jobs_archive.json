@@ -43,7 +43,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Lead Software Development Engineer",
@@ -73,7 +73,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Senior Data Engineer — Entity Resolution / Record Linkage",
@@ -113,7 +113,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Integration Engineer - Customer Data Platform (CDP)",
@@ -153,7 +153,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Enterprise TAM Pipeline (Waterfall API Enrichment, Entity Resolution & Partner Mapping) - Contract to Hire",
@@ -201,7 +201,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "MDM Architect Customer 360 / Identity Resolution / Databricks | Contract | Remote",
@@ -288,7 +288,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Software Engineer 5 - Ads Identity Graph",
@@ -329,7 +329,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Entity Resolution Associate (R-19562)",
@@ -366,7 +366,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Senior Solution Engineer, Master Data Management (MDM) - Reltio",
@@ -507,8 +507,9 @@
   "senioridade": "senior",
   "modalidade": "presencial",
   "primeira_vez": "2026-09-28",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-09-29",
+  "fechada_em": "2026-09-30"
  },
  {
   "titulo": "Senior Identity Resolution Engineer - MDM Lead",
@@ -561,7 +562,7 @@
   "modalidade": "hibrido",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Senior Data Scientist — Entity Resolution & Data Pipelines",
@@ -585,7 +586,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Staff Data Scientist, Entity Resolution — Onsite LA, Equity",
@@ -612,7 +613,7 @@
   "modalidade": "presencial",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Senior Data Scientist — Entity Resolution (Onsite)",
@@ -700,7 +701,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Senior Data Scientist, Entity Resolution — High-Impact & Equity",
@@ -724,7 +725,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
  },
  {
   "titulo": "Product Manager, AI Platform — Entity Resolution at Scale",
@@ -747,6 +748,72 @@
   "modalidade": "presencial",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-09-29"
+  "ultima_vez_aberta": "2026-09-30"
+ },
+ {
+  "titulo": "Amazon ML Challenge 2026",
+  "empresa": "",
+  "local": "",
+  "url": "https://www.kaggle.com/datasets/satwiksps/amazon-ml-challenge-2026",
+  "fonte": "Post · \u0001",
+  "encaixe": 0.75,
+  "nota_perfil": "Alinhado com expertise em record linkage e matching, mas é desafio em plataforma pública (não vaga tradicional) e pode exigir relocalização para participação presencial.",
+  "motivo": "Post anuncia desafio concreto com foco central em entity matching e record linkage de entidades de negócio com nomes e endereços ruidosos.",
+  "resumo": "Amazon ML Challenge 2026 com foco em multi-source business entity matching, entity resolution, record linkage e duplicate detection envolvendo nomes e endereços ruidosos.",
+  "requisitos": {
+   "obrigatorios": [
+    "Entity Resolution",
+    "Record Linkage",
+    "Duplicate Detection"
+   ],
+   "desejaveis": []
+  },
+  "senioridade": "nao_informado",
+  "modalidade": "nao_informado",
+  "primeira_vez": "2026-09-30",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-09-30"
+ },
+ {
+  "titulo": "Yuliang LI",
+  "empresa": "",
+  "local": "",
+  "url": "https://scholar.google.gr/citations?user=ZomDhmYAAAAJ&hl=ja",
+  "fonte": "Post · \u0001",
+  "encaixe": 0.0,
+  "nota_perfil": "",
+  "motivo": "Post sobre pesquisador (Yuliang LI) cujo trabalho central é deep entity matching e transformers para entity matching, referência clara no tema.",
+  "resumo": "Yuliang LI, pesquisador cujos trabalhos principais incluem deep entity matching, entity resolution com transformers e effective entity matching.",
+  "requisitos": {
+   "obrigatorios": [],
+   "desejaveis": []
+  },
+  "senioridade": "nao_informado",
+  "modalidade": "nao_informado",
+  "primeira_vez": "2026-09-30",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-09-30"
+ },
+ {
+  "titulo": "CaRL-EM: Cost-Aware Reinforcement Learning for Entity ...",
+  "empresa": "",
+  "local": "",
+  "url": "https://aclanthology.org/2026.acl-long.1258/",
+  "fonte": "Post · \u0001",
+  "encaixe": 0.0,
+  "nota_perfil": "",
+  "motivo": "Post apresenta paper ou trabalho sobre entity matching com LLMs, usando cost-aware reinforcement learning, foco central no tema.",
+  "resumo": "CaRL-EM: trabalho que aplica reinforcement learning com awareness de custo para entity matching, explorando uso de LLMs para entendimento contextual.",
+  "requisitos": {
+   "obrigatorios": [
+    "LLMs"
+   ],
+   "desejaveis": []
+  },
+  "senioridade": "nao_informado",
+  "modalidade": "nao_informado",
+  "primeira_vez": "2026-09-30",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-09-30"
  }
 ]
