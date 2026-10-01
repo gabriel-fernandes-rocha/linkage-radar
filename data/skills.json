@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-09-30",
+ "atualizado_em": "2026-10-01",
  "geral": {
   "vagas_analisadas": 23,
   "ranking": [
@@ -46,18 +46,18 @@
     "desejavel": 2
    },
    {
-    "nome": "Spark",
-    "vagas": 5,
-    "pct": 22,
-    "obrigatorio": 5,
-    "desejavel": 0
-   },
-   {
     "nome": "Databricks",
     "vagas": 5,
     "pct": 22,
     "obrigatorio": 4,
     "desejavel": 1
+   },
+   {
+    "nome": "Spark",
+    "vagas": 5,
+    "pct": 22,
+    "obrigatorio": 5,
+    "desejavel": 0
    },
    {
     "nome": "Identity Resolution",
@@ -67,14 +67,14 @@
     "desejavel": 0
    },
    {
-    "nome": "Data Quality",
+    "nome": "Deduplication",
     "vagas": 4,
     "pct": 17,
     "obrigatorio": 4,
     "desejavel": 0
    },
    {
-    "nome": "Deduplication",
+    "nome": "Data Quality",
     "vagas": 4,
     "pct": 17,
     "obrigatorio": 4,
@@ -116,14 +116,14 @@
     "desejavel": 0
    },
    {
-    "nome": "Splink",
+    "nome": "NLP",
     "vagas": 3,
     "pct": 13,
     "obrigatorio": 2,
     "desejavel": 1
    },
    {
-    "nome": "NLP",
+    "nome": "Splink",
     "vagas": 3,
     "pct": 13,
     "obrigatorio": 2,
@@ -179,6 +179,13 @@
     "desejavel": 0
    },
    {
+    "nome": "HubSpot",
+    "vagas": 2,
+    "pct": 9,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
     "nome": "PostgreSQL",
     "vagas": 2,
     "pct": 9,
@@ -186,7 +193,7 @@
     "desejavel": 1
    },
    {
-    "nome": "HubSpot",
+    "nome": "CRM",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 1,
@@ -200,11 +207,11 @@
     "desejavel": 0
    },
    {
-    "nome": "CRM",
+    "nome": "Data Modeling",
     "vagas": 2,
     "pct": 9,
-    "obrigatorio": 1,
-    "desejavel": 1
+    "obrigatorio": 2,
+    "desejavel": 0
    },
    {
     "nome": "Survivorship",
@@ -214,14 +221,7 @@
     "desejavel": 0
    },
    {
-    "nome": "Data Modeling",
-    "vagas": 2,
-    "pct": 9,
-    "obrigatorio": 2,
-    "desejavel": 0
-   },
-   {
-    "nome": "GCP",
+    "nome": "Java",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 1,
@@ -235,18 +235,11 @@
     "desejavel": 1
    },
    {
-    "nome": "Java",
+    "nome": "GCP",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 1,
     "desejavel": 1
-   },
-   {
-    "nome": "spaCy",
-    "vagas": 2,
-    "pct": 9,
-    "obrigatorio": 2,
-    "desejavel": 0
    },
    {
     "nome": "Hugging Face",
@@ -256,7 +249,7 @@
     "desejavel": 0
    },
    {
-    "nome": "Record Linking",
+    "nome": "spaCy",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 2,
@@ -270,25 +263,18 @@
     "desejavel": 0
    },
    {
-    "nome": "FHIR",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 1
-   },
-   {
-    "nome": "Power BI",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 1
-   },
-   {
-    "nome": "Data Matching",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
+    "nome": "Record Linking",
+    "vagas": 2,
+    "pct": 9,
+    "obrigatorio": 2,
     "desejavel": 0
+   },
+   {
+    "nome": "Healthcare Data",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 1
    },
    {
     "nome": "Data Lineage",
@@ -298,7 +284,14 @@
     "desejavel": 0
    },
    {
-    "nome": "Azure",
+    "nome": "Power BI",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "FHIR",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
@@ -312,14 +305,14 @@
     "desejavel": 1
    },
    {
-    "nome": "Tableau",
+    "nome": "HIPAA",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
    },
    {
-    "nome": "HL7",
+    "nome": "Tableau",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
@@ -333,11 +326,25 @@
     "desejavel": 1
    },
    {
-    "nome": "HIPAA",
+    "nome": "Azure",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
+   },
+   {
+    "nome": "HL7",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Matching",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 1,
+    "desejavel": 0
    },
    {
     "nome": "MDM Platforms",
@@ -347,14 +354,21 @@
     "desejavel": 1
    },
    {
-    "nome": "Healthcare Data",
+    "nome": "Cloud Platforms",
     "vagas": 1,
     "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 1
+    "obrigatorio": 1,
+    "desejavel": 0
    },
    {
     "nome": "Large-Scale Data Systems",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Clojure",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 1,
@@ -368,25 +382,18 @@
     "desejavel": 1
    },
    {
-    "nome": "Clojure",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
-    "desejavel": 0
-   },
-   {
-    "nome": "Cloud Platforms",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
-    "desejavel": 0
-   },
-   {
-    "nome": "Typesense",
+    "nome": "Multilingual Data",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
+   },
+   {
+    "nome": "Candidate Generation",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 1,
+    "desejavel": 0
    },
    {
     "nome": "fastLink",
@@ -403,21 +410,14 @@
     "desejavel": 1
    },
    {
-    "nome": "Candidate Generation",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
-    "desejavel": 0
-   },
-   {
-    "nome": "Fellegi-Sunter",
+    "nome": "Transliteration",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
    },
    {
-    "nome": "Transliteration",
+    "nome": "Typesense",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
@@ -471,18 +471,18 @@
     "desejavel": 2
    },
    {
-    "nome": "Spark",
-    "vagas": 5,
-    "pct": 22,
-    "obrigatorio": 5,
-    "desejavel": 0
-   },
-   {
     "nome": "Databricks",
     "vagas": 5,
     "pct": 22,
     "obrigatorio": 4,
     "desejavel": 1
+   },
+   {
+    "nome": "Spark",
+    "vagas": 5,
+    "pct": 22,
+    "obrigatorio": 5,
+    "desejavel": 0
    },
    {
     "nome": "Identity Resolution",
@@ -492,14 +492,14 @@
     "desejavel": 0
    },
    {
-    "nome": "Data Quality",
+    "nome": "Deduplication",
     "vagas": 4,
     "pct": 17,
     "obrigatorio": 4,
     "desejavel": 0
    },
    {
-    "nome": "Deduplication",
+    "nome": "Data Quality",
     "vagas": 4,
     "pct": 17,
     "obrigatorio": 4,
@@ -541,14 +541,14 @@
     "desejavel": 0
    },
    {
-    "nome": "Splink",
+    "nome": "NLP",
     "vagas": 3,
     "pct": 13,
     "obrigatorio": 2,
     "desejavel": 1
    },
    {
-    "nome": "NLP",
+    "nome": "Splink",
     "vagas": 3,
     "pct": 13,
     "obrigatorio": 2,
@@ -604,6 +604,13 @@
     "desejavel": 0
    },
    {
+    "nome": "HubSpot",
+    "vagas": 2,
+    "pct": 9,
+    "obrigatorio": 1,
+    "desejavel": 1
+   },
+   {
     "nome": "PostgreSQL",
     "vagas": 2,
     "pct": 9,
@@ -611,7 +618,7 @@
     "desejavel": 1
    },
    {
-    "nome": "HubSpot",
+    "nome": "CRM",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 1,
@@ -625,11 +632,11 @@
     "desejavel": 0
    },
    {
-    "nome": "CRM",
+    "nome": "Data Modeling",
     "vagas": 2,
     "pct": 9,
-    "obrigatorio": 1,
-    "desejavel": 1
+    "obrigatorio": 2,
+    "desejavel": 0
    },
    {
     "nome": "Survivorship",
@@ -639,14 +646,7 @@
     "desejavel": 0
    },
    {
-    "nome": "Data Modeling",
-    "vagas": 2,
-    "pct": 9,
-    "obrigatorio": 2,
-    "desejavel": 0
-   },
-   {
-    "nome": "GCP",
+    "nome": "Java",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 1,
@@ -660,18 +660,11 @@
     "desejavel": 1
    },
    {
-    "nome": "Java",
+    "nome": "GCP",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 1,
     "desejavel": 1
-   },
-   {
-    "nome": "spaCy",
-    "vagas": 2,
-    "pct": 9,
-    "obrigatorio": 2,
-    "desejavel": 0
    },
    {
     "nome": "Hugging Face",
@@ -681,7 +674,7 @@
     "desejavel": 0
    },
    {
-    "nome": "Record Linking",
+    "nome": "spaCy",
     "vagas": 2,
     "pct": 9,
     "obrigatorio": 2,
@@ -695,25 +688,18 @@
     "desejavel": 0
    },
    {
-    "nome": "FHIR",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 1
-   },
-   {
-    "nome": "Power BI",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 1
-   },
-   {
-    "nome": "Data Matching",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
+    "nome": "Record Linking",
+    "vagas": 2,
+    "pct": 9,
+    "obrigatorio": 2,
     "desejavel": 0
+   },
+   {
+    "nome": "Healthcare Data",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 1
    },
    {
     "nome": "Data Lineage",
@@ -723,7 +709,14 @@
     "desejavel": 0
    },
    {
-    "nome": "Azure",
+    "nome": "Power BI",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "FHIR",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
@@ -737,14 +730,14 @@
     "desejavel": 1
    },
    {
-    "nome": "Tableau",
+    "nome": "HIPAA",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
    },
    {
-    "nome": "HL7",
+    "nome": "Tableau",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
@@ -758,11 +751,25 @@
     "desejavel": 1
    },
    {
-    "nome": "HIPAA",
+    "nome": "Azure",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
+   },
+   {
+    "nome": "HL7",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 1
+   },
+   {
+    "nome": "Data Matching",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 1,
+    "desejavel": 0
    },
    {
     "nome": "MDM Platforms",
@@ -772,14 +779,21 @@
     "desejavel": 1
    },
    {
-    "nome": "Healthcare Data",
+    "nome": "Cloud Platforms",
     "vagas": 1,
     "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 1
+    "obrigatorio": 1,
+    "desejavel": 0
    },
    {
     "nome": "Large-Scale Data Systems",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 1,
+    "desejavel": 0
+   },
+   {
+    "nome": "Clojure",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 1,
@@ -793,25 +807,18 @@
     "desejavel": 1
    },
    {
-    "nome": "Clojure",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
-    "desejavel": 0
-   },
-   {
-    "nome": "Cloud Platforms",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
-    "desejavel": 0
-   },
-   {
-    "nome": "Typesense",
+    "nome": "Multilingual Data",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
+   },
+   {
+    "nome": "Candidate Generation",
+    "vagas": 1,
+    "pct": 4,
+    "obrigatorio": 1,
+    "desejavel": 0
    },
    {
     "nome": "fastLink",
@@ -828,21 +835,14 @@
     "desejavel": 1
    },
    {
-    "nome": "Candidate Generation",
-    "vagas": 1,
-    "pct": 4,
-    "obrigatorio": 1,
-    "desejavel": 0
-   },
-   {
-    "nome": "Fellegi-Sunter",
+    "nome": "Transliteration",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,
     "desejavel": 1
    },
    {
-    "nome": "Transliteration",
+    "nome": "Typesense",
     "vagas": 1,
     "pct": 4,
     "obrigatorio": 0,

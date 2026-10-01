@@ -1,0 +1,70 @@
+{
+  "data": "2026-10-01",
+  "gerado_em": "2026-10-01T04:14-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "MSSC-EM: A Multi-Semantic Self-Supervised Collaborative Entity Matching Framework",
+      "url": "https://doi.org/10.3390/app16199685",
+      "autores": "Yaoli Xu et al.",
+      "data": "2026-09-29",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "motivo": "Paper focado em entity matching com abordagem de self-supervised learning, colaboração multi-semântica e matching de tuplas heterogêneas, alinhado com pesquisa de record linkage.",
+      "resumo": "Propõe MSSC-EM, um framework de matching de entidades auto-supervisionado baseado em colaboração multi-semântica com três módulos: augmentação de informação via RAG, augmentação automática de dados, e aprendizado colaborativo de features semânticas. Aborda limitações em representação semântica, sinais de supervisão em cenários zero-shot e robustez.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "X-TREATS: Integrating explainability and fairness into streaming entity resolution",
+      "url": "https://www.semanticscholar.org/paper/7d129891e1a5a667ee72a85b78e18aaf9910dd64",
+      "autores": "Tiago Brasileiro Araújo et al.",
+      "data": "2026-11-01",
+      "fonte": "Semantic Scholar",
+      "score": 3,
+      "motivo": "Paper sobre entity resolution em streaming com foco em explainabilidade e fairness, temas centrais na resolução de entidades em produção.",
+      "resumo": "Trabalho que integra explainabilidade e fairness em streaming entity resolution (X-TREATS), abordando desafios de interpretabilidade e equidade em pipelines de resolução de entidades em tempo real.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 17,
+  "vagas_arquivadas_total": 23,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "aula": {
+    "dia": 4,
+    "modulo": "1. Fundamentos",
+    "titulo": "O problema da ausência de chave única",
+    "explicacao": "Se todo registro tivesse um CPF correto e sempre preenchido, linkage seria um join. Na prática, identificadores únicos faltam, estão errados (dígito trocado), são reaproveitados ou nem existem naquela base. Por isso usamos quase-identificadores: nome, sexo, data de nascimento, nome da mãe, município. Nenhum sozinho identifica alguém, mas a combinação sim. O problema de linkage é, no fundo, decidir quanta evidência basta quando a chave perfeita não existe.",
+    "exemplo": "CPF preenchido em só 40% dos registros de uma base: o join por CPF perde 60% dos links.",
+    "pergunta_reflexao": "Mesmo quando existe um CPF, em que situações você não confiaria nele?"
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2516,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 205,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}
