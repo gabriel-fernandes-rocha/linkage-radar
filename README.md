@@ -1,30 +1,46 @@
 # 📡 Linkage Radar
 
-Radar diário de **Record Linkage, Entity Resolution e Geocodificação**: vagas no mundo todo, eventos no Brasil, papers do dia, posts do LinkedIn e uma aula por dia. Chega no **WhatsApp às 6h** e fica num site responsivo no GitHub Pages.
+Radar diário para se tornar especialista em **Entity Resolution / Record Linkage**: vagas no mundo todo com
+**compatibilidade realista**, posts com vagas nas redes, eventos no Brasil, papers, pessoas e empresas para seguir,
+um **programa de 52 semanas** baseado em Christen (2012) e coaching de carreira. Duas mensagens no WhatsApp às **07h**
+(vagas e aula) e tudo no site.
 
 ```
-23h (BRT)  coletar  → busca → filtro por palavras-chave → dedup → Claude Haiku (juiz) → data/AAAA-MM-DD.json → site
-06h (BRT)  enviar   → lê a edição do dia → WhatsApp (CallMeBot) com link do site
+~02h (BRT) coletar → 14 fontes de vagas + posts + papers → palavras-chave → Haiku (juiz) → Sonnet (fatos da vaga)
+                   → compatibilidade (Python) → pessoas/empresas → pílula de mercado → análise semanal do perfil
+07h00      enviar  → já está rodando desde a coleta e dispara exatamente às 07h: 1) vagas  2) aula do dia
 ```
 
-> O cron do GitHub é em UTC e pode atrasar de 5 a 30 minutos em horários de pico. É normal.
+> O agendamento grátis do GitHub atrasa ~6h neste repositório. Por isso o envio começa logo após a coleta e
+> **espera rodando** até `send_time` (scripts/wait_until_send.py). Nunca envia duas vezes no mesmo dia.
 
 ---
 
+## 🎓 Programa de 52 semanas (curriculum/plan.py)
+- Base: **Christen, P. (2012). Data Matching** (cap. 1 a 10, com páginas), completado com a literatura posterior
+  (Fellegi-Sunter, Winkler, Splink, fastLink, Ditto, LLMs, PPRL, ER bayesiano...). Só referências verificadas.
+- Semana = 5 aulas de conceito + 1 laboratório com código + 1 revisão ativa com repetição espaçada.
+- Cada aula: objetivo, conceito, fórmula/algoritmo, exemplo resolvido com números, prática (Splink 4, PySpark,
+  recordlinkage), armadilha, **desafio** e **gabarito no dia seguinte**.
+- Geradas uma vez com Claude Sonnet 5 via Batch API (`scripts/build_curriculum.py`). O PDF do livro fica só na
+  sua máquina (`.book/`, fora do git: direitos autorais).
+
+## 🎯 Compatibilidade realista (src/compat.py)
+O LLM só **extrai fatos** da vaga (requisitos, anos, de onde aceita candidatos, visto, inglês, foco em ER). A nota é
+calculada em Python: `habilidades × senioridade × local × inglês × foco`. Vaga remota só para EUA sem visto cai
+para ~10%, porque na prática você não seria contratado. O site mostra cada fator e **o que falta**.
+
 ## 💰 Quanto custa
-
-| Item | Custo/mês |
+| Item | Custo |
 |---|---|
-| GitHub Actions + Pages (repo público) | grátis |
-| CallMeBot (WhatsApp) | grátis |
-| arXiv, OpenAlex, RemoteOK, Remotive, Greenhouse, Lever, Ashby, HN | grátis |
-| **Claude Haiku 4.5 como juiz** (~15–30 itens/dia, julgados em lotes de 8) | **≈ US$ 0,70** |
-| LinkedIn + eventos via **SerpAPI** (100 buscas grátis/mês; usamos ~70) | grátis |
-| *ou* LinkedIn + eventos via busca web do Claude (se não usar SerpAPI) | ≈ US$ 1,50 |
-| Gerar as 335 aulas restantes (**uma única vez**) | ≈ US$ 0,50 |
+| GitHub Actions + Pages (repo público), CallMeBot, fontes de vagas e papers | grátis |
+| SerpAPI (plano grátis ~250 buscas/mês; usamos ~240) | grátis |
+| Haiku 4.5: juiz de relevância | ≈ US$ 0,70/mês |
+| Sonnet 5: fatos das vagas aprovadas + pílula diária + análise semanal | ≈ US$ 1,80/mês |
+| **Total mensal** | **≈ US$ 2,50 (≈ R$ 14)** |
+| 365 aulas com Sonnet 5 via Batch (uma única vez) | ≈ US$ 7 |
 
-**Total: ≈ US$ 0,70/mês (≈ R$ 4) com SerpAPI, ou ≈ US$ 2/mês (≈ R$ 11) sem.**
-Travas de custo em `config.yaml`: `llm.max_items_per_day`, `web_search.*_max_uses` e `web_search.*_weekdays`.
+Travas de custo em `config.yaml`: `llm.max_items_per_day`, `serpapi.*`, `network.*`.
 
 ---
 
@@ -94,7 +110,8 @@ RUN_LLM_TESTS=1 pytest -s                # + teste real do juiz com 10 exemplos 
 No Windows (PowerShell), defina a chave assim: `$env:ANTHROPIC_API_KEY="sk-ant-..."`.
 
 ## ⏰ Mudar horários
-Edite `send_time` / `collect_time` em `config.yaml` e rode `python scripts/update_cron.py`, depois commit + push.
+Edite `send_time` em `config.yaml` (o envio espera rodando até esse horário) e faça commit + push. A coleta
+(`.github/workflows/collect.yml`) precisa terminar antes: hoje ela é agendada para 20:17 e roda de fato ~02h.
 
 ## 🎯 Como a precisão é garantida
 1. **Palavras-chave** (`src/filters/keywords.py`): termos fortes (+3), médios (+1), negativos (−3). Além do score ≥ 3, o termo forte tem que estar no **título** ou aparecer **2+ vezes** no texto — isso elimina o falso positivo clássico de empresas de MDM cuja descrição institucional ("líderes em entity resolution") aparece em todas as vagas, até de SRE.
@@ -113,7 +130,11 @@ src/main_send.py       envia o WhatsApp (--dry-run)
 src/sources/           jobs, papers, events, linkedin, websearch
 src/filters/           keywords (etapa 1) e llm_judge (etapa 2)
 src/notify/            callmebot e twilio
-curriculum/            syllabus.py (365 títulos) e lessons.json
+curriculum/            plan.py (52 semanas) e lessons.json (365 aulas geradas)
+profile/curriculo.md   seu currículo sem dados de contato (base da análise de perfil)
+src/compat.py          compatibilidade realista vaga x perfil
+src/career.py          pílula diária do mercado e análise semanal do perfil
+scripts/               build_curriculum.py, rescore_jobs.py, wait_until_send.py
 site/                  HTML + CSS + JS puro
 .github/workflows/     coletar, enviar, publicar site, gerar aulas
 ```
