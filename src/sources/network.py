@@ -101,6 +101,8 @@ def _merge(path, new: list[dict], day: str, limit: int) -> list[dict]:
         if _norm_url(n["url"]) in known or n.get("nome", "").lower() in known:
             continue
         entry = {k: n.get(k) for k in ("nome", "titulo", "url", "resumo", "motivo", "fonte") if n.get(k)}
+        if n.get("texto"):  # headline + trecho público: base para a análise do seu perfil
+            entry["perfil_publico"] = n["texto"][:600]
         entry.update(desde=day, novo=True)
         current.insert(0, entry)
         known |= {_norm_url(n["url"]), n.get("nome", "").lower()}

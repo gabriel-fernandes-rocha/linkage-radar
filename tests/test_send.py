@@ -35,10 +35,14 @@ def test_jobs_sorted_by_compatibility():
 
 def test_lesson_message_is_complete():
     rep = _rep(0)
-    rep["aula"] = {"dia": 3, "modulo": "1. Fundamentos", "titulo": "T", "explicacao": "E " * 100,
-                   "exemplo": "X", "pergunta_reflexao": "P?"}
+    rep["aula"] = {"versao": 2, "gerada": True, "dia": 3, "semana": 1, "tema": "Tema", "tipo": "conceito",
+                   "titulo": "Titulo", "objetivo": "Obj", "conceito": "C " * 100, "como_funciona": "1. passo",
+                   "exemplo": "X", "na_pratica": "P", "armadilha": "A", "desafio": "D?", "gabarito": "G",
+                   "fontes": ["Christen (2012), seç. 1.1"]}
     msg = build_lesson_message(rep, "https://site")
-    assert ("E " * 100).strip() in msg and "Exemplo: X" in msg and "Para pensar: P?" in msg
+    for part in (("C " * 100).strip(), "EXEMPLO RESOLVIDO\nX", "DESAFIO DO DIA\nD?", "Christen (2012)", "https://site"):
+        assert part in msg, part
+    assert "\nG\n" not in msg  # o gabarito do dia só chega amanhã
 
 
 def test_callmebot_split_respects_encoded_limit():

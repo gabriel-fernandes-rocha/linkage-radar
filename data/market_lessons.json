@@ -1,0 +1,52 @@
+[
+ {
+  "data": "2026-10-02",
+  "habilidade": "Master Data Management",
+  "pct_vagas": 20,
+  "nivel_atual": "parcial",
+  "o_que_e": "Master Data Management (MDM) é a disciplina e conjunto de processos/tecnologias para criar e manter uma versão única, consistente e confiável dos dados mestres de uma organização (clientes, produtos, fornecedores etc), governando como esses registros são criados, atualizados, mesclados e distribuídos entre sistemas. Envolve golden record, survivorship rules, governança de dados, hierarquias, stewardship e integração com sistemas downstream via APIs ou batch. Entity resolution é o motor técnico que alimenta o MDM, mas o MDM é mais amplo: inclui governança, ciclo de vida do dado e arquitetura organizacional.",
+  "por_que_pedem": "Vagas de Identity Resolution/Customer 360 pedem MDM porque entity resolution é só a parte de matching; na prática essas empresas querem alguém que entenda o ciclo completo: como o golden record é formado, mantido, versionado, exposto para consumo e governado ao longo do tempo. Arquiteturas como Databricks Unity Catalog, Reltio, Informatica MDM ou Profisee aparecem porque o mercado espera familiaridade com plataformas e padrões de survivorship, não só com algoritmos de matching.",
+  "ponte_com_o_que_voce_sabe": "Você já resolve a parte mais difícil tecnicamente (matching determinístico/probabilístico, blocking, scoring com Splink) que é o núcleo de qualquer solução de MDM moderna. O que falta é vocabulário e prática nos conceitos de governança ao redor disso: survivorship rules, golden record, data stewardship, hierarquias mestre-filho, e como isso se integra em arquiteturas como Customer 360. Seu pipeline de produção em saúde pública já é conceitualmente um sistema de MDM aplicado a pessoas; você só precisa reformular isso na linguagem do mercado corporativo.",
+  "minimo_para_ficar_apto": [
+   "Saber definir golden record e survivorship rules com exemplos concretos",
+   "Entender diferença entre MDM operacional, analítico e híbrido",
+   "Conhecer pelo menos uma plataforma comercial de MDM em nível conceitual (Reltio, Informatica MDM, Profisee ou Databricks Unity Catalog com Delta Live Tables)",
+   "Saber explicar como entity resolution se encaixa dentro do pipeline de MDM (ingestão, match, merge, publish, governance)",
+   "Entender conceitos básicos de data governance: stewardship, data quality rules, lineage, master vs reference data"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de MDM na documentação da Profisee ou Informatica (conceitos, não produto)",
+   "2h: estudar survivorship rules e golden record com exemplos práticos (buscar whitepapers do Gartner sobre MDM)",
+   "3h: explorar Databricks Unity Catalog + Delta Live Tables como arquitetura de Customer 360, já que aparece nas vagas",
+   "2h: mapear seu pipeline atual de record linkage em termos de MDM (ingestão, match, merge, golden record, publish) para usar em entrevistas",
+   "1h: revisar diferenças entre MDM, CDP (Customer Data Platform) e Identity Resolution para não confundir em entrevista"
+  ],
+  "mini_projeto": "Documente (não precisa codar do zero) um case study transformando seu pipeline de record linkage em saúde pública em uma arquitetura de MDM formal: defina as fontes de dados mestres, regras de survivorship (qual fonte vence em caso de conflito de nome/endereço/documento), como o golden record é versionado e como ele seria exposto via API para sistemas consumidores. Isso vira peça de portfólio e resposta pronta para entrevistas.",
+  "como_colocar_no_curriculo": "Experiência em arquitetura de dados mestres (MDM): desenho de pipelines de entity resolution e golden record para registros de pessoas em escala (bilhões de registros), com regras de survivorship e integração com sistemas downstream.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é golden record e como você decide qual fonte prevalece em caso de conflito?",
+    "resposta": "Golden record é a versão consolidada e mais confiável de uma entidade, construída a partir de múltiplas fontes. A decisão de qual valor prevalece (survivorship) normalmente usa regras baseadas em prioridade de fonte, recência, completude do dado ou confiança do scoring de matching. No meu trabalho, por exemplo, uso regras de precedência combinadas com score de confiança do linkage para decidir qual registro de origem fornece cada campo do golden record."
+   },
+   {
+    "pergunta": "Qual a diferença entre MDM operacional e MDM analítico?",
+    "resposta": "MDM operacional integra-se em tempo real ou quase real aos sistemas transacionais, garantindo que aplicações usem o golden record atualizado no dia a dia. MDM analítico é mais batch, usado para consolidar dados mestres para relatórios e análises, sem necessariamente alimentar sistemas operacionais em tempo real. Meu pipeline atual é mais próximo do modelo híbrido, com processamento em lote de alta escala que depois alimenta sistemas de consulta."
+   },
+   {
+    "pergunta": "Como entity resolution se relaciona com MDM?",
+    "resposta": "Entity resolution é o componente técnico central do MDM responsável por identificar quando registros de fontes diferentes representam a mesma entidade real. O MDM usa essa resolução como entrada para o processo de merge e criação do golden record, além de adicionar camadas de governança, versionamento e distribuição dos dados mestres."
+   },
+   {
+    "pergunta": "Você já trabalhou com alguma plataforma comercial de MDM como Informatica, Reltio ou Profisee?",
+    "resposta": "Não trabalhei diretamente com essas plataformas comerciais, mas tenho experiência equivalente construindo pipelines de MDM customizados com Spark, Splink e Elasticsearch em escala de bilhões de registros, incluindo blocking, scoring, merge e QA. Estou familiarizado com os conceitos centrais dessas ferramentas e me adaptaria rapidamente à sintaxe e fluxo específico de qualquer uma delas."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Databricks sobre Unity Catalog e Delta Live Tables",
+   "Whitepapers e glossário de MDM do Gartner",
+   "Documentação conceitual da Informatica MDM (seção de conceitos, não produto)",
+   "Site da Profisee (seção de recursos educacionais sobre MDM)",
+   "Livro Master Data Management de David Loshin"
+  ]
+ }
+]

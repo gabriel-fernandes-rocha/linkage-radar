@@ -29,11 +29,7 @@ Eventos já encerrados = reprovar.
 evento) sobre esses temas. Autopromoção vazia, clickbait ou menção de passagem = reprovar.
 
 Para cada item, responda um objeto: {"id": <id>, "relevante": bool, "confianca": 0-1, \
-"motivo": "1 frase em português", "resumo_pt": "até 2 frases em português, fiel ao texto", \
-"encaixe": 0-1, "nota_perfil": "1 frase"}.
-"encaixe" e "nota_perfil" valem só para vagas: o quanto a vaga combina com o PERFIL DO LEITOR abaixo \
-(senioridade, stack, idioma, localização/modalidade — presencial fora do Brasil exige visto e reduz muito o \
-encaixe; remoto global ou no Brasil é ideal). Para outros tipos, use encaixe 0 e nota_perfil "".
+"motivo": "1 frase em português", "resumo_pt": "até 2 frases em português, fiel ao texto"}.
 Nunca use travessão (— ou –) nos textos: use vírgula, dois-pontos ou ponto.
 Responda SOMENTE com um array JSON com um objeto por item, na mesma ordem."""
 
@@ -118,7 +114,5 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
             if v.get("relevante") is True and float(v.get("confianca", 0)) >= min_conf:
                 it.update(motivo=no_dash(v.get("motivo", "")), resumo=no_dash(v.get("resumo_pt", "")),
                           confianca=round(float(v["confianca"]), 2))
-                if it["tipo"] == "vaga" or "/jobs/view/" in it.get("url", ""):
-                    it.update(encaixe=round(float(v.get("encaixe") or 0), 2), nota_perfil=no_dash(v.get("nota_perfil", "")))
                 approved.append(it)
     return approved

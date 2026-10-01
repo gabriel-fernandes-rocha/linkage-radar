@@ -1,12 +1,13 @@
 # Linkage Radar — configuração (edite à vontade, sem mexer no código)
 timezone: America/Sao_Paulo
-send_time: "06:00"          # depois de mudar, rode: python scripts/update_cron.py
+send_time: "07:00"            # o envio espera rodando até este horário (scripts/wait_until_send.py)
 collect_time: "23:00"
-curriculum_start: 2026-09-28
+curriculum_start: 2026-10-02   # programa de 52 semanas (curriculum/plan.py)
 
 whatsapp:
   enabled: true
   provider: callmebot       # callmebot | twilio
+  min_compat: 0.25             # só manda no WhatsApp vagas com compatibilidade >= 25%
   # número e apikey ficam em GitHub Secrets: WHATSAPP_PHONE, CALLMEBOT_APIKEY
 
 llm:
@@ -15,6 +16,8 @@ llm:
   min_confidence: 0.8       # só entra no relatório se o juiz der >= 0.8
   batch_size: 8             # itens julgados por chamada (menos chamadas = mais barato)
   max_items_per_day: 80     # teto de itens enviados ao LLM por dia (trava de custo)
+  extract_model: claude-sonnet-5   # lê as vagas aprovadas (poucas/dia) com precisão: requisitos, local, visto
+  writer_model: claude-sonnet-5    # pílulas de mercado e análise de perfil
 
 web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   linkedin_weekdays: [0, 1, 2, 3, 4, 5, 6]   # 0=segunda ... 6=domingo
@@ -42,6 +45,17 @@ perfil: >-
   Computação (UFBA) em andamento; MBA Big Data. Inglês intermediário, espanhol básico.
   Mora em Salvador-BA: aceita remoto (Brasil ou mundo) e presencial/híbrido no Brasil.
 
+# Perfil estruturado: usado no cálculo determinístico da compatibilidade (src/compat.py)
+perfil_estruturado:
+  experiencia_dados_desde: 2024-01-01
+  pais: Brasil
+  cidade: Salvador
+  ingles: intermediario
+  habilidades: [Python, PySpark, Spark, SQL, Elasticsearch, Splink, RapidFuzz, scikit-learn, Jupyter,
+    Record Linkage, Entity Resolution, Deduplication, Probabilistic Matching, Deterministic Matching,
+    Fellegi-Sunter, Blocking, Fuzzy Matching, Data Quality, Data Pipelines, ETL, Data Normalization,
+    Big Data, Data Warehouse, Data Lake, Business Intelligence]
+
 limits:
   max_jobs: 10
   max_events: 5
@@ -64,6 +78,10 @@ queries:
     - "identity resolution engineer"
     - "splink"
     - "data linkage analyst"
+    - "entity resolution remote worldwide"     # vagas que contratam no mundo todo
+    - "record linkage remote LATAM"
+    - "entity resolution engineer contractor"
+    - "master data management engineer remote Brazil"
   papers:
     - "record linkage"
     - "entity resolution"

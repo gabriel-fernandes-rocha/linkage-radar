@@ -23,12 +23,20 @@ const reqHTML = (r) => {
   return `<p class="reqs">${chips(r.obrigatorios || [], "must")}${chips(r.desejaveis || [], "nice")}</p>`;
 };
 
+const compatHTML = (d) => {
+  if (!d) return "";
+  const falta = d.faltam?.length ? `<br>Falta: ${d.faltam.map(esc).join(", ")}` : "";
+  const parcial = d.parciais?.length ? `<br>Parcial: ${d.parciais.map(esc).join(", ")}` : "";
+  return `<p class="compat">Habilidades ${d.habilidades}% · Senioridade ${d.senioridade}% (${esc(d.senioridade_txt)})
+    · Local ${d.local}% (${esc(d.local_txt)})${d.ingles < 100 ? ` · Inglês ${d.ingles}%` : ""}${falta}${parcial}</p>`;
+};
+
 const jobHTML = (v, withAge = false) => `
     <h3>${withAge && v.nova ? '<span class="badge">NOVA</span>' : ""}${esc(v.titulo)}</h3>
     <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}${
       withAge && v.desde ? " · desde " + fmtDate(v.desde) : ""}</p>
-    ${v.encaixe ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span>${
-      v.nota_perfil ? ". " + esc(v.nota_perfil) : ""}</p>` : ""}
+    ${v.encaixe != null ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span></p>` : ""}
+    ${compatHTML(v.compat_detalhe)}
     ${reqHTML(v.requisitos)}
     ${v.motivo ? `<p class="why">✔ ${esc(v.motivo)}</p>` : ""}
     <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`;
@@ -60,14 +68,38 @@ function renderSection(key, items) {
     : `<p class="empty">Nada novo hoje ✅</p>`;
 }
 
+const sec = (title, text, cls = "pre") => text ? `<div class="sec"><h4>${title}</h4><p class="${cls}">${esc(text)}</p></div>` : "";
+
 function lessonHTML(a) {
   if (!a) return `<p class="empty">Sem aula hoje.</p>`;
-  return `
+  if (a.versao !== 2) {  // formato antigo
+    return `
     <h3>Aula ${a.dia}: ${esc(a.titulo)}</h3>
-    <p class="mod">${esc(a.modulo)}</p>
-    ${a.explicacao ? `<p>${esc(a.explicacao)}</p>` : `<p class="meta">Conteúdo ainda não gerado (rode o workflow "Gerar aulas").</p>`}
-    ${a.exemplo ? `<blockquote>${esc(a.exemplo)}</blockquote>` : ""}
-    ${a.pergunta_reflexao ? `<p class="q">🤔 ${esc(a.pergunta_reflexao)}</p>` : ""}`;
+    <p class="mod">${esc(a.modulo || "")}</p>
+    ${a.explicacao ? `<p>${esc(a.explicacao)}</p>` : ""}
+    ${a.exemplo ? `<blockquote>${esc(a.exemplo)}</blockquote>` : ""}`;
+  }
+  const head = `<h3>Aula ${a.dia} de 365: ${esc(a.titulo)}</h3>
+    <p class="mod">Semana ${a.semana} de 52 · ${esc(a.tema)} · ${{conceito: "conceito", laboratorio: "laboratório", revisao: "revisão ativa"}[a.tipo]}</p>`;
+  if (!a.gerada) return head + `<p class="meta">Conteúdo desta aula ainda está sendo gerado.</p>`;
+  let body = sec("🎯 Objetivo", a.objetivo);
+  if (a.tipo === "conceito") {
+    body += sec("📖 Conceito", a.conceito) + sec("🧮 Como funciona", a.como_funciona) +
+      sec("✍️ Exemplo resolvido", a.exemplo) + sec("🛠️ Na prática", a.na_pratica, "pre code") +
+      sec("⚠️ Armadilha", a.armadilha);
+  } else if (a.tipo === "laboratorio") {
+    body += sec("🧪 Contexto", a.contexto) +
+      `<div class="sec"><h4>📋 Passos</h4><ol>${a.passos.map((p) => `<li>${esc(p)}</li>`).join("")}</ol></div>` +
+      sec("💻 Código inicial", a.codigo, "pre code") + sec("📏 Como avaliar", a.como_avaliar);
+  } else {
+    body += sec("🗺️ Mapa da semana", a.conexao) +
+      `<div class="sec"><h4>❓ Responda antes de abrir</h4>${a.perguntas.map((q, i) =>
+        `<details class="qa"><summary>${i + 1}. ${esc(q.pergunta)}</summary><p class="pre">${esc(q.resposta)}</p></details>`).join("")}</div>`;
+  }
+  body += `<div class="sec"><h4>🧠 Desafio</h4><p class="pre">${esc(a.desafio)}</p>
+    <details class="qa"><summary>Ver gabarito</summary><p class="pre">${esc(a.gabarito)}</p></details></div>`;
+  if (a.fontes?.length) body += `<p class="meta">📚 ${a.fontes.map(esc).join("; ")}</p>`;
+  return head + body;
 }
 
 async function renderPastLessons(current) {
@@ -166,6 +198,59 @@ async function redirectToJob(id) {
   return false;
 }
 
+function marketHTML(m) {
+  const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  return `<h3>${esc(m.habilidade)}</h3>
+    <p class="mod">Aparece em ${m.pct_vagas}% das vagas do nicho · você hoje: ${esc(m.nivel_atual)} · ${fmtDate(m.data)}</p>
+    ${sec("O que é", m.o_que_e)}${sec("Por que pedem", m.por_que_pedem)}
+    ${sec("Ponte com o que você já sabe", m.ponte_com_o_que_voce_sabe)}
+    <div class="sec"><h4>Mínimo para ficar apto</h4>${list(m.minimo_para_ficar_apto)}</div>
+    <div class="sec"><h4>Plano rápido</h4>${list(m.plano_rapido)}</div>
+    ${sec("Mini-projeto de portfólio", m.mini_projeto)}${sec("Como colocar no currículo", m.como_colocar_no_curriculo)}
+    <div class="sec"><h4>Perguntas de entrevista</h4>${m.perguntas_de_entrevista.map((q) =>
+      `<details class="qa"><summary>${esc(q.pergunta)}</summary><p class="pre">${esc(q.resposta)}</p></details>`).join("")}</div>
+    <p class="meta">Para estudar: ${m.fontes_para_estudar.map(esc).join("; ")}</p>`;
+}
+
+async function loadMarket() {
+  const card = $("#pilula");
+  try {
+    const all = await getJSON("data/market_lessons.json");
+    $(".content", card).innerHTML = all.length ? marketHTML(all[0]) +
+      (all.length > 1 ? `<details class="past"><summary>Pílulas anteriores</summary>${all.slice(1).map((m) =>
+        `<details class="qa"><summary>${esc(m.habilidade)} (${fmtDate(m.data)})</summary>${marketHTML(m)}</details>`).join("")}</details>` : "")
+      : `<p class="meta">A primeira pílula aparece após a próxima coleta.</p>`;
+  } catch {
+    $(".content", card).innerHTML = `<p class="meta">A primeira pílula aparece após a próxima coleta.</p>`;
+  }
+}
+
+async function loadTips() {
+  const card = $("#perfil");
+  let t;
+  try {
+    t = await getJSON("data/profile_tips.json");
+  } catch {
+    $(".content", card).innerHTML = `<p class="meta">A primeira análise aparece no próximo domingo.</p>`;
+    return;
+  }
+  const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  $(".content", card).innerHTML = `
+    <p class="mod">Atualizado em ${fmtDate(t.data)} · ${t.perfis_analisados} perfis de especialistas analisados</p>
+    ${sec("Diagnóstico", t.diagnostico)}
+    <div class="sec"><h4>Headline (LinkedIn, inglês)</h4>${list(t.headlines_en)}<p class="pre">PT: ${esc(t.headline_pt)}</p></div>
+    ${sec("About (LinkedIn, inglês)", t.sobre_en)}
+    <div class="sec"><h4>Competências, nesta ordem</h4><p>${t.competencias_linkedin.map((c) => `<span class="chip must">${esc(c)}</span>`).join(" ")}</p></div>
+    <div class="sec"><h4>Bullets do currículo (troque [X] pelos seus números reais)</h4>${t.bullets_experiencia.map((b) =>
+      `<p class="pre"><s>${esc(b.antes)}</s><br>✅ ${esc(b.depois)}</p>`).join("")}</div>
+    <div class="sec"><h4>Lacunas prioritárias</h4>${t.lacunas_prioritarias.map((l) =>
+      `<p class="pre"><b>${esc(l.habilidade)}</b>: ${esc(l.por_que)}<br>Como fechar: ${esc(l.como_fechar)}</p>`).join("")}</div>
+    <div class="sec"><h4>O que os especialistas destacam e você não</h4>${list(t.padroes_dos_especialistas)}</div>
+    <div class="sec"><h4>Ajustes no currículo</h4>${list(t.ajustes_curriculo)}</div>
+    <div class="sec"><h4>Palavras-chave para ATS</h4><p>${t.palavras_chave_ats.map((c) => `<span class="chip nice">${esc(c)}</span>`).join(" ")}</p></div>
+    <div class="sec"><h4>Plano de 30 dias</h4>${list(t.plano_30_dias)}</div>`;
+}
+
 const NET_LIMIT = 15;
 async function loadNetwork(file, cardId, button) {
   const card = $("#" + cardId);
@@ -196,6 +281,8 @@ async function loadNetwork(file, cardId, button) {
   if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
   loadOpenJobs();
   loadSkills();
+  loadMarket();
+  loadTips();
   loadNetwork("data/people.json", "pessoas", "Ver perfil");
   loadNetwork("data/companies.json", "empresas", "Ver empresa");
   const sel = $("#day");

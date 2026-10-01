@@ -1,41 +1,35 @@
 name: enviar
 
-# O agendamento grátis do GitHub pode atrasar horas. Por isso há várias tentativas a partir das 06h
-# (horário de Brasília) + um gatilho logo após cada coleta. O próprio script garante:
-#   - nada antes de send_time (config.yaml);
-#   - nunca envia duas vezes no mesmo dia (data/sent.json);
-#   - espera a edição do dia ficar pronta (até 09h; depois envia a mais recente).
+# O agendamento grátis do GitHub atrasa ~6h neste repositório. Por isso o envio começa logo que a
+# coleta termina (de madrugada) e ESPERA rodando até send_time (config.yaml). Um job em execução
+# acorda na hora certa. Os horários abaixo são só rede de segurança. Nunca envia 2x no dia.
 on:
-  schedule:
-    - cron: "7 9 * * *"    # 06:07 BRT
-    - cron: "37 9 * * *"   # 06:37 BRT
-    - cron: "7 10 * * *"   # 07:07 BRT
-    - cron: "37 10 * * *"  # 07:37 BRT
-    - cron: "7 11 * * *"   # 08:07 BRT
-    - cron: "7 12 * * *"   # 09:07 BRT
-    - cron: "7 14 * * *"   # 11:07 BRT
-    - cron: "7 17 * * *"   # 14:07 BRT (última rede de segurança)
   workflow_run:
     workflows: [coletar]
     types: [completed]
+  schedule:
+    - cron: "7 22 * * *"   # 19:07 BRT do dia anterior: entra na fila e espera (rede de segurança)
+    - cron: "7 10 * * *"   # 07:07 BRT
+    - cron: "7 14 * * *"   # 11:07 BRT
   workflow_dispatch:
     inputs:
       forcar:
-        description: "Enviar agora mesmo se já tiver sido enviado hoje"
+        description: "Enviar agora mesmo (ignora horário e o 'já enviado hoje')"
         type: boolean
         default: false
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
-  group: radar-data
+  group: enviar
   cancel-in-progress: false
 
 jobs:
   send:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v5
         with:
@@ -45,7 +39,20 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Esperar o horário de envio
+        id: espera
+        if: ${{ !inputs.forcar }}
+        run: python scripts/wait_until_send.py
+      - name: Reagendar (faltava mais de 5h)
+        if: steps.espera.outputs.acao == 'reagendar'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run send.yml --ref main
+      - name: Atualizar dados
+        if: steps.espera.outputs.acao == 'enviar' || inputs.forcar
+        run: git pull --quiet --rebase
       - name: Enviar WhatsApp
+        if: steps.espera.outputs.acao == 'enviar' || inputs.forcar
         env:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
@@ -54,6 +61,7 @@ jobs:
           TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
         run: python src/main_send.py ${{ inputs.forcar && ' ' || '--agendado' }}
       - name: Registrar envio
+        if: steps.espera.outputs.acao == 'enviar'
         run: |
           git config user.name "linkage-radar-bot"
           git config user.email "actions@users.noreply.github.com"

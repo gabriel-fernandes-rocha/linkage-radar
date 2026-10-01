@@ -2,8 +2,8 @@ name: coletar
 
 on:
   schedule:
-    - cron: "17 1 * * *"   # 22:17 BRT (o GitHub costuma atrasar; começamos cedo)
-    - cron: "47 4 * * *"   # 01:47 BRT: repescagem, só roda se a de cima não tiver rodado
+    - cron: "17 23 * * *"  # 20:17 BRT. O GitHub atrasa ~6h aqui: na prática roda ~02h e termina antes das 07h
+    - cron: "47 2 * * *"   # 23:47 BRT: repescagem (só coleta se a de cima não tiver rodado)
   workflow_dispatch:
     inputs:
       varredura_completa:

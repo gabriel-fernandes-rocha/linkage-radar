@@ -26,6 +26,13 @@ def _short(text: str, n: int) -> str:
     return text if len(text) <= n else text[: n - 1].rstrip() + "…"
 
 
+def cfg_min_compat() -> float:
+    try:
+        return float(load_config().get("whatsapp", {}).get("min_compat", 0.25))
+    except Exception:
+        return 0.25
+
+
 def _by_compat(jobs: list[dict]) -> list[dict]:
     return sorted(jobs, key=lambda j: j.get("encaixe", 0), reverse=True)
 
@@ -42,7 +49,8 @@ def _job_lines(pos: int, it: dict, is_new: bool, site_url: str, n_skills: int, t
     pct = f"{round(it['encaixe'] * 100)}%" if it.get("encaixe") else "?"
     where = f" ({_short(it['local'], 28)})" if it.get("local") else ""
     company = it.get("empresa") or it.get("fonte", "")
-    lines = [f"{pos}. {pct} compatível{' | NOVA' if is_new else ''}",
+    why = (it.get("compat_detalhe") or {}).get("local_txt", "")
+    lines = [f"{pos}. {pct} compatível{' | NOVA' if is_new else ''}" + (f" ({_short(why, 40)})" if why else ""),
              f"{_short(it['titulo'], title_len)}, {_short(company, 30)}{where}"]
     must = (it.get("requisitos") or {}).get("obrigatorios", [])
     if must and n_skills:
@@ -60,7 +68,10 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None)
     pool = {j["url"]: j for j in (open_jobs or [])}
     for j in rep.get("vagas", []):
         pool.setdefault(j["url"], j)
-    top = _by_compat(list(pool.values()))[:TOP_JOBS]
+    min_compat = cfg_min_compat()
+    ranked = _by_compat(list(pool.values()))
+    top = [j for j in ranked if j.get("encaixe", 0) >= min_compat][:TOP_JOBS]
+    blocked = sum(1 for j in ranked if j.get("encaixe", 0) < min_compat)
     extras = ", ".join(f"{n} {label}" for n, label in (
         (len(rep.get("papers", [])), "paper(s)"),
         (len(rep.get("linkedin", [])), "post(s)"),
@@ -76,11 +87,15 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None)
                                              (1, 50, False), (0, 50, False), (0, 38, False)):
         lines = header + [""]
         if top:
-            lines.append("TOP 3 MAIS COMPATÍVEIS COM VOCÊ")
+            lines.append(f"TOP {len(top)} MAIS COMPATÍVEIS COM VOCÊ" if len(top) == TOP_JOBS else
+                         f"SÓ {len(top)} {'VAGA ACESSÍVEL' if len(top) == 1 else 'VAGAS ACESSÍVEIS'} HOJE")
             for i, job in enumerate(top, 1):
                 lines += [""] + _job_lines(i, job, job["url"] in new_urls, site_url, n_skills, title_len)
         else:
             lines.append("Nenhuma vaga aberta no seu perfil hoje.")
+        if blocked:
+            lines += ["", f"(+{blocked} vagas abaixo de {round(min_compat * 100)}%: exigem morar/ter visto no exterior"
+                          " ou fogem do seu perfil; veja no site)"]
         if with_footer:
             lines += ["", footer]
         msg = no_dash("\n".join(lines))
@@ -89,23 +104,57 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None)
     return msg
 
 
+def _previous_lesson(a: dict) -> dict | None:
+    try:
+        import lesson
+
+        lessons = {l["dia"]: l for l in lesson.load()}
+        return lessons.get(a["dia"] - 1)
+    except Exception:
+        return None
+
+
 def build_lesson_message(rep: dict, site_url: str) -> str | None:
     """Mensagem 2: a aula do dia completa, para ler no próprio WhatsApp."""
     a = rep.get("aula")
-    if not a or not a.get("explicacao"):
+    if not a:
         return None
-    parts = [
-        f"🎓 Aula {a['dia']} de 365: {a['titulo']}",
-        a["modulo"],
-        "",
-        a["explicacao"].strip(),
-    ]
-    if a.get("exemplo"):
-        parts += ["", "Exemplo: " + a["exemplo"].strip()]
-    if a.get("pergunta_reflexao"):
-        parts += ["", "Para pensar: " + a["pergunta_reflexao"].strip()]
-    parts += ["", f"Plataforma: {site_url}"]
-    return no_dash("\n".join(parts))
+    if a.get("versao") != 2:  # formato antigo
+        if not a.get("explicacao"):
+            return None
+        return no_dash("\n".join([f"🎓 Aula {a['dia']} de 365: {a['titulo']}", "", a["explicacao"].strip(),
+                                  "", f"Plataforma: {site_url}"]))
+    if not a.get("gerada"):
+        return None
+
+    p = [f"🎓 AULA {a['dia']} DE 365 | Semana {a['semana']}: {a['tema']}", a["titulo"].upper(), ""]
+    prev = _previous_lesson(a)
+    if prev and prev.get("gabarito"):
+        p += ["✅ Gabarito do desafio de ontem", prev["gabarito"].strip(), ""]
+    p += ["🎯 Objetivo: " + a["objetivo"].strip(), ""]
+
+    if a["tipo"] == "conceito":
+        p += ["📖 CONCEITO", a["conceito"].strip(), "",
+              "🧮 COMO FUNCIONA", a["como_funciona"].strip(), "",
+              "✍️ EXEMPLO RESOLVIDO", a["exemplo"].strip(), "",
+              "🛠️ NA PRÁTICA", a["na_pratica"].strip(), "",
+              "⚠️ ARMADILHA", a["armadilha"].strip(), ""]
+    elif a["tipo"] == "laboratorio":
+        p += ["🧪 CONTEXTO", a["contexto"].strip(), "", "📋 PASSOS"]
+        p += [f"{i}. {s.strip()}" for i, s in enumerate(a["passos"], 1)]
+        p += ["", "💻 CÓDIGO INICIAL", a["codigo"].strip(), "",
+              "📏 COMO AVALIAR", a["como_avaliar"].strip(), ""]
+    else:  # revisão ativa: perguntas primeiro, respostas no fim (tente responder antes de rolar)
+        p += ["🗺️ MAPA DA SEMANA", a["conexao"].strip(), "", "❓ RESPONDA DE CABEÇA ANTES DE OLHAR"]
+        p += [f"{i}. {q['pergunta'].strip()}" for i, q in enumerate(a["perguntas"], 1)]
+        p += [""]
+    p += ["🧠 DESAFIO DO DIA", a["desafio"].strip(), "(o gabarito chega amanhã)", ""]
+    if a["tipo"] == "revisao":
+        p += ["🔑 RESPOSTAS"] + [f"{i}. {q['resposta'].strip()}" for i, q in enumerate(a["perguntas"], 1)] + [""]
+    if a.get("fontes"):
+        p += ["📚 Fontes: " + "; ".join(a["fontes"]), ""]
+    p += [f"Plataforma: {site_url}"]
+    return no_dash("\n".join(p))
 
 
 def load_report(cfg: dict, day: str | None) -> dict:

@@ -1,0 +1,422 @@
+{
+ "amazon neptune": {
+  "motivo": "sem evidência de grafo cloud",
+  "nivel": "nao",
+  "nome": "Amazon Neptune"
+ },
+ "api enrichment": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "API Enrichment"
+ },
+ "apis": {
+  "motivo": "provável uso em pipelines, não declarado",
+  "nivel": "parcial",
+  "nome": "APIs"
+ },
+ "aws": {
+  "motivo": "sem evidência de cloud",
+  "nivel": "nao",
+  "nome": "AWS"
+ },
+ "azure": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Azure"
+ },
+ "blocking": {
+  "motivo": "etapa do pipeline dominada",
+  "nivel": "tem",
+  "nome": "blocking"
+ },
+ "ccpa": {
+  "motivo": "sem evidência de compliance",
+  "nivel": "nao",
+  "nome": "CCPA"
+ },
+ "cpra": {
+  "motivo": "sem evidência de compliance",
+  "nivel": "nao",
+  "nome": "CPRA"
+ },
+ "ctv": {
+  "motivo": "sem evidência de Connected TV",
+  "nivel": "nao",
+  "nome": "CTV"
+ },
+ "cypher": {
+  "motivo": "sem evidência de linguagem grafo",
+  "nivel": "nao",
+  "nome": "Cypher"
+ },
+ "data governance": {
+  "motivo": "faz QA de dados, não governança formal",
+  "nivel": "parcial",
+  "nome": "Data Governance"
+ },
+ "data matching": {
+  "motivo": "matching determinístico/probabilístico em produção",
+  "nivel": "tem",
+  "nome": "Data Matching"
+ },
+ "data quality": {
+  "motivo": "QA de pipeline em produção",
+  "nivel": "tem",
+  "nome": "Data Quality"
+ },
+ "databricks": {
+  "motivo": "domina Spark, não Databricks especificamente",
+  "nivel": "parcial",
+  "nome": "Databricks"
+ },
+ "db2": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "DB2"
+ },
+ "dedupe": {
+  "motivo": "deduplication declarada e usada",
+  "nivel": "tem",
+  "nome": "Dedupe"
+ },
+ "deduplication": {
+  "motivo": "declarada e prática",
+  "nivel": "tem",
+  "nome": "Deduplication"
+ },
+ "deduplicação": {
+  "motivo": "mesma habilidade em português",
+  "nivel": "tem",
+  "nome": "Deduplicação"
+ },
+ "delta lake": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Delta Lake"
+ },
+ "deterministic matching": {
+  "motivo": "domina matching determinístico em produção",
+  "nivel": "tem",
+  "nome": "Deterministic Matching"
+ },
+ "embeddings": {
+  "motivo": "usa scikit-learn/scoring, próximo a embeddings",
+  "nivel": "parcial",
+  "nome": "Embeddings"
+ },
+ "entity resolution": {
+  "motivo": "especialização declarada",
+  "nivel": "tem",
+  "nome": "Entity resolution"
+ },
+ "fastlink": {
+  "motivo": "usa Splink, ferramenta similar",
+  "nivel": "parcial",
+  "nome": "FastLink"
+ },
+ "fedramp": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "FedRAMP"
+ },
+ "fhir": {
+  "motivo": "sem evidência de padrão saúde",
+  "nivel": "nao",
+  "nome": "FHIR"
+ },
+ "fisma": {
+  "motivo": "sem evidência compliance",
+  "nivel": "nao",
+  "nome": "FISMA"
+ },
+ "fuzzy matching": {
+  "motivo": "RapidFuzz e fuzzy matching usados",
+  "nivel": "tem",
+  "nome": "Fuzzy matching"
+ },
+ "gdpr": {
+  "motivo": "sem evidência compliance",
+  "nivel": "nao",
+  "nome": "GDPR"
+ },
+ "golden records": {
+  "motivo": "próximo de entity resolution/MDM",
+  "nivel": "parcial",
+  "nome": "Golden Records"
+ },
+ "graphrag": {
+  "motivo": "sem evidência LLM/grafo",
+  "nivel": "nao",
+  "nome": "GraphRAG"
+ },
+ "gremlin": {
+  "motivo": "sem evidência grafo",
+  "nivel": "nao",
+  "nome": "Gremlin"
+ },
+ "hadoop": {
+  "motivo": "usa Spark, big data relacionado",
+  "nivel": "parcial",
+  "nome": "Hadoop"
+ },
+ "hierarquias parent-child": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Hierarquias Parent-Child"
+ },
+ "hl7": {
+  "motivo": "sem evidência padrão saúde",
+  "nivel": "nao",
+  "nome": "HL7"
+ },
+ "hugging face": {
+  "motivo": "sem evidência NLP/LLM",
+  "nivel": "nao",
+  "nome": "Hugging Face"
+ },
+ "hugging face transformers": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Hugging Face Transformers"
+ },
+ "ibm mdm": {
+  "motivo": "sem evidência ferramenta MDM",
+  "nivel": "nao",
+  "nome": "IBM MDM"
+ },
+ "identity graph": {
+  "motivo": "próximo de entity resolution",
+  "nivel": "parcial",
+  "nome": "Identity Graph"
+ },
+ "identity resolution": {
+  "motivo": "equivalente a entity resolution",
+  "nivel": "tem",
+  "nome": "Identity Resolution"
+ },
+ "informatica mdm": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Informatica MDM"
+ },
+ "jaccard similarity": {
+  "motivo": "usa técnicas de similaridade fuzzy",
+  "nivel": "parcial",
+  "nome": "Jaccard similarity"
+ },
+ "janusgraph": {
+  "motivo": "sem evidência grafo",
+  "nivel": "nao",
+  "nome": "JanusGraph"
+ },
+ "jaro-winkler": {
+  "motivo": "usa RapidFuzz, técnica similar",
+  "nivel": "parcial",
+  "nome": "Jaro-Winkler"
+ },
+ "java": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Java"
+ },
+ "jenkins": {
+  "motivo": "sem evidência CI/CD",
+  "nivel": "nao",
+  "nome": "Jenkins"
+ },
+ "levenshtein": {
+  "motivo": "usa fuzzy matching com RapidFuzz",
+  "nivel": "parcial",
+  "nome": "Levenshtein"
+ },
+ "levenshtein distance": {
+  "motivo": "usa fuzzy matching com RapidFuzz",
+  "nivel": "parcial",
+  "nome": "Levenshtein distance"
+ },
+ "llms": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "LLMs"
+ },
+ "machine learning": {
+  "motivo": "usa scikit-learn em scoring/classificação",
+  "nivel": "tem",
+  "nome": "Machine Learning"
+ },
+ "master data management": {
+  "motivo": "entity resolution relacionado, sem MDM explícito",
+  "nivel": "parcial",
+  "nome": "Master Data Management"
+ },
+ "matching": {
+  "motivo": "especialista em matching determinístico/probabilístico",
+  "nivel": "tem",
+  "nome": "Matching"
+ },
+ "matching algorítmico": {
+  "motivo": "blocking, scoring, Fellegi-Sunter, fuzzy matching",
+  "nivel": "tem",
+  "nome": "Matching Algorítmico"
+ },
+ "metaphone": {
+  "motivo": "fuzzy matching similar, não citado diretamente",
+  "nivel": "parcial",
+  "nome": "Metaphone"
+ },
+ "mlflow": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "MLflow"
+ },
+ "named entity recognition": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Named Entity Recognition"
+ },
+ "neo4j": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Neo4j"
+ },
+ "nist 800-53": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "NIST 800-53"
+ },
+ "nlp": {
+  "motivo": "normalização de texto, sem NLP explícito",
+  "nivel": "parcial",
+  "nome": "NLP"
+ },
+ "nltk": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "NLTK"
+ },
+ "oracle": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Oracle"
+ },
+ "owl": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "OWL"
+ },
+ "postgresql": {
+  "motivo": "domina SQL genérico",
+  "nivel": "parcial",
+  "nome": "PostgreSQL"
+ },
+ "power bi": {
+  "motivo": "tem BI, não cita Power BI",
+  "nivel": "parcial",
+  "nome": "Power BI"
+ },
+ "privacy enhancing technologies": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Privacy Enhancing Technologies"
+ },
+ "probabilistic matching": {
+  "motivo": "experiência prática com Splink/Fellegi-Sunter",
+  "nivel": "tem",
+  "nome": "Probabilistic Matching"
+ },
+ "python": {
+  "motivo": "stack principal",
+  "nivel": "tem",
+  "nome": "Python"
+ },
+ "rdf": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "RDF"
+ },
+ "record linkage": {
+  "motivo": "especialização central do candidato",
+  "nivel": "tem",
+  "nome": "Record linkage"
+ },
+ "recordlinkage": {
+  "motivo": "domínio prático da área",
+  "nivel": "tem",
+  "nome": "recordlinkage"
+ },
+ "regex": {
+  "motivo": "normalização de dados provável uso",
+  "nivel": "parcial",
+  "nome": "Regex"
+ },
+ "reinforcement learning": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Reinforcement learning"
+ },
+ "reltio": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Reltio"
+ },
+ "scala": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Scala"
+ },
+ "scikit-learn": {
+  "motivo": "stack declarado",
+  "nivel": "tem",
+  "nome": "scikit-learn"
+ },
+ "soundex": {
+  "motivo": "fuzzy/blocking relacionado, não citado",
+  "nivel": "parcial",
+  "nome": "Soundex"
+ },
+ "spacy": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "spaCy"
+ },
+ "spark": {
+  "motivo": "stack principal, pipelines em produção",
+  "nivel": "tem",
+  "nome": "Spark"
+ },
+ "sparql": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "SPARQL"
+ },
+ "splink": {
+  "motivo": "ferramenta declarada e usada",
+  "nivel": "tem",
+  "nome": "Splink"
+ },
+ "sql": {
+  "motivo": "stack declarado",
+  "nivel": "tem",
+  "nome": "SQL"
+ },
+ "sql server": {
+  "motivo": "domina SQL genérico",
+  "nivel": "parcial",
+  "nome": "SQL Server"
+ },
+ "tableau": {
+  "motivo": "tem BI, não cita Tableau",
+  "nivel": "parcial",
+  "nome": "Tableau"
+ },
+ "tf-idf": {
+  "motivo": "scoring/blocking pode usar, não citado",
+  "nivel": "parcial",
+  "nome": "TF-IDF"
+ },
+ "tigergraph": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "TigerGraph"
+ }
+}

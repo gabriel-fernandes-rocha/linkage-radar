@@ -216,12 +216,14 @@ def social_posts(cfg):
 
     terms = " OR ".join(f'"{t}"' for t in cfg["queries"]["social_jobs"])
     hiring = '("hiring" OR "we are hiring" OR "join our team" OR "contratando" OR "vaga" OR "estamos contratando")'
-    sites = " OR ".join(f"site:{s}" for s in cfg.get("social_sites", []))
+    # site: com caminho PRECISA da barra final, senão o Google ignora o filtro e traz qualquer site
+    social = [s.rstrip("/") + ("/" if "/" in s else "") for s in cfg.get("social_sites", [])]
+    sites = " OR ".join(f"site:{s}" for s in social)
     queries = [f"({terms}) {hiring} ({sites})"]
     pt = " OR ".join(f'"{t}"' for t in cfg["queries"].get("social_jobs_pt", []))
     if pt:  # posts do feed do LinkedIn em português
         queries.append(f'({pt}) ("vaga" OR "contratando" OR "oportunidade" OR "estamos contratando") '
-                       "site:linkedin.com/posts")
+                       "site:linkedin.com/posts/")
     results = []
     for q in queries:
         try:
@@ -229,8 +231,12 @@ def social_posts(cfg):
         except Exception as e:
             log.warning("jobs/social '%s' falhou: %s", q[:40], e)
     out = []
+    allowed = [s.rstrip("/") for s in cfg.get("social_sites", [])]
     for r in results:
-        domain = re.sub(r"^https?://([^/]+).*", r"", r["url"]).replace("www.", "")
+        host_path = re.sub(r"^https?://(www\.|[a-z]{2}\.)?", "", r["url"].lower())
+        if not any(host_path.startswith(s) for s in allowed):  # segunda trava: só redes sociais
+            continue
+        domain = host_path.split("/")[0]
         out.append(item("vaga", r["titulo"], r["url"], empresa="", local="", fonte=f"Post · {domain}",
                         texto=r["texto"], social=True))
     return out

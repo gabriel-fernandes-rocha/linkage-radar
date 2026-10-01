@@ -16,7 +16,7 @@ def collect(cfg: dict) -> list[dict]:
     terms = cfg["queries"]["linkedin"]
     raw: list[dict] = []
 
-    q = "(" + " OR ".join(f'"{t}"' for t in terms) + ") (site:linkedin.com/posts OR site:linkedin.com/pulse OR site:linkedin.com/jobs/view)"
+    q = "(" + " OR ".join(f'"{t}"' for t in terms) + ") (site:linkedin.com/posts/ OR site:linkedin.com/pulse/ OR site:linkedin.com/jobs/view/)"
     try:
         raw = websearch.serpapi(q, recency="qdr:w")
     except Exception as e:

@@ -1,7 +1,8 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-_site/
-.env
 *.pdf
+*.pyc
+.book/
+.env
+.pytest_cache/
 PROMPT_CLAUDE_CODE.md
+__pycache__/
+_site/

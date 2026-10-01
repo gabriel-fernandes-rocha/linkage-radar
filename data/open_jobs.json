@@ -1,116 +1,6 @@
 [
   {
     "tipo": "vaga",
-    "titulo": "Amazon ML Challenge 2026",
-    "url": "https://www.kaggle.com/datasets/satwiksps/amazon-ml-challenge-2026",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · \u0001",
-    "social": true,
-    "score": 14,
-    "motivo": "Post anuncia desafio concreto com foco central em entity matching e record linkage de entidades de negócio com nomes e endereços ruidosos.",
-    "resumo": "Amazon ML Challenge 2026 com foco em multi-source business entity matching, entity resolution, record linkage e duplicate detection envolvendo nomes e endereços ruidosos.",
-    "confianca": 0.92,
-    "encaixe": 0.75,
-    "nota_perfil": "Alinhado com expertise em record linkage e matching, mas é desafio em plataforma pública (não vaga tradicional) e pode exigir relocalização para participação presencial.",
-    "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Record Linkage",
-        "Duplicate Detection"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-30",
-    "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Scientist - Onshore (B)",
-    "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
-    "empresa": "V4C.ai",
-    "local": "Remoto · United States",
-    "fonte": "Workable",
-    "score": 8,
-    "motivo": "Data Scientist em healthcare com MDM, análise de data quality, deduplicação e entity-resolution em datasets de member/provider/patient, alinhado com saúde e linkage.",
-    "resumo": "V4C.ai busca Data Scientist em Databricks e Python para soluções healthcare com foco em MDM, data quality, deduplicação e entity-resolution entre member, provider e patient datasets em Databricks/PySpark.",
-    "confianca": 0.85,
-    "encaixe": 0.75,
-    "nota_perfil": "Alinha perfeitamente em domain (healthcare), stack (Databricks, Python, PySpark, SQL) e especialização (MDM, entity-resolution, deduplicação), remoto nos US; espanhol não requerido, inglês intermediário suficiente.",
-    "requisitos": {
-      "obrigatorios": [
-        "Databricks",
-        "Spark",
-        "Python",
-        "SQL",
-        "Machine Learning",
-        "Master Data Management",
-        "Entity Resolution",
-        "Data Matching",
-        "Deduplication",
-        "Delta Lake",
-        "Data Governance",
-        "Data Quality",
-        "Data Lineage"
-      ],
-      "desejaveis": [
-        "Healthcare Data",
-        "HIPAA",
-        "MDM Platforms",
-        "Azure",
-        "AWS",
-        "MLflow",
-        "Power BI",
-        "Tableau",
-        "FHIR",
-        "HL7",
-        "Production ML Pipelines"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Lead Software Development Engineer",
-    "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
-    "empresa": "Amperity",
-    "local": "Remoto · Argentina",
-    "fonte": "Himalayas",
-    "score": 3,
-    "motivo": "Core business é identity resolution: resolve bilhões de registros contraditórios em um único indivíduo, problema central de record linkage e entity resolution em produção.",
-    "resumo": "Amperity é especializada em identity resolution patentizada para bilhões de registros, resolvendo conflitos e criando visão única do cliente. Contrata lead engineer para reconstruir empresa como IA-first.",
-    "confianca": 0.88,
-    "encaixe": 0.7,
-    "nota_perfil": "Perfeita sinergia técnica (identity resolution em escala), mas remoto na Argentina: não há indicação de foco em saúde/proteção social; salário e timezone podem ser desafio.",
-    "requisitos": {
-      "obrigatorios": [
-        "Distributed Systems",
-        "Cloud Platforms",
-        "Large-Scale Data Systems",
-        "Clojure"
-      ],
-      "desejaveis": [
-        "Functional Programming",
-        "Machine Learning",
-        "Knowledge Graphs",
-        "Probabilistic Matching"
-      ]
-    },
-    "senioridade": "staff/principal",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Senior Data Engineer — Entity Resolution / Record Linkage",
     "url": "https://www.upwork.com/freelance-jobs/apply/Senior-Data-Engineer-Entity-Resolution-Record-Linkage_~022097747252088515405/",
     "empresa": "Upwork",
@@ -120,80 +10,45 @@
     "motivo": "Vaga especializada em entity resolution e record linkage com foco em deduplicação e matching sem identificadores únicos confiáveis, problema central da expertise do leitor.",
     "resumo": "Senior Data Engineer para entity resolution de base de 40-50k registros de livros hebraicos antigos. Desafio principal é matching sem identificadores confiáveis, lidando com múltiplas transliterações e fontes inconsistentes.",
     "confianca": 0.95,
-    "encaixe": 0.65,
+    "encaixe": 0.75,
     "nota_perfil": "Perfeitamente alinhado ao core da especialidade (ER, record linkage, deduplicação); scale pequena mas problema técnico sofisticado; Upwork permite trabalho remoto global.",
     "requisitos": {
       "obrigatorios": [
         "Entity Resolution",
         "Record Linkage",
-        "Deduplication",
-        "Blocking",
-        "Candidate Generation",
-        "Probabilistic Matching"
+        "Fuzzy Matching"
       ],
-      "desejaveis": [
-        "Fellegi-Sunter",
-        "Splink",
-        "fastLink",
-        "Master Data Management",
-        "Knowledge Graphs",
-        "NLP",
-        "LLMs",
-        "Multilingual Data",
-        "Transliteration",
-        "Elasticsearch",
-        "Typesense",
-        "Algolia"
-      ]
+      "desejaveis": []
     },
     "senioridade": "senior",
-    "modalidade": "nao_informado",
+    "modalidade": "remoto",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Integration Engineer - Customer Data Platform (CDP)",
-    "url": "https://himalayas.app/companies/blend360/jobs/integration-engineer-customer-data-platform-cdp",
-    "empresa": "Blend360",
-    "local": "Remoto · Argentina",
-    "fonte": "Himalayas",
-    "score": 5,
-    "motivo": "Menciona explicitamente data matching, identity resolution e gerenciamento de customer identifiers, embora context seja CDP genérico.",
-    "resumo": "Integration Engineer para CDP (Customer Data Platform) responsável por design de integrações, data pipelines, data matching, identity resolution e gerenciamento de customer identifiers cross-systems. Remoto Argentina.",
-    "confianca": 0.8,
-    "encaixe": 0.65,
-    "nota_perfil": "Vaga remota na Argentina com foco em identity resolution e data matching, alinhada com especialidade, stack e modalidade do leitor, embora CDP seja contexto mais genérico que healthtech.",
-    "requisitos": {
-      "obrigatorios": [
-        "API Integration",
-        "REST APIs",
-        "Python",
-        "SQL",
-        "Snowflake",
-        "Identity Resolution",
-        "Audience Matching",
-        "Data Quality"
-      ],
-      "desejaveis": [
-        "CDP",
-        "mParticle",
-        "Segment",
-        "LiveRamp",
-        "Braze",
-        "First-Party Data Activation",
-        "Marketing Technology",
-        "AWS",
-        "Databricks",
-        "Data Governance"
-      ]
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
     },
-    "senioridade": "pleno",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-01",
-    "nova": false
+    "patrocina_visto": null,
+    "contratacao": "freelance",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -206,72 +61,152 @@
     "motivo": "Vaga focada em TAM pipeline com entity resolution, deduplicação algorítmica e hierarquias parent-child, alinhada a matching determinístico e account resolution.",
     "resumo": "GTM Engineer/Data Architect para construir base de dados TAM automatizada com hierarquias parent-child, matching de stakeholders e SI networks via APIs e deduplicação algorítmica. Trabalho em manutenção de integridade de dados de alto volume.",
     "confianca": 0.85,
-    "encaixe": 0.55,
+    "encaixe": 0.61,
     "nota_perfil": "Record linkage de accounts e entidades é núcleo, porém contexto GTM/SaaS difere do perfil saúde/pública; Upwork remoto global viabiliza.",
     "requisitos": {
       "obrigatorios": [
-        "Clay",
-        "n8n",
-        "Python",
-        "API Integration",
-        "B2B data APIs",
+        "API Enrichment",
         "Entity Resolution",
-        "Fuzzy Matching",
-        "Splink",
-        "Record Linkage",
-        "LLMs",
-        "Email Verification",
-        "SQL",
-        "PostgreSQL",
-        "Supabase",
-        "CRM",
-        "HubSpot",
-        "Attio",
-        "MX Verification"
-      ],
-      "desejaveis": [
-        "Make",
-        "Apollo API",
-        "Prospeo",
-        "Findymail",
-        "Dropcontact",
-        "Crossbeam",
-        "GLEIF",
-        "LEI"
-      ]
-    },
-    "senioridade": "pleno",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Scientist, Entity Resolution — High-Impact & Equity",
-    "url": "https://www.jobleads.com/us/job/senior-data-scientist-entity-resolution-high-impact-equity--new-york--california--e9e3850d4cfaa4fc5da4a4623c32af11f",
-    "empresa": "Enigma",
-    "local": "United States",
-    "fonte": "Google Jobs",
-    "score": 3,
-    "motivo": "Vaga core de Senior Data Scientist dedicado exclusivamente a Entity Resolution, end-to-end, com foco em modelos escaláveis, validação rigorosa e acurácia de dados.",
-    "resumo": "Enigma busca Staff/Senior Data Scientist para o time de Entity Resolution em Nova York. Responsabilidade de transformar dados brutos em modelos escaláveis, colaborar com cientistas, engenheiros e stakeholders, aplicar práticas estatísticas rigorosas e validação repetível.",
-    "confianca": 0.92,
-    "encaixe": 0.5,
-    "nota_perfil": "Vaga técnica core em ER pura, senioridade compatível (staff level); presencial em EUA exige visto e afasta do contexto Brasil; stack não especificado mas role é perfeita para especialista.",
-    "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Statistical Methods",
-        "Machine Learning"
+        "Deduplication",
+        "Matching Algorítmico",
+        "Hierarquias Parent-Child"
       ],
       "desejaveis": []
     },
-    "senioridade": "staff/principal",
-    "modalidade": "nao_informado",
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "compat_detalhe": {
+      "habilidades": 60,
+      "senioridade": 85,
+      "local": 100,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "API Enrichment",
+        "Hierarquias Parent-Child"
+      ],
+      "parciais": []
+    }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Integration Engineer - Customer Data Platform (CDP)",
+    "url": "https://himalayas.app/companies/blend360/jobs/integration-engineer-customer-data-platform-cdp",
+    "empresa": "Blend360",
+    "local": "Remoto · Argentina",
+    "fonte": "Himalayas",
+    "score": 5,
+    "motivo": "Menciona explicitamente data matching, identity resolution e gerenciamento de customer identifiers, embora context seja CDP genérico.",
+    "resumo": "Integration Engineer para CDP (Customer Data Platform) responsável por design de integrações, data pipelines, data matching, identity resolution e gerenciamento de customer identifiers cross-systems. Remoto Argentina.",
+    "confianca": 0.8,
+    "encaixe": 0.09,
+    "nota_perfil": "Vaga remota na Argentina com foco em identity resolution e data matching, alinhada com especialidade, stack e modalidade do leitor, embora CDP seja contexto mais genérico que healthtech.",
+    "requisitos": {
+      "obrigatorios": [
+        "Identity Resolution",
+        "Entity Resolution",
+        "Data Matching"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "desde": "2026-09-28",
+    "verificada_em": "2026-10-01",
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Argentina"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.4,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 12,
+      "ingles": 100,
+      "foco": 91,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": []
+    }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Lead Software Development Engineer",
+    "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
+    "empresa": "Amperity",
+    "local": "Remoto · Argentina",
+    "fonte": "Himalayas",
+    "score": 3,
+    "motivo": "Core business é identity resolution: resolve bilhões de registros contraditórios em um único indivíduo, problema central de record linkage e entity resolution em produção.",
+    "resumo": "Amperity é especializada em identity resolution patentizada para bilhões de registros, resolvendo conflitos e criando visão única do cliente. Contrata lead engineer para reconstruir empresa como IA-first.",
+    "confianca": 0.88,
+    "encaixe": 0.07,
+    "nota_perfil": "Perfeita sinergia técnica (identity resolution em escala), mas remoto na Argentina: não há indicação de foco em saúde/proteção social; salário e timezone podem ser desafio.",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "desde": "2026-09-28",
+    "verificada_em": "2026-10-01",
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Argentina"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.7,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 12,
+      "ingles": 100,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -284,35 +219,102 @@
     "motivo": "ZoomInfo Person Data team trabalha com entity resolution, deduplicação, e transformação de dados fragmentados em accurate contact profiles com 400M registros.",
     "resumo": "Senior Software Engineer na ZoomInfo Person Data team para construir sistemas Java de alta throughput que processam dados fragmentados e os transformam em perfis de contato precisos, resolvendo desafios de entity resolution e data quality em escala de 400 milhões de registros.",
     "confianca": 0.88,
-    "encaixe": 0.45,
+    "encaixe": 0.06,
     "nota_perfil": "Especialização em entity resolution e deduplicação alinha perfeitamente, mas exige Java/backend em US remoto; stack de Python/Spark não é mencionado.",
     "requisitos": {
       "obrigatorios": [
         "Java",
-        "Backend Systems",
-        "Distributed Systems",
-        "Data Processing Pipelines",
-        "Kafka",
         "Entity Resolution",
-        "Record Linkage",
-        "Data Deduplication"
+        "Deduplication",
+        "Data Quality"
       ],
-      "desejaveis": [
-        "GCP",
-        "GCS",
-        "BigQuery",
-        "Solr",
-        "Elasticsearch",
-        "Machine Learning",
-        "CRM",
-        "Ad Tech"
-      ]
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "desde": "2026-09-28",
+    "verificada_em": "2026-10-01",
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Java"
+      ],
+      "parciais": []
+    }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Scientist, Entity Resolution — High-Impact & Equity",
+    "url": "https://www.jobleads.com/us/job/senior-data-scientist-entity-resolution-high-impact-equity--new-york--california--e9e3850d4cfaa4fc5da4a4623c32af11f",
+    "empresa": "Enigma",
+    "local": "United States",
+    "fonte": "Google Jobs",
+    "score": 3,
+    "motivo": "Vaga core de Senior Data Scientist dedicado exclusivamente a Entity Resolution, end-to-end, com foco em modelos escaláveis, validação rigorosa e acurácia de dados.",
+    "resumo": "Enigma busca Staff/Senior Data Scientist para o time de Entity Resolution em Nova York. Responsabilidade de transformar dados brutos em modelos escaláveis, colaborar com cientistas, engenheiros e stakeholders, aplicar práticas estatísticas rigorosas e validação repetível.",
+    "confianca": 0.92,
+    "encaixe": 0.04,
+    "nota_perfil": "Vaga técnica core em ER pura, senioridade compatível (staff level); presencial em EUA exige visto e afasta do contexto Brasil; stack não especificado mas role é perfeita para especialista.",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
     },
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "New York",
+        "California"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -325,38 +327,65 @@
     "motivo": "Vaga focada em Identity Graph e Identity Resolution, que são aplicações diretas de entity resolution e matching para ads.",
     "resumo": "Software Engineer 5 na Netflix para trabalhar no Ads Identity Graph, desenvolvendo serviços de Identity Resolution e aumentar cobertura de identificadores com matching de dados publicitários. Foco em resolver identidades e proteger privacidade.",
     "confianca": 0.82,
-    "encaixe": 0.45,
+    "encaixe": 0.04,
     "nota_perfil": "Localização em New York exige visto; stack não mencionado explicitamente, mas o domínio técnico (identity resolution) é altamente relevante.",
     "requisitos": {
       "obrigatorios": [
-        "Identity Graph",
-        "Identity Resolution",
-        "Deterministic Matching",
-        "Probabilistic Matching",
         "Spark",
-        "Distributed Systems",
+        "Identity Resolution",
+        "Identity Graph",
         "Data Governance",
-        "Privacy",
-        "Consent Management",
-        "DSP",
-        "Ad Tech"
+        "Deterministic Matching",
+        "Probabilistic Matching"
       ],
       "desejaveis": [
-        "CTV",
         "Machine Learning",
-        "Targeting Experimentation",
+        "Privacy Enhancing Technologies",
         "GDPR",
         "CCPA",
         "CPRA",
-        "Privacy Enhancing Technologies",
-        "Data Clean Rooms"
+        "CTV"
       ]
     },
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "New York",
+        "Seattle",
+        "Los Angeles",
+        "Los Gatos"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.6,
+    "compat_detalhe": {
+      "habilidades": 67,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 85,
+      "foco": 94,
+      "senioridade_txt": "nível senior",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [
+        "Identity Graph",
+        "Data Governance"
+      ]
+    }
   },
   {
     "tipo": "vaga",
@@ -369,20 +398,45 @@
     "motivo": "Vaga core de entity resolution em escala (golden profile, matching rule-based e ML) com foco em governança e linhagem de dados, exatamente no domínio do leitor.",
     "resumo": "JPMorgan Chase busca Product Manager para o time C360 responsável pela gestão do ciclo de vida completo de um universo de entidades global e perfil dourado confiável. A função envolve balancear matching baseado em regras e assistido por ML, com forte foco em governança e provenance.",
     "confianca": 0.95,
-    "encaixe": 0.45,
+    "encaixe": 0.04,
     "nota_perfil": "Vaga sênior de product management (não engenharia), presencial em Columbus fora do Brasil reduz encaixe; stack e domínio técnico perfeitos mas função é diferente da atual.",
     "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Machine Learning"
-      ],
+      "obrigatorios": [],
       "desejaveis": []
     },
     "senioridade": "nao_informado",
-    "modalidade": "presencial",
+    "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Columbus"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -395,34 +449,45 @@
     "motivo": "Vaga de Entity Resolution Associate com foco direto em entity matching, GSA EVS program, SLA de match accuracy e exception rates.",
     "resumo": "Dun & Bradstreet busca especialista em Entity Resolution para programa GSA EVS, responsável por avaliar entity matching, identificar gaps em match logic e garantir performance de SLAs de accuracy e exception rates.",
     "confianca": 0.95,
-    "encaixe": 0.35,
+    "encaixe": 0.04,
     "nota_perfil": "Experiência exata em entity resolution, mas presencial em Vienna VA (exige visto, fora do Brasil) reduz encaixe significativamente; stack não mencionado.",
     "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "AWS",
-        "GCP",
-        "Snowflake",
-        "Entity Resolution",
-        "Data Analysis",
-        "Statistical Analysis",
-        "Data Visualization",
-        "Matching Logic",
-        "Precision",
-        "Recall"
-      ],
-      "desejaveis": [
-        "SAM.gov",
-        "GSA Data",
-        "Statistical Engagements",
-        "Microsoft Office"
-      ]
+      "obrigatorios": [],
+      "desejaveis": []
     },
-    "senioridade": "pleno",
+    "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Vienna, VA"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.1,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -435,23 +500,123 @@
     "motivo": "Mesma vaga anterior: identity resolution, master data management e record linking em contexto clínico regulado.",
     "resumo": "Senior Identity Resolution Engineer para design, build e operação de identity resolution e MDM em workflows clínicos regulados. Responsável por matching, linking, merging e separating de identity records com controles auditáveis.",
     "confianca": 0.92,
-    "encaixe": 0.25,
+    "encaixe": 0.04,
     "nota_perfil": "Vaga excelente em especialidade, mas presencial em Irving TX (EUA) reduz muito o encaixe, exigindo visto e mudança internacional.",
     "requisitos": {
       "obrigatorios": [
         "Identity Resolution",
-        "Master Data Management",
-        "Record Linkage",
-        "Record Linking",
-        "API Design"
+        "Master Data Management"
       ],
       "desejaveis": []
     },
     "senioridade": "senior",
-    "modalidade": "hibrido",
+    "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Irving"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [
+        "Master Data Management"
+      ]
+    }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Scientist - Onshore (B)",
+    "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
+    "empresa": "V4C.ai",
+    "local": "Remoto · United States",
+    "fonte": "Workable",
+    "score": 8,
+    "motivo": "Data Scientist em healthcare com MDM, análise de data quality, deduplicação e entity-resolution em datasets de member/provider/patient, alinhado com saúde e linkage.",
+    "resumo": "V4C.ai busca Data Scientist em Databricks e Python para soluções healthcare com foco em MDM, data quality, deduplicação e entity-resolution entre member, provider e patient datasets em Databricks/PySpark.",
+    "confianca": 0.85,
+    "encaixe": 0.03,
+    "nota_perfil": "Alinha perfeitamente em domain (healthcare), stack (Databricks, Python, PySpark, SQL) e especialização (MDM, entity-resolution, deduplicação), remoto nos US; espanhol não requerido, inglês intermediário suficiente.",
+    "requisitos": {
+      "obrigatorios": [
+        "Databricks",
+        "Spark",
+        "Python",
+        "SQL",
+        "Delta Lake",
+        "Machine Learning",
+        "Master Data Management"
+      ],
+      "desejaveis": [
+        "Informatica MDM",
+        "Reltio",
+        "IBM MDM",
+        "Azure",
+        "AWS",
+        "MLflow",
+        "Power BI",
+        "Tableau",
+        "FHIR",
+        "HL7"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "desde": "2026-09-28",
+    "verificada_em": "2026-10-01",
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 8,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 40,
+      "local": 12,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "pede 8+ anos (você tem 2.7)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Delta Lake"
+      ],
+      "parciais": [
+        "Databricks",
+        "Master Data Management"
+      ]
+    }
   },
   {
     "tipo": "vaga",
@@ -464,21 +629,45 @@
     "motivo": "Vaga Senior Data Scientist com foco explícito em Entity Resolution end-to-end, pipelines escaláveis e ownership de toda cadeia de dados, altamente relevante.",
     "resumo": "Enigma Technologies busca Data Scientist experiente para liderar Entity Resolution, desde dados brutos até modelos, pipelines e interface do cliente. Envolve trabalho cross-funcional e mentoria em plataforma de dados robusta.",
     "confianca": 0.85,
-    "encaixe": 0.25,
+    "encaixe": 0.03,
     "nota_perfil": "Experiência e seniority alinhados, mas localização presencial em New York e sem menção remoto reduz encaixe significativamente.",
     "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Data Pipelines",
-        "Machine Learning"
-      ],
+      "obrigatorios": [],
       "desejaveis": []
     },
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "New York"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -491,24 +680,45 @@
     "motivo": "Vaga Staff Data Scientist em Entity Resolution com requisitos técnicos (Spark, SQL, PySpark, Python) muito próximos do stack do leitor.",
     "resumo": "Enigma busca Staff/Senior Data Scientist para Entity Resolution presencial em Los Angeles. Requer 6-8+ anos, liderança técnica e proficiência em Databricks, Spark SQL, PySpark, Python e ML/AI.",
     "confianca": 0.8,
-    "encaixe": 0.2,
+    "encaixe": 0.02,
     "nota_perfil": "Stack muito alinhado (Spark, SQL, Python) e seniority apropriada, mas exigência presencial em Los Angeles torna geograficamente incompatível.",
     "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Databricks",
-        "Spark",
-        "Python",
-        "Machine Learning",
-        "Advanced degree in quantitative field"
-      ],
+      "obrigatorios": [],
       "desejaveis": []
     },
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Los Angeles"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 45,
+      "local": 8,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível staff/principal",
+      "local_txt": "presencial em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -521,105 +731,73 @@
     "motivo": "Entity resolution, deduplication e record-linkage pipelines são responsabilidades centrais da vaga.",
     "resumo": "Knowledge Graph Engineer para design e build de knowledge graph que modela ontologias, entity resolution, relationship extraction e graph analytics conectando pessoas, organizações, localizações e eventos. Requer data engineering, semantic modeling e NLP.",
     "confianca": 0.88,
-    "encaixe": 0.15,
+    "encaixe": 0.02,
     "nota_perfil": "Especialidade em entity resolution presente, mas localização Virginia (EUA) presencial/híbrida exige visto e reduz encaixe significativamente.",
     "requisitos": {
       "obrigatorios": [
-        "Graph Databases",
-        "Neo4j",
-        "Cypher",
         "Python",
-        "Entity Resolution",
-        "Record Linkage",
-        "Ontology",
-        "Semantic Modeling",
-        "RDF",
-        "OWL",
-        "NLP",
-        "spaCy",
-        "Hugging Face",
-        "Information Extraction",
-        "Graph Query Languages",
-        "Vector Embeddings",
-        "Knowledge Graph",
-        "Data Provenance"
-      ],
-      "desejaveis": [
-        "Security Clearance",
+        "Neo4j",
         "Amazon Neptune",
         "TigerGraph",
         "JanusGraph",
+        "Cypher",
         "Gremlin",
         "SPARQL",
+        "Entity Resolution",
+        "RDF",
+        "OWL",
+        "spaCy",
+        "Hugging Face"
+      ],
+      "desejaveis": [
         "Java",
         "Scala",
-        "Graph Analytics",
-        "Link Analysis",
-        "Network Analysis",
-        "Geospatial Data",
-        "Temporal Data",
+        "Embeddings",
         "GraphRAG",
-        "LLMs",
-        "RAG",
-        "FedRAMP",
-        "FISMA",
-        "NIST"
+        "LLMs"
       ]
     },
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
     "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Yuliang LI",
-    "url": "https://scholar.google.gr/citations?user=ZomDhmYAAAAJ&hl=ja",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · \u0001",
-    "social": true,
-    "score": 4,
-    "motivo": "Post sobre pesquisador (Yuliang LI) cujo trabalho central é deep entity matching e transformers para entity matching, referência clara no tema.",
-    "resumo": "Yuliang LI, pesquisador cujos trabalhos principais incluem deep entity matching, entity resolution com transformers e effective entity matching.",
-    "confianca": 0.9,
-    "encaixe": 0.0,
-    "nota_perfil": "",
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-30",
-    "verificada_em": "2026-10-01",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "CaRL-EM: Cost-Aware Reinforcement Learning for Entity ...",
-    "url": "https://aclanthology.org/2026.acl-long.1258/",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · \u0001",
-    "social": true,
-    "score": 4,
-    "motivo": "Post apresenta paper ou trabalho sobre entity matching com LLMs, usando cost-aware reinforcement learning, foco central no tema.",
-    "resumo": "CaRL-EM: trabalho que aplica reinforcement learning com awareness de custo para entity matching, explorando uso de LLMs para entendimento contextual.",
-    "confianca": 0.88,
-    "encaixe": 0.0,
-    "nota_perfil": "",
-    "requisitos": {
-      "obrigatorios": [
-        "LLMs"
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
       ],
-      "desejaveis": []
+      "cidades": [
+        "Virginia"
+      ]
     },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-30",
-    "verificada_em": "2026-10-01",
-    "nova": false
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 4,
+    "ingles": "fluente",
+    "foco_er": 0.7,
+    "compat_detalhe": {
+      "habilidades": 14,
+      "senioridade": 80,
+      "local": 8,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "pede 4+ anos (você tem 2.7)",
+      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "faltam": [
+        "Neo4j",
+        "Amazon Neptune",
+        "TigerGraph",
+        "JanusGraph",
+        "Cypher",
+        "Gremlin",
+        "SPARQL",
+        "RDF"
+      ],
+      "parciais": []
+    }
   }
 ]
