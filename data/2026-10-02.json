@@ -1,0 +1,143 @@
+{
+  "data": "2026-10-02",
+  "gerado_em": "2026-10-01T23:14-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Probabilistic linkage with graphs: leveraging cluster structure to improve the accuracy of entity resolution at scale",
+      "url": "http://arxiv.org/abs/2610.00566v1",
+      "autores": "Evelyn Lauren et al.",
+      "data": "2026-09-30",
+      "fonte": "arXiv",
+      "score": 10,
+      "motivo": "Paper central em record linkage probabilístico com foco em resolução de entidades via análise de estrutura de grafos e clustering, problema exatamente alinhado com especialidade do leitor.",
+      "resumo": "Propõe e avalia onze algoritmos de clustering para resolver grafos de linkage probabilístico de registros em dados administrativos em escala, comparando métodos clássicos de entity resolution com algoritmos de outros campos (Leiden, Louvain, label propagation) que reduzem erro de linkage em até 66% versus transitive closure.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Population-Level Data Linkages in Worldwide Twin Research Resources",
+      "url": "https://doi.org/10.1017/thg.2026.10094",
+      "autores": "Veronika V. Odintsova et al.",
+      "data": "2026-09-30",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "motivo": "Paper sobre record linkage em escala populacional ligando dados de gêmeos a registros administrativos e de saúde, com foco em microdata e macrodata linkage, tema central em resolução de entidades em contexto de saúde pública.",
+      "resumo": "Revisão global de registros de gêmeos que examina record linkage como característica central da pesquisa contemporânea, descrevendo como dados de gêmeos são linkados a registros administrativos, de saúde, educacionais e ambientais para análises longitudinais de curso de vida.",
+      "confianca": 0.88
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Scaling entity resolution with improved inverted index and ...",
+      "url": "https://www.linkedin.com/posts/ishaan784_scaling-entity-resolution-across-117-million-activity-7509523566787313664-xYMU",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico sobre scaling de entity resolution com 11.7 milhões de registros ruidosos e métricas de desempenho do Amazon ML Challenge 2026.",
+      "resumo": "Apresenta pipeline de entity resolution escalável para 11.7 milhões de registros de negócios ruidosos, com score de 0.710 Macro F1 no Amazon ML Challenge 2026.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Entity Resolution Pipeline for Amazon ML Challenge 2026",
+      "url": "https://www.linkedin.com/posts/ishaan784_built-an-entity-resolution-pipeline-resolving-activity-7509523108035325952-qlih",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post anunciando pipeline concreto de entity resolution com 1.73M entidades resolvidas através de 3 fontes ruidosas, caso real do Amazon ML Challenge 2026.",
+      "resumo": "Descreve pipeline de entity resolution que resolveu 1.73 milhões de entidades de negócios através de 3 fontes ruidosas com 11.7 milhões de registros.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Robin Linacre's Post",
+      "url": "https://www.linkedin.com/posts/robinlinacre_were-very-pleased-to-release-splink-5-which-activity-7510356083064909824-LaZd",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 1,
+      "motivo": "Post técnico sobre benchmark de Splink em record linkage em escala de bilhões de registros, tema central do especialista.",
+      "resumo": "Robin Linacre divulga benchmark reproduzível mostrando que Splink processa 1 bilhão de registros sintéticos e 10 bilhões de comparações pareadas em menos de 10 minutos em hardware grande.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Fighting Healthcare Fraud with Entity Resolution",
+      "url": "https://www.linkedin.com/posts/greg-mundell_fightingfraudfriday-entityresolution-healthcarefraud-activity-7509224853674225664-1lmG",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post sobre aplicação real de entity resolution em detecção de fraude no setor de saúde, caso específico de healthcare fraud prevention.",
+      "resumo": "Demonstra uso de entity resolution para detectar fraude em healthcare durante enrollment de fornecedores, caso real na saúde.",
+      "confianca": 0.9
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Entity Resolution: Ensuring Correct Company Data",
+      "url": "https://www.linkedin.com/posts/darkskope_entityresolution-riskintelligence-financialcrime-activity-7509204949122076672-FXkT",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico sobre entity resolution para normalização e deduplicação de dados de empresas, exemplo concreto de matching (ABC Ltd. vs A.B.C. Limited).",
+      "resumo": "Apresenta entity resolution para garantir dados corretos de empresas, abordando variações de nomes e deduplicação (ABC Ltd. vs A.B.C. Limited).",
+      "confianca": 0.9
+    }
+  ],
+  "vagas_abertas_total": 14,
+  "vagas_arquivadas_total": 20,
+  "rede": {
+    "pessoas_novas": 5,
+    "empresas_novas": 2
+  },
+  "pilula_mercado": "Master Data Management",
+  "aula": {
+    "dia": 1,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "conceito",
+    "titulo": "Data matching, record linkage, entity resolution e deduplicação: definições precisas",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Definir com precisão e distinguir data matching, record linkage, entity resolution e deduplicação, situando cada termo dentro do processo maior de integração de dados.",
+    "conceito": "Christen (2012, seç. 1.1, p. 3-4) define data matching como a tarefa de identificar e casar registros individuais de bases distintas que se referem à mesma entidade do mundo real. Quando essa tarefa ocorre dentro de uma única base, o nome específico é deduplicação (duplicate detection). O termo 'record linkage' é historicamente o mais antigo, vindo da estatística e saúde pública, e é frequentemente usado como sinônimo de data matching, embora a literatura mais recente prefira 'entity resolution' como termo guarda-chuva que também abrange clustering de registros em grupos que representam a mesma entidade (Binette & Steorts, 2022). Elmagarmid et al. (2007) usam 'duplicate record detection' para enfatizar o cenário de uma base só.\n\nÉ essencial entender que data matching é apenas a segunda de três etapas da integração de dados: schema matching (alinhar tabelas e atributos equivalentes), data matching (alinhar registros equivalentes) e data fusion (consolidar registros casados em uma representação única e consistente, chamada deduplicação quando aplicada a uma base só) (Christen, 2012, p. 3-4). Essas etapas não são independentes: pistas de uma ajudam a outra, como mostra o exemplo do atributo 'StreetAddress' versus 'Address' no capítulo 1.\n\nA distinção importa porque cada termo carrega pressupostos diferentes sobre estrutura dos dados, existência de identificadores e escopo (uma base vs. múltiplas), o que afeta diretamente o desenho da solução técnica.",
+    "como_funciona": "Vocabulário consolidado:\n1. Schema matching: alinhar tabelas/atributos equivalentes entre bases heterogêneas (nomes diferentes, formatos diferentes, atributos compostos vs. separados).\n2. Data matching / record linkage: identificar pares de registros, em bases distintas, que referem-se à mesma entidade.\n3. Deduplicação: caso especial de data matching aplicado a uma única base, para achar registros duplicados da mesma entidade.\n4. Entity resolution: termo mais amplo e recente, cobre tanto o pareamento quanto o agrupamento (clustering) final de registros em entidades.\n5. Data fusion: consolidar registros classificados como match em um único registro limpo e consistente (quando numa base só, é a etapa final da deduplicação).",
+    "exemplo": "Imagine três tabelas hospitalares (Christen, 2012, Fig. 1.1, p. 7): PatTbl com PatientID 'P1273489' para 'John Smith', e as tabelas AdmittedPatients/Addresses de outro sistema com PID '55642' para 'Smith John W.'. Não há identificador comum confiável entre as duas bases. Primeiro é preciso schema matching: perceber que 'DOB' (formato DD/MM/YYYY) corresponde a 'BirthDate' (formato YYYYMMDD), e que 'Gender' (M/F) corresponde a 'Sex' (0/1). Depois, data matching: comparar 'John Smith, 08/10/1960' com 'Smith John W., 19601008' e concluir, por similaridade de nome e data de nascimento idêntica, que são a mesma pessoa, mesmo com PatientID e PID diferentes. Por fim, data fusion: criar um registro único consolidado com os melhores valores de cada atributo (ex.: endereço mais completo).",
+    "na_pratica": "Em pipelines reais isso se traduz em estágios de código separados. Por exemplo, em Splink você primeiro garante que os schemas das duas fontes já foram alinhados (mesmas colunas, mesmo formato de data) antes de rodar o linkage:\nfrom splink import DuckDBAPI, Linker, SettingsCreator, block_on\nsettings = SettingsCreator(link_type='link_only', comparisons=[], blocking_rules_to_generate_predictions=[block_on('surname','dob')])\nlinker = Linker([df_a, df_b], settings, db_api=DuckDBAPI())\nA etapa de schema matching (normalizar 'DOB' vs 'BirthDate') acontece antes, geralmente em um job de ETL em PySpark, nunca dentro do linker.",
+    "armadilha": "Profissionais experientes às vezes tratam 'record linkage' e 'deduplicação' como sinônimos intercambiáveis em qualquer contexto, mas o escopo (duas bases vs. uma base) muda decisões de design, como blocking e regras de transitividade de clusters; sempre declare explicitamente se o problema é link_only, dedupe_only ou link_and_dedupe.",
+    "desafio": "Uma fintech recebe uma base de clientes vinda de uma fusão com outro banco. A base A tem um campo 'customer_id' próprio; a base B também tem seu próprio 'customer_id', mas são numerações independentes. Além disso, dentro da própria base A existem suspeitas de clientes com dois cadastros (um feito pelo app, outro pela agência física). Usando a terminologia de Christen (2012), identifique: (a) que tarefa é necessária para juntar A e B, (b) que tarefa é necessária para resolver os cadastros duplicados dentro de A, e (c) se os 'customer_id' podem ser usados diretamente num JOIN SQL, e por quê (ou por que não).",
+    "gabarito": "(a) É um caso de data matching (ou record linkage) entre duas bases distintas, pois não há identificador comum confiável entre A e B; corresponde ao cenário 'link_only'. (b) É um caso de deduplicação, pois trata-se de encontrar registros duplicados dentro de uma única base (A), referente ao mesmo cliente cadastrado duas vezes; corresponde ao cenário 'dedupe_only'. (c) Não, os 'customer_id' não podem ser usados num JOIN direto, porque são identificadores locais a cada sistema, sem correspondência garantida entre A e B (Christen, 2012, p. 5): só seria válido se existisse um identificador único e confiável compartilhado entre as duas bases, como um CPF validado e consistente, o que não é o caso aqui.",
+    "fontes": [
+      "Christen (2012), seç. 1.1, p. 3-6",
+      "Christen (2012), seç. 1.2, p. 6-9",
+      "Elmagarmid, Ipeirotis & Verykios (2007), seção introdutória",
+      "Binette & Steorts (2022), seção introdutória"
+    ],
+    "gerada": true
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2665,
+      "pos_palavras_chave": 12,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 8,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 228,
+      "pos_palavras_chave": 3,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 10,
+      "aprovados": 5
+    }
+  }
+}
