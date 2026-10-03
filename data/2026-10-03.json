@@ -1,0 +1,239 @@
+{
+  "data": "2026-10-03",
+  "gerado_em": "2026-10-02T22:56-03:00",
+  "llm": true,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Entity Resolution Engineer",
+      "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
+      "empresa": "DEFCON AI",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 17,
+      "motivo": "Vaga de Senior Entity Resolution Engineer com foco principal em matching de registros de múltiplas fontes, graph design e production-ready implementation de entity resolution.",
+      "resumo": "DEFCON AI procura engenheiro sênior especializado em resolver quando registros de diversas fontes representam a mesma entidade real, desenvolvendo estratégia de matching e graph design para sistemas de governo.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL"
+        ],
+        "desejaveis": [
+          "Fellegi-Sunter",
+          "Splink",
+          "Dedupe",
+          "Zingg",
+          "PostgreSQL",
+          "pgvector",
+          "graph databases"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 89,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer",
+      "url": "https://himalayas.app/companies/ryz-labs/jobs/data-engineer",
+      "empresa": "Ryz Labs",
+      "local": "Remoto · Argentina",
+      "fonte": "Himalayas",
+      "score": 13,
+      "motivo": "Vaga de Data Engineer com foco explícito em identity resolution, entity-matching challenges e data quality na ingestão, alinhado com especialidade do leitor.",
+      "resumo": "Ryz Labs busca Senior Data Engineer remoto (LATAM) para pipelines de ingestão de dados com ênfase em entity resolution, identity matching e detecção de qualidade de dados em múltiplas fontes.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "AWS",
+          "AWS Glue",
+          "Athena",
+          "S3",
+          "Protobuf"
+        ],
+        "desejaveis": [
+          "Elixir",
+          "DynamoDB",
+          "Snowflake",
+          "Terraform",
+          "AWS CDK"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "regiao",
+        "paises": [
+          "LATAM"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.25,
+      "compat_detalhe": {
+        "habilidades": 29,
+        "senioridade": 60,
+        "local": 100,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto e aceita Brasil/LATAM",
+        "faltam": [
+          "AWS",
+          "Athena",
+          "S3",
+          "Protobuf"
+        ],
+        "parciais": [
+          "AWS Glue"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Machine Learning Engineer",
+      "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
+      "empresa": "ZoomInfo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 6,
+      "motivo": "Vaga de ML Engineer com foco principal em resolver entity identity at scale no data graph de empresas, alinhado com especialidade em entity resolution.",
+      "resumo": "ZoomInfo procura ML Engineer para estender seu data graph com resolução de entity identity em escala, extraindo leadership e detectando registros obsoletos usando ML e NLP.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL"
+        ],
+        "desejaveis": [
+          "PyTorch",
+          "embeddings"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 81,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": []
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Machine learning-based record linkage for brazilian health databases validated in Espírito Santo",
+      "url": "https://doi.org/10.1038/s41598-026-73928-3",
+      "autores": "Daniel Scaldaferri Lages et al.",
+      "data": "2026-10-01",
+      "fonte": "OpenAlex",
+      "score": 8,
+      "motivo": "Paper sobre record linkage em bases de saúde brasileiras usando aprendizado de máquina, blocking multi-passe e classificação de pares incertos, validado em sistemas SUS.",
+      "resumo": "Estudo metodológico que desenvolve e valida uma abordagem de record linkage baseada em machine learning para integrar sistemas de informação do SUS, comparando-a com CIDACS-RL em dados de Espírito Santo. Utiliza blocking estratégico, classificação automática de pares incertos e avalia seis algoritmos de ML em 106 mil pares de registros rotulados.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 17,
+  "vagas_arquivadas_total": 23,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": "AWS",
+  "aula": {
+    "dia": 2,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "conceito",
+    "titulo": "Por que não basta um JOIN: identificadores ausentes, errados e instáveis",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Entender por que a ausência, inconsistência ou instabilidade de identificadores únicos transforma o que seria um JOIN trivial em um problema de inferência probabilística (data matching).",
+    "conceito": "Quando duas bases compartilham uma chave única, confiável e estável, integrar dados é apenas uma operação de junção relacional, implementável com SQL direto (Christen, 2012, seç. 1.1.1, p. 5). O problema de data matching só existe porque essa condição raramente se sustenta no mundo real: muitas bases não possuem identificador comum algum, e quando possuem, não há garantia de que ele seja preciso, completo e consistente ao longo do tempo. Christen destaca que mesmo identificadores nacionais (CPF, número de seguro social) podem estar sujeitos a erro de digitação, duplicação ou restrições legais de uso, e que o próprio dono da base precisa confiar que não existem registros duplicados do mesmo indivíduo sob identificadores diferentes, situação comum em bases de clientes por variações de nome ou mudança de endereço (p. 5).\n\nNa ausência de um identificador confiável, o matching precisa se apoiar em atributos parcialmente identificadores (nome, endereço, data de nascimento), que são frequentemente de baixa qualidade: incompletos, errados ou desatualizados. O exemplo da Figura 1.1 do livro (p. 7) ilustra isso: 'John Smith' vira 'Smith John W.', datas de nascimento são codificadas em formatos diferentes (DD/MM/YYYY vs YYYYMMDD), e os próprios identificadores de paciente (PatientID vs PID) não coincidem entre sistemas. Isso exige comparação aproximada de strings e decisão probabilística em vez de igualdade exata.",
+    "como_funciona": "Checklist para decidir se um JOIN exato basta ou se é preciso matching probabilístico:\n1. Existe um atributo comum entre as bases que pretende ser identificador único? Se não, já é matching.\n2. Esse identificador é íntegro (sem nulos, sem truncamento, sem mudança de formato ao longo do tempo)? Verifique taxa de preenchimento e cardinalidade esperada.\n3. Esse identificador é preciso (sem erro de digitação ou de captura, ex.: OCR, digitação manual)? Erros aqui geram falsos positivos silenciosos em um JOIN.\n4. A mesma entidade nunca recebe dois identificadores diferentes na mesma base (por exemplo, por re-cadastro)? Se acontecer, duplicatas internas invalidam o JOIN mesmo com chave 'única'.\n5. Se qualquer resposta for não, o problema deixa de ser relacional e passa a exigir comparação de atributos (nome, endereço, DOB) com funções de similaridade e classificação (par match / non-match), como será visto nas próximas semanas.",
+    "exemplo": "Baseado na Fig. 1.1 de Christen (2012, p. 7): a tabela PatTbl tem PatientID='P7693427-8', Name='Joanna Smith', DOB='12/11/1984'. A tabela AdmittedPatients tem PID='25198', Surname='Smith', GivenName='Jo Anna', BirthDate='19841112'. Um JOIN por PatientID=PID falha porque os valores não têm relação alguma (chaves de sistemas distintos). Um JOIN por nome completo também falha: 'Joanna Smith' != 'Smith, Jo Anna' como string exata, embora seja a mesma pessoa. A data de nascimento bate em valor (12/11/1984 = 19841112), mas só depois de normalizar formato. Nenhuma coluna isolada permite um JOIN confiável; é preciso combinar nome normalizado + DOB normalizado + similaridade aproximada para inferir que são o mesmo paciente.",
+    "na_pratica": "Em pipelines reais, a primeira pergunta de diagnóstico antes de desenhar blocking e comparadores é: existe chave candidata, e qual sua taxa de nulidade e taxa de erro conhecida? Em SQL isso vira uma checagem simples de qualidade:\nSELECT count(*) filter (where patient_id is null) as nulos, count(distinct patient_id) as distintos, count(*) as total FROM pat_tbl;\nSe nulos > 0 ou distintos << total (indicando reuso de chave), o pipeline precisa migrar de JOIN para Splink ou recordlinkage, com comparadores aproximados em nome, endereço e DOB em vez de igualdade de chave.",
+    "armadilha": "Confiar cegamente em uma chave 'única' do sistema de origem (como PatientID) sem auditar duplicidade e erro de captura é a causa mais comum de falsos negativos silenciosos: o JOIN roda sem erro, mas perde pares que são a mesma pessoa sob identificadores diferentes.",
+    "desafio": "Você recebe duas tabelas de uma rede de varejo. Tabela A tem coluna 'cpf' preenchida em 92% dos registros, com 3% de CPFs que aparecem em mais de um nome distinto (mesmo CPF, nomes diferentes). Tabela B não tem CPF, só nome, telefone e CEP. Pergunta: o CPF da tabela A pode ser usado como chave de JOIN direto contra alguma versão futura da tabela B que venha a coletar CPF? Justifique com base nos critérios de confiabilidade de identificador (integridade, precisão, estabilidade, unicidade por entidade) discutidos na aula, e diga que etapa do pipeline ainda seria necessária mesmo nesse cenário otimista.",
+    "gabarito": "Não incondicionalmente. Mesmo que a tabela B futura venha a ter CPF, a tabela A já mostra que o identificador não é confiável: 8% de nulidade quebra o critério de completude, e 3% de CPFs associados a nomes diferentes sugere erro de captura ou reuso de CPF (violação do critério 'um identificador por entidade', Christen, 2012, p.5), tornando o JOIN direto arriscado nesses registros. Mesmo no cenário ótimo (CPF presente e único nas duas bases), ainda seria necessária uma etapa de auditoria de qualidade do identificador (verificar duplicidade e taxa de erro) antes de tratá-lo como chave confiável; e para os 8% de registros sem CPF na tabela A, o matching por atributos (nome, telefone, CEP) continua sendo obrigatório, ou seja, o pipeline precisa de uma estratégia híbrida: JOIN exato onde o CPF é confiável, e matching probabilístico para o restante.",
+    "fontes": [
+      "Christen (2012), seç. 1.1.1, p. 5",
+      "Christen (2012), seç. 1.2, Fig. 1.1, p. 7-8",
+      "Elmagarmid, Ipeirotis & Verykios (2007), IEEE TKDE 19(1)"
+    ],
+    "gerada": true
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2693,
+      "pos_palavras_chave": 8,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 188,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}

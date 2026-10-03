@@ -14,10 +14,25 @@
   "nivel": "parcial",
   "nome": "APIs"
  },
+ "athena": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Athena"
+ },
  "aws": {
   "motivo": "sem evidência de cloud",
   "nivel": "nao",
   "nome": "AWS"
+ },
+ "aws cdk": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "AWS CDK"
+ },
+ "aws glue": {
+  "motivo": "experiência com ETL/Spark, não Glue especificamente",
+  "nivel": "parcial",
+  "nome": "AWS Glue"
  },
  "azure": {
   "motivo": "sem evidência",
@@ -99,6 +114,16 @@
   "nivel": "tem",
   "nome": "Deterministic Matching"
  },
+ "dynamodb": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "DynamoDB"
+ },
+ "elixir": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Elixir"
+ },
  "embeddings": {
   "motivo": "usa scikit-learn/scoring, próximo a embeddings",
   "nivel": "parcial",
@@ -118,6 +143,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "FedRAMP"
+ },
+ "fellegi-sunter": {
+  "motivo": "declarado explicitamente nas habilidades",
+  "nivel": "tem",
+  "nome": "Fellegi-Sunter"
  },
  "fhir": {
   "motivo": "sem evidência de padrão saúde",
@@ -143,6 +173,11 @@
   "motivo": "próximo de entity resolution/MDM",
   "nivel": "parcial",
   "nome": "Golden Records"
+ },
+ "graph databases": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "graph databases"
  },
  "graphrag": {
   "motivo": "sem evidência LLM/grafo",
@@ -304,6 +339,11 @@
   "nivel": "nao",
   "nome": "OWL"
  },
+ "pgvector": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "pgvector"
+ },
  "postgresql": {
   "motivo": "domina SQL genérico",
   "nivel": "parcial",
@@ -324,10 +364,20 @@
   "nivel": "tem",
   "nome": "Probabilistic Matching"
  },
+ "protobuf": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Protobuf"
+ },
  "python": {
   "motivo": "stack principal",
   "nivel": "tem",
   "nome": "Python"
+ },
+ "pytorch": {
+  "motivo": "usa scikit-learn, não PyTorch",
+  "nivel": "nao",
+  "nome": "PyTorch"
  },
  "rdf": {
   "motivo": "sem evidência",
@@ -359,6 +409,11 @@
   "nivel": "nao",
   "nome": "Reltio"
  },
+ "s3": {
+  "motivo": "sem evidência direta",
+  "nivel": "nao",
+  "nome": "S3"
+ },
  "scala": {
   "motivo": "sem evidência",
   "nivel": "nao",
@@ -368,6 +423,11 @@
   "motivo": "stack declarado",
   "nivel": "tem",
   "nome": "scikit-learn"
+ },
+ "snowflake": {
+  "motivo": "experiência com SQL e data warehouse",
+  "nivel": "parcial",
+  "nome": "Snowflake"
  },
  "soundex": {
   "motivo": "fuzzy/blocking relacionado, não citado",
@@ -409,6 +469,11 @@
   "nivel": "parcial",
   "nome": "Tableau"
  },
+ "terraform": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Terraform"
+ },
  "tf-idf": {
   "motivo": "scoring/blocking pode usar, não citado",
   "nivel": "parcial",
@@ -418,5 +483,10 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "TigerGraph"
+ },
+ "zingg": {
+  "motivo": "usa Splink, ferramenta similar de entity resolution",
+  "nivel": "parcial",
+  "nome": "Zingg"
  }
 }

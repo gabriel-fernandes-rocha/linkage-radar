@@ -36,7 +36,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "pais",
    "paises": [
@@ -84,7 +84,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "pais",
    "paises": [
@@ -131,7 +131,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "global",
    "paises": [],
@@ -176,7 +176,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "pais",
    "paises": [
@@ -225,7 +225,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "global",
    "paises": [],
@@ -330,7 +330,7 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "pais",
    "paises": [
@@ -389,7 +389,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -440,7 +440,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -681,7 +681,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -728,7 +728,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -773,7 +773,7 @@
   "modalidade": "presencial",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -890,7 +890,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -944,7 +944,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "pais",
    "paises": [
@@ -990,7 +990,7 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-09-28",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-02",
+  "ultima_vez_aberta": "2026-10-03",
   "local_contratacao": {
    "escopo": "cidade",
    "paises": [
@@ -1016,5 +1016,93 @@
    "faltam": [],
    "parciais": []
   }
+ },
+ {
+  "titulo": "Senior Entity Resolution Engineer",
+  "empresa": "DEFCON AI",
+  "local": "Remoto · United States",
+  "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
+  "fonte": "Himalayas",
+  "encaixe": 0.06,
+  "motivo": "Vaga de Senior Entity Resolution Engineer com foco principal em matching de registros de múltiplas fontes, graph design e production-ready implementation de entity resolution.",
+  "resumo": "DEFCON AI procura engenheiro sênior especializado em resolver quando registros de diversas fontes representam a mesma entidade real, desenvolvendo estratégia de matching e graph design para sistemas de governo.",
+  "requisitos": {
+   "obrigatorios": [
+    "Python",
+    "SQL"
+   ],
+   "desejaveis": [
+    "Fellegi-Sunter",
+    "Splink",
+    "Dedupe",
+    "Zingg",
+    "PostgreSQL",
+    "pgvector",
+    "graph databases"
+   ]
+  },
+  "senioridade": "senior",
+  "modalidade": "remoto",
+  "primeira_vez": "2026-10-03",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-10-03"
+ },
+ {
+  "titulo": "Data Engineer",
+  "empresa": "Ryz Labs",
+  "local": "Remoto · Argentina",
+  "url": "https://himalayas.app/companies/ryz-labs/jobs/data-engineer",
+  "fonte": "Himalayas",
+  "encaixe": 0.25,
+  "motivo": "Vaga de Data Engineer com foco explícito em identity resolution, entity-matching challenges e data quality na ingestão, alinhado com especialidade do leitor.",
+  "resumo": "Ryz Labs busca Senior Data Engineer remoto (LATAM) para pipelines de ingestão de dados com ênfase em entity resolution, identity matching e detecção de qualidade de dados em múltiplas fontes.",
+  "requisitos": {
+   "obrigatorios": [
+    "Python",
+    "SQL",
+    "AWS",
+    "AWS Glue",
+    "Athena",
+    "S3",
+    "Protobuf"
+   ],
+   "desejaveis": [
+    "Elixir",
+    "DynamoDB",
+    "Snowflake",
+    "Terraform",
+    "AWS CDK"
+   ]
+  },
+  "senioridade": "senior",
+  "modalidade": "remoto",
+  "primeira_vez": "2026-10-03",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-10-03"
+ },
+ {
+  "titulo": "Machine Learning Engineer",
+  "empresa": "ZoomInfo",
+  "local": "Remoto · United States",
+  "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
+  "fonte": "Himalayas",
+  "encaixe": 0.06,
+  "motivo": "Vaga de ML Engineer com foco principal em resolver entity identity at scale no data graph de empresas, alinhado com especialidade em entity resolution.",
+  "resumo": "ZoomInfo procura ML Engineer para estender seu data graph com resolução de entity identity em escala, extraindo leadership e detectando registros obsoletos usando ML e NLP.",
+  "requisitos": {
+   "obrigatorios": [
+    "Python",
+    "SQL"
+   ],
+   "desejaveis": [
+    "PyTorch",
+    "embeddings"
+   ]
+  },
+  "senioridade": "senior",
+  "modalidade": "remoto",
+  "primeira_vez": "2026-10-03",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-10-03"
  }
 ]

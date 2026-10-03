@@ -1,5 +1,55 @@
 [
  {
+  "data": "2026-10-03",
+  "habilidade": "AWS",
+  "pct_vagas": 9,
+  "nivel_atual": "nao",
+  "o_que_e": "AWS é a plataforma de nuvem da Amazon, com serviços de armazenamento (S3), processamento (EMR, Glue), bancos de dados (RDS, DynamoDB) e orquestração (Step Functions, Lambda). Para engenharia de dados, o núcleo relevante é rodar pipelines Spark/Python em escala gerenciada e armazenar dados em S3 com controle de custo e acesso. Não é preciso dominar todo o catálogo, só o subconjunto usado em pipelines de dados.",
+  "por_que_pedem": "Vagas de ER/linkage/MDM frequentemente processam dados sensíveis em volume, e empresas preferem rodar isso em nuvem gerenciada por custo, escalabilidade e compliance (LGPD/HIPAA). Pedem AWS para saber se você consegue portar seu pipeline Spark local para um ambiente cloud real, sem precisar reescrever tudo.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em termos de pipelines distribuídos, particionamento e otimização de Spark jobs, isso é 80% do que importa em EMR e Glue. S3 é só troca de filesystem (equivalente a HDFS). O que falta é vocabulário de infraestrutura (IAM, VPC, buckets) e prática com o console/CLI, não conceito de processamento de dados.",
+  "minimo_para_ficar_apto": [
+   "Saber explicar S3 (buckets, storage classes) e como ler/escrever Parquet de lá via Spark",
+   "Entender EMR ou Glue como ambiente gerenciado para rodar Spark jobs",
+   "Noção básica de IAM (roles, policies) para dar permissão a jobs",
+   "Saber o que é Lambda e quando usar para orquestração leve",
+   "Familiaridade com AWS CLI e console para subir/consultar recursos básicos"
+  ],
+  "plano_rapido": [
+   "2h: criar conta AWS free tier e explorar console (S3, IAM, EMR)",
+   "3h: subir um bucket S3, enviar arquivos via CLI e boto3",
+   "4h: rodar um job PySpark simples no EMR Serverless ou Glue lendo/escrevendo no S3",
+   "2h: criar uma role IAM mínima e entender policies de acesso a S3",
+   "3h: montar um Lambda simples disparado por evento no S3 (ex: novo arquivo chega, dispara função)",
+   "2h: revisar terminologia (VPC, Glue Catalog, Athena) para não travar em entrevista"
+  ],
+  "mini_projeto": "Pegue uma amostra sintética do seu pipeline de record linkage (dados falsos de pessoas), suba os arquivos brutos no S3, rode o blocking+scoring em um job Spark no Glue ou EMR Serverless, salve os resultados em Parquet particionado no S3, e disponibilize uma consulta via Athena para validar duplicados encontrados. Documente no GitHub com README explicando a arquitetura.",
+  "como_colocar_no_curriculo": "Experiência em portar pipelines Spark de record linkage para AWS (S3, Glue/EMR, IAM), com processamento de dados particionado em nuvem.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Como você rodaria um job Spark de record linkage em AWS?",
+    "resposta": "Usaria EMR ou Glue para processar os dados, lendo de S3 em Parquet, com blocking e scoring distribuído, e escrevendo os resultados de volta em S3 particionado por data ou região, permitindo consulta posterior via Athena."
+   },
+   {
+    "pergunta": "Qual a diferença entre EMR e Glue?",
+    "resposta": "EMR é um cluster gerenciado mais flexível, bom para jobs customizados e controle fino; Glue é serverless, mais simples para ETL padrão, com catálogo de dados integrado e menos gerenciamento de infraestrutura."
+   },
+   {
+    "pergunta": "Como você garantiria que um job só acesse os buckets necessários?",
+    "resposta": "Criando uma IAM role específica para o job com policy restrita ao bucket e prefixo necessários, seguindo o princípio de menor privilégio."
+   },
+   {
+    "pergunta": "Como lidar com dados sensíveis de saúde na AWS?",
+    "resposta": "Usar criptografia em repouso e trânsito (SSE-S3 ou KMS), restringir acesso via IAM e VPC, e seguir práticas de compliance como HIPAA, com logging via CloudTrail para auditoria."
+   }
+  ],
+  "fontes_para_estudar": [
+   "AWS Documentation (S3, EMR, Glue, IAM)",
+   "AWS Skill Builder (cursos gratuitos oficiais)",
+   "Curso AWS Certified Data Engineer Associate (material oficial da AWS)",
+   "Documentação oficial do Apache Spark on AWS EMR"
+  ]
+ },
+ {
   "data": "2026-10-02",
   "habilidade": "Master Data Management",
   "pct_vagas": 20,

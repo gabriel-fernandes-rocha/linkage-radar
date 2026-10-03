@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -76,7 +76,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -108,6 +108,72 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "Data Engineer",
+    "url": "https://himalayas.app/companies/ryz-labs/jobs/data-engineer",
+    "empresa": "Ryz Labs",
+    "local": "Remoto · Argentina",
+    "fonte": "Himalayas",
+    "score": 13,
+    "motivo": "Vaga de Data Engineer com foco explícito em identity resolution, entity-matching challenges e data quality na ingestão, alinhado com especialidade do leitor.",
+    "resumo": "Ryz Labs busca Senior Data Engineer remoto (LATAM) para pipelines de ingestão de dados com ênfase em entity resolution, identity matching e detecção de qualidade de dados em múltiplas fontes.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "AWS",
+        "AWS Glue",
+        "Athena",
+        "S3",
+        "Protobuf"
+      ],
+      "desejaveis": [
+        "Elixir",
+        "DynamoDB",
+        "Snowflake",
+        "Terraform",
+        "AWS CDK"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.25,
+    "compat_detalhe": {
+      "habilidades": 29,
+      "senioridade": 60,
+      "local": 100,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "AWS",
+        "Athena",
+        "S3",
+        "Protobuf"
+      ],
+      "parciais": [
+        "AWS Glue"
+      ]
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-03",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Integration Engineer - Customer Data Platform (CDP)",
     "url": "https://himalayas.app/companies/blend360/jobs/integration-engineer-customer-data-platform-cdp",
     "empresa": "Blend360",
@@ -130,7 +196,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -179,7 +245,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -210,6 +276,113 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "Senior Entity Resolution Engineer",
+    "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
+    "empresa": "DEFCON AI",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 17,
+    "motivo": "Vaga de Senior Entity Resolution Engineer com foco principal em matching de registros de múltiplas fontes, graph design e production-ready implementation de entity resolution.",
+    "resumo": "DEFCON AI procura engenheiro sênior especializado em resolver quando registros de diversas fontes representam a mesma entidade real, desenvolvendo estratégia de matching e graph design para sistemas de governo.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL"
+      ],
+      "desejaveis": [
+        "Fellegi-Sunter",
+        "Splink",
+        "Dedupe",
+        "Zingg",
+        "PostgreSQL",
+        "pgvector",
+        "graph databases"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": false,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 89,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-03",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Machine Learning Engineer",
+    "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
+    "empresa": "ZoomInfo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 6,
+    "motivo": "Vaga de ML Engineer com foco principal em resolver entity identity at scale no data graph de empresas, alinhado com especialidade em entity resolution.",
+    "resumo": "ZoomInfo procura ML Engineer para estender seu data graph com resolução de entity identity em escala, extraindo leadership e detectando registros obsoletos usando ML e NLP.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL"
+      ],
+      "desejaveis": [
+        "PyTorch",
+        "embeddings"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 81,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-03",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Senior Software Engineer",
     "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
     "empresa": "ZoomInfo",
@@ -233,7 +406,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -284,7 +457,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -350,7 +523,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -407,7 +580,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -458,7 +631,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -512,7 +685,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -584,7 +757,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -638,7 +811,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -689,7 +862,7 @@
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -760,7 +933,7 @@
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-02",
+    "verificada_em": "2026-10-03",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
