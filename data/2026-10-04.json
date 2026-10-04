@@ -1,0 +1,128 @@
+{
+  "data": "2026-10-04",
+  "gerado_em": "2026-10-03T23:37-03:00",
+  "llm": true,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "IBM Master Data Management Developer",
+      "url": "https://bebee.com/us/jobs/ibm-master-data-management-developer-softthink-solutions-washington-dc--t7xk-810486862",
+      "empresa": "Softthink Solutions",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "score": 13,
+      "motivo": "Vaga com foco principal em entity resolution, record matching, duplicate detection e MDM matching usando IBM Match 360, com matching determinístico e probabilístico.",
+      "resumo": "Vaga de IBM Master Data Management Developer (remoto, US Citizen) para design e desenvolvimento de soluções MDM com foco em entity resolution, record matching, duplicate detection, matching determinístico/probabilístico e survivorship rules em organização de manufatura.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "IBM MDM",
+          "Match 360",
+          "Entity Resolution",
+          "Record Linkage"
+        ],
+        "desejaveis": [
+          "IBM MDM Certification"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "nao_informado",
+      "foco_er": 1,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 47,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "IBM MDM"
+        ],
+        "parciais": [
+          "Match 360"
+        ]
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Estimate the deterministic record linkage specificity using indirect identifiers – birth cohort Generation XXI",
+      "url": "https://doi.org/10.1186/s13104-026-08037-5",
+      "autores": "Inês Viseu et al.",
+      "data": "2026-10-02",
+      "fonte": "OpenAlex",
+      "score": 5,
+      "motivo": "Paper que avalia algoritmos determinísticos de record linkage usando identificadores indiretos em coorte de nascimento, com métricas de qualidade (especificidade, PPV, Cohen's kappa) contra padrão-ouro.",
+      "resumo": "Estudo de record linkage determinístico na coorte Generation XXI (8.647 recém-nascidos) usando identificadores indiretos (sexo, data de nascimento, nomes) em framework de pseudonimização. Compara duas estratégias de matching e avalia qualidade contra gold standard usando especificidade, PPV e Cohen's kappa.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 18,
+  "vagas_arquivadas_total": 24,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "Databricks",
+  "aula": {
+    "dia": 3,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "conceito",
+    "titulo": "Complexidade quadrática: por que o número de pares explode e os matches não",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Calcular e comparar o crescimento do número de pares candidatos (O(n²)) com o crescimento do número de matches verdadeiros (O(n)) para justificar por que blocking é indispensável em qualquer pipeline de matching em escala.",
+    "conceito": "Christen (2012, seç. 1.1.2, p. 5) define o desafio central de complexidade computacional em data matching: ao deduplicar uma base com n registros, o número de pares possíveis é C(n,2) = n(n-1)/2, que cresce quadraticamente com n. Ao fazer linkage entre duas bases de tamanho n e m, o total é n×m pares, também quadrático se ambas crescem juntas. Isso significa que dobrar o tamanho da base multiplica o espaço de comparação por aproximadamente quatro vezes, não por dois.\n\nO ponto crucial, destacado no mesmo trecho, é que o número de matches verdadeiros não acompanha esse crescimento: ele é limitado pelo tamanho da menor base (no linkage) ou pelo número real de entidades duplicadas (na deduplicação), crescendo linearmente com n. Isso cria uma proporção cada vez mais desfavorável entre pares relevantes e pares irrelevantes: a esmagadora maioria das comparações geradas por força bruta é descartável a priori.\n\nEssa disparidade entre crescimento quadrático do espaço de busca e crescimento linear dos matches é a justificativa matemática para blocking, indexação e sorted neighbourhood (Christen, 2012, cap. 4): técnicas que reduzem drasticamente o número de pares comparados sem descartar os matches verdadeiros.",
+    "como_funciona": "1. Deduplicação de uma base: pares possíveis = n(n-1)/2.\n2. Linkage entre duas bases: pares possíveis = n × m.\n3. Matches verdadeiros máximos (sem duplicatas internas): min(n, m) no linkage; número de grupos duplicados reais na deduplicação.\n4. Razão matches/pares = O(n)/O(n²) = O(1/n): tende a zero conforme n cresce.\n5. Blocking particiona registros em blocos por uma chave (ex.: CEP, sobrenome) e só gera pares dentro do mesmo bloco, reduzindo o termo quadrático para a soma dos quadrados dos tamanhos dos blocos, muito menor que n² se os blocos forem balanceados.",
+    "exemplo": "Base de clientes com n = 100.000 registros, deduplicação.\nPares possíveis: 100.000 × 99.999 / 2 = 4.999.950.000 (quase 5 bilhões).\nSuponha que existam 8.000 registros duplicados formando 4.000 pares verdadeiros de duplicatas (cada duplicata tem exatamente 1 par).\nRazão matches/pares = 4.000 / 4.999.950.000 ≈ 0,0008%.\n\nAgora aplique blocking por CEP, assumindo 1.000 CEPs com 100 registros cada (distribuição uniforme).\nPares por bloco: 100 × 99 / 2 = 4.950.\nTotal de pares após blocking: 1.000 × 4.950 = 4.950.000.\nRedução: de ~5 bilhões para ~5 milhões, um fator de 1.000x menos comparações, mantendo (se os duplicados realmente compartilharem o CEP) os 4.000 matches verdadeiros dentro do conjunto reduzido.",
+    "na_pratica": "Em Spark, blocking é implementado via particionamento/agrupamento antes do cross join. Em Splink isso é feito com block_on:\n\nfrom splink import block_on\nblocking_rules = [block_on('postcode'), block_on('surname', 'dob')]\n\nIsso evita o cross join completo: o Splink só gera pares dentro de cada regra de bloqueio e depois une os conjuntos, aplicando deduplicação nos pares repetidos entre regras.",
+    "armadilha": "Profissionais experientes às vezes escolhem uma chave de blocking muito seletiva (ex.: CPF truncado) pensando em reduzir custo computacional, mas isso descarta matches verdadeiros quando a chave tem erro de digitação ou está ausente; é preciso combinar múltiplas regras de blocking (disjunção) para recuperar recall, aceitando algum aumento controlado de pares.",
+    "desafio": "Você tem duas bases para linkage: A com 50.000 registros e B com 200.000 registros. Sem blocking, quantos pares seriam gerados? Se você aplicar blocking por UF (27 estados) e os registros se distribuem uniformemente entre eles em ambas as bases, quantos pares restam após o blocking? Qual o fator de redução aproximado?",
+    "gabarito": "Sem blocking: pares = 50.000 × 200.000 = 10.000.000.000 (10 bilhões).\n\nCom blocking por UF uniforme: cada UF tem 50.000/27 ≈ 1.852 registros de A e 200.000/27 ≈ 7.407 registros de B.\nPares por UF ≈ 1.852 × 7.407 ≈ 13.720.000.\nTotal em 27 UFs ≈ 27 × 13.720.000 ≈ 370.000.000.\n\nFator de redução ≈ 10.000.000.000 / 370.000.000 ≈ 27x, que corresponde exatamente ao número de blocos (quando a distribuição é uniforme, a redução por blocking em cross-base é proporcional ao número de blocos, não ao quadrado dele, diferente da deduplicação de uma única base).",
+    "fontes": [
+      "Christen (2012), seç. 1.1.2, p. 5",
+      "Christen (2012), cap. 4 (introdução a blocking e indexação)",
+      "Elmagarmid, Ipeirotis & Verykios (2007), seç. sobre complexidade e técnicas de redução de espaço de busca"
+    ],
+    "gerada": true
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2689,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}

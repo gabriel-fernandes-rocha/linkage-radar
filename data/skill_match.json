@@ -219,6 +219,11 @@
   "nivel": "nao",
   "nome": "IBM MDM"
  },
+ "ibm mdm certification": {
+  "motivo": "sem evidência de certificação IBM MDM",
+  "nivel": "nao",
+  "nome": "IBM MDM Certification"
+ },
  "identity graph": {
   "motivo": "próximo de entity resolution",
   "nivel": "parcial",
@@ -283,6 +288,11 @@
   "motivo": "entity resolution relacionado, sem MDM explícito",
   "nivel": "parcial",
   "nome": "Master Data Management"
+ },
+ "match 360": {
+  "motivo": "experiência em matching/record linkage similar, ferramenta diferente",
+  "nivel": "parcial",
+  "nome": "Match 360"
  },
  "matching": {
   "motivo": "especialista em matching determinístico/probabilístico",

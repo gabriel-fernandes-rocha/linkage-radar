@@ -1,5 +1,53 @@
 [
  {
+  "data": "2026-10-04",
+  "habilidade": "Databricks",
+  "pct_vagas": 8,
+  "nivel_atual": "parcial",
+  "o_que_e": "Databricks é uma plataforma unificada de dados e IA construída sobre Spark, que adiciona notebooks colaborativos, Delta Lake (armazenamento transacional sobre data lake), Unity Catalog (governança e linhagem de dados), orquestração de jobs/workflows e MLflow para ciclo de vida de modelos. Em essência, é o seu Spark de sempre rodando numa infraestrutura gerenciada com camadas extras de qualidade, governança e produtização de dados e modelos.",
+  "por_que_pedem": "Vagas de MDM/Customer 360/Identity Resolution pedem Databricks porque é a plataforma comum para orquestrar pipelines de entity resolution em escala corporativa, unificando ingestão, transformação, matching e disponibilização de dados mestres com governança (lineage, controle de acesso) exigida em ambientes regulados, além de integrar bem com MLflow para versionar modelos de scoring/matching.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa e programa em Spark e já resolveu os problemas difíceis de entity resolution (blocking, scoring, QA) em escala de bilhões de registros, que é justamente o que mais importa nessas vagas. Databricks não muda a lógica do seu pipeline, só troca o 'motor de execução e orquestração': onde antes você tinha cluster Spark próprio, agora tem notebooks, Delta Lake e Workflows. O salto é mais operacional e de vocabulário do que conceitual.",
+  "minimo_para_ficar_apto": [
+   "Saber rodar e depurar jobs PySpark dentro de notebooks Databricks (clusters, widgets, dbutils)",
+   "Entender Delta Lake: formato, ACID, time travel, MERGE INTO, otimizações (OPTIMIZE, ZORDER)",
+   "Conhecer Unity Catalog: catálogos, schemas, permissões, linhagem básica",
+   "Saber criar e agendar Workflows/Jobs multi-tarefa",
+   "Ter noção de MLflow para tracking de experimentos e registro de modelos",
+   "Entender a diferença entre Databricks SQL, Delta Live Tables e Workflows (não precisa dominar DLT, só saber que existe)"
+  ],
+  "plano_rapido": [
+   "2h: criar conta Databricks Community Edition e explorar workspace, notebooks, clusters",
+   "3h: fazer o tutorial oficial 'Introduction to Delta Lake' rodando MERGE, time travel e OPTIMIZE",
+   "2h: estudar Unity Catalog (documentação oficial) focando em catálogos/schemas/grants, sem precisar de ambiente enterprise",
+   "3h: criar um Workflow simples com 2-3 tasks encadeadas (ex: ingestão > transformação > matching)",
+   "2h: rodar um experimento simples com MLflow (log de parâmetros e métricas de um modelo de scoring, por exemplo RapidFuzz/scikit-learn)",
+   "2h: migrar um pipeline pequeno de record linkage seu (ex: blocking + scoring com Splink) para rodar em notebook Databricks usando Delta tables como entrada/saída"
+  ],
+  "mini_projeto": "Pegue um pipeline de entity resolution que você já tem (ex: dataset sintético de nomes/endereços com duplicatas) e reimplemente no Databricks Community Edition: ingestão em Delta Lake, blocking e scoring com Splink/RapidFuzz rodando em notebook PySpark, resultados salvos como Delta table com versionamento (time travel), e um MLflow run registrando métricas de precisão/recall do matching. Documente no GitHub com prints do workspace.",
+  "como_colocar_no_curriculo": "Pipeline de record linkage em escala (bilhões de registros) migrado para Databricks, usando Delta Lake, PySpark e MLflow para versionamento de dados e tracking de métricas de matching.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre um Data Lake comum e o Delta Lake usado no Databricks?",
+    "resposta": "Delta Lake adiciona uma camada transacional ACID sobre arquivos Parquet, permitindo MERGE, updates/deletes, time travel (consultar versões anteriores) e otimizações como compactação e Z-Ordering, resolvendo problemas de consistência e performance que data lakes tradicionais não tratam bem."
+   },
+   {
+    "pergunta": "Como você orquestraria um pipeline de entity resolution no Databricks, da ingestão ao matching final?",
+    "resposta": "Usaria Workflows com tasks encadeadas: ingestão para Delta Bronze, normalização/limpeza para Delta Silver, blocking e scoring com Spark/Splink gerando Delta Gold com os pares classificados, e MLflow para registrar métricas do modelo de scoring, tudo com Unity Catalog controlando acesso e linhagem entre as camadas."
+   },
+   {
+    "pergunta": "Para que serve o Unity Catalog e por que ele importa em um projeto de MDM?",
+    "resposta": "Unity Catalog centraliza governança de dados: controle de acesso granular, auditoria e linhagem entre tabelas e notebooks. Em MDM isso é crítico porque dados mestres (como identidade de clientes) exigem rastreabilidade de quem acessou e como os dados foram transformados, além de conformidade regulatória."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Databricks (docs.databricks.com)",
+   "Documentação oficial do Delta Lake (delta.io)",
+   "Databricks Academy (cursos gratuitos introdutórios)",
+   "Documentação oficial do MLflow (mlflow.org)",
+   "Databricks Community Edition para prática gratuita"
+  ]
+ },
+ {
   "data": "2026-10-03",
   "habilidade": "AWS",
   "pct_vagas": 9,
