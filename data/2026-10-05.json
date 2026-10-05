@@ -1,0 +1,74 @@
+{
+  "data": "2026-10-05",
+  "gerado_em": "2026-10-04T22:59-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "LLM-powered clustering for entity resolution",
+      "url": "https://doi.org/10.1007/s00778-026-01006-1",
+      "autores": "Jiajie Fu et al.",
+      "data": "2026-10-03",
+      "fonte": "OpenAlex",
+      "score": 3,
+      "motivo": "O título explicita entity resolution com clustering, tema central do perfil do leitor, mas o texto está vazio impossibilitando confirmação completa.",
+      "resumo": "Paper sobre clustering com LLM aplicado a entity resolution (conteúdo não disponível para avaliação detalhada).",
+      "confianca": 0.85
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 17,
+  "vagas_arquivadas_total": 24,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Reltio",
+  "aula": {
+    "dia": 4,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "conceito",
+    "titulo": "Falta de rótulos (ground truth) e o problema da avaliação",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Explicar por que a avaliação de qualidade em data matching é estruturalmente difícil (falta de gold standard) e quais estratégias práticas existem para lidar com isso.",
+    "conceito": "Christen (2012, seção 1.1.3, p. 6) aponta que, diferente de muitas aplicações de machine learning onde dados rotulados estão disponíveis, em data matching normalmente não existe ground truth: não sabemos, para cada par de registros, se ele de fato representa a mesma entidade real. Isso ocorre porque confirmar o status verdadeiro exigiria contatar indivíduos ou auditar manualmente cada registro, algo inviável em bases grandes como as de saúde ou governo que cobrem populações inteiras.\n\nEssa ausência de rótulos quebra o paradigma supervisionado clássico: não dá para simplesmente calcular precisão e recall contra um conjunto de teste confiável, porque o próprio conjunto de teste é incerto. Christen destaca que isso é especialmente grave em bases grandes, onde erros raros de matching podem ter consequências sérias (diagnósticos médicos errados, fraudes não detectadas) mas são estatisticamente difíceis de detectar.\n\nElmagarmid, Ipeirotis & Verykios (2007) reforçam que a avaliação de duplicate detection sofre do mesmo problema: sem um padrão-ouro, comparações entre métodos na literatura tendem a usar bases sintéticas ou amostras pequenas rotuladas manualmente, o que limita a generalização dos resultados. Binette & Steorts (2022) tratam entity resolution como um problema estatístico de estimação sob incerteza, justamente porque o rótulo verdadeiro é latente, não observado.",
+    "como_funciona": "Estratégias para lidar com a falta de ground truth, em ordem de maturidade:\n1. Amostragem manual: selecionar amostra aleatória (ou estratificada por faixa de score) de pares classificados e pedir revisão humana (clerical review), estimando precisão/recall por extrapolação.\n2. Dados sintéticos: gerar bases com duplicatas conhecidas (corrupção controlada de nomes, datas, endereços) para testar algoritmos antes de produção.\n3. Bases públicas com rótulo parcial: usar datasets como febrl ou outros com match status conhecido para benchmarking inicial.\n4. Métodos sem rótulo: estimar m e u probabilities via EM (Fellegi-Sunter) sem necessidade de treino supervisionado, e inspecionar a distribuição de scores para threshold.\n5. Consistência interna: verificar transitividade de clusters e taxa de pares contraditórios como proxy indireto de qualidade.",
+    "exemplo": "Suponha uma base de 500 mil pacientes de um sistema de saúde nacional. O time de engenharia roda um linker e obtém 50 mil pares classificados como match. Não há cadastro nacional confiável para confirmar todos. Solução: sortear 300 pares (estratificados por faixa de score de similaridade: 100 pares com score 0.9-0.95, 100 com 0.8-0.9, 100 com 0.95-1.0) e enviar para revisão clerical por dois analistas independentes. Se na faixa 0.8-0.9 apenas 70 de 100 forem confirmados como match verdadeiro, estima-se precisão de 70% nessa faixa, permitindo recalibrar o threshold de decisão sem nunca ter rótulo completo da base inteira.",
+    "na_pratica": "Em pipelines com Splink, a ausência de rótulo é contornada treinando m/u via EM, sem supervisão, e depois usando 'linker.evaluation' (quando disponível) ou amostragem manual dos pares preditos próximos ao threshold para auditoria humana. Em produção, é comum logar os pares de score intermediário (zona cinzenta) numa fila de revisão: \npred = linker.inference.predict()\ngray = pred.as_pandas_dataframe().query('0.4 < match_probability < 0.9')\ngray.sample(200).to_csv('clerical_review.csv')",
+    "armadilha": "Usar uma amostra de conveniência (ex.: apenas os pares com score mais alto) para estimar precisão infla os números, porque ignora os falsos negativos e os pares ambíguos; a amostra de avaliação precisa cobrir toda a distribuição de scores, não só os casos fáceis.",
+    "desafio": "Um banco de varejo roda um matching e obtém 10.000 pares candidatos distribuídos assim: 6.000 com score acima de 0.95, 3.000 entre 0.7 e 0.95, 1.000 entre 0.4 e 0.7. Você tem orçamento para revisão manual de apenas 300 pares. Como distribuir essa amostra entre as três faixas para estimar precisão de forma mais informativa, e por que não distribuir proporcionalmente ao volume de cada faixa?",
+    "gabarito": "Distribuir proporcionalmente ao volume (180/90/30) desperdiçaria a maior parte do orçamento na faixa de score alto, onde a precisão provavelmente já é próxima de 100% e pouco informativa. O objetivo da auditoria é reduzir incerteza onde ela é maior: a faixa 0.4-0.7 é a mais ambígua e deve receber proporcionalmente mais amostras relativas ao seu tamanho, por exemplo 100 pares (10% da faixa), contra 100 na faixa 0.7-0.95 (3,3%) e 100 na faixa acima de 0.95 (1,7%). Essa amostragem estratificada por incerteza, em vez de por volume, gera estimativas de precisão por faixa com erro padrão mais equilibrado e permite calibrar o threshold de decisão com muito mais informação por par revisado.",
+    "fontes": [
+      "Christen (2012), seção 1.1.3, p. 6",
+      "Elmagarmid, Ipeirotis & Verykios (2007), IEEE TKDE 19(1)",
+      "Binette & Steorts (2022), Science Advances 8(12)"
+    ],
+    "gerada": true
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2721,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 204,
+      "pos_palavras_chave": 2,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}

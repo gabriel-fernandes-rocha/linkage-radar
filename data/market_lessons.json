@@ -1,5 +1,50 @@
 [
  {
+  "data": "2026-10-05",
+  "habilidade": "Reltio",
+  "pct_vagas": 8,
+  "nivel_atual": "nao",
+  "o_que_e": "Reltio é uma plataforma SaaS de MDM (Master Data Management) baseada em nuvem que centraliza, limpa e resolve identidades de entidades (clientes, produtos, pacientes) usando um grafo de dados e motor de match próprio. Ela oferece match/merge configurável, survivorship de atributos, APIs REST e integração com ferramentas de BI e CDP. É vendida como plataforma enterprise, cobrindo desde ingestão até consumo via API e UI de data stewardship.",
+  "por_que_pedem": "Empresas que já compraram a licença do Reltio precisam de gente que saiba configurar o motor de match, modelar entidades no console, usar as APIs e resolver problemas de qualidade de dados dentro da plataforma, sem reinventar a roda com código próprio. É uma habilidade de ferramenta corporativa, não um conceito acadêmico, então quem já entende os fundamentos de entity resolution aprende a interface rápido.",
+  "ponte_com_o_que_voce_sabe": "Você já domina os conceitos centrais que o Reltio automatiza: blocking, scoring, matching determinístico/probabilístico, survivorship e QA de merges, que no Splink você faz via código. No Reltio isso vira configuração via UI/JSON (match rules, filters, scoring thresholds) e chamadas de API REST. Sua experiência com Elasticsearch também ajuda, pois o Reltio usa índice de busca internamente e os conceitos de recall/precision se traduzem direto. O esforço principal é aprender a nomenclatura e o fluxo de trabalho da plataforma, não os conceitos.",
+  "minimo_para_ficar_apto": [
+   "Entender a arquitetura Reltio: Profile, Entity Type, Relation, Interaction, Match Rule, Survivorship Rule",
+   "Saber configurar match rules básicas (match IQ) e explicar diferença entre match automático e manual (data steward)",
+   "Conhecer o fluxo de dados: ingestão via API/batch, matching, merge, exposição via Reltio Console e APIs REST/GraphQL",
+   "Saber citar casos de uso típicos (Customer 360, HCP/HCO em saúde, MDM de produto)",
+   "Ser capaz de falar sobre integração com Reltio Integration Hub e conectores (Snowflake, Salesforce, etc.)"
+  ],
+  "plano_rapido": [
+   "2h: assistir vídeos introdutórios oficiais do Reltio (Reltio Cloud overview, Reltio University intro)",
+   "3h: ler a documentação pública sobre Entity Model, Match & Merge e Survivorship no Reltio Docs",
+   "2h: criar conta trial/demo (se disponível) ou estudar sandbox nos materiais de treinamento gratuitos do Reltio University",
+   "2h: mapear mentalmente como cada conceito do Splink (blocking, scoring, clerical review) corresponde a um conceito do Reltio",
+   "1h: preparar 3-4 frases de discurso conectando sua experiência em record linkage com os conceitos do Reltio para entrevista"
+  ],
+  "mini_projeto": "Não compensa construir um projeto completo em Reltio (é SaaS fechado e caro), mas vale produzir um documento comparativo de 1-2 páginas mapeando seu pipeline Splink (blocking, scoring, clerical review, merge) para os componentes equivalentes do Reltio (Match Rules, Match IQ, Survivorship, Data Steward Console), mostrando que você entende a tradução conceitual. Isso serve como material de apoio para entrevista e mostra raciocínio, mesmo sem acesso prático à ferramenta.",
+  "como_colocar_no_curriculo": "Não inclua Reltio como skill no currículo ainda; mencione apenas na carta/entrevista: 'Experiência sólida em entity resolution (Splink, Elasticsearch) com conhecimento conceitual de plataformas MDM comerciais como Reltio, pronto para aplicar em ambiente de produção'.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Você já usou Reltio? Como se compara com as ferramentas que você usa hoje?",
+    "resposta": "Nunca usei Reltio em produção, mas tenho experiência profunda nos conceitos que ele implementa: uso Splink para matching probabilístico, Elasticsearch para blocking/busca e Spark para processar bilhões de registros. Reltio encapsula esses conceitos numa plataforma SaaS com UI e APIs, então a curva de aprendizado seria sobre a ferramenta, não sobre a lógica de entity resolution."
+   },
+   {
+    "pergunta": "Como o Reltio lida com survivorship de atributos?",
+    "resposta": "O Reltio permite configurar Survivorship Rules por atributo, definindo qual fonte ou regra (mais recente, mais confiável, prioridade de sistema) prevalece quando há conflito entre registros mesclados, similar ao que eu implemento manualmente com regras de precedência no meu pipeline de QA pós-merge no Splink."
+   },
+   {
+    "pergunta": "Qual a diferença entre match automático e revisão manual no Reltio?",
+    "resposta": "O Reltio usa thresholds de confiança no Match IQ para decidir merges automáticos; casos abaixo do threshold de alta confiança vão para fila de revisão humana no Data Steward Console, equivalente ao clerical review que eu faço nos pares de match incerto no meu pipeline."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Reltio Docs (documentação oficial da Reltio)",
+   "Reltio University (cursos introdutórios gratuitos)",
+   "Reltio Cloud Overview (vídeos oficiais no site da Reltio)",
+   "Gartner Magic Quadrant for Master Data Management Solutions (para contexto de mercado)"
+  ]
+ },
+ {
   "data": "2026-10-04",
   "habilidade": "Databricks",
   "pct_vagas": 8,
