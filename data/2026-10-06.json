@@ -1,0 +1,62 @@
+{
+  "data": "2026-10-06",
+  "gerado_em": "2026-10-05T23:57-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 17,
+  "vagas_arquivadas_total": 24,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "IBM MDM",
+  "aula": {
+    "dia": 5,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "conceito",
+    "titulo": "Schema matching, data matching e data fusion: as três etapas da integração",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Entender as três etapas da integração de dados (schema matching, data matching e data fusion) e saber distinguir onde cada uma delas começa, termina e falha no exemplo do próprio Christen.",
+    "conceito": "Christen (2012, seç. 1.1, p. 3-4) define que integrar dados de fontes diferentes exige três tarefas sequenciais, embora não independentes. A primeira é schema matching: descobrir quais tabelas e atributos de bases distintas representam o mesmo tipo de informação (ex: 'DOB' numa base e 'BirthDate' noutra). A segunda, tema central do livro, é data matching: identificar quais registros individuais (depois do schema já alinhado) se referem à mesma entidade real. A terceira é data fusion: fundir os registros classificados como match num único registro limpo e consistente, resolvendo conflitos de valores (ex: duas idades diferentes para a mesma pessoa).\n\nO exemplo da Fig. 1.1 (p. 7) ilustra bem: a tabela PatTbl tem 'DOB' no formato DD/MM/YYYY e 'Gender' codificado como M/F; já AdmittedPatients tem 'BirthDate' em YYYYMMDD e 'Sex' como 0/1. Antes de comparar qualquer registro, é preciso resolver essa heterogeneidade estrutural, isso é schema matching. Só depois de normalizar os esquemas é que dá para comparar 'John Smith, 08/10/1960' com 'Smith, John W., 19601008' e decidir se são a mesma pessoa, isso é data matching. Christen enfatiza (p. 8) que essas etapas não devem ser tratadas de forma totalmente isolada: o conteúdo dos atributos (ex: similaridade de string entre 'StreetAddress' e 'Address') pode ajudar a inferir a correspondência de schema, e vice-versa, um processo iterativo entre as duas camadas tende a ser mais preciso.",
+    "como_funciona": "Pipeline conceitual de três etapas (Christen, 2012, seç. 1.2):\n1. Schema matching: mapear tabelas e atributos equivalentes entre bases, usando nomes, tipos, metadados (distribuição de valores, formato de codificação) e, quando possível, análise de correlação de conteúdo.\n2. Normalização de esquema: converter formatos (datas, códigos de gênero, moedas) para um padrão comum antes de comparar registros.\n3. Data matching: aplicar comparação de atributos e classificação (regras, probabilístico ou ML) para decidir quais pares de registros referem-se à mesma entidade.\n4. Data fusion: para cada cluster de registros classificados como match, aplicar uma função de agregação (mínimo, máximo, mais recente, votação por maioria) para resolver conflitos de valores e gerar um registro consolidado por entidade.",
+    "exemplo": "Usando a Fig. 1.1 do livro: PatTbl tem o registro 'P1273489, John Smith, DOB 8/10/1960, Age 51, Gender M'. AdmittedPatients tem 'PID 55642, Surname Smith, GivenName John W., BirthDate 19601008, Sex 0'.\n\nPasso 1 (schema matching): mapeamos 'DOB'<->'BirthDate' (ambos data de nascimento, formatos diferentes), 'Gender'<->'Sex' (M=0, F=1), e 'Name'<->'Surname'+'GivenName' (um campo composto vira dois).\n\nPasso 2 (normalização): convertemos 8/10/1960 (DD/MM/YYYY) para 19601008 (YYYYMMDD); convertemos M para 0.\n\nPasso 3 (data matching): comparamos 'Smith, John' com 'Smith, John W.' (nome muito similar), BirthDate 19601008 = 19601008 (idêntico), Sex 0 = 0 (idêntico). Alta similaridade, classificado como match.\n\nPasso 4 (data fusion): fundimos os dois registros num único: Nome = 'John W. Smith' (versão mais completa), BirthDate = 19601008, Sex = 0, Address = combinação de 'StreetAddress' e a tabela Addresses via AID. Conflito resolvido escolhendo o valor mais completo/recente conforme regra de negócio.",
+    "na_pratica": "Em produção, essas três etapas aparecem como estágios distintos do pipeline de ETL/MDM (Master Data Management). Schema matching costuma ser manual ou semiautomático (mapeamento de colunas documentado em um contrato de dados). Data matching é feito com ferramentas como Splink ou recordlinkage. Data fusion é a etapa final de merge:\npython\nimport pandas as pd\ndef fundir(grupo):\n    return pd.Series({'nome': grupo['nome'].str.len().idxmax(),\n                       'nascimento': grupo['nascimento'].mode()[0],\n                       'endereco': grupo['endereco'].iloc[-1]})\nclusters.groupby('cluster_id').apply(fundir)\nNa prática, times que pulam a etapa de data fusion ficam com clusters de matches corretos mas nunca consolidam num registro mestre, perdendo o valor de negócio do projeto.",
+    "armadilha": "Tratar schema matching como trivial ('é só mapear colunas') e pular direto para data matching: isso gera comparações erradas de atributos com semânticas diferentes (ex: comparar 'Age' calculado em 2011 com 'Age' calculado em 2023 sem recalcular, como alerta Christen p. 8), inflando falsos negativos e positivos silenciosamente.",
+    "desafio": "Você recebe duas tabelas de uma rede de varejo. Tabela A: colunas [customer_id, full_name, dob_ddmmyyyy, sex_mf]. Tabela B: colunas [cust_key, last_name, first_name, birth_yyyymmdd, gender_01]. Gender_01 usa 1=F, 0=M (inverso do exemplo do livro). Liste, em ordem, as transformações de schema matching necessárias ANTES de rodar qualquer algoritmo de data matching, e explique por que a ordem importa.",
+    "gabarito": "1. Mapear full_name (A) para a combinação first_name+last_name (B): decidir se concatena B ou separa A, escolhendo uma representação comum (ex: sempre separar em B's formato). 2. Converter dob_ddmmyyyy para o formato yyyymmdd de B (ou vice-versa), garantindo que dia e mês não sejam invertidos (ex: 03/04/1990 pode ser 3 de abril ou 4 de março dependendo da convenção). 3. Normalizar sex_mf e gender_01 para uma codificação única, atentando que a correspondência é M=0, F=1 (A invertido em relação ao exemplo do livro, aqui M->sex_mf='M', gender_01=0; F->'F',1). 4. Mapear customer_id e cust_key apenas como metadado de rastreabilidade, nunca como chave de match (ids de sistemas diferentes não são garantia de correspondência). A ordem importa porque comparar nomes ou datas antes de normalizar formato gera similaridade textual baixa mesmo para pares idênticos (ex: '19900403' vs '03/04/1990' tem Jaro-Winkler baixo mesmo sendo a mesma data), contaminando a etapa de data matching com ruído evitável.",
+    "fontes": [
+      "Christen (2012), seç. 1.1, p. 3-4",
+      "Christen (2012), seç. 1.2, p. 6-9",
+      "Elmagarmid, Ipeirotis & Verykios (2007), IEEE TKDE 19(1)",
+      "Binette & Steorts (2022), Science Advances 8(12)"
+    ],
+    "gerada": true
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2694,
+      "pos_palavras_chave": 7,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 8,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}

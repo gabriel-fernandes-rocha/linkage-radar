@@ -1,5 +1,50 @@
 [
  {
+  "data": "2026-10-06",
+  "habilidade": "IBM MDM",
+  "pct_vagas": 8,
+  "nivel_atual": "nao",
+  "o_que_e": "IBM MDM (InfoSphere Master Data Management) é uma plataforma comercial da IBM para gestão de dados mestres, que inclui módulos de matching/entity resolution (Probabilistic Matching Engine), workflow de governança, hierarquias e integração com sistemas corporativos via serviços SOA/REST. É usada por grandes empresas para consolidar visões únicas de cliente, produto ou fornecedor dentro de arquiteturas legadas IBM.",
+  "por_que_pedem": "Empresas grandes (bancos, seguradoras, saúde) que já investiram em stack IBM precisam de gente que configure regras de matching, customize o PME (Probabilistic Matching Engine) e integre o MDM Server com outros sistemas corporativos. É mais uma habilidade de 'conhecer a ferramenta e seus conceitos' do que ciência de dados pura.",
+  "ponte_com_o_que_voce_sabe": "Você já domina os conceitos centrais que o IBM MDM implementa: blocking, scoring probabilístico, matching determinístico, QA de pares e resolução de entidades em escala, só que com Splink/Spark. A curva de aprendizado é essencialmente de vocabulário e interface IBM, não de conceito; você vai mapear o que já sabe para os termos proprietários (bucket, derived info, standardization rules, PME).",
+  "minimo_para_ficar_apto": [
+   "Saber explicar o que é IBM InfoSphere MDM e a diferença entre Virtual MDM, Physical MDM e Hybrid MDM",
+   "Conhecer o Probabilistic Matching Engine (PME) e como ele se relaciona com matching probabilístico (comparar com Fellegi-Sunter/Splink)",
+   "Entender conceitos de Data Model: entity, record, source, bucket, derived info, standardization/normalization rules",
+   "Saber o fluxo básico de configuração: add source, configure algorithm, run matching, review stewardship (Data Steward UI)",
+   "Ter visto ao menos uma vez a interface do IBM MDM Workbench ou documentação de administração"
+  ],
+  "plano_rapido": [
+   "2h: ler overview do IBM InfoSphere MDM na documentação oficial IBM (IBM Documentation - Master Data Management)",
+   "3h: estudar o PME (Probabilistic Matching Engine) e mapear termos para conceitos que você já domina (bucket=block, derived info=feature)",
+   "2h: assistir vídeos institucionais da IBM (IBM Technology no YouTube) sobre MDM e Data Governance",
+   "2h: montar um glossário comparativo Splink vs IBM MDM para usar em entrevista",
+   "1h: revisar casos de uso típicos (customer 360, provider data management em saúde) para falar com propriedade"
+  ],
+  "mini_projeto": "Não dá para ter ambiente IBM MDM real sem licença, então o projeto de portfólio é um documento/post técnico: 'De Splink para IBM MDM: mapeamento de conceitos de entity resolution entre open source e plataformas enterprise', mostrando como seu pipeline de blocking/scoring se traduziria em configuração de PME, com diagrama de arquitetura comparando os dois.",
+  "como_colocar_no_curriculo": "Conhecimento conceitual de plataformas enterprise de MDM (IBM InfoSphere MDM, Probabilistic Matching Engine) aplicando experiência prática em entity resolution com Splink/Spark em ambientes de produção.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Você já trabalhou com IBM MDM?",
+    "resposta": "Não tenho experiência hands-on com a plataforma IBM MDM especificamente, mas tenho experiência sólida e em produção com os conceitos centrais que ela implementa: matching probabilístico e determinístico, blocking, scoring e resolução de entidades em escala de bilhões de registros usando Splink e Spark. Estudei a arquitetura do IBM MDM e do Probabilistic Matching Engine e consigo mapear rapidamente meu conhecimento para a ferramenta."
+   },
+   {
+    "pergunta": "O que é o Probabilistic Matching Engine (PME) e como ele difere do que você já usou?",
+    "resposta": "O PME é o motor de matching probabilístico do IBM MDM, baseado em conceitos similares ao modelo de Fellegi-Sunter, que também fundamenta o Splink. A diferença é que o PME é proprietário, configurado via interface/administração do MDM Server com buckets e derived info, enquanto no Splink eu defino regras de blocking e comparadores em código Python/Spark com mais transparência e controle do modelo estatístico."
+   },
+   {
+    "pergunta": "Quais são os principais componentes de uma solução IBM MDM?",
+    "resposta": "O MDM Server (ou Virtual MDM), o Probabilistic Matching Engine para resolução de entidades, o Data Steward/Workbench para governança e revisão de matches, e as camadas de integração via serviços SOA/REST para consumir os dados mestres em sistemas corporativos."
+   }
+  ],
+  "fontes_para_estudar": [
+   "IBM Documentation - InfoSphere Master Data Management",
+   "IBM Documentation - Probabilistic Matching Engine",
+   "Canal IBM Technology no YouTube (vídeos sobre MDM e Data Governance)",
+   "IBM Skills Network (Coursera) - cursos introdutórios de Master Data Management"
+  ]
+ },
+ {
   "data": "2026-10-05",
   "habilidade": "Reltio",
   "pct_vagas": 8,
