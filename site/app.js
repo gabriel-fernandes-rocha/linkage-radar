@@ -263,7 +263,14 @@ async function loadNetwork(file, cardId, button) {
     $(".list", card).innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
     return;
   }
-  const row = (x) => `<article class="item">
+  const latest = items.reduce((d, x) => (x.desde > d ? x.desde : d), "");
+  items.forEach((x) => (x.novo = x.desde === latest));
+  items.sort((a, b) => (b.novo - a.novo) || (b.desde || "").localeCompare(a.desde || ""));
+  const nNew = items.filter((x) => x.novo).length;
+  $(".novos-hoje", card).innerHTML = nNew
+    ? `✨ <b>${nNew} ${nNew === 1 ? "novo" : "novos"}</b> em ${fmtDate(latest)}: siga ${nNew === 1 ? "ele" : "eles"} primeiro`
+    : "";
+  const row = (x) => `<article class="item${x.novo ? " is-new" : ""}">
       <h3>${x.novo ? '<span class="badge">NOVO</span>' : ""}${esc(x.nome || x.titulo)}</h3>
       ${x.resumo ? `<p class="why">${esc(x.resumo)}</p>` : ""}
       <p class="meta">${esc(x.fonte || "")}${x.desde ? " · desde " + fmtDate(x.desde) : ""}</p>

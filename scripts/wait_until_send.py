@@ -39,8 +39,12 @@ def main():
     if now - target > timedelta(hours=12):  # já passou bastante do horário de hoje: mira o de amanhã
         target += timedelta(days=1)
     sent = ROOT / "data" / "sent.json"
-    if sent.exists() and json.loads(sent.read_text("utf-8")).get("data") == target.date().isoformat():
-        return output("pular")
+    if sent.exists():
+        st = json.loads(sent.read_text("utf-8"))
+        if st.get("data") == target.date().isoformat() and st.get("concluido", True):
+            return output("pular")
+        if st.get("data") == target.date().isoformat() and datetime.now(tz) >= target:
+            return output("enviar")  # envio interrompido: retoma imediatamente de onde parou
 
     wait = (target - now).total_seconds()
     if wait > MAX_SLEEP:

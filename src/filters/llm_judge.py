@@ -13,9 +13,11 @@ Entity Resolution (qualquer tipo de entidade) e Geocodificação tratada como pr
 O leitor quer ALTA PRECISÃO: na dúvida, reprove.
 
 Regras por tipo:
-- vaga: aprove SOMENTE se o foco principal da função for entity matching / record linkage / entity \
-resolution / deduplicação de registros / MDM matching, ou geocodificação / address matching. Vagas genéricas \
-de dados, BI, GIS ou ML que só citam o termo de passagem = reprovar.
+- vaga: aprove se entity resolution / record linkage / entity matching / identity resolution / deduplicação / \
+MDM (dados mestres, golden record, customer 360, CDP) / data matching / geocodificação ou address matching for o \
+foco da função OU uma responsabilidade relevante descrita nas atividades/requisitos. A compatibilidade com o perfil \
+é calculada depois, então NÃO reprove por local, senioridade ou idioma. Reprove só vagas que não tratam do tema \
+(dados genéricos, BI, vendas, suporte), que citam o termo apenas na descrição institucional da empresa, ou vagas de "dados mestres" que são só cadastro operacional manual (cadastrar materiais/fornecedores no ERP, sem deduplicação, regras de matching, qualidade ou governança de dados mestres).
 - vaga vinda de POST em rede social (fonte "Post · ..."): aprove só se o post anunciar uma vaga concreta e aberta (quem contrata, qual função) com foco no tema. Post genérico de "open to work", curso ou opinião = reprovar.
 - pessoa (perfil do LinkedIn): aprove se a pessoa claramente trabalha, pesquisa ou lidera algo cujo foco é \
 entity resolution / record linkage / MDM matching / identity resolution / geocodificação. No "resumo_pt" diga em \

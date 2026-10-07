@@ -29,7 +29,8 @@ SECTIONS = [  # (chave no JSON, módulo, limite em config.limits)
 ]
 
 
-def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = False) -> dict | None:
+def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = False,
+        rejudge: bool = False) -> dict | None:
     cfg = load_config()
     if full_scan:
         s = cfg.setdefault("serpapi", {})
@@ -52,7 +53,7 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
     approved_all: dict[str, list[dict]] = {}
     raw_jobs: list[dict] = []
     # 1ª vez: rejulga vagas já vistas para montar a carteira e o arquivo com requisitos
-    bootstrap = not (open_jobs.PATH.exists() and job_archive.ARCHIVE.exists())
+    bootstrap = rejudge or not (open_jobs.PATH.exists() and job_archive.ARCHIVE.exists())
 
     for key, module, limit_key in SECTIONS:
         raw = module.collect(cfg)
@@ -134,5 +135,7 @@ if __name__ == "__main__":
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--varredura-completa", action="store_true")
     ap.add_argument("--se-ainda-nao-coletou", action="store_true", help="usado pelo agendamento (evita coletar 2x)")
+    ap.add_argument("--rejulgar-vagas", action="store_true", help="julga de novo vagas já vistas (após mudar o juiz)")
     args = ap.parse_args()
-    run(use_llm=not args.no_llm, full_scan=args.varredura_completa, only_if_missing=args.se_ainda_nao_coletou)
+    run(use_llm=not args.no_llm, full_scan=args.varredura_completa, only_if_missing=args.se_ainda_nao_coletou,
+        rejudge=args.rejulgar_vagas)

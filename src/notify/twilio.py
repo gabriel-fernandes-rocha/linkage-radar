@@ -14,3 +14,10 @@ def send(text: str) -> None:
         timeout=60,
     )
     r.raise_for_status()
+
+
+PART_GAP = 2
+
+
+def send_part(part: str) -> None:
+    send(part)

@@ -154,9 +154,13 @@ def gupy(cfg):
     de dados e o filtro/juiz encontram linkage/matching na descrição."""
     out = []
     for q in cfg.get("gupy_titles", []):
-        data = get("https://employability-portal.gupy.io/api/v1/jobs", params={"jobName": q, "limit": 100}).json()
+        # endpoint usado pelo próprio portal.gupy.io (o antigo employability-portal passou a dar 404 em out/2026)
+        data = get("https://portal.gupy.io/api/job-search/jobs", params={"jobName": q, "limit": 100, "offset": 0}).json()
         for j in data.get("data", []):
-            local = "Remoto (Brasil)" if j.get("isRemoteWork") else ", ".join(x for x in (j.get("city"), j.get("state")) if x)
+            remote = j.get("isRemoteWork") or j.get("workplaceType") == "remote"
+            local = "Remoto (Brasil)" if remote else ", ".join(x for x in (j.get("city"), j.get("state")) if x)
+            if not remote and j.get("workplaceType"):
+                local += f" ({'híbrido' if j['workplaceType'] == 'hybrid' else 'presencial'})"
             out.append(_job(j.get("name"), j.get("jobUrl"), (j.get("careerPageName") or "").strip(),
                             local, j.get("description"), "Gupy"))
     return out

@@ -230,6 +230,7 @@ def save(done: dict[int, dict], all_lessons: list[dict]) -> None:
     rows = []
     for l in all_lessons:
         base = {k: l[k] for k in ("dia", "semana", "tema", "tipo", "titulo")}
+        base["livro"] = [list(r) for r in l["livro"]]
         base["modulo"] = f"Semana {l['semana']}: {l['tema']}"
         base["versao"] = 2
         base.update(done.get(l["dia"], {}).get("conteudo_gerado", {}))
@@ -258,7 +259,7 @@ def main():
     all_lessons = plan.lessons()
     pages = book_pages()
     done = {d: {"conteudo_gerado": {k: v for k, v in l.items()
-                                    if k not in ("dia", "semana", "tema", "tipo", "titulo", "modulo", "versao", "gerada")}}
+                                    if k not in ("dia", "semana", "tema", "tipo", "titulo", "modulo", "versao", "gerada", "livro")}}
             for d, l in load_out().items() if l.get("gerada")}
 
     if args.refazer:

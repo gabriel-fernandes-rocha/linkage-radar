@@ -1,0 +1,746 @@
+{
+  "data": "2026-10-07",
+  "gerado_em": "2026-10-06T21:27-03:00",
+  "llm": true,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Consultant senior Master Data Management",
+      "url": "https://himalayas.app/companies/talan/jobs/consultant-senior-master-data-management-977635827",
+      "empresa": "Talan",
+      "local": "Remoto · France",
+      "fonte": "Himalayas",
+      "score": 6,
+      "motivo": "Consultor Senior em Master Data Management com experiência explícita em matching, fusão, regras de qualidade e modelagem de dados; implementação em plataformas MDM líderes.",
+      "resumo": "Consultor Senior MDM na Talan para design de referencial de dados, modelagem, regras de qualidade, matching, fusão e implementação de soluções MDM (Informatica, Tibco EBX, Stibo STEP, Semarchy).",
+      "confianca": 0.97,
+      "requisitos": {
+        "obrigatorios": [
+          "Informatica",
+          "Tibco EBX",
+          "Stibo STEP",
+          "Semarchy",
+          "matching",
+          "modelagem de dados",
+          "programação orientada a objetos",
+          "publish/subscribe"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "France"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 4,
+      "ingles": "intermediario",
+      "foco_er": 0.4,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 25,
+        "senioridade": 80,
+        "local": 12,
+        "ingles": 100,
+        "foco": 91,
+        "senioridade_txt": "pede 4+ anos (você tem 2.8)",
+        "local_txt": "remoto só para France: exige autorização de trabalho lá",
+        "faltam": [
+          "Informatica",
+          "Tibco EBX",
+          "Stibo STEP",
+          "Semarchy",
+          "publish/subscribe"
+        ],
+        "parciais": [
+          "modelagem de dados",
+          "programação orientada a objetos"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Entity Resolution Engineer",
+      "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
+      "empresa": "DEFCON AI",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 23,
+      "motivo": "Vaga de Senior Entity Resolution Engineer focada em determinar quando registros de múltiplas fontes representam a mesma entidade no mundo real, com design de grafo e estratégia de matching desenvolvidos internamente.",
+      "resumo": "Engenheiro sênior responsável por construir a capacidade de resolução de entidades em produção na DEFCON AI, determinando quando registros de múltiplas fontes representam a mesma entidade real. Role de implementação de design de grafo e estratégia de matching em tecnologia que suporta necessidades operacionais críticas do governo.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "entity resolution",
+          "Record Linkage",
+          "blocking",
+          "candidate generation",
+          "pairwise scoring",
+          "clustering"
+        ],
+        "desejaveis": [
+          "Fellegi-Sunter",
+          "Splink",
+          "Dedupe",
+          "Zingg",
+          "PostgreSQL",
+          "pgvector",
+          "graph databases",
+          "master data management"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 84,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [
+          "clustering"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Analytics Engineer 5 - Identity & Signal",
+      "url": "https://himalayas.app/companies/netflix/jobs/analytics-engineer-5-identity-signal",
+      "empresa": "Netflix",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 7,
+      "motivo": "Vaga da Netflix para Analytics Engineer focada explicitamente em identity graph, entity-matching e resolution pipelines para o negócio de ads.",
+      "resumo": "Analytics Engineer na Netflix para construir e manter identity graph, executar pipelines de entity-matching e resolution, e gerenciar relações com identity providers no negócio de publicidade.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Python",
+          "graph databases",
+          "entity resolution",
+          "fuzzy matching",
+          "blocking"
+        ],
+        "desejaveis": [
+          "Neo4j",
+          "Neptune",
+          "GraphFrames",
+          "Metaflow"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 62,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "graph databases"
+        ],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Advanced Customer Engineer-Level 1",
+      "url": "https://job-boards.greenhouse.io/reltio/jobs/6139696004",
+      "empresa": "reltio",
+      "local": "Bangalore",
+      "fonte": "Greenhouse/reltio",
+      "score": 5,
+      "motivo": "Advanced Customer Engineer na Reltio (plataforma de Context Intelligence/MDM): harmonização, unificação e governança de dados em tempo real; menciona reconciliação de dados fragmentados.",
+      "resumo": "Advanced Customer Engineer na Reltio para suportar plataforma SaaS de harmonização, unificação e governança de dados que transforma dados fragmentados em contexto confiável para AI.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "NoSQL",
+          "Java",
+          "AWS",
+          "GCP",
+          "Azure",
+          "Reltio Cloud",
+          "Match & Merge",
+          "survivorship rules",
+          "Bitbucket",
+          "SVN"
+        ],
+        "desejaveis": [
+          "big data platforms"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "India"
+        ],
+        "cidades": [
+          "Bangalore"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 42,
+        "senioridade": 60,
+        "local": 8,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "em India, sem patrocínio de visto",
+        "faltam": [
+          "Java",
+          "AWS",
+          "GCP",
+          "Azure",
+          "Reltio Cloud",
+          "Bitbucket",
+          "SVN"
+        ],
+        "parciais": [
+          "Master Data Management",
+          "NoSQL",
+          "survivorship rules"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Machine Learning Engineer",
+      "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
+      "empresa": "ZoomInfo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 6,
+      "motivo": "Machine Learning Engineer na ZoomInfo com responsabilidades explícitas de resolução de entity identity em escala, construção de data graph e detecção de registros obsoletos.",
+      "resumo": "Machine Learning Engineer na ZoomInfo para estender data graph B2B em empresas com pouca pegada pública, resolvendo identidade de entidade em escala e extraindo liderança, localizações e produtos.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "LLMs",
+          "Machine Learning",
+          "Entity Resolution",
+          "Distributed Data Processing"
+        ],
+        "desejaveis": [
+          "PyTorch",
+          "Embeddings",
+          "Clustering",
+          "Knowledge Graphs"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 69,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "LLMs"
+        ],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer - Financial Crime",
+      "url": "https://jobs.workable.com/view/54WNBXrf7xvDupUZaEakXH/hybrid-senior-data-engineer---financial-crime-in-ho-chi-minh-city-at-gotymex",
+      "empresa": "GoTymeX",
+      "local": "Ho Chi Minh City, Vietnam",
+      "fonte": "Workable",
+      "score": 4,
+      "motivo": "Vaga de Senior Data Engineer explicitamente citando 'entity resolution' como responsabilidade central em plataforma de detecção de fraude, com tech stack (Spark, Python, SQL) alinhado.",
+      "resumo": "Senior Data Engineer na GotymeX para construir pipelines de dados em detecção de fraude e conformidade, com entity resolution, matching de dados de múltiplas fontes em tempo real e batch usando Databricks, Python e PySpark. Suporta casos de uso de KYC, AML e risco financeiro.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Spark",
+          "SQL",
+          "PostgreSQL",
+          "Databricks",
+          "ETL"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Vietnam"
+        ],
+        "cidades": [
+          "Ho Chi Minh City"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 83,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em Vietnam, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [
+          "PostgreSQL",
+          "Databricks"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Lead Software Development Engineer",
+      "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
+      "empresa": "Amperity",
+      "local": "Remoto · Argentina",
+      "fonte": "Himalayas",
+      "score": 3,
+      "motivo": "Amperity é empresa cuja proposta central é 'identity resolution' de bilhões de registros conflitantes, exatamente o foco de record linkage e entity resolution; vaga menciona isso como fundação do produto.",
+      "resumo": "Amperity é plataforma especializada em identity resolution de bilhões de registros conflitantes para criar visão unificada de clientes; busca Lead Software Development Engineer para reconstruir produto como AI-first.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Clojure"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "Argentina"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 12,
+      "ingles": "fluente",
+      "foco_er": 0.4,
+      "encaixe": 0.01,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 91,
+        "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+        "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
+        "faltam": [
+          "Clojure"
+        ],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Scientist - Onshore (B)",
+      "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
+      "empresa": "V4C.ai",
+      "local": "Remoto · United States",
+      "fonte": "Workable",
+      "score": 14,
+      "motivo": "Vaga de Data Scientist com responsabilidades explícitas de resolver problemas de qualidade de dados, duplicação, matching e entity resolution em datasets de saúde, além de trabalhar com MDM.",
+      "resumo": "Data Scientist na V4C.ai responsável por análise e resolução de qualidade de dados, duplicação, matching e entity resolution em datasets de saúde, além de trabalhar com processos e frameworks de MDM usando Databricks e PySpark.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "Databricks",
+          "Spark",
+          "Delta Lake",
+          "Master Data Management",
+          "Entity Resolution",
+          "Machine Learning"
+        ],
+        "desejaveis": [
+          "Informatica MDM",
+          "Reltio",
+          "IBM MDM",
+          "Azure",
+          "AWS",
+          "MLflow",
+          "Power BI",
+          "Tableau",
+          "FHIR",
+          "HL7"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 59,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Delta Lake"
+        ],
+        "parciais": [
+          "Databricks",
+          "Master Data Management"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Principal Applied AI Engineer - Entity Agents",
+      "url": "https://himalayas.app/companies/zoominfo/jobs/principal-applied-ai-engineer-entity-agents",
+      "empresa": "ZoomInfo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 4,
+      "motivo": "Vaga de Principal Applied AI Engineer em equipe de Core Data da ZoomInfo focada em entity resolution: centenas de milhões de registros resolvidos para entidade correta, pipelines determinísticos e AI-driven.",
+      "resumo": "Principal Applied AI Engineer na equipe Core Data da ZoomInfo responsável por construir e manter plataforma de resolução de entidades para centenas de milhões de registros de empresas e contatos.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "TypeScript",
+          "LLM agents",
+          "Retrieval",
+          "Structured output",
+          "Evaluation harness"
+        ],
+        "desejaveis": [
+          "Claude",
+          "Agent frameworks",
+          "Entity resolution",
+          "B2B company data",
+          "Identity resolution"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 35,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "TypeScript",
+          "LLM agents",
+          "Structured output"
+        ],
+        "parciais": [
+          "Retrieval",
+          "Evaluation harness"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Sr. AI/Machine Learning Engineer",
+      "url": "https://himalayas.app/companies/intellivo/jobs/sr-ai-machine-learning-engineer",
+      "empresa": "Intellivo",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 12,
+      "motivo": "Vaga de Sr. AI/ML Engineer descrita como builder role focada em resolução de entidades em sistemas, enriquecimento de registros e scoring com uso de modelos transformer e machine learning tradicional.",
+      "resumo": "Engenheiro sênior de AI/ML na Intellivo que escreve código Python para resolver entidades em sistemas, enriquecer registros, fazer scoring e surfacear sinais invisíveis, trabalhando com foundation models e machine learning tradicional em problemas de produção.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "Transformers",
+          "LLMs",
+          "LangChain",
+          "LangGraph",
+          "Azure",
+          "Machine Learning"
+        ],
+        "desejaveis": [
+          "SageMaker",
+          "H2O",
+          "scikit-learn",
+          "XGBoost",
+          "TensorFlow",
+          "PyTorch",
+          "Entity resolution",
+          "Record linkage",
+          "Fuzzy matching",
+          "OCR",
+          "AWS Machine Learning"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Memphis"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 38,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Transformers",
+          "LLMs",
+          "LangChain",
+          "LangGraph",
+          "Azure"
+        ],
+        "parciais": []
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Better Retrieval, Limited Clustering Gains: A Controlled Study of Multilingual Company Entity Resolution",
+      "url": "https://www.semanticscholar.org/paper/4d26ac3053ac8c4327c66437fe05728543fb17d3",
+      "autores": "Yijiashun Qi et al.",
+      "data": "2026-10-04",
+      "fonte": "Semantic Scholar",
+      "score": 3,
+      "motivo": "Paper sobre resolução de entidades de empresas (company entity resolution) com foco em retrieval, clustering e pair classification, temas centrais de record linkage.",
+      "resumo": "Estudo controlado sobre adaptação de encoders multilíngues E5 para resolução de entidades de empresas usando dados GLEIF, analisando a relação entre ganhos de retrieval e clustering com impacto na classificação de pares.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "I've been experimenting with an entity intelligence system ...",
+      "url": "https://www.linkedin.com/posts/yasir-khalid_ive-been-experimenting-with-an-entity-intelligence-activity-7511455251443531776-NtIN",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post concreto descrevendo construção de plataforma de entity resolution com ingestão de múltiplas fontes de dados.",
+      "resumo": "Autor relata experimento com sistema de inteligência de entidades (entity resolution platform) que ingere e integra dados de múltiplas fontes como Bloomberg.",
+      "confianca": 0.9
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Data Programmes Stalled by Unclear Decision Goals",
+      "url": "https://www.linkedin.com/posts/jpdoggett_our-data-isnt-good-enough-is-the-sentence-activity-7511444458375360512-ulJR",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post educativo explicando entity resolution com exemplo prático de deduplicação de registros de clientes em banco.",
+      "resumo": "Explicação técnica de como entity resolution funciona usando exemplo de três registros de cliente John Smith/John Citizen em sistemas diferentes.",
+      "confianca": 0.88
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Navigating the Next Era of Financial Crime Compliance",
+      "url": "https://www.linkedin.com/pulse/from-complex-risk-clearer-decisions-navigating-next-era-financial-bzzpe",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post sobre ferramenta concreta de entity resolution (Silent Eight Iris 7) para identificar e consolidar registros de clientes.",
+      "resumo": "Apresentação do Entity Resolution Agent do Silent Eight (Iris 7) para identificar registros do mesmo cliente e consolidá-los em golden record.",
+      "confianca": 0.87
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Connected Data's Post",
+      "url": "https://www.linkedin.com/posts/connecteddataworld_entityresolution-knowledgemap-dynamicontology-activity-7512759026971992065-bP6W",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico sobre entity resolution dinâmica em knowledge graphs, tema central do perfil do leitor.",
+      "resumo": "Discussão sobre construção de knowledge graphs com ontologia dinâmica e resolução de entidades just-in-time para melhorar precisão de queries.",
+      "confianca": 0.85
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "#entityresolution #ai #masterdatamanagement | Tamr",
+      "url": "https://www.linkedin.com/posts/tamrinc_entityresolution-ai-masterdatamanagement-activity-7511108551117815808-0LKU",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico sobre limitações de abordagens baseadas em regras para entity resolution e master data management.",
+      "resumo": "Discussão sobre fragilidade de entity resolution baseada em regras quando dados mudam constantemente, com foco em masterização de dados.",
+      "confianca": 0.82
+    }
+  ],
+  "vagas_abertas_total": 25,
+  "vagas_arquivadas_total": 32,
+  "rede": {
+    "pessoas_novas": 5,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Azure",
+  "aula": {
+    "dia": 6,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Calcular o espaço de pares de duas bases e estimar a proporção de matches",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Calcular o tamanho do espaço de pares de duas bases (produto cartesiano), comparar esse crescimento quadrático com o crescimento linear do número real de matches, e estimar a proporção de pares que são matches verdadeiros usando um dataset com ground truth conhecido.",
+    "contexto": "Gabriel recebeu duas tabelas de pacientes de hospitais diferentes que precisam ser conciliadas antes de uma deduplicação full. Antes de escolher blocking ou algoritmo de comparação, o gestor do projeto pediu uma estimativa de quão grande é o problema: quantos pares precisariam ser comparados sem nenhuma otimização, e qual fração deles realmente interessa (são matches). Esse número vai justificar, para o time de infraestrutura, por que blocking é obrigatório.",
+    "passos": [
+      "Carregar o dataset febrl4 do pacote recordlinkage, que traz duas bases sintéticas (dfA, dfB) de registros de pessoas com duplicatas conhecidas e os pares verdadeiros em true_links.",
+      "Calcular o número total de pares possíveis como |A| x |B| (produto cartesiano), conforme Christen (2012), Seção 1.1.2, p.5: a complexidade de comparação cresce quadraticamente com o tamanho das bases.",
+      "Calcular o número de matches verdadeiros a partir de true_links e compará-lo ao tamanho das bases, verificando que ele cresce linearmente, limitado pelo tamanho da menor base (Christen, 2012, p.5).",
+      "Calcular a proporção de pares que são matches verdadeiros (matches / pares totais) e observar como esse número despenca.",
+      "Repetir o cálculo simulando bases 2x e 5x maiores (replicando os dados) para visualizar a diferença entre o crescimento quadrático dos pares e o crescimento linear dos matches.",
+      "Plotar ou imprimir uma tabela comparando tamanho da base, pares totais e matches totais nas três escalas."
+    ],
+    "codigo": "import pandas as pd\nfrom recordlinkage.datasets import load_febrl4\n\ndfA, dfB, true_links = load_febrl4(return_links=True)\n\nn_a, n_b = len(dfA), len(dfB)\ntotal_pairs = n_a * n_b\nn_matches = len(true_links)\nproporcao = n_matches / total_pairs\n\nprint(f\"|A|={n_a} |B|={n_b} pares_totais={total_pairs}\")\nprint(f\"matches_verdadeiros={n_matches} proporcao={proporcao:.8f}\")\n\nfor fator in [1, 2, 5]:\n    na, nb = n_a*fator, n_b*fator\n    pares = na*nb\n    matches = n_matches*fator\n    print(fator, na, nb, pares, matches, matches/pares)",
+    "como_avaliar": "Confira que total_pairs bate com n_a*n_b (ex.: 5000*5000=25.000.000 se ambas tiverem 5000 registros). Confira que n_matches corresponde ao número de pares em true_links (geralmente igual ao tamanho da base menor, pois febrl4 tem 1 duplicata por registro original). A proporção deve ser um número muito pequeno (ordem de 1e-4 ou menor). Ao multiplicar o fator por 2 e por 5, total_pairs deve crescer com fator ao quadrado (4x e 25x), enquanto matches crescem exatamente com o fator (2x e 5x), confirmando os crescimentos quadrático e linear descritos por Christen (2012, p.5).",
+    "desafio": "Suponha que dfA tenha 10.000 registros e dfB tenha 15.000 registros, sem duplicatas internas, e que o número máximo de matches verdadeiros seja limitado pelo tamanho da menor base. Calcule: (a) o número total de pares no produto cartesiano; (b) a proporção máxima teórica de matches sobre o total de pares, assumindo que todos os 10.000 registros de dfA têm correspondência em dfB; (c) se blocking reduzir os pares candidatos para 0,01% do total, quantos pares restam para comparação detalhada?",
+    "gabarito": "(a) 10.000 x 15.000 = 150.000.000 pares. (b) proporção máxima = 10.000 / 150.000.000 = 0,0000667, ou aproximadamente 0,0067%, confirmando que mesmo no cenário mais favorável (toda a base menor tem par) a fração de matches é ínfima frente ao espaço de comparação, como descreve Christen (2012, Seção 1.1.2, p.5): pares crescem quadraticamente, matches no máximo linearmente limitados pelo tamanho da menor base. (c) 0,01% de 150.000.000 = 15.000 pares, um volume plausível para comparação detalhada com funções de similaridade custosas, evidenciando por que blocking (coberto na Aula 3) é indispensável antes de qualquer classificação.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 1.1.2, p.5-6.",
+      "Elmagarmid, A. K., Ipeirotis, P. G. & Verykios, V. S. (2007). Duplicate record detection: a survey. IEEE TKDE, 19(1)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        3,
+        11
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2951,
+      "pos_palavras_chave": 56,
+      "aprovados": 10
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 205,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 9,
+      "aprovados": 5
+    }
+  }
+}

@@ -11,6 +11,9 @@ STRONG = [  # +3
     "privacy-preserving record linkage", "pprl", "linkage de dados", "linkage de registros",
     "pareamento de registros", "pareamento de bases", "resolucao de entidades", "vinculacao de registros",
     "relacionamento de bases", "address parsing", "geocodificacao de enderecos", "entity linking",
+    # MDM e afins: é assim que boa parte das vagas do nicho aparece (principalmente no Brasil)
+    "master data management", "dados mestres", "gestao de dados mestres", "golden record", "customer 360",
+    "data matching", "record matching", "deduplicacao", "deduplicação de dados",
 ]
 MEDIUM = [  # +1
     "fuzzy matching", "string similarity", "master data", "mdm", "geocoding", "geocodificacao",

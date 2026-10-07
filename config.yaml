@@ -26,12 +26,13 @@ web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   events_max_uses: 3
 
 serpapi:                    # plano grátis ~250 buscas/mês: LinkedIn ~30 + posts de vagas ~60 + eventos ~8 + vagas ~90 + rede ~60
-  jobs_searches_per_day: 3
+  jobs_searches_per_day: 2
   jobs_pages_per_term: 2
 
 network:
   max_people: 5             # novas pessoas por dia
   max_companies: 3          # novas empresas por dia
+  companies_weekdays: [0, 2, 4]   # busca empresas seg, qua e sex (economia de buscas)
 
 open_jobs:
   max_age_days: 60          # vaga sai da lista de abertas depois disso, mesmo sem confirmação de fechamento
@@ -153,6 +154,10 @@ gupy_titles:                # a Gupy busca só no título da vaga
   - "qualidade de dados"
   - "engenheiro de machine learning"
   - "analista de dados sênior"
+  - "dados mestres"
+  - "master data"
+  - "MDM"
+  - "governança de dados"
 
 adzuna_countries: [br, us, gb, de, nl, ca, au, fr]
 

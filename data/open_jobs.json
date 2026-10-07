@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -76,7 +76,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -169,7 +169,7 @@
       ]
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false
   },
   {
@@ -179,24 +179,33 @@
     "empresa": "Blend360",
     "local": "Remoto · Argentina",
     "fonte": "Himalayas",
-    "score": 5,
-    "motivo": "Menciona explicitamente data matching, identity resolution e gerenciamento de customer identifiers, embora context seja CDP genérico.",
-    "resumo": "Integration Engineer para CDP (Customer Data Platform) responsável por design de integrações, data pipelines, data matching, identity resolution e gerenciamento de customer identifiers cross-systems. Remoto Argentina.",
-    "confianca": 0.8,
-    "encaixe": 0.09,
+    "score": 8,
+    "motivo": "Vaga de Integration Engineer focada em data matching, identity resolution e gerenciamento de identificadores de clientes em CDP, alinhado com o tema de entity resolution e matching de dados.",
+    "resumo": "Integration Engineer na Blend360 para projetar e manter soluções de integração de dados, com foco em data matching, identity resolution e gerenciamento de identificadores de clientes em Customer Data Platforms.",
+    "confianca": 0.85,
+    "encaixe": 0.07,
     "nota_perfil": "Vaga remota na Argentina com foco em identity resolution e data matching, alinhada com especialidade, stack e modalidade do leitor, embora CDP seja contexto mais genérico que healthtech.",
     "requisitos": {
       "obrigatorios": [
-        "Identity Resolution",
-        "Entity Resolution",
-        "Data Matching"
+        "REST APIs",
+        "Python",
+        "SQL",
+        "Snowflake",
+        "Identity resolution"
       ],
-      "desejaveis": []
+      "desejaveis": [
+        "Segment",
+        "LiveRamp",
+        "Braze",
+        "mParticle",
+        "AWS",
+        "Databricks"
+      ]
     },
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -212,174 +221,22 @@
     "contratacao": "nao_informado",
     "anos_experiencia_min": null,
     "ingles": "nao_informado",
-    "foco_er": 0.4,
-    "compat_detalhe": {
-      "habilidades": 100,
-      "senioridade": 85,
-      "local": 12,
-      "ingles": 100,
-      "foco": 91,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
-      "faltam": [],
-      "parciais": []
-    }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Lead Software Development Engineer",
-    "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
-    "empresa": "Amperity",
-    "local": "Remoto · Argentina",
-    "fonte": "Himalayas",
-    "score": 3,
-    "motivo": "Core business é identity resolution: resolve bilhões de registros contraditórios em um único indivíduo, problema central de record linkage e entity resolution em produção.",
-    "resumo": "Amperity é especializada em identity resolution patentizada para bilhões de registros, resolvendo conflitos e criando visão única do cliente. Contrata lead engineer para reconstruir empresa como IA-first.",
-    "confianca": 0.88,
-    "encaixe": 0.07,
-    "nota_perfil": "Perfeita sinergia técnica (identity resolution em escala), mas remoto na Argentina: não há indicação de foco em saúde/proteção social; salário e timezone podem ser desafio.",
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Argentina"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.7,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 12,
-      "ingles": 100,
-      "foco": 96,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
-      "faltam": [],
-      "parciais": []
-    }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Entity Resolution Engineer",
-    "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
-    "empresa": "DEFCON AI",
-    "local": "Remoto · United States",
-    "fonte": "Himalayas",
-    "score": 17,
-    "motivo": "Vaga de Senior Entity Resolution Engineer com foco principal em matching de registros de múltiplas fontes, graph design e production-ready implementation de entity resolution.",
-    "resumo": "DEFCON AI procura engenheiro sênior especializado em resolver quando registros de diversas fontes representam a mesma entidade real, desenvolvendo estratégia de matching e graph design para sistemas de governo.",
-    "confianca": 0.95,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "SQL"
-      ],
-      "desejaveis": [
-        "Fellegi-Sunter",
-        "Splink",
-        "Dedupe",
-        "Zingg",
-        "PostgreSQL",
-        "pgvector",
-        "graph databases"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": false,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 5,
-    "ingles": "fluente",
-    "foco_er": 1,
-    "encaixe": 0.06,
-    "compat_detalhe": {
-      "habilidades": 89,
-      "senioridade": 60,
-      "local": 12,
-      "ingles": 85,
-      "foco": 100,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [],
-      "parciais": []
-    },
-    "desde": "2026-10-03",
-    "verificada_em": "2026-10-06",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Machine Learning Engineer",
-    "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
-    "empresa": "ZoomInfo",
-    "local": "Remoto · United States",
-    "fonte": "Himalayas",
-    "score": 6,
-    "motivo": "Vaga de ML Engineer com foco principal em resolver entity identity at scale no data graph de empresas, alinhado com especialidade em entity resolution.",
-    "resumo": "ZoomInfo procura ML Engineer para estender seu data graph com resolução de entity identity em escala, extraindo leadership e detectando registros obsoletos usando ML e NLP.",
-    "confianca": 0.85,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "SQL"
-      ],
-      "desejaveis": [
-        "PyTorch",
-        "embeddings"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
     "foco_er": 0.5,
-    "encaixe": 0.06,
     "compat_detalhe": {
-      "habilidades": 81,
-      "senioridade": 75,
+      "habilidades": 55,
+      "senioridade": 85,
       "local": 12,
-      "ingles": 85,
+      "ingles": 100,
       "foco": 92,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [],
-      "parciais": []
-    },
-    "desde": "2026-10-03",
-    "verificada_em": "2026-10-06",
-    "nova": false
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
+      "faltam": [
+        "REST APIs"
+      ],
+      "parciais": [
+        "Snowflake"
+      ]
+    }
   },
   {
     "tipo": "vaga",
@@ -406,7 +263,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -439,6 +296,364 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "Analytics Engineer 5 - Identity & Signal",
+    "url": "https://himalayas.app/companies/netflix/jobs/analytics-engineer-5-identity-signal",
+    "empresa": "Netflix",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 7,
+    "motivo": "Vaga da Netflix para Analytics Engineer focada explicitamente em identity graph, entity-matching e resolution pipelines para o negócio de ads.",
+    "resumo": "Analytics Engineer na Netflix para construir e manter identity graph, executar pipelines de entity-matching e resolution, e gerenciar relações com identity providers no negócio de publicidade.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Python",
+        "graph databases",
+        "entity resolution",
+        "fuzzy matching",
+        "blocking"
+      ],
+      "desejaveis": [
+        "Neo4j",
+        "Neptune",
+        "GraphFrames",
+        "Metaflow"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.9,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 62,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 98,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "graph databases"
+      ],
+      "parciais": []
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer - Financial Crime",
+    "url": "https://jobs.workable.com/view/54WNBXrf7xvDupUZaEakXH/hybrid-senior-data-engineer---financial-crime-in-ho-chi-minh-city-at-gotymex",
+    "empresa": "GoTymeX",
+    "local": "Ho Chi Minh City, Vietnam",
+    "fonte": "Workable",
+    "score": 4,
+    "motivo": "Vaga de Senior Data Engineer explicitamente citando 'entity resolution' como responsabilidade central em plataforma de detecção de fraude, com tech stack (Spark, Python, SQL) alinhado.",
+    "resumo": "Senior Data Engineer na GotymeX para construir pipelines de dados em detecção de fraude e conformidade, com entity resolution, matching de dados de múltiplas fontes em tempo real e batch usando Databricks, Python e PySpark. Suporta casos de uso de KYC, AML e risco financeiro.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Spark",
+        "SQL",
+        "PostgreSQL",
+        "Databricks",
+        "ETL"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Vietnam"
+      ],
+      "cidades": [
+        "Ho Chi Minh City"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 83,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "em Vietnam, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [
+        "PostgreSQL",
+        "Databricks"
+      ]
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Entity Resolution Engineer",
+    "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
+    "empresa": "DEFCON AI",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 23,
+    "motivo": "Vaga de Senior Entity Resolution Engineer focada em determinar quando registros de múltiplas fontes representam a mesma entidade no mundo real, com design de grafo e estratégia de matching desenvolvidos internamente.",
+    "resumo": "Engenheiro sênior responsável por construir a capacidade de resolução de entidades em produção na DEFCON AI, determinando quando registros de múltiplas fontes representam a mesma entidade real. Role de implementação de design de grafo e estratégia de matching em tecnologia que suporta necessidades operacionais críticas do governo.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "entity resolution",
+        "Record Linkage",
+        "blocking",
+        "candidate generation",
+        "pairwise scoring",
+        "clustering"
+      ],
+      "desejaveis": [
+        "Fellegi-Sunter",
+        "Splink",
+        "Dedupe",
+        "Zingg",
+        "PostgreSQL",
+        "pgvector",
+        "graph databases",
+        "master data management"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": false,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 84,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": [
+        "clustering"
+      ]
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-07",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Machine Learning Engineer",
+    "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
+    "empresa": "ZoomInfo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 6,
+    "motivo": "Machine Learning Engineer na ZoomInfo com responsabilidades explícitas de resolução de entity identity em escala, construção de data graph e detecção de registros obsoletos.",
+    "resumo": "Machine Learning Engineer na ZoomInfo para estender data graph B2B em empresas com pouca pegada pública, resolvendo identidade de entidade em escala e extraindo liderança, localizações e produtos.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "LLMs",
+        "Machine Learning",
+        "Entity Resolution",
+        "Distributed Data Processing"
+      ],
+      "desejaveis": [
+        "PyTorch",
+        "Embeddings",
+        "Clustering",
+        "Knowledge Graphs"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 69,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "LLMs"
+      ],
+      "parciais": []
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-07",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Consultant senior Master Data Management",
+    "url": "https://himalayas.app/companies/talan/jobs/consultant-senior-master-data-management-977635827",
+    "empresa": "Talan",
+    "local": "Remoto · France",
+    "fonte": "Himalayas",
+    "score": 6,
+    "motivo": "Consultor Senior em Master Data Management com experiência explícita em matching, fusão, regras de qualidade e modelagem de dados; implementação em plataformas MDM líderes.",
+    "resumo": "Consultor Senior MDM na Talan para design de referencial de dados, modelagem, regras de qualidade, matching, fusão e implementação de soluções MDM (Informatica, Tibco EBX, Stibo STEP, Semarchy).",
+    "confianca": 0.97,
+    "requisitos": {
+      "obrigatorios": [
+        "Informatica",
+        "Tibco EBX",
+        "Stibo STEP",
+        "Semarchy",
+        "matching",
+        "modelagem de dados",
+        "programação orientada a objetos",
+        "publish/subscribe"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "France"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 4,
+    "ingles": "intermediario",
+    "foco_er": 0.4,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 80,
+      "local": 12,
+      "ingles": 100,
+      "foco": 91,
+      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
+      "local_txt": "remoto só para France: exige autorização de trabalho lá",
+      "faltam": [
+        "Informatica",
+        "Tibco EBX",
+        "Stibo STEP",
+        "Semarchy",
+        "publish/subscribe"
+      ],
+      "parciais": [
+        "modelagem de dados",
+        "programação orientada a objetos"
+      ]
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Scientist",
+    "url": "https://himalayas.app/companies/lifelancer/jobs/data-scientist-1232077083",
+    "empresa": "Lifelancer",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 9,
+    "motivo": "Vaga de Data Scientist focada em construir modelos e metodologias que transformam dados multi-fonte de saúde em inteligência confiável sobre organizações de saúde, alinhada com identity resolution e linking de contas.",
+    "resumo": "Data Scientist na Veeva Systems (Link Key Accounts team) que constrói modelos e metodologias para transformar dados de saúde multi-fonte em inteligência confiável sobre organizações de saúde, envolvendo linking e resolução de identidades.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "Statistics",
+        "Machine Learning",
+        "Entity resolution",
+        "Record linkage",
+        "Fuzzy matching"
+      ],
+      "desejaveis": [
+        "Clinical ontologies"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 68,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": [
+        "Statistics"
+      ]
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Senior Data Scientist, Entity Resolution — High-Impact & Equity",
     "url": "https://www.jobleads.com/us/job/senior-data-scientist-entity-resolution-high-impact-equity--new-york--california--e9e3850d4cfaa4fc5da4a4623c32af11f",
     "empresa": "Enigma",
@@ -457,7 +672,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -484,7 +699,7 @@
       "ingles": 100,
       "foco": 100,
       "senioridade_txt": "nível senior",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
       "parciais": []
     }
@@ -523,7 +738,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -552,7 +767,7 @@
       "ingles": 85,
       "foco": 94,
       "senioridade_txt": "nível senior",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
       "parciais": [
         "Identity Graph",
@@ -580,7 +795,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -606,7 +821,7 @@
       "ingles": 100,
       "foco": 92,
       "senioridade_txt": "nível nao informado",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
       "parciais": []
     }
@@ -631,7 +846,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -657,7 +872,7 @@
       "ingles": 100,
       "foco": 86,
       "senioridade_txt": "nível nao informado",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
       "parciais": []
     }
@@ -685,7 +900,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -711,7 +926,7 @@
       "ingles": 85,
       "foco": 100,
       "senioridade_txt": "nível senior",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
       "parciais": [
         "Master Data Management"
@@ -720,26 +935,301 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "Advanced Customer Engineer-Level 1",
+    "url": "https://job-boards.greenhouse.io/reltio/jobs/6139696004",
+    "empresa": "reltio",
+    "local": "Bangalore",
+    "fonte": "Greenhouse/reltio",
+    "score": 5,
+    "motivo": "Advanced Customer Engineer na Reltio (plataforma de Context Intelligence/MDM): harmonização, unificação e governança de dados em tempo real; menciona reconciliação de dados fragmentados.",
+    "resumo": "Advanced Customer Engineer na Reltio para suportar plataforma SaaS de harmonização, unificação e governança de dados que transforma dados fragmentados em contexto confiável para AI.",
+    "confianca": 0.94,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "NoSQL",
+        "Java",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Reltio Cloud",
+        "Match & Merge",
+        "survivorship rules",
+        "Bitbucket",
+        "SVN"
+      ],
+      "desejaveis": [
+        "big data platforms"
+      ]
+    },
+    "senioridade": "pleno",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "India"
+      ],
+      "cidades": [
+        "Bangalore"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 42,
+      "senioridade": 60,
+      "local": 8,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "em India, sem patrocínio de visto",
+      "faltam": [
+        "Java",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Reltio Cloud",
+        "Bitbucket",
+        "SVN"
+      ],
+      "parciais": [
+        "Master Data Management",
+        "NoSQL",
+        "survivorship rules"
+      ]
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Principal Applied AI Engineer - Entity Agents",
+    "url": "https://himalayas.app/companies/zoominfo/jobs/principal-applied-ai-engineer-entity-agents",
+    "empresa": "ZoomInfo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 4,
+    "motivo": "Vaga de Principal Applied AI Engineer em equipe de Core Data da ZoomInfo focada em entity resolution: centenas de milhões de registros resolvidos para entidade correta, pipelines determinísticos e AI-driven.",
+    "resumo": "Principal Applied AI Engineer na equipe Core Data da ZoomInfo responsável por construir e manter plataforma de resolução de entidades para centenas de milhões de registros de empresas e contatos.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "TypeScript",
+        "LLM agents",
+        "Retrieval",
+        "Structured output",
+        "Evaluation harness"
+      ],
+      "desejaveis": [
+        "Claude",
+        "Agent frameworks",
+        "Entity resolution",
+        "B2B company data",
+        "Identity resolution"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 35,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "TypeScript",
+        "LLM agents",
+        "Structured output"
+      ],
+      "parciais": [
+        "Retrieval",
+        "Evaluation harness"
+      ]
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Sr. AI/Machine Learning Engineer",
+    "url": "https://himalayas.app/companies/intellivo/jobs/sr-ai-machine-learning-engineer",
+    "empresa": "Intellivo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 12,
+    "motivo": "Vaga de Sr. AI/ML Engineer descrita como builder role focada em resolução de entidades em sistemas, enriquecimento de registros e scoring com uso de modelos transformer e machine learning tradicional.",
+    "resumo": "Engenheiro sênior de AI/ML na Intellivo que escreve código Python para resolver entidades em sistemas, enriquecer registros, fazer scoring e surfacear sinais invisíveis, trabalhando com foundation models e machine learning tradicional em problemas de produção.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "Transformers",
+        "LLMs",
+        "LangChain",
+        "LangGraph",
+        "Azure",
+        "Machine Learning"
+      ],
+      "desejaveis": [
+        "SageMaker",
+        "H2O",
+        "scikit-learn",
+        "XGBoost",
+        "TensorFlow",
+        "PyTorch",
+        "Entity resolution",
+        "Record linkage",
+        "Fuzzy matching",
+        "OCR",
+        "AWS Machine Learning"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Memphis"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 38,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Transformers",
+        "LLMs",
+        "LangChain",
+        "LangGraph",
+        "Azure"
+      ],
+      "parciais": []
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Principal Product Manager - Identity",
+    "url": "https://himalayas.app/companies/zoominfo/jobs/principal-product-manager-identity",
+    "empresa": "ZoomInfo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 8,
+    "motivo": "Principal PM responsável por identity resolution engine que faz visitor-to-person matching, IP-to-company linking e otimização de match rates, alinhado com o tema de entity resolution e identity matching.",
+    "resumo": "Principal Product Manager - Identity na ZoomInfo responsável pela engine de identity resolution que conecta sinais digitais a identidades de pessoas e empresas. Trabalha em visitor-to-person matching, IP-to-company linking e otimização de match rates para a plataforma de inteligência de GTM.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Snowflake",
+        "Tableau",
+        "Looker",
+        "Identity resolution",
+        "Entity Resolution"
+      ],
+      "desejaveis": [
+        "Probabilistic matching",
+        "Graph databases",
+        "AdTech",
+        "MarTech"
+      ]
+    },
+    "senioridade": "staff/principal",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 12,
+    "ingles": "fluente",
+    "foco_er": 0.6,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 40,
+      "local": 12,
+      "ingles": 85,
+      "foco": 94,
+      "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Looker"
+      ],
+      "parciais": [
+        "Snowflake",
+        "Tableau"
+      ]
+    },
+    "desde": "2026-10-07",
+    "verificada_em": "2026-10-07",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Data Scientist - Onshore (B)",
     "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
     "empresa": "V4C.ai",
     "local": "Remoto · United States",
     "fonte": "Workable",
-    "score": 8,
-    "motivo": "Data Scientist em healthcare com MDM, análise de data quality, deduplicação e entity-resolution em datasets de member/provider/patient, alinhado com saúde e linkage.",
-    "resumo": "V4C.ai busca Data Scientist em Databricks e Python para soluções healthcare com foco em MDM, data quality, deduplicação e entity-resolution entre member, provider e patient datasets em Databricks/PySpark.",
-    "confianca": 0.85,
+    "score": 14,
+    "motivo": "Vaga de Data Scientist com responsabilidades explícitas de resolver problemas de qualidade de dados, duplicação, matching e entity resolution em datasets de saúde, além de trabalhar com MDM.",
+    "resumo": "Data Scientist na V4C.ai responsável por análise e resolução de qualidade de dados, duplicação, matching e entity resolution em datasets de saúde, além de trabalhar com processos e frameworks de MDM usando Databricks e PySpark.",
+    "confianca": 0.9,
     "encaixe": 0.03,
     "nota_perfil": "Alinha perfeitamente em domain (healthcare), stack (Databricks, Python, PySpark, SQL) e especialização (MDM, entity-resolution, deduplicação), remoto nos US; espanhol não requerido, inglês intermediário suficiente.",
     "requisitos": {
       "obrigatorios": [
-        "Databricks",
-        "Spark",
         "Python",
         "SQL",
+        "Databricks",
+        "Spark",
         "Delta Lake",
-        "Machine Learning",
-        "Master Data Management"
+        "Master Data Management",
+        "Entity Resolution",
+        "Machine Learning"
       ],
       "desejaveis": [
         "Informatica MDM",
@@ -757,7 +1247,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -770,17 +1260,17 @@
       "cidades": []
     },
     "patrocina_visto": null,
-    "contratacao": "nao_informado",
+    "contratacao": "clt_ou_fulltime",
     "anos_experiencia_min": 8,
     "ingles": "fluente",
-    "foco_er": 0.5,
+    "foco_er": 0.7,
     "compat_detalhe": {
-      "habilidades": 56,
+      "habilidades": 59,
       "senioridade": 40,
       "local": 12,
       "ingles": 85,
-      "foco": 92,
-      "senioridade_txt": "pede 8+ anos (você tem 2.7)",
+      "foco": 96,
+      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "Delta Lake"
@@ -811,7 +1301,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -837,7 +1327,7 @@
       "ingles": 85,
       "foco": 92,
       "senioridade_txt": "nível senior",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
       "parciais": []
     }
@@ -862,7 +1352,7 @@
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -933,7 +1423,7 @@
     "senioridade": "pleno",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-06",
+    "verificada_em": "2026-10-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -958,8 +1448,8 @@
       "local": 8,
       "ingles": 85,
       "foco": 96,
-      "senioridade_txt": "pede 4+ anos (você tem 2.7)",
-      "local_txt": "nao_informado em United States, sem patrocínio de visto",
+      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
+      "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
         "Neo4j",
         "Amazon Neptune",
@@ -969,6 +1459,59 @@
         "Gremlin",
         "SPARQL",
         "RDF"
+      ],
+      "parciais": []
+    }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Lead Software Development Engineer",
+    "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
+    "empresa": "Amperity",
+    "local": "Remoto · Argentina",
+    "fonte": "Himalayas",
+    "score": 3,
+    "motivo": "Amperity é empresa cuja proposta central é 'identity resolution' de bilhões de registros conflitantes, exatamente o foco de record linkage e entity resolution; vaga menciona isso como fundação do produto.",
+    "resumo": "Amperity é plataforma especializada em identity resolution de bilhões de registros conflitantes para criar visão unificada de clientes; busca Lead Software Development Engineer para reconstruir produto como AI-first.",
+    "confianca": 0.92,
+    "encaixe": 0.01,
+    "nota_perfil": "Perfeita sinergia técnica (identity resolution em escala), mas remoto na Argentina: não há indicação de foco em saúde/proteção social; salário e timezone podem ser desafio.",
+    "requisitos": {
+      "obrigatorios": [
+        "Clojure"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "staff/principal",
+    "modalidade": "remoto",
+    "desde": "2026-09-28",
+    "verificada_em": "2026-10-07",
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Argentina"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 12,
+    "ingles": "fluente",
+    "foco_er": 0.4,
+    "compat_detalhe": {
+      "habilidades": 0,
+      "senioridade": 40,
+      "local": 12,
+      "ingles": 85,
+      "foco": 91,
+      "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
+      "faltam": [
+        "Clojure"
       ],
       "parciais": []
     }

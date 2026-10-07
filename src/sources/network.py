@@ -37,15 +37,21 @@ def _clean_name(title: str) -> str:
 def search_people(cfg: dict) -> list[dict]:
     term = _term_of_day(cfg["queries"]["network"])
     out = []
-    # a barra final em /in/ é obrigatória: sem ela o Google ignora o filtro de site
-    for r in websearch.serpapi(f'"{term}" site:linkedin.com/in/', recency=None):
-        if "linkedin.com/in/" in r["url"]:
-            out.append(item("pessoa", r["titulo"], r["url"].split("?")[0], nome=_clean_name(r["titulo"]),
-                            texto=f"{r['titulo']}. {r['texto']}", fonte="Perfil público no LinkedIn"))
+    # O Google às vezes ignora o filtro site: com caminho; se vier pouco perfil, tenta o formato alternativo
+    for query in (f'"{term}" site:linkedin.com/in/', f'site:linkedin.com inurl:in "{term}"'):
+        for r in websearch.serpapi(query, recency=None):
+            if "linkedin.com/in/" in r["url"] and r["url"].split("?")[0] not in {o["url"] for o in out}:
+                out.append(item("pessoa", r["titulo"], r["url"].split("?")[0], nome=_clean_name(r["titulo"]),
+                                texto=f"{r['titulo']}. {r['texto']}", fonte="Perfil público no LinkedIn"))
+        log.info("network: %d perfis após a consulta", len(out))
+        if len(out) >= 5:
+            break
     return out
 
 
 def search_companies(cfg: dict) -> list[dict]:
+    if date.today().weekday() not in cfg.get("network", {}).get("companies_weekdays", [0, 2, 4]):
+        return []  # economiza buscas: empresas mudam devagar
     terms = cfg["queries"]["network"]
     q = " OR ".join(f'"{t}"' for t in (_term_of_day(terms, 3), _term_of_day(terms, 5)))
     out = []

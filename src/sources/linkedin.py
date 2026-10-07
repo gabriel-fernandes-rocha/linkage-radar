@@ -5,6 +5,8 @@ públicos indexados por buscadores (site:linkedin.com/posts e /pulse).
 """
 from __future__ import annotations
 
+import re
+
 from common import item, log, today
 from sources import websearch
 
@@ -17,10 +19,21 @@ def collect(cfg: dict) -> list[dict]:
     raw: list[dict] = []
 
     q = "(" + " OR ".join(f'"{t}"' for t in terms) + ") (site:linkedin.com/posts/ OR site:linkedin.com/pulse/ OR site:linkedin.com/jobs/view/)"
-    try:
-        raw = websearch.serpapi(q, recency="qdr:w")
-    except Exception as e:
-        log.warning("linkedin/serpapi falhou: %s", e)
+    # O Google às vezes ignora o filtro site: com caminho e devolve outros sites. Se vierem poucos posts
+    # do LinkedIn, tentamos o formato alternativo (domínio + inurl). Só gasta a 2ª busca quando precisa.
+    is_li = lambda r: re.search(r"linkedin\.com/(posts|pulse|jobs/view)/", r.get("url", ""))
+    terms_q = "(" + " OR ".join(f'"{t}"' for t in terms) + ")"
+    for query in (q, f"site:linkedin.com inurl:posts {terms_q}"):
+        try:
+            got = [r for r in websearch.serpapi(query, recency="qdr:w") if is_li(r)]
+        except Exception as e:
+            log.warning("linkedin/serpapi falhou: %s", e)
+            got = []
+        known = {r["url"] for r in raw}
+        raw += [r for r in got if r["url"] not in known]
+        log.info("linkedin: consulta trouxe %d posts", len(got))
+        if len(raw) >= 3:
+            break
 
     if not raw and not websearch.has_serpapi():  # SerpAPI vazio = nada novo (não gasta à toa)
         try:

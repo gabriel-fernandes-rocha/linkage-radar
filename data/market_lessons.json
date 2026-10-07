@@ -1,5 +1,54 @@
 [
  {
+  "data": "2026-10-07",
+  "habilidade": "Azure",
+  "pct_vagas": 9,
+  "nivel_atual": "nao",
+  "o_que_e": "Azure é a plataforma de nuvem da Microsoft, oferecendo serviços de armazenamento (Blob, Data Lake), processamento (Databricks, Synapse Analytics, Data Factory), ML (Azure ML) e infraestrutura. Em contextos de dados e ML, as peças mais relevantes são Azure Data Lake, Azure Databricks, Azure Data Factory e Azure Machine Learning. Para quem já usa Spark e Python, é essencialmente aprender onde e como rodar o que já sabe fazer dentro do ecossistema Microsoft.",
+  "por_que_pedem": "Vagas de Data Scientist, ML Engineer e Customer Engineer em empresas que usam Microsoft como stack corporativa exigem Azure porque é onde os dados e pipelines de produção residem. Muitas empresas de saúde e governo (seu nicho) usam Azure por contratos corporativos e compliance. Pedem isso para garantir que você consiga subir pipelines, treinar e servir modelos sem depender só de ambiente local.",
+  "ponte_com_o_que_voce_sabe": "Você já domina Spark, SQL e pipelines de dados em produção com volumes grandes; Azure Databricks é literalmente Spark gerenciado, então sua curva de aprendizado ali é baixíssima. Sua experiência com scikit-learn e pipelines de ML se transfere quase diretamente para o Azure Machine Learning Studio/SDK. O que falta é vocabulário de portal, storage e deployment, não lógica de dados.",
+  "minimo_para_ficar_apto": [
+   "Criar conta free tier e navegar no portal Azure",
+   "Entender Blob Storage e Azure Data Lake Storage Gen2 (conceito de containers, hierarquia)",
+   "Rodar um notebook no Azure Databricks conectado a um Data Lake",
+   "Criar e rodar um pipeline simples no Azure Data Factory (ingestão + transformação)",
+   "Treinar e registrar um modelo no Azure Machine Learning (workspace, compute, endpoint)",
+   "Saber diferenças básicas entre Azure ML, Databricks e Synapse (quando usar cada um)"
+  ],
+  "plano_rapido": [
+   "2h: criar conta Azure free tier e explorar portal, resource groups, storage accounts",
+   "3h: fazer tutorial oficial do Azure Databricks (criar cluster, rodar notebook PySpark)",
+   "2h: subir um CSV grande no Data Lake Storage Gen2 e ler via Databricks",
+   "3h: montar um pipeline simples no Data Factory (copy activity + trigger)",
+   "4h: seguir quickstart do Azure Machine Learning (criar workspace, treinar modelo sklearn, registrar e deployar endpoint)",
+   "2h: revisar documentação de Azure AI/Cognitive Services, pois aparece em vagas de ML Engineer",
+   "2h: montar resumo mental de arquitetura típica (Data Factory -> Data Lake -> Databricks -> Azure ML) para falar em entrevista"
+  ],
+  "mini_projeto": "Adaptar seu pipeline de record linkage: subir uma amostra de dados sintéticos (não sensíveis) no Azure Data Lake Storage, processar normalização e blocking em notebook Azure Databricks com PySpark, e treinar um classificador de matching (scikit-learn) via Azure Machine Learning, registrando o modelo e criando um endpoint de inferência simples. Documentar no GitHub com prints do portal Azure.",
+  "como_colocar_no_curriculo": "Pipeline de entity resolution adaptado para execução em Azure Databricks (PySpark) e Azure Machine Learning, com ingestão via Data Lake Storage Gen2 e deploy de modelo em endpoint gerenciado.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre Azure Databricks e Azure Synapse Analytics?",
+    "resposta": "Databricks é focado em engenharia de dados e ML com Spark, com notebooks colaborativos e forte integração com MLflow; Synapse é mais voltado a data warehousing e analytics SQL, integrando ingestão, armazenamento e BI num só serviço. Em muitos projetos os dois coexistem: Synapse para consultas analíticas, Databricks para processamento pesado e ML."
+   },
+   {
+    "pergunta": "Como você estruturaria um pipeline de dados no Azure para um processo de entity resolution em larga escala?",
+    "resposta": "Ingestão de dados brutos no Data Lake Storage Gen2, orquestração via Data Factory, processamento distribuído (normalização, blocking, scoring) em Azure Databricks com PySpark, e treinamento/avaliação de modelos de matching no Azure Machine Learning, com monitoramento via Azure Monitor e versionamento de modelos no MLflow integrado."
+   },
+   {
+    "pergunta": "Você já usou Azure em produção? Qual seu nível de experiência?",
+    "resposta": "Minha experiência prática é recente e de estudo dirigido, mas tenho forte base em Spark, pipelines de dados em escala e ML, que se transfere diretamente para Databricks e Azure ML; já construí um protótipo de pipeline de entity resolution rodando nesses serviços para me familiarizar com a plataforma."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Microsoft Learn (trilhas Azure Fundamentals, Azure Data Engineer, Azure AI Engineer)",
+   "Documentação oficial do Azure Databricks",
+   "Documentação oficial do Azure Machine Learning",
+   "Documentação oficial do Azure Data Factory",
+   "Curso Azure Fundamentals (AZ-900) na Microsoft Learn"
+  ]
+ },
+ {
   "data": "2026-10-06",
   "habilidade": "IBM MDM",
   "pct_vagas": 8,

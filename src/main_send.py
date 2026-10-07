@@ -9,6 +9,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
+import re
 import sys
 import time
 from datetime import date, timedelta
@@ -104,6 +106,21 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None)
     return msg
 
 
+PDF_OFFSET = 16  # página impressa + 16 = página do PDF do livro
+
+
+def book_link(refs: list[str]) -> str | None:
+    """Link para a página certa do SEU exemplar do livro (Secret BOOK_URL, só no WhatsApp; nunca no site público).
+    Dropbox/OneDrive/arquivo direto: abre no visualizador de PDF do navegador já na página (#page=N)."""
+    url = os.getenv("BOOK_URL", "").strip()
+    m = re.search(r"p\.\s*(\d+)", " ".join(refs)) if refs else None
+    if not url or not m:
+        return None
+    if "dropbox.com" in url:
+        url = re.sub(r"[?&]dl=0", "", url) + ("&" if "?" in url else "?") + "raw=1"
+    return f"{url}#page={int(m.group(1)) + PDF_OFFSET}"
+
+
 def _previous_lesson(a: dict) -> dict | None:
     try:
         import lesson
@@ -127,7 +144,15 @@ def build_lesson_message(rep: dict, site_url: str) -> str | None:
     if not a.get("gerada"):
         return None
 
-    p = [f"🎓 AULA {a['dia']} DE 365 | Semana {a['semana']}: {a['tema']}", a["titulo"].upper(), ""]
+    p = [f"🎓 AULA {a['dia']} DE 365 | Semana {a['semana']}: {a['tema']}", a["titulo"].upper()]
+    book = [f for f in a.get("fontes", []) if "Christen (2012)" in f and "p." in f]
+    if not book and a.get("livro"):
+        book = ["Christen (2012), p. " + ", ".join(f"{x}-{y}" for x, y in a["livro"])]
+    p += [f"📖 No livro: {'; '.join(book)}" if book else "📖 Tema além do livro de 2012: veja as fontes no fim"]
+    link = book_link(book)
+    if link:
+        p += [f"🔗 Abrir no livro: {link}"]
+    p += [""]
     prev = _previous_lesson(a)
     if prev and prev.get("gabarito"):
         p += ["✅ Gabarito do desafio de ontem", prev["gabarito"].strip(), ""]
@@ -167,8 +192,23 @@ def load_report(cfg: dict, day: str | None) -> dict:
     raise FileNotFoundError(f"nenhum relatório encontrado para {candidates}")
 
 
+def _state(day: str) -> dict:
+    """Progresso do envio do dia (data/sent.json). Formato antigo (sem 'concluido') = já enviado."""
+    if not SENT.exists():
+        return {}
+    st = json.loads(SENT.read_text("utf-8"))
+    if st.get("data") != day:
+        return {}
+    st.setdefault("concluido", True)
+    return st
+
+
+def _save_state(st: dict) -> None:
+    SENT.write_text(json.dumps(st, ensure_ascii=False, indent=1), "utf-8")
+
+
 def _already_sent(day: str) -> bool:
-    return SENT.exists() and json.loads(SENT.read_text("utf-8")).get("data") == day
+    return bool(_state(day).get("concluido"))
 
 
 def main():
@@ -183,7 +223,7 @@ def main():
     now = today(cfg)
     day = now.date().isoformat()
     if args.agendado:
-        send_h, send_m = map(int, str(cfg.get("send_time", "06:00")).split(":"))
+        send_h, send_m = map(int, str(cfg.get("send_time", "07:00")).split(":"))
         if (now.hour, now.minute) < (send_h, send_m):
             log.info("ainda não deu o horário de envio (%s)", cfg.get("send_time"))
             return
@@ -194,30 +234,53 @@ def main():
             log.info("edição de hoje ainda não foi coletada; tento de novo na próxima execução")
             return
 
-    rep = load_report(cfg, args.date)
-    import open_jobs
-
-    messages = [build_message(rep, cfg["site_url"], open_jobs.load())]
-    lesson_msg = build_lesson_message(rep, cfg["site_url"])
-    if lesson_msg:
-        messages.append(lesson_msg)
-
     wa = cfg.get("whatsapp", {})
-    if args.dry_run or not wa.get("enabled", True):
-        for i, msg in enumerate(messages, 1):
-            print(f"===== MENSAGEM {i} ({len(msg)} caracteres, {len(quote_plus(msg))} codificados) =====\n{msg}\n")
-        return
     if wa.get("provider") == "twilio":
         from notify import twilio as provider
     else:
         from notify import callmebot as provider
-    for i, msg in enumerate(messages, 1):
-        if i > 1:
-            time.sleep(GAP_SECONDS)
-        provider.send(msg)
-        log.info("mensagem %d/%d enviada (%d caracteres)", i, len(messages), len(msg))
+
+    # As partes ficam salvas no estado: uma nova tentativa continua EXATAMENTE de onde parou,
+    # sem reenviar o que já chegou (antes, uma falha no meio fazia a mensagem chegar repetida).
+    st = _state(day) if args.agendado else {}
+    if not st.get("partes"):
+        rep = load_report(cfg, args.date)
+        import open_jobs
+
+        messages = [build_message(rep, cfg["site_url"], open_jobs.load())]
+        lesson_msg = build_lesson_message(rep, cfg["site_url"])
+        if lesson_msg:
+            messages.append(lesson_msg)
+        if args.dry_run or not wa.get("enabled", True):
+            for i, msg in enumerate(messages, 1):
+                print(f"===== MENSAGEM {i} ({len(msg)} caracteres, {len(quote_plus(msg))} codificados, "
+                      f"{len(provider.split(msg)) if hasattr(provider, 'split') else 1} partes) =====\n{msg}\n")
+            return
+        split = getattr(provider, "split", lambda m: [m])
+        st = {"data": day, "concluido": False, "partes": [split(m) for m in messages],
+              "enviadas": [0] * len(messages), "inicio": now.isoformat(timespec="minutes")}
+        if args.agendado:
+            _save_state(st)
+
+    for i, parts in enumerate(st["partes"]):
+        done = st["enviadas"][i]
+        if done >= len(parts):
+            continue
+        if i > 0 and done == 0:
+            time.sleep(GAP_SECONDS)  # separa a mensagem da aula da mensagem de vagas
+        for j in range(done, len(parts)):
+            provider.send_part(parts[j])
+            st["enviadas"][i] = j + 1
+            if args.agendado:
+                _save_state(st)
+            log.info("mensagem %d parte %d/%d enviada", i + 1, j + 1, len(parts))
+            if j + 1 < len(parts):
+                time.sleep(provider.PART_GAP)
+    st["concluido"] = True
+    st["fim"] = today(cfg).isoformat(timespec="minutes")
     if args.agendado:
-        SENT.write_text(json.dumps({"data": day, "enviado_em": now.isoformat(timespec="minutes")}), "utf-8")
+        _save_state(st)
+    log.info("envio concluído")
 
 
 if __name__ == "__main__":
