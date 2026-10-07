@@ -68,6 +68,36 @@ function renderSection(key, items) {
     : `<p class="empty">Nada novo hoje ✅</p>`;
 }
 
+// Link do livro: fica SÓ no navegador de quem colou (localStorage); nunca é publicado no site.
+const BOOK_KEY = "linkageRadar.bookUrl";
+const PDF_OFFSET = 16;  // página impressa + 16 = página do PDF
+const getBook = () => { try { return localStorage.getItem(BOOK_KEY) || ""; } catch { return ""; } };
+function bookHref(page) {
+  let url = getBook().trim();
+  if (!url) return "";
+  if (url.includes("dropbox.com")) url = url.replace(/[?&]dl=0/, "") + (url.includes("?") ? "&" : "?") + "raw=1";
+  return `${url}#page=${page + PDF_OFFSET}`;
+}
+function bookLinks(a) {
+  const refs = (a.fontes || []).filter((f) => f.includes("Christen (2012)"));
+  let pages = refs.map((f) => (f.match(/p\.\s*(\d+)/) || [])[1]).filter(Boolean).map(Number);
+  if (!pages.length && a.livro?.length) pages = [a.livro[0][0]];
+  pages = [...new Set(pages)];
+  if (!pages.length) return "";
+  const label = refs.length ? esc(refs.join("; ")) : `Christen (2012), p. ${pages[0]}`;
+  const links = getBook()
+    ? pages.map((p) => `<a class="btn" href="${safeUrl(bookHref(p))}" target="_blank" rel="noopener">Abrir p. ${p}</a>`).join(" ")
+    : `<button class="btn set-book" type="button">Configurar link do livro</button>`;
+  return `<div class="sec book"><h4>📖 No livro</h4><p class="pre">${label}</p>${links}</div>`;
+}
+document.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("set-book")) return;
+  const url = prompt("Cole o link do SEU PDF do livro (Dropbox/OneDrive). Ele fica só neste navegador:", getBook());
+  if (url === null) return;
+  try { localStorage.setItem(BOOK_KEY, url.trim()); } catch {}
+  location.reload();
+});
+
 const sec = (title, text, cls = "pre") => text ? `<div class="sec"><h4>${title}</h4><p class="${cls}">${esc(text)}</p></div>` : "";
 
 function lessonHTML(a) {
@@ -82,7 +112,7 @@ function lessonHTML(a) {
   const head = `<h3>Aula ${a.dia} de 365: ${esc(a.titulo)}</h3>
     <p class="mod">Semana ${a.semana} de 52 · ${esc(a.tema)} · ${{conceito: "conceito", laboratorio: "laboratório", revisao: "revisão ativa"}[a.tipo]}</p>`;
   if (!a.gerada) return head + `<p class="meta">Conteúdo desta aula ainda está sendo gerado.</p>`;
-  let body = sec("🎯 Objetivo", a.objetivo);
+  let body = bookLinks(a) + sec("🎯 Objetivo", a.objetivo);
   if (a.tipo === "conceito") {
     body += sec("📖 Conceito", a.conceito) + sec("🧮 Como funciona", a.como_funciona) +
       sec("✍️ Exemplo resolvido", a.exemplo) + sec("🛠️ Na prática", a.na_pratica, "pre code") +
