@@ -61,7 +61,7 @@ jobs:
           TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
           TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
         run: python src/main_send.py ${{ inputs.forcar && ' ' || '--agendado' }}
-      - name: Registrar envio (sempre, inclusive se falhar: a próxima tentativa continua de onde parou)
+      - name: "Registrar envio (sempre, mesmo se falhar; a próxima tentativa continua de onde parou)"
         if: always() && steps.espera.outputs.acao == 'enviar'
         run: |
           git config user.name "linkage-radar-bot"
