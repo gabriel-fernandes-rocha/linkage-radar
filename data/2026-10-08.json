@@ -1,0 +1,255 @@
+{
+  "data": "2026-10-08",
+  "gerado_em": "2026-10-07T23:41-03:00",
+  "llm": true,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Lead Data Engineer - Customer 360 & Identity Graph",
+      "url": "https://bebee.com/us/jobs/lead-data-engineer-customer-360-identity-graph-kforce-davie--lensa-2365_b89c416d9c53f12702916faed388e3c6d15c8e9f5619974d2b2ec4ab1d10dcb9",
+      "empresa": "Kforce",
+      "local": "Davie, FL",
+      "fonte": "Google Jobs",
+      "score": 7,
+      "motivo": "Vaga de Lead Data Engineer com foco explícito em Customer 360, identity resolution e identity graphs, núcleo do perfil de entity resolution e MDM do leitor.",
+      "resumo": "Kforce procura Lead Data Engineer para liderar design e entrega de soluções Customer 360, Identity Graph e plataforma de dados habilitada para IA em Fort Lauderdale, FL. Responsabilidades incluem design de identity resolution, arquitetura de dados unificados, pipelines escaláveis e data quality.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Snowflake",
+          "Databricks"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Fort Lauderdale"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 10,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "pede 10+ anos (você tem 2.8)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [
+          "Snowflake",
+          "Databricks"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Staff Machine Learning Engineer, Ads Measurement Remote - United States",
+      "url": "https://talents.vaia.com/companies/reddit/senior-staff-machine-learning-engineer-ads-measurement-remote-united-states-29845546/",
+      "empresa": "Reddit",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "score": 4,
+      "motivo": "Vaga de Principal ML Engineer com especialização em identity resolution, identity graphs, device graphs e probabilistic matching, alinhada diretamente com expertise em entity matching do leitor.",
+      "resumo": "Reddit busca Principal Machine Learning Engineer para Ads Measurement com foco em identity resolution, identity graphs e probabilistic matching de identifiers (cookies, emails, phone numbers, IP addresses). Requer 10 anos de engenharia de software e 5 anos em ML-driven systems.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "TensorFlow",
+          "PyTorch",
+          "Spark",
+          "Kafka",
+          "Beam",
+          "Flink"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 10,
+      "ingles": "fluente",
+      "foco_er": 1.0,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 17,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 10+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "TensorFlow",
+          "PyTorch",
+          "Kafka",
+          "Beam",
+          "Flink"
+        ],
+        "parciais": []
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Wouter van Heddeghem's Post",
+      "url": "https://www.linkedin.com/posts/woutervanheddeghem_enterprise-ai-simplified-by-prashant-rathi-activity-7511644596259442688-L4GY",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico discutindo entity resolution para identificação de duplicatas de cliente em múltiplos sistemas, alinhado com MDM.",
+      "resumo": "Explica como entity resolution identifica registros duplicados do mesmo cliente em CRM, ERP e sistemas de billing.",
+      "confianca": 0.92
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Entity Resolution Closes Adverse Media Screening Gap",
+      "url": "https://www.linkedin.com/posts/ripjar_the-state-of-adverse-media-screening-in-2026-activity-7511772929211355136-KX1U",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico que discute entity resolution em screening de mídia adversa, deduplicação e matching de clientes.",
+      "resumo": "Discute como entity resolution resolve registros de clientes em um único registro preciso, filtrando e deduplicando dados.",
+      "confianca": 0.9
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Steven Renwick's Post - iso20022 #payments #masterdata",
+      "url": "https://www.linkedin.com/posts/stevenrenwick_iso20022-payments-masterdata-activity-7511392261956325377-87jx",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post técnico sobre address normalisation e entity resolution para bancos, alinhado com geocodificação e address matching do perfil.",
+      "resumo": "Discute address normalisation e entity resolution aplicadas ao contexto bancário e ISO 20022 payments.",
+      "confianca": 0.88
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Senzing's Post",
+      "url": "https://www.linkedin.com/posts/senzing_entityresolution-senzing-fraudprevention-activity-7512922249851617283-AmJ3",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 4,
+      "motivo": "Post discute entity resolution aplicado a detecção de fraude e esquemas de identidade, tema central do perfil.",
+      "resumo": "Senzing apresenta entity resolution como ferramenta para identificar esquemas fraudulentos onde uma pessoa ou anel se passa por muitos.",
+      "confianca": 0.85
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Leila Ergul Demir's Post",
+      "url": "https://www.linkedin.com/posts/leilademir_an-enterprise-account-executive-typed-one-activity-7511441588401876992-9P-V",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "motivo": "Post discute entity resolution como componente central da arquitetura de dados da ZoomInfo, produto focado em matching de entidades.",
+      "resumo": "Explica que entity resolution é base da arquitetura de dados e context graph da ZoomInfo, junto com MCP, API e CLI.",
+      "confianca": 0.8
+    }
+  ],
+  "vagas_abertas_total": 27,
+  "vagas_arquivadas_total": 34,
+  "rede": {
+    "pessoas_novas": 5,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Java",
+  "aula": {
+    "dia": 7,
+    "semana": 1,
+    "tema": "O problema de data matching",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 1: O problema de data matching",
+    "modulo": "Semana 1: O problema de data matching",
+    "versao": 2,
+    "objetivo": "Consolidar, por meio de recuperação ativa, os cinco pilares conceituais da semana 1: a terminologia precisa de data matching/record linkage/entity resolution/deduplicação, o motivo pelo qual identificadores não resolvem o problema, a explosão quadrática de pares versus o crescimento linear de matches, a ausência estrutural de ground truth e a divisão do processo de integração em schema matching, data matching e data fusion.",
+    "conexao": "A semana inteira gira em torno de uma única ideia central de Christen (2012, seç. 1.1, p.3-4): integrar dados de fontes diferentes é um processo de três etapas (schema matching, data matching, data fusion), e a etapa do meio, foco do livro, só existe como problema difícil porque falha a condição ideal de um JOIN trivial. A aula 1 deu o vocabulário (matching entre bases vs. deduplicação dentro de uma base); a aula 2 mostrou por que identificadores reais raramente são íntegros, precisos e estáveis o suficiente para substituir matching por JOIN; a aula 3 quantificou a consequência prática disso em escala, o espaço de pares crescendo quadraticamente enquanto os matches verdadeiros crescem apenas linearmente, limitados pelo tamanho da menor base; a aula 4 mostrou que, mesmo resolvendo o problema de matching, não sabemos se acertamos, porque falta gold standard, o que empurra para estratégias de amostragem estratificada; e a aula 5 fechou o quadro mostrando que data matching não acontece isolado, ele depende de schema matching bem feito antes e data fusion bem feita depois. O laboratório da aula 6 amarrou tudo em números concretos, mostrando que mesmo no melhor cenário a fração de pares que são matches é ínfima, justificando por que blocking (tema da próxima semana) é obrigatório.",
+    "perguntas": [
+      {
+        "pergunta": "Diferencie, com as palavras de Christen (2012, p.3-4), data matching/record linkage de deduplicação, e explique qual dos dois cenários corresponde ao tipo 'dedupe_only' do Splink.",
+        "resposta": "Data matching (ou record linkage) identifica registros que se referem à mesma entidade em bases DISTINTAS; deduplicação é o caso especial em que essa busca ocorre dentro de UMA ÚNICA base. O cenário 'dedupe_only' do Splink corresponde exatamente à deduplicação, pois opera sobre um só dataframe procurando duplicatas internas."
+      },
+      {
+        "pergunta": "Por que a existência de um campo CPF nas duas bases não garante que um JOIN direto seja seguro? Cite os critérios de confiabilidade de um identificador segundo Christen (2012, seç. 1.1.1, p.5).",
+        "resposta": "Porque um identificador só sustenta JOIN direto se for íntegro (sem nulos/truncamentos), preciso (sem erro de captura), estável no tempo e único por entidade (sem duas entidades compartilhando o valor nem uma entidade com dois valores). Na prática, CPFs podem ter nulos, duplicidade de uso ou mudanças, violando essas condições, o que transforma o JOIN em matching probabilístico."
+      },
+      {
+        "pergunta": "Explique por que dobrar o tamanho de uma base de deduplicação não dobra o número de pares a comparar, e dê a fórmula exata do crescimento.",
+        "resposta": "Porque o número de pares numa deduplicação é C(n,2) = n(n-1)/2, que cresce quadraticamente, não linearmente. Dobrar n multiplica o número de pares por aproximadamente 4x (não 2x), já que (2n)(2n-1)/2 ≈ 4 × [n(n-1)/2] para n grande."
+      },
+      {
+        "pergunta": "Por que não existe, em geral, ground truth em projetos de data matching, segundo Christen (2012, seç. 1.1.3, p.6), e isso implica o quê para a avaliação de precisão/recall?",
+        "resposta": "Porque confirmar se dois registros realmente se referem à mesma entidade exigiria contatar indivíduos ou auditar manualmente cada caso, algo inviável em bases grandes como saúde e governo. Sem gold standard, precisão e recall não podem ser calculados diretamente; é preciso recorrer a amostragem (clerical review), dados sintéticos ou datasets públicos parcialmente rotulados para ESTIMAR a qualidade."
+      },
+      {
+        "pergunta": "Quais são as três etapas da integração de dados segundo Christen (2012, seç. 1.2, p.3-4) e o que acontece especificamente na terceira etapa (data fusion)?",
+        "resposta": "As três etapas são: (1) schema matching, alinhar tabelas e atributos equivalentes entre bases heterogêneas; (2) data matching, identificar quais registros individuais (já com schema alinhado) se referem à mesma entidade; (3) data fusion, consolidar e fundir os registros classificados como match numa representação única, limpa e consistente para cada entidade, resolvendo conflitos de valores com funções de agregação (mínimo, máximo, mais recente etc.)."
+      },
+      {
+        "pergunta": "(Aula 3) Duas bases com 50.000 e 200.000 registros geram quantos pares sem blocking, e qual é a ordem de grandeza da redução ao aplicar blocking uniforme por UF (27 estados)?",
+        "resposta": "Sem blocking: 50.000 × 200.000 = 10.000.000.000 pares (10 bilhões). Com blocking uniforme por 27 UFs, o total cai para aproximadamente 370.000.000 pares, uma redução de cerca de 27 vezes, que corresponde exatamente ao número de blocos quando a distribuição é uniforme."
+      },
+      {
+        "pergunta": "(Aula 1) Uma fintech tem clientes vindos de uma fusão de bancos, cada base com seu próprio customer_id incompatível entre si, e suspeita de clientes duplicados dentro da própria base A. Que duas tarefas distintas, na terminologia de Christen, são necessárias?",
+        "resposta": "Entre as bases A e B é necessário data matching (record linkage), cenário 'link_only', pois não há identificador comum confiável entre sistemas diferentes. Dentro da própria base A é necessária deduplicação, cenário 'dedupe_only', para achar o mesmo cliente cadastrado duas vezes (app e agência)."
+      }
+    ],
+    "desafio": "Um hospital público brasileiro vai integrar três fontes: (1) um cadastro de pacientes da rede municipal, (2) um cadastro de pacientes da rede estadual, (3) uma planilha de atendimentos de pronto-socorro mantida internamente pelo hospital, suspeita de conter o mesmo paciente registrado várias vezes sob nomes levemente diferentes. As fontes 1 e 2 têm um campo 'CNS' (Cartão Nacional de Saúde), que deveria ser único, mas auditoria prévia mostrou que 6% dos registros têm CNS vazio e 2% têm o mesmo CNS associado a nomes e datas de nascimento diferentes. A fonte 3 não tem CNS algum, só nome, data de nascimento e CPF (nem sempre preenchido). Pergunta: (a) Para integrar as fontes 1 e 2, pode-se usar JOIN direto por CNS? Justifique com os critérios de Christen (2012, p.5). (b) Que tarefa específica é necessária dentro da fonte 3, isoladamente? (c) Estime, sem nenhuma otimização, quantos pares seriam gerados ao comparar a fonte 1 (800.000 registros) com a fonte 2 (650.000 registros), e diga, em ordem de grandeza, por que isso exige blocking antes de qualquer comparação detalhada.",
+    "gabarito": "(a) Não incondicionalmente. O CNS falha dois dos critérios de confiabilidade de Christen (2012, seç.1.1.1, p.5): completude (6% de nulos quebra a integridade) e unicidade por entidade (2% de CNS compartilhado por pessoas diferentes indica erro de captura ou reuso). Um JOIN direto erraria nesses casos; é preciso tratar os 8% problemáticos com matching probabilístico usando atributos auxiliares (nome, data de nascimento), mesmo que o CNS sirva como forte evidência nos 92% restantes. (b) Dentro da fonte 3 isoladamente, a tarefa é deduplicação (duplicate detection), pois busca-se identificar o mesmo paciente registrado várias vezes dentro de uma única planilha. (c) Pares = 800.000 × 650.000 = 520.000.000.000 (520 bilhões) de pares sem nenhuma otimização. Essa ordem de grandeza (centenas de bilhões) é computacionalmente inviável para comparação detalhada de todos os pares; como o número de matches verdadeiros crescerá no máximo linearmente (limitado pelo tamanho da menor base, 650.000), a razão matches/pares tende a zero, confirmando Christen (2012, seç.1.1.2, p.5): é preciso blocking para reduzir drasticamente o espaço antes de aplicar qualquer algoritmo de comparação detalhada.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer, seç. 1.1, 1.1.1, 1.1.2, 1.1.3, 1.2, p. 3-9.",
+      "Elmagarmid, A. K., Ipeirotis, P. G. & Verykios, V. S. (2007). Duplicate record detection: a survey. IEEE TKDE, 19(1).",
+      "Binette, O. & Steorts, R. C. (2022). (Almost) all of entity resolution. Science Advances, 8(12)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        3,
+        11
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2945,
+      "pos_palavras_chave": 5,
+      "aprovados": 2
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 8,
+      "aprovados": 5
+    }
+  }
+}

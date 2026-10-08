@@ -59,6 +59,11 @@
   "nivel": "nao",
   "nome": "B2B company data"
  },
+ "beam": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Beam"
+ },
  "big data platforms": {
   "motivo": "Spark, Big Data em produção",
   "nivel": "tem",
@@ -234,6 +239,11 @@
   "nivel": "nao",
   "nome": "FISMA"
  },
+ "flink": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Flink"
+ },
  "fuzzy matching": {
   "motivo": "RapidFuzz e fuzzy matching usados",
   "nivel": "tem",
@@ -358,6 +368,11 @@
   "motivo": "sem evidência CI/CD",
   "nivel": "nao",
   "nome": "Jenkins"
+ },
+ "kafka": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Kafka"
  },
  "knowledge graphs": {
   "motivo": "sem evidência",

@@ -1,5 +1,52 @@
 [
  {
+  "data": "2026-10-08",
+  "habilidade": "Java",
+  "pct_vagas": 9,
+  "nivel_atual": "nao",
+  "o_que_e": "Java é uma linguagem de programação orientada a objetos, fortemente tipada e compilada para JVM, muito usada em sistemas corporativos, ferramentas de big data e engines de entity resolution/graph (Neo4j, Senzing, Zingg rodam ou integram via Java/JVM). Ela é a base de boa parte do ecossistema Hadoop/Spark por baixo dos panos, mesmo quando você escreve em Python/Scala.",
+  "por_que_pedem": "Muitas vagas de ER/linkage e knowledge graph exigem Java porque engines de grafo (Neo4j, JanusGraph), frameworks de matching enterprise (Senzing, Talend MDM) e sistemas legados de bancos/governo são escritos em Java. Em vagas de 'Senior Software Engineer' genéricas, Java aparece porque é a linguagem padrão de backend em muitas empresas tradicionais, mesmo fora do nicho de dados.",
+  "ponte_com_o_que_voce_sabe": "Você já programa Spark (que é JVM-based) e entende POO via Python e SQL declarativo. A sintaxe de Java é mais verbosa mas os conceitos (classes, tipos, coleções, exceptions) são familiares de quem já lida com PySpark e scikit-learn. Sua experiência com pipelines distribuídos ajuda a entender rápido o papel do Java em frameworks como Spark/Hadoop internamente.",
+  "minimo_para_ficar_apto": [
+   "Sintaxe básica: tipos primitivos, classes, interfaces, herança, exceptions",
+   "Collections Framework (List, Map, Set) e Streams API (similar a operações funcionais que você já usa em Spark)",
+   "Build tools básicos: Maven ou Gradle para entender um projeto Java",
+   "Ler e entender código Java de bibliotecas de ER (ex: Senzing SDK, Apache Jena para grafos)",
+   "Escrever um programa simples que conecta a um banco ou API REST"
+  ],
+  "plano_rapido": [
+   "4h: sintaxe básica, tipos, controle de fluxo (tutorial oficial Oracle Java Tutorials)",
+   "4h: POO em Java - classes, interfaces, herança, exceptions",
+   "3h: Collections e Streams API (equivalente a list comprehensions/map-filter do Python)",
+   "3h: Maven básico - estrutura de projeto, pom.xml, dependências",
+   "4h: praticar lendo código-fonte de um conector Spark ou de uma lib de ER em Java no GitHub",
+   "2h: escrever um pequeno programa Java que lê um CSV, normaliza strings e grava num índice Elasticsearch via cliente Java"
+  ],
+  "mini_projeto": "Um utilitário Java simples que lê um arquivo CSV de registros (nome, data nascimento, endereço), aplica normalização básica de strings (lowercase, remoção de acentos) e indexa os documentos no Elasticsearch usando o cliente Java oficial, replicando em miniatura parte do seu pipeline de ER mas mostrando capacidade de trabalhar em Java.",
+  "como_colocar_no_curriculo": "Conhecimento básico de Java (POO, Collections, Maven) aplicado à leitura e integração com ferramentas JVM-based de entity resolution e grafos, como complemento ao stack Python/Spark em produção.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre uma interface e uma classe abstrata em Java?",
+    "resposta": "Interface define um contrato sem implementação (até Java 8, com default methods permitindo alguma implementação), e uma classe pode implementar várias interfaces. Classe abstrata pode ter estado e métodos implementados, mas uma classe só pode estender uma abstrata. Uso interface para contratos de comportamento e abstrata quando há código compartilhado entre subclasses."
+   },
+   {
+    "pergunta": "Como você usaria Streams API para processar uma lista de objetos em Java?",
+    "resposta": "Streams permitem operações funcionais como filter, map e collect, similares a list comprehensions em Python. Por exemplo, list.stream().filter(p -> p.getIdade() > 18).map(Pessoa::getNome).collect(Collectors.toList()) filtra e transforma dados de forma declarativa, igual eu faço com transformações em PySpark."
+   },
+   {
+    "pergunta": "Por que ferramentas de entity resolution e grafos costumam ser escritas em Java?",
+    "resposta": "Porque Java roda na JVM, tem garbage collector maduro, forte tipagem para sistemas complexos e grande ecossistema para processamento distribuído (Hadoop, Spark, Neo4j), o que favorece performance e escalabilidade em sistemas corporativos de longa duração, como os usados em MDM e knowledge graphs."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Oracle Java Tutorials (documentação oficial)",
+   "Documentação oficial do Apache Maven",
+   "Curso 'Java Programming and Software Engineering Fundamentals' (Duke University, Coursera)",
+   "Documentação oficial do cliente Java do Elasticsearch",
+   "Documentação oficial do Neo4j Java Driver"
+  ]
+ },
+ {
   "data": "2026-10-07",
   "habilidade": "Azure",
   "pct_vagas": 9,
