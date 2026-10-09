@@ -1,0 +1,104 @@
+{
+  "data": "2026-10-09",
+  "gerado_em": "2026-10-08T23:56-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [
+    {
+      "tipo": "evento",
+      "titulo": "Procedimentos para vinculação de dados da saúde",
+      "url": "http://scielo.iec.gov.br/scielo.php?script=sci_abstract&pid=S1679-49742022000301100&lng=pt&nrm=i-&tlng=en",
+      "data": "3 de mai. de 2026",
+      "fonte": "web",
+      "score": 1,
+      "motivo": "Trata explicitamente de linkage determinístico entre bases de dados estruturadas na saúde, alinhado perfeitamente com o perfil do leitor.",
+      "resumo": "Artigo de revisão metodológica descrevendo procedimentos de processamento de dados para vinculação determinística entre bases de dados estruturadas em saúde. Foco direto em record linkage determinístico, tema central do leitor.",
+      "confianca": 0.92
+    }
+  ],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Record Linkage Method for Road Traffic Accidents Using Official Data Sources and News Publications Based on Spatio-Temporal Clustering",
+      "url": "https://doi.org/10.15622/ia.25.5.2",
+      "autores": "Alexey Girin et al.",
+      "data": "2026-10-02",
+      "fonte": "OpenAlex",
+      "score": 5,
+      "motivo": "Paper que trata record linkage de acidentes de trânsito integrando múltiplas fontes heterogêneas com matching espaciotemporal, normalização e extração de coordenadas.",
+      "resumo": "Propõe método para record linkage de registros de acidentes de trânsito de fontes estruturadas e textos não estruturados usando clustering espaciotemporal. Aborda extração de coordenadas e data/hora, normalização de dados heterogêneos e matching probabilístico.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Optimizing Semantic Blocking in Entity Resolution via Autoencoder-Based Deep Clustering",
+      "url": "https://doi.org/10.1007/s42979-026-05360-3",
+      "autores": "Rim Elmaataoui et al.",
+      "data": "2026-10-07",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "motivo": "Paper sobre semantic blocking em entity resolution usando deep clustering com autoencoders, técnica central para otimizar blocking em matching de larga escala.",
+      "resumo": "Aborda otimização de semantic blocking em entity resolution através de clustering profundo baseado em autoencoders. Foca em eficiência do blocking, etapa crítica em pipelines de linkage.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 25,
+  "vagas_arquivadas_total": 34,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Snowflake",
+  "aula": {
+    "dia": 8,
+    "semana": 2,
+    "tema": "História e aplicações",
+    "tipo": "conceito",
+    "titulo": "De Dunn (1946) a Newcombe (1959): o nascimento do record linkage",
+    "modulo": "Semana 2: História e aplicações",
+    "versao": 2,
+    "objetivo": "Explicar a origem histórica do record linkage, situando as contribuições de Dunn (1946) e Newcombe (1959) como fundação conceitual que antecede e torna possível a teoria formal de Fellegi-Sunter.",
+    "conceito": "O termo 'record linkage' foi criado por Halbert Dunn em 1946, não como técnica computacional, mas como visão: a ideia de montar um 'book of life' para cada indivíduo, unindo registros de nascimento, saúde, casamento, divórcio e morte num único fio biográfico. Dunn já identificava o problema central que ainda enfrentamos: nomes comuns, erros de digitação e variações nos dados dificultam ligar registros do mesmo indivíduo (Christen, 2012, seção 1.3, p. 9).\n\nFoi só nos anos 1950 e início dos 1960 que Howard Newcombe e colegas transformaram essa visão em método operacional, propondo o uso de computadores para automatizar a ligação de registros vitais (nascimentos, casamentos, óbitos). Newcombe introduziu duas ideias que ainda sustentam o campo: (1) o uso da codificação fonética Soundex para lidar com variações de sobrenomes, e (2) o cálculo de pesos de concordância e discordância (match e non-match weights) baseados na distribuição dos valores dos atributos, usados para decidir se dois registros são a mesma entidade (Christen, 2012, seção 1.3, p. 9-10).\n\nO salto de Newcombe foi essencial, mas ainda intuitivo, sem prova formal de otimalidade. Esse vácuo teórico é exatamente o que Fellegi e Sunter vão preencher em 1969, tema da próxima aula.",
+    "como_funciona": "Linha do tempo conceitual:\n1. Dunn (1946): cunha o termo 'record linkage'; propõe o 'book of life'; reconhece o problema de qualidade de dados (nomes comuns, erros, variações), mas sem método computacional.\n2. Newcombe et al. (1959): propõem automação via computador; aplicam Soundex para normalizar sobrenomes antes da comparação; calculam pesos de concordância/discordância com base na distribuição de frequência dos valores (ex.: sobrenomes raros pesam mais que comuns); decidem match/non-match comparando esses pesos a limiares.\n3. Essa lógica de pesos é empírica e intuitiva: Newcombe não prova que ela é ótima, apenas mostra que funciona na prática em registros vitais.\n4. O vácuo teórico (por que esses pesos funcionam, sob quais condições são ótimos) é o problema que Fellegi-Sunter (1969) vão resolver formalmente (próxima aula).",
+    "exemplo": "Imagine duas bases de registros de nascimento e óbito na Austrália dos anos 1950, antes de qualquer informatização. Um funcionário quer saber se 'John Smith, nascido 1920' e 'J. Smith, falecido 1958' são a mesma pessoa.\n\nCom a abordagem de Newcombe: primeiro aplica-se Soundex ao sobrenome 'Smith', gerando o código S530, que casa variações como 'Smyth' ou 'Smith'. Depois, calcula-se o peso: como 'Smith' é um sobrenome muito comum na população, o peso de concordância para esse atributo é baixo (pouca informação, pois muita gente se chama Smith). Já se o primeiro nome fosse um nome raro, tipo 'Ezekiel', e ambos os registros concordassem nesse valor, o peso seria alto, pois a chance de coincidência ao acaso é pequena. A soma desses pesos ao longo dos atributos (nome, data de nascimento, sobrenome) decide se o par é considerado um match.",
+    "na_pratica": "Essa lógica de 'peso maior para valores raros, peso menor para valores comuns' é exatamente o que hoje chamamos de m-probability e u-probability na teoria de Fellegi-Sunter, implementada em ferramentas modernas como Splink. Em termos de código:\n\nimport splink.comparison_library as cl\ncl.JaroWinklerAtThresholds(\"surname\", [0.9, 0.7])\n\nEsse comparador, ao ser treinado via EM, aprende pesos que replicam a intuição de Newcombe: sobrenomes raros que concordam pesam mais na probabilidade de match do que sobrenomes comuns.",
+    "armadilha": "Um erro comum é achar que Soundex e codificação fonética 'resolvem' o problema de variação de nomes de forma geral; na verdade, Soundex foi desenhado para nomes em inglês e falha com nomes de outras origens linguísticas (incluindo nomes brasileiros), exigindo adaptações ou métodos alternativos de comparação de strings.",
+    "desafio": "Você tem dois registros: Registro A tem sobrenome 'Silva' (ocorre em 8% da população) e primeiro nome 'Anacleto' (ocorre em 0,01% da população). Registro B concorda em ambos os atributos. Sem fazer contas exatas de probabilidade, explique, usando a lógica de Newcombe (frequência do valor determina o peso), qual dos dois atributos deveria contribuir com maior peso de concordância para a decisão de match, e por quê.",
+    "gabarito": "O atributo 'Anacleto' deve receber peso de concordância muito maior do que 'Silva'. A lógica de Newcombe é que o peso de concordância reflete quão informativa é a coincidência: se um valor é raro na população (como 'Anacleto', 0,01%), a chance de dois registros distintos coincidirem nesse valor por acaso é muito baixa, logo a concordância é forte evidência de que se trata do mesmo indivíduo. Já 'Silva', sendo comum (8%), tem alta chance de coincidência por acaso entre pessoas diferentes, então a concordância nesse atributo carrega pouca informação discriminativa. Esse raciocínio (peso inversamente relacionado à frequência do valor) é precisamente a base empírica que depois Fellegi e Sunter formalizaram matematicamente em 1969.",
+    "fontes": [
+      "Christen (2012), seção 1.3, p. 9-10",
+      "Dunn (1946)",
+      "Newcombe et al. (1959)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        9,
+        21
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2973,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 5,
+      "pos_palavras_chave": 2,
+      "aprovados": 1
+    },
+    "papers": {
+      "brutos": 183,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}

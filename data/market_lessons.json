@@ -1,5 +1,57 @@
 [
  {
+  "data": "2026-10-09",
+  "habilidade": "Snowflake",
+  "pct_vagas": 9,
+  "nivel_atual": "parcial",
+  "o_que_e": "Snowflake é um data warehouse em nuvem totalmente gerenciado, que separa armazenamento e computação em clusters chamados virtual warehouses. Ele roda em AWS, Azure ou GCP e oferece SQL padrão, compartilhamento de dados entre contas, time travel e recursos nativos para semi-estruturados (JSON, Parquet). É muito usado como camada de analytics e MDM/Customer 360 porque integra fácil com ferramentas de BI e pipelines de dados.",
+  "por_que_pedem": "Vagas de entity resolution e identity graph geralmente alimentam ou consomem dados de um warehouse central, e Snowflake virou padrão de mercado para isso. Empresas querem alguém que saiba escrever SQL eficiente, entender custos de warehouse, modelar dados e integrar pipelines Spark/Python com o Snowflake, já que muito do matching final e das entregas de identity graph acontece nessa camada.",
+  "ponte_com_o_que_voce_sabe": "Você já domina SQL avançado, modelagem de dados e pipelines Spark para processar bilhões de registros, o que é 80% do que se usa no dia a dia do Snowflake. A diferença é sintaxe específica (MERGE, VARIANT, streams/tasks), arquitetura de warehouses e como integrar Spark/Python via conectores (Snowflake Connector for Python, Snowpark). Sua experiência com Elasticsearch e Splink te dá contexto real de como as saídas de matching seriam carregadas e consultadas lá.",
+  "minimo_para_ficar_apto": [
+   "Entender arquitetura: storage, compute (virtual warehouses), cloud services layer",
+   "Saber escrever e otimizar SQL no Snowflake: CTEs, window functions, MERGE, clustering keys",
+   "Conhecer tipos semi-estruturados: VARIANT, FLATTEN, parsing de JSON",
+   "Saber usar roles, warehouses, databases, schemas e controle de custos (auto-suspend, auto-scale)",
+   "Conhecer Snowpark (Python) para rodar lógica de transformação dentro do Snowflake",
+   "Entender Streams e Tasks para pipelines incrementais (equivalente a CDC)"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de arquitetura na documentação oficial Snowflake",
+   "3h: criar conta trial gratuita e praticar SQL básico, criação de warehouse, roles",
+   "3h: estudar VARIANT, FLATTEN e ingestão de JSON/Parquet via COPY INTO",
+   "3h: aprender Snowpark para Python, testar um script simples de transformação",
+   "2h: estudar Streams e Tasks para pipelines incrementais",
+   "2h: estudar boas práticas de custo e clustering para tabelas grandes",
+   "2h: simular caso de uso: carregar saída de matching (Splink) no Snowflake e criar views de Customer 360"
+  ],
+  "mini_projeto": "Monte um pipeline que gera resultados de entity resolution no Splink/Spark, exporta para Parquet, carrega no Snowflake via COPY INTO, e cria uma camada de Customer 360 com views SQL que consolidam golden records, usando Streams para capturar atualizações incrementais de novos matches.",
+  "como_colocar_no_curriculo": "Modelagem e carga de dados de entity resolution (Splink/Spark) em Snowflake, com pipelines incrementais via Streams/Tasks para camada de Customer 360.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre storage e compute no Snowflake e por que isso importa para custos?",
+    "resposta": "Snowflake separa armazenamento (barato, compartilhado) de computação (virtual warehouses, cobrados por uso). Isso permite escalar processamento sem duplicar dados e pausar warehouses ociosos para economizar, algo crucial em pipelines de matching que rodam em lote."
+   },
+   {
+    "pergunta": "Como você carregaria resultados de um pipeline Spark/Splink no Snowflake?",
+    "resposta": "Exportaria os resultados para Parquet ou JSON no stage (S3/Azure Blob/GCS), depois usaria COPY INTO para carregar nas tabelas, aproveitando tipagem VARIANT se houver estrutura semi-estruturada, e criaria Streams para capturar deltas incrementais."
+   },
+   {
+    "pergunta": "O que são Streams e Tasks e como se aplicam a atualização de golden records?",
+    "resposta": "Streams capturam mudanças (CDC) em uma tabela desde a última leitura, e Tasks agendam execução de SQL periodicamente. Juntos permitem pipelines incrementais que atualizam golden records conforme novos matches chegam, sem reprocessar tudo."
+   },
+   {
+    "pergunta": "Como otimizar uma tabela grande com consultas frequentes de range/filtro no Snowflake?",
+    "resposta": "Usando clustering keys nas colunas mais filtradas, monitorando clustering depth, e evitando over-clustering para não gerar custo extra; também revisando pruning automático baseado em micro-partitions."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial Snowflake (docs.snowflake.com)",
+   "Snowflake Snowpark Developer Guide (documentação oficial)",
+   "Curso 'Snowflake Hands-On Essentials' na plataforma Snowflake University",
+   "Documentação oficial sobre Streams and Tasks no site da Snowflake"
+  ]
+ },
+ {
   "data": "2026-10-08",
   "habilidade": "Java",
   "pct_vagas": 9,
