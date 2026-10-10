@@ -1,5 +1,50 @@
 [
  {
+  "data": "2026-10-10",
+  "habilidade": "PyTorch",
+  "pct_vagas": 9,
+  "nivel_atual": "nao",
+  "o_que_e": "PyTorch é um framework de deep learning em Python usado para construir e treinar redes neurais (embeddings, modelos de similaridade semântica, classificadores complexos). No contexto de entity resolution, é usado principalmente para gerar embeddings de texto/registros (ex: usando modelos tipo Sentence-BERT) que alimentam blocking vetorial e scoring mais sofisticado que regras determinísticas ou Fellegi-Sunter.",
+  "por_que_pedem": "Vagas de ML Engineer mais avançadas, especialmente as que tocam em entity resolution moderna, estão migrando de matching puramente probabilístico para abordagens neurais (embedding matching, deep entity resolution, modelos tipo Ditto, DeepMatcher). PyTorch aparece como pré-requisito para treinar ou fine-tunar esses modelos, mesmo que você só use bibliotecas prontas no dia a dia.",
+  "ponte_com_o_que_voce_sabe": "Você já entende profundamente o problema (blocking, scoring, classificação, QA) e já usa scikit-learn para modelos tabulares. A transição é: trocar features manuais por embeddings aprendidos, e trocar o classificador scikit-learn por uma rede neural simples em PyTorch. Sua experiência com Splink te dá vocabulário e intuição que a maioria dos candidatos de ML não tem, isso é uma vantagem competitiva, não uma lacuna.",
+  "minimo_para_ficar_apto": [
+   "Entender tensores, autograd, e o loop de treino (forward, loss, backward, optimizer.step)",
+   "Saber construir um MLP simples do zero em PyTorch e treiná-lo num dataset tabular",
+   "Saber usar um modelo pré-treinado de embeddings (ex: sentence-transformers) para gerar vetores de texto",
+   "Entender a diferença entre treinar do zero e fine-tuning",
+   "Saber explicar como usaria embeddings de PyTorch dentro de um pipeline de entity resolution (blocking vetorial com FAISS/Elasticsearch kNN, scoring com rede siamesa)"
+  ],
+  "plano_rapido": [
+   "2h: tutorial oficial 'Learn the Basics' do PyTorch (tensores, autograd)",
+   "3h: construir e treinar um MLP simples classificando pares de registros (duplicate/not duplicate) usando features que você já extrai com Splink/RapidFuzz",
+   "2h: usar sentence-transformers para gerar embeddings de nomes/endereços e comparar com cosine similarity",
+   "2h: ler sobre redes siamesas aplicadas a entity resolution (conceito, não precisa implementar do zero)",
+   "1h: preparar narrativa de entrevista conectando seu pipeline atual com onde embeddings/PyTorch entrariam"
+  ],
+  "mini_projeto": "Pegue um dataset público de entity resolution (ex: Febrl ou Amazon-Google products do dataset de deep matching) e construa um pipeline híbrido: gere embeddings de texto com sentence-transformers (PyTorch por baixo), use-os para blocking aproximado via similaridade de cosseno, e treine um MLP simples em PyTorch para classificar pares candidatos como match/não-match, comparando o resultado com seu classificador Splink/scikit-learn no mesmo dataset.",
+  "como_colocar_no_curriculo": "Explorei embeddings neurais (PyTorch/sentence-transformers) como alternativa complementar a matching determinístico/probabilístico (Splink) em pipeline de entity resolution, comparando desempenho em dataset público.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Você tem experiência com PyTorch?",
+    "resposta": "Tenho experiência sólida em record linkage com Splink e scikit-learn, e venho estudando PyTorch especificamente para gerar embeddings e explorar scoring neural como complemento ao matching probabilístico que já uso em produção. Fiz um projeto comparando um classificador MLP em PyTorch com meu pipeline Splink tradicional."
+   },
+   {
+    "pergunta": "Como você usaria deep learning em entity resolution?",
+    "resposta": "Usaria embeddings de texto (via sentence-transformers) para blocking vetorial, reduzindo o espaço de candidatos antes do scoring, e uma rede siamesa ou MLP para classificar pares, complementando ou substituindo o Fellegi-Sunter em casos de dados muito ruidosos ou multilíngues."
+   },
+   {
+    "pergunta": "Qual a diferença entre o seu approach atual com Splink e um approach neural?",
+    "resposta": "Splink usa probabilidades calculadas a partir de regras e comparações de campo (Fellegi-Sunter), é interpretável e funciona bem com boa qualidade de dados estruturados. Approaches neurais aprendem representações latentes direto do texto, são mais robustos a ruído e variações não previstas, mas exigem mais dados rotulados e são menos interpretáveis."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial PyTorch (pytorch.org/tutorials)",
+   "Documentação do sentence-transformers (SBERT.net)",
+   "Curso 'Deep Learning with PyTorch: A 60 Minute Blitz' (oficial PyTorch)",
+   "Paper Ditto: Deep Entity Matching with Pre-trained Language Models"
+  ]
+ },
+ {
   "data": "2026-10-09",
   "habilidade": "Snowflake",
   "pct_vagas": 9,

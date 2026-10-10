@@ -1,0 +1,129 @@
+{
+  "data": "2026-10-10",
+  "gerado_em": "2026-10-09T23:19-03:00",
+  "llm": true,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Post-Implementation Consultant - Master Data Management Platform",
+      "url": "https://himalayas.app/companies/veeva-systems/jobs/post-implementation-consultant-master-data-management-platform",
+      "empresa": "Veeva Systems",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "score": 5,
+      "motivo": "Vaga explícita de MDM (Master Data Management) em contexto de implementação e matching de dados mestres em saúde.",
+      "resumo": "Veeva Systems procura consultor de MDM pós-implementação para trabalhar com clientes vivos na indústria de ciências da vida, atuando em matching e governança de dados mestres.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management"
+        ],
+        "desejaveis": [
+          "SQL"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 3,
+      "ingles": "fluente",
+      "foco_er": 0.4,
+      "encaixe": 0.07,
+      "compat_detalhe": {
+        "habilidades": 62,
+        "senioridade": 100,
+        "local": 12,
+        "ingles": 85,
+        "foco": 91,
+        "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [
+          "Master Data Management"
+        ]
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Perinatal mental health outcomes for people with intellectual disability: A data linkage study in New South Wales, Australia",
+      "url": "https://doi.org/10.1177/00048674261490053",
+      "autores": "Rachael C Cvejic et al.",
+      "data": "2026-10-07",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "motivo": "Paper que usa data linkage de múltiplas fontes administrativas (emergência, hospitais, saúde mental, Medicare) para estudar outcomes em coorte de pessoas com deficiência intelectual.",
+      "resumo": "Estudo de coorte retrospectivo que emprega linkage de dados administrativos de 30.257 pessoas (2.262 com deficiência intelectual) de New South Wales para analisar saúde mental perinatal. O estudo integra registros de departamentos de emergência, hospitais, serviços de saúde mental ambulatorial, Medicare e farmácia para examinar outcomes em quatro períodos distintos.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 25,
+  "vagas_arquivadas_total": 35,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "PyTorch",
+  "aula": {
+    "dia": 9,
+    "semana": 2,
+    "tema": "História e aplicações",
+    "tipo": "conceito",
+    "titulo": "Fellegi-Sunter (1969): a primeira teoria formal",
+    "modulo": "Semana 2: História e aplicações",
+    "versao": 2,
+    "objetivo": "Explicar a teoria formal de Fellegi e Sunter (1969) e calcular pesos de concordância/discordância para decidir se um par de registros é match, possível match ou non-match.",
+    "conceito": "Em 1969, os estatísticos Ivan Fellegi e Alan Sunter publicaram o artigo que transformou as heurísticas de Newcombe em teoria matemática rigorosa (Christen, 2012, seç. 1.3, p. 10). Eles provaram que, assumindo independência condicional entre os atributos comparados, existe uma regra de decisão ótima para classificar pares de registros em três categorias: match (M), non-match (U) e possível match (área cinzenta que exige revisão manual), minimizando a taxa de falsos positivos e falsos negativos para um nível de erro fixado.\n\nA ideia central é tratar cada comparação de atributo (nome, data de nascimento, endereço) como uma variável aleatória e perguntar: qual a probabilidade desse padrão de concordância ocorrer se os registros forem realmente da mesma entidade (m-probability) versus se forem de entidades diferentes (u-probability)? A razão entre essas probabilidades gera um peso que soma-se ao longo dos atributos, dando um score total para o par.\n\nEssa formalização é a base teórica de praticamente todo software probabilístico de linkage atual, incluindo os modelos de mistura usados no Splink e em sistemas do US Census Bureau (Christen, 2012, p. 10; Herzog, Scheuren & Winkler, 2007).",
+    "como_funciona": "1. Para cada atributo k comparado, defina m_k = P(concordância em k | match) e u_k = P(concordância em k | non-match).\n2. Peso de concordância: w_k = log2(m_k / u_k). Peso de discordância: w_k' = log2((1-m_k)/(1-u_k)).\n3. Score total do par = soma dos pesos de cada atributo comparado (assumindo independência condicional entre atributos).\n4. Defina dois limiares (thresholds) a partir das taxas de erro toleradas: se score >= limiar superior, classifique como match; se score <= limiar inferior, classifique como non-match; entre os dois, é possível match (revisão manual).\n5. Na prática, m_k e u_k são estimados a partir dos dados (frequências de valores, ou via EM, como Winkler fez depois).",
+    "exemplo": "Considere comparar 'data de nascimento' entre dois registros. Suponha m = 0.95 (se forem a mesma pessoa, 95% das vezes a data bate) e u = 0.01 (se forem pessoas diferentes, só 1% coincide por acaso, pois há muitas datas possíveis).\n\nPeso de concordância: w = log2(0.95/0.01) = log2(95) ≈ 6.57.\nSe discordarem: w' = log2((1-0.95)/(1-0.01)) = log2(0.05/0.99) = log2(0.0505) ≈ -4.31.\n\nAgora para 'sexo' (poucos valores possíveis, m = 0.98, u = 0.50):\nw = log2(0.98/0.50) = log2(1.96) ≈ 0.97.\n\nVeja que data de nascimento, por ser mais discriminante (menor u), carrega muito mais peso de evidência que sexo quando concorda. Um par que concorda em ambos teria score ≈ 6.57 + 0.97 = 7.54, provavelmente acima do limiar de match.",
+    "na_pratica": "Esse é exatamente o motor por trás do modelo Fellegi-Sunter no Splink, onde cada comparação (cl.ExactMatch, cl.JaroWinklerAtThresholds) gera pesos m e u estimados via EM:\n\nfrom splink import Linker, SettingsCreator, DuckDBAPI, block_on\nimport splink.comparison_library as cl\nsettings = SettingsCreator(link_type='dedupe_only', comparisons=[cl.ExactMatch('dob'), cl.ExactMatch('sex')], blocking_rules_to_generate_predictions=[block_on('surname')])\nlinker = Linker(df, settings, db_api=DuckDBAPI())\nlinker.training.estimate_u_using_random_sampling(max_pairs=1e6)\nlinker.training.estimate_parameters_using_expectation_maximisation(block_on('dob'))\n\nOs match_weight exibidos pelo Splink após o treino são, na essência, os w_k de Fellegi-Sunter em log2.",
+    "armadilha": "A suposição de independência condicional entre atributos raramente é verdadeira na prática (sobrenome e etnia, por exemplo, estão correlacionados), e ignorar isso infla artificialmente o score; use variantes como fellegi-sunter com interações ou modelos que capturem correlação residual quando os dados permitirem.",
+    "desafio": "Um sistema de deduplicação de clientes usa dois campos: 'email' com m=0.90 e u=0.001, e 'cidade' com m=0.80 e u=0.20. Calcule o peso de concordância de cada campo, o score total se ambos concordarem, e diga qual campo é mais discriminante e por quê.",
+    "gabarito": "Email: w = log2(0.90/0.001) = log2(900) ≈ 9.81. Cidade: w = log2(0.80/0.20) = log2(4) = 2.00. Score total (ambos concordando) = 9.81 + 2.00 = 11.81. Email é muito mais discriminante porque seu u é extremamente baixo (poucas pessoas diferentes compartilham o mesmo email por acaso), gerando uma razão m/u muito maior que a de cidade, onde muitas pessoas diferentes moram na mesma cidade.",
+    "fontes": [
+      "Christen (2012), seç. 1.3, p. 10",
+      "Fellegi & Sunter (1969), JASA 64(328)",
+      "Herzog, Scheuren & Winkler (2007)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        9,
+        21
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2933,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 182,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}
