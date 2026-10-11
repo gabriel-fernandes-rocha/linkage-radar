@@ -6,7 +6,7 @@ curriculum_start: 2026-10-02   # programa de 52 semanas (curriculum/plan.py)
 
 whatsapp:
   enabled: true
-  provider: callmebot       # callmebot | twilio
+  provider: telegram        # telegram | callmebot | twilio  (CallMeBot cortou o plano grátis em out/2026)
   min_compat: 0.25             # só manda no WhatsApp vagas com compatibilidade >= 25%
   # número e apikey ficam em GitHub Secrets: WHATSAPP_PHONE, CALLMEBOT_APIKEY
 
@@ -134,6 +134,7 @@ queries:
 
 social_sites:
   - linkedin.com/posts
+  - linkedin.com/jobs/view
   - x.com
   - twitter.com
   - reddit.com

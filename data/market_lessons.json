@@ -1,5 +1,54 @@
 [
  {
+  "data": "2026-10-12",
+  "habilidade": "Neo4j",
+  "pct_vagas": 6,
+  "nivel_atual": "nao",
+  "o_que_e": "Neo4j é um banco de dados orientado a grafos, onde entidades são nós e relacionamentos são arestas de primeira classe, consultadas com a linguagem Cypher. É muito usado para modelar redes complexas de identidade, fraude e conexões entre registros, algo complementar ao record linkage tradicional. Em vez de joins relacionais custosos, você percorre caminhos no grafo diretamente.",
+  "por_que_pedem": "Em entity resolution avançada, depois de identificar pares/matches, o próximo passo é modelar clusters de identidade e relações entre entidades (pessoa-endereço-telefone-documento) como um grafo para detectar fraudes, redes de risco ou identidades conectadas. Vagas de Knowledge Graph e Identity Resolution esperam que você saiba armazenar e consultar esse grafo resultante, não só gerá-lo.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em termos de grafos sem perceber: blocking e clustering de matches no Splink geram componentes conectados, que são exatamente a estrutura que o Neo4j armazena nativamente. Sua experiência com SQL acelera o aprendizado de Cypher (sintaxe declarativa parecida), e sua familiaridade com pipelines Spark facilita entender a integração Neo4j-Spark Connector para ingestão em massa.",
+  "minimo_para_ficar_apto": [
+   "Escrever queries Cypher básicas: MATCH, WHERE, CREATE, MERGE, RETURN",
+   "Entender modelagem de grafo (nós, labels, relacionamentos, propriedades) e quando usar grafo vs relacional",
+   "Saber importar dados em massa (LOAD CSV ou Neo4j Spark Connector) a partir de outputs de entity resolution",
+   "Conhecer algoritmos básicos da Graph Data Science Library (community detection, PageRank, similarity) aplicados a deduplicação e clusters de identidade",
+   "Conseguir explicar como usaria Neo4j para armazenar resultados de clusters do Splink e consultar conexões entre entidades"
+  ],
+  "plano_rapido": [
+   "2h: Fazer o tutorial oficial 'Neo4j Fundamentals' no Neo4j GraphAcademy (gratuito)",
+   "3h: Praticar Cypher com o curso 'Cypher Fundamentals' do GraphAcademy, replicando queries SQL que você já sabe fazer",
+   "2h: Estudar modelagem de grafo para fraud/identity resolution (buscar 'Neo4j entity resolution use case' na doc oficial)",
+   "3h: Fazer o curso 'Graph Data Science Fundamentals' do GraphAcademy, focando em algoritmos de similarity e community detection",
+   "4h: Montar um mini-projeto local importando um output de clusters do Splink para o Neo4j Desktop (gratuito) e rodar queries de caminho e centralidade",
+   "2h: Revisar Neo4j Spark Connector (documentação oficial) para saber explicar integração com seu pipeline atual"
+  ],
+  "mini_projeto": "Pegue um dataset de teste que você já usa com Splink (ex: dados sintéticos de pessoas com nome, endereço, telefone), rode o matching e clustering normalmente, depois exporte os clusters e pares de match para Neo4j Desktop. Modele pessoas como nós e matches/compartilhamento de atributos (mesmo telefone, mesmo endereço) como relacionamentos. Rode uma query de community detection (Louvain) da Graph Data Science Library para ver se os clusters do grafo batem com os clusters do Splink, e escreva um comentário comparando as duas abordagens.",
+  "como_colocar_no_curriculo": "Conhecimento prático de Neo4j e Cypher para modelagem de clusters de identidade resultantes de pipelines de entity resolution (Splink), incluindo uso da Graph Data Science Library para detecção de comunidades e análise de similaridade.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Quando você usaria um banco de grafos como Neo4j em vez de um pipeline relacional para entity resolution?",
+    "resposta": "Quando o objetivo vai além de identificar pares de match e passa a ser analisar redes de relacionamento entre entidades, como detectar fraude por conexões indiretas (mesmo endereço, telefone compartilhado, documentos cruzados) ou navegar caminhos multi-hop entre identidades, algo que fica caro e pouco natural em joins relacionais repetidos."
+   },
+   {
+    "pergunta": "Como você integraria o output do Splink com o Neo4j?",
+    "resposta": "Exportaria os pares classificados e os componentes conectados (clusters) do Splink, gerados via Spark, como nós (entidades) e relacionamentos (match_score, tipo de evidência), usando o Neo4j Spark Connector para ingestão em lote diretamente do DataFrame, em vez de passar por CSV intermediário."
+   },
+   {
+    "pergunta": "Explique a diferença entre MATCH e MERGE em Cypher.",
+    "resposta": "MATCH busca padrões existentes no grafo sem criar nada; MERGE funciona como um upsert, buscando o padrão e, se não existir, criando-o, o que é essencial para pipelines de carga incremental de entidades e relacionamentos sem duplicar nós."
+   },
+   {
+    "pergunta": "Que algoritmo da Graph Data Science Library você usaria para detectar clusters de identidades conectadas e por quê?",
+    "resposta": "Usaria Louvain ou Weakly Connected Components para detecção de comunidades, pois identificam grupos densamente conectados que podem representar a mesma identidade real ou uma rede suspeita, complementando a classificação probabilística do Splink com uma visão estrutural do grafo."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Neo4j GraphAcademy (cursos oficiais gratuitos: Neo4j Fundamentals, Cypher Fundamentals, Graph Data Science Fundamentals)",
+   "Documentação oficial do Neo4j (Cypher Manual e Graph Data Science Library)",
+   "Documentação oficial do Neo4j Spark Connector"
+  ]
+ },
+ {
   "data": "2026-10-11",
   "habilidade": "Tableau",
   "pct_vagas": 6,

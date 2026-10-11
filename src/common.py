@@ -21,6 +21,21 @@ CURRICULUM = ROOT / "curriculum"
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("radar")
 
+
+class _Recorder(logging.Handler):
+    """Guarda o que as fontes relatam na execução; o monitor de saúde (health.py) lê daqui."""
+
+    def __init__(self):
+        super().__init__(logging.INFO)
+        self.records: list[tuple[str, str]] = []
+
+    def emit(self, record):
+        self.records.append((record.levelname, record.getMessage()))
+
+
+RECORDER = _Recorder()
+log.addHandler(RECORDER)
+
 UA = "Mozilla/5.0 (LinkageRadar; +https://github.com/) Python-requests"
 TIMEOUT = 20
 

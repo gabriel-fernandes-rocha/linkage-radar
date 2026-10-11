@@ -14,10 +14,20 @@
   "nivel": "nao",
   "nome": "Amazon Neptune"
  },
+ "angular": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Angular"
+ },
  "api enrichment": {
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "API Enrichment"
+ },
+ "api rest": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "API REST"
  },
  "apis": {
   "motivo": "provável uso em pipelines, não declarado",
@@ -68,6 +78,11 @@
   "motivo": "Spark, Big Data em produção",
   "nivel": "tem",
   "nome": "big data platforms"
+ },
+ "bigquery": {
+  "motivo": "experiência com SQL e data warehouse em geral",
+  "nivel": "parcial",
+  "nome": "BigQuery"
  },
  "bitbucket": {
   "motivo": "sem evidência",
@@ -129,6 +144,21 @@
   "nivel": "nao",
   "nome": "Cypher"
  },
+ "data annotation": {
+  "motivo": "classificação de matches sugere experiência próxima",
+  "nivel": "parcial",
+  "nome": "Data Annotation"
+ },
+ "data classification": {
+  "motivo": "etapa de classificação no pipeline de matching",
+  "nivel": "tem",
+  "nome": "Data Classification"
+ },
+ "data enrichment": {
+  "motivo": "normalização e matching próximos a enriquecimento",
+  "nivel": "parcial",
+  "nome": "Data Enrichment"
+ },
  "data governance": {
   "motivo": "faz QA de dados, não governança formal",
   "nivel": "parcial",
@@ -139,15 +169,40 @@
   "nivel": "tem",
   "nome": "Data Matching"
  },
+ "data normalization": {
+  "motivo": "etapa explícita do pipeline",
+  "nivel": "tem",
+  "nome": "Data Normalization"
+ },
  "data quality": {
   "motivo": "QA de pipeline em produção",
   "nivel": "tem",
   "nome": "Data Quality"
  },
+ "data review": {
+  "motivo": "QA no pipeline relacionado a revisão",
+  "nivel": "parcial",
+  "nome": "Data Review"
+ },
+ "data transformation": {
+  "motivo": "ETL e normalização em pipelines de dados",
+  "nivel": "tem",
+  "nome": "Data Transformation"
+ },
+ "data verification": {
+  "motivo": "QA e matching garantem verificação de dados",
+  "nivel": "tem",
+  "nome": "Data Verification"
+ },
  "databricks": {
   "motivo": "domina Spark, não Databricks especificamente",
   "nivel": "parcial",
   "nome": "Databricks"
+ },
+ "dataset documentation": {
+  "motivo": "sem evidência de documentação formal de datasets",
+  "nivel": "nao",
+  "nome": "Dataset Documentation"
  },
  "db2": {
   "motivo": "sem evidência",
@@ -269,6 +324,11 @@
   "nivel": "nao",
   "nome": "graph databases"
  },
+ "graph modeling": {
+  "motivo": "entity resolution relacionado, sem evidência direta",
+  "nivel": "parcial",
+  "nome": "Graph Modeling"
+ },
  "graphframes": {
   "motivo": "sem evidência",
   "nivel": "nao",
@@ -314,6 +374,11 @@
   "nivel": "nao",
   "nome": "Hugging Face Transformers"
  },
+ "ia": {
+  "motivo": "usa scikit-learn e matching probabilístico, não IA ampla",
+  "nivel": "parcial",
+  "nome": "IA"
+ },
  "ibm mdm": {
   "motivo": "sem evidência ferramenta MDM",
   "nivel": "nao",
@@ -343,6 +408,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "Informatica MDM"
+ },
+ "infrastructure as code": {
+  "motivo": "sem menção a IaC",
+  "nivel": "nao",
+  "nome": "Infrastructure as Code"
  },
  "jaccard similarity": {
   "motivo": "usa técnicas de similaridade fuzzy",
@@ -584,10 +654,25 @@
   "nivel": "nao",
   "nome": "PyTorch"
  },
+ "quality control": {
+  "motivo": "etapa de QA explícita no pipeline",
+  "nivel": "tem",
+  "nome": "Quality Control"
+ },
+ "rag": {
+  "motivo": "sem evidência de RAG/LLM",
+  "nivel": "nao",
+  "nome": "RAG"
+ },
  "rdf": {
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "RDF"
+ },
+ "react": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "React"
  },
  "record linkage": {
   "motivo": "especialização central do candidato",
@@ -658,6 +743,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "Semarchy"
+ },
+ "similarity scoring": {
+  "motivo": "scoring matching, fuzzy matching, Splink",
+  "nivel": "tem",
+  "nome": "Similarity Scoring"
  },
  "snowflake": {
   "motivo": "experiência com SQL e data warehouse",
@@ -763,6 +853,11 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "TypeScript"
+ },
+ "web scraping": {
+  "motivo": "sem menção a scraping",
+  "nivel": "nao",
+  "nome": "Web scraping"
  },
  "xgboost": {
   "motivo": "usa scikit-learn, ML correlato",

@@ -61,9 +61,11 @@ def _job_lines(pos: int, it: dict, is_new: bool, site_url: str, n_skills: int, t
     return lines
 
 
-def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None) -> str:
+def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None, fits=None) -> str:
     """Mensagem 1: status + as 3 vagas mais compatíveis, tudo em UMA mensagem do WhatsApp."""
-    from notify.callmebot import MAX_ENCODED
+    if fits is None:  # padrão: limite do CallMeBot (o mais apertado)
+        from notify.callmebot import MAX_ENCODED
+        fits = lambda m: len(quote_plus(m)) <= MAX_ENCODED
 
     d = date.fromisoformat(rep["data"])
     new_urls = {j["url"] for j in rep.get("vagas", [])}
@@ -80,7 +82,10 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None)
         (len(rep.get("eventos", [])), "evento(s)"),
     ) if n)
 
-    header = [f"📡 Linkage Radar {d:%d/%m}",
+    import health
+
+    alert = health.summary_line()
+    header = ([alert, ""] if alert else []) + [f"📡 Linkage Radar {d:%d/%m}",
               f"{len(new_urls)} {'vaga nova' if len(new_urls) == 1 else 'vagas novas'} hoje | "
               f"{rep.get('vagas_abertas_total', len(pool))} abertas no seu perfil"]
     footer = (f"No site também: {extras}. " if extras else "") + f"Tudo em {site_url}"
@@ -101,7 +106,7 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None)
         if with_footer:
             lines += ["", footer]
         msg = no_dash("\n".join(lines))
-        if len(quote_plus(msg)) <= MAX_ENCODED:
+        if fits(msg):
             return msg
     return msg
 
@@ -235,19 +240,24 @@ def main():
             return
 
     wa = cfg.get("whatsapp", {})
-    if wa.get("provider") == "twilio":
+    name = wa.get("provider", "telegram")
+    if name == "twilio":
         from notify import twilio as provider
-    else:
+    elif name == "callmebot":
         from notify import callmebot as provider
+    else:
+        from notify import telegram as provider
 
     # As partes ficam salvas no estado: uma nova tentativa continua EXATAMENTE de onde parou,
     # sem reenviar o que já chegou (antes, uma falha no meio fazia a mensagem chegar repetida).
     st = _state(day) if args.agendado else {}
+    if st.get("canal", "callmebot") != name:  # trocou de canal: refaz as partes no tamanho do canal novo
+        st = {}
     if not st.get("partes"):
         rep = load_report(cfg, args.date)
         import open_jobs
 
-        messages = [build_message(rep, cfg["site_url"], open_jobs.load())]
+        messages = [build_message(rep, cfg["site_url"], open_jobs.load(), getattr(provider, "fits", None))]
         lesson_msg = build_lesson_message(rep, cfg["site_url"])
         if lesson_msg:
             messages.append(lesson_msg)
@@ -257,7 +267,7 @@ def main():
                       f"{len(provider.split(msg)) if hasattr(provider, 'split') else 1} partes) =====\n{msg}\n")
             return
         split = getattr(provider, "split", lambda m: [m])
-        st = {"data": day, "concluido": False, "partes": [split(m) for m in messages],
+        st = {"data": day, "canal": name, "concluido": False, "partes": [split(m) for m in messages],
               "enviadas": [0] * len(messages), "inicio": now.isoformat(timespec="minutes")}
         if args.agendado:
             _save_state(st)
@@ -269,7 +279,13 @@ def main():
         if i > 0 and done == 0:
             time.sleep(GAP_SECONDS)  # separa a mensagem da aula da mensagem de vagas
         for j in range(done, len(parts)):
-            provider.send_part(parts[j])
+            try:
+                provider.send_part(parts[j])
+            except Exception as e:  # registra o motivo (o monitor de saúde mostra no dia seguinte)
+                st["erro"] = str(e)[:300]
+                if args.agendado:
+                    _save_state(st)
+                raise
             st["enviadas"][i] = j + 1
             if args.agendado:
                 _save_state(st)

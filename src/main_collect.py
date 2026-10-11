@@ -14,6 +14,7 @@ from datetime import timedelta
 import lesson
 import career
 import compat
+import health
 import job_archive
 import open_jobs
 from common import DATA, load_config, log, today
@@ -48,6 +49,9 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
         log.warning("LLM desativado (sem chave ou --no-llm): usando só palavras-chave — menos preciso")
 
     report = {"data": day, "gerado_em": now.isoformat(timespec="minutes"), "llm": use_llm}
+    from sources import websearch
+
+    report["serpapi_orcamento"] = websearch.set_daily_budget()
     budget = cfg["llm"].get("max_items_per_day", 80)
     stats = {}
     approved_all: dict[str, list[dict]] = {}
@@ -112,6 +116,10 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
 
     report["aula"] = lesson.for_date(cfg, edition.date())
     report["estatisticas"] = stats
+    try:
+        report["saude"] = health.check(cfg, day, report)["status"]
+    except Exception as e:  # o monitor nunca pode derrubar a coleta
+        log.warning("saúde: verificação falhou (%s)", e)
 
     DATA.mkdir(exist_ok=True)
     out = DATA / f"{day}.json"

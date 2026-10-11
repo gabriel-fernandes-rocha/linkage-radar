@@ -282,6 +282,30 @@ async function loadTips() {
 }
 
 const NET_LIMIT = 15;
+let LATEST_EDITION = "";
+
+async function loadHealth() {
+  const card = $("#saude");
+  let h;
+  try {
+    h = await getJSON("data/health.json");
+  } catch {
+    card.hidden = true;
+    return;
+  }
+  const icon = { ok: "✅", atencao: "⚠️", problema: "🚨" }[h.status] || "❔";
+  const label = { ok: "tudo funcionando", atencao: "atenção", problema: "problema" }[h.status] || h.status;
+  const rows = (h.checks || []).filter((c) => c.status !== "ok");
+  const fontes = Object.entries(h.fontes || {}).sort()
+    .map(([k, v]) => `<span class="chip ${v > 0 ? "must" : "nice"}">${esc(k.split("/")[1])}: ${v < 0 ? "erro" : v}</span>`).join(" ");
+  $(".content", card).innerHTML = `
+    <p class="mod">${icon} ${label} · coleta de ${fmtDate(h.data)}</p>
+    ${rows.length ? `<ul>${rows.map((c) => `<li><b>${esc(c.nome)}</b>: ${esc(c.detalhe)}</li>`).join("")}</ul>` : ""}
+    <details class="qa"><summary>Itens por fonte nesta coleta</summary><p>${fontes}</p></details>`;
+  if (h.status !== "ok") card.classList.add("alerta");
+  if (h.status === "problema") card.parentNode.prepend(card);  // problema sobe para o topo
+}
+
 async function loadNetwork(file, cardId, button) {
   const card = $("#" + cardId);
   let items = [];
@@ -293,8 +317,8 @@ async function loadNetwork(file, cardId, button) {
     $(".list", card).innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
     return;
   }
-  const latest = items.reduce((d, x) => (x.desde > d ? x.desde : d), "");
-  items.forEach((x) => (x.novo = x.desde === latest));
+  const latest = LATEST_EDITION;
+  items.forEach((x) => (x.novo = !!latest && x.desde === latest));
   items.sort((a, b) => (b.novo - a.novo) || (b.desde || "").localeCompare(a.desde || ""));
   const nNew = items.filter((x) => x.novo).length;
   $(".novos-hoje", card).innerHTML = nNew
@@ -318,14 +342,16 @@ async function loadNetwork(file, cardId, button) {
   if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
   loadOpenJobs();
   loadSkills();
+  loadHealth();
   loadMarket();
   loadTips();
-  loadNetwork("data/people.json", "pessoas", "Ver perfil");
-  loadNetwork("data/companies.json", "empresas", "Ver empresa");
   const sel = $("#day");
   let dates = [];
   try {
     dates = (await getJSON("data/index.json")).datas;
+    LATEST_EDITION = dates[0] || "";
+    loadNetwork("data/people.json", "pessoas", "Ver perfil");
+    loadNetwork("data/companies.json", "empresas", "Ver empresa");
   } catch {
     $("#status").textContent = "Nenhuma edição publicada ainda.";
     return;

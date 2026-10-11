@@ -129,6 +129,10 @@ def serpapi_google_jobs(cfg):
         for _ in range(pages):
             if used >= per_day:
                 break
+            from sources import websearch
+
+            if not websearch.take("baixa"):
+                break
             params = {"engine": "google_jobs", "q": q, "api_key": key}
             if token:
                 params["next_page_token"] = token
@@ -229,11 +233,16 @@ def social_posts(cfg):
         queries.append(f'({pt}) ("vaga" OR "contratando" OR "oportunidade" OR "estamos contratando") '
                        "site:linkedin.com/posts/")
     results = []
-    for q in queries:
-        try:
-            results += websearch.serpapi(q, recency="qdr:w")
-        except Exception as e:
-            log.warning("jobs/social '%s' falhou: %s", q[:40], e)
+    # (a consulta geral em X/Reddit/Facebook pelo Google foi removida em out/2026: ~0 resultados úteis e
+    # gastava 1 busca/dia da cota. As vagas em posts vêm do feed do LinkedIn, onde estão as melhores.)
+    # posts de vaga no LinkedIn: cascata DuckDuckGo -> Google (o Google sozinho passou a devolver 0)
+    sj = cfg["queries"]["social_jobs"]
+    term = sj[date.today().toordinal() % len(sj)]  # o DuckDuckGo não entende OR: 1 termo por dia
+    results += websearch.cascade([
+        ("ddg", f'"{term}" hiring site:linkedin.com', "qdr:m"),
+        ("google", queries[-1], "qdr:w"),
+    ], lambda r: "linkedin.com/posts/" in r["url"] or "linkedin.com/jobs/view/" in r["url"], want=3,
+        label="jobs/social_linkedin")
     out = []
     allowed = [s.rstrip("/") for s in cfg.get("social_sites", [])]
     for r in results:

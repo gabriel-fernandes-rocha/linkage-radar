@@ -1,0 +1,41 @@
+{
+ "data": "2026-10-12",
+ "status": "problema",
+ "checks": [
+  {
+   "status": "atencao",
+   "nome": "Cota SerpAPI",
+   "detalhe": "70 buscas restantes para 20 dias"
+  },
+  {
+   "status": "problema",
+   "nome": "Envio da mensagem",
+   "detalhe": "o envio de 2026-10-11 não terminou (0 partes enviadas)"
+  }
+ ],
+ "fontes": {
+  "jobs/adzuna": 0,
+  "jobs/remoteok": 99,
+  "jobs/remotive": 270,
+  "jobs/greenhouse": 1383,
+  "jobs/lever": 310,
+  "jobs/ashby": 37,
+  "jobs/hn_who_is_hiring": 1,
+  "jobs/serpapi_google_jobs": 1,
+  "jobs/gupy": 220,
+  "jobs/himalayas": 96,
+  "jobs/jobicy": 132,
+  "jobs/workable": 281,
+  "jobs/weworkremotely": 128,
+  "jobs/social_posts": 2,
+  "papers/arxiv": 6,
+  "papers/openalex": 175,
+  "papers/semantic_scholar": 20,
+  "linkedin/posts": 9,
+  "network/perfis": 8
+ },
+ "falhas": [
+  "papers: busca 'record linkage' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=record+linkage&publicationDateOrYear=2026-10-04%3A&fields=title%2Curl%2Cabstract%2Cauthors%2C",
+  "papers: busca 'entity resolution' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+resolution&publicationDateOrYear=2026-10-04%3A&fields=title%2Curl%2Cabstract%2Cauth"
+ ]
+}

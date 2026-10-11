@@ -38,14 +38,14 @@ def search_people(cfg: dict) -> list[dict]:
     term = _term_of_day(cfg["queries"]["network"])
     out = []
     # O Google às vezes ignora o filtro site: com caminho; se vier pouco perfil, tenta o formato alternativo
-    for query in (f'"{term}" site:linkedin.com/in/', f'site:linkedin.com inurl:in "{term}"'):
-        for r in websearch.serpapi(query, recency=None):
-            if "linkedin.com/in/" in r["url"] and r["url"].split("?")[0] not in {o["url"] for o in out}:
-                out.append(item("pessoa", r["titulo"], r["url"].split("?")[0], nome=_clean_name(r["titulo"]),
-                                texto=f"{r['titulo']}. {r['texto']}", fonte="Perfil público no LinkedIn"))
-        log.info("network: %d perfis após a consulta", len(out))
-        if len(out) >= 5:
-            break
+    found = websearch.cascade([
+        ("ddg", f'"{term}" site:linkedin.com/in', None),
+        ("google", f'"{term}" site:linkedin.com/in/', None),
+    ], lambda r: "linkedin.com/in/" in r["url"], want=5, label="network")
+    for r in found:
+        out.append(item("pessoa", r["titulo"], r["url"].split("?")[0], nome=_clean_name(r["titulo"]),
+                        texto=f"{r['titulo']}. {r['texto']}", fonte="Perfil público no LinkedIn"))
+    log.info("network: %d perfis após a consulta", len(out))
     return out
 
 
@@ -55,7 +55,7 @@ def search_companies(cfg: dict) -> list[dict]:
     terms = cfg["queries"]["network"]
     q = " OR ".join(f'"{t}"' for t in (_term_of_day(terms, 3), _term_of_day(terms, 5)))
     out = []
-    for r in websearch.serpapi(f"({q}) site:linkedin.com/company/", recency=None):
+    for r in websearch.serpapi(f"({q}) site:linkedin.com/company/", recency=None, priority="baixa"):
         if "linkedin.com/company/" in r["url"]:
             out.append(item("empresa", r["titulo"], r["url"].split("?")[0], nome=_clean_name(r["titulo"]),
                             texto=f"{r['titulo']}. {r['texto']}", fonte="Página no LinkedIn"))

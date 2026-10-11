@@ -55,6 +55,8 @@ jobs:
         if: steps.espera.outputs.acao == 'enviar' || inputs.forcar
         env:
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
           BOOK_URL: ${{ secrets.BOOK_URL }}   # opcional: link do SEU PDF do livro (Dropbox/OneDrive), nunca público
           TWILIO_SID: ${{ secrets.TWILIO_SID }}
