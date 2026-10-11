@@ -1,16 +1,11 @@
 {
  "data": "2026-10-12",
- "status": "problema",
+ "status": "atencao",
  "checks": [
   {
    "status": "atencao",
    "nome": "Cota SerpAPI",
    "detalhe": "70 buscas restantes para 20 dias"
-  },
-  {
-   "status": "problema",
-   "nome": "Envio da mensagem",
-   "detalhe": "o envio de 2026-10-11 não terminou (0 partes enviadas)"
   }
  ],
  "fontes": {
