@@ -1,5 +1,49 @@
 [
  {
+  "data": "2026-10-11",
+  "habilidade": "Tableau",
+  "pct_vagas": 6,
+  "nivel_atual": "parcial",
+  "o_que_e": "Tableau é uma ferramenta de business intelligence e visualização de dados que permite criar dashboards interativos conectando-se a bancos de dados, planilhas e data warehouses. Ele usa uma interface drag-and-drop para construir gráficos, mapas e painéis sem precisar programar muito. É muito usado para comunicar insights analíticos para stakeholders não técnicos.",
+  "por_que_pedem": "Em vagas de Data Scientist e Product Manager ligadas a identity/entity resolution, é comum precisar expor métricas de qualidade de matching (taxa de falsos positivos, cobertura, distribuição de scores) para áreas de negócio e liderança. Tableau é o padrão de mercado para esse tipo de comunicação visual, então pedem como diferencial de triagem mesmo que não seja o core técnico da vaga.",
+  "ponte_com_o_que_voce_sabe": "Você já extrai e agrega dados pesados com Spark e SQL, que é exatamente o trabalho pesado por trás de qualquer dashboard. Tableau só adiciona a camada visual: você conecta ele direto num banco ou exporta um dataset tratado e constrói o gráfico. Sua experiência com QA de matching (métricas de precision/recall, distribuição de scores) já é o tipo de conteúdo ideal para um dashboard de exemplo.",
+  "minimo_para_ficar_apto": [
+   "Saber conectar o Tableau a uma fonte de dados (CSV, SQL, extração)",
+   "Construir gráficos básicos: barras, linhas, mapas, tabelas dinâmicas",
+   "Entender dimensões vs medidas e agregações",
+   "Criar um dashboard com filtros interativos e parâmetros simples",
+   "Saber explicar calculated fields básicos (LOD expressions não é essencial)"
+  ],
+  "plano_rapido": [
+   "2h: instalar Tableau Public e fazer o tutorial oficial de interface",
+   "3h: seguir um curso rápido (Tableau Public training videos) cobrindo gráficos básicos e joins",
+   "2h: construir um dashboard simples com dados fake de matching (scores, taxas por blocking)",
+   "2h: aprender filtros, parâmetros e calculated fields simples",
+   "1h: praticar storytelling com dashboards (ordem de painéis, anotações)"
+  ],
+  "mini_projeto": "Criar um dashboard público no Tableau Public mostrando métricas de um pipeline de entity resolution: número de registros processados, distribuição de scores de matching, taxa de pares classificados como match/não-match por estratégia de blocking, e evolução de precisão/recall ao longo de execuções. Usar dado sintético ou anonimizado inspirado no seu trabalho real.",
+  "como_colocar_no_curriculo": "Construí dashboards em Tableau para monitorar métricas de qualidade de pipelines de record linkage (precisão, recall, distribuição de scores), facilitando comunicação com stakeholders não técnicos.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Como você conectaria o Tableau a um pipeline Spark rodando em produção?",
+    "resposta": "Eu exportaria os dados agregados (já processados pelo Spark) para um data warehouse como Snowflake, BigQuery ou um banco relacional, e conectaria o Tableau diretamente a essa fonte, evitando que o Tableau processe dados brutos em escala."
+   },
+   {
+    "pergunta": "Qual a diferença entre dimensão e medida no Tableau?",
+    "resposta": "Dimensões são campos qualitativos usados para categorizar e segmentar dados, como nome de estratégia de blocking ou tipo de registro. Medidas são campos quantitativos agregáveis, como contagem de matches ou score médio."
+   },
+   {
+    "pergunta": "Como você mostraria a qualidade de um modelo de matching num dashboard?",
+    "resposta": "Eu criaria visualizações com distribuição de scores de similaridade, uma matriz de confusão visual, taxas de falso positivo/negativo por segmento, e tendências temporais de precisão e recall, permitindo drill-down por fonte de dados ou estratégia de blocking."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Tableau (tableau.com/learn/training)",
+   "Tableau Public training videos",
+   "Curso Tableau da Coursera (Tableau 10 da Edureka ou especialização da University of California Davis no Coursera)"
+  ]
+ },
+ {
   "data": "2026-10-10",
   "habilidade": "PyTorch",
   "pct_vagas": 9,

@@ -1,0 +1,83 @@
+{
+  "data": "2026-10-11",
+  "gerado_em": "2026-10-10T22:52-03:00",
+  "llm": true,
+  "vagas": [],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "From Entity Resolution Anomalies to Reconstruction Failure Modes: A Taxonomic Note Following Minimum Viable Digital Identity Optimization (DIO)",
+      "url": "https://doi.org/10.5281/zenodo.23269322",
+      "autores": "Daniel Beránek",
+      "data": "2026-10-09",
+      "fonte": "OpenAlex",
+      "score": 3,
+      "motivo": "Paper com foco central em Entity Resolution, taxonomia de anomalias e falhas de reconstrução de identidades digitais, diretamente alinhado com identity resolution e entity matching.",
+      "resumo": "Nota taxonômica que refina a vocabulária de anomalias em Entity Resolution e propõe uma taxonomia diagnóstica de Failure Modes de Reconstrução em quatro domínios analíticos: Referential, Semantic Coherence, Temporal e Contextual Adequacy.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 25,
+  "vagas_arquivadas_total": 35,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Tableau",
+  "aula": {
+    "dia": 10,
+    "semana": 2,
+    "tema": "História e aplicações",
+    "tipo": "conceito",
+    "titulo": "Aplicações em censo, saúde e pesquisa populacional",
+    "modulo": "Semana 2: História e aplicações",
+    "versao": 2,
+    "objetivo": "Explicar como data matching viabiliza censos longitudinais e estudos epidemiológicos de larga escala, reconhecendo as restrições legais e éticas que moldam o desenho técnico desses sistemas.",
+    "conceito": "Censo nacional e saúde pública foram, junto com Newcombe e Fellegi-Sunter, os berços institucionais do record linkage moderno (Christen, 2012, seç. 1.4.1-1.4.2, p. 11-13). A lógica é sempre a mesma: em vez de coletar dados novos a cada estudo, reaproveita-se o que já existe em bases distintas, ligando registros do mesmo indivíduo ao longo do tempo ou entre fontes. Isso reduz custo de coleta, melhora estimativas populacionais (inclusive via técnicas de captura-recaptura) e permite construir datasets longitudinais, essenciais para entender mudanças em uma população ao longo de décadas.\n\nNo censo, o US Census Bureau foi pioneiro, operando em escala de centenas de milhões de registros e impulsionando pesquisa em linkage paralelo e distribuído (Christen, 2012, p. 12). Já na saúde, o Oxford Record Linkage Study (anos 1960) e o programa da Austrália Ocidental (desde meados dos anos 1990) mostraram o valor prático: ligar dados de nascimento, óbito, hospital e outros registros gerou mais de 700 publicações entre 1995 e 2003, influenciando políticas como exames regulares para pacientes psiquiátricos e instalação de desfibriladores em ambulâncias (Christen, 2012, p. 13).\n\nUm ponto estrutural recorrente é a separação entre identificadores pessoais (usados só para o linkage) e os dados substantivos de pesquisa, protocolo de boas práticas citado por Christen (2012, p. 13). Isso tenta equilibrar utilidade estatística com privacidade, tema que ganhará capítulo próprio no livro (cap. 8).",
+    "como_funciona": "1. Define-se o objetivo estatístico: estimar tamanho populacional, construir coorte longitudinal, ou associar exposição a desfecho de saúde.\n2. Identificam-se as bases fonte: censos de anos diferentes, registros de nascimento/óbito, hospitalizações, prescrições.\n3. Como muitas vezes identificadores fortes (nome, endereço) são restritos por lei (ex.: Austrália exige destruir dados de censo em até 1 ano), o linkage recorre a atributos quase-identificadores: idade, sexo, local de nascimento, religião, escolaridade.\n4. Aplica-se probabilistic record linkage (Fellegi-Sunter) para gerar pesos de concordância/discordância por campo.\n5. Separa-se o arquivo de identificação pessoal do arquivo de pesquisa: pesquisadores só recebem o segundo, com um ID de linkage anonimizado.\n6. Os pares linkados formam uma cadeia de registros por indivíduo, usada depois em modelos epidemiológicos ou demográficos.",
+    "exemplo": "Imagine o censo australiano de 2010 e o de 2020, cada um com 20 milhões de registros, mas sem nome nem endereço disponíveis (destruídos por lei). Restam: idade, sexo, local de nascimento, religião e escolaridade. Um analista quer estimar quantas pessoas mudaram de estado civil declarado entre as duas décadas.\nPasso 1: bloqueia-se por local de nascimento e década de nascimento (reduz pares de 20 milhões x 20 milhões para blocos de poucos milhares).\nPasso 2: compara-se sexo (exato), religião (exato) e escolaridade (exato ou parcial).\nPasso 3: calcula-se o peso Fellegi-Sunter: se m(religião)=0.95 e u(religião)=0.15, o peso é log2(0.95/0.15) = log2(6.33) ≈ 2.66 bits de evidência a favor de match.\nPasso 4: somam-se os pesos de todos os campos comparados; pares acima do limiar viram matches prováveis, formando o par longitudinal.\nResultado: mesmo sem nome, o linkage estatístico permite estimar mobilidade populacional, embora com mais incerteza do que se houvesse nome e endereço.",
+    "na_pratica": "Em pipelines reais de saúde pública, isso aparece como jobs em Spark que ligam registros de hospitais e cartórios de óbito por mês, guardando só um linkage_id. Em Splink, o fluxo seria dedupe_only ou link_only entre duas fontes de censo:\nsettings = SettingsCreator(link_type=\"link_only\", comparisons=[cl.ExactMatch(\"sex\"), cl.ExactMatch(\"religion\"), cl.ExactMatch(\"education\")], blocking_rules_to_generate_predictions=[block_on(\"birth_place\", \"birth_decade\")])\nlinker = Linker([df_census_2010, df_census_2020], settings, db_api=DuckDBAPI())\npred = linker.inference.predict(threshold_match_probability=0.85)\nDepois disso, o ID de linkage é entregue ao time de pesquisa sem os identificadores originais.",
+    "armadilha": "Profissionais experientes às vezes tratam ausência de identificadores fortes (nome, CPF) como um problema puramente técnico de 'achar mais features', quando na verdade é uma restrição legal deliberada; ignorar isso e tentar reconstituir identidade via dados auxiliares pode violar a lei e a ética da pesquisa.",
+    "desafio": "Um órgão de saúde pública quer ligar registros de nascimento (2015) com registros de óbito infantil (até 2020) para calcular taxa de mortalidade infantil por município, mas nome da criança não está disponível em nenhuma das duas bases, só nome da mãe, data de nascimento, sexo e município. Há 500 mil nascimentos e 3 mil óbitos. Pergunte: (a) qual estratégia de blocking você usaria para não gerar 1.5 bilhão de pares? (b) quais campos dariam maior peso m/u e por quê?",
+    "gabarito": "(a) Bloqueie por município e data de nascimento (ou ano-mês): isso reduz drasticamente o espaço de pares porque óbitos infantis só podem casar com nascimentos do mesmo município e com data de nascimento igual ou muito próxima; em vez de 500.000 x 3.000 = 1,5 bilhão de pares, blocos por município (digamos 200 municípios) e mês de nascimento reduzem para blocos de algumas centenas de registros, ordens de grandeza menores. (b) Nome da mãe e data de nascimento exata da criança teriam maior peso m/u: nome da mãe é um identificador raro e específico (baixo u, poucas mães com mesmo nome no mesmo bloco), e data de nascimento exata tem alta chance de concordância em verdadeiros matches (alto m) e baixa chance ao acaso dentro do bloco (baixo u). Sexo tem pouco poder discriminante (u alto, só 2 valores possíveis), contribuindo pouco para o peso final.",
+    "fontes": [
+      "Christen (2012), seç. 1.3, p. 9-11",
+      "Christen (2012), seç. 1.4.1, p. 11-12",
+      "Christen (2012), seç. 1.4.2, p. 12-13",
+      "Dunn (1946)",
+      "Newcombe et al. (1959)",
+      "Fellegi & Sunter (1969)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        9,
+        21
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2946,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 181,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  }
+}
