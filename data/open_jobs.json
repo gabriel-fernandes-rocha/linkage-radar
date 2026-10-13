@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -76,7 +76,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -108,29 +108,17 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "The Ai Training Company hiring Data Analyst | €52/hr - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/data-analyst-%E2%82%AC52-hr-remote-at-the-ai-training-company-4475428548",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "score": 8,
-    "motivo": "Vaga de Data Analyst com foco explícito em record linkage, data matching, normalização e enriquecimento de dados, alinhado ao perfil.",
-    "resumo": "The AI Training Company contrata Data Analyst com foco em record linkage, data matching, normalização, transformação e qualidade de dados. Remuneração 52 EUR/hora.",
-    "confianca": 0.85,
+    "titulo": "Backend Software Engineer II- Data Platform - LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/4475708217",
+    "data": "Oct 8, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "motivo": "Vaga de engenheiro backend em data platform com foco explícito em identity resolution e entity matching em ambiente healthcare regulado.",
+    "resumo": "Vaga de Backend Software Engineer II na LinkedIn para trabalhar com identity resolution, entity matching, eligibility e claims em ambientes healthcare regulados e sensíveis a segurança.",
+    "confianca": 0.95,
     "requisitos": {
       "obrigatorios": [
-        "Data Normalization",
-        "Data Matching",
-        "Record Linkage",
-        "Data Enrichment",
-        "Data Transformation",
-        "Data Verification",
-        "Data Classification",
-        "Data Annotation",
-        "Data Review",
-        "Dataset Documentation",
-        "Quality Control"
+        "Identity resolution"
       ],
       "desejaveis": []
     },
@@ -146,26 +134,65 @@
     "anos_experiencia_min": null,
     "ingles": "nao_informado",
     "foco_er": 0.5,
-    "encaixe": 0.4,
+    "encaixe": 0.47,
     "compat_detalhe": {
-      "habilidades": 77,
+      "habilidades": 100,
       "senioridade": 85,
       "local": 60,
       "ingles": 100,
       "foco": 92,
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Dataset Documentation"
-      ],
-      "parciais": [
-        "Data Enrichment",
-        "Data Annotation",
-        "Data Review"
-      ]
+      "faltam": [],
+      "parciais": []
     },
-    "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Společnost Modash najímá na pozici Senior Product Data ... - LinkedIn",
+    "url": "https://cz.linkedin.com/jobs/view/senior-product-data-engineer-data-insights-remote-europe-at-modash-4477453953",
+    "data": "Oct 8, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 6,
+    "motivo": "Vaga Senior Product Data com entity matching, deduplication e data quality como responsabilidades centrais.",
+    "resumo": "Vaga de Senior Product Data na Modash exigindo experiência em entity matching, classification, deduplication e enrichment com foco em qualidade de dados.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Deduplication"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.6,
+    "encaixe": 0.42,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 75,
+      "local": 60,
+      "ingles": 100,
+      "foco": 94,
+      "senioridade_txt": "nível senior",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
     "nova": true
   },
   {
@@ -216,8 +243,8 @@
       ]
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
-    "nova": true
+    "verificada_em": "2026-10-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -265,7 +292,95 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Infotek Consulting Inc. hiring Data Engineer- Databricks ... - LinkedIn",
+    "url": "https://ca.linkedin.com/jobs/view/data-engineer-databricks-quantexa-at-infotek-consulting-inc-4472184939",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "score": 4,
+    "motivo": "Post anunciando vaga concreta em Databricks com entity resolution como responsabilidade central explícita, alinhada ao perfil.",
+    "resumo": "Infotek Consulting Inc. contrata Data Engineer em Databricks para preparar dados estruturados/não estruturados, resolver entidades e validar qualidade, lineage e integridade de dados.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.32,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Machine Learning Engineer at Commotion - LinkedIn Jobs",
+    "url": "https://in.linkedin.com/jobs/view/senior-machine-learning-engineer-at-commotion-4469492016",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "score": 4,
+    "motivo": "Post anunciando vaga concreta com entity resolution como responsabilidade central: blocking, candidate generation, match scoring, clustering e threshold design; alinha-se precisamente ao expertise do perfil.",
+    "resumo": "Commotion contrata Senior Machine Learning Engineer para possuir todo o pipeline de entity resolution, de blocking até clustering, com foco em precisão, recall e resoluções recorrentes.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "encaixe": 0.3,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
     "nova": true
   },
   {
@@ -313,8 +428,8 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
-    "nova": true
+    "verificada_em": "2026-10-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -379,8 +494,59 @@
       ]
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engineering Manager - Security Ontology at TrendAI - LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/engineering-manager-security-ontology-at-trendai-4478588657",
+    "data": "Oct 12, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "motivo": "Vaga de engineering manager com entity resolution e entity matching como responsabilidades principais, complementadas por semantic models e knowledge representation.",
+    "resumo": "Vaga de Engineering Manager na TrendAI focada em entity resolution, entity matching e relationship discovery com modelos semânticos e ontologias.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity resolution",
+        "Entity Resolution",
+        "Semantic search",
+        "Ontology"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "gerencia",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.15,
+    "compat_detalhe": {
+      "habilidades": 62,
+      "senioridade": 35,
+      "local": 60,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível gerencia",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Ontology"
+      ],
+      "parciais": [
+        "Semantic search"
+      ]
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -430,7 +596,7 @@
       ]
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -466,7 +632,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -524,7 +690,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -616,8 +782,8 @@
       ]
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
-    "nova": true
+    "verificada_em": "2026-10-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -664,8 +830,8 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
-    "nova": true
+    "verificada_em": "2026-10-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -712,8 +878,8 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
-    "nova": true
+    "verificada_em": "2026-10-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -771,7 +937,7 @@
       "parciais": []
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -828,7 +994,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -893,7 +1059,7 @@
       ]
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -952,8 +1118,104 @@
       "parciais": []
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Puck hiring Data Analyst Intern in San Francisco, CA | LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/4465203715/",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "score": 4,
+    "motivo": "Post de vaga concreta menciona entity resolution e deduplicação com tratamento de nomes distintos, endereços antigos e identificadores parciais, cenário típico de matching.",
+    "resumo": "Puck contrata Data Analyst Intern para lidar com deduplicação entre fontes heterogêneas (nomes variados, endereços obsoletos, identificadores incompletos) e medir qualidade de enriquecimento.",
+    "confianca": 0.82,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "junior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "San Francisco"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 100,
+      "local": 8,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível junior",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "ServiceNow hiring Sr Software Engineer in San Diego, CA | LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/4468151528/",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "score": 3,
+    "motivo": "Post anunciando vaga concreta em ServiceNow com entity resolution como componente central de um mecanismo maior; bem-scoped e production quality alinha-se ao perfil.",
+    "resumo": "ServiceNow contrata Senior Software Engineer para o probabilistic engine com entity resolution, graph construction e probability core em produção de qualidade.",
+    "confianca": 0.8,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "San Diego"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1015,7 +1277,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -1070,7 +1332,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -1093,7 +1355,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1159,7 +1421,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1216,7 +1478,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1246,6 +1508,54 @@
       "faltam": [],
       "parciais": []
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "EngRadar hiring Senior Software Engineer, Identity Graph in San ...",
+    "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-identity-graph-at-engradar-4475002002",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "score": 3,
+    "motivo": "Post anunciando vaga concreta com entity resolution como componente central do identity graph: schema design, ingestão, resolução de entidades, APIs, performance; alinhado ao perfil.",
+    "resumo": "EngRadar contrata Senior Software Engineer para o Identity Graph, possuindo entity resolution, schema design, ingestão de dados, APIs e performance end-to-end.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "San Francisco"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-13",
+    "verificada_em": "2026-10-13",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1309,8 +1619,8 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-12",
-    "nova": true
+    "verificada_em": "2026-10-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1382,7 +1692,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -1447,7 +1757,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -1521,7 +1831,7 @@
       "parciais": []
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -1583,82 +1893,8 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Scientist - Onshore (B)",
-    "url": "https://jobs.workable.com/view/iA3CDEqYmwHsVDSjmMViU4/remote-data-scientist---onshore-(b)-in-united-states-at-v4c.ai",
-    "empresa": "V4C.ai",
-    "local": "Remoto · United States",
-    "fonte": "Workable",
-    "score": 14,
-    "motivo": "Vaga de Data Scientist com responsabilidades explícitas de resolver problemas de qualidade de dados, duplicação, matching e entity resolution em datasets de saúde, além de trabalhar com MDM.",
-    "resumo": "Data Scientist na V4C.ai responsável por análise e resolução de qualidade de dados, duplicação, matching e entity resolution em datasets de saúde, além de trabalhar com processos e frameworks de MDM usando Databricks e PySpark.",
-    "confianca": 0.9,
-    "encaixe": 0.03,
-    "nota_perfil": "Alinha perfeitamente em domain (healthcare), stack (Databricks, Python, PySpark, SQL) e especialização (MDM, entity-resolution, deduplicação), remoto nos US; espanhol não requerido, inglês intermediário suficiente.",
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "SQL",
-        "Databricks",
-        "Spark",
-        "Delta Lake",
-        "Master Data Management",
-        "Entity Resolution",
-        "Machine Learning"
-      ],
-      "desejaveis": [
-        "Informatica MDM",
-        "Reltio",
-        "IBM MDM",
-        "Azure",
-        "AWS",
-        "MLflow",
-        "Power BI",
-        "Tableau",
-        "FHIR",
-        "HL7"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 8,
-    "ingles": "fluente",
-    "foco_er": 0.7,
-    "compat_detalhe": {
-      "habilidades": 59,
-      "senioridade": 40,
-      "local": 12,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [
-        "Delta Lake"
-      ],
-      "parciais": [
-        "Databricks",
-        "Master Data Management"
-      ]
-    }
   },
   {
     "tipo": "vaga",
@@ -1680,7 +1916,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1766,7 +2002,7 @@
       "parciais": []
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false
   },
   {
@@ -1789,7 +2025,7 @@
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1822,86 +2058,6 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Knowledge Graph Engineer – Entity Resolution & Graph Analytics",
-    "url": "https://www.tealhq.com/job/knowledge-graph-engineer_7ea1ac6595fceb7db90c7ad9c10cf7bb30b07",
-    "empresa": "3GIMBALS, LLC",
-    "local": "Virginia",
-    "fonte": "Google Jobs",
-    "score": 5,
-    "motivo": "Entity resolution, deduplication e record-linkage pipelines são responsabilidades centrais da vaga.",
-    "resumo": "Knowledge Graph Engineer para design e build de knowledge graph que modela ontologias, entity resolution, relationship extraction e graph analytics conectando pessoas, organizações, localizações e eventos. Requer data engineering, semantic modeling e NLP.",
-    "confianca": 0.88,
-    "encaixe": 0.02,
-    "nota_perfil": "Especialidade em entity resolution presente, mas localização Virginia (EUA) presencial/híbrida exige visto e reduz encaixe significativamente.",
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "Neo4j",
-        "Amazon Neptune",
-        "TigerGraph",
-        "JanusGraph",
-        "Cypher",
-        "Gremlin",
-        "SPARQL",
-        "Entity Resolution",
-        "RDF",
-        "OWL",
-        "spaCy",
-        "Hugging Face"
-      ],
-      "desejaveis": [
-        "Java",
-        "Scala",
-        "Embeddings",
-        "GraphRAG",
-        "LLMs"
-      ]
-    },
-    "senioridade": "pleno",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "Virginia"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 4,
-    "ingles": "fluente",
-    "foco_er": 0.7,
-    "compat_detalhe": {
-      "habilidades": 14,
-      "senioridade": 80,
-      "local": 8,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [
-        "Neo4j",
-        "Amazon Neptune",
-        "TigerGraph",
-        "JanusGraph",
-        "Cypher",
-        "Gremlin",
-        "SPARQL",
-        "RDF"
-      ],
-      "parciais": []
-    }
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Lead Software Development Engineer",
     "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
     "empresa": "Amperity",
@@ -1922,7 +2078,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-12",
+    "verificada_em": "2026-10-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

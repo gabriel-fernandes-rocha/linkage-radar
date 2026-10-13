@@ -589,6 +589,11 @@
   "nivel": "nao",
   "nome": "OCR"
  },
+ "ontology": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Ontology"
+ },
  "oracle": {
   "motivo": "sem evidência",
   "nivel": "nao",
@@ -738,6 +743,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "Segment"
+ },
+ "semantic search": {
+  "motivo": "usa Elasticsearch, próximo a busca semântica",
+  "nivel": "parcial",
+  "nome": "Semantic search"
  },
  "semarchy": {
   "motivo": "sem evidência",

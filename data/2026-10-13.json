@@ -1,0 +1,436 @@
+{
+  "data": "2026-10-13",
+  "gerado_em": "2026-10-13T00:33-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Machine Learning Engineer at Commotion - LinkedIn Jobs",
+      "url": "https://in.linkedin.com/jobs/view/senior-machine-learning-engineer-at-commotion-4469492016",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 4,
+      "motivo": "Post anunciando vaga concreta com entity resolution como responsabilidade central: blocking, candidate generation, match scoring, clustering e threshold design; alinha-se precisamente ao expertise do perfil.",
+      "resumo": "Commotion contrata Senior Machine Learning Engineer para possuir todo o pipeline de entity resolution, de blocking até clustering, com foco em precisão, recall e resoluções recorrentes.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1,
+      "encaixe": 0.3,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "EngRadar hiring Senior Software Engineer, Identity Graph in San ...",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-identity-graph-at-engradar-4475002002",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 3,
+      "motivo": "Post anunciando vaga concreta com entity resolution como componente central do identity graph: schema design, ingestão, resolução de entidades, APIs, performance; alinhado ao perfil.",
+      "resumo": "EngRadar contrata Senior Software Engineer para o Identity Graph, possuindo entity resolution, schema design, ingestão de dados, APIs e performance end-to-end.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "San Francisco"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Infotek Consulting Inc. hiring Data Engineer- Databricks ... - LinkedIn",
+      "url": "https://ca.linkedin.com/jobs/view/data-engineer-databricks-quantexa-at-infotek-consulting-inc-4472184939",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 4,
+      "motivo": "Post anunciando vaga concreta em Databricks com entity resolution como responsabilidade central explícita, alinhada ao perfil.",
+      "resumo": "Infotek Consulting Inc. contrata Data Engineer em Databricks para preparar dados estruturados/não estruturados, resolver entidades e validar qualidade, lineage e integridade de dados.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Puck hiring Data Analyst Intern in San Francisco, CA | LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4465203715/",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 4,
+      "motivo": "Post de vaga concreta menciona entity resolution e deduplicação com tratamento de nomes distintos, endereços antigos e identificadores parciais, cenário típico de matching.",
+      "resumo": "Puck contrata Data Analyst Intern para lidar com deduplicação entre fontes heterogêneas (nomes variados, endereços obsoletos, identificadores incompletos) e medir qualidade de enriquecimento.",
+      "confianca": 0.82,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "junior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "San Francisco"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 100,
+        "local": 8,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível junior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "ServiceNow hiring Sr Software Engineer in San Diego, CA | LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4468151528/",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 3,
+      "motivo": "Post anunciando vaga concreta em ServiceNow com entity resolution como componente central de um mecanismo maior; bem-scoped e production quality alinha-se ao perfil.",
+      "resumo": "ServiceNow contrata Senior Software Engineer para o probabilistic engine com entity resolution, graph construction e probability core em produção de qualidade.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "San Diego"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Backend Software Engineer II- Data Platform - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4475708217",
+      "texto": "Identity resolution, entity matching, eligibility, claims, or other healthcare data. Regulated or security-sensitive production environments. $120,000 - $130,000 a year",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "motivo": "Vaga de engenheiro backend em data platform com foco explícito em identity resolution e entity matching em ambiente healthcare regulado.",
+      "resumo": "Vaga de Backend Software Engineer II na LinkedIn para trabalhar com identity resolution, entity matching, eligibility e claims em ambientes healthcare regulados e sensíveis a segurança.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Identity resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.47,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Společnost Modash najímá na pozici Senior Product Data ... - LinkedIn",
+      "url": "https://cz.linkedin.com/jobs/view/senior-product-data-engineer-data-insights-remote-europe-at-modash-4477453953",
+      "texto": "Entity matching, classification, deduplication, or enrichment: you've built reliable output from data that started out incomplete, inconsistent, or wrong Treated data quality as part of the job.",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 6,
+      "motivo": "Vaga Senior Product Data com entity matching, deduplication e data quality como responsabilidades centrais.",
+      "resumo": "Vaga de Senior Product Data na Modash exigindo experiência em entity matching, classification, deduplication e enrichment com foco em qualidade de dados.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Deduplication"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.42,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Engineering Manager - Security Ontology at TrendAI - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/engineering-manager-security-ontology-at-trendai-4478588657",
+      "texto": "Entity resolution, entity matching, and relationship discovery. Semantic models, semantic search, and knowledge representation. Schema mapping, data contracts, and ontology evolution.",
+      "data": "Oct 12, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "motivo": "Vaga de engineering manager com entity resolution e entity matching como responsabilidades principais, complementadas por semantic models e knowledge representation.",
+      "resumo": "Vaga de Engineering Manager na TrendAI focada em entity resolution, entity matching e relationship discovery com modelos semânticos e ontologias.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity resolution",
+          "Entity Resolution",
+          "Semantic search",
+          "Ontology"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "gerencia",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.15,
+      "compat_detalhe": {
+        "habilidades": 62,
+        "senioridade": 35,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Ontology"
+        ],
+        "parciais": [
+          "Semantic search"
+        ]
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "An Intelligent Entity Resolution at Scale: A Graph-Based Social Network Framework",
+      "url": "https://doi.org/10.15849/ijasca.169",
+      "autores": "Mohammad SH Daoud et al.",
+      "data": "2026-10-11",
+      "fonte": "OpenAlex",
+      "score": 6,
+      "motivo": "Paper com foco central em Entity Resolution em escala, abordagem graph-based e avaliação de algoritmos de matching (Levenshtein, Jaro-Winkler, Soundex) em datasets de até 2 milhões de registros.",
+      "resumo": "Paper que redefine Entity Resolution como problema de Social Network Analysis, propondo framework de seis fases que representa registros como nós e arestas de grafo e aplica medidas de centralidade para identificar redundâncias. Avalia quatro modelos (k-means, Levenshtein, Jaro-Winkler e Soundex) em datasets de 500 a 2 milhões de registros, com Levenshtein e Soundex alcançando 100% de precisão.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 38,
+  "vagas_arquivadas_total": 51,
+  "rede": {
+    "pessoas_novas": 3,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "LLMs",
+  "aula": {
+    "dia": 12,
+    "semana": 2,
+    "tema": "História e aplicações",
+    "tipo": "conceito",
+    "titulo": "Bibliografia, e-commerce, ciências sociais e genealogia",
+    "modulo": "Semana 2: História e aplicações",
+    "versao": 2,
+    "objetivo": "Identificar como o record linkage aparece em domínios menos discutidos (bibliografia científica, e-commerce, ciências sociais e genealogia), reconhecendo a terminologia específica de cada comunidade.",
+    "conceito": "Christen (2012, seç. 1.3, p. 11) observa que, por ter sido investigado de forma independente em diferentes domínios, o data matching recebeu nomes distintos: estatísticos e pesquisadores de saúde falam em record linkage, cientistas da computação falam em entity resolution, object identification, citation matching (quando aplicado a bases bibliográficas) ou deduplication, e o mundo de negócios usa merge/purge, list washing ou data cleansing dentro do processo de ETL. Essa diversidade terminológica não é cosmética: cada comunidade desenvolveu métodos e métricas próprias antes de perceber que resolvia o mesmo problema.\n\nNa bibliografia científica, o desafio é o citation matching: unir referências de um mesmo artigo citadas de formas distintas (abreviações de autores, variações de título, erros de digitação) para construir grafos de citação corretos, usados em métricas de impacto e em sistemas como o antigo CiteSeer. No e-commerce, o problema é de catálogo: identificar que 'iPhone 13 128GB Azul' e 'Apple iPhone13 128 GB Blue' são o mesmo produto vindo de fornecedores diferentes, essencial para comparação de preços e para evitar duplicação de SKUs. Nas ciências sociais, o linkage permite construir bases longitudinais ligando censos, registros eleitorais e pesquisas de opinião ao longo de décadas, replicando a visão original de Dunn (1946) do 'livro da vida' de cada indivíduo. Já a genealogia usa o mesmo princípio para reconstruir árvores familiares a partir de registros de nascimento, casamento e óbito dispersos em arquivos históricos, frequentemente com grafia inconsistente de nomes.",
+    "como_funciona": "1. Identifique o domínio e sua terminologia nativa (citation matching, product matching, record linkage histórico, genealogical linkage) para falar a língua dos stakeholders.\n2. Mapeie quais atributos são confiáveis em cada contexto: em citações, título e primeiro autor; em e-commerce, SKU parcial, marca e especificações técnicas; em genealogia, nome, data e local de nascimento, muitas vezes com variação ortográfica.\n3. Escolha a técnica de comparação adequada: para texto livre (títulos de artigos, descrições de produtos) use similaridade de string (Jaro-Winkler, TF-IDF) combinada com blocking por atributo estruturado (ISBN, ano).\n4. Para genealogia e ciências sociais, trate o encoding fonético (Soundex, como já usado por Newcombe) como primeira linha de defesa contra variação de grafia de nomes antigos.\n5. Valide os matches com métricas específicas do domínio: taxa de deduplicação de catálogo, precisão/recall do grafo de citações, ou proporção de indivíduos corretamente ligados entre censos.",
+    "exemplo": "Suponha um catálogo de e-commerce com dois registros de fornecedores diferentes:\nA: 'Tênis Nike Air Max 90 Branco Tam 42'\nB: 'Nike AirMax90 Branco 42'\n\nAplicando Jaro-Winkler nos títulos normalizados (minúsculas, sem acento, tokens ordenados), a similaridade token a token fica alta para 'nike', 'airmax90'~'air max 90' (após remoção de espaço, similaridade 1.0) e 'branco'. O atributo numérico '42' casa exatamente. Com peso de Fellegi-Sunter: se m(marca)=0.95, u(marca)=0.05, w = log2(0.95/0.05) = log2(19) ≈ 4.25 bits de evidência a favor do match só pela marca; somando pesos de tamanho e cor (ambos exatos, pesos positivos menores), o escore total supera facilmente o limiar de decisão, classificando o par como match.",
+    "na_pratica": "Em um pipeline de catálogo de e-commerce com Splink, blocking por categoria+marca reduz o espaço de pares antes de comparar títulos normalizados:\nimport splink.comparison_library as cl\nfrom splink import DuckDBAPI, Linker, SettingsCreator, block_on\nsettings = SettingsCreator(link_type='dedupe_only', comparisons=[cl.JaroWinklerAtThresholds('title',[0.9,0.7]), cl.ExactMatch('brand')], blocking_rules_to_generate_predictions=[block_on('brand','category')])\nlinker = Linker(df, settings, db_api=DuckDBAPI())\npred = linker.inference.predict(threshold_match_probability=0.9)\nEm genealogia, o mesmo padrão se aplica trocando 'title' por 'surname' com Soundex pré-aplicado como etapa de normalização antes do blocking.",
+    "armadilha": "Tratar cada domínio como se exigisse um algoritmo totalmente novo é um erro comum; a armadilha real é ignorar que a estrutura Fellegi-Sunter e as técnicas de comparação de string são as mesmas, mudando apenas os atributos e os pesos m/u calibrados para aquele contexto.",
+    "desafio": "Você recebe duas bases de citações científicas. Base A tem o campo 'ref' = 'Fellegi, I., Sunter, A., 1969, A theory for record linkage, JASA'. Base B tem 'ref' = 'I.P. Fellegi and A.B. Sunter (1969). A theory for record linkage. Journal of the American Statistical Association'. Proponha, em texto, uma estratégia de blocking e dois atributos de comparação que maximizem recall sem explodir o espaço de pares, e justifique a escolha.",
+    "gabarito": "Blocking por ano de publicação (1969, extraído via regex) mais primeira letra do sobrenome do primeiro autor ('F') reduz drasticamente o espaço de pares mantendo alto recall, já que ano e inicial de sobrenome raramente variam entre citações da mesma obra. Para comparação, use (1) similaridade de string (Jaro-Winkler ou cosseno TF-IDF) no título normalizado 'a theory for record linkage', que deve ser quase idêntico após remoção de pontuação e minúsculas, e (2) comparação de sobrenomes dos autores via token overlap, já que a ordem e abreviação de nomes variam mas os sobrenomes 'Fellegi' e 'Sunter' aparecem em ambas. A combinação desses dois atributos, com pesos Fellegi-Sunter calibrados, classifica o par como match com alta confiança mesmo com formatação bibliográfica distinta.",
+    "fontes": [
+      "Christen (2012), seç. 1.3, p. 11",
+      "Dunn (1946), conceito do 'book of life'",
+      "Fellegi & Sunter (1969), teoria de pesos m/u",
+      "Newcombe et al. (1959), uso de Soundex em nomes",
+      "Herzog, Scheuren & Winkler (2007), técnicas de qualidade de dados aplicadas a linkage"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        9,
+        21
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2801,
+      "pos_palavras_chave": 8,
+      "aprovados": 5
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 179,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 7,
+      "pos_palavras_chave": 6,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

@@ -1,5 +1,52 @@
 [
  {
+  "data": "2026-10-13",
+  "habilidade": "LLMs",
+  "pct_vagas": 6,
+  "nivel_atual": "nao",
+  "o_que_e": "LLMs (Large Language Models) são modelos de linguagem baseados em transformers treinados em grandes volumes de texto, capazes de gerar, classificar e extrair informação textual. No contexto de entity resolution, são usados para gerar embeddings semânticos de registros, resolver ambiguidades em matching textual complexo, gerar explicações de decisões de matching e criar pipelines de extração de atributos a partir de texto não estruturado. Também aparecem como componente de agentes que orquestram etapas de limpeza, blocking e validação de dados.",
+  "por_que_pedem": "Vagas de ER e MDM estão incorporando LLMs para lidar com dados textuais sujos, sinônimos e contexto semântico que métodos determinísticos e probabilísticos tradicionais não capturam bem. Empresas querem engenheiros que consigam combinar a robustez estatística do record linkage clássico com a flexibilidade semântica dos LLMs, especialmente em casos de nomes, endereços e descrições em linguagem natural. Também é usado para gerar features, explicar decisões de matching para auditoria e automatizar parte do QA manual.",
+  "ponte_com_o_que_voce_sabe": "Você já domina o pipeline inteiro de ER (normalização, blocking, scoring, classificação) com Splink e Elasticsearch, então a curva de aprendizado é baixa: LLMs entram como mais uma fonte de features (embeddings) ou como camada de pós-processamento/explicação, não substituem seu pipeline. Sua experiência com scikit-learn e RapidFuzz facilita entender embeddings vetoriais e similaridade de cosseno, que é a mesma lógica de scoring que você já aplica. Você só precisa aprender a chamar APIs de LLM, gerar embeddings e integrar isso ao fluxo Spark/Elasticsearch que já conhece.",
+  "minimo_para_ficar_apto": [
+   "Entender a diferença entre LLMs generativos (GPT, Llama) e modelos de embeddings (text-embedding-3, sentence-transformers)",
+   "Saber gerar embeddings de texto e usar similaridade de cosseno para comparação semântica, aplicável a blocking e scoring em ER",
+   "Saber usar prompt engineering básico para extração estruturada de atributos (ex: extrair nome/endereço de texto livre) e para gerar explicações de decisões de matching",
+   "Conhecer frameworks de orquestração como LangChain ou LlamaIndex no nível conceitual, mesmo sem ser especialista",
+   "Saber discutir custo, latência e limitações (alucinação, viés) do uso de LLMs em produção para dados sensíveis (saúde, dados pessoais)"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de LLMs e embeddings na documentação da OpenAI e Hugging Face",
+   "3h: fazer um tutorial prático de geração de embeddings com sentence-transformers ou OpenAI API em Python",
+   "3h: implementar comparação de similaridade semântica entre pares de registros (nomes/endereços) usando embeddings, comparando com seu scoring atual do Splink",
+   "2h: estudar prompt engineering básico e extração estruturada (function calling / structured output)",
+   "2h: ler sobre LangChain (conceitos de chains e retrieval) só para entender vocabulário de entrevista",
+   "2h: preparar 2-3 respostas de entrevista conectando LLMs com seu domínio de ER, incluindo riscos e governança de dados sensíveis"
+  ],
+  "mini_projeto": "Crie um protótipo que pega um subconjunto do seu pipeline de ER (por exemplo, pares candidatos gerados pelo blocking do Splink) e adiciona uma feature semântica: gere embeddings dos campos de nome/endereço usando um modelo de embeddings (OpenAI ou sentence-transformers local), calcule a similaridade de cosseno e compare o ganho de performance (precision/recall) ao adicionar essa feature no classificador final do Splink. Documente no GitHub com um README explicando a motivação, arquitetura e resultados, deixando claro que é um experimento de enriquecimento semântico sobre pipeline determinístico/probabilístico já existente.",
+  "como_colocar_no_curriculo": "Experimentação com embeddings de LLMs (OpenAI, sentence-transformers) para enriquecimento semântico de features em pipelines de entity resolution baseados em Splink, com foco em melhoria de precision/recall em matching textual complexo.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Como você usaria LLMs para melhorar um pipeline de entity resolution já existente?",
+    "resposta": "Eu não substituiria o pipeline determinístico/probabilístico, mas adicionaria embeddings semânticos como feature extra no scoring, especialmente útil para campos textuais ambíguos como nomes e endereços com variações não capturadas por fuzzy matching tradicional. Também usaria LLMs para gerar explicações legíveis das decisões de matching, facilitando auditoria e QA."
+   },
+   {
+    "pergunta": "Quais são os riscos de usar LLMs em dados sensíveis, como saúde ou registro civil?",
+    "resposta": "Os principais riscos são vazamento de dados ao usar APIs externas, alucinação gerando informações incorretas, viés embutido no modelo e falta de auditabilidade das decisões. Por isso, prefiro modelos locais ou on-premise para dados sensíveis, e sempre uso LLM como camada auxiliar, nunca como decisor final sem validação humana ou estatística."
+   },
+   {
+    "pergunta": "Qual a diferença entre usar embeddings de LLM e as técnicas de similaridade que você já usa com RapidFuzz?",
+    "resposta": "RapidFuzz mede similaridade sintática baseada em edição de caracteres (Levenshtein, Jaro-Winkler), útil para erros de digitação. Embeddings de LLM capturam similaridade semântica, útil para sinônimos, abreviações e contexto, como 'Rua das Flores' e 'R. das Flores, 123' terem representações vetoriais próximas mesmo com diferenças textuais maiores."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial da OpenAI (platform.openai.com/docs)",
+   "Documentação do Hugging Face (sentence-transformers e transformers)",
+   "Documentação do LangChain",
+   "Curso 'ChatGPT Prompt Engineering for Developers' da DeepLearning.AI",
+   "Documentação oficial do Splink sobre integração de features customizadas"
+  ]
+ },
+ {
   "data": "2026-10-12",
   "habilidade": "Neo4j",
   "pct_vagas": 6,

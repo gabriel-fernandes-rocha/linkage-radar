@@ -1,36 +1,43 @@
 {
- "data": "2026-10-12",
- "status": "ok",
+ "data": "2026-10-13",
+ "status": "problema",
  "checks": [
   {
-   "status": "ok",
-   "nome": "Cota SerpAPI",
-   "detalhe": "70 buscas restantes para 20 dias (~3/dia; LinkedIn e pessoas têm prioridade)"
+   "status": "problema",
+   "nome": "Vagas Jobicy",
+   "detalhe": "a fonte deu erro nesta coleta"
+  },
+  {
+   "status": "atencao",
+   "nome": "Papers Semantic Scholar",
+   "detalhe": "0 itens, bem abaixo do normal (20/dia)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 270,
-  "jobs/greenhouse": 1383,
-  "jobs/lever": 310,
-  "jobs/ashby": 37,
+  "jobs/remotive": 225,
+  "jobs/greenhouse": 1392,
+  "jobs/lever": 311,
+  "jobs/ashby": 35,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 1,
-  "jobs/gupy": 220,
-  "jobs/himalayas": 96,
-  "jobs/jobicy": 132,
+  "jobs/serpapi_google_jobs": 0,
+  "jobs/gupy": 218,
+  "jobs/himalayas": 97,
+  "jobs/jobicy": -1,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 128,
-  "jobs/social_posts": 2,
-  "papers/arxiv": 6,
+  "jobs/weworkremotely": 135,
+  "jobs/social_posts": 7,
+  "papers/arxiv": 4,
   "papers/openalex": 175,
-  "papers/semantic_scholar": 20,
-  "linkedin/posts": 9,
-  "network/perfis": 8
+  "papers/semantic_scholar": 0,
+  "linkedin/posts": 7,
+  "network/perfis": 3
  },
  "falhas": [
-  "papers: busca 'record linkage' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=record+linkage&publicationDateOrYear=2026-10-04%3A&fields=title%2Curl%2Cabstract%2Cauthors%2C",
-  "papers: busca 'entity resolution' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+resolution&publicationDateOrYear=2026-10-04%3A&fields=title%2Curl%2Cabstract%2Cauth"
+  "jobs/jobicy falhou: cannot access local variable 'wait' where it is not associated with a value",
+  "papers: busca 'record linkage' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=record+linkage&publicationDateOrYear=2026-10-06%3A&fields=title%2Curl%2Cabstract%2Cauthors%2C",
+  "papers: busca 'entity resolution' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+resolution&publicationDateOrYear=2026-10-06%3A&fields=title%2Curl%2Cabstract%2Cauth",
+  "papers: busca 'entity matching' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+matching&publicationDateOrYear=2026-10-06%3A&fields=title%2Curl%2Cabstract%2Cauthors%"
  ]
 }
