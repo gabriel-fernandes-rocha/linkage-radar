@@ -1,46 +1,45 @@
 {
+ "_perfil_hash": {
+  "nivel": "6b9881e72cfb",
+  "nome": "_perfil_hash"
+ },
  "adtech": {
-  "motivo": "sem evidência",
+  "motivo": "atua em saúde pública, não adtech",
   "nivel": "nao",
   "nome": "AdTech"
  },
  "agent frameworks": {
-  "motivo": "sem evidência",
+  "motivo": "sem menção a agentes de IA",
   "nivel": "nao",
   "nome": "Agent frameworks"
  },
  "amazon neptune": {
-  "motivo": "sem evidência de grafo cloud",
+  "motivo": "sem evidência de grafo/Neptune",
   "nivel": "nao",
   "nome": "Amazon Neptune"
  },
  "angular": {
-  "motivo": "sem evidência no currículo",
+  "motivo": "sem evidência de frontend",
   "nivel": "nao",
   "nome": "Angular"
  },
  "api enrichment": {
-  "motivo": "sem evidência no currículo",
-  "nivel": "nao",
+  "motivo": "integra dados administrativos, próximo a enriquecimento",
+  "nivel": "parcial",
   "nome": "API Enrichment"
  },
  "api rest": {
-  "motivo": "sem evidência no currículo",
+  "motivo": "sem evidência de consumo/criação de APIs",
   "nivel": "nao",
   "nome": "API REST"
  },
- "apis": {
-  "motivo": "provável uso em pipelines, não declarado",
-  "nivel": "parcial",
-  "nome": "APIs"
- },
  "athena": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "Athena"
  },
  "aws": {
-  "motivo": "sem evidência de cloud",
+  "motivo": "nenhuma menção a cloud AWS",
   "nivel": "nao",
   "nome": "AWS"
  },
@@ -50,152 +49,152 @@
   "nome": "AWS CDK"
  },
  "aws glue": {
-  "motivo": "experiência com ETL/Spark, não Glue especificamente",
-  "nivel": "parcial",
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
   "nome": "AWS Glue"
  },
  "aws machine learning": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "AWS Machine Learning"
  },
  "azure": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de cloud Azure",
   "nivel": "nao",
   "nome": "Azure"
  },
  "b2b company data": {
-  "motivo": "sem evidência",
+  "motivo": "trabalha com dados públicos de saúde, não B2B",
   "nivel": "nao",
   "nome": "B2B company data"
  },
  "beam": {
-  "motivo": "sem evidência de uso",
-  "nivel": "nao",
+  "motivo": "experiência com pipelines batch similares ao Beam",
+  "nivel": "parcial",
   "nome": "Beam"
  },
  "big data platforms": {
-  "motivo": "Spark, Big Data em produção",
+  "motivo": "trabalha com bilhões de registros, Spark",
   "nivel": "tem",
   "nome": "big data platforms"
  },
  "bigquery": {
-  "motivo": "experiência com SQL e data warehouse em geral",
-  "nivel": "parcial",
+  "motivo": "sem evidência de uso de BigQuery",
+  "nivel": "nao",
   "nome": "BigQuery"
  },
  "bitbucket": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
+  "motivo": "usa Git, ferramenta próxima",
+  "nivel": "parcial",
   "nome": "Bitbucket"
  },
  "blocking": {
-  "motivo": "etapa do pipeline dominada",
+  "motivo": "parte central do pipeline de matching",
   "nivel": "tem",
   "nome": "blocking"
  },
  "braze": {
-  "motivo": "sem evidência",
+  "motivo": "sem relação com marketing/CRM",
   "nivel": "nao",
   "nome": "Braze"
  },
  "candidate generation": {
-  "motivo": "blocking é geração de candidatos",
+  "motivo": "implícito no blocking/matching",
   "nivel": "tem",
   "nome": "candidate generation"
  },
  "ccpa": {
-  "motivo": "sem evidência de compliance",
+  "motivo": "sem menção a compliance de privacidade EUA",
   "nivel": "nao",
   "nome": "CCPA"
  },
  "claude": {
-  "motivo": "sem evidência",
+  "motivo": "sem menção a LLMs/Claude",
   "nivel": "nao",
   "nome": "Claude"
  },
  "clinical ontologies": {
-  "motivo": "sem evidência direta",
+  "motivo": "trabalha com registros não ontologias clínicas",
   "nivel": "nao",
   "nome": "Clinical ontologies"
  },
  "clojure": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso dessa linguagem",
   "nivel": "nao",
   "nome": "Clojure"
  },
  "clustering": {
-  "motivo": "entity resolution usa agrupamento implícito",
-  "nivel": "parcial",
+  "motivo": "resolução de entidades envolve clustering",
+  "nivel": "tem",
   "nome": "clustering"
  },
  "cpra": {
-  "motivo": "sem evidência de compliance",
+  "motivo": "sem menção a compliance de privacidade EUA",
   "nivel": "nao",
   "nome": "CPRA"
  },
  "ctv": {
-  "motivo": "sem evidência de Connected TV",
+  "motivo": "sem relação com connected TV",
   "nivel": "nao",
   "nome": "CTV"
  },
  "cypher": {
-  "motivo": "sem evidência de linguagem grafo",
+  "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
   "nome": "Cypher"
  },
  "data annotation": {
-  "motivo": "classificação de matches sugere experiência próxima",
-  "nivel": "parcial",
+  "motivo": "sem evidência de rotulagem manual de dados",
+  "nivel": "nao",
   "nome": "Data Annotation"
  },
  "data classification": {
-  "motivo": "etapa de classificação no pipeline de matching",
+  "motivo": "classificação faz parte do pipeline de matching",
   "nivel": "tem",
   "nome": "Data Classification"
  },
  "data enrichment": {
-  "motivo": "normalização e matching próximos a enriquecimento",
+  "motivo": "integra fontes de dados, próximo a enriquecimento",
   "nivel": "parcial",
   "nome": "Data Enrichment"
  },
  "data governance": {
-  "motivo": "faz QA de dados, não governança formal",
+  "motivo": "qualidade de dados próxima a governança",
   "nivel": "parcial",
   "nome": "Data Governance"
  },
  "data matching": {
-  "motivo": "matching determinístico/probabilístico em produção",
+  "motivo": "core da atuação profissional",
   "nivel": "tem",
   "nome": "Data Matching"
  },
  "data normalization": {
-  "motivo": "etapa explícita do pipeline",
+  "motivo": "normalização faz parte explícita do pipeline",
   "nivel": "tem",
   "nome": "Data Normalization"
  },
  "data quality": {
-  "motivo": "QA de pipeline em produção",
+  "motivo": "garantia de qualidade explícita no trabalho",
   "nivel": "tem",
   "nome": "Data Quality"
  },
  "data review": {
-  "motivo": "QA no pipeline relacionado a revisão",
+  "motivo": "QA de matching próximo a revisão de dados",
   "nivel": "parcial",
   "nome": "Data Review"
  },
  "data transformation": {
-  "motivo": "ETL e normalização em pipelines de dados",
+  "motivo": "ETL e normalização fazem parte do pipeline",
   "nivel": "tem",
   "nome": "Data Transformation"
  },
  "data verification": {
-  "motivo": "QA e matching garantem verificação de dados",
-  "nivel": "tem",
+  "motivo": "validação de matches próxima a verificação",
+  "nivel": "parcial",
   "nome": "Data Verification"
  },
  "databricks": {
-  "motivo": "domina Spark, não Databricks especificamente",
+  "motivo": "domina Spark, base próxima a Databricks",
   "nivel": "parcial",
   "nome": "Databricks"
  },
@@ -204,583 +203,478 @@
   "nivel": "nao",
   "nome": "Dataset Documentation"
  },
- "db2": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "DB2"
- },
  "dedupe": {
-  "motivo": "deduplication declarada e usada",
+  "motivo": "deduplicação é parte central do trabalho",
   "nivel": "tem",
   "nome": "Dedupe"
  },
  "deduplication": {
-  "motivo": "declarada e prática",
+  "motivo": "deduplicação explícita no currículo",
   "nivel": "tem",
   "nome": "Deduplication"
  },
- "deduplicação": {
-  "motivo": "mesma habilidade em português",
-  "nivel": "tem",
-  "nome": "Deduplicação"
- },
  "delta lake": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
+  "motivo": "usa Spark/data lake, próximo a Delta Lake",
+  "nivel": "parcial",
   "nome": "Delta Lake"
  },
  "deterministic matching": {
-  "motivo": "domina matching determinístico em produção",
+  "motivo": "usa matching determinístico no trabalho",
   "nivel": "tem",
   "nome": "Deterministic Matching"
  },
  "distributed data processing": {
-  "motivo": "usa Spark/PySpark em produção",
+  "motivo": "usa Spark em produção para bilhões de registros",
   "nivel": "tem",
   "nome": "Distributed Data Processing"
  },
  "dynamodb": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de NoSQL além de Elasticsearch",
   "nivel": "nao",
   "nome": "DynamoDB"
  },
  "elixir": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de linguagem Elixir",
   "nivel": "nao",
   "nome": "Elixir"
  },
  "embeddings": {
-  "motivo": "usa scikit-learn/scoring, próximo a embeddings",
+  "motivo": "scikit-learn, mas sem evidência direta",
   "nivel": "parcial",
-  "nome": "Embeddings"
+  "nome": "embeddings"
  },
  "entity resolution": {
-  "motivo": "especialização declarada",
+  "motivo": "foco central do trabalho",
   "nivel": "tem",
-  "nome": "Entity resolution"
+  "nome": "entity resolution"
  },
  "etl": {
-  "motivo": "pipeline completo de dados citado",
+  "motivo": "desenvolve pipeline completo de ingestão e processamento",
   "nivel": "tem",
   "nome": "ETL"
  },
  "evaluation harness": {
-  "motivo": "faz QA de matching, não exatamente isso",
+  "motivo": "avalia matching, falta framework formal de evaluation",
   "nivel": "parcial",
   "nome": "Evaluation harness"
  },
- "fastlink": {
-  "motivo": "usa Splink, ferramenta similar",
-  "nivel": "parcial",
-  "nome": "FastLink"
- },
- "fedramp": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "FedRAMP"
- },
  "fellegi-sunter": {
-  "motivo": "declarado explicitamente nas habilidades",
+  "motivo": "usa matching probabilístico, base Fellegi-Sunter",
   "nivel": "tem",
   "nome": "Fellegi-Sunter"
  },
  "fhir": {
-  "motivo": "sem evidência de padrão saúde",
+  "motivo": "sem evidência de padrão FHIR em saúde",
   "nivel": "nao",
   "nome": "FHIR"
  },
- "fisma": {
-  "motivo": "sem evidência compliance",
-  "nivel": "nao",
-  "nome": "FISMA"
- },
  "flink": {
-  "motivo": "sem evidência de uso",
+  "motivo": "sem evidência de uso de Flink",
   "nivel": "nao",
   "nome": "Flink"
  },
  "fuzzy matching": {
-  "motivo": "RapidFuzz e fuzzy matching usados",
+  "motivo": "usa RapidFuzz diretamente",
   "nivel": "tem",
-  "nome": "Fuzzy matching"
+  "nome": "fuzzy matching"
  },
  "gcp": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de cloud GCP",
   "nivel": "nao",
   "nome": "GCP"
  },
  "gdpr": {
-  "motivo": "sem evidência compliance",
+  "motivo": "sem evidência de compliance GDPR, dados são BR",
   "nivel": "nao",
   "nome": "GDPR"
  },
  "golden records": {
-  "motivo": "próximo de entity resolution/MDM",
+  "motivo": "conceito MDM próximo de deduplicação/resolução praticada",
   "nivel": "parcial",
   "nome": "Golden Records"
  },
  "graph databases": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "graph databases"
  },
  "graph modeling": {
-  "motivo": "entity resolution relacionado, sem evidência direta",
+  "motivo": "clustering de entidades implica modelagem de grafos",
   "nivel": "parcial",
   "nome": "Graph Modeling"
  },
  "graphframes": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
+  "motivo": "usa Spark, próximo de GraphFrames",
+  "nivel": "parcial",
   "nome": "GraphFrames"
  },
  "graphrag": {
-  "motivo": "sem evidência LLM/grafo",
+  "motivo": "sem evidência de RAG ou LLM com grafos",
   "nivel": "nao",
   "nome": "GraphRAG"
  },
  "gremlin": {
-  "motivo": "sem evidência grafo",
+  "motivo": "sem evidência de linguagem de consulta a grafos",
   "nivel": "nao",
   "nome": "Gremlin"
  },
  "h2o": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso de H2O.ai",
   "nivel": "nao",
   "nome": "H2O"
  },
- "hadoop": {
-  "motivo": "usa Spark, big data relacionado",
-  "nivel": "parcial",
-  "nome": "Hadoop"
- },
  "hierarquias parent-child": {
-  "motivo": "sem evidência no currículo",
-  "nivel": "nao",
+  "motivo": "MDM/golden record implica relações hierárquicas",
+  "nivel": "parcial",
   "nome": "Hierarquias Parent-Child"
  },
  "hl7": {
-  "motivo": "sem evidência padrão saúde",
+  "motivo": "sem evidência de padrão de interoperabilidade em saúde",
   "nivel": "nao",
   "nome": "HL7"
  },
  "hugging face": {
-  "motivo": "sem evidência NLP/LLM",
+  "motivo": "sem evidência de uso de Hugging Face",
   "nivel": "nao",
   "nome": "Hugging Face"
  },
- "hugging face transformers": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "Hugging Face Transformers"
- },
  "ia": {
-  "motivo": "usa scikit-learn e matching probabilístico, não IA ampla",
+  "motivo": "scikit-learn e matching probabilístico, sem IA avançada",
   "nivel": "parcial",
   "nome": "IA"
  },
  "ibm mdm": {
-  "motivo": "sem evidência ferramenta MDM",
+  "motivo": "sem evidência de plataforma IBM MDM",
   "nivel": "nao",
   "nome": "IBM MDM"
  },
  "ibm mdm certification": {
-  "motivo": "sem evidência de certificação IBM MDM",
+  "motivo": "sem certificação IBM MDM",
   "nivel": "nao",
   "nome": "IBM MDM Certification"
  },
  "identity graph": {
-  "motivo": "próximo de entity resolution",
+  "motivo": "entity resolution próximo do conceito de identity graph",
   "nivel": "parcial",
   "nome": "Identity Graph"
  },
  "identity resolution": {
-  "motivo": "equivalente a entity resolution",
+  "motivo": "faz resolução de identidades em escala nacional",
   "nivel": "tem",
-  "nome": "Identity Resolution"
+  "nome": "Identity resolution"
  },
  "informatica": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência da ferramenta Informatica",
   "nivel": "nao",
   "nome": "Informatica"
  },
  "informatica mdm": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência da plataforma Informatica MDM",
   "nivel": "nao",
   "nome": "Informatica MDM"
  },
  "infrastructure as code": {
-  "motivo": "sem menção a IaC",
+  "motivo": "sem evidência de IaC no currículo",
   "nivel": "nao",
   "nome": "Infrastructure as Code"
  },
- "jaccard similarity": {
-  "motivo": "usa técnicas de similaridade fuzzy",
-  "nivel": "parcial",
-  "nome": "Jaccard similarity"
- },
  "janusgraph": {
-  "motivo": "sem evidência grafo",
+  "motivo": "sem evidência de uso de grafos distribuídos",
   "nivel": "nao",
   "nome": "JanusGraph"
  },
- "jaro-winkler": {
-  "motivo": "usa RapidFuzz, técnica similar",
-  "nivel": "parcial",
-  "nome": "Jaro-Winkler"
- },
  "java": {
-  "motivo": "sem evidência",
+  "motivo": "sem menção a Java no currículo",
   "nivel": "nao",
   "nome": "Java"
  },
- "jenkins": {
-  "motivo": "sem evidência CI/CD",
-  "nivel": "nao",
-  "nome": "Jenkins"
- },
  "kafka": {
-  "motivo": "sem evidência de uso",
+  "motivo": "sem evidência de streaming com Kafka",
   "nivel": "nao",
   "nome": "Kafka"
  },
  "knowledge graphs": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "Knowledge Graphs"
+  "motivo": "clustering de entidades próximo de grafos de conhecimento",
+  "nivel": "parcial",
+  "nome": "Knowledge graphs"
  },
  "langchain": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "LangChain"
  },
  "langgraph": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "LangGraph"
  },
- "levenshtein": {
-  "motivo": "usa fuzzy matching com RapidFuzz",
-  "nivel": "parcial",
-  "nome": "Levenshtein"
- },
- "levenshtein distance": {
-  "motivo": "usa fuzzy matching com RapidFuzz",
-  "nivel": "parcial",
-  "nome": "Levenshtein distance"
- },
  "liveramp": {
-  "motivo": "sem evidência",
+  "motivo": "plataforma específica não mencionada",
   "nivel": "nao",
   "nome": "LiveRamp"
  },
  "llm agents": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso de agentes LLM",
   "nivel": "nao",
   "nome": "LLM agents"
  },
  "llms": {
-  "motivo": "sem evidência de uso",
+  "motivo": "sem evidência de uso de LLMs",
   "nivel": "nao",
   "nome": "LLMs"
  },
  "looker": {
-  "motivo": "sem evidência",
+  "motivo": "BI tool não mencionada, mas BI próximo",
   "nivel": "nao",
   "nome": "Looker"
  },
  "machine learning": {
-  "motivo": "usa scikit-learn em scoring/classificação",
-  "nivel": "tem",
+  "motivo": "usa scikit-learn e classificação em matching",
+  "nivel": "parcial",
   "nome": "Machine Learning"
  },
  "martech": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de marketing tech",
   "nivel": "nao",
   "nome": "MarTech"
  },
  "master data management": {
-  "motivo": "entity resolution relacionado, sem MDM explícito",
+  "motivo": "conceitos próximos ao golden record",
   "nivel": "parcial",
-  "nome": "Master Data Management"
+  "nome": "master data management"
  },
  "match & merge": {
-  "motivo": "record linkage e matching são core",
-  "nivel": "tem",
+  "motivo": "faz matching/classificação, próximo de merge rules",
+  "nivel": "parcial",
   "nome": "Match & Merge"
  },
  "match 360": {
-  "motivo": "experiência em matching/record linkage similar, ferramenta diferente",
-  "nivel": "parcial",
+  "motivo": "plataforma específica não usada",
+  "nivel": "nao",
   "nome": "Match 360"
  },
  "matching": {
-  "motivo": "especialista em matching determinístico/probabilístico",
+  "motivo": "core da experiência profissional",
   "nivel": "tem",
-  "nome": "Matching"
+  "nome": "matching"
  },
  "matching algorítmico": {
-  "motivo": "blocking, scoring, Fellegi-Sunter, fuzzy matching",
+  "motivo": "core do trabalho com matching determinístico/probabilístico",
   "nivel": "tem",
   "nome": "Matching Algorítmico"
  },
  "metaflow": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso dessa ferramenta",
   "nivel": "nao",
   "nome": "Metaflow"
  },
- "metaphone": {
-  "motivo": "fuzzy matching similar, não citado diretamente",
-  "nivel": "parcial",
-  "nome": "Metaphone"
- },
  "mlflow": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso de MLOps tools",
   "nivel": "nao",
   "nome": "MLflow"
  },
  "modelagem de dados": {
-  "motivo": "pipelines e normalização de dados",
-  "nivel": "parcial",
+  "motivo": "implícito em pipelines de dados estruturados",
+  "nivel": "tem",
   "nome": "modelagem de dados"
  },
  "mparticle": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "mParticle"
  },
- "named entity recognition": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "Named Entity Recognition"
- },
  "neo4j": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso de grafos",
   "nivel": "nao",
   "nome": "Neo4j"
  },
  "neptune": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso AWS Neptune",
   "nivel": "nao",
   "nome": "Neptune"
  },
- "nist 800-53": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "NIST 800-53"
- },
  "nlp": {
-  "motivo": "normalização de texto, sem NLP explícito",
+  "motivo": "normalização textual e fuzzy matching próximos de NLP",
   "nivel": "parcial",
   "nome": "NLP"
  },
- "nltk": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "NLTK"
- },
  "nosql": {
-  "motivo": "Elasticsearch usado, não NoSQL geral",
-  "nivel": "parcial",
+  "motivo": "usa Elasticsearch como NoSQL de busca",
+  "nivel": "tem",
   "nome": "NoSQL"
  },
  "ocr": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de processamento de imagens",
   "nivel": "nao",
   "nome": "OCR"
  },
  "ontology": {
-  "motivo": "sem evidência no currículo",
+  "motivo": "sem evidência de modelagem ontológica",
   "nivel": "nao",
   "nome": "Ontology"
  },
- "oracle": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "Oracle"
- },
  "owl": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de ontologias formais",
   "nivel": "nao",
   "nome": "OWL"
  },
  "pairwise scoring": {
-  "motivo": "scoring em matching probabilístico",
+  "motivo": "parte do Fellegi-Sunter/matching probabilístico",
   "nivel": "tem",
   "nome": "pairwise scoring"
  },
  "pgvector": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso específico",
   "nivel": "nao",
   "nome": "pgvector"
  },
  "postgresql": {
-  "motivo": "domina SQL genérico",
+  "motivo": "domina SQL, fácil adaptação a Postgres",
   "nivel": "parcial",
   "nome": "PostgreSQL"
  },
  "power bi": {
-  "motivo": "tem BI, não cita Power BI",
-  "nivel": "parcial",
+  "motivo": "sem evidência de uso de Power BI",
+  "nivel": "nao",
   "nome": "Power BI"
  },
  "privacy enhancing technologies": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência direta, mas trabalha com dados sensíveis",
   "nivel": "nao",
   "nome": "Privacy Enhancing Technologies"
  },
  "probabilistic matching": {
-  "motivo": "experiência prática com Splink/Fellegi-Sunter",
+  "motivo": "usa matching probabilístico em produção",
   "nivel": "tem",
-  "nome": "Probabilistic Matching"
+  "nome": "Probabilistic matching"
  },
  "programação orientada a objetos": {
-  "motivo": "Python implica OOP básico",
+  "motivo": "Python implica OOP, sem confirmação explícita",
   "nivel": "parcial",
   "nome": "programação orientada a objetos"
  },
  "protobuf": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de serialização Protobuf",
   "nivel": "nao",
   "nome": "Protobuf"
  },
  "publish/subscribe": {
-  "motivo": "sem evidência de mensageria",
+  "motivo": "sem evidência de mensageria pub/sub no currículo",
   "nivel": "nao",
   "nome": "publish/subscribe"
  },
  "python": {
-  "motivo": "stack principal",
+  "motivo": "linguagem principal usada em pipelines",
   "nivel": "tem",
   "nome": "Python"
  },
  "pytorch": {
-  "motivo": "usa scikit-learn, não PyTorch",
+  "motivo": "sem evidência de deep learning frameworks",
   "nivel": "nao",
   "nome": "PyTorch"
  },
  "quality control": {
-  "motivo": "etapa de QA explícita no pipeline",
+  "motivo": "garantia de qualidade parte do pipeline",
   "nivel": "tem",
   "nome": "Quality Control"
  },
  "rag": {
-  "motivo": "sem evidência de RAG/LLM",
+  "motivo": "sem evidência de retrieval-augmented generation",
   "nivel": "nao",
   "nome": "RAG"
  },
  "rdf": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de modelos semânticos RDF",
   "nivel": "nao",
   "nome": "RDF"
  },
  "react": {
-  "motivo": "sem evidência no currículo",
+  "motivo": "sem evidência de desenvolvimento frontend",
   "nivel": "nao",
   "nome": "React"
  },
  "record linkage": {
-  "motivo": "especialização central do candidato",
+  "motivo": "especialidade central do candidato",
   "nivel": "tem",
   "nome": "Record linkage"
  },
- "recordlinkage": {
-  "motivo": "domínio prático da área",
-  "nivel": "tem",
-  "nome": "recordlinkage"
- },
- "regex": {
-  "motivo": "normalização de dados provável uso",
-  "nivel": "parcial",
-  "nome": "Regex"
- },
- "reinforcement learning": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
-  "nome": "Reinforcement learning"
- },
  "reltio": {
-  "motivo": "sem evidência",
+  "motivo": "plataforma MDM específica não usada",
   "nivel": "nao",
   "nome": "Reltio"
  },
  "reltio cloud": {
-  "motivo": "sem evidência",
+  "motivo": "plataforma específica não usada",
   "nivel": "nao",
   "nome": "Reltio Cloud"
  },
  "rest apis": {
-  "motivo": "sem evidência explícita",
+  "motivo": "sem menção direta a APIs REST",
   "nivel": "nao",
   "nome": "REST APIs"
  },
  "retrieval": {
-  "motivo": "Elasticsearch usado para matching/busca",
+  "motivo": "blocking/indexação próximo de retrieval de dados",
   "nivel": "parcial",
   "nome": "Retrieval"
  },
  "s3": {
-  "motivo": "sem evidência direta",
+  "motivo": "sem evidência de uso AWS S3",
   "nivel": "nao",
   "nome": "S3"
  },
  "sagemaker": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de AWS",
   "nivel": "nao",
   "nome": "SageMaker"
  },
  "scala": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência, usa Python no Spark",
   "nivel": "nao",
   "nome": "Scala"
  },
  "scikit-learn": {
-  "motivo": "stack declarado",
+  "motivo": "listado explicitamente como conhecimento usado",
   "nivel": "tem",
   "nome": "scikit-learn"
  },
  "segment": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "Segment"
  },
  "semantic search": {
-  "motivo": "usa Elasticsearch, próximo a busca semântica",
+  "motivo": "usa Elasticsearch, próximo de busca semântica",
   "nivel": "parcial",
   "nome": "Semantic search"
  },
  "semarchy": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de MDM específico",
   "nivel": "nao",
   "nome": "Semarchy"
  },
  "similarity scoring": {
-  "motivo": "scoring matching, fuzzy matching, Splink",
+  "motivo": "core do matching com Splink/RapidFuzz",
   "nivel": "tem",
   "nome": "Similarity Scoring"
  },
  "snowflake": {
-  "motivo": "experiência com SQL e data warehouse",
+  "motivo": "sabe SQL, base próxima",
   "nivel": "parcial",
   "nome": "Snowflake"
  },
- "soundex": {
-  "motivo": "fuzzy/blocking relacionado, não citado",
-  "nivel": "parcial",
-  "nome": "Soundex"
- },
  "spacy": {
-  "motivo": "sem evidência",
+  "motivo": "sem menção a NLP com spaCy no currículo",
   "nivel": "nao",
   "nome": "spaCy"
  },
  "spark": {
-  "motivo": "stack principal, pipelines em produção",
+  "motivo": "usa Spark em produção",
   "nivel": "tem",
   "nome": "Spark"
  },
  "sparql": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "SPARQL"
  },
@@ -790,72 +684,62 @@
   "nome": "Splink"
  },
  "sql": {
-  "motivo": "stack declarado",
+  "motivo": "usa SQL em produção",
   "nivel": "tem",
   "nome": "SQL"
  },
- "sql server": {
-  "motivo": "domina SQL genérico",
-  "nivel": "parcial",
-  "nome": "SQL Server"
- },
  "statistics": {
-  "motivo": "matching probabilístico/Fellegi-Sunter envolve estatística",
-  "nivel": "parcial",
+  "motivo": "base estatística para matching probabilístico",
+  "nivel": "tem",
   "nome": "Statistics"
  },
  "stibo step": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de MDM específico",
   "nivel": "nao",
   "nome": "Stibo STEP"
  },
  "structured output": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
+  "motivo": "pipelines estruturados, não explícito em LLM",
+  "nivel": "parcial",
   "nome": "Structured output"
  },
  "survivorship rules": {
-  "motivo": "QA e resolução de entidades relacionados",
+  "motivo": "conceito próximo de resolução/merge de entidades que já faz",
   "nivel": "parcial",
   "nome": "survivorship rules"
  },
  "svn": {
-  "motivo": "sem evidência",
-  "nivel": "nao",
+  "motivo": "controle de versão similar a Git",
+  "nivel": "parcial",
   "nome": "SVN"
  },
  "tableau": {
-  "motivo": "tem BI, não cita Tableau",
-  "nivel": "parcial",
+  "motivo": "sem evidência de BI visual",
+  "nivel": "nao",
   "nome": "Tableau"
  },
  "tensorflow": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência, usa scikit-learn",
   "nivel": "nao",
   "nome": "TensorFlow"
  },
  "terraform": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de infraestrutura como código",
   "nivel": "nao",
   "nome": "Terraform"
  },
- "tf-idf": {
-  "motivo": "scoring/blocking pode usar, não citado",
-  "nivel": "parcial",
-  "nome": "TF-IDF"
- },
  "tibco ebx": {
-  "motivo": "sem evidência de MDM/Tibco",
+  "motivo": "sem evidência de MDM específico",
   "nivel": "nao",
   "nome": "Tibco EBX"
  },
  "tigergraph": {
-  "motivo": "sem evidência",
+  "motivo": "sem evidência de grafo específico",
   "nivel": "nao",
   "nome": "TigerGraph"
  },
  "transformers": {
-  "motivo": "sem menção a NLP/transformers",
+  "motivo": "sem evidência de uso de NLP profundo",
   "nivel": "nao",
   "nome": "Transformers"
  },
@@ -865,17 +749,17 @@
   "nome": "TypeScript"
  },
  "web scraping": {
-  "motivo": "sem menção a scraping",
+  "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "Web scraping"
  },
  "xgboost": {
-  "motivo": "usa scikit-learn, ML correlato",
+  "motivo": "sabe scikit-learn, base próxima",
   "nivel": "parcial",
   "nome": "XGBoost"
  },
  "zingg": {
-  "motivo": "usa Splink, ferramenta similar de entity resolution",
+  "motivo": "ferramenta similar a Splink",
   "nivel": "parcial",
   "nome": "Zingg"
  }

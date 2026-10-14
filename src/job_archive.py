@@ -44,27 +44,7 @@ def update(new_jobs: list[dict], open_now: list[dict], day: str) -> list[dict]:
     return archive
 
 
-def _rank(jobs: list[dict]) -> dict:
-    must, nice, any_ = Counter(), Counter(), Counter()
-    for j in jobs:
-        req = j.get("requisitos") or {}
-        must.update(req.get("obrigatorios", []))
-        nice.update(req.get("desejaveis", []))
-        any_.update(set(req.get("obrigatorios", [])) | set(req.get("desejaveis", [])))
-    n = sum(1 for j in jobs if j.get("requisitos"))
-    rows = [{"nome": k, "vagas": c, "pct": round(100 * c / n) if n else 0,
-             "obrigatorio": must[k], "desejavel": nice[k]} for k, c in any_.most_common(60)]
-    return {"vagas_analisadas": n, "ranking": rows}
-
-
 def write_skills(archive: list[dict], day: str) -> dict:
-    since = (date.fromisoformat(day) - timedelta(days=90)).isoformat()
-    stats = {
-        "atualizado_em": day,
-        "geral": _rank(archive),
-        "ultimos_90_dias": _rank([j for j in archive if j.get("primeira_vez", "") >= since]),
-        "senioridade": Counter(j.get("senioridade", "nao_informado") for j in archive).most_common(),
-        "modalidade": Counter(j.get("modalidade", "nao_informado") for j in archive).most_common(),
-    }
-    SKILLS.write_text(json.dumps(stats, ensure_ascii=False, indent=1), "utf-8")
-    return stats
+    import market
+
+    return market.write(archive, day)

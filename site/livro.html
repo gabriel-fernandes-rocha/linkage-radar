@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Livro · Linkage Radar</title>
+  <style>
+    :root { --bg: #f5f6f8; --fg: #16181d; --muted: #5d6470; --card: #fff; --line: #e3e6eb; --accent: #1f6feb; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0e1116; --fg: #e6e9ee; --muted: #9aa3ae; --card: #161b22; --line: #2a313b; --accent: #58a6ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    header { position: sticky; top: 0; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 8px 12px;
+      background: var(--card); border-bottom: 1px solid var(--line); z-index: 2; }
+    button, input { font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--fg); }
+    button { cursor: pointer; font-weight: 600; color: var(--accent); }
+    input { width: 5.5em; text-align: center; }
+    #info { color: var(--muted); font-size: .85rem; }
+    main { display: flex; justify-content: center; padding: 12px; }
+    canvas { max-width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.15); }
+    #msg { max-width: 640px; margin: 24px auto; padding: 0 16px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="prev" type="button">◀</button>
+    <label>Página do livro <input id="page" inputmode="numeric"></label>
+    <button id="next" type="button">▶</button>
+    <span id="info"></span>
+    <button id="cfg" type="button">Trocar link</button>
+  </header>
+  <main><canvas id="cv"></canvas></main>
+  <div id="msg"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    // Visualizador do SEU exemplar do livro. O link do PDF nunca é salvo no site:
+    // vem do seu navegador (localStorage) ou do próprio link da mensagem (#src=..., parte que não vai a servidor).
+    const OFFSET = 16;  // página impressa + 16 = página do PDF
+    const KEY = "linkageRadar.bookUrl";
+    const params = new URLSearchParams(location.hash.slice(1));
+    const store = { get() { try { return localStorage.getItem(KEY) || ""; } catch { return ""; } },
+                    set(v) { try { localStorage.setItem(KEY, v); } catch {} } };
+    if (params.get("src")) store.set(params.get("src"));
+    let printed = parseInt(params.get("p") || "1", 10);
+
+    function directUrl(url) {
+      url = url.trim();
+      // Dropbox: o endereço "dl.dropboxusercontent.com" entrega o arquivo puro e permite leitura pelo navegador
+      if (/dropbox\.com/.test(url)) {
+        return url.replace("www.dropbox.com", "dl.dropboxusercontent.com").replace(/[?&]dl=[01]/, "").replace(/[?&]raw=1/, "");
+      }
+      const drive = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]+)/);
+      if (drive) return `https://drive.google.com/uc?export=download&id=${drive[1]}`;
+      return url;
+    }
+
+    const msg = (html) => { document.getElementById("msg").innerHTML = html; };
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    let doc = null, rendering = false;
+
+    async function render() {
+      if (!doc || rendering) return;
+      rendering = true;
+      const n = Math.min(Math.max(printed + OFFSET, 1), doc.numPages);
+      const page = await doc.getPage(n);
+      const width = Math.min(document.documentElement.clientWidth - 24, 900);
+      const base = page.getViewport({ scale: 1 });
+      const vp = page.getViewport({ scale: (width / base.width) * (window.devicePixelRatio || 1) });
+      const cv = document.getElementById("cv");
+      cv.width = vp.width; cv.height = vp.height; cv.style.width = width + "px";
+      await page.render({ canvasContext: cv.getContext("2d"), viewport: vp }).promise;
+      document.getElementById("page").value = printed;
+      document.getElementById("info").textContent = `(PDF ${n} de ${doc.numPages})`;
+      history.replaceState(null, "", `#p=${printed}`);  // tira o link do PDF da barra de endereço
+      rendering = false;
+    }
+
+    async function open() {
+      const url = store.get();
+      if (!url) {
+        msg(`<p>Cole o link do <b>seu</b> PDF do livro (de preferência Dropbox). Ele fica salvo só neste navegador.</p>`);
+        return askLink();
+      }
+      try {
+        doc = await pdfjsLib.getDocument({ url: directUrl(url) }).promise;
+        msg("");
+        render();
+      } catch (e) {
+        msg(`<p><b>Não consegui ler o PDF por este link.</b> Alguns serviços (Google Drive, OneDrive) bloqueiam a leitura
+          por outro site. Funciona com <b>Dropbox</b>: suba o PDF, toque em Compartilhar → Copiar link e use "Trocar link".</p>
+          <p>Enquanto isso: <a href="${url}" target="_blank" rel="noopener">abrir o PDF direto</a> e ir à página do PDF
+          <b>${printed + OFFSET}</b> (página ${printed} do livro).</p><p><small>${String(e).slice(0, 200)}</small></p>`);
+      }
+    }
+
+    function askLink() {
+      const v = prompt("Link do seu PDF do livro (Dropbox recomendado):", store.get());
+      if (v) { store.set(v); open(); }
+    }
+
+    document.getElementById("prev").onclick = () => { printed--; render(); };
+    document.getElementById("next").onclick = () => { printed++; render(); };
+    document.getElementById("page").onchange = (e) => { printed = parseInt(e.target.value, 10) || printed; render(); };
+    document.getElementById("cfg").onclick = askLink;
+    addEventListener("resize", () => render());
+    open();
+  </script>
+</body>
+</html>

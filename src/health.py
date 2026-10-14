@@ -26,6 +26,8 @@ MINIMOS = {
     "papers/openalex": 10,  # Google Jobs/posts dependem do orçamento da SerpAPI: não entram como mínimo
     "linkedin/posts": 3, "network/perfis": 1,
 }
+# sem chave de API o Semantic Scholar recusa (429) quase sempre; Adzuna só com chave; HN depende do mês
+OPCIONAIS = {"papers/semantic_scholar", "jobs/adzuna", "jobs/hn_who_is_hiring", "papers/arxiv"}
 NOMES = {
     "jobs/greenhouse": "Vagas Greenhouse", "jobs/lever": "Vagas Lever", "jobs/ashby": "Vagas Ashby",
     "jobs/remotive": "Vagas Remotive", "jobs/remoteok": "Vagas RemoteOK", "jobs/himalayas": "Vagas Himalayas",
@@ -74,6 +76,8 @@ def check(cfg: dict, day: str, report: dict) -> dict:
 
     for key, n in sorted(counts.items()):
         nome = NOMES.get(key, key)
+        if key in OPCIONAIS:  # fontes complementares instáveis: aparecem no painel, sem alarme
+            continue
         past = [h[key] for d, h in sorted(history.items())[-7:] if d != day and h.get(key, -1) >= 0]
         med = median(past) if past else None
         if n < 0:

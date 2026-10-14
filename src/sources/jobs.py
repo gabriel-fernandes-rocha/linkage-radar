@@ -183,7 +183,12 @@ def himalayas(cfg):
 def jobicy(cfg):
     out = []
     for tag in ("data engineer", "data scientist", "machine learning"):
-        for j in get("https://jobicy.com/api/v2/remote-jobs", params={"count": 50, "tag": tag}).json().get("jobs", []):
+        try:  # uma consulta com erro não derruba as outras
+            data = get("https://jobicy.com/api/v2/remote-jobs", params={"count": 50, "tag": tag}).json()
+        except Exception as e:
+            log.warning("jobicy '%s': %s", tag, e)
+            continue
+        for j in data.get("jobs", []):
             out.append(_job(j.get("jobTitle"), j.get("url"), j.get("companyName"), f"Remoto · {j.get('jobGeo', '')}",
                             j.get("jobDescription"), "Jobicy"))
     return out

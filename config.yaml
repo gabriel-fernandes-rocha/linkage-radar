@@ -56,6 +56,9 @@ perfil_estruturado:
     Record Linkage, Entity Resolution, Deduplication, Probabilistic Matching, Deterministic Matching,
     Fellegi-Sunter, Blocking, Fuzzy Matching, Data Quality, Data Pipelines, ETL, Data Normalization,
     Big Data, Data Warehouse, Data Lake, Business Intelligence]
+  # Quando você estudar algo, declare aqui (tem | parcial | nao). Isso vence a avaliação automática
+  # e todas as compatibilidades são recalculadas na próxima coleta. Ex.: AWS: parcial
+  niveis_declarados: {}
 
 limits:
   max_jobs: 10

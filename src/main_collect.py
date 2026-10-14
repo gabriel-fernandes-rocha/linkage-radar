@@ -16,6 +16,7 @@ import career
 import compat
 import health
 import job_archive
+import market
 import open_jobs
 from common import DATA, load_config, log, today
 from dedup import Seen, unique
@@ -98,6 +99,20 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
     if use_llm:
         max_age = cfg.get("open_jobs", {}).get("max_age_days", 60)
         abertas = open_jobs.update(approved_all.get("vagas", []), raw_jobs, day, max_age)
+        try:
+            # habilidades de todas as vagas (garante vereditos; refaz tudo se o currículo mudou)
+            all_skills = {s for j in abertas + job_archive.load() for s in
+                          ((j.get("requisitos") or {}).get("obrigatorios", []) +
+                           (j.get("requisitos") or {}).get("desejaveis", []))}
+            cache = compat.classify_skills(all_skills, cfg)
+            for j in abertas:
+                if j.get("requisitos"):
+                    compat.score(j, cfg, cache)
+            abertas.sort(key=lambda j: j.get("encaixe", 0), reverse=True)
+            open_jobs.save(abertas)
+            market.sample_broad_market(raw_jobs, cfg, day)
+        except Exception as e:
+            log.warning("mercado: atualização falhou (%s)", e)
     else:
         abertas = open_jobs.load()
     report["vagas_abertas_total"] = len(abertas)

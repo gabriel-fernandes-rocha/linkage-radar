@@ -114,16 +114,18 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None,
 PDF_OFFSET = 16  # página impressa + 16 = página do PDF do livro
 
 
-def book_link(refs: list[str]) -> str | None:
-    """Link para a página certa do SEU exemplar do livro (Secret BOOK_URL, só no WhatsApp; nunca no site público).
-    Dropbox/OneDrive/arquivo direto: abre no visualizador de PDF do navegador já na página (#page=N)."""
+def book_link(refs: list[str], site_url: str = "") -> str | None:
+    """Link para a página certa do SEU exemplar (Secret BOOK_URL). Abre o visualizador do site (livro.html), que
+    carrega o PDF e vai direto à página, também no celular. O link do PDF vai depois do '#', parte do endereço que
+    não é enviada a servidor nenhum, e a mensagem é privada."""
+    from urllib.parse import quote
+
     url = os.getenv("BOOK_URL", "").strip()
     m = re.search(r"p\.\s*(\d+)", " ".join(refs)) if refs else None
     if not url or not m:
         return None
-    if "dropbox.com" in url:
-        url = re.sub(r"[?&]dl=0", "", url) + ("&" if "?" in url else "?") + "raw=1"
-    return f"{url}#page={int(m.group(1)) + PDF_OFFSET}"
+    base = (site_url or "").rstrip("/")
+    return f"{base}/livro.html#p={int(m.group(1))}&src={quote(url, safe='')}"
 
 
 def _previous_lesson(a: dict) -> dict | None:
@@ -134,6 +136,13 @@ def _previous_lesson(a: dict) -> dict | None:
         return lessons.get(a["dia"] - 1)
     except Exception:
         return None
+
+
+def _book_refs(a: dict) -> list[str]:
+    book = [f for f in a.get("fontes", []) if "Christen (2012)" in f and "p." in f]
+    if not book and a.get("livro"):
+        book = ["Christen (2012), p. " + ", ".join(f"{x}-{y}" for x, y in a["livro"])]
+    return book
 
 
 def build_lesson_message(rep: dict, site_url: str) -> str | None:
@@ -150,11 +159,9 @@ def build_lesson_message(rep: dict, site_url: str) -> str | None:
         return None
 
     p = [f"🎓 AULA {a['dia']} DE 365 | Semana {a['semana']}: {a['tema']}", a["titulo"].upper()]
-    book = [f for f in a.get("fontes", []) if "Christen (2012)" in f and "p." in f]
-    if not book and a.get("livro"):
-        book = ["Christen (2012), p. " + ", ".join(f"{x}-{y}" for x, y in a["livro"])]
+    book = _book_refs(a)
     p += [f"📖 No livro: {'; '.join(book)}" if book else "📖 Tema além do livro de 2012: veja as fontes no fim"]
-    link = book_link(book)
+    link = book_link(book, site_url)
     if link:
         p += [f"🔗 Abrir no livro: {link}"]
     p += [""]
@@ -257,8 +264,20 @@ def main():
         rep = load_report(cfg, args.date)
         import open_jobs
 
-        messages = [build_message(rep, cfg["site_url"], open_jobs.load(), getattr(provider, "fits", None))]
-        lesson_msg = build_lesson_message(rep, cfg["site_url"])
+        if getattr(provider, "FORMAT", "text") == "html":  # Telegram: mensagens formatadas e organizadas
+            import health
+            import telegram_format as tf
+
+            a = rep.get("aula") or {}
+            book = _book_refs(a)
+            messages = [tf.jobs_message(rep, cfg["site_url"], open_jobs.load(), cfg_min_compat(),
+                                        alert=health.summary_line())]
+            lesson_msg = tf.lesson_message(a, _previous_lesson(a) if a.get("dia") else None,
+                                           ("No livro: " + "; ".join(book)) if book else None,
+                                           book_link(book, cfg["site_url"]), cfg["site_url"])
+        else:
+            messages = [build_message(rep, cfg["site_url"], open_jobs.load(), getattr(provider, "fits", None))]
+            lesson_msg = build_lesson_message(rep, cfg["site_url"])
         if lesson_msg:
             messages.append(lesson_msg)
         if args.dry_run or not wa.get("enabled", True):

@@ -18,16 +18,30 @@ from __future__ import annotations
 import json
 from datetime import date
 
-from common import DATA, log
+from common import DATA, ROOT, log
 
 CACHE = DATA / "skill_match.json"
 CREDIT = {"tem": 1.0, "parcial": 0.5, "nao": 0.0}
 
-SYSTEM = """Você avalia, para cada habilidade/requisito, se o candidato abaixo JÁ ATENDE com base no currículo.
-Responda "tem" (usa no trabalho ou domina), "parcial" (tem base próxima e aprende rápido: ex. sabe Spark, \
-pedem Databricks; sabe SQL e PostgreSQL, pedem Snowflake) ou "nao" (sem evidência).
-Seja rigoroso e honesto: não infle. Responda SOMENTE JSON: {"<habilidade>": {"nivel": "tem|parcial|nao", \
-"motivo": "até 12 palavras"}}"""
+SYSTEM = """Você é um recrutador técnico sênior de dados e avalia, para cada habilidade/requisito, se o candidato \
+abaixo JÁ ATENDE. Leia o currículo inteiro e considere as competências IMPLÍCITAS do trabalho que ele faz.
+
+Níveis:
+- "tem": usa no trabalho, é parte inevitável do que ele faz, ou domina.
+- "parcial": tem base muito próxima e fica apto em poucos dias/semanas (ex.: sabe Spark e pedem Databricks;
+  sabe SQL/Postgres e pedem Snowflake; sabe Python e pedem PyTorch básico).
+- "nao": sem evidência no currículo nem implícita no trabalho dele.
+
+Competências implícitas de quem faz record linkage / entity resolution em produção com Spark, Python, SQL,
+Elasticsearch, Splink e RapidFuzz (considere "tem"): comparadores de strings (Levenshtein, Damerau, Jaro-Winkler,
+Jaccard, q-grams, TF-IDF/cosseno), codificação fonética (Soundex, Metaphone e afins), normalização e padronização,
+blocking/indexação, Fellegi-Sunter e EM, deduplicação, clustering de entidades/componentes conexos, regex,
+estatística básica, avaliação (precisão/recall), pipelines/ETL em lote, NoSQL de busca (Elasticsearch), Git.
+Conceitos de MDM próximos do que ele faz (golden record, survivorship, regras de match/merge): no mínimo "parcial".
+
+Seja honesto: ferramentas/plataformas específicas que ele nunca usou (ex.: Reltio, AWS, Kafka, Neo4j) são "nao",
+salvo se houver base próxima ("parcial"). Responda SOMENTE JSON:
+{"<habilidade>": {"nivel": "tem|parcial|nao", "motivo": "até 12 palavras"}}"""
 
 
 def years_of_experience(cfg: dict) -> float:
@@ -36,19 +50,44 @@ def years_of_experience(cfg: dict) -> float:
 
 
 def _load_cache() -> dict:
-    return json.loads(CACHE.read_text("utf-8")) if CACHE.exists() else {}
+    cache = json.loads(CACHE.read_text("utf-8")) if CACHE.exists() else {}
+    try:
+        from common import load_config
+
+        return apply_declared(cache, load_config())
+    except Exception:
+        return cache
+
+
+def _profile_hash(cfg: dict) -> str:
+    import hashlib
+
+    cv = (ROOT / "profile" / "curriculo.md")
+    text = cfg.get("perfil", "") + json.dumps(cfg.get("perfil_estruturado", {}), sort_keys=True, default=str) + \
+        (cv.read_text("utf-8") if cv.exists() else "")
+    return hashlib.sha1(text.encode()).hexdigest()[:12]
 
 
 def classify_skills(skills: set[str], cfg: dict) -> dict:
-    """Garante veredito para cada habilidade (usa cache; só pergunta ao LLM as novas)."""
+    """Garante veredito para cada habilidade (usa cache; só pergunta ao LLM as novas).
+    Se o currículo/perfil mudou, TODOS os vereditos são refeitos (você estudou algo novo)."""
     cache = _load_cache()
-    new = sorted(s for s in skills if s.lower() not in cache)
+    h = _profile_hash(cfg)
+    if cache.get("_perfil_hash", {}).get("nivel") != h:
+        old = [v["nome"] for k, v in cache.items() if not k.startswith("_")]
+        if cache:
+            log.info("compat: currículo mudou; reavaliando %d habilidades", len(old))
+        cache = {"_perfil_hash": {"nome": "_perfil_hash", "nivel": h}}
+        CACHE.write_text(json.dumps(cache), "utf-8")
+        skills = set(skills) | set(old)
+    new = sorted(s for s in skills if s.lower() not in cache and not s.startswith("_"))
     if new:
         import anthropic
 
         client = anthropic.Anthropic()
-        perfil = cfg.get("perfil", "") + "\nHabilidades declaradas: " + ", ".join(
-            cfg.get("perfil_estruturado", {}).get("habilidades", []))
+        cv = ROOT / "profile" / "curriculo.md"
+        perfil = (cv.read_text("utf-8") if cv.exists() else cfg.get("perfil", "")) + \
+            "\n\nHabilidades declaradas: " + ", ".join(cfg.get("perfil_estruturado", {}).get("habilidades", []))
         for i in range(0, len(new), 40):
             chunk = new[i:i + 40]
             try:
@@ -67,6 +106,14 @@ def classify_skills(skills: set[str], cfg: dict) -> dict:
                 nivel = v.get("nivel") if v.get("nivel") in CREDIT else "nao"
                 cache[skill.lower()] = {"nome": skill, "nivel": nivel, "motivo": v.get("motivo", "")}
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True), "utf-8")
+    return apply_declared(cache, cfg)
+
+
+def apply_declared(cache: dict, cfg: dict) -> dict:
+    """config.yaml perfil_estruturado.niveis_declarados: {"AWS": "parcial", ...} vence o veredito do modelo."""
+    for name, nivel in (cfg.get("perfil_estruturado", {}).get("niveis_declarados") or {}).items():
+        if nivel in CREDIT:
+            cache[str(name).lower()] = {"nome": name, "nivel": nivel, "motivo": "declarado por você"}
     return cache
 
 

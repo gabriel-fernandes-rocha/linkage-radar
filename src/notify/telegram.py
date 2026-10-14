@@ -2,7 +2,9 @@
 
 Crie o bot no @BotFather, mande /start para ele e rode scripts/telegram_chat_id.py para descobrir o chat id.
 """
+import html
 import os
+import re
 import time
 
 import requests
@@ -10,7 +12,8 @@ import requests
 from common import log
 from notify import textsplit
 
-LIMIT = 4000        # o Telegram aceita 4096 caracteres por mensagem
+LIMIT = 3800        # o Telegram aceita 4096 caracteres por mensagem (folga para as tags HTML)
+FORMAT = "html"
 PART_GAP = 1
 RETRIES = (10, 30, 90)
 
@@ -31,9 +34,16 @@ def send_part(part: str) -> None:
             log.warning("telegram: tentativa %d em %ds (último erro: %s)", attempt + 1, wait, last)
             time.sleep(wait)
         try:
-            r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", timeout=60,
-                              json={"chat_id": chat, "text": part, "disable_web_page_preview": True})
+            body = {"chat_id": chat, "text": part, "parse_mode": "HTML", "disable_web_page_preview": True}
+            r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", timeout=60, json=body)
             data = r.json()
+            if not data.get("ok") and "parse" in str(data.get("description", "")).lower():
+                # formatação quebrada (ex.: bloco de código cortado entre partes): manda como texto simples
+                log.warning("telegram: HTML recusado (%s); reenviando sem formatação", data.get("description"))
+                plain = html.unescape(re.sub(r"<[^>]+>", "", part))
+                r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", timeout=60,
+                                  json={"chat_id": chat, "text": plain, "disable_web_page_preview": True})
+                data = r.json()
             if data.get("ok"):
                 return
             last = str(data.get("description", r.text))[:300]

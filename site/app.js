@@ -73,10 +73,8 @@ const BOOK_KEY = "linkageRadar.bookUrl";
 const PDF_OFFSET = 16;  // página impressa + 16 = página do PDF
 const getBook = () => { try { return localStorage.getItem(BOOK_KEY) || ""; } catch { return ""; } };
 function bookHref(page) {
-  let url = getBook().trim();
-  if (!url) return "";
-  if (url.includes("dropbox.com")) url = url.replace(/[?&]dl=0/, "") + (url.includes("?") ? "&" : "?") + "raw=1";
-  return `${url}#page=${page + PDF_OFFSET}`;
+  // abre no visualizador próprio (livro.html), que vai direto à página, inclusive no celular
+  return getBook().trim() ? `livro.html#p=${page}` : "";
 }
 function bookLinks(a) {
   const refs = (a.fontes || []).filter((f) => f.includes("Christen (2012)"));
@@ -183,21 +181,49 @@ async function loadOpenJobs() {
 }
 
 let skillsData = null;
-function renderSkills(period) {
-  const d = skillsData?.[period];
+const LEVEL = { tem: "✅ você tem", parcial: "🟡 parcial", nao: "⭕ falta" };
+
+function barRows(rows, withLevel = true) {
+  const max = Math.max(...rows.map((s) => s.vagas), 1);
+  return rows.map((s) => `
+    <div class="bar-row lvl-${s.voce || "nao"}" title="${s.obrigatorio ?? ""} obrigatório, ${s.desejavel ?? ""} desejável">
+      <span class="bar-name">${esc(s.nome)}${withLevel ? `<small>${LEVEL[s.voce] || ""}</small>` : ""}</span>
+      <span class="bar">${s.obrigatorio != null
+        ? `<span class="bar-must" style="width:${(100 * s.obrigatorio) / max}%"></span><span class="bar-nice" style="width:${(100 * s.desejavel) / max}%"></span>`
+        : `<span class="bar-must" style="width:${(100 * s.vagas) / max}%"></span>`}</span>
+      <span class="bar-pct">${s.pct}%</span>
+    </div>`).join("");
+}
+
+function renderSkills(view) {
+  const d = skillsData;
   const card = $("#skills");
-  if (!d || !d.ranking.length) {
+  if (!d?.geral?.ranking?.length) {
     $(".list", card).innerHTML = `<p class="meta">O ranking aparece após a próxima coleta.</p>`;
     return;
   }
-  $("#skills-n").textContent = `${d.vagas_analisadas} vagas analisadas`;
-  const max = d.ranking[0].vagas;
-  $(".list", card).innerHTML = d.ranking.slice(0, 30).map((s) => `
-    <div class="bar-row" title="${s.obrigatorio} como obrigatório, ${s.desejavel} como desejável">
-      <span class="bar-name">${esc(s.nome)}</span>
-      <span class="bar"><span class="bar-must" style="width:${(100 * s.obrigatorio) / max}%"></span><span class="bar-nice" style="width:${(100 * s.desejavel) / max}%"></span></span>
-      <span class="bar-pct">${s.pct}%</span>
-    </div>`).join("");
+  const g = d.ganhos || {};
+  let html = "";
+  if (view === "plano") {
+    $("#skills-n").textContent = `Hoje você cobre ${g.cobertura_atual}% dos requisitos das ${g.vagas_analisadas} vagas do nicho e cumpre TODOS os obrigatórios em ${g.vagas_completas_hoje}.`;
+    const row = (x) => `<li><b>${esc(x.nome)}</b> <small>(${LEVEL[x.voce] || ""}, pedido em ${x.pct_nicho}% das vagas)</small><br>
+      +${x.ganho_cobertura} pontos de cobertura${x.vagas_completas_a_mais ? ` · +${x.vagas_completas_a_mais} vaga(s) em que você passa a cumprir todos os obrigatórios` : ""}</li>`;
+    html = `<div class="sec"><h4>1º Famílias (aprender uma ferramenta da família já conta)</h4><ol>${(g.familias || []).slice(0, 8).map(row).join("")}</ol></div>
+      <div class="sec"><h4>2º Habilidades específicas</h4><ol>${(g.habilidades || []).slice(0, 12).map(row).join("")}</ol></div>
+      <p class="meta">Quando estudar algo, declare em <code>config.yaml</code> → <code>niveis_declarados</code> (ou atualize <code>profile/curriculo.md</code>): todas as compatibilidades são recalculadas na coleta seguinte.</p>`;
+  } else if (view === "familias") {
+    $("#skills-n").textContent = `${d.geral.vagas_analisadas} vagas do nicho. Uma vaga conta uma vez por família.`;
+    html = (d.geral.familias || []).map((f) => `
+      <div class="bar-row lvl-${f.voce}"><span class="bar-name">${esc(f.nome)}<small>${LEVEL[f.voce] || ""} · ${f.exemplos.map(esc).join(", ")}</small></span>
+      <span class="bar"><span class="bar-must" style="width:${f.pct}%"></span></span><span class="bar-pct">${f.pct}%</span></div>`).join("");
+  } else {
+    const src = d[view] || d.geral;
+    $("#skills-n").textContent = view === "mercado_amplo"
+      ? `${src.vagas_analisadas} vagas de engenharia/ciência de dados em geral (amostra semanal), para comparar com o nicho.`
+      : `${src.vagas_analisadas} vagas do nicho analisadas.`;
+    html = src.ranking?.length ? barRows(src.ranking.slice(0, 35)) : `<p class="meta">A amostra aparece após a próxima coleta de domingo.</p>`;
+  }
+  $(".list", card).innerHTML = html;
 }
 
 async function loadSkills() {

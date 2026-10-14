@@ -50,18 +50,18 @@
   "ingles": "fluente",
   "foco_er": 0.5,
   "compat_detalhe": {
-   "habilidades": 56,
+   "habilidades": 54,
    "senioridade": 40,
    "local": 12,
    "ingles": 85,
    "foco": 92,
    "senioridade_txt": "pede 8+ anos (você tem 2.8)",
    "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-   "faltam": [
-    "Delta Lake"
-   ],
+   "faltam": [],
    "parciais": [
     "Databricks",
+    "Delta Lake",
+    "Machine Learning",
     "Master Data Management"
    ]
   },
@@ -208,7 +208,7 @@
   "local": "Anywhere",
   "url": "https://www.upwork.com/freelance-jobs/apply/Enterprise-TAM-Pipeline-Waterfall-API-Enrichment-Entity-Resolution-Partner-Mapping_~022098143497837661689/",
   "fonte": "Google Jobs",
-  "encaixe": 0.61,
+  "encaixe": 0.72,
   "nota_perfil": "Record linkage de accounts e entidades é núcleo, porém contexto GTM/SaaS difere do perfil saúde/pública; Upwork remoto global viabiliza.",
   "motivo": "Vaga focada em TAM pipeline com entity resolution, deduplicação algorítmica e hierarquias parent-child, alinhada a matching determinístico e account resolution.",
   "resumo": "GTM Engineer/Data Architect para construir base de dados TAM automatizada com hierarquias parent-child, matching de stakeholders e SI networks via APIs e deduplicação algorítmica. Trabalho em manutenção de integridade de dados de alto volume.",
@@ -238,18 +238,18 @@
   "ingles": "nao_informado",
   "foco_er": 0.8,
   "compat_detalhe": {
-   "habilidades": 60,
+   "habilidades": 80,
    "senioridade": 85,
    "local": 100,
    "ingles": 100,
    "foco": 97,
    "senioridade_txt": "nível nao informado",
    "local_txt": "aceita candidatos do mundo todo",
-   "faltam": [
+   "faltam": [],
+   "parciais": [
     "API Enrichment",
     "Hierarquias Parent-Child"
-   ],
-   "parciais": []
+   ]
   }
  },
  {
@@ -409,7 +409,7 @@
   "ingles": "fluente",
   "foco_er": 0.6,
   "compat_detalhe": {
-   "habilidades": 67,
+   "habilidades": 65,
    "senioridade": 75,
    "local": 8,
    "ingles": 85,
@@ -1068,7 +1068,7 @@
   "local": "Remoto · Argentina",
   "url": "https://himalayas.app/companies/ryz-labs/jobs/data-engineer",
   "fonte": "Himalayas",
-  "encaixe": 0.22,
+  "encaixe": 0.21,
   "motivo": "Vaga de Data Engineer com foco explícito em identity resolution, entity-matching challenges e data quality na ingestão, alinhado com especialidade do leitor.",
   "resumo": "Ryz Labs busca Senior Data Engineer remoto (LATAM) para pipelines de ingestão de dados com ênfase em entity resolution, identity matching e detecção de qualidade de dados em múltiplas fontes.",
   "requisitos": {
@@ -1095,7 +1095,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 29,
+   "habilidades": 24,
    "senioridade": 75,
    "local": 60,
    "ingles": 100,
@@ -1104,13 +1104,12 @@
    "local_txt": "local de contratação não informado",
    "faltam": [
     "AWS",
+    "AWS Glue",
     "Athena",
     "S3",
     "Protobuf"
    ],
-   "parciais": [
-    "AWS Glue"
-   ]
+   "parciais": []
   }
  },
  {
@@ -1155,7 +1154,7 @@
   "local": "Anywhere",
   "url": "https://bebee.com/us/jobs/ibm-master-data-management-developer-softthink-solutions-washington-dc--t7xk-810486862",
   "fonte": "Google Jobs",
-  "encaixe": 0.27,
+  "encaixe": 0.25,
   "motivo": "Vaga com foco principal em entity resolution, record matching, duplicate detection e MDM matching usando IBM Match 360, com matching determinístico e probabilístico.",
   "resumo": "Vaga de IBM Master Data Management Developer (remoto, US Citizen) para design e desenvolvimento de soluções MDM com foco em entity resolution, record matching, duplicate detection, matching determinístico/probabilístico e survivorship rules em organização de manufatura.",
   "requisitos": {
@@ -1176,7 +1175,7 @@
   "ultima_vez_aberta": "2026-10-04",
   "fechada_em": "2026-10-05",
   "compat_detalhe": {
-   "habilidades": 47,
+   "habilidades": 38,
    "senioridade": 75,
    "local": 60,
    "ingles": 100,
@@ -1184,11 +1183,10 @@
    "senioridade_txt": "nível senior",
    "local_txt": "local de contratação não informado",
    "faltam": [
-    "IBM MDM"
-   ],
-   "parciais": [
+    "IBM MDM",
     "Match 360"
-   ]
+   ],
+   "parciais": []
   }
  },
  {
@@ -1197,7 +1195,7 @@
   "local": "Remoto · France",
   "url": "https://himalayas.app/companies/talan/jobs/consultant-senior-master-data-management-977635827",
   "fonte": "Himalayas",
-  "encaixe": 0.21,
+  "encaixe": 0.23,
   "motivo": "Consultor Senior em Master Data Management com experiência explícita em matching, fusão, regras de qualidade e modelagem de dados; implementação em plataformas MDM líderes.",
   "resumo": "Consultor Senior MDM na Talan para design de referencial de dados, modelagem, regras de qualidade, matching, fusão e implementação de soluções MDM (Informatica, Tibco EBX, Stibo STEP, Semarchy).",
   "requisitos": {
@@ -1219,7 +1217,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 25,
+   "habilidades": 31,
    "senioridade": 75,
    "local": 60,
    "ingles": 100,
@@ -1234,7 +1232,6 @@
     "publish/subscribe"
    ],
    "parciais": [
-    "modelagem de dados",
     "programação orientada a objetos"
    ]
   }
@@ -1245,7 +1242,7 @@
   "local": "Remoto · United States",
   "url": "https://himalayas.app/companies/netflix/jobs/analytics-engineer-5-identity-signal",
   "fonte": "Himalayas",
-  "encaixe": 0.31,
+  "encaixe": 0.32,
   "motivo": "Vaga da Netflix para Analytics Engineer focada explicitamente em identity graph, entity-matching e resolution pipelines para o negócio de ads.",
   "resumo": "Analytics Engineer na Netflix para construir e manter identity graph, executar pipelines de entity-matching e resolution, e gerenciar relações com identity providers no negócio de publicidade.",
   "requisitos": {
@@ -1270,7 +1267,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 62,
+   "habilidades": 66,
    "senioridade": 75,
    "local": 60,
    "ingles": 100,
@@ -1289,7 +1286,7 @@
   "local": "Bangalore",
   "url": "https://job-boards.greenhouse.io/reltio/jobs/6139696004",
   "fonte": "Greenhouse/reltio",
-  "encaixe": 0.35,
+  "encaixe": 0.37,
   "motivo": "Advanced Customer Engineer na Reltio (plataforma de Context Intelligence/MDM): harmonização, unificação e governança de dados em tempo real; menciona reconciliação de dados fragmentados.",
   "resumo": "Advanced Customer Engineer na Reltio para suportar plataforma SaaS de harmonização, unificação e governança de dados que transforma dados fragmentados em contexto confiável para AI.",
   "requisitos": {
@@ -1316,7 +1313,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 42,
+   "habilidades": 49,
    "senioridade": 100,
    "local": 60,
    "ingles": 100,
@@ -1328,14 +1325,14 @@
     "AWS",
     "GCP",
     "Azure",
-    "Reltio Cloud",
-    "Bitbucket",
-    "SVN"
+    "Reltio Cloud"
    ],
    "parciais": [
     "Master Data Management",
-    "NoSQL",
-    "survivorship rules"
+    "Match & Merge",
+    "survivorship rules",
+    "Bitbucket",
+    "SVN"
    ]
   }
  },
@@ -1385,7 +1382,7 @@
   "local": "Remoto · United States",
   "url": "https://himalayas.app/companies/zoominfo/jobs/principal-applied-ai-engineer-entity-agents",
   "fonte": "Himalayas",
-  "encaixe": 0.24,
+  "encaixe": 0.26,
   "motivo": "Vaga de Principal Applied AI Engineer em equipe de Core Data da ZoomInfo focada em entity resolution: centenas de milhões de registros resolvidos para entidade correta, pipelines determinísticos e AI-driven.",
   "resumo": "Principal Applied AI Engineer na equipe Core Data da ZoomInfo responsável por construir e manter plataforma de resolução de entidades para centenas de milhões de registros de empresas e contatos.",
   "requisitos": {
@@ -1411,7 +1408,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 35,
+   "habilidades": 41,
    "senioridade": 75,
    "local": 60,
    "ingles": 100,
@@ -1420,11 +1417,11 @@
    "local_txt": "local de contratação não informado",
    "faltam": [
     "TypeScript",
-    "LLM agents",
-    "Structured output"
+    "LLM agents"
    ],
    "parciais": [
     "Retrieval",
+    "Structured output",
     "Evaluation harness"
    ]
   }
@@ -1435,7 +1432,7 @@
   "local": "Remoto · United States",
   "url": "https://himalayas.app/companies/intellivo/jobs/sr-ai-machine-learning-engineer",
   "fonte": "Himalayas",
-  "encaixe": 0.25,
+  "encaixe": 0.24,
   "motivo": "Vaga de Sr. AI/ML Engineer descrita como builder role focada em resolução de entidades em sistemas, enriquecimento de registros e scoring com uso de modelos transformer e machine learning tradicional.",
   "resumo": "Engenheiro sênior de AI/ML na Intellivo que escreve código Python para resolver entidades em sistemas, enriquecer registros, fazer scoring e surfacear sinais invisíveis, trabalhando com foundation models e machine learning tradicional em problemas de produção.",
   "requisitos": {
@@ -1469,7 +1466,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 38,
+   "habilidades": 34,
    "senioridade": 75,
    "local": 60,
    "ingles": 100,
@@ -1483,7 +1480,9 @@
     "LangGraph",
     "Azure"
    ],
-   "parciais": []
+   "parciais": [
+    "Machine Learning"
+   ]
   }
  },
  {
@@ -1492,7 +1491,7 @@
   "local": "Remoto · United States",
   "url": "https://himalayas.app/companies/zoominfo/jobs/principal-product-manager-identity",
   "fonte": "Himalayas",
-  "encaixe": 0.18,
+  "encaixe": 0.17,
   "motivo": "Principal PM responsável por identity resolution engine que faz visitor-to-person matching, IP-to-company linking e otimização de match rates, alinhado com o tema de entity resolution e identity matching.",
   "resumo": "Principal Product Manager - Identity na ZoomInfo responsável pela engine de identity resolution que conecta sinais digitais a identidades de pessoas e empresas. Trabalha em visitor-to-person matching, IP-to-company linking e otimização de match rates para a plataforma de inteligência de GTM.",
   "requisitos": {
@@ -1517,7 +1516,7 @@
   "status": "aberta",
   "ultima_vez_aberta": "2026-10-13",
   "compat_detalhe": {
-   "habilidades": 56,
+   "habilidades": 50,
    "senioridade": 45,
    "local": 60,
    "ingles": 100,
@@ -1525,11 +1524,11 @@
    "senioridade_txt": "nível staff/principal",
    "local_txt": "local de contratação não informado",
    "faltam": [
+    "Tableau",
     "Looker"
    ],
    "parciais": [
-    "Snowflake",
-    "Tableau"
+    "Snowflake"
    ]
   }
  },
@@ -1569,7 +1568,7 @@
    "local_txt": "local de contratação não informado",
    "faltam": [],
    "parciais": [
-    "Statistics"
+    "Machine Learning"
    ]
   }
  },
@@ -1579,7 +1578,7 @@
   "local": "Davie, FL",
   "url": "https://bebee.com/us/jobs/lead-data-engineer-customer-360-identity-graph-kforce-davie--lensa-2365_b89c416d9c53f12702916faed388e3c6d15c8e9f5619974d2b2ec4ab1d10dcb9",
   "fonte": "Google Jobs",
-  "encaixe": 0.02,
+  "encaixe": 0.28,
   "motivo": "Vaga de Lead Data Engineer com foco explícito em Customer 360, identity resolution e identity graphs, núcleo do perfil de entity resolution e MDM do leitor.",
   "resumo": "Kforce procura Lead Data Engineer para liderar design e entrega de soluções Customer 360, Identity Graph e plataforma de dados habilitada para IA em Fort Lauderdale, FL. Responsabilidades incluem design de identity resolution, arquitetura de dados unificados, pipelines escaláveis e data quality.",
   "requisitos": {
@@ -1594,7 +1593,21 @@
   "primeira_vez": "2026-10-08",
   "status": "fechada",
   "ultima_vez_aberta": "2026-10-08",
-  "fechada_em": "2026-10-09"
+  "fechada_em": "2026-10-09",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": [
+    "Snowflake",
+    "Databricks"
+   ]
+  }
  },
  {
   "titulo": "Senior Staff Machine Learning Engineer, Ads Measurement Remote - United States",
@@ -1602,7 +1615,7 @@
   "local": "Anywhere",
   "url": "https://talents.vaia.com/companies/reddit/senior-staff-machine-learning-engineer-ads-measurement-remote-united-states-29845546/",
   "fonte": "Google Jobs",
-  "encaixe": 0.02,
+  "encaixe": 0.13,
   "motivo": "Vaga de Principal ML Engineer com especialização em identity resolution, identity graphs, device graphs e probabilistic matching, alinhada diretamente com expertise em entity matching do leitor.",
   "resumo": "Reddit busca Principal Machine Learning Engineer para Ads Measurement com foco em identity resolution, identity graphs e probabilistic matching de identifiers (cookies, emails, phone numbers, IP addresses). Requer 10 anos de engenharia de software e 5 anos em ML-driven systems.",
   "requisitos": {
@@ -1620,7 +1633,25 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-10-08",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 25,
+   "senioridade": 45,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível staff/principal",
+   "local_txt": "local de contratação não informado",
+   "faltam": [
+    "TensorFlow",
+    "PyTorch",
+    "Kafka",
+    "Flink"
+   ],
+   "parciais": [
+    "Beam"
+   ]
+  }
  },
  {
   "titulo": "Post-Implementation Consultant - Master Data Management Platform",
@@ -1628,7 +1659,7 @@
   "local": "Remoto · United States",
   "url": "https://himalayas.app/companies/veeva-systems/jobs/post-implementation-consultant-master-data-management-platform",
   "fonte": "Himalayas",
-  "encaixe": 0.07,
+  "encaixe": 0.42,
   "motivo": "Vaga explícita de MDM (Master Data Management) em contexto de implementação e matching de dados mestres em saúde.",
   "resumo": "Veeva Systems procura consultor de MDM pós-implementação para trabalhar com clientes vivos na indústria de ciências da vida, atuando em matching e governança de dados mestres.",
   "requisitos": {
@@ -1643,7 +1674,20 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-10-10",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 62,
+   "senioridade": 100,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível pleno",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": [
+    "Master Data Management"
+   ]
+  }
  },
  {
   "titulo": "Senior Software Engineer, Vendor Data Platform",
@@ -1651,7 +1695,7 @@
   "local": "Remoto · United States",
   "url": "https://himalayas.app/companies/distantjob/jobs/senior-software-engineer-vendor-data-platform",
   "fonte": "Himalayas",
-  "encaixe": 0.03,
+  "encaixe": 0.25,
   "motivo": "Vaga de engenheiro senior focada em matching, deduplicação e reconciliação de dados de vendors (record linkage), com responsabilidade explícita em data mastering e qualidade de dados.",
   "resumo": "Plataforma que transforma dados desordenados de vendors em registros confiáveis mediante matching, deduplicação e reconciliação. Engenheiro senior será responsável pelo design e operação end-to-end, incluindo APIs e qualidade de dados.",
   "requisitos": {
@@ -1675,7 +1719,25 @@
   "modalidade": "remoto",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 40,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [
+    "API REST",
+    "Angular",
+    "React",
+    "TypeScript",
+    "Azure",
+    "AWS"
+   ],
+   "parciais": []
+  }
  },
  {
   "titulo": "The Ai Training Company hiring Data Analyst | €52/hr - LinkedIn",
@@ -1683,7 +1745,7 @@
   "local": "",
   "url": "https://uk.linkedin.com/jobs/view/data-analyst-%E2%82%AC52-hr-remote-at-the-ai-training-company-4475428548",
   "fonte": "Post · linkedin.com",
-  "encaixe": 0.4,
+  "encaixe": 0.37,
   "motivo": "Vaga de Data Analyst com foco explícito em record linkage, data matching, normalização e enriquecimento de dados, alinhado ao perfil.",
   "resumo": "The AI Training Company contrata Data Analyst com foco em record linkage, data matching, normalização, transformação e qualidade de dados. Remuneração 52 EUR/hora.",
   "requisitos": {
@@ -1707,13 +1769,31 @@
   "primeira_vez": "2026-10-12",
   "status": "fechada",
   "ultima_vez_aberta": "2026-10-12",
-  "fechada_em": "2026-10-13"
+  "fechada_em": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 68,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [
+    "Data Annotation",
+    "Dataset Documentation"
+   ],
+   "parciais": [
+    "Data Enrichment",
+    "Data Verification",
+    "Data Review"
+   ]
+  }
  },
  {
   "titulo": "Data Scientist en Applaudo — Área metropolitana de Lima | Empleos de ...",
   "url": "https://pe.linkedin.com/jobs/view/data-scientist-at-applaudo-4477495026",
   "fonte": "LinkedIn Jobs",
-  "encaixe": 0.05,
+  "encaixe": 0.38,
   "motivo": "Vaga de Data Scientist em Applaudo com entity resolution, record linkage e deduplication como requisitos principais e experiência em matching/scoring essencial.",
   "resumo": "Vaga de Data Scientist em Applaudo com requisitos centrais em entity resolution, record linkage, deduplication, similarity scoring e técnicas de clustering e candidate generation em escala (Spark, Snowflake, BigQuery).",
   "requisitos": {
@@ -1735,13 +1815,30 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 70,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [
+    "LLMs",
+    "BigQuery"
+   ],
+   "parciais": [
+    "Snowflake",
+    "Databricks"
+   ]
+  }
  },
  {
   "titulo": "CMC Global Company Limited. Tuyển dụng AI & Data ... - LinkedIn",
   "url": "https://vn.linkedin.com/jobs/view/ai-data-engineer-at-cmc-global-company-limited-4476264099",
   "fonte": "LinkedIn Jobs",
-  "encaixe": 0.36,
+  "encaixe": 0.4,
   "motivo": "Vaga da CMC Global com design de soluções de Entity Resolution, Record Linkage e Knowledge Graphs como responsabilidades centrais e produção em escala.",
   "resumo": "Vaga na CMC Global Company Limited para design de soluções em Entity Resolution, Record Linkage e Knowledge Graphs com foco em pipelines de processamento distribuído e avaliação de qualidade de IA.",
   "requisitos": {
@@ -1757,7 +1854,21 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 75,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": [
+    "Knowledge Graphs",
+    "Graph Modeling"
+   ]
+  }
  },
  {
   "titulo": "Senior Engineer - LinkedIn",
@@ -1779,13 +1890,26 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 75,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [
+    "Infrastructure as Code"
+   ],
+   "parciais": []
+  }
  },
  {
   "titulo": "Senior Design Analyst & Design Analyst at Stats NZ — Wellington ...",
   "url": "https://nz.linkedin.com/jobs/view/senior-design-analyst-design-analyst-at-stats-nz-4475167776",
   "fonte": "LinkedIn Jobs",
-  "encaixe": 0.05,
+  "encaixe": 0.47,
   "motivo": "Vaga de Design Analyst em Stats NZ com record linkage techniques como experiência específica requerida ou área de desenvolvimento.",
   "resumo": "Vaga de Senior Design Analyst e Design Analyst em Stats NZ em Wellington com requisito de experiência em record linkage techniques ou disposição para desenvolver expertise na área.",
   "requisitos": {
@@ -1798,13 +1922,24 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 100,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Data Engineer at Harrison Clarke — United States - LinkedIn",
   "url": "https://www.linkedin.com/jobs/view/data-engineer-at-harrison-clarke-4476795457",
   "fonte": "LinkedIn Jobs",
-  "encaixe": 0.05,
+  "encaixe": 0.37,
   "motivo": "Vaga de Data Engineer em Harrison Clarke que lista entity resolution, record linkage e identity graphs como experiências valorizadas.",
   "resumo": "Vaga de Data Engineer em Harrison Clarke com exposição desejada a entity resolution, record linkage, identity graphs ou graph databases.",
   "requisitos": {
@@ -1819,13 +1954,24 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 67,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "AI Automation Intern, Knowledge Graph en RavenPack - LinkedIn",
   "url": "https://es.linkedin.com/jobs/view/ai-automation-intern-knowledge-graph-at-ravenpack-4476708620",
   "fonte": "LinkedIn Jobs",
-  "encaixe": 0.28,
+  "encaixe": 0.32,
   "motivo": "Vaga de AI Automation Intern em RavenPack que inclui entity resolution e record linkage como experiências desejadas em contexto de knowledge graphs.",
   "resumo": "Vaga de AI Automation Intern em RavenPack com foco em knowledge graphs e requisito de experiência em entity resolution ou record linkage.",
   "requisitos": {
@@ -1842,7 +1988,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-12",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Senior Machine Learning Engineer at Commotion - LinkedIn Jobs",
@@ -1850,7 +2007,7 @@
   "local": "",
   "url": "https://in.linkedin.com/jobs/view/senior-machine-learning-engineer-at-commotion-4469492016",
   "fonte": "Post · linkedin.com",
-  "encaixe": 0.3,
+  "encaixe": 0.28,
   "motivo": "Post anunciando vaga concreta com entity resolution como responsabilidade central: blocking, candidate generation, match scoring, clustering e threshold design; alinha-se precisamente ao expertise do perfil.",
   "resumo": "Commotion contrata Senior Machine Learning Engineer para possuir todo o pipeline de entity resolution, de blocking até clustering, com foco em precisão, recall e resoluções recorrentes.",
   "requisitos": {
@@ -1861,7 +2018,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "EngRadar hiring Senior Software Engineer, Identity Graph in San ...",
@@ -1869,7 +2037,7 @@
   "local": "",
   "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-identity-graph-at-engradar-4475002002",
   "fonte": "Post · linkedin.com",
-  "encaixe": 0.03,
+  "encaixe": 0.28,
   "motivo": "Post anunciando vaga concreta com entity resolution como componente central do identity graph: schema design, ingestão, resolução de entidades, APIs, performance; alinhado ao perfil.",
   "resumo": "EngRadar contrata Senior Software Engineer para o Identity Graph, possuindo entity resolution, schema design, ingestão de dados, APIs e performance end-to-end.",
   "requisitos": {
@@ -1880,7 +2048,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Infotek Consulting Inc. hiring Data Engineer- Databricks ... - LinkedIn",
@@ -1899,7 +2078,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Puck hiring Data Analyst Intern in San Francisco, CA | LinkedIn",
@@ -1907,7 +2097,7 @@
   "local": "",
   "url": "https://www.linkedin.com/jobs/view/4465203715/",
   "fonte": "Post · linkedin.com",
-  "encaixe": 0.04,
+  "encaixe": 0.37,
   "motivo": "Post de vaga concreta menciona entity resolution e deduplicação com tratamento de nomes distintos, endereços antigos e identificadores parciais, cenário típico de matching.",
   "resumo": "Puck contrata Data Analyst Intern para lidar com deduplicação entre fontes heterogêneas (nomes variados, endereços obsoletos, identificadores incompletos) e medir qualidade de enriquecimento.",
   "requisitos": {
@@ -1918,7 +2108,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 100,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível junior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "ServiceNow hiring Sr Software Engineer in San Diego, CA | LinkedIn",
@@ -1926,7 +2127,7 @@
   "local": "",
   "url": "https://www.linkedin.com/jobs/view/4468151528/",
   "fonte": "Post · linkedin.com",
-  "encaixe": 0.04,
+  "encaixe": 0.28,
   "motivo": "Post anunciando vaga concreta em ServiceNow com entity resolution como componente central de um mecanismo maior; bem-scoped e production quality alinha-se ao perfil.",
   "resumo": "ServiceNow contrata Senior Software Engineer para o probabilistic engine com entity resolution, graph construction e probability core em produção de qualidade.",
   "requisitos": {
@@ -1937,7 +2138,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 50,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Backend Software Engineer II- Data Platform - LinkedIn",
@@ -1956,7 +2168,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 100,
+   "senioridade": 85,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível nao informado",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Společnost Modash najímá na pozici Senior Product Data ... - LinkedIn",
@@ -1976,7 +2199,18 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 100,
+   "senioridade": 75,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível senior",
+   "local_txt": "local de contratação não informado",
+   "faltam": [],
+   "parciais": []
+  }
  },
  {
   "titulo": "Engineering Manager - Security Ontology at TrendAI - LinkedIn",
@@ -1998,6 +2232,21 @@
   "modalidade": "nao_informado",
   "primeira_vez": "2026-10-13",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-13"
+  "ultima_vez_aberta": "2026-10-13",
+  "compat_detalhe": {
+   "habilidades": 62,
+   "senioridade": 35,
+   "local": 60,
+   "ingles": 100,
+   "foco": 92,
+   "senioridade_txt": "nível gerencia",
+   "local_txt": "local de contratação não informado",
+   "faltam": [
+    "Ontology"
+   ],
+   "parciais": [
+    "Semantic search"
+   ]
+  }
  }
 ]

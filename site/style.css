@@ -146,3 +146,10 @@ button.btn { background: none; cursor: pointer; font: inherit; font-size: .85rem
 
 #saude.alerta { border-color: #d29922; box-shadow: 0 0 0 1px #d29922 inset; }
 #saude ul { margin: 4px 0; padding-left: 1.2em; }
+
+.bar-name small { display: block; font-size: .7rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-row.lvl-tem .bar-must { background: var(--ok); }
+.bar-row.lvl-parcial .bar-must { background: #d29922; }
+#skills .bar-row { padding: 5px 0; }
+#skills ol { padding-left: 1.3em; margin: 4px 0; }
+#skills li { margin: 6px 0; font-size: .9rem; }

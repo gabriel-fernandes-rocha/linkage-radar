@@ -61,7 +61,7 @@
     "motivo": "Vaga focada em TAM pipeline com entity resolution, deduplicação algorítmica e hierarquias parent-child, alinhada a matching determinístico e account resolution.",
     "resumo": "GTM Engineer/Data Architect para construir base de dados TAM automatizada com hierarquias parent-child, matching de stakeholders e SI networks via APIs e deduplicação algorítmica. Trabalho em manutenção de integridade de dados de alto volume.",
     "confianca": 0.85,
-    "encaixe": 0.61,
+    "encaixe": 0.72,
     "nota_perfil": "Record linkage de accounts e entidades é núcleo, porém contexto GTM/SaaS difere do perfil saúde/pública; Upwork remoto global viabiliza.",
     "requisitos": {
       "obrigatorios": [
@@ -92,18 +92,18 @@
     "ingles": "nao_informado",
     "foco_er": 0.8,
     "compat_detalhe": {
-      "habilidades": 60,
+      "habilidades": 80,
       "senioridade": 85,
       "local": 100,
       "ingles": 100,
       "foco": 97,
       "senioridade_txt": "nível nao informado",
       "local_txt": "aceita candidatos do mundo todo",
-      "faltam": [
+      "faltam": [],
+      "parciais": [
         "API Enrichment",
         "Hierarquias Parent-Child"
-      ],
-      "parciais": []
+      ]
     }
   },
   {
@@ -226,19 +226,18 @@
     "anos_experiencia_min": null,
     "ingles": "nao_informado",
     "foco_er": 0.6,
-    "encaixe": 0.36,
+    "encaixe": 0.4,
     "compat_detalhe": {
-      "habilidades": 62,
+      "habilidades": 75,
       "senioridade": 85,
       "local": 60,
       "ingles": 100,
       "foco": 94,
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Knowledge Graphs"
-      ],
+      "faltam": [],
       "parciais": [
+        "Knowledge Graphs",
         "Graph Modeling"
       ]
     },
@@ -341,6 +340,54 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "AI Automation Intern, Knowledge Graph en RavenPack - LinkedIn",
+    "url": "https://es.linkedin.com/jobs/view/ai-automation-intern-knowledge-graph-at-ravenpack-4476708620",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "motivo": "Vaga de AI Automation Intern em RavenPack que inclui entity resolution e record linkage como experiências desejadas em contexto de knowledge graphs.",
+    "resumo": "Vaga de AI Automation Intern em RavenPack com foco em knowledge graphs e requisito de experiência em entity resolution ou record linkage.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": [
+        "Knowledge graphs",
+        "Entity resolution",
+        "Record linkage",
+        "Web scraping",
+        "RAG"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.4,
+    "encaixe": 0.31,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 91,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-12",
+    "verificada_em": "2026-10-13",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Senior Machine Learning Engineer at Commotion - LinkedIn Jobs",
     "url": "https://in.linkedin.com/jobs/view/senior-machine-learning-engineer-at-commotion-4469492016",
     "empresa": "",
@@ -385,54 +432,6 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "AI Automation Intern, Knowledge Graph en RavenPack - LinkedIn",
-    "url": "https://es.linkedin.com/jobs/view/ai-automation-intern-knowledge-graph-at-ravenpack-4476708620",
-    "data": "",
-    "fonte": "LinkedIn Jobs",
-    "score": 7,
-    "motivo": "Vaga de AI Automation Intern em RavenPack que inclui entity resolution e record linkage como experiências desejadas em contexto de knowledge graphs.",
-    "resumo": "Vaga de AI Automation Intern em RavenPack com foco em knowledge graphs e requisito de experiência em entity resolution ou record linkage.",
-    "confianca": 0.88,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": [
-        "Knowledge graphs",
-        "Entity resolution",
-        "Record linkage",
-        "Web scraping",
-        "RAG"
-      ]
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.4,
-    "encaixe": 0.28,
-    "compat_detalhe": {
-      "habilidades": 40,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 91,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": []
-    },
-    "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Data Engineer",
     "url": "https://himalayas.app/companies/ryz-labs/jobs/data-engineer",
     "empresa": "Ryz Labs",
@@ -474,9 +473,9 @@
     "anos_experiencia_min": 5,
     "ingles": "fluente",
     "foco_er": 0.5,
-    "encaixe": 0.25,
+    "encaixe": 0.24,
     "compat_detalhe": {
-      "habilidades": 29,
+      "habilidades": 24,
       "senioridade": 60,
       "local": 100,
       "ingles": 85,
@@ -485,13 +484,12 @@
       "local_txt": "remoto e aceita Brasil/LATAM",
       "faltam": [
         "AWS",
+        "AWS Glue",
         "Athena",
         "S3",
         "Protobuf"
       ],
-      "parciais": [
-        "AWS Glue"
-      ]
+      "parciais": []
     },
     "desde": "2026-10-03",
     "verificada_em": "2026-10-13",
@@ -723,6 +721,69 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "Senior Entity Resolution Engineer",
+    "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
+    "empresa": "DEFCON AI",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 23,
+    "motivo": "Vaga de Senior Entity Resolution Engineer focada em determinar quando registros de múltiplas fontes representam a mesma entidade no mundo real, com design de grafo e estratégia de matching desenvolvidos internamente.",
+    "resumo": "Engenheiro sênior responsável por construir a capacidade de resolução de entidades em produção na DEFCON AI, determinando quando registros de múltiplas fontes representam a mesma entidade real. Role de implementação de design de grafo e estratégia de matching em tecnologia que suporta necessidades operacionais críticas do governo.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "entity resolution",
+        "Record Linkage",
+        "blocking",
+        "candidate generation",
+        "pairwise scoring",
+        "clustering"
+      ],
+      "desejaveis": [
+        "Fellegi-Sunter",
+        "Splink",
+        "Dedupe",
+        "Zingg",
+        "PostgreSQL",
+        "pgvector",
+        "graph databases",
+        "master data management"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": false,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 89,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-13",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Data Scientist en Applaudo — Área metropolitana de Lima | Empleos de ...",
     "url": "https://pe.linkedin.com/jobs/view/data-scientist-at-applaudo-4477495026",
     "data": "",
@@ -772,13 +833,12 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "em Peru, sem patrocínio de visto",
       "faltam": [
-        "LLMs"
+        "LLMs",
+        "BigQuery"
       ],
       "parciais": [
-        "Clustering",
         "Snowflake",
-        "Databricks",
-        "BigQuery"
+        "Databricks"
       ]
     },
     "desde": "2026-10-12",
@@ -924,7 +984,7 @@
     "foco_er": 0.9,
     "encaixe": 0.05,
     "compat_detalhe": {
-      "habilidades": 62,
+      "habilidades": 66,
       "senioridade": 60,
       "local": 12,
       "ingles": 85,
@@ -999,71 +1059,6 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Senior Entity Resolution Engineer",
-    "url": "https://himalayas.app/companies/defconai/jobs/senior-entity-resolution-engineer",
-    "empresa": "DEFCON AI",
-    "local": "Remoto · United States",
-    "fonte": "Himalayas",
-    "score": 23,
-    "motivo": "Vaga de Senior Entity Resolution Engineer focada em determinar quando registros de múltiplas fontes representam a mesma entidade no mundo real, com design de grafo e estratégia de matching desenvolvidos internamente.",
-    "resumo": "Engenheiro sênior responsável por construir a capacidade de resolução de entidades em produção na DEFCON AI, determinando quando registros de múltiplas fontes representam a mesma entidade real. Role de implementação de design de grafo e estratégia de matching em tecnologia que suporta necessidades operacionais críticas do governo.",
-    "confianca": 0.95,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "SQL",
-        "entity resolution",
-        "Record Linkage",
-        "blocking",
-        "candidate generation",
-        "pairwise scoring",
-        "clustering"
-      ],
-      "desejaveis": [
-        "Fellegi-Sunter",
-        "Splink",
-        "Dedupe",
-        "Zingg",
-        "PostgreSQL",
-        "pgvector",
-        "graph databases",
-        "master data management"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": false,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 5,
-    "ingles": "fluente",
-    "foco_er": 1,
-    "encaixe": 0.05,
-    "compat_detalhe": {
-      "habilidades": 84,
-      "senioridade": 60,
-      "local": 12,
-      "ingles": 85,
-      "foco": 100,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [],
-      "parciais": [
-        "clustering"
-      ]
-    },
-    "desde": "2026-10-03",
-    "verificada_em": "2026-10-13",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Machine Learning Engineer",
     "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
     "empresa": "ZoomInfo",
@@ -1115,9 +1110,73 @@
       "faltam": [
         "LLMs"
       ],
-      "parciais": []
+      "parciais": [
+        "Machine Learning"
+      ]
     },
     "desde": "2026-10-03",
+    "verificada_em": "2026-10-13",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Consultant senior Master Data Management",
+    "url": "https://himalayas.app/companies/talan/jobs/consultant-senior-master-data-management-977635827",
+    "empresa": "Talan",
+    "local": "Remoto · France",
+    "fonte": "Himalayas",
+    "score": 6,
+    "motivo": "Consultor Senior em Master Data Management com experiência explícita em matching, fusão, regras de qualidade e modelagem de dados; implementação em plataformas MDM líderes.",
+    "resumo": "Consultor Senior MDM na Talan para design de referencial de dados, modelagem, regras de qualidade, matching, fusão e implementação de soluções MDM (Informatica, Tibco EBX, Stibo STEP, Semarchy).",
+    "confianca": 0.97,
+    "requisitos": {
+      "obrigatorios": [
+        "Informatica",
+        "Tibco EBX",
+        "Stibo STEP",
+        "Semarchy",
+        "matching",
+        "modelagem de dados",
+        "programação orientada a objetos",
+        "publish/subscribe"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "France"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 4,
+    "ingles": "intermediario",
+    "foco_er": 0.4,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 31,
+      "senioridade": 80,
+      "local": 12,
+      "ingles": 100,
+      "foco": 91,
+      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
+      "local_txt": "remoto só para France: exige autorização de trabalho lá",
+      "faltam": [
+        "Informatica",
+        "Tibco EBX",
+        "Stibo STEP",
+        "Semarchy",
+        "publish/subscribe"
+      ],
+      "parciais": [
+        "programação orientada a objetos"
+      ]
+    },
+    "desde": "2026-10-07",
     "verificada_em": "2026-10-13",
     "nova": false
   },
@@ -1219,69 +1278,6 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Consultant senior Master Data Management",
-    "url": "https://himalayas.app/companies/talan/jobs/consultant-senior-master-data-management-977635827",
-    "empresa": "Talan",
-    "local": "Remoto · France",
-    "fonte": "Himalayas",
-    "score": 6,
-    "motivo": "Consultor Senior em Master Data Management com experiência explícita em matching, fusão, regras de qualidade e modelagem de dados; implementação em plataformas MDM líderes.",
-    "resumo": "Consultor Senior MDM na Talan para design de referencial de dados, modelagem, regras de qualidade, matching, fusão e implementação de soluções MDM (Informatica, Tibco EBX, Stibo STEP, Semarchy).",
-    "confianca": 0.97,
-    "requisitos": {
-      "obrigatorios": [
-        "Informatica",
-        "Tibco EBX",
-        "Stibo STEP",
-        "Semarchy",
-        "matching",
-        "modelagem de dados",
-        "programação orientada a objetos",
-        "publish/subscribe"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "France"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 4,
-    "ingles": "intermediario",
-    "foco_er": 0.4,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 25,
-      "senioridade": 80,
-      "local": 12,
-      "ingles": 100,
-      "foco": 91,
-      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
-      "local_txt": "remoto só para France: exige autorização de trabalho lá",
-      "faltam": [
-        "Informatica",
-        "Tibco EBX",
-        "Stibo STEP",
-        "Semarchy",
-        "publish/subscribe"
-      ],
-      "parciais": [
-        "modelagem de dados",
-        "programação orientada a objetos"
-      ]
-    },
-    "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Data Scientist",
     "url": "https://himalayas.app/companies/lifelancer/jobs/data-scientist-1232077083",
     "empresa": "Lifelancer",
@@ -1328,7 +1324,7 @@
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
       "parciais": [
-        "Statistics"
+        "Machine Learning"
       ]
     },
     "desde": "2026-10-07",
@@ -1444,7 +1440,7 @@
     "ingles": "fluente",
     "foco_er": 0.6,
     "compat_detalhe": {
-      "habilidades": 67,
+      "habilidades": 65,
       "senioridade": 75,
       "local": 8,
       "ingles": 85,
@@ -1669,7 +1665,7 @@
     "foco_er": 0.5,
     "encaixe": 0.03,
     "compat_detalhe": {
-      "habilidades": 42,
+      "habilidades": 49,
       "senioridade": 60,
       "local": 8,
       "ingles": 100,
@@ -1681,14 +1677,14 @@
         "AWS",
         "GCP",
         "Azure",
-        "Reltio Cloud",
-        "Bitbucket",
-        "SVN"
+        "Reltio Cloud"
       ],
       "parciais": [
         "Master Data Management",
-        "NoSQL",
-        "survivorship rules"
+        "Match & Merge",
+        "survivorship rules",
+        "Bitbucket",
+        "SVN"
       ]
     },
     "desde": "2026-10-07",
@@ -1739,7 +1735,7 @@
     "foco_er": 0.5,
     "encaixe": 0.03,
     "compat_detalhe": {
-      "habilidades": 35,
+      "habilidades": 41,
       "senioridade": 60,
       "local": 12,
       "ingles": 85,
@@ -1748,11 +1744,11 @@
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "TypeScript",
-        "LLM agents",
-        "Structured output"
+        "LLM agents"
       ],
       "parciais": [
         "Retrieval",
+        "Structured output",
         "Evaluation harness"
       ]
     },
@@ -1814,7 +1810,7 @@
     "foco_er": 0.3,
     "encaixe": 0.03,
     "compat_detalhe": {
-      "habilidades": 38,
+      "habilidades": 34,
       "senioridade": 60,
       "local": 12,
       "ingles": 85,
@@ -1828,7 +1824,9 @@
         "LangGraph",
         "Azure"
       ],
-      "parciais": []
+      "parciais": [
+        "Machine Learning"
+      ]
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-13",
@@ -1877,7 +1875,7 @@
     "foco_er": 0.6,
     "encaixe": 0.03,
     "compat_detalhe": {
-      "habilidades": 56,
+      "habilidades": 50,
       "senioridade": 40,
       "local": 12,
       "ingles": 85,
@@ -1885,11 +1883,11 @@
       "senioridade_txt": "pede 12+ anos (você tem 2.8)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
+        "Tableau",
         "Looker"
       ],
       "parciais": [
-        "Snowflake",
-        "Tableau"
+        "Snowflake"
       ]
     },
     "desde": "2026-10-07",
@@ -1985,7 +1983,7 @@
     "foco_er": 1.0,
     "encaixe": 0.02,
     "compat_detalhe": {
-      "habilidades": 17,
+      "habilidades": 25,
       "senioridade": 40,
       "local": 12,
       "ingles": 85,
@@ -1996,10 +1994,11 @@
         "TensorFlow",
         "PyTorch",
         "Kafka",
-        "Beam",
         "Flink"
       ],
-      "parciais": []
+      "parciais": [
+        "Beam"
+      ]
     },
     "desde": "2026-10-08",
     "verificada_em": "2026-10-13",
