@@ -3,7 +3,7 @@ name: publicar site
 on:
   push:
     branches: [main]
-    paths: ["site/**", "curriculum/lessons.json"]
+    paths: ["site/**", "curriculum/lessons.json", ".github/workflows/pages.yml"]
   workflow_dispatch:
   workflow_call:
 
