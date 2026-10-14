@@ -110,8 +110,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
   background: var(--ok); color: #fff;
 }
 .fit { font-weight: 600; color: var(--accent); }
-#abertas .list { display: grid; gap: 0 24px; }
-@media (min-width: 820px) { #abertas .list { grid-template-columns: 1fr 1fr; } #abertas .item:nth-child(2) { border-top: 0; padding-top: 4px; } }
+#abertas .list { display: block; }  /* a grade de 2 colunas fica só dentro de cada bloco (.grid2) */
+@media (min-width: 820px) { .grid2 .item:nth-child(2) { border-top: 0; } }
 
 .reqs { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 8px; }
 .chip { font-size: .72rem; border-radius: 999px; padding: 1px 8px; border: 1px solid var(--line); }
@@ -142,7 +142,7 @@ button.btn { background: none; cursor: pointer; font: inherit; font-size: .85rem
 .novos-hoje { margin: 0 0 8px; font-size: .9rem; color: var(--ok); }
 .novos-hoje:empty { display: none; }
 .item.is-new { background: color-mix(in srgb, var(--ok) 10%, transparent); border-radius: 10px;
-  padding: 10px 10px; margin: 4px -10px; border-top: 0; }
+  padding: 10px 12px; margin: 6px 0; border-top: 0; }
 
 #saude.alerta { border-color: #d29922; box-shadow: 0 0 0 1px #d29922 inset; }
 #saude ul { margin: 4px 0; padding-left: 1.2em; }
