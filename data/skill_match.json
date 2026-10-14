@@ -13,6 +13,11 @@
   "nivel": "nao",
   "nome": "Agent frameworks"
  },
+ "airflow": {
+  "motivo": "faz pipelines ETL batch, falta ferramenta específica",
+  "nivel": "parcial",
+  "nome": "Airflow"
+ },
  "amazon neptune": {
   "motivo": "sem evidência de grafo/Neptune",
   "nivel": "nao",
@@ -243,6 +248,11 @@
   "nivel": "parcial",
   "nome": "embeddings"
  },
+ "encryption": {
+  "motivo": "sem evidência de criptografia no currículo",
+  "nivel": "nao",
+  "nome": "Encryption"
+ },
  "entity resolution": {
   "motivo": "foco central do trabalho",
   "nivel": "tem",
@@ -357,6 +367,11 @@
   "motivo": "entity resolution próximo do conceito de identity graph",
   "nivel": "parcial",
   "nome": "Identity Graph"
+ },
+ "identity matching": {
+  "motivo": "core do trabalho: resolução de entidades/identidades",
+  "nivel": "tem",
+  "nome": "Identity matching"
  },
  "identity resolution": {
   "motivo": "faz resolução de identidades em escala nacional",
@@ -473,6 +488,11 @@
   "nivel": "nao",
   "nome": "MLflow"
  },
+ "mlops": {
+  "motivo": "usa ML/scikit-learn, mas sem evidência de deploy/monitoramento",
+  "nivel": "parcial",
+  "nome": "MLOps"
+ },
  "modelagem de dados": {
   "motivo": "implícito em pipelines de dados estruturados",
   "nivel": "tem",
@@ -527,6 +547,11 @@
   "motivo": "sem evidência de uso específico",
   "nivel": "nao",
   "nome": "pgvector"
+ },
+ "pii detection": {
+  "motivo": "lida com dados sensíveis de saúde/identidade, próximo",
+  "nivel": "parcial",
+  "nome": "PII detection"
  },
  "postgresql": {
   "motivo": "domina SQL, fácil adaptação a Postgres",
@@ -692,6 +717,11 @@
   "motivo": "base estatística para matching probabilístico",
   "nivel": "tem",
   "nome": "Statistics"
+ },
+ "step functions": {
+  "motivo": "sem evidência de AWS/orquestração serverless",
+  "nivel": "nao",
+  "nome": "Step Functions"
  },
  "stibo step": {
   "motivo": "sem evidência de MDM específico",

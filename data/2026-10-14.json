@@ -1,0 +1,196 @@
+{
+  "data": "2026-10-14",
+  "gerado_em": "2026-10-13T22:54-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Neurons Lab hiring Data Engineer | Data Scientist — Unstructured Data ...",
+      "url": "https://ge.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474757863",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 7,
+      "motivo": "Post de rede social anunciando vaga concreta (Neurons Lab, Data Engineer/Scientist) com entity resolution e record linkage (determinístico e fuzzy) como responsabilidade central.",
+      "resumo": "Neurons Lab contrata Data Engineer/Scientist para dados não estruturados com especialidade em entity resolution, record linkage determinístico e fuzzy, Airflow, AWS/GCP e segurança de dados.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity resolution",
+          "Record linkage",
+          "Fuzzy matching",
+          "Airflow",
+          "Step Functions",
+          "AWS",
+          "GCP",
+          "PII detection",
+          "Encryption"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.31,
+      "compat_detalhe": {
+        "habilidades": 44,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Step Functions",
+          "AWS",
+          "GCP",
+          "Encryption"
+        ],
+        "parciais": [
+          "Airflow",
+          "PII detection"
+        ]
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "National Basketball Association (NBA) hiring Analytics Engineer ...",
+      "url": "https://www.linkedin.com/jobs/view/analytics-engineer-integrity-at-national-basketball-association-nba-4470788706",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "score": 8,
+      "motivo": "Post de rede social anunciando vaga concreta (NBA, Analytics Engineer) com entity resolution e record linkage como requisitos explícitos.",
+      "resumo": "NBA contrata Analytics Engineer com experiência em entity resolution, identity matching, record linkage e MLOps.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity resolution",
+          "Identity matching",
+          "Record linkage"
+        ],
+        "desejaveis": [
+          "MLOps"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.43,
+      "compat_detalhe": {
+        "habilidades": 88,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": []
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Entity resolution across SQL and NoSQL database management systems: a comprehensive review",
+      "url": "https://doi.org/10.1007/s10115-026-02878-z",
+      "autores": "Nour Mekki et al.",
+      "data": "2026-10-12",
+      "fonte": "OpenAlex",
+      "score": 3,
+      "motivo": "Paper cujo tema central é entity resolution em múltiplos tipos de sistemas de gerenciamento de banco de dados.",
+      "resumo": "Revisão abrangente sobre entity resolution em sistemas de gerenciamento SQL e NoSQL.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 38,
+  "vagas_arquivadas_total": 53,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Machine Learning",
+  "aula": {
+    "dia": 13,
+    "semana": 2,
+    "tema": "História e aplicações",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Mapear 3 casos de uso reais de mercado e o tipo de linkage de cada um",
+    "modulo": "Semana 2: História e aplicações",
+    "versao": 2,
+    "objetivo": "Reconhecer, a partir de dados reais de mercado, as diferenças entre deduplicação (uma base), record linkage (duas bases) e link analysis (grafo de relações), e justificar qual técnica da literatura (Fellegi-Sunter, blocking, EM) se aplica a cada caso.",
+    "contexto": "Você foi contratado como consultor por três clientes na mesma semana: uma rede de varejo quer limpar sua base de CRM que tem clientes duplicados; um hospital quer cruzar sua base de pacientes com a base de um plano de saúde parceiro para estudos longitudinais; e uma fintech quer mapear uma rede de contas suspeitas de fraude a partir de transações compartilhadas. Você precisa decidir, para cada caso, se é deduplicação, record linkage clássico (duas bases) ou link analysis, e qual arquitetura de matching usar. Christen (2012, Seção 1.2, p.9) mostra que link analysis depende de data matching para identificar nós que são a mesma entidade real, e a Seção 1.3 (p.10-11) lista os nomes que o mercado dá à mesma tarefa dependendo do domínio (deduplication, merge/purge, entity resolution etc).",
+    "passos": [
+      "Gere três datasets sintéticos pequenos em pandas: (a) CRM_varejo com duplicatas internas, (b) PACIENTES_A e PACIENTES_B simulando hospital e plano de saúde, (c) TRANSACOES_FRAUDE com contas e conexões (remetente, destinatário).",
+      "Para o caso (a), rode recordlinkage.Index().block('sobrenome') dentro da própria base (dedupe_only) e conte pares candidatos.",
+      "Para o caso (b), rode o mesmo índice mas entre as duas bases (link_only) e compare os volumes de pares candidatos.",
+      "Para o caso (c), em vez de comparar atributos de pessoa, construa um grafo simples (dicionário de adjacência) ligando contas que compartilham destinatário, representando link analysis.",
+      "Para cada um dos três casos, escreva em um comentário no código qual nome do Christen (p.10-11) melhor descreve a tarefa (dedupe, record linkage, entity resolution, link analysis) e por quê.",
+      "Compare os três resultados e identifique qual caso exige EM/Fellegi-Sunter clássico, qual exige blocking entre bases distintas, e qual não usa comparação de atributos e sim estrutura de rede."
+    ],
+    "codigo": "import pandas as pd\nimport recordlinkage as rl\n\ncrm = pd.DataFrame({'nome':['Ana Souza','Ana Souza','Bruno Lima'],'sobrenome':['Souza','Souza','Lima']})\npac_a = pd.DataFrame({'nome':['Carlos Dias'],'sobrenome':['Dias']}, index=['A1'])\npac_b = pd.DataFrame({'nome':['Carlos Dias'],'sobrenome':['Dias']}, index=['B1'])\n\nidx_dedup = rl.Index(); idx_dedup.block('sobrenome')\npares_dedup = idx_dedup.index(crm)\nprint('Caso 1 (dedup, mesma base):', len(pares_dedup), 'pares candidatos')\n\nidx_link = rl.Index(); idx_link.block('sobrenome')\npares_link = idx_link.index(pac_a, pac_b)\nprint('Caso 2 (record linkage, duas bases):', len(pares_link), 'pares candidatos')\n\ntransacoes = [('C1','C2'), ('C3','C2'), ('C4','C5')]\ngrafo = {}\nfor origem, destino in transacoes:\n    grafo.setdefault(destino, set()).add(origem)\nsuspeitos = {dest: contas for dest, contas in grafo.items() if len(contas) > 1}\nprint('Caso 3 (link analysis, no compartilhado):', suspeitos)",
+    "como_avaliar": "Verifique se o número de pares candidatos no Caso 1 é maior que zero (há duplicata interna 'Ana Souza'); confirme que o Caso 2 gera exatamente 1 par candidato (Carlos Dias em ambas as bases); confirme que o Caso 3 identifica 'C2' como nó compartilhado por duas origens (C1 e C3), caracterizando um padrão de rede e não um par de atributos. Escreva, para cada caso, uma frase citando o nome correto da tarefa segundo Christen (2012, p.10-11).",
+    "desafio": "Adicione ao grafo do Caso 3 uma quarta transação ('C6','C2'). Recalcule os suspeitos e explique por que, ao contrário dos Casos 1 e 2, aumentar o número de conexões não aumenta quadraticamente o custo computacional da forma como blocking faz: descreva em termos de O(n) vs O(n²) qual estrutura cresce como quê.",
+    "gabarito": "Caso 1 é deduplicação (dedupe_only) porque compara registros dentro da mesma base; Christen (p.10) lista isso também como 'merge/purge' ou 'list washing' no jargão de negócio. Caso 2 é record linkage clássico (link_only) entre duas bases distintas (hospital e plano de saúde), caso típico citado na Seção 1.4.2 (saúde) e alinhado à origem do termo em Dunn (1946) e Newcombe (1959). Caso 3 é link analysis, descrito na Seção 1.2 (p.9): aqui o problema não é comparar atributos textuais, mas identificar nós (entidades) conectados por relações (transações); ao adicionar C6 como nova origem apontando para C2, o conjunto suspeitos passa a ter três contas conectadas a C2, mas a estrutura de adjacência (dicionário) cresce em O(n) com o número de arestas, enquanto blocking ingênuo sem partição cresceria O(n²) com o número de registros comparados dentro de cada bloco.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 1.2 (p.9) e Seção 1.3 (p.10-11).",
+      "Dunn, H. L. (1946). Record linkage. American Journal of Public Health, 36(12).",
+      "Newcombe, H. B. et al. (1959). Automatic linkage of vital records. Science, 130.",
+      "Fellegi, I. P. & Sunter, A. B. (1969). A theory for record linkage. JASA, 64(328)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        9,
+        21
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2984,
+      "pos_palavras_chave": 3,
+      "aprovados": 2
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 179,
+      "pos_palavras_chave": 3,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

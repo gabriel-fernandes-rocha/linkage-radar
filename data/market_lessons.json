@@ -1,5 +1,56 @@
 [
  {
+  "data": "2026-10-14",
+  "habilidade": "Machine Learning",
+  "pct_vagas": 8,
+  "nivel_atual": "parcial",
+  "o_que_e": "Machine Learning aqui significa usar modelos supervisionados e não supervisionados para resolver problemas de classificação, scoring e geração de features, aplicados especialmente a problemas de matching e identidade (como nos modelos de scoring do Splink e nos grafos de identidade). Envolve entender o ciclo completo: preparação de dados, escolha de modelo, treino, validação, métricas e deploy. Para as vagas citadas, inclui desde modelos clássicos (regressão logística, árvores, gradient boosting) até fundamentos de redes neurais e embeddings usados em entity resolution moderna.",
+  "por_que_pedem": "Vagas de Data Scientist e AI/ML Engineer em identity graph e record linkage usam ML para ir além de regras determinísticas, criando modelos de scoring probabilístico, detecção de duplicatas via embeddings, e classificação de matches ambíguos. Elas querem alguém que entenda o pipeline de ML de ponta a ponta, não só use bibliotecas prontas.",
+  "ponte_com_o_que_voce_sabe": "Você já usa scikit-learn e Splink, que internamente aplicam modelos probabilísticos (Fellegi-Sunter é estatisticamente próximo de regressão logística) e scoring supervisionado. Você já lida com features de similaridade, blocking e QA, que são exatamente as etapas de feature engineering e validação de um pipeline de ML clássico. Isso significa que você não está começando do zero, só precisa formalizar conceitos e ampliar para embeddings e redes neurais simples.",
+  "minimo_para_ficar_apto": [
+   "Explicar o fluxo completo de um projeto de ML: dados, split treino/teste, overfitting, validação cruzada, métricas (precision, recall, F1, AUC)",
+   "Saber diferenças entre modelos supervisionados comuns: regressão logística, árvores de decisão, random forest, gradient boosting (XGBoost/LightGBM)",
+   "Entender conceitos básicos de redes neurais (perceptron, camadas, backpropagation, função de ativação) e quando usá-las",
+   "Saber o que são embeddings e como se aplicam a texto (word2vec, sentence embeddings) para entity resolution semântica",
+   "Conhecer PyTorch ou TensorFlow em nível básico, o suficiente para ler e adaptar um notebook de exemplo"
+  ],
+  "plano_rapido": [
+   "Revisar teoria de ML supervisionado e métricas (4h, curso Andrew Ng ML Specialization módulos 1-2)",
+   "Praticar com scikit-learn em um dataset de matching real, comparando logistic regression vs random forest vs XGBoost (5h)",
+   "Estudar fundamentos de redes neurais e treinar um MLP simples no PyTorch (6h, tutorial oficial PyTorch)",
+   "Aprender conceito de embeddings e testar sentence-transformers para gerar vetores de nomes/entidades (4h)",
+   "Montar métricas de avaliação completas (confusion matrix, ROC, PR curve) comparando seus modelos (3h)"
+  ],
+  "mini_projeto": "Construa um classificador de matches para um dataset público de entity resolution (ex: Febrl ou dataset de restaurantes do RecordLinkage Toolkit), comparando três abordagens: regras do Splink, um modelo de ML clássico (XGBoost) e um modelo com embeddings de texto (sentence-transformers + similaridade de cosseno). Documente métricas, tempo de treino e trade-offs, publicando no GitHub com README explicando quando cada abordagem é melhor.",
+  "como_colocar_no_curriculo": "Desenvolvi e comparei modelos de machine learning (regressão logística, XGBoost, embeddings semânticos) para scoring de matches em entity resolution, com avaliação de métricas de precision/recall em datasets de produção com bilhões de registros.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre o scoring do Splink (Fellegi-Sunter) e um modelo de machine learning supervisionado tradicional?",
+    "resposta": "O Fellegi-Sunter é um modelo probabilístico baseado em razões de verossimilhança (m e u probabilities) calculadas por campo, geralmente treinado de forma não supervisionada via EM algorithm. Um modelo supervisionado como regressão logística ou XGBoost aprende diretamente a partir de pares rotulados (match/não-match), podendo capturar interações não lineares entre features. Na prática, dá para usar as mesmas features de similaridade do Splink como entrada de um classificador supervisionado quando há dados rotulados disponíveis."
+   },
+   {
+    "pergunta": "Como você lidaria com desbalanceamento de classes em um problema de classificação de matches, onde a maioria dos pares não são matches?",
+    "resposta": "Usaria técnicas como undersampling da classe majoritária, oversampling (SMOTE) da minoritária, ajuste de peso de classes no modelo (class_weight), e focaria em métricas como precision-recall AUC em vez de acurácia, já que a acurácia é enganosa em dados desbalanceados. Em entity resolution isso é ainda mais crítico porque o blocking já reduz bastante os pares candidatos antes do scoring."
+   },
+   {
+    "pergunta": "O que são embeddings e como eles poderiam melhorar um pipeline de entity resolution baseado em regras?",
+    "resposta": "Embeddings são representações vetoriais densas que capturam similaridade semântica, não apenas léxica. Em entity resolution, embeddings de nomes ou endereços (via sentence-transformers) permitem capturar variações que fuzzy matching tradicional (RapidFuzz) não pega, como sinônimos, abreviações ou traduções. Podem ser usados tanto no blocking (para reduzir espaço de busca via similaridade vetorial) quanto como features adicionais no scoring."
+   },
+   {
+    "pergunta": "Como você validaria se um modelo de ML está generalizando bem para novos dados, e não só decorando o dataset de treino?",
+    "resposta": "Usaria split estratificado treino/validação/teste, validação cruzada k-fold, e monitoraria a diferença entre métricas de treino e teste para detectar overfitting. Em produção, também validaria com dados de um período diferente do treino (out-of-time validation), já que em entity resolution os padrões de dados podem mudar com o tempo."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Machine Learning Specialization (Andrew Ng, Coursera/DeepLearning.AI)",
+   "Documentação oficial do scikit-learn",
+   "Documentação oficial do PyTorch (tutoriais básicos)",
+   "Documentação do XGBoost",
+   "Documentação do sentence-transformers (SBERT)",
+   "Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow (Aurélien Géron)"
+  ]
+ },
+ {
   "data": "2026-10-13",
   "habilidade": "LLMs",
   "pct_vagas": 6,

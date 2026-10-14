@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -76,7 +76,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -147,7 +147,57 @@
       "parciais": []
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "National Basketball Association (NBA) hiring Analytics Engineer ...",
+    "url": "https://www.linkedin.com/jobs/view/analytics-engineer-integrity-at-national-basketball-association-nba-4470788706",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "score": 8,
+    "motivo": "Post de rede social anunciando vaga concreta (NBA, Analytics Engineer) com entity resolution e record linkage como requisitos explícitos.",
+    "resumo": "NBA contrata Analytics Engineer com experiência em entity resolution, identity matching, record linkage e MLOps.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity resolution",
+        "Identity matching",
+        "Record linkage"
+      ],
+      "desejaveis": [
+        "MLOps"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 88,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": []
+    },
+    "desde": "2026-10-14",
+    "verificada_em": "2026-10-14",
     "nova": true
   },
   {
@@ -192,8 +242,8 @@
       "parciais": []
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
-    "nova": true
+    "verificada_em": "2026-10-14",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -242,7 +292,7 @@
       ]
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -291,23 +341,33 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
     "tipo": "vaga",
-    "titulo": "Infotek Consulting Inc. hiring Data Engineer- Databricks ... - LinkedIn",
-    "url": "https://ca.linkedin.com/jobs/view/data-engineer-databricks-quantexa-at-infotek-consulting-inc-4472184939",
+    "titulo": "Neurons Lab hiring Data Engineer | Data Scientist — Unstructured Data ...",
+    "url": "https://ge.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474757863",
     "empresa": "",
     "local": "",
     "fonte": "Post · linkedin.com",
     "social": true,
-    "score": 4,
-    "motivo": "Post anunciando vaga concreta em Databricks com entity resolution como responsabilidade central explícita, alinhada ao perfil.",
-    "resumo": "Infotek Consulting Inc. contrata Data Engineer em Databricks para preparar dados estruturados/não estruturados, resolver entidades e validar qualidade, lineage e integridade de dados.",
-    "confianca": 0.85,
+    "score": 7,
+    "motivo": "Post de rede social anunciando vaga concreta (Neurons Lab, Data Engineer/Scientist) com entity resolution e record linkage (determinístico e fuzzy) como responsabilidade central.",
+    "resumo": "Neurons Lab contrata Data Engineer/Scientist para dados não estruturados com especialidade em entity resolution, record linkage determinístico e fuzzy, Airflow, AWS/GCP e segurança de dados.",
+    "confianca": 0.98,
     "requisitos": {
-      "obrigatorios": [],
+      "obrigatorios": [
+        "Entity resolution",
+        "Record linkage",
+        "Fuzzy matching",
+        "Airflow",
+        "Step Functions",
+        "AWS",
+        "GCP",
+        "PII detection",
+        "Encryption"
+      ],
       "desejaveis": []
     },
     "senioridade": "nao_informado",
@@ -321,21 +381,29 @@
     "contratacao": "nao_informado",
     "anos_experiencia_min": null,
     "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.32,
+    "foco_er": 0.7,
+    "encaixe": 0.31,
     "compat_detalhe": {
-      "habilidades": 50,
+      "habilidades": 44,
       "senioridade": 85,
       "local": 60,
       "ingles": 100,
-      "foco": 92,
+      "foco": 96,
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": []
+      "faltam": [
+        "Step Functions",
+        "AWS",
+        "GCP",
+        "Encryption"
+      ],
+      "parciais": [
+        "Airflow",
+        "PII detection"
+      ]
     },
-    "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
+    "desde": "2026-10-14",
+    "verificada_em": "2026-10-14",
     "nova": true
   },
   {
@@ -383,7 +451,7 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -427,8 +495,8 @@
       "parciais": []
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
-    "nova": true
+    "verificada_em": "2026-10-14",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -492,7 +560,7 @@
       "parciais": []
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -543,8 +611,8 @@
       ]
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
-    "nova": true
+    "verificada_em": "2026-10-14",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -594,7 +662,7 @@
       ]
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -630,7 +698,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -661,62 +729,6 @@
       "parciais": [
         "Snowflake"
       ]
-    }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Software Engineer",
-    "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
-    "empresa": "ZoomInfo",
-    "local": "Remoto · United States",
-    "fonte": "Himalayas",
-    "score": 9,
-    "motivo": "ZoomInfo Person Data team trabalha com entity resolution, deduplicação, e transformação de dados fragmentados em accurate contact profiles com 400M registros.",
-    "resumo": "Senior Software Engineer na ZoomInfo Person Data team para construir sistemas Java de alta throughput que processam dados fragmentados e os transformam em perfis de contato precisos, resolvendo desafios de entity resolution e data quality em escala de 400 milhões de registros.",
-    "confianca": 0.88,
-    "encaixe": 0.06,
-    "nota_perfil": "Especialização em entity resolution e deduplicação alinha perfeitamente, mas exige Java/backend em US remoto; stack de Python/Spark não é mencionado.",
-    "requisitos": {
-      "obrigatorios": [
-        "Java",
-        "Entity Resolution",
-        "Deduplication",
-        "Data Quality"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "compat_detalhe": {
-      "habilidades": 75,
-      "senioridade": 75,
-      "local": 12,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [
-        "Java"
-      ],
-      "parciais": []
     }
   },
   {
@@ -779,8 +791,64 @@
       "parciais": []
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Software Engineer",
+    "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
+    "empresa": "ZoomInfo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 9,
+    "motivo": "ZoomInfo Person Data team trabalha com entity resolution, deduplicação, e transformação de dados fragmentados em accurate contact profiles com 400M registros.",
+    "resumo": "Senior Software Engineer na ZoomInfo Person Data team para construir sistemas Java de alta throughput que processam dados fragmentados e os transformam em perfis de contato precisos, resolvendo desafios de entity resolution e data quality em escala de 400 milhões de registros.",
+    "confianca": 0.88,
+    "encaixe": 0.06,
+    "nota_perfil": "Especialização em entity resolution e deduplicação alinha perfeitamente, mas exige Java/backend em US remoto; stack de Python/Spark não é mencionado.",
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Entity Resolution",
+        "Deduplication",
+        "Data Quality"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "desde": "2026-09-28",
+    "verificada_em": "2026-10-14",
+    "nova": false,
+    "primeira_vez": "2026-09-28",
+    "status": "aberta",
+    "ultima_vez_aberta": "2026-10-01",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Java"
+      ],
+      "parciais": []
+    }
   },
   {
     "tipo": "vaga",
@@ -842,7 +910,7 @@
       ]
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -890,7 +958,7 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -938,7 +1006,7 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -997,7 +1065,7 @@
       "parciais": []
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1054,68 +1122,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Machine Learning Engineer",
-    "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
-    "empresa": "ZoomInfo",
-    "local": "Remoto · United States",
-    "fonte": "Himalayas",
-    "score": 6,
-    "motivo": "Machine Learning Engineer na ZoomInfo com responsabilidades explícitas de resolução de entity identity em escala, construção de data graph e detecção de registros obsoletos.",
-    "resumo": "Machine Learning Engineer na ZoomInfo para estender data graph B2B em empresas com pouca pegada pública, resolvendo identidade de entidade em escala e extraindo liderança, localizações e produtos.",
-    "confianca": 0.93,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "SQL",
-        "LLMs",
-        "Machine Learning",
-        "Entity Resolution",
-        "Distributed Data Processing"
-      ],
-      "desejaveis": [
-        "PyTorch",
-        "Embeddings",
-        "Clustering",
-        "Knowledge Graphs"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.3,
-    "encaixe": 0.05,
-    "compat_detalhe": {
-      "habilidades": 69,
-      "senioridade": 75,
-      "local": 12,
-      "ingles": 85,
-      "foco": 90,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [
-        "LLMs"
-      ],
-      "parciais": [
-        "Machine Learning"
-      ]
-    },
-    "desde": "2026-10-03",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1177,7 +1184,68 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Machine Learning Engineer",
+    "url": "https://himalayas.app/companies/zoominfo/jobs/machine-learning-engineer",
+    "empresa": "ZoomInfo",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "score": 6,
+    "motivo": "Machine Learning Engineer na ZoomInfo com responsabilidades explícitas de resolução de entity identity em escala, construção de data graph e detecção de registros obsoletos.",
+    "resumo": "Machine Learning Engineer na ZoomInfo para estender data graph B2B em empresas com pouca pegada pública, resolvendo identidade de entidade em escala e extraindo liderança, localizações e produtos.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "LLMs",
+        "Machine Learning",
+        "Entity Resolution",
+        "Distributed Data Processing"
+      ],
+      "desejaveis": [
+        "PyTorch",
+        "Embeddings",
+        "Clustering",
+        "Knowledge Graphs"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 69,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "LLMs"
+      ],
+      "parciais": [
+        "Machine Learning"
+      ]
+    },
+    "desde": "2026-10-03",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1225,8 +1293,8 @@
       "parciais": []
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
-    "nova": true
+    "verificada_em": "2026-10-14",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1273,8 +1341,8 @@
       "parciais": []
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
-    "nova": true
+    "verificada_em": "2026-10-14",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1328,7 +1396,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1351,7 +1419,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1417,7 +1485,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1474,7 +1542,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1504,54 +1572,6 @@
       "faltam": [],
       "parciais": []
     }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "EngRadar hiring Senior Software Engineer, Identity Graph in San ...",
-    "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-identity-graph-at-engradar-4475002002",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "score": 3,
-    "motivo": "Post anunciando vaga concreta com entity resolution como componente central do identity graph: schema design, ingestão, resolução de entidades, APIs, performance; alinhado ao perfil.",
-    "resumo": "EngRadar contrata Senior Software Engineer para o Identity Graph, possuindo entity resolution, schema design, ingestão de dados, APIs e performance end-to-end.",
-    "confianca": 0.88,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "San Francisco"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.5,
-    "encaixe": 0.03,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 75,
-      "local": 8,
-      "ingles": 85,
-      "foco": 92,
-      "senioridade_txt": "nível senior",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": []
-    },
-    "desde": "2026-10-13",
-    "verificada_em": "2026-10-13",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1615,7 +1635,7 @@
       "parciais": []
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1688,7 +1708,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1753,7 +1773,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1829,7 +1849,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1891,7 +1911,7 @@
       ]
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -1914,7 +1934,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2001,7 +2021,7 @@
       ]
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false
   },
   {
@@ -2024,7 +2044,7 @@
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2077,7 +2097,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-13",
+    "verificada_em": "2026-10-14",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
