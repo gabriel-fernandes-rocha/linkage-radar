@@ -74,7 +74,7 @@ const PDF_OFFSET = 16;  // página impressa + 16 = página do PDF
 const getBook = () => { try { return localStorage.getItem(BOOK_KEY) || ""; } catch { return ""; } };
 function bookHref(page) {
   // abre no visualizador próprio (livro.html), que vai direto à página, inclusive no celular
-  return getBook().trim() ? `livro.html#p=${page}` : "";
+  return getBook().trim() ? new URL(`livro.html#p=${page}`, location.href).href : "";
 }
 function bookLinks(a) {
   const refs = (a.fontes || []).filter((f) => f.includes("Christen (2012)"));
@@ -150,7 +150,7 @@ async function load(day) {
   try {
     const rep = await getJSON(`data/${day}.json`);
     const byCompat = (xs) => [...xs].sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
-    renderSection("vagas", byCompat(rep.vagas || []));
+    // vagas novas agora ficam dentro da seção única de vagas (loadOpenJobs)
     ["papers", "eventos", "linkedin"].forEach((k) => renderSection(k, rep[k] || []));
     $("#aula .lesson").innerHTML = lessonHTML(rep.aula);
     renderPastLessons(rep.aula);
@@ -171,9 +171,27 @@ async function loadOpenJobs() {
     $(".count", card).textContent = jobs.length;
     const checked = jobs.map((j) => j.verificada_em).sort().pop();
     $("#abertas-atualizado").textContent = checked ? `Última verificação: ${fmtDate(checked)}.` : "";
-    $(".list", card).innerHTML = jobs.length
-      ? jobs.map((j) => `<article class="item">${jobHTML(j, true)}</article>`).join("")
-      : `<p class="empty">Nenhuma vaga aberta no momento ✅</p>`;
+    if (!jobs.length) {
+      $(".list", card).innerHTML = `<p class="empty">Nenhuma vaga aberta no momento ✅</p>`;
+      return;
+    }
+    jobs.forEach((j) => (j.nova = !!LATEST_EDITION && j.desde === LATEST_EDITION));
+    const novas = jobs.filter((j) => j.nova);
+    const top = jobs.filter((j) => !j.nova).slice(0, 3);
+    const shownSet = new Set([...novas, ...top]);
+    const rest = jobs.filter((j) => !shownSet.has(j));
+    const block = (title, list) => list.length
+      ? `<h3 class="sub">${title}</h3><div class="grid2">${list.map((j) => `<article class="item${j.nova ? " is-new" : ""}">${jobHTML(j, true)}</article>`).join("")}</div>` : "";
+    const render = (all) => {
+      $(".list", card).innerHTML =
+        (novas.length ? block(`🆕 Novas nesta edição (${novas.length})`, novas)
+                      : `<p class="empty">Nenhuma vaga nova nesta edição ✅</p>`) +
+        block("🏆 As 3 mais compatíveis entre as que você já viu", top) +
+        (all ? block(`Todas as outras (${rest.length})`, rest)
+             : rest.length ? `<button class="btn more" type="button">Ver todas as ${jobs.length} vagas abertas</button>` : "");
+      $(".more", card)?.addEventListener("click", () => render(true));
+    };
+    render(false);
   } catch {
     $(".count", card).textContent = 0;
     $(".list", card).innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
@@ -356,9 +374,11 @@ async function loadNetwork(file, cardId, button) {
       <p class="meta">${esc(x.fonte || "")}${x.desde ? " · desde " + fmtDate(x.desde) : ""}</p>
       <a class="btn" href="${safeUrl(x.url)}" target="_blank" rel="noopener">${button}</a></article>`;
   const render = (all) => {
-    const shown = all ? items : items.slice(0, NET_LIMIT);
-    $(".list", card).innerHTML = shown.map(row).join("") + (items.length > NET_LIMIT && !all
-      ? `<button class="btn more" type="button">Ver todas (${items.length})</button>` : "");
+    const shown = all ? items : items.filter((x) => x.novo);
+    $(".list", card).innerHTML = (shown.length ? shown.map(row).join("")
+      : `<p class="empty">Nenhum novo nesta edição ✅ (você já viu todos)</p>`) +
+      (!all && items.length > shown.length
+        ? `<button class="btn more" type="button">Ver todos (${items.length})</button>` : "");
     $(".more", card)?.addEventListener("click", () => render(true));
   };
   render(false);
@@ -366,7 +386,6 @@ async function loadNetwork(file, cardId, button) {
 
 (async function init() {
   if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
-  loadOpenJobs();
   loadSkills();
   loadHealth();
   loadMarket();
@@ -376,6 +395,7 @@ async function loadNetwork(file, cardId, button) {
   try {
     dates = (await getJSON("data/index.json")).datas;
     LATEST_EDITION = dates[0] || "";
+    loadOpenJobs();
     loadNetwork("data/people.json", "pessoas", "Ver perfil");
     loadNetwork("data/companies.json", "empresas", "Ver empresa");
   } catch {

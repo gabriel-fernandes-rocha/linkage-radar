@@ -153,3 +153,7 @@ button.btn { background: none; cursor: pointer; font: inherit; font-size: .85rem
 #skills .bar-row { padding: 5px 0; }
 #skills ol { padding-left: 1.3em; margin: 4px 0; }
 #skills li { margin: 6px 0; font-size: .9rem; }
+
+h3.sub { font-size: .95rem; margin: 12px 0 4px; color: var(--muted); }
+.grid2 { display: grid; gap: 0 24px; }
+@media (min-width: 820px) { .grid2 { grid-template-columns: 1fr 1fr; } }
