@@ -25,11 +25,13 @@ def collect(cfg: dict) -> list[dict]:
     is_li = lambda r: re.search(r"linkedin\.com/(posts|pulse|jobs/view)/", r.get("url", ""))
     terms_q = "(" + " OR ".join(f'"{t}"' for t in terms) + ")"
     # o DuckDuckGo não entende OR: 1 termo por consulta, em rodízio diário (2º termo só se vier pouco)
+    # só termos que comprovadamente trazem posts no DuckDuckGo (multipalavra entre aspas volta vazio)
+    core = cfg["queries"].get("linkedin_ddg", ["entity resolution", "record linkage", "identity resolution"])
     k = date.today().toordinal()
-    t1, t2 = terms[k % len(terms)], terms[(k + 1) % len(terms)]
+    t1, t2 = core[k % len(core)], core[(k + 1) % len(core)]
     raw = websearch.cascade([
-        ("ddg", f'"{t1}" site:linkedin.com', "qdr:w"),
-        ("ddg", f'"{t2}" site:linkedin.com', "qdr:w"),
+        ("ddg", f'"{t1}" site:linkedin.com', "qdr:m"),
+        ("ddg", f'"{t2}" site:linkedin.com', "qdr:m"),
         ("google", q, "qdr:w"),
     ], is_li, want=5, label="linkedin")
 

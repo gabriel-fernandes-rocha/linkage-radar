@@ -55,11 +55,14 @@ def still_open(job: dict, listed_today: set[str]) -> bool:
 def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: int) -> list[dict]:
     """Adiciona as novas, revalida as antigas e devolve a carteira ordenada (mais compatíveis primeiro)."""
     listed_today = {_norm_url(j["url"]) for j in raw_jobs}
+    pub_today = {_norm_url(j["url"]): j.get("publicada_em") for j in raw_jobs if j.get("publicada_em")}
     current = load()
     known = {_norm_url(j["url"]) for j in current}
     fresh = {_norm_url(j["url"]): j for j in new_jobs}
     kept = []
     for job in current:
+        if not job.get("publicada_em") and pub_today.get(_norm_url(job["url"])):
+            job["publicada_em"] = pub_today[_norm_url(job["url"])]  # preenche a data de publicação real
         upd = fresh.get(_norm_url(job["url"]))
         if upd:  # reavaliada hoje: atualiza compatibilidade/requisitos, mantém a data de entrada
             job.update({k: v for k, v in upd.items() if k not in ("texto", "desde", "nova")})

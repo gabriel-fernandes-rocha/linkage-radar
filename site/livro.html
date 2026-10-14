@@ -16,8 +16,10 @@
     button { cursor: pointer; font-weight: 600; color: var(--accent); }
     input { width: 5.5em; text-align: center; }
     #info { color: var(--muted); font-size: .85rem; }
-    main { display: flex; justify-content: center; padding: 12px; }
-    canvas { max-width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.15); }
+    main { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 12px; }
+    .pg { position: relative; max-width: 100%; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.15); }
+    .pg canvas { display: block; max-width: 100%; height: auto; }
+    .pg .num { position: absolute; right: 6px; bottom: 4px; font-size: .7rem; color: #888; }
     #msg { max-width: 640px; margin: 24px auto; padding: 0 16px; line-height: 1.5; }
   </style>
 </head>
@@ -29,7 +31,7 @@
     <span id="info"></span>
     <button id="cfg" type="button">Trocar link</button>
   </header>
-  <main><canvas id="cv"></canvas></main>
+  <main id="pages"></main>
   <div id="msg"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script>
@@ -56,23 +58,62 @@
 
     const msg = (html) => { document.getElementById("msg").innerHTML = html; };
     pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
-    let doc = null, rendering = false;
+    let doc = null;
+    const rendered = new Set();
+    const pages = document.getElementById("pages");
 
-    async function render() {
-      if (!doc || rendering) return;
-      rendering = true;
-      const n = Math.min(Math.max(printed + OFFSET, 1), doc.numPages);
-      const page = await doc.getPage(n);
+    // Livro inteiro em rolagem contínua: cada página vira um "espaço" do tamanho certo e só é desenhada
+    // quando se aproxima da tela (leve no celular). Ao abrir, rola até a página do assunto.
+    async function buildBook() {
+      const first = await doc.getPage(1);
+      const ratio = first.getViewport({ scale: 1 }).height / first.getViewport({ scale: 1 }).width;
       const width = Math.min(document.documentElement.clientWidth - 24, 900);
+      pages.innerHTML = "";
+      rendered.clear();
+      for (let n = 1; n <= doc.numPages; n++) {
+        const box = document.createElement("div");
+        box.className = "pg"; box.dataset.n = n;
+        box.style.width = width + "px"; box.style.height = Math.round(width * ratio) + "px";
+        box.innerHTML = `<span class="num">${n - OFFSET > 0 ? "p. " + (n - OFFSET) : "PDF " + n}</span>`;
+        pages.appendChild(box);
+      }
+      const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+        if (en.isIntersecting) draw(+en.target.dataset.n, width);
+      }), { rootMargin: "1200px 0px" });
+      pages.querySelectorAll(".pg").forEach((b) => io.observe(b));
+      const spy = new IntersectionObserver((entries) => entries.forEach((en) => {
+        if (en.isIntersecting) {
+          const n = +en.target.dataset.n;
+          document.getElementById("page").value = n - OFFSET;
+          document.getElementById("info").textContent = `(PDF ${n} de ${doc.numPages})`;
+        }
+      }), { rootMargin: "-45% 0px -50% 0px" });
+      pages.querySelectorAll(".pg").forEach((b) => spy.observe(b));
+      goTo(printed);
+    }
+
+    async function draw(n, width) {
+      if (rendered.has(n)) return;
+      rendered.add(n);
+      const page = await doc.getPage(n);
       const base = page.getViewport({ scale: 1 });
       const vp = page.getViewport({ scale: (width / base.width) * (window.devicePixelRatio || 1) });
-      const cv = document.getElementById("cv");
+      const cv = document.createElement("canvas");
       cv.width = vp.width; cv.height = vp.height; cv.style.width = width + "px";
       await page.render({ canvasContext: cv.getContext("2d"), viewport: vp }).promise;
-      document.getElementById("page").value = printed;
-      document.getElementById("info").textContent = `(PDF ${n} de ${doc.numPages})`;
-      history.replaceState(null, "", `#p=${printed}`);  // tira o link do PDF da barra de endereço
-      rendering = false;
+      const box = pages.querySelector(`.pg[data-n="${n}"]`);
+      box.style.height = "auto";
+      box.prepend(cv);
+    }
+
+    function goTo(p) {
+      printed = p;
+      const n = Math.min(Math.max(p + OFFSET, 1), doc.numPages);
+      const box = pages.querySelector(`.pg[data-n="${n}"]`);
+      const header = document.querySelector("header").offsetHeight;
+      window.scrollTo({ top: box.offsetTop - header - 8 });
+      setTimeout(() => window.scrollTo({ top: box.offsetTop - header - 8 }), 400);  // após desenhar as vizinhas
+      history.replaceState(null, "", `#p=${p}`);  // tira o link do PDF da barra de endereço
     }
 
     async function open() {
@@ -84,7 +125,7 @@
       try {
         doc = await pdfjsLib.getDocument({ url: directUrl(url) }).promise;
         msg("");
-        render();
+        await buildBook();
       } catch (e) {
         msg(`<p><b>Não consegui ler o PDF por este link.</b> Alguns serviços (Google Drive, OneDrive) bloqueiam a leitura
           por outro site. Funciona com <b>Dropbox</b>: suba o PDF, toque em Compartilhar → Copiar link e use "Trocar link".</p>
@@ -98,11 +139,11 @@
       if (v) { store.set(v); open(); }
     }
 
-    document.getElementById("prev").onclick = () => { printed--; render(); };
-    document.getElementById("next").onclick = () => { printed++; render(); };
-    document.getElementById("page").onchange = (e) => { printed = parseInt(e.target.value, 10) || printed; render(); };
+    const cur = () => parseInt(document.getElementById("page").value, 10) || printed;
+    document.getElementById("prev").onclick = () => doc && goTo(cur() - 1);
+    document.getElementById("next").onclick = () => doc && goTo(cur() + 1);
+    document.getElementById("page").onchange = (e) => doc && goTo(parseInt(e.target.value, 10) || printed);
     document.getElementById("cfg").onclick = askLink;
-    addEventListener("resize", () => render());
     open();
   </script>
 </body>

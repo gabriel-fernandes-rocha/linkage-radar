@@ -9,19 +9,53 @@ from common import no_dash
 NUM = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
 
 
+def age_label(job: dict, today: date) -> str:
+    """'publicada hoje', 'ontem', 'há 9 dias' a partir da data de publicação real da vaga."""
+    pub = job.get("publicada_em")
+    if not pub:
+        return ""
+    days = (today - date.fromisoformat(pub)).days
+    return "publicada hoje" if days <= 0 else "publicada ontem" if days == 1 else f"publicada há {days} dias"
+
+
+def is_fresh(job: dict, today: date, max_days: int) -> bool:
+    pub = job.get("publicada_em")
+    return bool(pub) and (today - date.fromisoformat(pub)).days <= max_days
+
+
 def _e(text) -> str:
     return escape(no_dash(str(text or "")).strip())
 
 
+def _block(i: int, j: dict, new_urls: set, d: date) -> list[str]:
+    det = j.get("compat_detalhe") or {}
+    req = j.get("requisitos") or {}
+    local = " · ".join(x for x in (j.get("local"), det.get("local_txt")) if x)
+    age = age_label(j, d)
+    lines = ["", f"{NUM[i]} <b>{_e(j['titulo'])}</b>", f"🏢 {_e(j.get('empresa') or j.get('fonte'))}"]
+    if local:
+        lines.append(f"📍 {_e(local)}")
+    lines.append(f"🎯 <b>{round(j.get('encaixe', 0) * 100)}% compatível</b>"
+                 + (f" · habilidades {det['habilidades']}%" if det.get("habilidades") is not None else ""))
+    if age:
+        lines.append(f"🗓️ {age}" + (" · 🆕 nova no radar" if j["url"] in new_urls else ""))
+    if req.get("obrigatorios"):
+        lines.append(f"🧰 Pede: {_e(', '.join(req['obrigatorios'][:6]))}")
+    if det.get("faltam"):
+        lines.append(f"⚠️ Falta: {_e(', '.join(det['faltam'][:4]))}")
+    lines.append(f'🔗 <a href="{escape(j["url"], quote=True)}">Ver vaga</a>')
+    return lines
+
+
 def jobs_message(rep: dict, site_url: str, open_jobs: list[dict], min_compat: float, top_n: int = 3,
-                 alert: str | None = None) -> str:
+                 alert: str | None = None, fresh_days: int = 2) -> str:
     d = date.fromisoformat(rep["data"])
     new_urls = {j["url"] for j in rep.get("vagas", [])}
     pool = {j["url"]: j for j in open_jobs}
     for j in rep.get("vagas", []):
         pool.setdefault(j["url"], j)
     ranked = sorted(pool.values(), key=lambda j: j.get("encaixe", 0), reverse=True)
-    top = [j for j in ranked if j.get("encaixe", 0) >= min_compat][:top_n]
+    top = [j for j in ranked if j.get("encaixe", 0) >= min_compat][:top_n * 2]
     blocked = len(ranked) - len([j for j in ranked if j.get("encaixe", 0) >= min_compat])
 
     out = []
@@ -30,26 +64,19 @@ def jobs_message(rep: dict, site_url: str, open_jobs: list[dict], min_compat: fl
     out += [f"<b>📡 Linkage Radar · {d:%d/%m}</b>",
             f"💼 {len(new_urls)} vagas novas hoje · 📋 {rep.get('vagas_abertas_total', len(pool))} abertas no seu perfil",
             ""]
+    fresh = [j for j in ranked if is_fresh(j, d, fresh_days) and j.get("encaixe", 0) >= min_compat * 0.6][:3]
+    if fresh:
+        out.append(f"<b>🔥 PUBLICADAS NOS ÚLTIMOS {fresh_days + 1} DIAS: CANDIDATE-SE CEDO</b>")
+        for i, j in enumerate(fresh):
+            out += _block(i, j, new_urls, d)
+        out.append("")
+    top = ([j for j in top if j not in fresh] or top)[:top_n]
     if top:
         out.append(f"<b>🏆 TOP {len(top)} MAIS COMPATÍVEIS COM VOCÊ</b>" if len(top) == top_n else
-                   f"<b>🏆 {len(top)} {'VAGA ACESSÍVEL' if len(top) == 1 else 'VAGAS ACESSÍVEIS'} HOJE</b>")
+                   f"<b>🏆 {len(top)} {'VAGA ACESSÍVEL' if len(top) == 1 else 'VAGAS ACESSÍVEIS'}</b>")
         for i, j in enumerate(top):
-            det = j.get("compat_detalhe") or {}
-            req = j.get("requisitos") or {}
-            local = " · ".join(x for x in (j.get("local"), det.get("local_txt")) if x)
-            out += ["", f"{NUM[i]} <b>{_e(j['titulo'])}</b>",
-                    f"🏢 {_e(j.get('empresa') or j.get('fonte'))}"]
-            if local:
-                out.append(f"📍 {_e(local)}")
-            out.append(f"🎯 <b>{round(j.get('encaixe', 0) * 100)}% compatível</b>"
-                       + (" · 🆕 nova" if j["url"] in new_urls else "")
-                       + (f" · habilidades {det['habilidades']}%" if det.get("habilidades") is not None else ""))
-            if req.get("obrigatorios"):
-                out.append(f"🧰 Pede: {_e(', '.join(req['obrigatorios'][:6]))}")
-            if det.get("faltam"):
-                out.append(f"⚠️ Falta: {_e(', '.join(det['faltam'][:4]))}")
-            out.append(f'🔗 <a href="{escape(j["url"], quote=True)}">Ver vaga</a>')
-    else:
+            out += _block(i, j, new_urls, d)
+    elif not fresh:
         out.append("Nenhuma vaga acessível no seu perfil hoje.")
     if blocked:
         out += ["", f"<i>+{blocked} vagas abaixo de {round(min_compat * 100)}% (exigem morar/ter visto no exterior "

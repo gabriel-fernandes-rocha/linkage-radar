@@ -49,6 +49,8 @@ def _counts() -> tuple[dict[str, int], list[str]]:
             counts["linkedin/posts"] = int(m[1])
         elif m := re.match(r"network: (\d+) perfis", msg):
             counts["network/perfis"] = max(counts.get("network/perfis", 0), int(m[1]))
+        if m := re.match(r"jobs/greenhouse '(\w+)' indispon", msg):
+            failures.append(f"Greenhouse: empresa '{m[1]}' não responde mais (remova de config.yaml)")
         if level in ("WARNING", "ERROR") and "falhou" in msg:
             failures.append(msg[:220])
         if m := re.match(r"(jobs|papers)/(\w+) falhou", msg):

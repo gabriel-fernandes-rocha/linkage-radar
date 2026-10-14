@@ -35,6 +35,7 @@ network:
   companies_weekdays: [0, 2, 4]   # busca empresas seg, qua e sex (economia de buscas)
 
 open_jobs:
+  frescas_dias: 2           # "🔥 publicadas há até 2 dias": destaque no site e no Telegram
   max_age_days: 60          # vaga sai da lista de abertas depois disso, mesmo sem confirmação de fechamento
 
 # Seu perfil — o juiz usa isto para dar a nota de encaixe das vagas
@@ -126,6 +127,10 @@ queries:
     - "data linkage"
     - "address matching"
     - "linkage de dados"
+  linkedin_ddg:               # termos para o DuckDuckGo (1 por dia, em rodízio): testados, trazem posts
+    - "entity resolution"
+    - "record linkage"
+    - "identity resolution"
   linkedin:
     - "record linkage"
     - "entity resolution"
@@ -168,6 +173,7 @@ adzuna_countries: [br, us, gb, de, nl, ca, au, fr]
 # Empresas conhecidas por ER / linkage / geo (job boards públicos).
 # Se um slug não existir, a fonte é simplesmente ignorada.
 companies:
-  greenhouse: [senzing, quantexa, mapbox, here, esri, palantir, precisely, databricks, reltio]
+  # (out/2026: senzing, quantexa, mapbox, here, palantir e precisely saíram do Greenhouse: 404)
+  greenhouse: [esri, databricks, reltio]
   lever: [palantir, tamr, zingg, melissa, loqate, experian, lexisnexisrisk, informatica]
   ashby: [tamr, zingg, senzing, quantexa]

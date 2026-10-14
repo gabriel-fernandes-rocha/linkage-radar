@@ -15,7 +15,7 @@ from dedup import _norm_url
 ARCHIVE = DATA / "jobs_archive.json"
 SKILLS = DATA / "skills.json"
 KEEP = ("titulo", "empresa", "local", "url", "fonte", "encaixe", "nota_perfil", "motivo", "resumo",
-        "requisitos", "senioridade", "modalidade")
+        "requisitos", "senioridade", "modalidade", "publicada_em")
 
 
 def load() -> list[dict]:

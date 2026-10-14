@@ -100,7 +100,8 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
             resp = client.messages.create(
                 model=model, max_tokens=6000, system=SYSTEM,
                 messages=[{"role": "user", "content": payload}],
-                output_config={"effort": "low", "format": {"type": "json_schema", "schema": SCHEMA}})
+                output_config=({"format": {"type": "json_schema", "schema": SCHEMA}} if "haiku" in model else
+                               {"effort": "low", "format": {"type": "json_schema", "schema": SCHEMA}}))
             text = next(b.text for b in resp.content if b.type == "text")
             log.info("requisitos: tokens in=%s out=%s", resp.usage.input_tokens, resp.usage.output_tokens)
             rows = json.loads(text)["vagas"]

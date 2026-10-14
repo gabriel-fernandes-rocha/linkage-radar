@@ -66,7 +66,8 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
             raw_jobs = raw
         cands = [it for it in unique(raw)
                  if (seen.is_new(it) or (bootstrap and key == "vagas")) and keywords.passes(it)]
-        cands.sort(key=lambda it: it["score"], reverse=True)
+        # vagas publicadas mais recentemente vão primeiro para o juiz (ser dos primeiros a se candidatar)
+        cands.sort(key=lambda it: (it.get("publicada_em") or "", it["score"]), reverse=True)
         cands = cands[:max(budget, 0)]
         budget -= len(cands)
         if use_llm:

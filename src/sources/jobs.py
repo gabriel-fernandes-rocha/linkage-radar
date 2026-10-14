@@ -8,8 +8,38 @@ from datetime import date
 from common import clean, get, item, log
 
 
-def _job(title, url, company, location, text, source):
-    return item("vaga", title, url, empresa=company or "", local=location or "", fonte=source, texto=clean(text, 8000))
+def published(value) -> str | None:
+    """Data de publicação da vaga (AAAA-MM-DD) a partir de ISO, epoch (s ou ms), RFC 822 ou "3 days ago"."""
+    from datetime import datetime, timedelta, timezone
+    from email.utils import parsedate_to_datetime
+
+    if value in (None, "", 0):
+        return None
+    try:
+        if isinstance(value, (int, float)) or str(value).isdigit():
+            v = float(value)
+            return datetime.fromtimestamp(v / 1000 if v > 1e11 else v, tz=timezone.utc).date().isoformat()
+        s = str(value).strip()
+        if re.match(r"\d{4}-\d{2}-\d{2}", s):
+            return s[:10]
+        m = re.search(r"(\d+)\+?\s*(hour|hora|day|dia|week|semana|month|m[eê]s)", s, re.I)
+        if m:
+            n, unit = int(m[1]), m[2].lower()
+            days = n / 24 if unit.startswith(("hour", "hora")) else n * (7 if unit.startswith(("week", "semana"))
+                                                                       else 30 if unit.startswith("m") else 1)
+            return (date.today() - timedelta(days=int(days))).isoformat()
+        if re.search(r"(just|today|hoje|agora)", s, re.I):
+            return date.today().isoformat()
+        if re.search(r"(yesterday|ontem)", s, re.I):
+            return (date.today() - timedelta(days=1)).isoformat()
+        return parsedate_to_datetime(s).date().isoformat()
+    except Exception:
+        return None
+
+
+def _job(title, url, company, location, text, source, pub=None):
+    return item("vaga", title, url, empresa=company or "", local=location or "", fonte=source,
+                texto=clean(text, 8000), publicada_em=published(pub))
 
 
 def adzuna(cfg):
@@ -36,7 +66,8 @@ def adzuna(cfg):
 def remoteok(cfg):
     data = get("https://remoteok.com/api").json()[1:]
     return [_job(j.get("position"), j.get("url"), j.get("company"), j.get("location") or "Remoto",
-                 f"{' '.join(j.get('tags', []))} {j.get('description', '')}", "RemoteOK") for j in data]
+                 f"{' '.join(j.get('tags', []))} {j.get('description', '')}", "RemoteOK",
+                 j.get("date") or j.get("epoch")) for j in data]
 
 
 def remotive(cfg):
@@ -44,7 +75,8 @@ def remotive(cfg):
     for q in cfg["queries"]["jobs"]:
         for j in get("https://remotive.com/api/remote-jobs", params={"search": q}).json().get("jobs", []):
             out.append(_job(j.get("title"), j.get("url"), j.get("company_name"),
-                            j.get("candidate_required_location") or "Remoto", j.get("description"), "Remotive"))
+                            j.get("candidate_required_location") or "Remoto", j.get("description"), "Remotive",
+                            j.get("publication_date")))
     return out
 
 
@@ -53,11 +85,13 @@ def greenhouse(cfg):
     for slug in cfg.get("companies", {}).get("greenhouse", []):
         try:
             data = get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", params={"content": "true"}).json()
-        except Exception:
+        except Exception as e:
+            log.info("jobs/greenhouse '%s' indisponível (%s)", slug, str(e)[:60])
             continue
         for j in data.get("jobs", []):
             out.append(_job(j.get("title"), j.get("absolute_url"), slug,
-                            (j.get("location") or {}).get("name"), j.get("content"), f"Greenhouse/{slug}"))
+                            (j.get("location") or {}).get("name"), j.get("content"), f"Greenhouse/{slug}",
+                            j.get("first_published") or j.get("updated_at")))
     return out
 
 
@@ -70,7 +104,8 @@ def lever(cfg):
             continue
         for j in data:
             out.append(_job(j.get("text"), j.get("hostedUrl"), slug,
-                            (j.get("categories") or {}).get("location"), j.get("descriptionPlain"), f"Lever/{slug}"))
+                            (j.get("categories") or {}).get("location"), j.get("descriptionPlain"), f"Lever/{slug}",
+                            j.get("createdAt")))
     return out
 
 
@@ -83,7 +118,7 @@ def ashby(cfg):
             continue
         for j in data.get("jobs", []):
             out.append(_job(j.get("title"), j.get("jobUrl"), slug, j.get("location"),
-                            j.get("descriptionPlain"), f"Ashby/{slug}"))
+                            j.get("descriptionPlain"), f"Ashby/{slug}", j.get("publishedAt")))
     return out
 
 
@@ -103,7 +138,7 @@ def hn_who_is_hiring(cfg):
             text = clean(c.get("comment_text"), 2000)
             first = re.split(r"\|| - ", text)[0][:80]
             out.append(_job(f"HN: {first}", f"https://news.ycombinator.com/item?id={c['objectID']}",
-                            first, "", text, "HN Who is hiring"))
+                            first, "", text, "HN Who is hiring", c.get("created_at")))
     return out
 
 
@@ -145,7 +180,8 @@ def serpapi_google_jobs(cfg):
             for j in data.get("jobs_results", []):
                 link = (j.get("apply_options") or [{}])[0].get("link") or j.get("share_link", "")
                 out.append(_job(j.get("title"), link, j.get("company_name"), j.get("location"),
-                                j.get("description"), "Google Jobs"))
+                                j.get("description"), "Google Jobs",
+                                (j.get("detected_extensions") or {}).get("posted_at")))
             token = (data.get("serpapi_pagination") or {}).get("next_page_token")
             if not token:
                 break
@@ -166,7 +202,7 @@ def gupy(cfg):
             if not remote and j.get("workplaceType"):
                 local += f" ({'híbrido' if j['workplaceType'] == 'hybrid' else 'presencial'})"
             out.append(_job(j.get("name"), j.get("jobUrl"), (j.get("careerPageName") or "").strip(),
-                            local, j.get("description"), "Gupy"))
+                            local, j.get("description"), "Gupy", j.get("publishedDate")))
     return out
 
 
@@ -176,7 +212,7 @@ def himalayas(cfg):
         for j in get("https://himalayas.app/jobs/api/search", params={"q": q.replace('"', "")}).json().get("jobs", []):
             local = ", ".join(j.get("locationRestrictions") or []) or "Remoto (mundo)"
             out.append(_job(j.get("title"), j.get("applicationLink") or j.get("guid"), j.get("companyName"),
-                            f"Remoto · {local}", j.get("description"), "Himalayas"))
+                            f"Remoto · {local}", j.get("description"), "Himalayas", j.get("pubDate")))
     return out
 
 
@@ -190,7 +226,7 @@ def jobicy(cfg):
             continue
         for j in data.get("jobs", []):
             out.append(_job(j.get("jobTitle"), j.get("url"), j.get("companyName"), f"Remoto · {j.get('jobGeo', '')}",
-                            j.get("jobDescription"), "Jobicy"))
+                            j.get("jobDescription"), "Jobicy", j.get("pubDate")))
     return out
 
 
@@ -203,7 +239,7 @@ def workable(cfg):
             if j.get("workplace") == "remote":
                 local = f"Remoto · {local}" if local else "Remoto"
             out.append(_job(j.get("title"), j.get("url"), (j.get("company") or {}).get("title"), local,
-                            j.get("description"), "Workable"))
+                            j.get("description"), "Workable", j.get("created")))
     return out
 
 
@@ -217,7 +253,7 @@ def weworkremotely(cfg):
             title = it.findtext("title", "")
             company, _, role = title.partition(": ")
             out.append(_job(role or title, it.findtext("link", ""), company, it.findtext("region", "") or "Remoto",
-                            it.findtext("description", ""), "We Work Remotely"))
+                            it.findtext("description", ""), "We Work Remotely", it.findtext("pubDate", "")))
     return out
 
 
@@ -256,7 +292,7 @@ def social_posts(cfg):
             continue
         domain = host_path.split("/")[0]
         out.append(item("vaga", r["titulo"], r["url"], empresa="", local="", fonte=f"Post · {domain}",
-                        texto=r["texto"], social=True))
+                        texto=r["texto"], social=True, publicada_em=published(r.get("data"))))
     return out
 
 

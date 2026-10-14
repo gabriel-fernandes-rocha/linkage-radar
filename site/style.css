@@ -157,3 +157,5 @@ button.btn { background: none; cursor: pointer; font: inherit; font-size: .85rem
 h3.sub { font-size: .95rem; margin: 12px 0 4px; color: var(--muted); }
 .grid2 { display: grid; gap: 0 24px; }
 @media (min-width: 820px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+
+.pub { font-size: .8rem; margin: -2px 0 6px; font-weight: 600; color: var(--accent); }

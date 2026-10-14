@@ -31,10 +31,17 @@ const compatHTML = (d) => {
     · Local ${d.local}% (${esc(d.local_txt)})${d.ingles < 100 ? ` · Inglês ${d.ingles}%` : ""}${falta}${parcial}</p>`;
 };
 
+function pubLabel(iso) {
+  const ref = LATEST_EDITION ? new Date(LATEST_EDITION + "T12:00:00") : new Date();
+  const d = Math.round((ref - new Date(iso + "T12:00:00")) / 864e5);
+  return d <= 0 ? "publicada hoje" : d === 1 ? "publicada ontem" : `publicada há ${d} dias (${fmtDate(iso)})`;
+}
+
 const jobHTML = (v, withAge = false) => `
     <h3>${withAge && v.nova ? '<span class="badge">NOVA</span>' : ""}${esc(v.titulo)}</h3>
     <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}${
-      withAge && v.desde ? " · desde " + fmtDate(v.desde) : ""}</p>
+      withAge && v.desde ? " · no radar desde " + fmtDate(v.desde) : ""}</p>
+    ${v.publicada_em ? `<p class="pub">🗓️ ${pubLabel(v.publicada_em)}</p>` : ""}
     ${v.encaixe != null ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span></p>` : ""}
     ${compatHTML(v.compat_detalhe)}
     ${reqHTML(v.requisitos)}
@@ -176,17 +183,23 @@ async function loadOpenJobs() {
       return;
     }
     jobs.forEach((j) => (j.nova = !!LATEST_EDITION && j.desde === LATEST_EDITION));
-    const novas = jobs.filter((j) => j.nova);
-    const top = jobs.filter((j) => !j.nova).slice(0, 3);
-    const shownSet = new Set([...novas, ...top]);
+    const FRESH_DAYS = 2;
+    const ref = LATEST_EDITION ? new Date(LATEST_EDITION + "T12:00:00") : new Date();
+    const ageDays = (j) => j.publicada_em ? Math.round((ref - new Date(j.publicada_em + "T12:00:00")) / 864e5) : null;
+    const frescas = jobs.filter((j) => ageDays(j) !== null && ageDays(j) <= FRESH_DAYS)
+      .sort((a, b) => (b.publicada_em || "").localeCompare(a.publicada_em || "") || (b.encaixe || 0) - (a.encaixe || 0));
+    const novas = jobs.filter((j) => j.nova && !frescas.includes(j));
+    const top = jobs.filter((j) => !j.nova && !frescas.includes(j)).slice(0, 4);
+    const shownSet = new Set([...frescas, ...novas, ...top]);
     const rest = jobs.filter((j) => !shownSet.has(j));
     const block = (title, list) => list.length
       ? `<h3 class="sub">${title}</h3><div class="grid2">${list.map((j) => `<article class="item${j.nova ? " is-new" : ""}">${jobHTML(j, true)}</article>`).join("")}</div>` : "";
     const render = (all) => {
       $(".list", card).innerHTML =
-        (novas.length ? block(`🆕 Novas nesta edição (${novas.length})`, novas)
-                      : `<p class="empty">Nenhuma vaga nova nesta edição ✅</p>`) +
-        block("🏆 As 3 mais compatíveis entre as que você já viu", top) +
+        (frescas.length ? block(`🔥 Publicadas nos últimos ${FRESH_DAYS + 1} dias: candidate-se cedo (${frescas.length})`, frescas)
+                        : `<p class="empty">Nenhuma vaga publicada nos últimos ${FRESH_DAYS + 1} dias ✅</p>`) +
+        block(`🆕 Novas no radar, publicadas há mais tempo (${novas.length})`, novas) +
+        block("🏆 As 4 mais compatíveis entre as que você já viu", top) +
         (all ? block(`Todas as outras (${rest.length})`, rest)
              : rest.length ? `<button class="btn more" type="button">Ver todas as ${jobs.length} vagas abertas</button>` : "");
       $(".more", card)?.addEventListener("click", () => render(true));
