@@ -1,4 +1,9 @@
 {
+ "3gpp": {
+  "motivo": "sem evidência de telecom/padrões 3GPP",
+  "nivel": "nao",
+  "nome": "3GPP"
+ },
  "_perfil_hash": {
   "nivel": "6b9881e72cfb",
   "nome": "_perfil_hash"
@@ -113,6 +118,11 @@
   "nivel": "nao",
   "nome": "CCPA"
  },
+ "cdr": {
+  "motivo": "sem menção a call detail records/telecom",
+  "nivel": "nao",
+  "nome": "CDR"
+ },
  "claude": {
   "motivo": "sem menção a LLMs/Claude",
   "nivel": "nao",
@@ -143,6 +153,11 @@
   "nivel": "nao",
   "nome": "CTV"
  },
+ "customer data platform": {
+  "motivo": "próximo de MDM/golden record, não CDP específico",
+  "nivel": "parcial",
+  "nome": "Customer Data Platform"
+ },
  "cypher": {
   "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
@@ -167,6 +182,11 @@
   "motivo": "qualidade de dados próxima a governança",
   "nivel": "parcial",
   "nome": "Data Governance"
+ },
+ "data mapping": {
+  "motivo": "faz normalização e integração de dados heterogêneos",
+  "nivel": "tem",
+  "nome": "Data Mapping"
  },
  "data matching": {
   "motivo": "core da atuação profissional",
@@ -262,6 +282,11 @@
   "motivo": "desenvolve pipeline completo de ingestão e processamento",
   "nivel": "tem",
   "nome": "ETL"
+ },
+ "etom": {
+  "motivo": "sem evidência de framework de processos telecom",
+  "nivel": "nao",
+  "nome": "eTOM"
  },
  "evaluation harness": {
   "motivo": "avalia matching, falta framework formal de evaluation",
@@ -683,6 +708,11 @@
   "nivel": "tem",
   "nome": "Similarity Scoring"
  },
+ "single customer view": {
+  "motivo": "conceito próximo de golden record/entity resolution",
+  "nivel": "parcial",
+  "nome": "Single Customer View"
+ },
  "snowflake": {
   "motivo": "sabe SQL, base próxima",
   "nivel": "parcial",
@@ -767,6 +797,11 @@
   "motivo": "sem evidência de grafo específico",
   "nivel": "nao",
   "nome": "TigerGraph"
+ },
+ "tm forum sid": {
+  "motivo": "sem evidência de modelo de dados telecom",
+  "nivel": "nao",
+  "nome": "TM Forum SID"
  },
  "transformers": {
   "motivo": "sem evidência de uso de NLP profundo",

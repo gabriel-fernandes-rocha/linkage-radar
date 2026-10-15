@@ -1,0 +1,258 @@
+{
+  "data": "2026-10-15",
+  "gerado_em": "2026-10-14T22:28-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Modeler (Telco)",
+      "url": "https://himalayas.app/companies/techsa/jobs/senior-data-modeler-telco",
+      "empresa": "Techsa",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-10-11",
+      "score": 4,
+      "motivo": "Vaga de Data Modeler em telco com foco em canonical entities, identity rules e data model de fontes, que são responsabilidades centrais de record linkage e entity resolution.",
+      "resumo": "Senior Data Modeler na Techsa responsável por possuir e entregar modelo de dados telco desde sistemas fonte até entidades canônicas, regras de identidade e definições de atributos. Requer 7+ anos de experiência e trabalho com stakeholders em descoberta de dados.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "TM Forum SID",
+          "eTOM",
+          "3GPP",
+          "CDR",
+          "Identity Resolution",
+          "Data Mapping"
+        ],
+        "desejaveis": [
+          "Customer Data Platform",
+          "Single Customer View",
+          "Data Governance"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 7,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 45,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "TM Forum SID",
+          "eTOM",
+          "3GPP",
+          "CDR"
+        ],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "B Corp™ hiring Data Engineer in United Kingdom - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/data-engineer-at-areti-group-b-corp%E2%84%A2-4459311339?position=40",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "motivo": "Vaga de Data Engineer com requisitos explícitos de entity matching/resolution em graph database em setor público, alinhada com o perfil do leitor.",
+      "resumo": "B Corp contrata Data Engineer no Reino Unido para trabalhar com soluções de graph database em Python, exigindo forte modelagem de dados e capacidades de entity matching/resolution em ambiente de setor público.",
+      "confianca": 0.82,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Graph Databases",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United Kingdom"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United Kingdom, sem patrocínio de visto",
+        "faltam": [
+          "Graph Databases"
+        ],
+        "parciais": []
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Worldly hiring Senior Data Engineer in Concord, CA | LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-worldly-4468395278",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "motivo": "Vaga de Senior Data Engineer na Worldly com foco explícito em aplicar técnicas de entity matching em produção usando generative AI e embeddings.",
+      "resumo": "Worldly contrata Senior Data Engineer para aplicar técnicas generativas e baseadas em embeddings já em produção, incluindo entity matching e extração de documentos. Foco em expandir capacidades dos dados.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [
+          "LLMs",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Concord"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "LLMs"
+        ],
+        "parciais": []
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 42,
+  "vagas_arquivadas_total": 58,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "aula": {
+    "dia": 14,
+    "semana": 2,
+    "tema": "História e aplicações",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 2: História e aplicações",
+    "modulo": "Semana 2: História e aplicações",
+    "versao": 2,
+    "objetivo": "Consolidar, por meio de recuperação ativa e um problema integrador, os marcos históricos (Dunn, Newcombe, Fellegi-Sunter) e os principais domínios de aplicação (censo, saúde, segurança/fraude, bibliografia/e-commerce/genealogia) do data matching, conectando-os à teoria formal e às decisões de arquitetura usadas na prática.",
+    "conexao": "Pense na semana 2 como uma árvore: a raiz é Dunn (1946) cunhando o termo record linkage e sonhando com o 'book of life'; o tronco é Newcombe (1959), que traz o computador e a ideia de pesos baseados em frequência de valores; o primeiro grande ramo formal é Fellegi-Sunter (1969), que transforma essas heurísticas em teoria matemática com m, u, w=log2(m/u) e os dois limiares de decisão; a partir desse ramo nascem as folhas de aplicação: censo e saúde (onde a motivação é reaproveitar dados e reduzir custo, mas sob restrições legais fortes, como a destruição de identificadores na Austrália), segurança e fraude (onde a assimetria populacional gigantesca exige altíssima precisão para não afogar investigadores em falsos positivos), e por fim os domínios menos óbvios, bibliografia, e-commerce, genealogia e ciências sociais, onde a mesma teoria aparece sob nomes diferentes (citation matching, merge/purge, list washing). A aula de laboratório (13) amarrou tudo mostrando que, antes de aplicar qualquer peso de Fellegi-Sunter, é preciso primeiro classificar corretamente o problema como deduplicação, record linkage clássico ou link analysis, porque isso determina a arquitetura (dedupe_only, link_only, ou grafo) antes mesmo de pensar em m, u e blocking.",
+    "perguntas": [
+      {
+        "pergunta": "Por que Dunn (1946) é considerado o ponto de origem conceitual do record linkage, mesmo sem propor nenhum método computacional?",
+        "resposta": "Porque ele cunhou o termo e articulou a visão do 'book of life', unindo registros de nascimento, saúde, casamento, divórcio e morte de um indivíduo, além de já identificar o problema central (nomes comuns, erros e variações nos dados) que toda técnica posterior precisaria resolver (Christen, 2012, seç. 1.3, p. 9)."
+      },
+      {
+        "pergunta": "Qual foi a contribuição prática de Newcombe et al. (1959) que diferencia seu trabalho do de Dunn?",
+        "resposta": "Newcombe propôs automatizar o processo via computador, usou a codificação fonética Soundex para normalizar sobrenomes e calculou pesos de concordância/discordância baseados na distribuição de frequência dos valores dos atributos, antecipando a lógica m/u que Fellegi-Sunter formalizariam depois."
+      },
+      {
+        "pergunta": "Um sistema usa o campo 'CPF' com m=0,95 e u=0,0001, e o campo 'sobrenome' com m=0,85 e u=0,10. Calcule os pesos de concordância de cada campo e diga qual é mais discriminante.",
+        "resposta": "w_CPF = log2(0,95/0,0001) = log2(9500) ≈ 13,21. w_sobrenome = log2(0,85/0,10) = log2(8,5) ≈ 3,09. CPF é muito mais discriminante porque seu u é extremamente baixo, tornando a razão m/u muito maior."
+      },
+      {
+        "pergunta": "No contexto de censo e saúde pública, por que restrições legais (como a destruição de nomes em 1 ano na Austrália) tornam o linkage longitudinal mais difícil, e qual é a saída técnica usada?",
+        "resposta": "Sem identificadores fortes como nome e endereço, o linkage precisa recorrer a quase-identificadores (idade, sexo, local de nascimento, religião, qualificação educacional), que são menos discriminantes e aumentam a ambiguidade na decisão de match (Christen, 2012, seç. 1.4.1, p. 12)."
+      },
+      {
+        "pergunta": "Por que, em aplicações de segurança e fraude, uma taxa de falso positivo aparentemente baixa (ex.: 0,005%) ainda pode gerar um sistema inútil na prática?",
+        "resposta": "Porque a população de referência é enorme e o número de positivos reais é ínfimo (assimetria), então mesmo uma taxa pequena de falso positivo, aplicada a milhões de registros, gera um volume absoluto de falsos alertas muito maior que o de verdadeiros positivos, destruindo a precisão do sistema (Christen, 2012, seç. 1.4.3, p. 14)."
+      },
+      {
+        "pergunta": "(Aula 1) Uma fintech tem, dentro da própria base A, suspeita de clientes com dois cadastros (um do app, outro da agência). Que tarefa, na terminologia de Christen, resolve isso, e por que não é o mesmo problema de juntar A com a base B de outro banco?",
+        "resposta": "É um caso de deduplicação, pois trata-se de encontrar registros duplicados dentro de uma única base; já juntar A com B é record linkage clássico (link_only), porque envolve duas bases distintas sem identificador comum confiável."
+      },
+      {
+        "pergunta": "(Aula 4) Por que distribuir a amostra de revisão manual proporcionalmente ao volume de cada faixa de score é uma má estratégia quando não há ground truth disponível?",
+        "resposta": "Porque a faixa de score alto já tem precisão provavelmente próxima de 100% e pouco a aprender; a amostragem deve se concentrar (estratificada) nas faixas de score ambíguas (intermediárias), onde a incerteza sobre match/non-match é maior e a informação obtida por par revisado é mais valiosa."
+      }
+    ],
+    "desafio": "Uma prefeitura quer construir um registro longitudinal de óbitos por causas evitáveis, cruzando: (1) base de nascimentos de 2010 (2 milhões de registros), (2) base de óbitos até 2023 (300 mil registros) e (3) uma lista de 5.000 CPFs de pessoas com histórico de fraude em benefícios sociais, para verificar se algum óbito está sendo usado indevidamente para continuar recebendo benefício. Nome completo não está disponível nas três bases de forma consistente (nascimento e óbito só têm nome da mãe, data de nascimento e município; a lista de fraude tem CPF e nome completo). Responda: (a) classifique cada um dos dois cruzamentos (nascimento-óbito e óbito-fraude) segundo a terminologia de Christen (deduplicação, record linkage ou link analysis); (b) proponha uma chave de blocking para o cruzamento nascimento-óbito e justifique a redução do espaço de pares; (c) para o cruzamento óbito-fraude, diga por que o CPF, se disponível em ambas as bases, muda completamente a abordagem em relação ao caso nascimento-óbito.",
+    "gabarito": "(a) Nascimento-óbito é record linkage clássico entre duas bases distintas (link_only), seguindo diretamente o padrão descrito por Dunn (1946) e aplicado em censo/saúde (Christen, 2012, seç. 1.4.1-1.4.2). Óbito-fraude também é record linkage (link_only), mas com perfil de aplicação de segurança/fraude (seç. 1.4.3-1.4.4), não link analysis, pois não há aqui uma rede de relações entre múltiplas entidades, apenas pareamento direto de registros. (b) Bloqueie por município e ano-mês de nascimento: isso evita o produto cartesiano de 2.000.000 x 300.000 = 600 bilhões de pares, concentrando as comparações em blocos pequenos onde nome da mãe e data de nascimento exata (campos de alto m/u) podem decidir o match com peso elevado, similar ao cálculo feito na Aula 10. (c) Quando o CPF está disponível e confiável nas duas bases, ele funciona como identificador quase determinístico (m muito alto, u próximo de zero), eliminando a necessidade de probabilistic record linkage com múltiplos atributos fracos: o cruzamento pode ser feito por simples JOIN exato na chave CPF, sem blocking elaborado nem cálculo de pesos de Fellegi-Sunter, porque a chave já resolve a identidade com altíssima confiança.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer, seç. 1.2-1.4, p. 9-14.",
+      "Dunn, H. L. (1946). Record linkage. American Journal of Public Health, 36(12).",
+      "Newcombe, H. B. et al. (1959). Automatic linkage of vital records. Science, 130.",
+      "Fellegi, I. P. & Sunter, A. B. (1969). A theory for record linkage. JASA, 64(328)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        9,
+        21
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2959,
+      "pos_palavras_chave": 6,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 180,
+      "pos_palavras_chave": 4,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 10,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

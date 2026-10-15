@@ -1,37 +1,43 @@
 {
- "data": "2026-10-14",
+ "data": "2026-10-15",
  "status": "problema",
  "checks": [
   {
    "status": "problema",
-   "nome": "Posts do LinkedIn",
-   "detalhe": "0 itens (esperado pelo menos 3)"
+   "nome": "Claude (juiz/extração)",
+   "detalhe": "6 chamadas falharam"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
   "jobs/remotive": 225,
-  "jobs/greenhouse": 1427,
-  "jobs/lever": 312,
-  "jobs/ashby": 33,
+  "jobs/greenhouse": 1423,
+  "jobs/lever": 314,
+  "jobs/ashby": 32,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
-  "jobs/gupy": 224,
-  "jobs/himalayas": 97,
-  "jobs/jobicy": 125,
+  "jobs/gupy": 216,
+  "jobs/himalayas": 96,
+  "jobs/jobicy": 128,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 137,
+  "jobs/weworkremotely": 138,
   "jobs/social_posts": 6,
-  "papers/arxiv": 3,
+  "papers/arxiv": 5,
   "papers/openalex": 175,
   "papers/semantic_scholar": 0,
-  "linkedin/posts": 0,
+  "linkedin/posts": 10,
   "network/perfis": 11
  },
  "falhas": [
   "papers: busca 'record linkage' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=record+linkage&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauthors%2C",
   "papers: busca 'entity resolution' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+resolution&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauth",
-  "papers: busca 'entity matching' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+matching&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauthors%"
+  "papers: busca 'entity matching' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+matching&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauthors%",
+  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
+  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
+  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
+  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
+  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
+  "carreira: pílula falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, "
  ]
 }
