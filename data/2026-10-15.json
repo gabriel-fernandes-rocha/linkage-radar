@@ -1,6 +1,6 @@
 {
   "data": "2026-10-15",
-  "gerado_em": "2026-10-15T12:30-03:00",
+  "gerado_em": "2026-10-15T13:33-03:00",
   "llm": true,
   "serpapi_orcamento": 3,
   "vagas": [
@@ -12,8 +12,101 @@
       "data": "Sep 24, 2026",
       "fonte": "LinkedIn Jobs",
       "score": 3,
-      "nao_verificado": true,
-      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
+      "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
+      "confianca": 0.98
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Analyst Salesforce Data Steward - LinkedIn România",
+      "url": "https://ro.linkedin.com/jobs/view/senior-analyst-salesforce-data-steward-at-emerson-4477658862",
+      "texto": "Salesforce Data Cloud fundamentals and how stewardship decisions affect identity resolution, segmentation, reporting, and AI readiness SQL, Excel, reporting, or analytical tools used to profile data, investigate quality issues, and validate remediation Data privacy, security, compliance, access control, and audit support concepts",
+      "data": "Oct 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Senior Analyst Salesforce Data Steward com foco em identity resolution.",
+      "resumo": "A vaga de Senior Analyst Salesforce Data Steward destaca fundamentos do Salesforce Data Cloud e a influência das decisões de stewardship na identity resolution e segmentação.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Analyst Salesforce Data Steward - LinkedIn",
+      "url": "https://hu.linkedin.com/jobs/view/senior-analyst-salesforce-data-steward-at-emerson-4477661845",
+      "texto": "Salesforce Data Cloud fundamentals and how stewardship decisions affect identity resolution, segmentation, reporting, and AI readiness SQL, Excel, reporting, or analytical tools used to profile data, investigate quality issues, and validate remediation Data privacy, security, compliance, access control, and audit support concepts",
+      "data": "Oct 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Senior Analyst Salesforce Data Steward com foco em identity resolution.",
+      "resumo": "A vaga de Senior Analyst Salesforce Data Steward destaca fundamentos do Salesforce Data Cloud e a influência das decisões de stewardship na identity resolution e segmentação.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Staff or Senior Machine Learning Engineer - Identity & Audience",
+      "url": "https://fr.linkedin.com/jobs/view/staff-or-senior-machine-learning-engineer-identity-audience-at-vibe-co-4443097440",
+      "texto": "This role exists because identity resolution at Vibe's scale is a hard, unsolved problem, and the team needs someone who can build models that catch the right signal across petabytes of events. You'll get direct, measurable impact: your work decides which ad reaches whom and whether it worked, not a metric buried in a research paper.",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de engenheiro de ML focado em identity resolution em grande escala, diretamente relacionado ao tema.",
+      "resumo": "O cargo busca desenvolver modelos que identifiquem sinais corretos em petabytes de eventos para melhorar a segmentação de anúncios. A função tem impacto direto na resolução de identidade e audience.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Emerson face angajări pentru postul de Senior Administrator Salesforce ...",
+      "url": "https://ro.linkedin.com/jobs/view/senior-administrator-salesforce-platform-at-emerson-4477655868",
+      "texto": "Support Data Cloud and Agentforce administration, identity resolution, governance controls, responsible AI practices, and operational monitoring Who You Are: You are a proactive, customer-focused Salesforce professional who combines hands-on expertise with business acumen and operational discipline.",
+      "data": "Oct 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga para Senior Administrator Salesforce com responsabilidades de identity resolution.",
+      "resumo": "A publicação procura um Senior Administrator Salesforce para suportar Data Cloud, identidade resolution, governança e monitoramento operacional.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Canyon sucht CRM SOLUTION ENGINEER (M/F/D) in Koblenz | LinkedIn",
+      "url": "https://de.linkedin.com/jobs/view/crm-solution-engineer-m-f-d-at-canyon-4478473153",
+      "texto": "Data Cloud Subject-Matter Expertise: Acting as the functional expert for Salesforce Data Cloud involves overseeing data streams, data modeling, and identity resolution rules to build unified customer profiles.",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Vaga de CRM Solution Engineer que inclui expertise em identity resolution.",
+      "resumo": "A posição de CRM Solution Engineer na Canyon requer conhecimento em Data Cloud e regras de identity resolution para criar perfis unificados de clientes.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Salesforce Data360 / Data Cloud Architect - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/salesforce-data360-data-cloud-architect-at-stott-and-may-4476661047?position=2",
+      "texto": "Establish identity resolution rules, unified data schemas (DLOs/DMOs), calculated insights, and segmentation frameworks to unlock real-time activation across channels. Guide data engineering and platform development teams on best practices for ingestion, transformation, data action triggers, and API integrations.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post apresenta vaga de Data Cloud Architect com foco em identity resolution, tema central do leitor.",
+      "resumo": "A posição envolve estabelecer regras de identity resolution, esquemas de dados unificados e orientar equipes de engenharia. O objetivo é habilitar ativação em tempo real e integração de APIs.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Salesforce Developers - Data 360 & Marketing Cloud - LinkedIn",
+      "url": "https://au.linkedin.com/jobs/view/salesforce-developers-data-360-marketing-cloud-at-medibank-4475676444?pageNum=0",
+      "texto": "Highly regarded experience for the Audience position: Salesforce Marketing Cloud, Data360 and customer data platforms (CDPs). Audience segmentation, identity resolution and audience activation. SQL, data modelling and customer data architecture. Adobe Target, personalisation platforms and audience governance frameworks.",
+      "data": "Oct 12, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de Salesforce Developers focada em Data 360, CDP e identity resolution.",
+      "resumo": "A oportunidade busca desenvolvedores Salesforce com experiência em Data 360, CDP, segmentação de audiência e identity resolution.",
+      "confianca": 0.95
     },
     {
       "tipo": "vaga",
@@ -124,60 +217,22 @@
         ],
         "parciais": []
       }
-    },
-    {
-      "tipo": "vaga",
-      "titulo": "Worldly hiring Senior Data Engineer in Concord, CA | LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-worldly-4468395278",
-      "empresa": "",
-      "local": "",
-      "fonte": "Post · linkedin.com",
-      "social": true,
-      "publicada_em": null,
-      "score": 4,
-      "motivo": "Vaga de Senior Data Engineer na Worldly com foco explícito em aplicar técnicas de entity matching em produção usando generative AI e embeddings.",
-      "resumo": "Worldly contrata Senior Data Engineer para aplicar técnicas generativas e baseadas em embeddings já em produção, incluindo entity matching e extração de documentos. Foco em expandir capacidades dos dados.",
-      "confianca": 0.8,
-      "requisitos": {
-        "obrigatorios": [
-          "LLMs",
-          "Entity Resolution"
-        ],
-        "desejaveis": []
-      },
-      "senioridade": "senior",
-      "modalidade": "nao_informado",
-      "local_contratacao": {
-        "escopo": "cidade",
-        "paises": [
-          "United States"
-        ],
-        "cidades": [
-          "Concord"
-        ]
-      },
-      "patrocina_visto": null,
-      "contratacao": "nao_informado",
-      "anos_experiencia_min": null,
-      "ingles": "nao_informado",
-      "foco_er": 0.3,
-      "encaixe": 0.04,
-      "compat_detalhe": {
-        "habilidades": 50,
-        "senioridade": 75,
-        "local": 8,
-        "ingles": 100,
-        "foco": 90,
-        "senioridade_txt": "nível senior",
-        "local_txt": "em United States, sem patrocínio de visto",
-        "faltam": [
-          "LLMs"
-        ],
-        "parciais": []
-      }
     }
   ],
-  "eventos": [],
+  "eventos": [
+    {
+      "tipo": "evento",
+      "titulo": "Geocodificação nos visuais do Azure Mapas para o Power BI",
+      "url": "https://learn.microsoft.com/pt-br/azure/azure-maps/power-bi-visual-geocode",
+      "data": "13 de ago. de 2026",
+      "fonte": "web",
+      "score": 1,
+      "juiz": "groq",
+      "motivo": "Evento tem como tema central a geocodificação, que é foco de address matching e entity resolution.",
+      "resumo": "Evento aborda geocodificação nos visuais do Azure Maps para Power BI, focado em correspondência e normalização de endereços.",
+      "confianca": 0.95
+    }
+  ],
   "papers": [
     {
       "tipo": "paper",
@@ -187,8 +242,10 @@
       "data": "2026-10-10",
       "fonte": "OpenAlex",
       "score": 4,
-      "nao_verificado": true,
-      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+      "juiz": "groq",
+      "motivo": "Aborda técnicas de record linkage ambíguo e estimativas sem resolver links, foco central em linkage.",
+      "resumo": "O artigo propõe métodos para estimar efeitos de tratamento em experimentos randomizados quando os links entre unidades experimentais e registros administrativos são ambíguos, sem necessidade de resolver os links. Apresenta ajustes de regressão e reponderação, além de propriedades teóricas e inferência.",
+      "confianca": 0.99
     },
     {
       "tipo": "paper",
@@ -198,8 +255,10 @@
       "data": "2026-10-14",
       "fonte": "OpenAlex",
       "score": 4,
-      "nao_verificado": true,
-      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+      "juiz": "groq",
+      "motivo": "Propõe modelo de entity matching baseado em atenção híbrida, foco central em matching de entidades.",
+      "resumo": "O trabalho apresenta o cueEM, modelo inspirado na cognição humana para entity matching, usando BERT e atenção híbrida para gerar pesos por atributo e melhorar transparência. Avaliado em benchmarks como DeepMatcher, supera DITTO e compete com LLMs.",
+      "confianca": 0.99
     }
   ],
   "linkedin": [
@@ -214,8 +273,8 @@
       "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
     }
   ],
-  "vagas_abertas_total": 42,
-  "vagas_arquivadas_total": 59,
+  "vagas_abertas_total": 49,
+  "vagas_arquivadas_total": 66,
   "rede": {
     "pessoas_novas": 0,
     "empresas_novas": 0
@@ -279,14 +338,14 @@
   },
   "estatisticas": {
     "vagas": {
-      "brutos": 2937,
+      "brutos": 2934,
       "pos_palavras_chave": 0,
       "aprovados": 0
     },
     "eventos": {
-      "brutos": 0,
-      "pos_palavras_chave": 0,
-      "aprovados": 0
+      "brutos": 10,
+      "pos_palavras_chave": 10,
+      "aprovados": 1
     },
     "papers": {
       "brutos": 180,
@@ -294,9 +353,9 @@
       "aprovados": 2
     },
     "linkedin": {
-      "brutos": 9,
-      "pos_palavras_chave": 7,
-      "aprovados": 1
+      "brutos": 10,
+      "pos_palavras_chave": 10,
+      "aprovados": 0
     }
   },
   "saude": "problema"
