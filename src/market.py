@@ -69,11 +69,13 @@ def _rank(jobs: list[dict], match: dict) -> dict:
         fam_any.update(fams)
     total = len(jobs)
     pct = lambda c: round(100 * c / total) if total else 0
-    level = lambda s: match.get(s.lower(), {}).get("nivel", "nao")
+    declared = {str(s).lower() for s in load_config().get("perfil_estruturado", {}).get("habilidades", [])}
+    # sem veredito ainda (nenhuma IA disponível): declarada no perfil = "tem"; senão "pendente" (não é "falta")
+    level = lambda s: match.get(s.lower(), {}).get("nivel") or ("tem" if s.lower() in declared else "pendente")
     rows = [{"nome": k, "vagas": c, "pct": pct(c), "obrigatorio": must[k], "desejavel": nice[k], "voce": level(k)}
             for k, c in any_.most_common(80)]
     fams = [{"nome": f, "vagas": c, "pct": pct(c), "exemplos": [s for s, _ in fam_members[f].most_common(5)],
-             "voce": max((level(s) for s in fam_members[f]), key=["nao", "parcial", "tem"].index)}
+             "voce": max((level(s) for s in fam_members[f]), key=["pendente", "nao", "parcial", "tem"].index)}
             for f, c in fam_any.most_common()]
     return {"vagas_analisadas": total, "ranking": rows, "familias": fams}
 
@@ -118,10 +120,12 @@ def _gains(jobs: list[dict], rows: list[dict], fams: list[dict]) -> dict:
             "familias": sorted(families, key=key, reverse=True)}
 
 
-def write(archive: list[dict], day: str) -> dict:
-    cfg = load_config()
+def write(archive: list[dict], day: str, out=None) -> dict:
+    """out: onde gravar (padrão data/skills.json; a trilha de fraude grava em data/fraude/skills.json)."""
     match = json.loads((DATA / "skill_match.json").read_text("utf-8")) if (DATA / "skill_match.json").exists() else {}
-    open_jobs = json.loads((DATA / "open_jobs.json").read_text("utf-8")) if (DATA / "open_jobs.json").exists() else []
+    import compat
+
+    match = compat.apply_declared(match, load_config())
     since = (date.fromisoformat(day) - timedelta(days=90)).isoformat()
     sample = json.loads(SAMPLE.read_text("utf-8")) if SAMPLE.exists() else []
     geral = _rank(archive, match)
@@ -134,7 +138,9 @@ def write(archive: list[dict], day: str) -> dict:
         "senioridade": Counter(j.get("senioridade") or "nao_informado" for j in archive).most_common(),
         "modalidade": Counter(j.get("modalidade") or "nao_informado" for j in archive).most_common(),
     }
-    (DATA / "skills.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1), "utf-8")
+    out = out or (DATA / "skills.json")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(stats, ensure_ascii=False, indent=1), "utf-8")
     log.info("mercado: %d vagas no nicho, %d no mercado amplo", geral["vagas_analisadas"],
              stats["mercado_amplo"]["vagas_analisadas"])
     return stats

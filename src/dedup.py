@@ -26,8 +26,9 @@ def keys(it: dict) -> list[str]:
 
 
 class Seen:
-    def __init__(self):
-        self.data: dict[str, str] = json.loads(SEEN.read_text("utf-8")) if SEEN.exists() else {}
+    def __init__(self, path=None):
+        self.path = path or SEEN  # a trilha de fraude tem o seu próprio histórico (data/fraude/seen.json)
+        self.data: dict[str, str] = json.loads(self.path.read_text("utf-8")) if self.path.exists() else {}
 
     def is_new(self, it: dict) -> bool:
         return not any(k in self.data for k in keys(it))
@@ -37,7 +38,8 @@ class Seen:
             self.data[k] = day
 
     def save(self):
-        SEEN.write_text(json.dumps(self.data, indent=0, sort_keys=True), "utf-8")
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.path.write_text(json.dumps(self.data, indent=0, sort_keys=True), "utf-8")
 
 
 def unique(items: list[dict]) -> list[dict]:

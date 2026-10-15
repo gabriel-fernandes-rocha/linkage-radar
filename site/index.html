@@ -23,12 +23,19 @@
     </label>
   </header>
 
+  <nav class="tabs" role="tablist" aria-label="Seções do radar">
+    <button class="tab" role="tab" data-tab="radar" aria-selected="true">📡 Radar</button>
+    <button class="tab" role="tab" data-tab="fraude" aria-selected="false">🕵️ Fraude</button>
+    <button class="tab" role="tab" data-tab="passos" aria-selected="false">🧭 Próximos passos</button>
+  </nav>
+
   <main>
     <p id="status" class="status">Carregando…</p>
+    <div class="panel" id="tab-radar" role="tabpanel">
     <div class="grid">
       <section class="card wide" id="abertas">
         <h2>💼 Vagas no seu perfil <span class="count"></span></h2>
-        <p class="meta">À vista: as publicadas nos últimos dias, as novas no radar e as 4 mais compatíveis. Revalidadas todo dia: vaga que fecha sai da lista. <span id="abertas-atualizado"></span></p>
+        <p class="meta">À vista: as publicadas nos últimos dias, as novas no radar e as 4 mais compatíveis. Revalidadas todo dia: vaga que fecha sai da lista. <span class="atualizado"></span></p>
         <div class="list"></div>
       </section>
       <section class="card" id="pessoas">
@@ -53,9 +60,9 @@
         <h2>🧰 O que o mercado pede</h2>
         <p class="meta">Ferramentas e métodos citados na seção de <b>requisitos</b> das vagas do seu nicho
           (<span class="legend must"></span> obrigatório <span class="legend nice"></span> desejável).
-          <span id="skills-n"></span></p>
+          <span class="skills-n"></span></p>
         <label class="picker"><span class="sr-only">Período</span>
-          <select id="skills-period">
+          <select class="skills-period">
             <option value="plano">🎯 O que estudar primeiro (maior ganho)</option>
             <option value="familias">Famílias de habilidades</option>
             <option value="ultimos_90_dias">Ranking do nicho, últimos 90 dias</option>
@@ -80,6 +87,79 @@
         <p class="meta">Análise semanal do seu LinkedIn e currículo comparados aos perfis salvos e ao que as vagas pedem.</p>
         <div class="content"></div>
       </section>
+    </div>
+    </div>
+
+    <div class="panel" id="tab-fraude" role="tabpanel" hidden>
+    <p class="intro">Vagas técnicas de dados em <b>prevenção a fraude, PLD/AML, KYC e crimes financeiros</b>, com destaque para as que usam entity resolution e grafos (🔗). Mesma lógica do radar: revalidadas todo dia.</p>
+    <div class="grid">
+      <section class="card wide" id="f-vagas">
+        <h2>🕵️ Vagas de fraude <span class="count"></span></h2>
+        <p class="meta">À vista: as publicadas nos últimos dias, as novas no radar e as 4 mais compatíveis. <span class="atualizado"></span></p>
+        <div class="list"></div>
+      </section>
+      <section class="card wide" id="f-cv">
+        <h2>🪪 Seu currículo vs. vagas de fraude</h2>
+        <p class="meta">O que você já tem, o que é parcial e o que falta, pela frequência nos requisitos das vagas de fraude.</p>
+        <div class="content"></div>
+      </section>
+      <section class="card wide" id="f-skills">
+        <h2>🧰 O que o mercado de fraude pede</h2>
+        <p class="meta">Requisitos das vagas da trilha de fraude
+          (<span class="legend must"></span> obrigatório <span class="legend nice"></span> desejável).
+          <span class="skills-n"></span></p>
+        <label class="picker"><span class="sr-only">Visão</span>
+          <select class="skills-period">
+            <option value="plano">🎯 O que estudar primeiro (maior ganho)</option>
+            <option value="familias">Famílias de habilidades</option>
+            <option value="ultimos_90_dias">Ranking, últimos 90 dias</option>
+            <option value="geral">Ranking, desde o início</option>
+          </select>
+        </label>
+        <div class="list"></div>
+      </section>
+      <section class="card" id="f-pessoas">
+        <h2>👥 Pessoas de fraude para seguir <span class="count"></span></h2>
+        <p class="meta">À vista só quem entrou nesta edição. Os demais ficam em "Ver todos".</p>
+        <p class="novos-hoje"></p>
+        <div class="list"></div>
+      </section>
+      <section class="card" id="f-empresas">
+        <h2>🏢 Empresas de fraude para seguir <span class="count"></span></h2>
+        <p class="meta">Referências do setor e empresas contratando na área.</p>
+        <p class="novos-hoje"></p>
+        <div class="list"></div>
+      </section>
+      <section class="card wide" id="f-historico">
+        <h2>🗂️ Histórico de vagas de fraude <span class="count"></span></h2>
+        <p class="meta">Todas as vagas que já apareceram na trilha, inclusive as encerradas (servem para ver o que o mercado pede e quem contrata).</p>
+        <div class="list"></div>
+      </section>
+    </div>
+    </div>
+
+    <div class="panel" id="tab-passos" role="tabpanel" hidden>
+    <div class="grid">
+      <section class="card wide" id="p-semana">
+        <h2>✅ O que fazer agora</h2>
+        <p class="meta">Recalculado a cada coleta com as vagas de fraude abertas e o que elas pedem. <span class="atualizado"></span></p>
+        <div class="content"></div>
+      </section>
+      <section class="card wide" id="p-ia">
+        <h2>🤖 Análise da semana</h2>
+        <p class="meta">Uma IA lê seu currículo e o que as vagas de fraude pedem, 1 vez por semana.</p>
+        <div class="content"></div>
+      </section>
+      <section class="card wide" id="p-fases">
+        <h2>🧭 Plano de migração para fraude</h2>
+        <p class="meta">O caminho em 3 fases, da preparação até virar referência.</p>
+        <div class="content"></div>
+      </section>
+      <section class="card wide" id="p-curriculo">
+        <h2>📝 Currículo para vagas de fraude</h2>
+        <div class="content"></div>
+      </section>
+    </div>
     </div>
   </main>
 

@@ -190,7 +190,8 @@ def _location(job: dict, cfg: dict) -> tuple[float, str]:
         cities = [c.lower() for c in loc.get("cidades", [])]
         if home_city in " ".join(cities):
             return 1.0, f"{mode} na sua cidade"
-        return (0.85 if mode == "hibrido" else 0.75), f"{mode} no Brasil (mudança de cidade)"
+        modo = "modalidade não informada" if mode == "nao_informado" else mode
+        return (0.85 if mode == "hibrido" else 0.75), f"{modo}, no Brasil (talvez mudança de cidade)"
     if scope in ("pais", "regiao", "cidade") and countries:
         where = ", ".join(loc.get("paises", []))[:40]
         if contract in ("freelance", "contractor_global"):

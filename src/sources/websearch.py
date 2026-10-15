@@ -87,13 +87,14 @@ def duckduckgo(query: str, recency: str | None = "qdr:w", priority: str = "alta"
              "data": r.get("date", "")} for r in data.get("organic_results", [])]
 
 
-def cascade(steps: list[tuple[str, str, str | None]], accept, want: int, label: str) -> list[dict]:
+def cascade(steps: list[tuple[str, str, str | None]], accept, want: int, label: str,
+            first: str = "alta") -> list[dict]:
     """Tenta motores/consultas em ordem e para quando juntar `want` resultados aceitos.
     steps = [(motor, consulta, recência)]; motor = "ddg" | "google". Cada passo é 1 busca da cota."""
     out: list[dict] = []
     for i, (engine, query, recency) in enumerate(steps):
         # 1º passo de cada cascata é prioritário; os de reserva só rodam se sobrar orçamento no dia
-        prio = "alta" if i == 0 else "baixa"
+        prio = first if i == 0 else "baixa"  # first="baixa": trilha extra (fraude) não disputa a cota principal
         try:
             got = (duckduckgo if engine == "ddg" else serpapi)(query, recency, prio)
         except Exception as e:

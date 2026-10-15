@@ -15,15 +15,18 @@ from dedup import _norm_url
 ARCHIVE = DATA / "jobs_archive.json"
 SKILLS = DATA / "skills.json"
 KEEP = ("titulo", "empresa", "local", "url", "fonte", "encaixe", "nota_perfil", "motivo", "resumo",
-        "requisitos", "senioridade", "modalidade", "publicada_em", "juiz")
+        "requisitos", "senioridade", "modalidade", "publicada_em", "juiz", "usa_er")
 
 
-def load() -> list[dict]:
-    return json.loads(ARCHIVE.read_text("utf-8")) if ARCHIVE.exists() else []
+def load(path=None) -> list[dict]:
+    path = path or ARCHIVE
+    return json.loads(path.read_text("utf-8")) if path.exists() else []
 
 
-def update(new_jobs: list[dict], open_now: list[dict], day: str) -> list[dict]:
-    archive = load()
+def update(new_jobs: list[dict], open_now: list[dict], day: str, path=None, skills_path=None) -> list[dict]:
+    """path/skills_path: a trilha de fraude guarda o arquivo e o ranking dela em data/fraude/."""
+    path = path or ARCHIVE
+    archive = load(path)
     by_url = {_norm_url(j["url"]): j for j in archive}
     for job in new_jobs:
         key = _norm_url(job["url"])
@@ -39,12 +42,13 @@ def update(new_jobs: list[dict], open_now: list[dict], day: str) -> list[dict]:
             entry.pop("fechada_em", None)
         elif entry.get("status") != "fechada":
             entry["status"], entry["fechada_em"] = "fechada", day
-    ARCHIVE.write_text(json.dumps(archive, ensure_ascii=False, indent=1), "utf-8")
-    write_skills(archive, day)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(archive, ensure_ascii=False, indent=1), "utf-8")
+    write_skills(archive, day, skills_path)
     return archive
 
 
-def write_skills(archive: list[dict], day: str) -> dict:
+def write_skills(archive: list[dict], day: str, out=None) -> dict:
     import market
 
-    return market.write(archive, day)
+    return market.write(archive, day, out=out)

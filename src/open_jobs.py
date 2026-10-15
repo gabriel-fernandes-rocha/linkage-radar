@@ -28,12 +28,15 @@ CLOSED_PATTERNS = re.compile(
 )
 
 
-def load() -> list[dict]:
-    return json.loads(PATH.read_text("utf-8")) if PATH.exists() else []
+def load(path=None) -> list[dict]:
+    path = path or PATH
+    return json.loads(path.read_text("utf-8")) if path.exists() else []
 
 
-def save(jobs: list[dict]) -> None:
-    PATH.write_text(json.dumps(jobs, ensure_ascii=False, indent=2), "utf-8")
+def save(jobs: list[dict], path=None) -> None:
+    path = path or PATH
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(jobs, ensure_ascii=False, indent=2), "utf-8")
 
 
 def _link_alive(url: str) -> bool:
@@ -52,11 +55,11 @@ def still_open(job: dict, listed_today: set[str]) -> bool:
     return _link_alive(job["url"])
 
 
-def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: int) -> list[dict]:
+def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: int, path=None) -> list[dict]:
     """Adiciona as novas, revalida as antigas e devolve a carteira ordenada (mais compatíveis primeiro)."""
     listed_today = {_norm_url(j["url"]) for j in raw_jobs}
     pub_today = {_norm_url(j["url"]): j.get("publicada_em") for j in raw_jobs if j.get("publicada_em")}
-    current = load()
+    current = load(path)
     known = {_norm_url(j["url"]) for j in current}
     fresh = {_norm_url(j["url"]): j for j in new_jobs}
     kept = []
@@ -82,6 +85,6 @@ def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: i
         job.update(desde=day, verificada_em=day, nova=True)
         kept.append(job)
     kept.sort(key=lambda j: (j.get("encaixe", 0), j["desde"]), reverse=True)
-    save(kept)
+    save(kept, path)
     log.info("open_jobs: %d abertas (%d novas)", len(kept), sum(j["nova"] for j in kept))
     return kept

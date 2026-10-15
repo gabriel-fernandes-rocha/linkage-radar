@@ -36,8 +36,8 @@ Nunca use travessão (— ou –) nos textos: use vírgula, dois-pontos ou ponto
 Responda SOMENTE com um array JSON com um objeto por item, na mesma ordem."""
 
 
-def _system(cfg: dict) -> str:
-    return SYSTEM + "\n\nPERFIL DO LEITOR:\n" + cfg.get("perfil", "")
+def _system(cfg: dict, system: str | None = None) -> str:
+    return (system or SYSTEM) + "\n\nPERFIL DO LEITOR:\n" + cfg.get("perfil", "")
 
 
 def _payload(batch: list[dict]) -> str:
@@ -65,11 +65,12 @@ def available(cfg: dict) -> bool:
     return bool(providers.chain(cfg))
 
 
-def judge(items: list[dict], cfg: dict) -> list[dict]:
+def judge(items: list[dict], cfg: dict, system: str | None = None, central=None, record: bool = True) -> list[dict]:
     """Retorna só os aprovados, com motivo/resumo preenchidos. Marca it["_julgado"] nos que foram avaliados.
 
     Usa a cadeia de provedores (providers.py): Claude -> Gemini -> GitHub Models -> Groq -> OpenRouter ->
-    Mistral -> Cerebras. Se nenhum responder, os itens ficam sem "_julgado" e o main_collect usa a heurística."""
+    Mistral -> Cerebras. Se nenhum responder, os itens ficam sem "_julgado" e o main_collect usa a heurística.
+    system/central/record: outra trilha (fraude) usa o próprio critério e não treina a heurística do nicho ER."""
     from filters import heuristic, keywords, providers
 
     llm = cfg["llm"]
@@ -78,7 +79,7 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
     approved = []
     for start in range(0, len(items), size):
         batch = items[start:start + size]
-        text = providers.complete(cfg, _system(cfg), _payload(batch))
+        text = providers.complete(cfg, _system(cfg, system), _payload(batch))
         try:
             verdicts = _parse(text) if text else None
         except Exception as e:
@@ -103,11 +104,12 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
             # juízes reserva são menos rigorosos que o Claude: exigem confiança maior e, para vagas,
             # o tema precisa estar no título ou repetido no texto (regra rígida de palavras-chave)
             need = max(min_conf, 0.9) if backup else min_conf
-            strict_ok = not backup or it.get("tipo") != "vaga" or keywords.central(it)
+            strict_ok = not backup or it.get("tipo") != "vaga" or (central or keywords.central)(it)
             if v.get("relevante") is True and float(v.get("confianca", 0)) >= need and strict_ok:
                 it.update(motivo=no_dash(v.get("motivo", "")), resumo=no_dash(v.get("resumo_pt", "")),
                           confianca=round(float(v["confianca"]), 2))
                 approved.append(it)
                 ok_ids.add(id(it))
-        heuristic.record(batch, ok_ids)  # cada decisão vira exemplo de treino da heurística
+        if record:  # cada decisão vira exemplo de treino da heurística (só no nicho ER)
+            heuristic.record(batch, ok_ids)
     return approved

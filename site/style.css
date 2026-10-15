@@ -159,3 +159,32 @@ h3.sub { font-size: .95rem; margin: 12px 0 4px; color: var(--muted); }
 @media (min-width: 820px) { .grid2 { grid-template-columns: 1fr 1fr; } }
 
 .pub { font-size: .8rem; margin: -2px 0 6px; font-weight: 600; color: var(--accent); }
+
+/* ---- abas ---- */
+.tabs {
+  display: flex; gap: 6px; overflow-x: auto;
+  max-width: 1100px; margin: 0 auto; padding: 10px 16px 0;
+}
+.tab {
+  font: inherit; font-size: .92rem; white-space: nowrap; cursor: pointer;
+  padding: 8px 14px; border-radius: 10px 10px 0 0;
+  border: 1px solid var(--line); border-bottom: 0;
+  background: transparent; color: var(--muted);
+}
+.tab[aria-selected="true"] { background: var(--card); color: var(--text); font-weight: 600; }
+.panel[hidden], .picker[hidden], .status[hidden] { display: none; }
+.intro { color: var(--muted); margin: 0 0 12px; }
+
+/* ---- trilha de fraude e próximos passos ---- */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 6px 0 12px; }
+.kpi { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.kpi b { display: block; font-size: 1.4rem; color: var(--accent); }
+.kpi span { font-size: .8rem; color: var(--muted); }
+.chip.miss { color: #b42318; border-color: color-mix(in srgb, #b42318 35%, transparent); }
+@media (prefers-color-scheme: dark) { .chip.miss { color: #ff7b72; } }
+.chip { display: inline-block; margin: 2px 0; }
+.er { font-size: .85rem; color: var(--ok); margin: 4px 0; }
+.steps li, .hist li { margin: 6px 0; }
+.hist { padding-left: 18px; }
+.hist small { display: block; color: var(--muted); }
+.phase h4 small { font-weight: 400; color: var(--muted); }

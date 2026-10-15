@@ -32,7 +32,8 @@ jobs:
           cp -r site/* _site/
           cp -r data _site/data
           cp curriculum/lessons.json _site/curriculum/
-          rm -f _site/data/seen.json
+          rm -f _site/data/seen.json _site/data/fraude/seen.json
+          rm -rf _site/data/logs   # logs de execução ficam só no repositório
           # cache-busting: cada publicação gera endereços novos para CSS/JS (o navegador não usa versão velha)
           V=${GITHUB_SHA::8}
           sed -i "s|style.css\"|style.css?v=$V\"|; s|app.js\"|app.js?v=$V\"|" _site/index.html

@@ -30,6 +30,14 @@ O LLM só **extrai fatos** da vaga (requisitos, anos, de onde aceita candidatos,
 calculada em Python: `habilidades × senioridade × local × inglês × foco`. Vaga remota só para EUA sem visto cai
 para ~10%, porque na prática você não seria contratado. O site mostra cada fator e **o que falta**.
 
+## 🕵️ Trilha de fraude (src/fraud.py)
+Abas **Fraude** e **Próximos passos** do site. Vagas técnicas de dados em prevenção a fraude, PLD/AML, KYC e
+crimes financeiros (selo 🔗 quando a vaga usa entity resolution/grafos), pessoas e empresas da área, seu currículo
+vs. o que essas vagas pedem e um plano de próximos passos recalculado a cada coleta (+ análise de IA semanal).
+Fontes: as listagens do radar principal, buscas com termos de fraude e páginas de vagas de empresas de
+antifraude/identidade (config.yaml → `fraude`). Dados em `data/fraude/`. Sem IA, regras rígidas aprovam só o que é
+claramente "dados + fraude" (marcado como não verificado) e a IA confere depois.
+
 ## 💰 Quanto custa
 | Item | Custo |
 |---|---|

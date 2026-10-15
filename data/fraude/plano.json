@@ -1,0 +1,100 @@
+{
+ "atualizado_em": "2026-10-16",
+ "resumo": {
+  "vagas_abertas": 49,
+  "frescas": 4,
+  "acessiveis": 27,
+  "compat_media": 26,
+  "cobertura": 58.2,
+  "vagas_analisadas": 49,
+  "vagas_completas": 2
+ },
+ "esta_semana": [
+  {
+   "tipo": "candidatar",
+   "texto": "Candidatar-se cedo: Expert Data Scientist, Fraud Risk Detection (Experian), 37% compatível.",
+   "url": "https://himalayas.app/companies/experian/jobs/expert-data-scientist-fraud-risk-detection"
+  },
+  {
+   "tipo": "candidatar",
+   "texto": "Candidatar-se cedo: Research Scientist (persona), 31% compatível.",
+   "url": "https://jobs.ashbyhq.com/persona/6069ae62-74ea-4d48-8832-2863dbc27805"
+  },
+  {
+   "tipo": "candidatar",
+   "texto": "Candidatar-se cedo: Senior Research Scientist (persona), 27% compatível.",
+   "url": "https://jobs.ashbyhq.com/persona/7c498972-86f4-4513-b796-46f8854a3690"
+  },
+  {
+   "tipo": "candidatar",
+   "texto": "Vaga acessível: Senior Applied AI Research Scientist (sardine), 53% compatível.",
+   "url": "https://jobs.ashbyhq.com/sardine/44cf5225-547a-4584-a271-c0c6ddc7b0b6"
+  },
+  {
+   "tipo": "candidatar",
+   "texto": "Vaga acessível: Senior Machine Learning Engineer (Fraud) (Affirm), 49% compatível.",
+   "url": "https://himalayas.app/companies/affirm/jobs/senior-machine-learning-engineer-fraud"
+  },
+  {
+   "tipo": "candidatar",
+   "texto": "Vaga acessível: Analista de Inteligência Artificial Pleno | Compliance PLD (c6bank), 44% compatível.",
+   "url": "https://job-boards.greenhouse.io/c6bank/jobs/4737143005"
+  },
+  {
+   "tipo": "estudar",
+   "texto": "Estudar Machine Learning: pedido em 71% das vagas de fraude; +7.0 pontos de cobertura e +11 vaga(s) com todos os obrigatórios."
+  },
+  {
+   "tipo": "estudar",
+   "texto": "Estudar BI (Tableau, Power BI, Looker): pedido em 12% das vagas de fraude; +5.4 pontos de cobertura e +2 vaga(s) com todos os obrigatórios."
+  },
+  {
+   "tipo": "estudar",
+   "texto": "Estudar Deep learning (PyTorch, TensorFlow): pedido em 35% das vagas de fraude; +5.4 pontos de cobertura."
+  },
+  {
+   "tipo": "estudar",
+   "texto": "Estudar Nuvem (AWS, Azure ou GCP): pedido em 29% das vagas de fraude; +3.8 pontos de cobertura."
+  },
+  {
+   "tipo": "seguir",
+   "texto": "Seguir no LinkedIn: 0 pessoa(s) e 18 empresa(s) novas da área de fraude (aba Fraude)."
+  }
+ ],
+ "fases": [
+  {
+   "fase": "Fase 1: preparar a migração",
+   "quando": "0 a 6 meses, sem sair do emprego",
+   "itens": [
+    "Inglês para entrevista técnica: é o que mais destrava vagas melhores (meta: conversar 30 min sobre seu trabalho).",
+    "Grafos e análise de redes: Neo4j ou GraphFrames, componentes conexos e centralidade sobre a saída do seu matching.",
+    "Domínio de fraude e PLD: tipologias (contas laranja, golpe via Pix, account takeover), KYC/KYB, listas de sanções e PEP, regras de PLD no Brasil.",
+    "Nuvem: uma certificação (AWS Data Engineer ou Databricks Data Engineer Associate).",
+    "Projeto de portfólio: detectar redes de contas laranja com entity resolution + grafo em dados sintéticos (ex.: PaySim ou IBM AML synthetic data)."
+   ]
+  },
+  {
+   "fase": "Fase 2: entrar na área",
+   "quando": "6 a 18 meses",
+   "itens": [
+    "Candidatar-se a vagas de dados em times de fraude, PLD ou identidade de bancos e fintechs (de preferência remotas).",
+    "Contar a sua história como 'resolução de identidade em bilhões de registros sem chave única': é o mesmo problema de KYC e de redes de fraude.",
+    "Preparar 2 cases de entrevista: seu pipeline de linkage em produção e o projeto de grafo de contas laranja."
+   ]
+  },
+  {
+   "fase": "Fase 3: virar referência",
+   "quando": "18 a 36 meses",
+   "itens": [
+    "Sênior/staff em identidade e fraude, publicando (artigo do mestrado, palestras, posts técnicos).",
+    "Com inglês fluente: vagas remotas em dólar em empresas como Quantexa, Sardine, Feedzai e Socure."
+   ]
+  }
+ ],
+ "curriculo": [
+  "Traduza seu trabalho para a linguagem de fraude: 'resolução de identidade em bilhões de registros' = base de KYC, detecção de contas duplicadas e redes de fraude.",
+  "Coloque números: volume de registros, precisão/recall do matching, tempo de processamento, redução de duplicatas.",
+  "Inclua 'Identity Resolution', 'Entity Resolution', 'Graph Analytics' e os termos do domínio (AML, KYC, Fraud Detection) quando tiver estudado.",
+  "Destaque o projeto de portfólio de fraude (com link no GitHub) logo abaixo da experiência atual."
+ ]
+}

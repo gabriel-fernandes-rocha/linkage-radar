@@ -4,8 +4,24 @@
     {
       "name": "site",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8765"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765"
+      ],
       "port": 8765
+    },
+    {
+      "name": "site-teste",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8771",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 8771
     }
   ]
 }

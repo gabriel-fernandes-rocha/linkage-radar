@@ -182,3 +182,44 @@ companies:
   greenhouse: [esri, databricks, reltio]
   lever: [palantir, tamr, zingg, melissa, loqate, experian, lexisnexisrisk, informatica]
   ashby: [tamr, zingg, senzing, quantexa]
+
+# Trilha de FRAUDE (aba "Fraude" do site): vagas de dados em prevenção a fraude, AML/PLD, KYC e
+# crimes financeiros, com prioridade para as que usam entity resolution, grafos e identidade.
+fraude:
+  max_julgar_por_dia: 40        # vagas novas que vão para o juiz por dia
+  min_compat: 0.25
+  queries:                      # fontes com busca (Remotive, Himalayas, Workable, HN, Adzuna, Google Jobs)
+    - "fraud data engineer"
+    - "fraud data scientist"
+    - "anti-money laundering data"
+    - "financial crime data engineer"
+    - "fraud machine learning engineer"
+    - "KYC data engineer"
+    - "entity resolution fraud"
+    - "Quantexa"
+    - "transaction monitoring data"
+    - "risk data engineer fraud"
+  google_jobs_por_dia: 1        # buscas SerpAPI (prioridade baixa: só se sobrar cota)
+  gupy_titles:                  # a Gupy busca só no título
+    - "fraude"
+    - "antifraude"
+    - "prevenção a fraude"
+    - "PLD"
+    - "lavagem de dinheiro"
+    - "dados risco"
+  rede_termos:                  # pessoas para seguir (DuckDuckGo/Google, 1 termo por dia)
+    - "fraud data scientist"
+    - "anti-money laundering"
+    - "financial crime"
+    - "fraud detection"
+    - "prevenção a fraude"
+    - "Quantexa"
+  empresas_termos:
+    - "fraud prevention"
+    - "anti-money laundering"
+    - "identity verification"
+    - "financial crime"
+  companies:                    # empresas de fraude/identidade com página de vagas pública (testadas em out/2026)
+    greenhouse: [feedzai, alloy, complyadvantage, riskified, forter, stone, ebanx, inter, c6bank]
+    lever: [dlocal]
+    ashby: [nubank, sardine, socure, sift, seon, quantexa, persona, elliptic]

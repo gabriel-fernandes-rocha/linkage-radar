@@ -42,7 +42,7 @@ def search_people(cfg: dict) -> list[dict]:
     found = websearch.cascade([
         ("ddg", f'"{term}" site:linkedin.com/in', None),
         ("google", f'"{term}" site:linkedin.com/in/', None),
-    ], lambda r: "linkedin.com/in/" in r["url"], want=5, label="network")
+    ], lambda r: "linkedin.com/in/" in r["url"], want=5, label="network", first=cfg.get("_prioridade", "alta"))
     for r in found:
         out.append(item("pessoa", r["titulo"], r["url"].split("?")[0], nome=_clean_name(r["titulo"]),
                         texto=f"{r['titulo']}. {r['texto']}", fonte="Perfil público no LinkedIn"))
@@ -96,29 +96,37 @@ def companies_from_jobs(jobs: list[dict]) -> list[dict]:
     return out
 
 
+def _key(url: str) -> str:
+    """Link de BUSCA do LinkedIn (?keywords=Empresa) só difere na consulta: não pode perder o '?'."""
+    return url.strip().lower() if "/search/" in url else _norm_url(url)
+
+
 def _merge(path, new: list[dict], day: str, limit: int) -> list[dict]:
+    path.parent.mkdir(parents=True, exist_ok=True)
     current = load(path)
     for c in current:
         c["novo"] = c.get("desde") == day
-    known = {_norm_url(c["url"]) for c in current} | {c.get("nome", "").lower() for c in current}
+    known = {_key(c["url"]) for c in current} | {c.get("nome", "").lower() for c in current}
     added = 0
     for n in new:
         if added >= limit:
             break
-        if _norm_url(n["url"]) in known or n.get("nome", "").lower() in known:
+        if _key(n["url"]) in known or n.get("nome", "").lower() in known:
             continue
         entry = {k: n.get(k) for k in ("nome", "titulo", "url", "resumo", "motivo", "fonte") if n.get(k)}
         if n.get("texto"):  # headline + trecho público: base para a análise do seu perfil
             entry["perfil_publico"] = n["texto"][:600]
         entry.update(desde=day, novo=True)
         current.insert(0, entry)
-        known |= {_norm_url(n["url"]), n.get("nome", "").lower()}
+        known |= {_key(n["url"]), n.get("nome", "").lower()}
         added += 1
     path.write_text(json.dumps(current, ensure_ascii=False, indent=1), "utf-8")
     return current
 
 
-def update(cfg: dict, day: str, approved_posts: list[dict], new_jobs: list[dict], judge) -> dict:
+def update(cfg: dict, day: str, approved_posts: list[dict], new_jobs: list[dict], judge,
+           people_path=None, companies_path=None) -> dict:
+    """people_path/companies_path: a trilha de fraude guarda a rede dela em data/fraude/."""
     net = cfg.get("network", {})
     people, companies = [], []
     try:
@@ -132,8 +140,8 @@ def update(cfg: dict, day: str, approved_posts: list[dict], new_jobs: list[dict]
     # autores de posts aprovados e empresas contratando já são relevantes por construção
     people = authors_from_posts(approved_posts) + people
     companies = companies + companies_from_jobs(new_jobs)
-    p = _merge(PEOPLE, people, day, net.get("max_people", 5))
-    c = _merge(COMPANIES, companies, day, net.get("max_companies", 3))
+    p = _merge(people_path or PEOPLE, people, day, net.get("max_people", 5))
+    c = _merge(companies_path or COMPANIES, companies, day, net.get("max_companies", 3))
     log.info("network: %d pessoas (%d novas), %d empresas (%d novas)",
              len(p), sum(x["novo"] for x in p), len(c), sum(x["novo"] for x in c))
     return {"pessoas_novas": sum(x["novo"] for x in p), "empresas_novas": sum(x["novo"] for x in c)}

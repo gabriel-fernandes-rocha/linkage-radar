@@ -45,6 +45,7 @@ const jobHTML = (v, withAge = false) => `
     ${v.publicada_em ? `<p class="pub">🗓️ ${pubLabel(v.publicada_em)}</p>` : ""}
     ${v.encaixe != null ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span></p>` : ""}
     ${compatHTML(v.compat_detalhe)}
+    ${v.usa_er?.length ? `<p class="er">🔗 Usa o seu diferencial: ${v.usa_er.slice(0, 4).map(esc).join(", ")}</p>` : ""}
     ${reqHTML(v.requisitos)}
     ${v.motivo ? `<p class="why">✔ ${esc(v.motivo)}</p>` : ""}
     <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`;
@@ -172,13 +173,13 @@ async function load(day) {
   }
 }
 
-async function loadOpenJobs() {
-  const card = $("#abertas");
+async function loadOpenJobs(file = "data/open_jobs.json", cardId = "abertas") {
+  const card = $("#" + cardId);
   try {
-    const jobs = (await getJSON("data/open_jobs.json")).sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
+    const jobs = (await getJSON(file)).sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
     $(".count", card).textContent = jobs.length;
     const checked = jobs.map((j) => j.verificada_em).sort().pop();
-    $("#abertas-atualizado").textContent = checked ? `Última verificação: ${fmtDate(checked)}.` : "";
+    $(".atualizado", card).textContent = checked ? `Última verificação: ${fmtDate(checked)}.` : "";
     if (!jobs.length) {
       $(".list", card).innerHTML = `<p class="empty">Nenhuma vaga aberta no momento ✅</p>`;
       return;
@@ -212,8 +213,7 @@ async function loadOpenJobs() {
   }
 }
 
-let skillsData = null;
-const LEVEL = { tem: "✅ você tem", parcial: "🟡 parcial", nao: "⭕ falta" };
+const LEVEL = { tem: "✅ você tem", parcial: "🟡 parcial", nao: "⭕ falta", pendente: "❔ ainda não avaliada" };
 
 function barRows(rows, withLevel = true) {
   const max = Math.max(...rows.map((s) => s.vagas), 1);
@@ -227,9 +227,8 @@ function barRows(rows, withLevel = true) {
     </div>`).join("");
 }
 
-function renderSkills(view) {
-  const d = skillsData;
-  const card = $("#skills");
+function renderSkills(d, card, view) {
+  const nEl = $(".skills-n", card);
   if (!d?.geral?.ranking?.length) {
     $(".list", card).innerHTML = `<p class="meta">O ranking aparece após a próxima coleta.</p>`;
     return;
@@ -237,20 +236,20 @@ function renderSkills(view) {
   const g = d.ganhos || {};
   let html = "";
   if (view === "plano") {
-    $("#skills-n").textContent = `Hoje você cobre ${g.cobertura_atual}% dos requisitos das ${g.vagas_analisadas} vagas do nicho e cumpre TODOS os obrigatórios em ${g.vagas_completas_hoje}.`;
+    nEl.textContent = `Hoje você cobre ${g.cobertura_atual}% dos requisitos das ${g.vagas_analisadas} vagas do nicho e cumpre TODOS os obrigatórios em ${g.vagas_completas_hoje}.`;
     const row = (x) => `<li><b>${esc(x.nome)}</b> <small>(${LEVEL[x.voce] || ""}, pedido em ${x.pct_nicho}% das vagas)</small><br>
       +${x.ganho_cobertura} pontos de cobertura${x.vagas_completas_a_mais ? ` · +${x.vagas_completas_a_mais} vaga(s) em que você passa a cumprir todos os obrigatórios` : ""}</li>`;
     html = `<div class="sec"><h4>1º Famílias (aprender uma ferramenta da família já conta)</h4><ol>${(g.familias || []).slice(0, 8).map(row).join("")}</ol></div>
       <div class="sec"><h4>2º Habilidades específicas</h4><ol>${(g.habilidades || []).slice(0, 12).map(row).join("")}</ol></div>
       <p class="meta">Quando estudar algo, declare em <code>config.yaml</code> → <code>niveis_declarados</code> (ou atualize <code>profile/curriculo.md</code>): todas as compatibilidades são recalculadas na coleta seguinte.</p>`;
   } else if (view === "familias") {
-    $("#skills-n").textContent = `${d.geral.vagas_analisadas} vagas do nicho. Uma vaga conta uma vez por família.`;
+    nEl.textContent = `${d.geral.vagas_analisadas} vagas analisadas. Uma vaga conta uma vez por família.`;
     html = (d.geral.familias || []).map((f) => `
       <div class="bar-row lvl-${f.voce}"><span class="bar-name">${esc(f.nome)}<small>${LEVEL[f.voce] || ""} · ${f.exemplos.map(esc).join(", ")}</small></span>
       <span class="bar"><span class="bar-must" style="width:${f.pct}%"></span></span><span class="bar-pct">${f.pct}%</span></div>`).join("");
   } else {
     const src = d[view] || d.geral;
-    $("#skills-n").textContent = view === "mercado_amplo"
+    nEl.textContent = view === "mercado_amplo"
       ? `${src.vagas_analisadas} vagas de engenharia/ciência de dados em geral (amostra semanal), para comparar com o nicho.`
       : `${src.vagas_analisadas} vagas do nicho analisadas.`;
     html = src.ranking?.length ? barRows(src.ranking.slice(0, 35)) : `<p class="meta">A amostra aparece após a próxima coleta de domingo.</p>`;
@@ -258,13 +257,16 @@ function renderSkills(view) {
   $(".list", card).innerHTML = html;
 }
 
-async function loadSkills() {
+async function loadSkills(file = "data/skills.json", cardId = "skills") {
+  const card = $("#" + cardId);
+  let data = null;
   try {
-    skillsData = await getJSON("data/skills.json");
+    data = await getJSON(file);
   } catch {}
-  const sel = $("#skills-period");
-  sel.addEventListener("change", () => renderSkills(sel.value));
-  renderSkills(sel.value);
+  const sel = $(".skills-period", card);
+  sel.addEventListener("change", () => renderSkills(data, card, sel.value));
+  renderSkills(data, card, sel.value);
+  return data;
 }
 
 // Link curto do WhatsApp: #vaga-<sha1[:6] da URL> redireciona direto para a vaga
@@ -275,7 +277,8 @@ async function sha1(text) {
 
 async function redirectToJob(id) {
   $("#status").textContent = "Abrindo a vaga…";
-  const lists = await Promise.all(["data/open_jobs.json", "data/jobs_archive.json"].map((f) => getJSON(f).catch(() => [])));
+  const lists = await Promise.all(["data/open_jobs.json", "data/jobs_archive.json", "data/fraude/open_jobs.json",
+    "data/fraude/archive.json"].map((f) => getJSON(f).catch(() => [])));
   for (const job of lists.flat()) {
     if ((await sha1(job.url)).startsWith(id)) {
       location.replace(job.url);
@@ -398,8 +401,113 @@ async function loadNetwork(file, cardId, button) {
   render(false);
 }
 
+// ---------------------------------------------------------------- abas
+const TAB_KEY = "linkageRadar.aba";
+function showTab(name) {
+  document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === name)));
+  document.querySelectorAll(".panel").forEach((p) => (p.hidden = p.id !== "tab-" + name));
+  $("#status").hidden = name !== "radar";
+  $("#day").closest(".picker").hidden = name !== "radar";  // o seletor de dia só vale para o radar
+  try { localStorage.setItem(TAB_KEY, name); } catch {}
+}
+function initTabs() {
+  document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+  const wanted = new URLSearchParams(location.search).get("aba");
+  let saved = "";
+  try { saved = localStorage.getItem(TAB_KEY) || ""; } catch {}
+  showTab([wanted, saved].find((x) => x && $("#tab-" + x)) || "radar");
+}
+
+// ---------------------------------------------------------------- trilha de fraude
+function renderFraudCV(d) {
+  const card = $("#f-cv .content");
+  const rows = d?.geral?.ranking || [];
+  if (!rows.length) {
+    card.innerHTML = `<p class="meta">A comparação aparece quando houver vagas de fraude com requisitos.</p>`;
+    return;
+  }
+  const g = d.ganhos || {};
+  const chips = (xs, cls) => xs.length
+    ? xs.slice(0, 18).map((r) => `<span class="chip ${cls}" title="${r.vagas} vaga(s)">${esc(r.nome)} · ${r.pct}%</span>`).join(" ")
+    : `<span class="meta">nenhuma ainda</span>`;
+  const by = (nivel) => rows.filter((r) => (r.voce || "nao") === nivel);
+  const falta = by("nao");
+  card.innerHTML = `
+    <div class="kpis">
+      <div class="kpi"><b>${g.cobertura_atual ?? "?"}%</b><span>dos requisitos das vagas de fraude você já cobre</span></div>
+      <div class="kpi"><b>${g.vagas_completas_hoje ?? 0}</b><span>de ${g.vagas_analisadas ?? d.geral.vagas_analisadas} vagas em que você cumpre todos os obrigatórios</span></div>
+      <div class="kpi"><b>${falta.length}</b><span>habilidades pedidas que você ainda não tem</span></div>
+    </div>
+    <div class="sec"><h4>✅ Você já tem</h4><p>${chips(by("tem"), "must")}</p></div>
+    <div class="sec"><h4>🟡 Parcial (base próxima, fica apto rápido)</h4><p>${chips(by("parcial"), "nice")}</p></div>
+    <div class="sec"><h4>⭕ Falta (as mais pedidas primeiro)</h4><p>${chips(falta, "miss")}</p></div>
+    ${by("pendente").length ? `<div class="sec"><h4>❔ Ainda não avaliadas (sem IA no dia; serão classificadas na próxima coleta)</h4><p>${chips(by("pendente"), "nice")}</p></div>` : ""}
+    <p class="meta">O % é a fração das vagas de fraude que pedem a habilidade. Estudou algo? Declare em <code>config.yaml</code> → <code>niveis_declarados</code>.</p>`;
+}
+
+async function loadFraudHistory() {
+  const card = $("#f-historico");
+  let all = [];
+  try { all = await getJSON("data/fraude/archive.json"); } catch {}
+  $(".count", card).textContent = all.length;
+  if (!all.length) {
+    $(".list", card).innerHTML = `<p class="meta">O histórico aparece após a próxima coleta.</p>`;
+    return;
+  }
+  all.sort((a, b) => (b.primeira_vez || "").localeCompare(a.primeira_vez || ""));
+  const row = (j) => `<li><a href="${safeUrl(j.url)}" target="_blank" rel="noopener">${esc(j.titulo)}</a>
+    <small>${esc(j.empresa || j.fonte || "")} · ${j.status === "fechada" ? `encerrada em ${fmtDate(j.fechada_em)}` : "aberta"}
+    · vista em ${fmtDate(j.primeira_vez)}${j.encaixe != null ? ` · ${Math.round(j.encaixe * 100)}%` : ""}${j.usa_er?.length ? " · 🔗" : ""}</small></li>`;
+  const closed = all.filter((j) => j.status === "fechada").length;
+  $(".list", card).innerHTML = `<p class="meta">${all.length - closed} abertas e ${closed} encerradas.</p>
+    <details class="past"><summary>Ver todas as ${all.length} vagas</summary><ul class="hist">${all.map(row).join("")}</ul></details>`;
+}
+
+async function loadPlan() {
+  let p = null;
+  try { p = await getJSON("data/fraude/plano.json"); } catch {}
+  if (!p) {
+    ["#p-semana", "#p-ia", "#p-fases", "#p-curriculo"].forEach((s) =>
+      ($(s + " .content").innerHTML = `<p class="meta">Aparece após a próxima coleta.</p>`));
+    return;
+  }
+  const r = p.resumo || {};
+  $("#p-semana .atualizado").textContent = p.atualizado_em ? `Atualizado em ${fmtDate(p.atualizado_em)}.` : "";
+  const icon = { candidatar: "📨", estudar: "📚", seguir: "👥" };
+  const list = (xs) => `<ul>${(xs || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  $("#p-semana .content").innerHTML = `
+    <div class="kpis">
+      <div class="kpi"><b>${r.vagas_abertas ?? 0}</b><span>vagas de fraude abertas</span></div>
+      <div class="kpi"><b>${r.acessiveis ?? 0}</b><span>com compatibilidade razoável para você</span></div>
+      <div class="kpi"><b>${r.frescas ?? 0}</b><span>publicadas nos últimos dias</span></div>
+      <div class="kpi"><b>${r.cobertura ?? "?"}%</b><span>dos requisitos que você já cobre</span></div>
+    </div>
+    ${(p.esta_semana || []).length ? `<ol class="steps">${p.esta_semana.map((a) => `<li>${icon[a.tipo] || "•"} ${esc(a.texto)}${
+      a.url ? ` <a href="${safeUrl(a.url)}" target="_blank" rel="noopener">ver vaga</a>` : ""}</li>`).join("")}</ol>`
+      : `<p class="meta">Nenhuma ação nova hoje ✅</p>`}`;
+  const ia = p.analise_ia;
+  $("#p-ia .content").innerHTML = ia
+    ? `<p class="mod">${fmtDate(ia.data)} · ${esc(ia.juiz || "")}</p>${sec("Diagnóstico", ia.diagnostico)}
+       <div class="sec"><h4>Próximas 4 semanas</h4><ol>${(ia.proximos_passos || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ol></div>
+       <div class="sec"><h4>Ajustes no currículo</h4>${list(ia.curriculo)}</div>`
+    : `<p class="meta">A primeira análise sai quando houver pelo menos 5 habilidades no ranking de fraude e uma IA disponível.</p>`;
+  $("#p-fases .content").innerHTML = (p.fases || []).map((f) => `
+    <div class="sec phase"><h4>${esc(f.fase)} <small>${esc(f.quando)}</small></h4>${list(f.itens)}</div>`).join("");
+  $("#p-curriculo .content").innerHTML = list(p.curriculo);
+}
+
+function loadFraud() {
+  loadOpenJobs("data/fraude/open_jobs.json", "f-vagas");
+  loadNetwork("data/fraude/people.json", "f-pessoas", "Ver perfil");
+  loadNetwork("data/fraude/companies.json", "f-empresas", "Ver empresa");
+  loadSkills("data/fraude/skills.json", "f-skills").then(renderFraudCV);
+  loadFraudHistory();
+  loadPlan();
+}
+
 (async function init() {
   if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
+  initTabs();
   loadSkills();
   loadHealth();
   loadMarket();
@@ -412,6 +520,7 @@ async function loadNetwork(file, cardId, button) {
     loadOpenJobs();
     loadNetwork("data/people.json", "pessoas", "Ver perfil");
     loadNetwork("data/companies.json", "empresas", "Ver empresa");
+    loadFraud();
   } catch {
     $("#status").textContent = "Nenhuma edição publicada ainda.";
     return;
