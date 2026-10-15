@@ -28,6 +28,7 @@ PROVIDERS = {
                  "model": "llama-3.3-70b"},
 }
 DOWN: set[str] = set()  # provedores desligados nesta execução
+COOLDOWN: dict[str, float] = {}  # provedor em limite por minuto (429): pausado até este horário (time.time())
 BUSY: dict[str, int] = {}  # quantas vezes cada provedor respondeu "sobrecarregado" (503/timeout)
 _DISCOVERED: dict[str, list[str]] = {}  # modelos disponíveis hoje, por provedor (descobertos na hora)
 
@@ -129,16 +130,18 @@ def _openai_compatible(name: str, model: str, system: str, user: str, max_tokens
     try:
         return r.json()["choices"][0]["message"]["content"]
     except Exception:
-        if name == "github":  # endereço novo respondeu "OK": usa o endpoint clássico do GitHub Models
-            r2 = requests.post("https://models.inference.ai.azure.com/chat/completions", timeout=60,
+        if name == "github":  # respondeu "OK" sem JSON: tenta uma vez sem os cabeçalhos da API do GitHub
+            # (o endpoint antigo models.inference.ai.azure.com foi desativado e nem resolve mais no DNS)
+            r2 = requests.post(p["url"], timeout=90,
                                headers={"Authorization": f"Bearer {os.environ[p['env']]}",
                                         "Content-Type": "application/json"},
-                               json={"model": model.split("/")[-1], "max_tokens": max_tokens, "temperature": 0,
+                               json={"model": model, "max_tokens": max_tokens, "temperature": 0,
                                      "messages": [{"role": "system", "content": system},
                                                   {"role": "user", "content": user}]})
-            if r2.status_code < 400:
+            try:
                 return r2.json()["choices"][0]["message"]["content"]
-            raise RuntimeError(f"github {r2.status_code}: {r2.text[:200]}")
+            except Exception:
+                raise RuntimeError(f"github resposta inesperada {r2.status_code}: {r2.text[:200]!r}")
         raise RuntimeError(f"{name} resposta inesperada {r.status_code}: {r.text[:200]!r}")
 
 
@@ -150,6 +153,8 @@ def chain(cfg: dict) -> list[tuple[str, str]]:
     out = []
     for name in order:
         if name in DOWN or (name == "anthropic" and LLM_STATE["anthropic_down"]):
+            continue
+        if COOLDOWN.get(name, 0) > time.time():
             continue
         if name == "anthropic" and os.getenv("ANTHROPIC_API_KEY"):
             out.append((name, llm["model"]))
@@ -165,7 +170,14 @@ def complete(cfg: dict, system: str, user: str, max_tokens: int = 4000) -> str |
     - modelo inexistente (404): tenta o próximo modelo descoberto do mesmo provedor;
     - limite por minuto (429): espera e tenta de novo uma vez;
     - sem saldo/chave inválida: desliga o provedor no resto da coleta."""
-    for name, configured in chain(cfg):
+    links = chain(cfg)
+    if not links and COOLDOWN:  # todos em limite por minuto: espera o primeiro liberar (no máximo 65 s)
+        wait = min(COOLDOWN.values()) - time.time()
+        if 0 < wait <= 65:
+            log.info("judge: todas as IAs em limite por minuto; aguardando %.0f s", wait)
+            time.sleep(wait)
+            links = chain(cfg)
+    for name, configured in links:
         models = [configured] if name == "anthropic" else candidates(name, configured)
         for model in models:
             for attempt in (1, 2):
@@ -184,9 +196,17 @@ def complete(cfg: dict, system: str, user: str, max_tokens: int = 4000) -> str |
                     msg = str(e).lower()
                     if name == "anthropic" and note_llm_error(e):
                         break
-                    if " 429" in msg and attempt == 1:
-                        time.sleep(8)
-                        continue
+                    if " 429" in msg and not any(k in msg for k in ("quota", "billing", "per day", "daily")):
+                        # limite por MINUTO (tokens/requisições): não desliga o provedor no resto da coleta;
+                        # espera o tempo pedido e, se persistir, pausa só ele por 1 minuto e passa ao próximo
+                        if attempt == 1:
+                            m = re.search(r"try again in ([\d.]+)\s*(ms|s)", msg)
+                            secs = (float(m[1]) / (1000 if m[2] == "ms" else 1)) if m else 8
+                            time.sleep(min(max(secs, 2), 20))
+                            continue
+                        COOLDOWN[name] = time.time() + 60
+                        log.info("judge: %s em limite por minuto; pausado 1 min", name)
+                        break
                     log.warning("judge: %s/%s falhou (%s)", name, model, str(e)[:200])
                     if " 503" in msg or "timed out" in msg or "overloaded" in msg or " 529" in msg:
                         BUSY[name] = BUSY.get(name, 0) + 1
@@ -197,6 +217,7 @@ def complete(cfg: dict, system: str, user: str, max_tokens: int = 4000) -> str |
                     if " 404" in msg or "not found" in msg or "does not exist" in msg or "unavailable" in msg:
                         break  # este modelo saiu: tenta o próximo modelo do mesmo provedor
                     if any(k in msg for k in (" 401", " 402", " 403", " 429", "quota", "insufficient",
+                                              "resposta inesperada", "max retries exceeded",
                                               "unauthorized", "forbidden")):
                         DOWN.add(name)
                     break

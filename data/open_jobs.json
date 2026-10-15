@@ -202,6 +202,54 @@
   },
   {
     "tipo": "vaga",
+    "titulo": "Data Engineer - Identity Resolution & Consent Data at Thomson ...",
+    "url": "https://in.linkedin.com/jobs/view/data-engineer-identity-resolution-consent-data-at-thomson-reuters-4471423780",
+    "data": "Sep 24, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "nao_verificado": true,
+    "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
+    "desde": "2026-10-15",
+    "verificada_em": "2026-10-15",
+    "nova": true,
+    "juiz": "groq",
+    "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "Identity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 1.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": true
+    }
+  },
+  {
+    "tipo": "vaga",
     "titulo": "Společnost Modash najímá na pozici Senior Product Data ... - LinkedIn",
     "url": "https://cz.linkedin.com/jobs/view/senior-product-data-engineer-data-insights-remote-europe-at-modash-4477453953",
     "data": "Oct 8, 2026",
@@ -2311,21 +2359,5 @@
       "parciais": []
     },
     "publicada_em": "2026-09-05"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Engineer - Identity Resolution & Consent Data at Thomson ...",
-    "url": "https://in.linkedin.com/jobs/view/data-engineer-identity-resolution-consent-data-at-thomson-reuters-4471423780",
-    "data": "Sep 24, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "nao_verificado": true,
-    "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
-    "desde": "2026-10-15",
-    "verificada_em": "2026-10-15",
-    "nova": true,
-    "juiz": "groq",
-    "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
-    "confianca": 0.98
   }
 ]

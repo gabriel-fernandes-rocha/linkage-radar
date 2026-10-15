@@ -128,20 +128,7 @@
       }
     }
   ],
-  "eventos": [
-    {
-      "tipo": "evento",
-      "titulo": "Geocodificação nos visuais do Azure Mapas para o Power BI",
-      "url": "https://learn.microsoft.com/pt-br/azure/azure-maps/power-bi-visual-geocode",
-      "data": "13 de ago. de 2026",
-      "fonte": "web",
-      "score": 1,
-      "juiz": "groq",
-      "motivo": "Evento tem como tema central a geocodificação, que é foco de address matching e entity resolution.",
-      "resumo": "Evento aborda geocodificação nos visuais do Azure Maps para Power BI, focado em correspondência e normalização de endereços.",
-      "confianca": 0.95
-    }
-  ],
+  "eventos": [],
   "papers": [
     {
       "tipo": "paper",

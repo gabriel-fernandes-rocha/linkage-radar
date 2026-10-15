@@ -36,7 +36,8 @@ def _block(i: int, j: dict, new_urls: set, d: date) -> list[str]:
     if local:
         lines.append(f"📍 {_e(local)}")
     lines.append(f"🎯 <b>{round(j.get('encaixe', 0) * 100)}% compatível</b>"
-                 + (f" · habilidades {det['habilidades']}%" if det.get("habilidades") is not None else ""))
+                 + (f" · habilidades {det['habilidades']}%" if det.get("habilidades") is not None else "")
+                 + (" (estimado)" if det.get("estimado") else ""))
     if age:
         lines.append(f"🗓️ {age}" + (" · 🆕 nova no radar" if j["url"] in new_urls else ""))
     if req.get("obrigatorios"):

@@ -52,6 +52,25 @@ def note_llm_error(e: Exception) -> bool:
     return False
 log.addHandler(RECORDER)
 
+
+def save_log(day: str, label: str = "coleta") -> Path | None:
+    """Grava o log da execução em data/logs/AAAA-MM-DD.log (avisos, erros e tracebacks) para diagnóstico depois.
+    Mantém os últimos 30 dias."""
+    try:
+        folder = DATA / "logs"
+        folder.mkdir(parents=True, exist_ok=True)
+        path = folder / f"{day}.log"
+        stamp = datetime.now(ZoneInfo("America/Bahia")).strftime("%Y-%m-%d %H:%M")
+        lines = [f"===== {label} {stamp} ====="] + [f"{lvl} {msg}" for lvl, msg in RECORDER.records]
+        with path.open("a", encoding="utf-8") as f:
+            f.write("\n".join(lines) + "\n\n")
+        for old in sorted(folder.glob("????-??-??.log"))[:-30]:
+            old.unlink()
+        return path
+    except Exception as e:  # gravar log nunca pode derrubar nada
+        log.warning("não consegui gravar o log: %s", e)
+        return None
+
 UA = "Mozilla/5.0 (LinkageRadar; +https://github.com/) Python-requests"
 TIMEOUT = 20
 

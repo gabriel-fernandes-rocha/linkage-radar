@@ -28,7 +28,8 @@ const compatHTML = (d) => {
   const falta = d.faltam?.length ? `<br>Falta: ${d.faltam.map(esc).join(", ")}` : "";
   const parcial = d.parciais?.length ? `<br>Parcial: ${d.parciais.map(esc).join(", ")}` : "";
   return `<p class="compat">Habilidades ${d.habilidades}% · Senioridade ${d.senioridade}% (${esc(d.senioridade_txt)})
-    · Local ${d.local}% (${esc(d.local_txt)})${d.ingles < 100 ? ` · Inglês ${d.ingles}%` : ""}${falta}${parcial}</p>`;
+    · Local ${d.local}% (${esc(d.local_txt)})${d.ingles < 100 ? ` · Inglês ${d.ingles}%` : ""}${falta}${parcial}
+    ${d.estimado ? "<br><em>Estimativa por regras (nenhuma IA leu esta vaga ainda)</em>" : ""}</p>`;
 };
 
 function pubLabel(iso) {

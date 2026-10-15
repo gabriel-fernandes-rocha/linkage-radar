@@ -132,6 +132,23 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
         _apply(batch, rows)
 
 
+def ensure(jobs: list[dict]) -> int:
+    """Toda vaga sai com requisitos: as que a IA não conseguiu ler recebem a extração por regras (estimada)."""
+    from filters import req_heuristic
+
+    n = 0
+    for j in jobs:
+        if not j.get("requisitos"):
+            try:
+                req_heuristic.extract(j)
+                n += 1
+            except Exception as e:
+                log.warning("requisitos sem IA falhou em '%s': %s", j.get("titulo", "")[:60], e)
+    if n:
+        log.info("requisitos: %d vaga(s) com requisitos estimados por regras (sem IA)", n)
+    return n
+
+
 def _apply(batch: list[dict], rows) -> None:
     if not isinstance(rows, list):
         return

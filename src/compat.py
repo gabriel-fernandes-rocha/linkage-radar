@@ -146,10 +146,17 @@ def apply_declared(cache: dict, cfg: dict) -> dict:
     return cache
 
 
-def _coverage(skills: list[str], cache: dict) -> float | None:
-    if not skills:
-        return None
-    return sum(CREDIT[cache.get(s.lower(), {}).get("nivel", "nao")] for s in skills) / len(skills)
+def _coverage(skills: list[str], cache: dict, declared: set[str] = frozenset()) -> float | None:
+    """Habilidade ainda sem veredito (nenhuma IA disponível) não conta como "não tem": se está entre as
+    habilidades declaradas no perfil vale "tem"; senão fica de fora até ser classificada."""
+    credits = []
+    for s in skills:
+        v = cache.get(s.lower(), {}).get("nivel")
+        if v in CREDIT:
+            credits.append(CREDIT[v])
+        elif s.lower() in declared:
+            credits.append(1.0)
+    return sum(credits) / len(credits) if credits else None
 
 
 def _seniority(job: dict, years: float) -> tuple[float, str]:
@@ -199,7 +206,8 @@ def _location(job: dict, cfg: dict) -> tuple[float, str]:
 def score(job: dict, cfg: dict, cache: dict) -> None:
     req = job.get("requisitos") or {}
     must, nice = req.get("obrigatorios", []), req.get("desejaveis", [])
-    cm, cn = _coverage(must, cache), _coverage(nice, cache)
+    declared = {str(s).lower() for s in cfg.get("perfil_estruturado", {}).get("habilidades", [])}
+    cm, cn = _coverage(must, cache, declared), _coverage(nice, cache, declared)
     if cm is None and cn is None:
         skills = 0.5
     elif cm is None:
@@ -225,6 +233,7 @@ def score(job: dict, cfg: dict, cache: dict) -> None:
         "ingles": round(f_en * 100), "foco": round(f_focus * 100),
         "senioridade_txt": sen_txt, "local_txt": loc_txt,
         "faltam": missing[:8], "parciais": partial[:8],
+        "estimado": bool(job.get("requisitos_estimados")),
     }
 
 

@@ -323,4 +323,12 @@ def main():
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    main()
+    from common import log, save_log
+
+    try:
+        main()
+    except Exception:
+        log.exception("envio caiu")
+        raise
+    finally:
+        save_log(date.today().isoformat(), "envio")

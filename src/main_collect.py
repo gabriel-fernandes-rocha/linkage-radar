@@ -73,7 +73,7 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
     bootstrap = rejudge or not (open_jobs.PATH.exists() and job_archive.ARCHIVE.exists())
 
     for key, module, limit_key in SECTIONS:
-        raw = module.collect(cfg)
+        raw = safe(f"fonte {key}", lambda: module.collect(cfg), []) or []
         if key == "vagas":
             raw_jobs = raw
         cands = [it for it in unique(raw)
@@ -83,7 +83,7 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
         cands = cands[:max(budget, 0)]
         budget -= len(cands)
         if use_llm:
-            approved = llm_judge.judge(cands, cfg)
+            approved = safe(f"juiz {key}", lambda: llm_judge.judge(cands, cfg), []) or []
             for it in cands:  # só o que foi REALMENTE julgado vira "visto"; o resto é reavaliado amanhã
                 if it.pop("_julgado", False):
                     seen.add(it, day)
@@ -94,6 +94,8 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
             approved.sort(key=lambda it: (it.get("encaixe", 0), it.get("confianca", 0), it["score"]), reverse=True)
         else:
             approved = cands
+        if key == "eventos":  # só evento de verdade: página de evento, com data futura (não docs/artigos)
+            approved = safe("validar eventos", lambda: events.validate(approved, edition.date()), approved)
         if key == "linkedin":  # vaga divulgada no LinkedIn também é vaga
             posted_jobs = [it for it in approved if "/jobs/view/" in it["url"]]
             approved = [it for it in approved if it not in posted_jobs]
@@ -101,10 +103,12 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
                 it["tipo"], it["fonte"] = "vaga", "LinkedIn Jobs"
             approved_all["vagas"] += posted_jobs
             report["vagas"] = (report["vagas"] + posted_jobs)[: cfg["limits"]["max_jobs"]]
-        if use_llm and key in ("vagas", "linkedin"):  # requisitos antes de descartar o texto
+        if key in ("vagas", "linkedin"):  # requisitos antes de descartar o texto
             fresh_jobs = [it for it in approved_all.get("vagas", []) + approved
                           if it["tipo"] == "vaga" and "requisitos" not in it]
-            safe("requisitos", lambda: requirements.extract(fresh_jobs, cfg))
+            if use_llm:
+                safe("requisitos", lambda: requirements.extract(fresh_jobs, cfg))
+            safe("requisitos sem IA", lambda: requirements.ensure(fresh_jobs))  # toda vaga ganha compatibilidade
             safe("compatibilidade", lambda: compat.score_jobs(fresh_jobs, cfg))
         approved_all[key] = list(approved)
         final = approved[: cfg["limits"][limit_key]]
@@ -125,10 +129,13 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
             all_skills = {s for j in abertas + job_archive.load() for s in
                           ((j.get("requisitos") or {}).get("obrigatorios", []) +
                            (j.get("requisitos") or {}).get("desejaveis", []))}
+            requirements.ensure(abertas)  # vaga antiga sem requisitos (IA falhou no dia) recebe estimativa
             cache = compat.classify_skills(all_skills, cfg)
             for j in abertas:
-                if j.get("requisitos"):
+                try:
                     compat.score(j, cfg, cache)
+                except Exception as e:
+                    log.warning("compatibilidade falhou em '%s': %s", j.get("titulo", "")[:60], e)
             abertas.sort(key=lambda j: j.get("encaixe", 0), reverse=True)
             open_jobs.save(abertas)
             market.sample_broad_market(raw_jobs, cfg, day)
@@ -182,5 +189,13 @@ if __name__ == "__main__":
     ap.add_argument("--se-ainda-nao-coletou", action="store_true", help="usado pelo agendamento (evita coletar 2x)")
     ap.add_argument("--rejulgar-vagas", action="store_true", help="julga de novo vagas já vistas (após mudar o juiz)")
     args = ap.parse_args()
-    run(use_llm=not args.no_llm, full_scan=args.varredura_completa, only_if_missing=args.se_ainda_nao_coletou,
-        rejudge=args.rejulgar_vagas)
+    from common import save_log
+
+    try:
+        run(use_llm=not args.no_llm, full_scan=args.varredura_completa, only_if_missing=args.se_ainda_nao_coletou,
+            rejudge=args.rejulgar_vagas)
+    except Exception:
+        log.exception("coleta caiu")
+        raise
+    finally:
+        save_log(today(load_config()).strftime("%Y-%m-%d"))
