@@ -85,6 +85,8 @@ def build_message(rep: dict, site_url: str, open_jobs: list[dict] | None = None,
     import health
 
     alert = health.summary_line()
+    if alert and len(alert) > 160:  # canal com pouco espaço: alerta resumido (o completo fica no site)
+        alert = alert[:157].rstrip() + "…"
     header = ([alert, ""] if alert else []) + [f"📡 Linkage Radar {d:%d/%m}",
               f"{len(new_urls)} {'vaga nova' if len(new_urls) == 1 else 'vagas novas'} hoje | "
               f"{rep.get('vagas_abertas_total', len(pool))} abertas no seu perfil"]

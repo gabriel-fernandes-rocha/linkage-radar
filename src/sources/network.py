@@ -35,7 +35,8 @@ def _clean_name(title: str) -> str:
 
 
 def search_people(cfg: dict) -> list[dict]:
-    term = _term_of_day(cfg["queries"]["network"])
+    # termos testados no DuckDuckGo (multipalavra incomum volta vazio)
+    term = _term_of_day(cfg["queries"].get("linkedin_ddg") or cfg["queries"]["network"])
     out = []
     # O Google às vezes ignora o filtro site: com caminho; se vier pouco perfil, tenta o formato alternativo
     found = websearch.cascade([

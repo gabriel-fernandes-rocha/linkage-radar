@@ -20,7 +20,10 @@ def test_empty_day():
     assert "Nenhuma vaga aberta" in msg and "28/09" in msg
 
 
-def test_long_message_truncated():
+def test_long_message_truncated(monkeypatch):
+    import health
+
+    monkeypatch.setattr(health, "summary_line", lambda: "🚨 Saúde do radar: " + "x" * 400)
     msg = build_message(_rep(10), "https://site")
     assert len(quote_plus(msg)) <= MAX_ENCODED  # cabe em UMA mensagem do WhatsApp
     assert "10 vagas novas hoje" in msg and msg.count("% compatível") == 3 and "—" not in msg

@@ -18,7 +18,7 @@ llm:
   max_items_per_day: 80     # teto de itens enviados ao LLM por dia (trava de custo)
   extract_model: claude-sonnet-5   # lê as vagas aprovadas (poucas/dia) com precisão: requisitos, local, visto
   writer_model: claude-sonnet-5    # pílulas de mercado e análise de perfil
-  fallback_model: gemini-2.5-flash # juiz reserva GRÁTIS se o Claude falhar (precisa do Secret GEMINI_API_KEY)
+  fallback_model: ""               # vazio = o radar descobre o melhor modelo Gemini disponível a cada coleta
   # Cadeia de juízes: usa o 1º que responder. Sem chave = pulado. Chaves grátis não expiram.
   #   gemini: GEMINI_API_KEY | github: automático no Actions | groq: GROQ_API_KEY
   #   openrouter: OPENROUTER_API_KEY | mistral: MISTRAL_API_KEY | cerebras: CEREBRAS_API_KEY
