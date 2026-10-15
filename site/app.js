@@ -176,7 +176,10 @@ async function load(day) {
 async function loadOpenJobs(file = "data/open_jobs.json", cardId = "abertas") {
   const card = $("#" + cardId);
   try {
-    const jobs = (await getJSON(file)).sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
+    const jobs = await getJSON(file);
+    ALL_JOBS.push(...jobs);
+    applyLive(jobs);  // seus níveis marcados em "Minhas ferramentas" já valem aqui
+    jobs.sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
     $(".count", card).textContent = jobs.length;
     const checked = jobs.map((j) => j.verificada_em).sort().pop();
     $(".atualizado", card).textContent = checked ? `Última verificação: ${fmtDate(checked)}.` : "";
@@ -185,6 +188,10 @@ async function loadOpenJobs(file = "data/open_jobs.json", cardId = "abertas") {
       return;
     }
     jobs.forEach((j) => (j.nova = !!LATEST_EDITION && j.desde === LATEST_EDITION));
+    let expanded = false;
+    const draw = () => {
+    applyLive(jobs);
+    jobs.sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
     const FRESH_DAYS = 2;
     const ref = LATEST_EDITION ? new Date(LATEST_EDITION + "T12:00:00") : new Date();
     const ageDays = (j) => j.publicada_em ? Math.round((ref - new Date(j.publicada_em + "T12:00:00")) / 864e5) : null;
@@ -204,9 +211,12 @@ async function loadOpenJobs(file = "data/open_jobs.json", cardId = "abertas") {
         block("🏆 As 4 mais compatíveis entre as que você já viu", top) +
         (all ? block(`Todas as outras (${rest.length})`, rest)
              : rest.length ? `<button class="btn more" type="button">Ver todas as ${jobs.length} vagas abertas</button>` : "");
-      $(".more", card)?.addEventListener("click", () => render(true));
+      $(".more", card)?.addEventListener("click", () => { expanded = true; render(true); });
     };
-    render(false);
+    render(expanded);
+    };
+    draw();
+    RERENDER.push(draw);
   } catch {
     $(".count", card).textContent = 0;
     $(".list", card).innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
@@ -277,8 +287,8 @@ async function sha1(text) {
 
 async function redirectToJob(id) {
   $("#status").textContent = "Abrindo a vaga…";
-  const lists = await Promise.all(["data/open_jobs.json", "data/jobs_archive.json", "data/fraude/open_jobs.json",
-    "data/fraude/archive.json"].map((f) => getJSON(f).catch(() => [])));
+  const lists = await Promise.all(["data/open_jobs.json", "data/jobs_archive.json", "data/brasil/open_jobs.json",
+    "data/brasil/archive.json"].map((f) => getJSON(f).catch(() => [])));
   for (const job of lists.flat()) {
     if ((await sha1(job.url)).startsWith(id)) {
       location.replace(job.url);
@@ -418,37 +428,36 @@ function initTabs() {
   showTab([wanted, saved].find((x) => x && $("#tab-" + x)) || "radar");
 }
 
-// ---------------------------------------------------------------- trilha de fraude
-function renderFraudCV(d) {
-  const card = $("#f-cv .content");
+// ---------------------------------------------------------------- aba Brasil
+function renderCV(d, sel) {
+  const card = $(sel + " .content");
   const rows = d?.geral?.ranking || [];
   if (!rows.length) {
-    card.innerHTML = `<p class="meta">A comparação aparece quando houver vagas de fraude com requisitos.</p>`;
+    card.innerHTML = `<p class="meta">A comparação aparece quando houver vagas com requisitos.</p>`;
     return;
   }
   const g = d.ganhos || {};
+  const lvl = (r) => userLevel(r.nome) || r.voce || "nao";
   const chips = (xs, cls) => xs.length
-    ? xs.slice(0, 18).map((r) => `<span class="chip ${cls}" title="${r.vagas} vaga(s)">${esc(r.nome)} · ${r.pct}%</span>`).join(" ")
+    ? xs.slice(0, 20).map((r) => `<span class="chip ${cls}" title="${r.vagas} vaga(s)">${esc(r.nome)} · ${r.pct}%</span>`).join(" ")
     : `<span class="meta">nenhuma ainda</span>`;
-  const by = (nivel) => rows.filter((r) => (r.voce || "nao") === nivel);
-  const falta = by("nao");
+  const by = (nivel) => rows.filter((r) => lvl(r) === nivel);
   card.innerHTML = `
     <div class="kpis">
-      <div class="kpi"><b>${g.cobertura_atual ?? "?"}%</b><span>dos requisitos das vagas de fraude você já cobre</span></div>
+      <div class="kpi"><b>${g.cobertura_atual ?? "?"}%</b><span>dos requisitos dessas vagas você já cobre</span></div>
       <div class="kpi"><b>${g.vagas_completas_hoje ?? 0}</b><span>de ${g.vagas_analisadas ?? d.geral.vagas_analisadas} vagas em que você cumpre todos os obrigatórios</span></div>
-      <div class="kpi"><b>${falta.length}</b><span>habilidades pedidas que você ainda não tem</span></div>
+      <div class="kpi"><b>${by("nao").length}</b><span>habilidades pedidas que você ainda não tem</span></div>
     </div>
     <div class="sec"><h4>✅ Você já tem</h4><p>${chips(by("tem"), "must")}</p></div>
-    <div class="sec"><h4>🟡 Parcial (base próxima, fica apto rápido)</h4><p>${chips(by("parcial"), "nice")}</p></div>
-    <div class="sec"><h4>⭕ Falta (as mais pedidas primeiro)</h4><p>${chips(falta, "miss")}</p></div>
-    ${by("pendente").length ? `<div class="sec"><h4>❔ Ainda não avaliadas (sem IA no dia; serão classificadas na próxima coleta)</h4><p>${chips(by("pendente"), "nice")}</p></div>` : ""}
-    <p class="meta">O % é a fração das vagas de fraude que pedem a habilidade. Estudou algo? Declare em <code>config.yaml</code> → <code>niveis_declarados</code>.</p>`;
+    <div class="sec"><h4>🟡 Parcial</h4><p>${chips(by("parcial"), "nice")}</p></div>
+    <div class="sec"><h4>⭕ Falta (as mais pedidas primeiro)</h4><p>${chips(by("nao"), "miss")}</p></div>
+    ${by("pendente").length ? `<div class="sec"><h4>❔ Ainda não avaliadas</h4><p>${chips(by("pendente"), "nice")}</p></div>` : ""}`;
 }
 
-async function loadFraudHistory() {
-  const card = $("#f-historico");
+async function loadHistory(file, cardId) {
+  const card = $("#" + cardId);
   let all = [];
-  try { all = await getJSON("data/fraude/archive.json"); } catch {}
+  try { all = await getJSON(file); } catch {}
   $(".count", card).textContent = all.length;
   if (!all.length) {
     $(".list", card).innerHTML = `<p class="meta">O histórico aparece após a próxima coleta.</p>`;
@@ -457,57 +466,171 @@ async function loadFraudHistory() {
   all.sort((a, b) => (b.primeira_vez || "").localeCompare(a.primeira_vez || ""));
   const row = (j) => `<li><a href="${safeUrl(j.url)}" target="_blank" rel="noopener">${esc(j.titulo)}</a>
     <small>${esc(j.empresa || j.fonte || "")} · ${j.status === "fechada" ? `encerrada em ${fmtDate(j.fechada_em)}` : "aberta"}
-    · vista em ${fmtDate(j.primeira_vez)}${j.encaixe != null ? ` · ${Math.round(j.encaixe * 100)}%` : ""}${j.usa_er?.length ? " · 🔗" : ""}</small></li>`;
+    · vista em ${fmtDate(j.primeira_vez)}${j.encaixe != null ? ` · ${Math.round(j.encaixe * 100)}%` : ""}</small></li>`;
   const closed = all.filter((j) => j.status === "fechada").length;
   $(".list", card).innerHTML = `<p class="meta">${all.length - closed} abertas e ${closed} encerradas.</p>
     <details class="past"><summary>Ver todas as ${all.length} vagas</summary><ul class="hist">${all.map(row).join("")}</ul></details>`;
 }
 
-async function loadPlan() {
-  let p = null;
-  try { p = await getJSON("data/fraude/plano.json"); } catch {}
-  if (!p) {
-    ["#p-semana", "#p-ia", "#p-fases", "#p-curriculo"].forEach((s) =>
-      ($(s + " .content").innerHTML = `<p class="meta">Aparece após a próxima coleta.</p>`));
-    return;
-  }
-  const r = p.resumo || {};
-  $("#p-semana .atualizado").textContent = p.atualizado_em ? `Atualizado em ${fmtDate(p.atualizado_em)}.` : "";
-  const icon = { candidatar: "📨", estudar: "📚", seguir: "👥" };
-  const list = (xs) => `<ul>${(xs || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
-  $("#p-semana .content").innerHTML = `
-    <div class="kpis">
-      <div class="kpi"><b>${r.vagas_abertas ?? 0}</b><span>vagas de fraude abertas</span></div>
-      <div class="kpi"><b>${r.acessiveis ?? 0}</b><span>com compatibilidade razoável para você</span></div>
-      <div class="kpi"><b>${r.frescas ?? 0}</b><span>publicadas nos últimos dias</span></div>
-      <div class="kpi"><b>${r.cobertura ?? "?"}%</b><span>dos requisitos que você já cobre</span></div>
-    </div>
-    ${(p.esta_semana || []).length ? `<ol class="steps">${p.esta_semana.map((a) => `<li>${icon[a.tipo] || "•"} ${esc(a.texto)}${
-      a.url ? ` <a href="${safeUrl(a.url)}" target="_blank" rel="noopener">ver vaga</a>` : ""}</li>`).join("")}</ol>`
-      : `<p class="meta">Nenhuma ação nova hoje ✅</p>`}`;
-  const ia = p.analise_ia;
-  $("#p-ia .content").innerHTML = ia
-    ? `<p class="mod">${fmtDate(ia.data)} · ${esc(ia.juiz || "")}</p>${sec("Diagnóstico", ia.diagnostico)}
-       <div class="sec"><h4>Próximas 4 semanas</h4><ol>${(ia.proximos_passos || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ol></div>
-       <div class="sec"><h4>Ajustes no currículo</h4>${list(ia.curriculo)}</div>`
-    : `<p class="meta">A primeira análise sai quando houver pelo menos 5 habilidades no ranking de fraude e uma IA disponível.</p>`;
-  $("#p-fases .content").innerHTML = (p.fases || []).map((f) => `
-    <div class="sec phase"><h4>${esc(f.fase)} <small>${esc(f.quando)}</small></h4>${list(f.itens)}</div>`).join("");
-  $("#p-curriculo .content").innerHTML = list(p.curriculo);
+function loadBrasil() {
+  const ready = loadOpenJobs("data/brasil/open_jobs.json", "b-vagas");
+  loadNetwork("data/brasil/people.json", "b-pessoas", "Ver perfil");
+  loadNetwork("data/brasil/companies.json", "b-empresas", "Ver empresa");
+  loadSkills("data/brasil/skills.json", "b-skills").then((d) => { BR_SKILLS = d; renderCV(d, "#b-cv"); });
+  loadHistory("data/brasil/archive.json", "b-historico");
+  return ready;
 }
 
-function loadFraud() {
-  loadOpenJobs("data/fraude/open_jobs.json", "f-vagas");
-  loadNetwork("data/fraude/people.json", "f-pessoas", "Ver perfil");
-  loadNetwork("data/fraude/companies.json", "f-empresas", "Ver empresa");
-  loadSkills("data/fraude/skills.json", "f-skills").then(renderFraudCV);
-  loadFraudHistory();
-  loadPlan();
+// ---------------------------------------------------------------- minhas ferramentas (níveis de fluência)
+// Níveis: tem (fluente) = 1 · parcial (básico) = 0,5 · nao (não sei) = 0. Sem marcação: vale o palpite da IA.
+const REPO = "gabriel-fernandes-rocha/linkage-radar";
+const DRAFT_KEY = "linkageRadar.niveisRascunho";
+const CREDIT = { tem: 1, parcial: 0.5, nao: 0 };
+const LEVEL_UI = [["nao", "⭕ Não sei"], ["parcial", "🟡 Básico"], ["tem", "✅ Fluente"]];
+let AI = {};        // data/skill_match.json: veredito da IA por habilidade (minúsculo)
+let SAVED = {};     // data/niveis.json: o que já foi salvo no radar
+let DRAFT = {};     // marcações ainda não salvas (só neste navegador); "auto" = remover marcação
+let BR_SKILLS = null;
+const ALL_JOBS = [];  // vagas carregadas nas abas (para recalcular a compatibilidade na hora)
+
+const lower = (s) => String(s || "").toLowerCase().trim();
+function userLevel(name) {
+  const k = lower(name);
+  const d = Object.keys(DRAFT).find((x) => lower(x) === k);
+  if (d) return DRAFT[d] === "auto" ? null : DRAFT[d];
+  const s = Object.keys(SAVED).find((x) => lower(x) === k);
+  return s ? SAVED[s] : null;
 }
+const levelOf = (name) => userLevel(name) || AI[lower(name)]?.nivel || null;
+
+function coverage(skills) {
+  const credits = (skills || []).map(levelOf).filter((l) => l in CREDIT).map((l) => CREDIT[l]);
+  return credits.length ? credits.reduce((a, b) => a + b, 0) / credits.length : null;
+}
+// mesma conta do src/compat.py: habilidades x senioridade x local x inglês x foco
+function liveCompat(j) {
+  const d = j.compat_detalhe, r = j.requisitos;
+  if (!d || !r || j._base == null) return j._base;
+  const cm = coverage(r.obrigatorios), cn = coverage(r.desejaveis);
+  const sk = cm == null && cn == null ? 0.5 : cm == null ? cn : cn == null ? cm : 0.75 * cm + 0.25 * cn;
+  return (0.35 + 0.65 * sk) * (d.senioridade / 100) * (d.local / 100) * (d.ingles / 100) * (d.foco / 100);
+}
+function applyLive(jobs) {
+  jobs.forEach((j) => {
+    if (j._base === undefined) j._base = j.encaixe ?? null;
+    j.encaixe = Object.keys(SAVED).length || Object.keys(DRAFT).length ? liveCompat(j) : j._base;
+  });
+}
+
+async function loadLevels() {
+  try { AI = await getJSON("data/skill_match.json"); } catch {}
+  try { SAVED = await getJSON("data/niveis.json"); } catch {}
+  try { DRAFT = JSON.parse(localStorage.getItem(DRAFT_KEY) || "{}"); } catch { DRAFT = {}; }
+  // rascunho que já foi salvo no radar some sozinho
+  for (const [k, v] of Object.entries(DRAFT)) if ((SAVED[k] || "auto") === v) delete DRAFT[k];
+}
+const saveDraft = () => { try { localStorage.setItem(DRAFT_KEY, JSON.stringify(DRAFT)); } catch {} };
+
+async function toolRows() {
+  const files = ["data/skills.json", "data/brasil/skills.json"];
+  const by = new Map();
+  for (const f of files) {
+    let d = null;
+    try { d = await getJSON(f); } catch {}
+    for (const r of d?.geral?.ranking || []) {
+      const k = lower(r.nome);
+      const cur = by.get(k) || { nome: r.nome, vagas: 0 };
+      cur.vagas += r.vagas;
+      by.set(k, cur);
+    }
+  }
+  return [...by.values()].sort((a, b) => b.vagas - a.vagas);
+}
+
+const uniqJobs = () => [...new Map(ALL_JOBS.map((j) => [j.url, j])).values()];
+function topAvg() {
+  const xs = uniqJobs().map((j) => j.encaixe || 0).sort((a, b) => b - a).slice(0, 10);
+  return xs.length ? Math.round((100 * xs.reduce((a, b) => a + b, 0)) / xs.length) : 0;
+}
+
+async function initTools() {
+  const rows = await toolRows();
+  const list = $("#f-lista");
+  if (!rows.length) {
+    list.innerHTML = `<p class="meta">A lista aparece após a próxima coleta.</p>`;
+    return;
+  }
+  const baseAvg = (() => {
+    const xs = uniqJobs().map((j) => j._base || 0).sort((a, b) => b - a).slice(0, 10);
+    return xs.length ? Math.round((100 * xs.reduce((a, b) => a + b, 0)) / xs.length) : 0;
+  })();
+  const render = () => {
+    applyLive(ALL_JOBS);
+    const q = lower($("#f-busca").value), filt = $("#f-filtro").value;
+    const marked = rows.filter((r) => userLevel(r.nome)).length;
+    const good = uniqJobs().filter((j) => (j.encaixe || 0) >= 0.5).length;
+    $("#f-kpis").innerHTML = `
+      <div class="kpi"><b>${marked}/${rows.length}</b><span>ferramentas que você já marcou</span></div>
+      <div class="kpi"><b>${topAvg()}%</b><span>média das 10 vagas mais compatíveis${topAvg() !== baseAvg ? ` (era ${baseAvg}%)` : ""}</span></div>
+      <div class="kpi"><b>${good}</b><span>vagas com 50% ou mais de compatibilidade</span></div>`;
+    const shown = rows.filter((r) => (!q || lower(r.nome).includes(q)) &&
+      (filt === "todas" || (filt === "marcadas") === !!userLevel(r.nome)));
+    list.innerHTML = shown.slice(0, 150).map((r) => {
+      const mine = userLevel(r.nome), ai = AI[lower(r.nome)]?.nivel;
+      const aiTxt = ai ? { tem: "fluente", parcial: "básico", nao: "não sabe" }[ai] : "sem palpite";
+      return `<div class="tool${mine ? " is-set" : ""}">
+        <div class="tool-name"><b>${esc(r.nome)}</b><small>pedida em ${r.vagas} vaga(s) · palpite da IA: ${aiTxt}</small></div>
+        <div class="seg" role="group" aria-label="Nível em ${esc(r.nome)}">${LEVEL_UI.map(([v, label]) =>
+          `<button type="button" data-skill="${esc(r.nome)}" data-level="${v}" aria-pressed="${mine === v}"
+            class="${!mine && ai === v ? "ai" : ""}">${label}</button>`).join("")}</div></div>`;
+    }).join("") || `<p class="meta">Nada encontrado.</p>`;
+    const n = Object.keys(DRAFT).length;
+    $("#f-save").hidden = !n;
+    $("#f-save-txt").textContent = `${n} alteração(ões) ainda não salva(s) no radar`;
+  };
+  list.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-level]");
+    if (!b) return;
+    const skill = b.dataset.skill, v = b.dataset.level;
+    const savedKey = Object.keys(SAVED).find((x) => lower(x) === lower(skill));
+    const next = userLevel(skill) === v ? "auto" : v;           // clicar no marcado desmarca
+    const savedVal = savedKey ? SAVED[savedKey] : "auto";
+    Object.keys(DRAFT).filter((x) => lower(x) === lower(skill)).forEach((x) => delete DRAFT[x]);
+    if (next !== savedVal) DRAFT[skill] = next;
+    saveDraft();
+    render();
+    refreshAfterLevels();
+  });
+  $("#f-busca").addEventListener("input", render);
+  $("#f-filtro").addEventListener("change", render);
+  $("#f-desfazer").addEventListener("click", () => { DRAFT = {}; saveDraft(); render(); refreshAfterLevels(); });
+  $("#f-salvar").addEventListener("click", () => {
+    const full = { ...SAVED };
+    for (const [k, v] of Object.entries(DRAFT)) {
+      Object.keys(full).filter((x) => lower(x) === lower(k)).forEach((x) => delete full[x]);
+      if (v !== "auto") full[k] = v;
+    }
+    const body = "Gerado pela aba 🎚️ Minhas ferramentas do Linkage Radar. Só clique em **Submit new issue**: " +
+      "o radar salva os níveis, recalcula as compatibilidades e fecha esta issue sozinho.\n\n```json\n" +
+      JSON.stringify(full, null, 1) + "\n```";
+    const url = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent("niveis: " + Object.keys(full).length + " ferramentas")}&body=${encodeURIComponent(body)}`;
+    window.open(url, "_blank", "noopener");
+    $("#f-save-txt").textContent = "Abri o GitHub numa nova aba: clique em \"Submit new issue\" lá. Em ~2 minutos fica valendo em tudo.";
+  });
+  render();
+}
+
+// re-renderiza as vagas e o currículo com os níveis atuais
+function refreshAfterLevels() {
+  RERENDER.forEach((fn) => fn());
+  if (BR_SKILLS) renderCV(BR_SKILLS, "#b-cv");
+}
+const RERENDER = [];
 
 (async function init() {
   if (location.hash.startsWith("#vaga-") && (await redirectToJob(location.hash.slice(6)))) return;
   initTabs();
+  await loadLevels();
   loadSkills();
   loadHealth();
   loadMarket();
@@ -517,10 +640,11 @@ function loadFraud() {
   try {
     dates = (await getJSON("data/index.json")).datas;
     LATEST_EDITION = dates[0] || "";
-    loadOpenJobs();
+    const jobsReady = [loadOpenJobs()];
     loadNetwork("data/people.json", "pessoas", "Ver perfil");
     loadNetwork("data/companies.json", "empresas", "Ver empresa");
-    loadFraud();
+    jobsReady.push(loadBrasil());
+    Promise.all(jobsReady).then(initTools);
   } catch {
     $("#status").textContent = "Nenhuma edição publicada ainda.";
     return;

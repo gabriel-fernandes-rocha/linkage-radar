@@ -33,6 +33,18 @@ def load(path=None) -> list[dict]:
     return json.loads(path.read_text("utf-8")) if path.exists() else []
 
 
+def load_all() -> list[dict]:
+    """Carteira principal + aba Brasil (sem repetir): é o que o Telegram usa para escolher as melhores vagas."""
+    out, seen = [], set()
+    for path in (PATH, DATA / "brasil" / "open_jobs.json"):
+        for j in load(path):
+            k = _norm_url(j["url"])
+            if k not in seen:
+                seen.add(k)
+                out.append(j)
+    return out
+
+
 def save(jobs: list[dict], path=None) -> None:
     path = path or PATH
     path.parent.mkdir(parents=True, exist_ok=True)

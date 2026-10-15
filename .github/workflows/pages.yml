@@ -32,7 +32,8 @@ jobs:
           cp -r site/* _site/
           cp -r data _site/data
           cp curriculum/lessons.json _site/curriculum/
-          rm -f _site/data/seen.json _site/data/fraude/seen.json
+          cp profile/niveis.json _site/data/niveis.json 2>/dev/null || echo "{}" > _site/data/niveis.json
+          rm -f _site/data/seen.json _site/data/brasil/seen.json
           rm -rf _site/data/logs   # logs de execução ficam só no repositório
           # cache-busting: cada publicação gera endereços novos para CSS/JS (o navegador não usa versão velha)
           V=${GITHUB_SHA::8}

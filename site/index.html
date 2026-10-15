@@ -25,8 +25,8 @@
 
   <nav class="tabs" role="tablist" aria-label="Seções do radar">
     <button class="tab" role="tab" data-tab="radar" aria-selected="true">📡 Radar</button>
-    <button class="tab" role="tab" data-tab="fraude" aria-selected="false">🕵️ Fraude</button>
-    <button class="tab" role="tab" data-tab="passos" aria-selected="false">🧭 Próximos passos</button>
+    <button class="tab" role="tab" data-tab="brasil" aria-selected="false">🇧🇷 Brasil</button>
+    <button class="tab" role="tab" data-tab="ferramentas" aria-selected="false">🎚️ Minhas ferramentas</button>
   </nav>
 
   <main>
@@ -90,24 +90,22 @@
     </div>
     </div>
 
-    <div class="panel" id="tab-fraude" role="tabpanel" hidden>
-    <p class="intro">Vagas técnicas de dados em <b>prevenção a fraude, PLD/AML, KYC e crimes financeiros</b>, com destaque para as que usam entity resolution e grafos (🔗). Mesma lógica do radar: revalidadas todo dia.</p>
+    <div class="panel" id="tab-brasil" role="tabpanel" hidden>
+    <p class="intro">Vagas <b>no Brasil</b> com entity resolution e todas as variações: resolução de identidade, record linkage, data matching, matching determinístico/probabilístico, deduplicação, golden record, MDM com matching. O filtro lê a <b>descrição inteira</b> (título genérico como "Cientista de Dados" não escapa).</p>
     <div class="grid">
-      <section class="card wide" id="f-vagas">
-        <h2>🕵️ Vagas de fraude <span class="count"></span></h2>
-        <p class="meta">À vista: as publicadas nos últimos dias, as novas no radar e as 4 mais compatíveis. <span class="atualizado"></span></p>
+      <section class="card wide" id="b-vagas">
+        <h2>🇧🇷 Vagas no Brasil <span class="count"></span></h2>
+        <p class="meta">À vista: as publicadas nos últimos dias, as novas no radar e as 4 mais compatíveis. Revalidadas todo dia. <span class="atualizado"></span></p>
         <div class="list"></div>
       </section>
-      <section class="card wide" id="f-cv">
-        <h2>🪪 Seu currículo vs. vagas de fraude</h2>
-        <p class="meta">O que você já tem, o que é parcial e o que falta, pela frequência nos requisitos das vagas de fraude.</p>
+      <section class="card wide" id="b-cv">
+        <h2>🪪 Seu currículo vs. vagas do Brasil</h2>
+        <p class="meta">O que você já tem, o que é parcial e o que falta, pela frequência nos requisitos dessas vagas. Ajuste seus níveis na aba 🎚️ Minhas ferramentas.</p>
         <div class="content"></div>
       </section>
-      <section class="card wide" id="f-skills">
-        <h2>🧰 O que o mercado de fraude pede</h2>
-        <p class="meta">Requisitos das vagas da trilha de fraude
-          (<span class="legend must"></span> obrigatório <span class="legend nice"></span> desejável).
-          <span class="skills-n"></span></p>
+      <section class="card wide" id="b-skills">
+        <h2>🧰 O que as vagas do Brasil pedem</h2>
+        <p class="meta">(<span class="legend must"></span> obrigatório <span class="legend nice"></span> desejável) <span class="skills-n"></span></p>
         <label class="picker"><span class="sr-only">Visão</span>
           <select class="skills-period">
             <option value="plano">🎯 O que estudar primeiro (maior ganho)</option>
@@ -118,46 +116,46 @@
         </label>
         <div class="list"></div>
       </section>
-      <section class="card" id="f-pessoas">
-        <h2>👥 Pessoas de fraude para seguir <span class="count"></span></h2>
+      <section class="card" id="b-pessoas">
+        <h2>👥 Pessoas no Brasil para seguir <span class="count"></span></h2>
         <p class="meta">À vista só quem entrou nesta edição. Os demais ficam em "Ver todos".</p>
         <p class="novos-hoje"></p>
         <div class="list"></div>
       </section>
-      <section class="card" id="f-empresas">
-        <h2>🏢 Empresas de fraude para seguir <span class="count"></span></h2>
-        <p class="meta">Referências do setor e empresas contratando na área.</p>
+      <section class="card" id="b-empresas">
+        <h2>🏢 Empresas no Brasil para seguir <span class="count"></span></h2>
+        <p class="meta">Referências do tema no Brasil e empresas contratando.</p>
         <p class="novos-hoje"></p>
         <div class="list"></div>
       </section>
-      <section class="card wide" id="f-historico">
-        <h2>🗂️ Histórico de vagas de fraude <span class="count"></span></h2>
-        <p class="meta">Todas as vagas que já apareceram na trilha, inclusive as encerradas (servem para ver o que o mercado pede e quem contrata).</p>
+      <section class="card wide" id="b-historico">
+        <h2>🗂️ Histórico de vagas no Brasil <span class="count"></span></h2>
+        <p class="meta">Todas as vagas que já apareceram nesta aba, inclusive as encerradas.</p>
         <div class="list"></div>
       </section>
     </div>
     </div>
 
-    <div class="panel" id="tab-passos" role="tabpanel" hidden>
+    <div class="panel" id="tab-ferramentas" role="tabpanel" hidden>
     <div class="grid">
-      <section class="card wide" id="p-semana">
-        <h2>✅ O que fazer agora</h2>
-        <p class="meta">Recalculado a cada coleta com as vagas de fraude abertas e o que elas pedem. <span class="atualizado"></span></p>
-        <div class="content"></div>
-      </section>
-      <section class="card wide" id="p-ia">
-        <h2>🤖 Análise da semana</h2>
-        <p class="meta">Uma IA lê seu currículo e o que as vagas de fraude pedem, 1 vez por semana.</p>
-        <div class="content"></div>
-      </section>
-      <section class="card wide" id="p-fases">
-        <h2>🧭 Plano de migração para fraude</h2>
-        <p class="meta">O caminho em 3 fases, da preparação até virar referência.</p>
-        <div class="content"></div>
-      </section>
-      <section class="card wide" id="p-curriculo">
-        <h2>📝 Currículo para vagas de fraude</h2>
-        <div class="content"></div>
+      <section class="card wide" id="ferramentas">
+        <h2>🎚️ Minhas ferramentas</h2>
+        <p class="meta">Marque sua fluência em cada ferramenta que as vagas pedem. A compatibilidade das vagas muda <b>na hora</b> aqui no site. Clique em <b>Salvar no radar</b> para valer também no Telegram e nas próximas coletas. Clicar de novo no nível marcado volta para o palpite da IA.</p>
+        <div class="kpis" id="f-kpis"></div>
+        <div class="tools-bar">
+          <input type="search" id="f-busca" placeholder="Buscar ferramenta…" aria-label="Buscar ferramenta">
+          <select id="f-filtro" aria-label="Filtrar">
+            <option value="todas">Todas</option>
+            <option value="pendentes">Ainda não marquei</option>
+            <option value="marcadas">Já marquei</option>
+          </select>
+        </div>
+        <div class="tools-list" id="f-lista"></div>
+        <div class="savebar" id="f-save" hidden>
+          <span id="f-save-txt"></span>
+          <button class="btn" type="button" id="f-desfazer">Desfazer</button>
+          <button class="btn primary" type="button" id="f-salvar">💾 Salvar no radar</button>
+        </div>
       </section>
     </div>
     </div>

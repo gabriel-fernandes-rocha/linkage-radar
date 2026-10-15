@@ -30,13 +30,20 @@ O LLM só **extrai fatos** da vaga (requisitos, anos, de onde aceita candidatos,
 calculada em Python: `habilidades × senioridade × local × inglês × foco`. Vaga remota só para EUA sem visto cai
 para ~10%, porque na prática você não seria contratado. O site mostra cada fator e **o que falta**.
 
-## 🕵️ Trilha de fraude (src/fraud.py)
-Abas **Fraude** e **Próximos passos** do site. Vagas técnicas de dados em prevenção a fraude, PLD/AML, KYC e
-crimes financeiros (selo 🔗 quando a vaga usa entity resolution/grafos), pessoas e empresas da área, seu currículo
-vs. o que essas vagas pedem e um plano de próximos passos recalculado a cada coleta (+ análise de IA semanal).
-Fontes: as listagens do radar principal, buscas com termos de fraude e páginas de vagas de empresas de
-antifraude/identidade (config.yaml → `fraude`). Dados em `data/fraude/`. Sem IA, regras rígidas aprovam só o que é
-claramente "dados + fraude" (marcado como não verificado) e a IA confere depois.
+## 🇧🇷 Aba Brasil (src/brasil.py)
+Vagas no Brasil com entity resolution e todas as variações (resolução de identidade/entidades, record linkage,
+data matching, matching determinístico/probabilístico, deduplicação, golden record, MDM com matching...).
+O filtro lê a DESCRIÇÃO inteira: a vaga ideal costuma ter título genérico ("Cientista de Dados Pleno").
+Fontes: InHire (API pública por empresa; empresas novas são descobertas sozinhas), Gupy (vários cargos de dados),
+Google Jobs no Brasil, vagas do LinkedIn Brasil, Greenhouse/Lever/Ashby de empresas brasileiras e tudo o que o
+radar principal coleta. Também pessoas e empresas brasileiras do tema. Dados em `data/brasil/`.
+As vagas desta aba também concorrem ao top 3 do Telegram.
+
+## 🎚️ Minhas ferramentas (níveis de fluência)
+Na aba "Minhas ferramentas" do site você marca, para cada ferramenta que as vagas pedem: Não sei, Básico ou
+Fluente. A compatibilidade muda na hora no site. "Salvar no radar" abre uma issue já preenchida no GitHub:
+ao enviar, o workflow `niveis.yml` grava `profile/niveis.json`, recalcula as compatibilidades (sem IA) e
+republica o site. Seus níveis sempre vencem o palpite da IA.
 
 ## 💰 Quanto custa
 | Item | Custo |

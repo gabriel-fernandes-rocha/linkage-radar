@@ -176,7 +176,7 @@ h3.sub { font-size: .95rem; margin: 12px 0 4px; color: var(--muted); }
 .intro { color: var(--muted); margin: 0 0 12px; }
 
 /* ---- trilha de fraude e próximos passos ---- */
-.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 6px 0 12px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); gap: 8px; margin: 6px 0 12px; }
 .kpi { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
 .kpi b { display: block; font-size: 1.4rem; color: var(--accent); }
 .kpi span { font-size: .8rem; color: var(--muted); }
@@ -188,3 +188,33 @@ h3.sub { font-size: .95rem; margin: 12px 0 4px; color: var(--muted); }
 .hist { padding-left: 18px; }
 .hist small { display: block; color: var(--muted); }
 .phase h4 small { font-weight: 400; color: var(--muted); }
+
+/* ---- minhas ferramentas ---- */
+.tools-bar { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 10px; }
+.tools-bar input {
+  flex: 1 1 200px; font: inherit; font-size: .95rem; padding: 8px 12px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--card); color: var(--text);
+}
+.tool {
+  display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  padding: 8px 0; border-top: 1px solid var(--line);
+}
+.tool.is-set .tool-name b::after { content: " ●"; color: var(--accent); font-size: .7rem; }
+.tool-name { display: flex; flex-direction: column; min-width: 0; }
+.tool-name small { color: var(--muted); font-size: .75rem; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.seg button {
+  font: inherit; font-size: .8rem; padding: 6px 10px; border: 0; cursor: pointer;
+  background: transparent; color: var(--muted);
+}
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button.ai { background: color-mix(in srgb, var(--accent-soft) 45%, transparent); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: #fff; font-weight: 600; }
+.savebar {
+  position: sticky; bottom: 0; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  margin-top: 10px; padding: 10px 12px; border-radius: 12px;
+  background: var(--accent-soft); border: 1px solid var(--line);
+}
+.savebar span { flex: 1 1 200px; font-size: .85rem; }
+.savebar[hidden] { display: none; }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }

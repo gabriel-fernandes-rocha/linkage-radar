@@ -72,7 +72,9 @@ def extract(job: dict) -> None:
     low = (text + " " + job.get("local", "")).lower()
     remote = bool(re.search(r"(remote|remoto|home office|anywhere)", low))
     job["modalidade"] = "remoto" if remote else ("hibrido" if re.search(r"(hybrid|h[ií]brido)", low) else "nao_informado")
-    if re.search(r"(anywhere|worldwide|work from anywhere|global remote|qualquer lugar)", low):
+    if job.get("fonte") in ("InHire", "Gupy") or re.search(r"(remoto \(brasil\)|brasil|brazil)", job.get("local", "").lower()):
+        loc = {"escopo": "pais", "paises": ["Brasil"], "cidades": []}
+    elif re.search(r"(anywhere(?! office)|worldwide|work from anywhere|global remote|qualquer lugar)", low):
         loc = {"escopo": "global", "paises": [], "cidades": []}
     elif re.search(r"(latam|latin america|am[eé]rica latina|brazil|brasil|são paulo|salvador)", low):
         loc = {"escopo": "regiao", "paises": ["LATAM", "Brasil"], "cidades": []}

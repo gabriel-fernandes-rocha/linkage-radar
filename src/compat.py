@@ -49,8 +49,13 @@ def years_of_experience(cfg: dict) -> float:
     return round((date.today() - start).days / 365.25, 1)
 
 
-def _load_cache() -> dict:
+def _load_cache(declared: bool = True) -> dict:
+    """Vereditos da IA (data/skill_match.json) + seus níveis por cima. declared=False: só os da IA
+    (é o que vai para o arquivo; assim desmarcar um nível no site devolve o veredito da IA)."""
     cache = json.loads(CACHE.read_text("utf-8")) if CACHE.exists() else {}
+    cache = {k: v for k, v in cache.items() if v.get("motivo") != "declarado por você"}
+    if not declared:
+        return cache
     try:
         from common import load_config
 
@@ -71,7 +76,7 @@ def _profile_hash(cfg: dict) -> str:
 def classify_skills(skills: set[str], cfg: dict) -> dict:
     """Garante veredito para cada habilidade (usa cache; só pergunta ao LLM as novas).
     Se o currículo/perfil mudou, TODOS os vereditos são refeitos (você estudou algo novo)."""
-    cache = _load_cache()
+    cache = _load_cache(declared=False)
     h = _profile_hash(cfg)
     if cache.get("_perfil_hash", {}).get("nivel") != h:
         old = [v["nome"] for k, v in cache.items() if not k.startswith("_")]
@@ -138,9 +143,25 @@ def classify_skills(skills: set[str], cfg: dict) -> dict:
     return apply_declared(cache, cfg)
 
 
+NIVEIS = ROOT / "profile" / "niveis.json"  # marcado por você na aba "Minhas ferramentas" do site
+
+
+def load_levels() -> dict:
+    try:
+        data = json.loads(NIVEIS.read_text("utf-8")) if NIVEIS.exists() else {}
+        return {str(k): v for k, v in data.items() if v in CREDIT}
+    except Exception as e:
+        log.warning("compat: profile/niveis.json ilegível (%s)", e)
+        return {}
+
+
 def apply_declared(cache: dict, cfg: dict) -> dict:
-    """config.yaml perfil_estruturado.niveis_declarados: {"AWS": "parcial", ...} vence o veredito do modelo."""
-    for name, nivel in (cfg.get("perfil_estruturado", {}).get("niveis_declarados") or {}).items():
+    """Seu nível vence o veredito do modelo. Fontes, nesta ordem (a última vence):
+    config.yaml perfil_estruturado.niveis_declarados e profile/niveis.json (aba "Minhas ferramentas" do site).
+    Não entram no hash do perfil: marcar fluência não obriga a IA a reclassificar tudo."""
+    declared = dict(cfg.get("perfil_estruturado", {}).get("niveis_declarados") or {})
+    declared.update(load_levels())
+    for name, nivel in declared.items():
         if nivel in CREDIT:
             cache[str(name).lower()] = {"nome": name, "nivel": nivel, "motivo": "declarado por você"}
     return cache

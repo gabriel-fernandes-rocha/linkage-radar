@@ -47,7 +47,8 @@
       "senioridade_txt": "nível senior",
       "local_txt": "aceita candidatos do mundo todo",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     }
   },
   {
@@ -103,7 +104,8 @@
       "parciais": [
         "API Enrichment",
         "Hierarquias Parent-Child"
-      ]
+      ],
+      "estimado": false
     }
   },
   {
@@ -144,7 +146,8 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-13",
     "verificada_em": "2026-10-15",
@@ -194,7 +197,8 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-14",
     "verificada_em": "2026-10-15",
@@ -287,7 +291,8 @@
       "senioridade_txt": "nível senior",
       "local_txt": "local de contratação não informado",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-13",
     "verificada_em": "2026-10-15",
@@ -337,7 +342,8 @@
       "parciais": [
         "Knowledge Graphs",
         "Graph Modeling"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
@@ -386,7 +392,8 @@
       "faltam": [
         "Infrastructure as Code"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
@@ -448,7 +455,8 @@
       "parciais": [
         "Airflow",
         "PII detection"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-14",
     "verificada_em": "2026-10-15",
@@ -496,7 +504,8 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
@@ -541,7 +550,8 @@
       "senioridade_txt": "nível senior",
       "local_txt": "local de contratação não informado",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-14",
     "verificada_em": "2026-10-15",
@@ -606,7 +616,8 @@
         "S3",
         "Protobuf"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-03",
     "verificada_em": "2026-10-15",
@@ -657,7 +668,8 @@
       ],
       "parciais": [
         "Semantic search"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-13",
     "verificada_em": "2026-10-15",
@@ -708,7 +720,8 @@
       "faltam": [],
       "parciais": [
         "Master Data Management"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-10",
     "verificada_em": "2026-10-15",
@@ -777,7 +790,8 @@
       ],
       "parciais": [
         "Snowflake"
-      ]
+      ],
+      "estimado": false
     },
     "publicada_em": "2026-09-26"
   },
@@ -838,7 +852,8 @@
       "senioridade_txt": "pede 5+ anos (você tem 2.8)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-03",
     "verificada_em": "2026-10-15",
@@ -898,61 +913,9 @@
       "faltam": [
         "Java"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "B Corp™ hiring Data Engineer in United Kingdom - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/data-engineer-at-areti-group-b-corp%E2%84%A2-4459311339?position=40",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 4,
-    "motivo": "Vaga de Data Engineer com requisitos explícitos de entity matching/resolution em graph database em setor público, alinhada com o perfil do leitor.",
-    "resumo": "B Corp contrata Data Engineer no Reino Unido para trabalhar com soluções de graph database em Python, exigindo forte modelagem de dados e capacidades de entity matching/resolution em ambiente de setor público.",
-    "confianca": 0.82,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "Graph Databases",
-        "Entity Resolution"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United Kingdom"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.05,
-    "compat_detalhe": {
-      "habilidades": 67,
-      "senioridade": 85,
-      "local": 8,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "em United Kingdom, sem patrocínio de visto",
-      "faltam": [
-        "Graph Databases"
-      ],
-      "parciais": []
-    },
-    "desde": "2026-10-15",
-    "verificada_em": "2026-10-15",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1011,11 +974,66 @@
       "parciais": [
         "Snowflake",
         "Databricks"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "B Corp™ hiring Data Engineer in United Kingdom - LinkedIn",
+    "url": "https://uk.linkedin.com/jobs/view/data-engineer-at-areti-group-b-corp%E2%84%A2-4459311339?position=40",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 4,
+    "motivo": "Vaga de Data Engineer com requisitos explícitos de entity matching/resolution em graph database em setor público, alinhada com o perfil do leitor.",
+    "resumo": "B Corp contrata Data Engineer no Reino Unido para trabalhar com soluções de graph database em Python, exigindo forte modelagem de dados e capacidades de entity matching/resolution em ambiente de setor público.",
+    "confianca": 0.82,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Graph Databases",
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United Kingdom"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 67,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em United Kingdom, sem patrocínio de visto",
+      "faltam": [
+        "Graph Databases"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-15",
+    "verificada_em": "2026-10-15",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1059,7 +1077,8 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "em New Zealand, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
@@ -1107,7 +1126,8 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
@@ -1166,7 +1186,8 @@
       "faltam": [
         "graph databases"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -1224,7 +1245,8 @@
       "parciais": [
         "PostgreSQL",
         "Databricks"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -1287,7 +1309,8 @@
       ],
       "parciais": [
         "programação orientada a objetos"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -1349,7 +1372,8 @@
       ],
       "parciais": [
         "Machine Learning"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-03",
     "verificada_em": "2026-10-15",
@@ -1404,7 +1428,8 @@
       "faltam": [
         "LLMs"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-15",
     "verificada_em": "2026-10-15",
@@ -1452,7 +1477,8 @@
       "senioridade_txt": "nível junior",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-13",
     "verificada_em": "2026-10-15",
@@ -1500,7 +1526,8 @@
       "senioridade_txt": "nível senior",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-13",
     "verificada_em": "2026-10-15",
@@ -1555,7 +1582,8 @@
       "faltam": [],
       "parciais": [
         "Machine Learning"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -1611,7 +1639,8 @@
       "senioridade_txt": "nível senior",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     }
   },
   {
@@ -1682,7 +1711,8 @@
       "parciais": [
         "Identity Graph",
         "Data Governance"
-      ]
+      ],
+      "estimado": false
     }
   },
   {
@@ -1733,7 +1763,8 @@
       "senioridade_txt": "nível nao informado",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     }
   },
   {
@@ -1795,7 +1826,8 @@
         "Azure",
         "AWS"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-12",
     "verificada_em": "2026-10-15",
@@ -1869,7 +1901,8 @@
         "survivorship rules",
         "Bitbucket",
         "SVN"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -1935,7 +1968,8 @@
         "Retrieval",
         "Structured output",
         "Evaluation harness"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -2012,7 +2046,8 @@
       ],
       "parciais": [
         "Machine Learning"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -2075,7 +2110,8 @@
       ],
       "parciais": [
         "Snowflake"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-07",
     "verificada_em": "2026-10-15",
@@ -2130,7 +2166,8 @@
       "senioridade_txt": "nível senior",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     }
   },
   {
@@ -2190,7 +2227,8 @@
         "3GPP",
         "CDR"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "desde": "2026-10-15",
     "verificada_em": "2026-10-15",
@@ -2249,7 +2287,8 @@
       ],
       "parciais": [
         "Beam"
-      ]
+      ],
+      "estimado": false
     },
     "desde": "2026-10-08",
     "verificada_em": "2026-10-15",
@@ -2303,7 +2342,8 @@
       "senioridade_txt": "nível staff/principal",
       "local_txt": "presencial em United States, sem patrocínio de visto",
       "faltam": [],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     }
   },
   {
@@ -2356,7 +2396,8 @@
       "faltam": [
         "Clojure"
       ],
-      "parciais": []
+      "parciais": [],
+      "estimado": false
     },
     "publicada_em": "2026-09-05"
   }

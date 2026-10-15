@@ -22,6 +22,11 @@ def _norm_title(title: str) -> str:
 
 def keys(it: dict) -> list[str]:
     h = lambda s: hashlib.sha1(s.encode()).hexdigest()[:16]
+    # título SOZINHO não identifica vaga: "Cientista de Dados Pleno" existe em dezenas de empresas.
+    # Para vagas, a 2ª chave é título + empresa (sem empresa conhecida, só a URL vale).
+    if it.get("tipo") == "vaga":
+        company = _norm_title(it.get("empresa") or "")
+        return [h("u:" + _norm_url(it["url"]))] + ([h(f"t:vaga:{_norm_title(it['titulo'])}|{company}")] if company else [])
     return [h("u:" + _norm_url(it["url"])), h(f"t:{it['tipo']}:" + _norm_title(it["titulo"]))]
 
 

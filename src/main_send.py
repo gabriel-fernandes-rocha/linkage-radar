@@ -272,14 +272,14 @@ def main():
 
             a = rep.get("aula") or {}
             book = _book_refs(a)
-            messages = [tf.jobs_message(rep, cfg["site_url"], open_jobs.load(), cfg_min_compat(),
+            messages = [tf.jobs_message(rep, cfg["site_url"], open_jobs.load_all(), cfg_min_compat(),
                                         alert=health.summary_line(),
                                         fresh_days=int(cfg.get("open_jobs", {}).get("frescas_dias", 2)))]
             lesson_msg = tf.lesson_message(a, _previous_lesson(a) if a.get("dia") else None,
                                            ("No livro: " + "; ".join(book)) if book else None,
                                            book_link(book, cfg["site_url"]), cfg["site_url"])
         else:
-            messages = [build_message(rep, cfg["site_url"], open_jobs.load(), getattr(provider, "fits", None))]
+            messages = [build_message(rep, cfg["site_url"], open_jobs.load_all(), getattr(provider, "fits", None))]
             lesson_msg = build_lesson_message(rep, cfg["site_url"])
         if lesson_msg:
             messages.append(lesson_msg)

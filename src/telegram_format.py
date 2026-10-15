@@ -51,7 +51,7 @@ def _block(i: int, j: dict, new_urls: set, d: date) -> list[str]:
 def jobs_message(rep: dict, site_url: str, open_jobs: list[dict], min_compat: float, top_n: int = 3,
                  alert: str | None = None, fresh_days: int = 2) -> str:
     d = date.fromisoformat(rep["data"])
-    new_urls = {j["url"] for j in rep.get("vagas", [])}
+    new_urls = {j["url"] for j in rep.get("vagas", [])} | {j["url"] for j in open_jobs if j.get("desde") == rep["data"]}
     pool = {j["url"]: j for j in open_jobs}
     for j in rep.get("vagas", []):
         pool.setdefault(j["url"], j)

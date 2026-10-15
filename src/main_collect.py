@@ -14,7 +14,7 @@ from datetime import timedelta
 import lesson
 import career
 import compat
-import fraud
+import brasil
 import health
 import job_archive
 import market
@@ -159,8 +159,8 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
         report["pilula_mercado"] = pilula["habilidade"] if pilula else None
         safe("análise de perfil", lambda: career.profile_tips(cfg, day))
 
-    # trilha de fraude (aba "Fraude" do site): roda isolada, nunca derruba a coleta principal
-    report["fraude"] = safe("trilha de fraude", lambda: fraud.run(cfg, day, raw_jobs, use_llm))
+    # aba "Brasil": vagas no Brasil com entity resolution e variações (roda isolada)
+    report["brasil"] = safe("aba Brasil", lambda: brasil.run(cfg, day, raw_jobs, use_llm))
     report["aula"] = safe("aula", lambda: lesson.for_date(cfg, edition.date()))
     report["estatisticas"] = stats
     try:
