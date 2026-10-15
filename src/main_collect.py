@@ -72,9 +72,14 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
         budget -= len(cands)
         if use_llm:
             approved = llm_judge.judge(cands, cfg)
+            for it in cands:  # só o que foi REALMENTE julgado vira "visto"; o resto é reavaliado amanhã
+                if it.pop("_julgado", False):
+                    seen.add(it, day)
+                elif keywords.strong_enough(it):  # juiz indisponível: contingência com regra mais rígida
+                    it.update(nao_verificado=True, motivo="Entrou só por palavras-chave fortes (juiz indisponível "
+                                                          "hoje); será reavaliado quando o juiz voltar.")
+                    approved.append(it)
             approved.sort(key=lambda it: (it.get("encaixe", 0), it.get("confianca", 0), it["score"]), reverse=True)
-            for it in cands:  # julgados (aprovados ou não) não são julgados de novo
-                seen.add(it, day)
         else:
             approved = cands
         if key == "linkedin":  # vaga divulgada no LinkedIn também é vaga

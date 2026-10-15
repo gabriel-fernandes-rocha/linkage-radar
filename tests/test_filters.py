@@ -82,3 +82,33 @@ def test_judge_live():
     print(f"\nverdadeiros positivos: {len(tp)}/5, falsos positivos: {len(fp)}/5")
     assert not fp, fp
     assert len(tp) >= 4
+
+
+def test_claude_quota_falls_back_without_losing_items(monkeypatch):
+    """Claude sem saldo/limite: para de chamar, não marca como julgado e a contingência deixa passar
+    só o que tem sinal forte."""
+    import common
+
+    calls = {"n": 0}
+
+    def boom(model, content, system):
+        calls["n"] += 1
+        raise RuntimeError("Error code: 400 - You have reached your specified API usage limits. "
+                           "You will regain access on 2026-11-01 at 00:00 UTC.")
+
+    monkeypatch.setattr(llm_judge, "_anthropic", boom)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    common.LLM_STATE.update(anthropic_down=False, motivo="")
+    cfg = load_config()
+    cfg["llm"]["batch_size"] = 2
+    items = [dict(x) for x in RELEVANT + FALSE_POSITIVES]
+    for it in items:
+        keywords.passes(it)
+    assert llm_judge.judge(items, cfg) == []
+    assert calls["n"] == 1                      # desistiu do Claude após o 1º erro de limite
+    assert common.LLM_STATE["anthropic_down"]
+    assert not any(it.get("_julgado") for it in items)   # nada vira "visto": reavaliado depois
+    strong = [it["titulo"] for it in items if keywords.strong_enough(it)]
+    assert "Senior Entity Resolution Engineer" in strong
+    assert "Senior SRE Engineer" not in strong and "GIS Technician" not in strong
+    common.LLM_STATE.update(anthropic_down=False, motivo="")

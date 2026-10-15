@@ -90,7 +90,12 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
 
     client = anthropic.Anthropic()
     model = cfg["llm"].get("extract_model", cfg["llm"]["model"])
+    from common import LLM_STATE, note_llm_error
+
     for start in range(0, len(jobs), batch_size):
+        if LLM_STATE["anthropic_down"]:
+            log.info("requisitos: Claude indisponível; extração adiada para a próxima coleta")
+            return
         batch = jobs[start:start + batch_size]
         payload = json.dumps([{"id": i, "titulo": j["titulo"], "empresa": j.get("empresa", ""),
                                "local_anunciado": j.get("local", ""), "fonte": j.get("fonte", ""),
@@ -106,7 +111,8 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
             log.info("requisitos: tokens in=%s out=%s", resp.usage.input_tokens, resp.usage.output_tokens)
             rows = json.loads(text)["vagas"]
         except Exception as e:
-            log.warning("requisitos: lote falhou (%s)", e)
+            if not note_llm_error(e):
+                log.warning("requisitos: lote falhou (%s)", e)
             continue
         for row in rows:
             try:

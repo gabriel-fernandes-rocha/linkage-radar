@@ -92,12 +92,24 @@ def check(cfg: dict, day: str, report: dict) -> dict:
         if key not in counts:
             add("atencao", NOMES.get(key, key), "não rodou nesta coleta")
 
+    from common import LLM_STATE
+
+    if LLM_STATE["anthropic_down"]:
+        motivo = LLM_STATE["motivo"]
+        volta = re.search(r"regain access on (\d{4}-\d{2}-\d{2})", motivo)
+        if "usage limits" in motivo:
+            txt = ("limite de gasto mensal da sua conta Anthropic atingido. Aumente em console.anthropic.com → "
+                   "Settings → Limits" + (f" (sem isso, volta sozinho em {volta[1][8:10]}/{volta[1][5:7]})" if volta else ""))
+        elif "credit" in motivo.lower():
+            txt = "créditos da API Anthropic acabaram: recarregue em console.anthropic.com → Billing"
+        else:
+            txt = "a chave da API Anthropic foi recusada: confira o Secret ANTHROPIC_API_KEY"
+        add("problema", "Claude fora do ar", txt + (". Juiz reserva Gemini em uso." if os.getenv("GEMINI_API_KEY")
+                                                    else ". Itens entraram só por palavras-chave fortes."))
     if failures:
-        credit = [f for f in failures if "credit" in f.lower() or "balance" in f.lower()]
-        if credit:
-            add("problema", "Créditos do Claude", "saldo da API da Anthropic acabou: recarregue em console.anthropic.com")
+        credit = []
         judge = [f for f in failures if f.startswith(("judge", "requisitos", "carreira", "compat"))]
-        if judge:
+        if judge and not LLM_STATE["anthropic_down"]:
             add("problema" if len(judge) > 2 else "atencao", "Claude (juiz/extração)", f"{len(judge)} chamadas falharam")
 
     acc = _serpapi(cfg)
@@ -138,7 +150,9 @@ def summary_line() -> str | None:
     if not HEALTH.exists():
         return None
     h = json.loads(HEALTH.read_text("utf-8"))
-    bad = [c for c in h.get("checks", []) if c["status"] != "ok"]
+    order = {"Claude fora do ar": 0, "Envio da mensagem": 1}
+    bad = sorted((c for c in h.get("checks", []) if c["status"] != "ok"),
+                 key=lambda c: (order.get(c["nome"], 2), c["status"] != "problema"))
     if not bad:
         return None
     icon = "🚨" if h["status"] == "problema" else "⚠️"

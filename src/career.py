@@ -33,6 +33,11 @@ def _clean(obj):
 def _ask(cfg: dict, system: str, user: str, schema: dict, effort: str = "low", max_tokens: int = 8000) -> dict:
     import anthropic
 
+    from common import LLM_STATE, note_llm_error
+
+    if LLM_STATE["anthropic_down"]:
+        raise RuntimeError("Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã")
+
     client = anthropic.Anthropic()
     resp = client.messages.create(
         model=cfg["llm"].get("writer_model", "claude-sonnet-5"), max_tokens=max_tokens, system=system,

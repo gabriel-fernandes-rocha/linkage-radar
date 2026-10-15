@@ -5,7 +5,7 @@ import json
 import os
 import re
 
-from common import get, log, no_dash
+from common import LLM_STATE, get, log, no_dash, note_llm_error
 
 SYSTEM = """Você avalia se itens são relevantes para um especialista em Record Linkage / Entity Matching / \
 Entity Resolution (qualquer tipo de entidade) e Geocodificação tratada como problema de linkage \
@@ -95,19 +95,38 @@ def available(cfg: dict) -> bool:
 
 
 def judge(items: list[dict], cfg: dict) -> list[dict]:
-    """Retorna só os aprovados, com motivo/resumo preenchidos."""
+    """Retorna só os aprovados, com motivo/resumo preenchidos. Marca it["_julgado"] nos que foram avaliados.
+
+    Ordem: Claude -> Gemini (reserva grátis, se GEMINI_API_KEY existir) -> nada (os itens ficam sem
+    "_julgado" e o main_collect aplica o modo de contingência sem marcá-los como vistos)."""
     llm = cfg["llm"]
-    call = _gemini if llm["provider"] == "gemini" else _anthropic
     min_conf = llm.get("min_confidence", 0.8)
     size = llm.get("batch_size", 8)
     approved = []
     for start in range(0, len(items), size):
         batch = items[start:start + size]
-        try:
-            verdicts = _parse(call(llm["model"], _payload(batch), _system(cfg)))
-        except Exception as e:
-            log.warning("judge: lote falhou (%s) — itens descartados (precisão > recall)", e)
+        verdicts = None
+        if llm["provider"] == "gemini":
+            chain = [("gemini", llm["model"])]
+        else:
+            chain = [("anthropic", llm["model"])]
+            if os.getenv("GEMINI_API_KEY"):
+                chain.append(("gemini", llm.get("fallback_model", "gemini-2.5-flash")))
+        for provider, model in chain:
+            if provider == "anthropic" and LLM_STATE["anthropic_down"]:
+                continue
+            try:
+                call = _anthropic if provider == "anthropic" else _gemini
+                verdicts = _parse(call(model, _payload(batch), _system(cfg)))
+                break
+            except Exception as e:
+                if provider == "anthropic" and note_llm_error(e):
+                    continue  # sem saldo/limite: tenta a reserva
+                log.warning("judge: lote falhou em %s (%s)", provider, str(e)[:200])
+        if verdicts is None:
             continue
+        for it in batch:
+            it["_julgado"] = True
         for v in verdicts:
             try:
                 it = batch[int(v["id"])]

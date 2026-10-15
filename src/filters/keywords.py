@@ -73,3 +73,14 @@ def passes(it: dict) -> bool:
     if it.get("tipo") in ("linkedin", "evento", "pessoa", "empresa") or it.get("social"):
         return it["score"] >= THRESHOLD_SEARCH
     return it["score"] >= THRESHOLD and central(it)
+
+
+def strong_enough(it: dict) -> bool:
+    """Contingência quando nenhum juiz LLM responde: só deixa passar o que tem sinal FORTE do tema."""
+    title = normalize(it.get("titulo", ""))
+    hits_title = _strong_hits(title)
+    if it.get("tipo") == "vaga":
+        return hits_title > 0 and it.get("score", score(it)) >= 6 and not any(_has(n, title) for n in NEGATIVE)
+    if it.get("tipo") in ("linkedin", "paper"):
+        return hits_title > 0 or _strong_hits(normalize(it.get("texto", ""))) >= 2
+    return False

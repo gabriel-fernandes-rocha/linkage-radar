@@ -34,6 +34,22 @@ class _Recorder(logging.Handler):
 
 
 RECORDER = _Recorder()
+
+# Estado do Claude nesta execução: se a conta bateu o limite de gasto/créditos, paramos de chamar na hora
+# (em vez de falhar dezenas de vezes) e o radar entra em modo de contingência.
+LLM_STATE = {"anthropic_down": False, "motivo": ""}
+_QUOTA = ("usage limits", "credit balance", "billing", "insufficient", "authentication", "invalid x-api-key")
+
+
+def note_llm_error(e: Exception) -> bool:
+    """Registra erro do Claude; retorna True se for falta de saldo/limite (aí desligamos o Claude no resto da coleta)."""
+    msg = str(e)
+    if any(q in msg.lower() for q in _QUOTA):
+        if not LLM_STATE["anthropic_down"]:
+            log.warning("claude indisponível: %s", msg[:300])
+        LLM_STATE.update(anthropic_down=True, motivo=msg[:400])
+        return True
+    return False
 log.addHandler(RECORDER)
 
 UA = "Mozilla/5.0 (LinkageRadar; +https://github.com/) Python-requests"

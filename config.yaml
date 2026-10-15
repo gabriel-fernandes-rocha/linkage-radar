@@ -18,6 +18,7 @@ llm:
   max_items_per_day: 80     # teto de itens enviados ao LLM por dia (trava de custo)
   extract_model: claude-sonnet-5   # lê as vagas aprovadas (poucas/dia) com precisão: requisitos, local, visto
   writer_model: claude-sonnet-5    # pílulas de mercado e análise de perfil
+  fallback_model: gemini-2.5-flash # juiz reserva GRÁTIS se o Claude falhar (precisa do Secret GEMINI_API_KEY)
 
 web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   linkedin_weekdays: [0, 1, 2, 3, 4, 5, 6]   # 0=segunda ... 6=domingo

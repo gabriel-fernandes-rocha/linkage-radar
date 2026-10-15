@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
+import os
 import time
 from datetime import timedelta
 
@@ -141,7 +142,10 @@ def collect(cfg: dict) -> list[dict]:
     queries = cfg["queries"]["papers"]
     since = (today(cfg) - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
     results: list[dict] = []
-    for fn in (arxiv, openalex, semantic_scholar):
+    # Semantic Scholar sem chave recusa (429) quase sempre: só roda se houver SEMANTIC_SCHOLAR_KEY.
+    # A cobertura não cai: o OpenAlex indexa praticamente o mesmo acervo.
+    fns = (arxiv, openalex) + ((semantic_scholar,) if os.getenv("SEMANTIC_SCHOLAR_KEY") else ())
+    for fn in fns:
         try:
             got = fn(queries, since)
             log.info("papers/%s: %d", fn.__name__, len(got))
