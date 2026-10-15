@@ -83,8 +83,27 @@ def classify_skills(skills: set[str], cfg: dict) -> dict:
     new = sorted(s for s in skills if s.lower() not in cache and not s.startswith("_"))
     from common import LLM_STATE, note_llm_error
 
-    if new and LLM_STATE["anthropic_down"]:
-        log.info("compat: Claude indisponível; %d habilidades novas ficam para a próxima coleta", len(new))
+    if new and LLM_STATE["anthropic_down"]:  # Claude fora: classifica pela cadeia de IAs gratuitas
+        from filters import providers
+
+        cv = ROOT / "profile" / "curriculo.md"
+        perfil = cv.read_text("utf-8") if cv.exists() else cfg.get("perfil", "")
+        for i in range(0, len(new), 40):
+            chunk = new[i:i + 40]
+            text = providers.complete(cfg, SYSTEM + "\n\nCANDIDATO:\n" + perfil,
+                                      json.dumps(chunk, ensure_ascii=False), max_tokens=4000)
+            if not text:
+                log.info("compat: nenhuma IA disponível; %d habilidades ficam para a próxima coleta", len(new) - i)
+                break
+            try:
+                data = json.loads(text[text.index("{"): text.rindex("}") + 1])
+            except Exception:
+                continue
+            for skill in chunk:
+                v = data.get(skill) or {}
+                if v.get("nivel") in CREDIT:
+                    cache[skill.lower()] = {"nome": skill, "nivel": v["nivel"], "motivo": v.get("motivo", "")}
+        CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True), "utf-8")
         new = []
     if new:
         import anthropic

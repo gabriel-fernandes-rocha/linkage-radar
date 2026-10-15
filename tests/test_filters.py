@@ -13,7 +13,23 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from common import load_config  # noqa: E402
-from filters import keywords, llm_judge  # noqa: E402
+from filters import heuristic, keywords, llm_judge, providers  # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def isolated(monkeypatch, tmp_path):
+    """Cada teste: rótulos em pasta temporária, cadeia só com Claude, nenhum provedor desligado."""
+    import common
+
+    monkeypatch.setattr(heuristic, "LABELS", tmp_path / "labels.json")
+    heuristic._MODELS.clear()
+    providers.DOWN.clear()
+    common.LLM_STATE.update(anthropic_down=False, motivo="")
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "teste")
+    for env in ["GEMINI_API_KEY"] + [p["env"] for p in providers.PROVIDERS.values()]:
+        monkeypatch.delenv(env, raising=False)
+    yield
+    common.LLM_STATE.update(anthropic_down=False, motivo="")
 
 RELEVANT = [
     {"tipo": "vaga", "titulo": "Senior Entity Resolution Engineer", "empresa": "Senzing", "local": "Remote",
@@ -60,7 +76,7 @@ def test_judge_filters_by_confidence(monkeypatch):
         {"id": 1, "relevante": False, "confianca": 0.9, "motivo": "vendas", "resumo_pt": ""},
         {"id": 2, "relevante": True, "confianca": 0.6, "motivo": "talvez", "resumo_pt": "Paper."},
     ])
-    monkeypatch.setattr(llm_judge, "_anthropic", lambda model, content, system: "Aqui:\n" + fake)
+    monkeypatch.setattr(providers, "_anthropic", lambda model, system, user, mt: "Aqui:\n" + fake)
     cfg = load_config()
     out = llm_judge.judge(items, cfg)
     assert [it["titulo"] for it in out] == [RELEVANT[0]["titulo"]]
@@ -68,7 +84,7 @@ def test_judge_filters_by_confidence(monkeypatch):
 
 
 def test_judge_drops_batch_on_garbage(monkeypatch):
-    monkeypatch.setattr(llm_judge, "_anthropic", lambda model, content, system: "desculpe, não sei")
+    monkeypatch.setattr(providers, "_anthropic", lambda model, system, user, mt: "desculpe, não sei")
     assert llm_judge.judge([dict(RELEVANT[0])], load_config()) == []
 
 
@@ -85,30 +101,65 @@ def test_judge_live():
 
 
 def test_claude_quota_falls_back_without_losing_items(monkeypatch):
-    """Claude sem saldo/limite: para de chamar, não marca como julgado e a contingência deixa passar
-    só o que tem sinal forte."""
+    """Claude sem limite e nenhuma reserva: para no 1º erro, nada vira 'visto', a heurística barra o ruído."""
     import common
 
     calls = {"n": 0}
 
-    def boom(model, content, system):
+    def boom(model, system, user, mt):
         calls["n"] += 1
         raise RuntimeError("Error code: 400 - You have reached your specified API usage limits. "
                            "You will regain access on 2026-11-01 at 00:00 UTC.")
 
-    monkeypatch.setattr(llm_judge, "_anthropic", boom)
-    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    common.LLM_STATE.update(anthropic_down=False, motivo="")
+    monkeypatch.setattr(providers, "_anthropic", boom)
     cfg = load_config()
     cfg["llm"]["batch_size"] = 2
     items = [dict(x) for x in RELEVANT + FALSE_POSITIVES]
     for it in items:
         keywords.passes(it)
     assert llm_judge.judge(items, cfg) == []
-    assert calls["n"] == 1                      # desistiu do Claude após o 1º erro de limite
+    assert calls["n"] == 1
     assert common.LLM_STATE["anthropic_down"]
-    assert not any(it.get("_julgado") for it in items)   # nada vira "visto": reavaliado depois
-    strong = [it["titulo"] for it in items if keywords.strong_enough(it)]
-    assert "Senior Entity Resolution Engineer" in strong
-    assert "Senior SRE Engineer" not in strong and "GIS Technician" not in strong
-    common.LLM_STATE.update(anthropic_down=False, motivo="")
+    assert not any(it.get("_julgado") for it in items)
+    ok = [it["titulo"] for it in items if heuristic.approve(it)]
+    assert "Senior Entity Resolution Engineer" in ok
+    assert not set(ok) & {x["titulo"] for x in FALSE_POSITIVES}
+
+
+def test_chain_uses_free_backup_when_claude_is_down(monkeypatch):
+    def boom(model, system, user, mt):
+        raise RuntimeError("Error code: 400 - credit balance is too low")
+
+    fake = json.dumps([{"id": 0, "relevante": True, "confianca": 0.9, "motivo": "ER", "resumo_pt": "ok"}])
+    monkeypatch.setattr(providers, "_anthropic", boom)
+    monkeypatch.setenv("GROQ_API_KEY", "teste")
+    monkeypatch.setattr(providers, "_openai_compatible", lambda name, model, system, user, mt: fake)
+    out = llm_judge.judge([dict(RELEVANT[0])], load_config())
+    assert len(out) == 1 and out[0]["juiz"] == "groq"
+
+
+def test_heuristic_learns_and_keeps_high_precision(monkeypatch):
+    """Com histórico suficiente, o modelo só aprova onde o juiz aprovaria (alvo: precisão >= 95%)."""
+    import random as rnd
+
+    rows = []
+    good = ["Entity Resolution Engineer", "Record Linkage Data Engineer", "Senior Identity Resolution Engineer",
+            "Data Engineer, Entity Matching", "MDM Engineer, Master Data Management"]
+    bad = ["Data Engineer", "Sales Engineer, Data Matching", "SRE Engineer", "GIS Technician", "BI Analyst"]
+    r = rnd.Random(1)
+    for i in range(120):
+        ok = i % 2 == 0
+        title = r.choice(good if ok else bad)
+        text = ("build entity resolution pipelines with blocking and probabilistic record linkage" if ok else
+                "company leader in entity resolution. you will maintain dashboards and sales pipeline")
+        rows.append({"tipo": "vaga", "titulo": title, "texto": text, "ok": ok, "data": "2026-10-01"})
+    heuristic.LABELS.write_text(json.dumps(rows), "utf-8")
+    yes = dict(tipo="vaga", titulo="Senior Entity Resolution Engineer",
+               texto="build entity resolution pipelines with blocking and probabilistic record linkage")
+    no = dict(tipo="vaga", titulo="Data Engineer - Entity Resolution platform company",
+              texto="company leader in entity resolution. you will maintain dashboards and sales pipeline")
+    keywords.passes(yes)
+    keywords.passes(no)
+    assert heuristic.approve(yes)
+    assert not heuristic.approve(no)
+    assert heuristic._MODELS["vaga"]["precisao"] >= 0.95

@@ -93,10 +93,25 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
     from common import LLM_STATE, note_llm_error
 
     for start in range(0, len(jobs), batch_size):
-        if LLM_STATE["anthropic_down"]:
-            log.info("requisitos: Claude indisponível; extração adiada para a próxima coleta")
-            return
         batch = jobs[start:start + batch_size]
+        if LLM_STATE["anthropic_down"]:  # Claude fora: usa a cadeia de IAs gratuitas (mesmo formato JSON)
+            from filters import providers
+
+            payload = json.dumps([{"id": i, "titulo": j["titulo"], "empresa": j.get("empresa", ""),
+                                   "local_anunciado": j.get("local", ""), "texto": (j.get("texto") or "")[:5000]}
+                                  for i, j in enumerate(batch)], ensure_ascii=False)
+            text = providers.complete(cfg, SYSTEM + '\n\nResponda SOMENTE JSON no formato {"vagas": [ ... ]} '
+                                      "com os campos descritos.", payload, max_tokens=6000)
+            if not text:
+                log.info("requisitos: nenhuma IA disponível; extração adiada para a próxima coleta")
+                return
+            try:
+                rows = json.loads(text[text.index("{"): text.rindex("}") + 1])["vagas"]
+            except Exception as e:
+                log.warning("requisitos: resposta ilegível da IA reserva (%s)", str(e)[:120])
+                continue
+            _apply(batch, rows)
+            continue
         payload = json.dumps([{"id": i, "titulo": j["titulo"], "empresa": j.get("empresa", ""),
                                "local_anunciado": j.get("local", ""), "fonte": j.get("fonte", ""),
                                "texto": (j.get("texto") or "")[:7000]}
@@ -114,14 +129,18 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
             if not note_llm_error(e):
                 log.warning("requisitos: lote falhou (%s)", e)
             continue
-        for row in rows:
-            try:
-                job = batch[int(row["id"])]
-            except (KeyError, ValueError, IndexError, TypeError):
-                continue
-            dedup = lambda xs: list(dict.fromkeys(canonical(x) for x in xs or [] if x))
-            must = dedup(row.get("obrigatorios"))
-            nice = [x for x in dedup(row.get("desejaveis")) if x not in must]
-            job["requisitos"] = {"obrigatorios": must, "desejaveis": nice}
-            for f in FIELDS:
-                job[f] = row.get(f)
+        _apply(batch, rows)
+
+
+def _apply(batch: list[dict], rows: list[dict]) -> None:
+    for row in rows:
+        try:
+            job = batch[int(row["id"])]
+        except (KeyError, ValueError, IndexError, TypeError):
+            continue
+        dedup = lambda xs: list(dict.fromkeys(canonical(x) for x in xs or [] if x))
+        must = dedup(row.get("obrigatorios"))
+        nice = [x for x in dedup(row.get("desejaveis")) if x not in must]
+        job["requisitos"] = {"obrigatorios": must, "desejaveis": nice}
+        for f in FIELDS:
+            job[f] = row.get(f)

@@ -106,6 +106,14 @@ def check(cfg: dict, day: str, report: dict) -> dict:
             txt = "a chave da API Anthropic foi recusada: confira o Secret ANTHROPIC_API_KEY"
         add("problema", "Claude fora do ar", txt + (". Juiz reserva Gemini em uso." if os.getenv("GEMINI_API_KEY")
                                                     else ". Itens entraram só por palavras-chave fortes."))
+    from filters import providers
+
+    used = sorted({m.split("usando ")[1].split(" ")[0] for _, m in RECORDER.records if m.startswith("judge: usando ")})
+    if used:
+        add("ok" if used == ["anthropic"] else "atencao", "Juiz usado",
+            ", ".join(used) + ("" if used == ["anthropic"] else " (reserva gratuita assumiu)"))
+    elif not os.getenv("ANTHROPIC_API_KEY") and not providers.chain({"llm": {"model": ""}}):
+        add("problema", "Juiz", "nenhuma IA configurada")
     if failures:
         credit = []
         judge = [f for f in failures if f.startswith(("judge", "requisitos", "carreira", "compat"))]

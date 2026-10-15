@@ -20,7 +20,7 @@ import market
 import open_jobs
 from common import DATA, load_config, log, today
 from dedup import Seen, unique
-from filters import keywords, llm_judge, requirements
+from filters import heuristic, keywords, llm_judge, requirements
 from sources import events, jobs, linkedin, network, papers
 
 SECTIONS = [  # (chave no JSON, módulo, limite em config.limits)
@@ -75,9 +75,9 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
             for it in cands:  # só o que foi REALMENTE julgado vira "visto"; o resto é reavaliado amanhã
                 if it.pop("_julgado", False):
                     seen.add(it, day)
-                elif keywords.strong_enough(it):  # juiz indisponível: contingência com regra mais rígida
-                    it.update(nao_verificado=True, motivo="Entrou só por palavras-chave fortes (juiz indisponível "
-                                                          "hoje); será reavaliado quando o juiz voltar.")
+                elif heuristic.approve(it):  # nenhuma IA respondeu: heurística de alta precisão
+                    it.update(nao_verificado=True, motivo="Aprovado pela heurística (nenhuma IA respondeu hoje); "
+                                                          "será reavaliado quando um juiz voltar.")
                     approved.append(it)
             approved.sort(key=lambda it: (it.get("encaixe", 0), it.get("confianca", 0), it["score"]), reverse=True)
         else:

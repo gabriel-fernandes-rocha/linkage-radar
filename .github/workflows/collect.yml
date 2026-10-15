@@ -15,6 +15,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  models: read      # GitHub Models: juiz reserva grátis, sem chave extra
 
 concurrency:
   group: radar-data
@@ -38,6 +39,11 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
         run: python src/main_collect.py ${{ github.event_name == 'schedule' && '--se-ainda-nao-coletou' || '' }} ${{ inputs.varredura_completa && '--varredura-completa' || '' }}
       - name: Commit dos dados
         run: |

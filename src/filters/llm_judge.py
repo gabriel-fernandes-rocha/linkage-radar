@@ -59,74 +59,37 @@ def _parse(text: str) -> list[dict]:
     return json.loads(m.group(0))
 
 
-def _anthropic(model: str, content: str, system: str) -> str:
-    import anthropic
-
-    client = anthropic.Anthropic()
-    resp = client.messages.create(
-        model=model,
-        max_tokens=4000,
-        system=system,
-        messages=[{"role": "user", "content": content}],
-    )
-    log.info("judge: tokens in=%s out=%s", resp.usage.input_tokens, resp.usage.output_tokens)
-    return "".join(b.text for b in resp.content if b.type == "text")
-
-
-def _gemini(model: str, content: str, system: str) -> str:
-    import requests
-
-    key = os.environ["GEMINI_API_KEY"]
-    r = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        params={"key": key},
-        json={"systemInstruction": {"parts": [{"text": system}]},
-              "contents": [{"parts": [{"text": content}]}],
-              "generationConfig": {"responseMimeType": "application/json"}},
-        timeout=60,
-    )
-    r.raise_for_status()
-    return r.json()["candidates"][0]["content"]["parts"][0]["text"]
-
-
 def available(cfg: dict) -> bool:
-    provider = cfg["llm"]["provider"]
-    return bool(os.getenv("GEMINI_API_KEY" if provider == "gemini" else "ANTHROPIC_API_KEY"))
+    from filters import providers
+
+    return bool(providers.chain(cfg))
 
 
 def judge(items: list[dict], cfg: dict) -> list[dict]:
     """Retorna só os aprovados, com motivo/resumo preenchidos. Marca it["_julgado"] nos que foram avaliados.
 
-    Ordem: Claude -> Gemini (reserva grátis, se GEMINI_API_KEY existir) -> nada (os itens ficam sem
-    "_julgado" e o main_collect aplica o modo de contingência sem marcá-los como vistos)."""
+    Usa a cadeia de provedores (providers.py): Claude -> Gemini -> GitHub Models -> Groq -> OpenRouter ->
+    Mistral -> Cerebras. Se nenhum responder, os itens ficam sem "_julgado" e o main_collect usa a heurística."""
+    from filters import heuristic, providers
+
     llm = cfg["llm"]
     min_conf = llm.get("min_confidence", 0.8)
     size = llm.get("batch_size", 8)
     approved = []
     for start in range(0, len(items), size):
         batch = items[start:start + size]
-        verdicts = None
-        if llm["provider"] == "gemini":
-            chain = [("gemini", llm["model"])]
-        else:
-            chain = [("anthropic", llm["model"])]
-            if os.getenv("GEMINI_API_KEY"):
-                chain.append(("gemini", llm.get("fallback_model", "gemini-2.5-flash")))
-        for provider, model in chain:
-            if provider == "anthropic" and LLM_STATE["anthropic_down"]:
-                continue
-            try:
-                call = _anthropic if provider == "anthropic" else _gemini
-                verdicts = _parse(call(model, _payload(batch), _system(cfg)))
-                break
-            except Exception as e:
-                if provider == "anthropic" and note_llm_error(e):
-                    continue  # sem saldo/limite: tenta a reserva
-                log.warning("judge: lote falhou em %s (%s)", provider, str(e)[:200])
+        text = providers.complete(cfg, _system(cfg), _payload(batch))
+        try:
+            verdicts = _parse(text) if text else None
+        except Exception as e:
+            log.warning("judge: resposta ilegível de %s (%s)", providers.LAST_USED["nome"], str(e)[:150])
+            verdicts = None
         if verdicts is None:
             continue
+        ok_ids = set()
         for it in batch:
             it["_julgado"] = True
+            it["juiz"] = providers.LAST_USED["nome"]
         for v in verdicts:
             try:
                 it = batch[int(v["id"])]
@@ -136,4 +99,6 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
                 it.update(motivo=no_dash(v.get("motivo", "")), resumo=no_dash(v.get("resumo_pt", "")),
                           confianca=round(float(v["confianca"]), 2))
                 approved.append(it)
+                ok_ids.add(id(it))
+        heuristic.record(batch, ok_ids)  # cada decisão vira exemplo de treino da heurística
     return approved

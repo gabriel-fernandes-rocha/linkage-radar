@@ -19,6 +19,10 @@ llm:
   extract_model: claude-sonnet-5   # lê as vagas aprovadas (poucas/dia) com precisão: requisitos, local, visto
   writer_model: claude-sonnet-5    # pílulas de mercado e análise de perfil
   fallback_model: gemini-2.5-flash # juiz reserva GRÁTIS se o Claude falhar (precisa do Secret GEMINI_API_KEY)
+  # Cadeia de juízes: usa o 1º que responder. Sem chave = pulado. Chaves grátis não expiram.
+  #   gemini: GEMINI_API_KEY | github: automático no Actions | groq: GROQ_API_KEY
+  #   openrouter: OPENROUTER_API_KEY | mistral: MISTRAL_API_KEY | cerebras: CEREBRAS_API_KEY
+  cadeia: [anthropic, gemini, github, groq, openrouter, mistral, cerebras]
 
 web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   linkedin_weekdays: [0, 1, 2, 3, 4, 5, 6]   # 0=segunda ... 6=domingo
