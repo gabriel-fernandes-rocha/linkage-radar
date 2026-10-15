@@ -1,9 +1,20 @@
 {
   "data": "2026-10-15",
-  "gerado_em": "2026-10-14T22:28-03:00",
+  "gerado_em": "2026-10-15T12:30-03:00",
   "llm": true,
   "serpapi_orcamento": 3,
   "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer - Identity Resolution & Consent Data at Thomson ...",
+      "url": "https://in.linkedin.com/jobs/view/data-engineer-identity-resolution-consent-data-at-thomson-reuters-4471423780",
+      "texto": "Apply for Data Engineer - Identity Resolution & Consent Data at Thomson Reuters in Bengaluru, Karnataka, India. Full-time Mid-Senior level role. See responsibilities, qualifications, and similar jobs on LinkedIn.",
+      "data": "Sep 24, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "nao_verificado": true,
+      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+    },
     {
       "tipo": "vaga",
       "titulo": "Senior Data Modeler (Telco)",
@@ -167,10 +178,44 @@
     }
   ],
   "eventos": [],
-  "papers": [],
-  "linkedin": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Randomized Experiments with Ambiguous Record Linkage",
+      "url": "https://doi.org/10.48550/arxiv.2610.15063",
+      "autores": "Bruno Ferman et al.",
+      "data": "2026-10-10",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "nao_verificado": true,
+      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+    },
+    {
+      "tipo": "paper",
+      "titulo": "cueEM: human-like entity matching via text-centric hybrid attention",
+      "url": "https://doi.org/10.7717/peerj-cs.4102",
+      "autores": "Xin Liu et al.",
+      "data": "2026-10-14",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "nao_verificado": true,
+      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Global United States Identity Resolution Market Analysis ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/global-united-states-identity-resolution-market-analysis-dm7ve",
+      "data": "Oct 13, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "nao_verificado": true,
+      "motivo": "Aprovado pela heurística (nenhuma IA respondeu hoje); será reavaliado quando um juiz voltar."
+    }
+  ],
   "vagas_abertas_total": 42,
-  "vagas_arquivadas_total": 58,
+  "vagas_arquivadas_total": 59,
   "rede": {
     "pessoas_novas": 0,
     "empresas_novas": 0
@@ -234,9 +279,9 @@
   },
   "estatisticas": {
     "vagas": {
-      "brutos": 2959,
-      "pos_palavras_chave": 6,
-      "aprovados": 3
+      "brutos": 2937,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
     },
     "eventos": {
       "brutos": 0,
@@ -245,13 +290,13 @@
     },
     "papers": {
       "brutos": 180,
-      "pos_palavras_chave": 4,
-      "aprovados": 0
+      "pos_palavras_chave": 2,
+      "aprovados": 2
     },
     "linkedin": {
-      "brutos": 10,
-      "pos_palavras_chave": 10,
-      "aprovados": 0
+      "brutos": 9,
+      "pos_palavras_chave": 7,
+      "aprovados": 1
     }
   },
   "saude": "problema"

@@ -4,40 +4,49 @@
  "checks": [
   {
    "status": "problema",
-   "nome": "Claude (juiz/extração)",
-   "detalhe": "6 chamadas falharam"
+   "nome": "Perfis para seguir",
+   "detalhe": "0 itens (esperado pelo menos 1)"
+  },
+  {
+   "status": "problema",
+   "nome": "Claude fora do ar",
+   "detalhe": "limite de gasto mensal da sua conta Anthropic atingido. Aumente em console.anthropic.com → Settings → Limits (sem isso, volta sozinho em 01/11). Juiz reserva Gemini em uso."
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 225,
-  "jobs/greenhouse": 1423,
-  "jobs/lever": 314,
-  "jobs/ashby": 32,
+  "jobs/remotive": 210,
+  "jobs/greenhouse": 1426,
+  "jobs/lever": 313,
+  "jobs/ashby": 31,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
   "jobs/gupy": 216,
-  "jobs/himalayas": 96,
+  "jobs/himalayas": 94,
   "jobs/jobicy": 128,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 138,
-  "jobs/social_posts": 6,
+  "jobs/weworkremotely": 134,
+  "jobs/social_posts": 4,
   "papers/arxiv": 5,
   "papers/openalex": 175,
-  "papers/semantic_scholar": 0,
-  "linkedin/posts": 10,
-  "network/perfis": 11
+  "linkedin/posts": 9,
+  "network/perfis": 0
  },
  "falhas": [
-  "papers: busca 'record linkage' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=record+linkage&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauthors%2C",
-  "papers: busca 'entity resolution' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+resolution&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauth",
-  "papers: busca 'entity matching' falhou: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=entity+matching&publicationDateOrYear=2026-10-07%3A&fields=title%2Curl%2Cabstract%2Cauthors%",
-  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
-  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
-  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
-  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
-  "judge: lote falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ",
-  "carreira: pílula falhou (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, "
+  "judge: gemini falhou (gemini 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the lat",
+  "judge: github falhou (Expecting value: line 1 column 1 (char 0))",
+  "judge: groq falhou (groq 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n)",
+  "judge: openrouter falhou (openrouter 404: {\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: meta-llama/llama-3.3-70b-instruct\",\"code\":404},\"user_id\":\"user",
+  "judge: mistral falhou (mistral 429: {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429})",
+  "judge: gemini falhou (gemini 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the lat",
+  "judge: github falhou (Expecting value: line 1 column 1 (char 0))",
+  "judge: groq falhou (groq 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n)",
+  "judge: openrouter falhou (openrouter 404: {\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: meta-llama/llama-3.3-70b-instruct\",\"code\":404},\"user_id\":\"user",
+  "judge: gemini falhou (gemini 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the lat",
+  "judge: github falhou (Expecting value: line 1 column 1 (char 0))",
+  "judge: groq falhou (groq 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n)",
+  "judge: openrouter falhou (openrouter 404: {\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: meta-llama/llama-3.3-70b-instruct\",\"code\":404},\"user_id\":\"user",
+  "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }
