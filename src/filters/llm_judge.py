@@ -70,7 +70,7 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
 
     Usa a cadeia de provedores (providers.py): Claude -> Gemini -> GitHub Models -> Groq -> OpenRouter ->
     Mistral -> Cerebras. Se nenhum responder, os itens ficam sem "_julgado" e o main_collect usa a heurística."""
-    from filters import heuristic, providers
+    from filters import heuristic, keywords, providers
 
     llm = cfg["llm"]
     min_conf = llm.get("min_confidence", 0.8)
@@ -99,7 +99,12 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
                 it = batch[int(v["id"])]
             except (KeyError, ValueError, IndexError, TypeError):
                 continue
-            if v.get("relevante") is True and float(v.get("confianca", 0)) >= min_conf:
+            backup = providers.LAST_USED["nome"] != "anthropic"
+            # juízes reserva são menos rigorosos que o Claude: exigem confiança maior e, para vagas,
+            # o tema precisa estar no título ou repetido no texto (regra rígida de palavras-chave)
+            need = max(min_conf, 0.9) if backup else min_conf
+            strict_ok = not backup or it.get("tipo") != "vaga" or keywords.central(it)
+            if v.get("relevante") is True and float(v.get("confianca", 0)) >= need and strict_ok:
                 it.update(motivo=no_dash(v.get("motivo", "")), resumo=no_dash(v.get("resumo_pt", "")),
                           confianca=round(float(v["confianca"]), 2))
                 approved.append(it)
