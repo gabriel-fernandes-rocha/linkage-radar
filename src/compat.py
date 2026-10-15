@@ -99,9 +99,13 @@ def classify_skills(skills: set[str], cfg: dict) -> dict:
                 data = json.loads(text[text.index("{"): text.rindex("}") + 1])
             except Exception:
                 continue
+            if not isinstance(data, dict):
+                continue
             for skill in chunk:
-                v = data.get(skill) or {}
-                if v.get("nivel") in CREDIT:
+                v = data.get(skill) or data.get(skill.lower()) or {}
+                if isinstance(v, str):
+                    v = {"nivel": v}
+                if isinstance(v, dict) and v.get("nivel") in CREDIT:
                     cache[skill.lower()] = {"nome": skill, "nivel": v["nivel"], "motivo": v.get("motivo", "")}
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True), "utf-8")
         new = []

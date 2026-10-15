@@ -90,7 +90,11 @@ def judge(items: list[dict], cfg: dict) -> list[dict]:
         for it in batch:
             it["_julgado"] = True
             it["juiz"] = providers.LAST_USED["nome"]
+        if isinstance(verdicts, dict):  # alguns modelos embrulham a lista: {"itens": [...]}
+            verdicts = next((x for x in verdicts.values() if isinstance(x, list)), [])
         for v in verdicts:
+            if not isinstance(v, dict):
+                continue
             try:
                 it = batch[int(v["id"])]
             except (KeyError, ValueError, IndexError, TypeError):

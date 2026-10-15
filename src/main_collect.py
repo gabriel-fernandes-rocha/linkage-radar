@@ -31,6 +31,18 @@ SECTIONS = [  # (chave no JSON, módulo, limite em config.limits)
 ]
 
 
+def safe(label: str, fn, default=None):
+    """Roda uma etapa secundária isolada: se falhar, registra (o monitor de saúde mostra) e a coleta continua.
+    Assim um erro numa parte nunca deixa o dia sem edição."""
+    try:
+        return fn()
+    except Exception as e:
+        import traceback
+
+        log.warning("etapa %s falhou: %s | %s", label, e, traceback.format_exc(limit=3).replace("\n", " "))
+        return default
+
+
 def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = False,
         rejudge: bool = False) -> dict | None:
     cfg = load_config()
@@ -92,8 +104,8 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
         if use_llm and key in ("vagas", "linkedin"):  # requisitos antes de descartar o texto
             fresh_jobs = [it for it in approved_all.get("vagas", []) + approved
                           if it["tipo"] == "vaga" and "requisitos" not in it]
-            requirements.extract(fresh_jobs, cfg)
-            compat.score_jobs(fresh_jobs, cfg)   # compatibilidade realista (substitui o palpite do juiz)
+            safe("requisitos", lambda: requirements.extract(fresh_jobs, cfg))
+            safe("compatibilidade", lambda: compat.score_jobs(fresh_jobs, cfg))
         approved_all[key] = list(approved)
         final = approved[: cfg["limits"][limit_key]]
         for it in final:
@@ -104,7 +116,10 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
 
     if use_llm:
         max_age = cfg.get("open_jobs", {}).get("max_age_days", 60)
-        abertas = open_jobs.update(approved_all.get("vagas", []), raw_jobs, day, max_age)
+        abertas = safe("vagas abertas", lambda: open_jobs.update(approved_all.get("vagas", []), raw_jobs, day,
+                                                                  max_age), None)
+        if abertas is None:
+            abertas = open_jobs.load()
         try:
             # habilidades de todas as vagas (garante vereditos; refaz tudo se o currículo mudou)
             all_skills = {s for j in abertas + job_archive.load() for s in
@@ -123,19 +138,20 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
         abertas = open_jobs.load()
     report["vagas_abertas_total"] = len(abertas)
     if use_llm:
-        archive = job_archive.update(approved_all.get("vagas", []), abertas, day)
+        archive = safe("arquivo de vagas", lambda: job_archive.update(approved_all.get("vagas", []), abertas, day),
+                       [])
         report["vagas_arquivadas_total"] = len(archive)
 
     if use_llm:
         judge_net = lambda items: llm_judge.judge(
             [it for it in unique(items) if seen.is_new(it) and keywords.passes(it)], cfg)
-        report["rede"] = network.update(cfg, day, approved_all.get("linkedin", []),
-                                        approved_all.get("vagas", []), judge_net)
-        pilula = career.market_lesson(cfg, day)       # aula prática do que o mercado pede (site)
+        report["rede"] = safe("pessoas e empresas", lambda: network.update(
+            cfg, day, approved_all.get("linkedin", []), approved_all.get("vagas", []), judge_net))
+        pilula = safe("pílula de mercado", lambda: career.market_lesson(cfg, day))
         report["pilula_mercado"] = pilula["habilidade"] if pilula else None
-        career.profile_tips(cfg, day)                  # análise semanal do perfil (site)
+        safe("análise de perfil", lambda: career.profile_tips(cfg, day))
 
-    report["aula"] = lesson.for_date(cfg, edition.date())
+    report["aula"] = safe("aula", lambda: lesson.for_date(cfg, edition.date()))
     report["estatisticas"] = stats
     try:
         report["saude"] = health.check(cfg, day, report)["status"]

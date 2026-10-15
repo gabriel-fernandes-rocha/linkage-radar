@@ -132,13 +132,18 @@ def extract(jobs: list[dict], cfg: dict, batch_size: int = 4) -> None:
         _apply(batch, rows)
 
 
-def _apply(batch: list[dict], rows: list[dict]) -> None:
+def _apply(batch: list[dict], rows) -> None:
+    if not isinstance(rows, list):
+        return
     for row in rows:
+        if not isinstance(row, dict):
+            continue
         try:
             job = batch[int(row["id"])]
         except (KeyError, ValueError, IndexError, TypeError):
             continue
-        dedup = lambda xs: list(dict.fromkeys(canonical(x) for x in xs or [] if x))
+        dedup = lambda xs: list(dict.fromkeys(canonical(x) for x in (xs if isinstance(xs, list) else [])
+                                              if isinstance(x, str) and x))
         must = dedup(row.get("obrigatorios"))
         nice = [x for x in dedup(row.get("desejaveis")) if x not in must]
         job["requisitos"] = {"obrigatorios": must, "desejaveis": nice}

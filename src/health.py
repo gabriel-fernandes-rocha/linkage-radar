@@ -51,6 +51,8 @@ def _counts() -> tuple[dict[str, int], list[str]]:
             counts["network/perfis"] = max(counts.get("network/perfis", 0), int(m[1]))
         if m := re.match(r"jobs/greenhouse '(\w+)' indispon", msg):
             failures.append(f"Greenhouse: empresa '{m[1]}' não responde mais (remova de config.yaml)")
+        if m := re.match(r"etapa (.+?) falhou: (.*)", msg):
+            failures.append(f"etapa {m[1]}: {m[2][:160]}")
         if level in ("WARNING", "ERROR") and "falhou" in msg:
             failures.append(msg[:220])
         if m := re.match(r"(jobs|papers)/(\w+) falhou", msg):
@@ -114,6 +116,9 @@ def check(cfg: dict, day: str, report: dict) -> dict:
             ", ".join(used) + ("" if used == ["anthropic"] else " (reserva gratuita assumiu)"))
     elif not os.getenv("ANTHROPIC_API_KEY") and not providers.chain({"llm": {"model": ""}}):
         add("problema", "Juiz", "nenhuma IA configurada")
+    for f in failures:
+        if f.startswith("etapa "):
+            add("problema", "Etapa com erro (a coleta continuou)", f[6:200])
     if failures:
         credit = []
         judge = [f for f in failures if f.startswith(("judge", "requisitos", "carreira", "compat"))]
