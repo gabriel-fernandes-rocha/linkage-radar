@@ -158,7 +158,7 @@ def _seniority(job: dict, years: float) -> tuple[float, str]:
         gap = need - years
         f = 1.0 if gap <= 1 else 0.8 if gap <= 2 else 0.6 if gap <= 4 else 0.4
         return f, f"pede {need:g}+ anos (você tem {years:g})"
-    level = job.get("senioridade", "nao_informado")
+    level = job.get("senioridade") or "nao_informado"  # IAs reserva às vezes devolvem vazio
     f = {"junior": 1.0, "pleno": 1.0, "senior": 0.75, "staff/principal": 0.45, "gerencia": 0.35}.get(level, 0.85)
     return f, f"nível {level.replace('_', ' ')}"
 
@@ -167,12 +167,12 @@ def _location(job: dict, cfg: dict) -> tuple[float, str]:
     perfil = cfg.get("perfil_estruturado", {})
     home_country = perfil.get("pais", "Brasil").lower()
     home_city = perfil.get("cidade", "Salvador").lower()
-    loc = job.get("local_contratacao") or {}
-    scope = loc.get("escopo", "nao_informado")
-    countries = [c.lower() for c in loc.get("paises", [])]
-    mode = job.get("modalidade", "nao_informado")
+    loc = job.get("local_contratacao") if isinstance(job.get("local_contratacao"), dict) else {}
+    scope = loc.get("escopo") or "nao_informado"
+    countries = [str(c).lower() for c in (loc.get("paises") or []) if c]
+    mode = job.get("modalidade") or "nao_informado"
     visa = job.get("patrocina_visto")
-    contract = job.get("contratacao", "nao_informado")
+    contract = job.get("contratacao") or "nao_informado"
     in_home = home_country in countries or "brazil" in countries or "latam" in countries or \
         "america latina" in countries or "américa latina" in countries
     if scope == "global":
@@ -211,7 +211,7 @@ def score(job: dict, cfg: dict, cache: dict) -> None:
     f_skills = 0.35 + 0.65 * skills
     f_sen, sen_txt = _seniority(job, years_of_experience(cfg))
     f_loc, loc_txt = _location(job, cfg)
-    english = job.get("ingles", "nao_informado")
+    english = job.get("ingles") or "nao_informado"
     user_en = cfg.get("perfil_estruturado", {}).get("ingles", "intermediario")
     f_en = 0.85 if english in ("fluente", "nativo") and user_en == "intermediario" else 1.0
     foco = job.get("foco_er")

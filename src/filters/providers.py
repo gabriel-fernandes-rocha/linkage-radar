@@ -28,6 +28,7 @@ PROVIDERS = {
                  "model": "llama-3.3-70b"},
 }
 DOWN: set[str] = set()  # provedores desligados nesta execução
+BUSY: dict[str, int] = {}  # quantas vezes cada provedor respondeu "sobrecarregado" (503/timeout)
 _DISCOVERED: dict[str, list[str]] = {}  # modelos disponíveis hoje, por provedor (descobertos na hora)
 
 # Nomes de modelos gratuitos mudam toda hora (em out/2026 vários foram retirados). Por isso cada provedor
@@ -105,7 +106,7 @@ def _anthropic(model: str, system: str, user: str, max_tokens: int) -> str:
 
 def _gemini(model: str, system: str, user: str, max_tokens: int) -> str:
     r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                      params={"key": os.environ["GEMINI_API_KEY"]}, timeout=90,
+                      params={"key": os.environ["GEMINI_API_KEY"]}, timeout=45,
                       json={"systemInstruction": {"parts": [{"text": system}]},
                             "contents": [{"parts": [{"text": user}]}],
                             "generationConfig": {"responseMimeType": "application/json",
@@ -128,6 +129,16 @@ def _openai_compatible(name: str, model: str, system: str, user: str, max_tokens
     try:
         return r.json()["choices"][0]["message"]["content"]
     except Exception:
+        if name == "github":  # endereço novo respondeu "OK": usa o endpoint clássico do GitHub Models
+            r2 = requests.post("https://models.inference.ai.azure.com/chat/completions", timeout=60,
+                               headers={"Authorization": f"Bearer {os.environ[p['env']]}",
+                                        "Content-Type": "application/json"},
+                               json={"model": model.split("/")[-1], "max_tokens": max_tokens, "temperature": 0,
+                                     "messages": [{"role": "system", "content": system},
+                                                  {"role": "user", "content": user}]})
+            if r2.status_code < 400:
+                return r2.json()["choices"][0]["message"]["content"]
+            raise RuntimeError(f"github {r2.status_code}: {r2.text[:200]}")
         raise RuntimeError(f"{name} resposta inesperada {r.status_code}: {r.text[:200]!r}")
 
 
@@ -177,6 +188,12 @@ def complete(cfg: dict, system: str, user: str, max_tokens: int = 4000) -> str |
                         time.sleep(8)
                         continue
                     log.warning("judge: %s/%s falhou (%s)", name, model, str(e)[:200])
+                    if " 503" in msg or "timed out" in msg or "overloaded" in msg or " 529" in msg:
+                        BUSY[name] = BUSY.get(name, 0) + 1
+                        if BUSY[name] >= 2:  # congestionado: deixa este provedor para o fim nesta coleta
+                            DOWN.add(name)
+                            log.info("judge: %s congestionado; seguindo para o próximo provedor", name)
+                        break
                     if " 404" in msg or "not found" in msg or "does not exist" in msg or "unavailable" in msg:
                         break  # este modelo saiu: tenta o próximo modelo do mesmo provedor
                     if any(k in msg for k in (" 401", " 402", " 403", " 429", "quota", "insufficient",

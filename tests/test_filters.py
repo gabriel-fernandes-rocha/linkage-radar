@@ -163,3 +163,14 @@ def test_heuristic_learns_and_keeps_high_precision(monkeypatch):
     assert heuristic.approve(yes)
     assert not heuristic.approve(no)
     assert heuristic._MODELS["vaga"]["precisao"] >= 0.95
+
+
+def test_compat_tolerates_empty_fields_from_backup_ai():
+    """Caso real (15/10): o Groq devolveu senioridade/modalidade vazias e o cálculo quebrava a coleta."""
+    import compat
+
+    job = {"titulo": "ER Engineer", "requisitos": {"obrigatorios": ["Python"], "desejaveis": []},
+           "senioridade": None, "modalidade": None, "ingles": None, "contratacao": None,
+           "local_contratacao": None, "anos_experiencia_min": None, "foco_er": None}
+    compat.score(job, load_config(), {"python": {"nome": "Python", "nivel": "tem"}})
+    assert 0 < job["encaixe"] <= 1
