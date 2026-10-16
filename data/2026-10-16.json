@@ -1,0 +1,402 @@
+{
+  "data": "2026-10-16",
+  "gerado_em": "2026-10-15T22:19-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Principal Software Architect (Graph Architect)",
+      "url": "https://himalayas.app/companies/acxiom/jobs/principal-software-architect-graph-architect",
+      "empresa": "Acxiom",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-10-15",
+      "score": 24,
+      "juiz": "groq",
+      "motivo": "Vaga foca em Identity Resolution e design de sistemas de matching de entidades.",
+      "resumo": "Principal Software Architect na Acxiom, responsável por liderar a arquitetura de soluções de Identity Resolution, incluindo design de sistemas que identificam, combinam e vinculam indivíduos e organizações em grandes volumes de dados.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS",
+          "Snowflake",
+          "Databricks"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.24,
+      "compat_detalhe": {
+        "habilidades": 31,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS",
+          "Snowflake",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Fitch Solutions hiring Director, Knowledge Graph and Entity ...",
+      "url": "https://uk.linkedin.com/jobs/view/director-knowledge-graph-and-entity-infrastructure-at-fitch-solutions-4469698199",
+      "texto": "Use shared entity and identifier services as they mature. When a use case exposes a genuine linking problem, work with the teams that own entity resolution to define requirements and test an appropriately simple solution. Establish reusable modeling patterns, examples and quality measures for relationships, provenance, temporal context and ...",
+      "data": "Sep 24, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de Diretor com responsabilidade principal em resolução de entidades.",
+      "resumo": "Vaga para Diretor de Knowledge Graph e Entity Resolution na Fitch Solutions, com foco em definir requisitos e testar soluções de linking.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior AI Engineer at Gaude Business & Infrastructure Solutions ...",
+      "url": "https://in.linkedin.com/jobs/view/senior-ai-engineer-at-gaude-business-infrastructure-solutions-4471581984",
+      "texto": "Knowledge-graph building experience — schema/ontology design, entity-relationship extraction, entity resolution, and implementation on graph databases (Neo4j/Cypher). Full-stack development experience, specifically with APIs and frontends such as React, Next.js, or similar frameworks.",
+      "data": "Sep 29, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de Senior AI Engineer que inclui entity resolution entre as atribuições.",
+      "resumo": "O cargo de Senior AI Engineer na Gaude Business & Infrastructure Solutions requer experiência em construção de knowledge graphs, design de esquemas e resolução de entidades.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Product Manager - Power Infrastructure Data - LinkedIn",
+      "url": "https://ca.linkedin.com/jobs/view/product-manager-power-infrastructure-data-at-enverus-4469717577",
+      "texto": "Transform the data manufacturing pipeline toward automated, scalable pipelines with repeatable business logic, entity resolution, and measurable validation. Establish clear measures for data accuracy, coverage, freshness, and reliability and use those measures to prioritize investment.",
+      "data": "Sep 25, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Vaga de Product Manager que menciona explicitamente entity resolution na pipeline de dados.",
+      "resumo": "A posição de Product Manager, Power Infrastructure Data busca liderar pipelines automatizados com lógica de entity resolution e validação mensurável.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Applied AI Engineer — LLM Reasoning & Evaluation",
+      "url": "https://in.linkedin.com/jobs/view/senior-applied-ai-engineer-%E2%80%94-llm-reasoning-evaluation-at-the-ops-layer-4475748057",
+      "texto": "Semantic classification, entity resolution, and information normalization. Multi-stage AI workflows and reasoning pipelines. LLM evaluation frameworks, gold-standard datasets, and regression testing. Experience with relational databases, REST APIs, Git, and cloud deployment. Ability to investigate complex semantic failures systematically.",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de Senior Applied AI Engineer que lista entity resolution como competência técnica.",
+      "resumo": "O cargo envolve classificação semântica, resolução de entidades e normalização de informação, além de pipelines de IA multi‑estágio.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior BI / Analytics Engineer, Strategic Accounts - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-bi-analytics-engineer-strategic-accounts-at-resmed-4469192542",
+      "texto": "Account master and entity resolution. Implement the governed Top-10 account hierarchy, survivorship rules and M&A re-parenting, per the Lead's business rules. Data model.",
+      "data": "Sep 18, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Vaga de Senior BI / Analytics Engineer com responsabilidade de account master e entity resolution.",
+      "resumo": "A função foca na implementação de hierarquias de contas governadas, regras de sobrevivência e resolução de entidades.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.9,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "‏CrowdStrike‏ גיוס ‏Software Engineer - Cloud, Identity Protection ...",
+      "url": "https://il.linkedin.com/jobs/view/software-engineer-cloud-identity-protection-hybrid-isr-at-crowdstrike-4438788314",
+      "texto": "Experience with risk scoring or entity resolution systems This position is based in our Ramat-Gan, Israel office and requires strong leadership presence and ability to work closely with cross-functional teams.",
+      "data": "Oct 5, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de Software Engineer que requer experiência em sistemas de entity resolution.",
+      "resumo": "A posição na CrowdStrike, baseada em Israel, busca engenheiro de nuvem com conhecimento em scoring de risco e resolução de entidades.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Stage PFE 2027 | Data Science & IA - Entity Resolution et ... - LinkedIn",
+      "url": "https://ma.linkedin.com/jobs/view/stage-pfe-2027-data-science-ia-entity-resolution-et-mod%C3%A9lisation-pr%C3%A9dictive-at-exosdata-consulting-4477460880",
+      "texto": "تقدم إلى ‏Stage PFE 2027 | Data Science & IA - Entity Resolution et modélisation prédictive‏ في ‏ExosData Consulting‏ في ‏الرباط-سلا-القنيطرة الرباط المغرب‏. وظيفة ‏دوام كامل مستوى المبتدئين‏. اطّلع على المسؤوليات والمؤهلات والوظائف المشابهة على LinkedIn.",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de estágio que tem entity resolution como tema central.",
+      "resumo": "O estágio PFE 2027 em Data Science & IA na ExosData Consulting, Marrocos, foca em entity resolution e modelagem preditiva.",
+      "confianca": 0.99,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.2,
+      "encaixe": 0.3,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 88,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 50,
+  "vagas_arquivadas_total": 67,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 1,
+    "abertas": 1,
+    "arquivadas": 6,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 14
+    }
+  },
+  "aula": {
+    "dia": 15,
+    "semana": 3,
+    "tema": "O processo de data matching de ponta a ponta",
+    "tipo": "conceito",
+    "titulo": "Visão geral do processo e um pequeno exemplo completo",
+    "modulo": "Semana 3: O processo de data matching de ponta a ponta",
+    "versao": 2,
+    "objetivo": "Entender e explicar as cinco etapas do pipeline de data matching (pré-processamento, indexação, comparação, classificação, avaliação) e aplicá-las a um exemplo numérico completo.",
+    "conceito": "Christen (2012, seção 2.1, p. 23) organiza o processo de data matching em cinco etapas macro: pré-processamento (padronizar formato e conteúdo dos dados vindos de fontes diferentes), indexação (reduzir a complexidade quadrática gerando pares candidatos), comparação (calcular similaridade entre campos dos pares candidatos), classificação (decidir match, non-match ou potential match, este último exigindo revisão manual) e avaliação (medir qualidade e completude do resultado). Essas etapas valem tanto para linkage entre duas bases quanto para deduplicação de uma única base.\n\nO ponto central da seção é mostrar por que a indexação existe: comparar todos os pares de duas bases de tamanho n e m gera n×m comparações, crescimento quadrático, enquanto o número de matches verdadeiros cresce de forma linear com o tamanho da menor base (Christen, 2012, seção 2.3, p. 27-28). Isso cria um desequilíbrio enorme entre custo computacional e informação útil, e é esse desequilíbrio que toda técnica de indexação (blocking, sorted neighbourhood, etc.) tenta resolver.\n\nChristophides et al. (2020) reforçam essa visão como um pipeline de entity resolution end-to-end, destacando que cada etapa pode ser otimizada separadamente, mas os erros se propagam: um pré-processamento ruim contamina a indexação, que por sua vez limita o recall máximo possível na comparação e classificação.",
+    "como_funciona": "As cinco etapas, na ordem:\n1. Pré-processamento: limpar caracteres indesejados, expandir abreviações, segmentar atributos compostos (parsing), verificar contra bases externas quando possível. Nunca sobrescrever os dados originais.\n2. Indexação: aplicar uma blocking key (ex.: Soundex do sobrenome, 3 primeiros dígitos do CEP) para agrupar registros em blocos; só pares dentro do mesmo bloco seguem para comparação.\n3. Comparação: para cada par candidato, calcular funções de similaridade por campo (string, numérica, data), gerando um vetor de comparação.\n4. Classificação: aplicar um modelo de decisão (ex.: Fellegi-Sunter) sobre o vetor de comparação para rotular match, non-match ou potential match.\n5. Avaliação: medir precisão, recall, F-measure e a complexidade real do processo (quantos pares foram comparados vs. quantos matches existem).",
+    "exemplo": "Usando o exemplo do livro (Christen 2012, p. 23-28): base A tem 7 registros, base B tem 7 registros. Sem indexação: 7 x 7 = 49 pares possíveis.\n\nAplicando duas blocking keys: Soundex do sobrenome (Sndx-SN) e os 3 primeiros dígitos do CEP (F3D-PC). Calculando a união dos pares gerados por cada chave (Fig. 2.5 do livro), chegamos a 12 pares candidatos: (a1,b2), (a1,b3), (a1,b6), (a2,b2), (a2,b4), (a3,b1), (a3,b2), (a5,b4), (a5,b7), (a6,b5), (a7,b3), (a7,b6).\n\nReparem: 12 de 49 é uma redução de aproximadamente 75,5%. O blocking captura corretamente pares como (a1,b3) 'John Smith' e (a3,b1) 'Mary Meier', mas perde o par (a4,b7) 'Lynette Smithers' / 'Lynette Cain', provável match por mudança de sobrenome (casamento), porque os sobrenomes têm Soundex diferente e os CEPs diferem no 3º dígito (201 vs 202).",
+    "na_pratica": "Em produção, isso vira um pipeline com estágios separados e mensuráveis. Em Splink, você define isso de forma declarativa:\n\nfrom splink import Linker, SettingsCreator, block_on, DuckDBAPI\nimport splink.comparison_library as cl\nsettings = SettingsCreator(link_type='link_only',\n comparisons=[cl.JaroWinklerAtThresholds('surname', [0.9]), cl.ExactMatch('postcode')],\n blocking_rules_to_generate_predictions=[block_on('surname'), block_on('postcode')])\nlinker = Linker([df_a, df_b], settings, db_api=DuckDBAPI())\npred = linker.inference.predict(threshold_match_probability=0.9)\n\nCada etapa do livro mapeia direto: pré-processamento é feito antes de carregar df_a/df_b, blocking_rules é a indexação, comparisons é a comparação, predict com threshold é a classificação.",
+    "armadilha": "Profissionais experientes costumam avaliar apenas precisão e recall da classificação final, ignorando o 'pair completeness' perdido já na indexação; se o blocking descarta o par verdadeiro (como a4,b7 no exemplo), nenhum classificador depois vai recuperá-lo, então o diagnóstico de qualidade tem que incluir a etapa de indexação separadamente.",
+    "desafio": "Uma base C tem 1.200 registros e uma base D tem 900 registros, sem duplicados internos. (a) Quantas comparações seriam feitas sem indexação? (b) Qual é o número máximo teórico de matches verdadeiros possíveis? (c) Se uma blocking key reduz os pares candidatos para 15.000, qual a redução percentual em relação ao total sem indexação, e por que isso não garante que o recall será 100%?",
+    "gabarito": "(a) 1.200 x 900 = 1.080.000 comparações possíveis sem indexação. (b) Como nenhuma base tem duplicados, o máximo de matches verdadeiros é limitado pelo tamanho da menor base, ou seja, no máximo 900 matches. (c) Redução = (1.080.000 - 15.000) / 1.080.000 = 98,61% de redução. Isso não garante recall 100% porque a blocking key pode separar em blocos diferentes pares que são matches verdadeiros mas têm valores distintos na chave de bloqueio (por exemplo, erro de digitação no sobrenome usado como chave), exatamente como ocorreu com o par (a4,b7) no exemplo do livro, perdido por divergência na chave de blocagem apesar de ser um match provável.",
+    "fontes": [
+      "Christen (2012), seção 2.1, p. 23",
+      "Christen (2012), seção 2.2, p. 24-26",
+      "Christen (2012), seção 2.3, p. 27-29",
+      "Christophides et al. (2020), ACM Computing Surveys 53(6)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2933,
+      "pos_palavras_chave": 7,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 175,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 8,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

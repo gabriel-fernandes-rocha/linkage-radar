@@ -19,48 +19,42 @@
       "splink"
     ],
     "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "motivo": "Vaga no Brasil que trata de resolução de identidade, matching determinístico ou probabilístico e deduplicação.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
-        "Golden Record",
-        "Data Quality",
-        "BigQuery",
-        "matching",
         "Python",
-        "SQL"
+        "SQL",
+        "BigQuery"
       ],
       "desejaveis": [
-        "Record linkage",
-        "scikit-learn",
+        "RapidFuzz",
         "Splink",
+        "Record Linkage",
+        "Scikit-Learn",
+        "Great Expectations",
+        "Jupyter",
         "Git"
       ]
     },
     "anos_experiencia_min": null,
-    "senioridade": "pleno",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Brasil"
-      ],
-      "cidades": []
-    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
     "patrocina_visto": null,
-    "contratacao": "nao_informado",
+    "contratacao": "clt_ou_fulltime",
     "ingles": "nao_exigido",
-    "foco_er": 0.8,
+    "foco_er": 0.9,
     "requisitos_estimados": true,
-    "encaixe": 0.83,
+    "encaixe": 0.36,
     "compat_detalhe": {
-      "habilidades": 78,
-      "senioridade": 100,
-      "local": 100,
+      "habilidades": 57,
+      "senioridade": 85,
+      "local": 60,
       "ingles": 100,
-      "foco": 97,
-      "senioridade_txt": "nível pleno",
-      "local_txt": "remoto e aceita Brasil/LATAM",
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
       "faltam": [
         "BigQuery"
       ],
@@ -71,370 +65,9 @@
     },
     "desde": "2026-10-16",
     "verificada_em": "2026-10-16",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "[Job - 30900] Master Data Developer (Amazon Neptune), Brazil",
-    "url": "https://himalayas.app/companies/ci-t/jobs/job-30900-master-data-developer-amazon-neptune-brazil",
-    "empresa": "CI&T",
-    "local": "Remoto · Brazil",
-    "fonte": "Himalayas",
-    "publicada_em": "2026-08-20",
-    "score": 4,
-    "termos": [
-      "deduplication",
-      "entity matching",
-      "entity resolution",
-      "fuzzy matching"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "entity resolution",
-        "Machine Learning",
-        "Entity Matching",
-        "Fuzzy Matching",
-        "Amazon Neptune",
-        "Deduplication",
-        "Retrieval",
-        "MarTech",
-        "Python"
-      ],
-      "desejaveis": [
-        "Graph databases",
-        "AWS"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "regiao",
-      "paises": [
-        "LATAM",
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "fluente",
-    "foco_er": 0.75,
-    "requisitos_estimados": true,
-    "encaixe": 0.5,
-    "compat_detalhe": {
-      "habilidades": 56,
-      "senioridade": 85,
-      "local": 100,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "remoto e aceita Brasil/LATAM",
-      "faltam": [
-        "Amazon Neptune",
-        "Retrieval",
-        "MarTech"
-      ],
-      "parciais": [],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-16",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "AI Senior Engineer - Graph",
-    "url": "https://himalayas.app/companies/able-co/jobs/ai-senior-engineer-graph",
-    "empresa": "Able",
-    "local": "Remoto · Argentina, Bolivia, Brazil, Chile, Colombia, Costa Rica, Cuba, Dominican Republic, Ecuador, El Salvador, Guatemala, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Trinidad and Tobago, Uruguay, Venezuela",
-    "fonte": "Himalayas",
-    "publicada_em": "2026-10-07",
-    "score": 2,
-    "termos": [
-      "deduplication",
-      "entity resolution"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "entity resolution",
-        "Data Pipelines",
-        "Deduplication",
-        "Python",
-        "Cypher",
-        "Kafka",
-        "Neo4j",
-        "RAG",
-        "ETL"
-      ],
-      "desejaveis": []
-    },
-    "anos_experiencia_min": 4,
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "regiao",
-      "paises": [
-        "LATAM",
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "fluente",
-    "foco_er": 0.25,
-    "requisitos_estimados": true,
-    "encaixe": 0.43,
-    "compat_detalhe": {
-      "habilidades": 56,
-      "senioridade": 80,
-      "local": 100,
-      "ingles": 85,
-      "foco": 89,
-      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
-      "local_txt": "remoto e aceita Brasil/LATAM",
-      "faltam": [
-        "Cypher",
-        "Kafka",
-        "Neo4j",
-        "RAG"
-      ],
-      "parciais": [],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-16",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "[Job - 30900] Master Data Developer, Brazil",
-    "url": "https://jobs.lever.co/ciandt/51618054-a487-4ffe-a60f-78392ad250d0",
-    "empresa": "ciandt",
-    "local": "Brazil",
-    "fonte": "Lever/ciandt",
-    "publicada_em": "2026-08-17",
-    "score": 4,
-    "termos": [
-      "deduplication",
-      "entity matching",
-      "entity resolution",
-      "fuzzy matching"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "entity resolution",
-        "Machine Learning",
-        "Entity Matching",
-        "Fuzzy Matching",
-        "Deduplication",
-        "Retrieval",
-        "MarTech",
-        "Python"
-      ],
-      "desejaveis": [
-        "Graph databases",
-        "Amazon Neptune",
-        "AWS"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "regiao",
-      "paises": [
-        "LATAM",
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "fluente",
-    "foco_er": 0.75,
-    "requisitos_estimados": true,
-    "encaixe": 0.39,
-    "compat_detalhe": {
-      "habilidades": 60,
-      "senioridade": 85,
-      "local": 75,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "Retrieval",
-        "MarTech"
-      ],
-      "parciais": [],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-16",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Engineer (Snowflake)",
-    "url": "https://himalayas.app/companies/massive-rocket/jobs/senior-data-engineer-snowflake-4845652708",
-    "empresa": "Massive Rocket",
-    "local": "Remoto · Brazil",
-    "fonte": "Himalayas",
-    "publicada_em": "2026-09-20",
-    "score": 2,
-    "termos": [
-      "customer 360",
-      "identity resolution"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Identity resolution",
-        "Data Governance",
-        "Data Quality",
-        "Snowflake",
-        "Braze",
-        "dbt",
-        "SQL",
-        "ETL"
-      ],
-      "desejaveis": [
-        "mParticle",
-        "Segment"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "global",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "fluente",
-    "foco_er": 0.75,
-    "requisitos_estimados": true,
-    "encaixe": 0.36,
-    "compat_detalhe": {
-      "habilidades": 38,
-      "senioridade": 75,
-      "local": 100,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "nível senior",
-      "local_txt": "aceita candidatos do mundo todo",
-      "faltam": [
-        "Snowflake",
-        "Braze",
-        "dbt"
-      ],
-      "parciais": [
-        "Data Governance",
-        "SQL"
-      ],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-16",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Analista de Engenharia de Machine Learning Sênior - Área Inteligência Artificial",
-    "url": "https://vemproitau.gupy.io/job/eyJqb2JJZCI6MTI1Njk3NjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-    "empresa": "Itaú Unibanco",
-    "local": "São Paulo, São Paulo",
-    "fonte": "Gupy",
-    "publicada_em": "2026-09-28",
-    "score": 1,
-    "termos": [
-      "resolucao de entidades"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Machine Learning",
-        "Deep Learning",
-        "Transformers",
-        "TensorFlow",
-        "embeddings",
-        "Terraform",
-        "Retrieval",
-        "PyTorch",
-        "Python",
-        "Azure",
-        "RAG",
-        "AWS",
-        "GCP",
-        "IA"
-      ],
-      "desejaveis": [
-        "LangChain",
-        "LangGraph",
-        "LLMs"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "nao_exigido",
-    "foco_er": 0.25,
-    "requisitos_estimados": true,
-    "encaixe": 0.26,
-    "compat_detalhe": {
-      "habilidades": 26,
-      "senioridade": 75,
-      "local": 75,
-      "ingles": 100,
-      "foco": 89,
-      "senioridade_txt": "nível senior",
-      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "TensorFlow",
-        "Terraform",
-        "Retrieval",
-        "PyTorch",
-        "Azure",
-        "RAG",
-        "AWS",
-        "GCP"
-      ],
-      "parciais": [
-        "Deep Learning",
-        "Transformers",
-        "embeddings",
-        "IA"
-      ],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-16",
-    "nova": true
+    "nova": true,
+    "juiz": "groq",
+    "resumo": "Cientista de Dados Pleno na BRQ, responsável pelo núcleo analítico de resolução de identidade, desenvolvendo matching, deduplicação e Golden Record.",
+    "confianca": 0.99
   }
 ]

@@ -1,5 +1,5 @@
 {
- "data": "2026-10-15",
+ "data": "2026-10-16",
  "status": "problema",
  "checks": [
   {
@@ -22,34 +22,27 @@
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
   "jobs/remotive": 210,
-  "jobs/greenhouse": 1425,
-  "jobs/lever": 312,
+  "jobs/greenhouse": 1426,
+  "jobs/lever": 310,
   "jobs/ashby": 31,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
-  "jobs/gupy": 216,
-  "jobs/himalayas": 94,
+  "jobs/gupy": 214,
+  "jobs/himalayas": 93,
   "jobs/jobicy": 128,
   "jobs/workable": 281,
   "jobs/weworkremotely": 133,
-  "jobs/social_posts": 4,
-  "papers/arxiv": 5,
+  "jobs/social_posts": 7,
+  "papers/arxiv": -1,
   "papers/openalex": 175,
-  "linkedin/posts": 10,
+  "linkedin/posts": 9,
   "network/perfis": 0
  },
  "falhas": [
   "judge: gemini/gemini-3.8-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
   "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
-  "judge: github/openai/gpt-4.1-mini falhou (HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models",
-  "judge: github/openai/gpt-4.1-mini falhou (HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models",
-  "judge: github/openai/gpt-4.1-mini falhou (HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models",
-  "judge: github/openai/gpt-4.1-mini falhou (HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models",
-  "judge: github/openai/gpt-4.1-mini falhou (HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models",
-  "judge: github/openai/gpt-4.1-mini falhou (HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models",
-  "judge: groq/openai/gpt-oss-120b falhou (groq 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on tokens per minute (TP",
-  "judge: openrouter/google/gemma-4-31b-it:free falhou (openrouter 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please ret",
-  "judge: mistral/mistral-small-latest falhou (mistral 429: {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429})",
+  "judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\\r\\n')",
+  "papers/arxiv falhou: cannot access local variable 'wait' where it is not associated with a value",
   "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }

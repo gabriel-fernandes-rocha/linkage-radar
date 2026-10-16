@@ -323,6 +323,11 @@
   "nivel": "nao",
   "nome": "GDPR"
  },
+ "git": {
+  "motivo": "não há menção no currículo",
+  "nivel": "nao",
+  "nome": "Git"
+ },
  "golden records": {
   "motivo": "conceito MDM próximo de deduplicação/resolução praticada",
   "nivel": "parcial",
@@ -347,6 +352,11 @@
   "motivo": "sem evidência de RAG ou LLM com grafos",
   "nivel": "nao",
   "nome": "GraphRAG"
+ },
+ "great expectations": {
+  "motivo": "não consta no currículo",
+  "nivel": "nao",
+  "nome": "Great Expectations"
  },
  "gremlin": {
   "motivo": "sem evidência de linguagem de consulta a grafos",
@@ -427,6 +437,11 @@
   "motivo": "sem menção a Java no currículo",
   "nivel": "nao",
   "nome": "Java"
+ },
+ "jupyter": {
+  "motivo": "listado nas competências técnicas",
+  "nivel": "tem",
+  "nome": "Jupyter"
  },
  "kafka": {
   "motivo": "sem evidência de streaming com Kafka",
@@ -632,6 +647,11 @@
   "motivo": "sem evidência de retrieval-augmented generation",
   "nivel": "nao",
   "nome": "RAG"
+ },
+ "rapidfuzz": {
+  "motivo": "listado nas competências técnicas",
+  "nivel": "tem",
+  "nome": "RapidFuzz"
  },
  "rdf": {
   "motivo": "sem evidência de modelos semânticos RDF",

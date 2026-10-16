@@ -1,0 +1,97 @@
+===== coleta 2026-10-15 22:23 =====
+INFO serpapi: 51 restantes no mês; orçamento de hoje = 3 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 210
+INFO jobs/greenhouse: 1426
+INFO jobs/lever: 310
+INFO jobs/ashby: 31
+INFO jobs/hn_who_is_hiring: 1
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO jobs/google: 0 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 214
+INFO jobs/himalayas: 93
+INFO jobs/jobicy: 128
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 133
+INFO jobs/social_linkedin/ddg: 7 aceitos de 8
+INFO jobs/social_posts: 7
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011Cg539gKw5Wqu83XL8LRw7'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+WARNING judge: gemini/gemini-3.8-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+WARNING judge: não consegui listar modelos de github (Expecting value: line 1 column 1 (char 0))
+WARNING judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\r\n')
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-20b, openai/gpt-oss-safeguard-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO vagas: {'brutos': 2933, 'pos_palavras_chave': 7, 'aprovados': 1}
+INFO events: 0 candidatos
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+WARNING papers/arxiv falhou: cannot access local variable 'wait' where it is not associated with a value
+INFO papers/openalex: 175
+INFO papers: {'brutos': 175, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 9 aceitos de 9
+INFO linkedin: 9 candidatos
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 8, 'aprovados': 0}
+INFO open_jobs: 50 abertas (8 novas)
+INFO mercado: 66 vagas no nicho, 40 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network: 32 pessoas (0 novas), 15 empresas (1 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire: 103
+INFO brasil/gupy: 416
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO brasil/greenhouse: 1181
+INFO brasil/lever: 249
+INFO brasil/ashby: 110
+INFO brasil: 4992 brutas, 10 candidatas para o juiz
+INFO brasil: 5 vaga(s) não verificadas removidas após o juiz
+INFO open_jobs: 1 abertas (1 novas)
+INFO mercado: 6 vagas no nicho, 40 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network: 0 pessoas (0 novas), 14 empresas (14 novas)
+INFO brasil: {'novas': 1, 'abertas': 1, 'arquivadas': 6, 'rede': {'pessoas_novas': 0, 'empresas_novas': 14}}
+INFO saúde: problema (3 alertas)
+INFO OK → data/2026-10-16.json
+
