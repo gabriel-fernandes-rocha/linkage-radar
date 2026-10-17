@@ -7,3 +7,82 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-10-16 22:22 =====
+INFO serpapi: 48 restantes no mês; orçamento de hoje = 3 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 225
+INFO jobs/greenhouse: 1425
+INFO jobs/lever: 310
+INFO jobs/ashby: 31
+INFO jobs/hn_who_is_hiring: 1
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO jobs/google: 0 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 212
+INFO jobs/himalayas: 94
+INFO jobs/jobicy: 122
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 134
+INFO jobs/social_linkedin/ddg: 1 aceitos de 2
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 1/3)
+INFO jobs/social_linkedin/google: 0 aceitos de 0
+INFO jobs/social_posts: 1
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011Cg6vsbqRexafbzVywcpc4'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+INFO judge: usando gemini (gemini-3.8-flash)
+INFO vagas: {'brutos': 2935, 'pos_palavras_chave': 1, 'aprovados': 1}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 5
+INFO papers/openalex: 175
+INFO papers: {'brutos': 180, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 11 aceitos de 11
+INFO linkedin: 11 candidatos
+INFO linkedin: {'brutos': 11, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: 53 abertas (3 novas)
+INFO mercado: 69 vagas no nicho, 40 no mercado amplo
+INFO network/ddg: 5 aceitos de 5
+INFO network: 5 perfis após a consulta
+INFO network: 33 pessoas (1 novas), 16 empresas (1 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire: 101
+INFO brasil/gupy: 418
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO brasil/greenhouse: 1179
+INFO brasil/lever: 239
+INFO brasil/ashby: 111
+INFO brasil: 4983 brutas, 1 candidatas para o juiz
+INFO open_jobs: 1 abertas (0 novas)
+INFO mercado: 6 vagas no nicho, 40 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 0 pessoas (0 novas), 14 empresas (0 novas)
+INFO brasil: {'novas': 0, 'abertas': 1, 'arquivadas': 6, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-10-17.json
+
