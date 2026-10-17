@@ -135,7 +135,15 @@ Edite `send_time` em `config.yaml` (o envio espera rodando até esse horário) e
 4. **Anti-alucinação** nas buscas web: só entram URLs que realmente apareceram nos resultados.
 
 ## 🔗 Sobre o LinkedIn
-O LinkedIn não tem API pública de busca e proíbe scraping. O radar busca posts **públicos já indexados** (`linkedin.com/posts` e `/pulse`) via SerpAPI (Google) ou via a busca web do Claude, dos últimos 7 dias, e passa tudo pelo juiz. Alguns posts recentes podem demorar 1–3 dias para aparecer nos buscadores.
+O LinkedIn não tem API pública de busca. O radar usa três caminhos, todos **sem login e sem a sua conta**:
+1. Posts públicos já indexados (`linkedin.com/posts`) via SerpAPI (DuckDuckGo/Google).
+2. **Busca pública de vagas** (`src/sources/linkedin_guest.py`, a mesma de quem abre o LinkedIn deslogado):
+   aba Brasil com 8 termos/dia e radar principal com 5 termos/dia (vagas remotas), abrindo a descrição inteira.
+3. Página pública de cada post encontrado: texto completo e link real da candidatura (lnkd.in resolvido).
+
+Risco aceito (out/2026): os termos de uso do LinkedIn não permitem coleta automatizada. Como não há login, sua
+conta não corre risco; o pior caso é o LinkedIn bloquear o IP do GitHub Actions por um tempo (aí a fonte para no
+dia e as outras seguem). Para desligar: esvazie `brasil.linkedin_busca` e `queries.linkedin_busca` no config.yaml.
 
 ## 📁 Estrutura
 ```

@@ -165,8 +165,27 @@ def linkedin_jobs_br(cfg: dict) -> list[dict]:
         ("google", f'"{term}" {hiring} site:linkedin.com/posts/', "qdr:w"),
     ], lambda r: "linkedin.com/posts/" in r["url"] or "/feed/update/" in r["url"], want=5,
         label="brasil/linkedin_posts")
-    return [item("vaga", r["titulo"], r["url"].split("?")[0], empresa="", local="Brasil",
-                 fonte="Post · LinkedIn (Brasil)", texto=r["texto"], social=True) for r in found]
+    from sources import linkedin_guest
+
+    posts = [item("vaga", r["titulo"], r["url"].split("?")[0], empresa="", local="Brasil",
+                  fonte="Post · LinkedIn (Brasil)", texto=r["texto"], social=True) for r in found]
+    return [linkedin_guest.enrich_post(p) for p in posts]  # texto inteiro + link real da candidatura
 
 
-SOURCES = [inhire, gupy, google_jobs_br, linkedin_jobs_br]
+def linkedin_guest_br(cfg: dict, seen=None) -> list[dict]:
+    """Busca pública de vagas do LinkedIn no Brasil, sem login, com a descrição inteira (rodízio de termos)."""
+    from sources import linkedin_guest
+
+    b = cfg.get("brasil", {})
+    terms = b.get("linkedin_busca", [])
+    n = b.get("linkedin_busca_por_dia", 8)
+    if not terms:
+        return []
+    start = (date.today().toordinal() * n) % len(terms)
+    today = [terms[(start + i) % len(terms)] for i in range(min(n, len(terms)))]
+    return linkedin_guest.search_jobs(today, geo="brasil", days=b.get("linkedin_busca_dias", 7), want_title=DATA_TITLE,
+                                      seen=seen, max_details=b.get("linkedin_max_descricoes", 40),
+                                      source="LinkedIn Jobs (Brasil)")
+
+
+SOURCES = [inhire, gupy, google_jobs_br, linkedin_jobs_br, linkedin_guest_br]

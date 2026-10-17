@@ -92,6 +92,17 @@ queries:
     - "record linkage remote LATAM"
     - "entity resolution engineer contractor"
     - "master data management engineer remote Brazil"
+  linkedin_busca:             # LinkedIn sem login, vagas REMOTAS no mundo (5 por dia em rodízio)
+    - '"entity resolution"'
+    - '"record linkage"'
+    - '"identity resolution"'
+    - '"data matching"'
+    - '"master data management"'
+    - '"deduplication"'
+    - '"golden record"'
+    - '"entity matching"'
+    - '"splink"'
+    - '"customer data platform" identity'
   papers:
     - "record linkage"
     - "entity resolution"
@@ -232,6 +243,27 @@ brasil:
     - "golden record"
     - "entity resolution"
     - "matching"
+  # LinkedIn SEM LOGIN (busca pública com descrição inteira). 8 termos por dia em rodízio, vagas da última semana.
+  linkedin_busca:
+    - '"record linkage"'
+    - '"entity resolution"'
+    - '"deduplicação"'
+    - '"resolução de entidades"'
+    - '"golden record"'
+    - '"dados mestres"'
+    - '"integração de dados"'
+    - '"migração de dados"'
+    - '"qualidade de dados"'
+    - '"data matching"'
+    - '"identity resolution"'
+    - '"master data"'
+    - '"data quality"'
+    - '"data integration"'
+    - '"unificação de cadastros"'
+    - '"cruzamento de dados"'
+  linkedin_busca_por_dia: 8
+  linkedin_busca_dias: 7
+  linkedin_max_descricoes: 40
   rede_termos:                  # pessoas do Brasil para seguir
     - "record linkage"
     - "linkage de dados"

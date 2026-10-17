@@ -209,9 +209,20 @@ def collect(cfg: dict) -> list[dict]:
     bcfg = cfg.get("brasil", {})
     c2 = copy.deepcopy(cfg)
     c2["companies"] = bcfg.get("companies", {})
+    # não reabre no LinkedIn a descrição de vaga que já julgamos ou que já está na lista
+    from dedup import keys
+
+    seen_br = Seen(SEEN)
+    known = {_norm_url(j["url"]) for j in open_jobs.load(OPEN) + job_archive.load(ARCHIVE)}
+    ja_vi = lambda url: _norm_url(url) in known or keys({"tipo": "vaga", "url": url, "titulo": ""})[0] in seen_br.data
+
+    def linkedin_guest_br(c):
+        return brasil_jobs.linkedin_guest_br(c, ja_vi)
+
     out = []
     for fn, c in ((brasil_jobs.inhire, cfg), (brasil_jobs.gupy, cfg), (brasil_jobs.google_jobs_br, cfg),
-                  (brasil_jobs.linkedin_jobs_br, cfg), (jobs.greenhouse, c2), (jobs.lever, c2), (jobs.ashby, c2)):
+                  (brasil_jobs.linkedin_jobs_br, cfg), (linkedin_guest_br, cfg),
+                  (jobs.greenhouse, c2), (jobs.lever, c2), (jobs.ashby, c2)):
         try:
             got = fn(c)
             log.info("brasil/%s: %d", fn.__name__, len(got))

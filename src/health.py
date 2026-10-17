@@ -27,7 +27,7 @@ MINIMOS = {
     "linkedin/posts": 3, "network/perfis": 1,
 }
 # sem chave de API o Semantic Scholar recusa (429) quase sempre; Adzuna só com chave; HN depende do mês
-OPCIONAIS = {"papers/semantic_scholar", "jobs/adzuna", "jobs/hn_who_is_hiring", "papers/arxiv"}
+OPCIONAIS = {"papers/semantic_scholar", "jobs/adzuna", "jobs/hn_who_is_hiring", "papers/arxiv", "jobs/linkedin_guest"}
 NOMES = {
     "jobs/greenhouse": "Vagas Greenhouse", "jobs/lever": "Vagas Lever", "jobs/ashby": "Vagas Ashby",
     "jobs/remotive": "Vagas Remotive", "jobs/remoteok": "Vagas RemoteOK", "jobs/himalayas": "Vagas Himalayas",

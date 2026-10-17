@@ -296,8 +296,22 @@ def social_posts(cfg):
     return out
 
 
+def linkedin_guest(cfg):
+    """LinkedIn sem login (busca pública): vagas REMOTAS no mundo com os termos do nicho, descrição inteira."""
+    from sources import linkedin_guest as lg
+
+    terms = cfg["queries"].get("linkedin_busca") or cfg["queries"]["jobs"]
+    n = cfg.get("linkedin_busca_por_dia", 5)
+    start = (date.today().toordinal() * n) % len(terms)
+    today = [terms[(start + i) % len(terms)] for i in range(min(n, len(terms)))]
+    title = re.compile(r"(data|dados|engineer|scientist|analyst|developer|mdm|matching|linkage|resolution|identity|"
+                       r"quality|integration|machine learning|\bml\b|\bai\b)", re.I)
+    return lg.search_jobs(today, remote=True, days=7, want_title=title, max_details=25,
+                          source="LinkedIn Jobs (remoto)")
+
+
 SOURCES = [adzuna, remoteok, remotive, greenhouse, lever, ashby, hn_who_is_hiring, serpapi_google_jobs,
-           gupy, himalayas, jobicy, workable, weworkremotely, social_posts]
+           gupy, himalayas, jobicy, workable, weworkremotely, social_posts, linkedin_guest]
 
 
 def collect(cfg: dict) -> list[dict]:
