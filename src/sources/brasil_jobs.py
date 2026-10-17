@@ -143,18 +143,30 @@ def google_jobs_br(cfg: dict) -> list[dict]:
 
 # ---------------------------------------------------------------- vagas do LinkedIn (sem login)
 def linkedin_jobs_br(cfg: dict) -> list[dict]:
+    """Dias pares: vagas (br.linkedin.com/jobs/view). Dias ímpares: POSTS de vaga no feed
+    (é onde recrutadores e times anunciam, ex.: "vaga de estágio no time de Importação... integração de dados")."""
     from sources import websearch
 
     terms = cfg.get("brasil", {}).get("linkedin_termos", [])
     if not terms:
         return []
-    term = terms[date.today().toordinal() % len(terms)]
+    day = date.today().toordinal()
+    term = terms[(day // 2) % len(terms)]
+    if day % 2 == 0:
+        found = websearch.cascade([
+            ("ddg", f'"{term}" site:br.linkedin.com/jobs/view', None),
+            ("google", f'"{term}" site:br.linkedin.com/jobs/view/', "qdr:m"),
+        ], lambda r: "linkedin.com/jobs/view" in r["url"], want=5, label="brasil/linkedin")
+        return [item("vaga", re.sub(r"\s*\|\s*LinkedIn.*$", "", r["titulo"]), r["url"].split("?")[0], empresa="",
+                     local="Brasil", fonte="LinkedIn Jobs (Brasil)", texto=r["texto"]) for r in found]
+    hiring = '("vaga" OR "estamos contratando" OR "oportunidade" OR "contratando")'
     found = websearch.cascade([
-        ("ddg", f'"{term}" site:br.linkedin.com/jobs/view', None),
-        ("google", f'"{term}" site:br.linkedin.com/jobs/view/', "qdr:m"),
-    ], lambda r: "linkedin.com/jobs/view" in r["url"], want=5, label="brasil/linkedin")
-    return [item("vaga", re.sub(r"\s*\|\s*LinkedIn.*$", "", r["titulo"]), r["url"].split("?")[0], empresa="",
-                 local="Brasil", fonte="LinkedIn Jobs (Brasil)", texto=r["texto"]) for r in found]
+        ("ddg", f'"{term}" vaga site:linkedin.com/posts', "qdr:m"),
+        ("google", f'"{term}" {hiring} site:linkedin.com/posts/', "qdr:w"),
+    ], lambda r: "linkedin.com/posts/" in r["url"] or "/feed/update/" in r["url"], want=5,
+        label="brasil/linkedin_posts")
+    return [item("vaga", r["titulo"], r["url"].split("?")[0], empresa="", local="Brasil",
+                 fonte="Post · LinkedIn (Brasil)", texto=r["texto"], social=True) for r in found]
 
 
 SOURCES = [inhire, gupy, google_jobs_br, linkedin_jobs_br]

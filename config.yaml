@@ -190,7 +190,11 @@ brasil:
   inhire:                       # empresas na InHire (API pública); novas são descobertas sozinhas
     [brq, neoway, semantix, dataside, xp, cielo, deloitte, kpmg, db1, dtidigital, lyncas, olist, contaazul,
      dock, alelo, vr, unico, cora, matera, involves, klavi, sicredi, magalu, raiadrogasil, celcoin,
-     grupoboticario, via, sulamerica, bradesco, southsystem]
+     grupoboticario, via, sulamerica, bradesco, southsystem,
+     algar, alice, amaro, carreiras, ciandt, cogna, contabilizei, creditas, dafiti, dlocal, ebanx, falconi,
+     fcamara, fiap, flash, frete, gerdau, idwall, ifood, kiwify, linx, loft, loggi, mercos, nibo, nomad,
+     ntconsult, nubank, rentcars, riachuelo, rocketseat, stone, sysmap, totvs, tray, ultragaz, unidas, vitru,
+     votorantim, warren, zenvia, zup]
   gupy_titles:                  # a Gupy busca só no título: trazemos as vagas de dados e o filtro lê a descrição
     - "cientista de dados"
     - "engenheiro de dados"
@@ -215,8 +219,13 @@ brasil:
     - "matching probabilístico"
     - "unificação de cadastros"
     - "dados mestres MDM matching"
+    - "integração de dados"
+    - "migração de dados"
+    - "consolidação de bases de dados"
   google_jobs_por_dia: 2
-  linkedin_termos:              # vagas do LinkedIn Brasil (1 por dia em rodízio)
+  linkedin_termos:              # vagas e POSTS de vaga do LinkedIn Brasil (1 por dia em rodízio, alternando)
+    - "integração de dados"
+    - "migração de dados"
     - "deduplicação"
     - "record linkage"
     - "resolução de identidade"

@@ -7,7 +7,8 @@
     "local": "Remoto · Brasil",
     "fonte": "InHire",
     "publicada_em": "2026-10-13",
-    "score": 9,
+    "score": 10,
+    "categoria": "linkage",
     "termos": [
       "deduplicacao",
       "golden record",
@@ -44,19 +45,1457 @@
     "patrocina_visto": null,
     "contratacao": "clt_ou_fulltime",
     "ingles": "nao_exigido",
-    "foco_er": 0.9,
+    "foco_er": 0.8,
+    "requisitos_estimados": true,
+    "encaixe": 0.88,
+    "compat_detalhe": {
+      "habilidades": 85,
+      "senioridade": 100,
+      "local": 100,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível pleno",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "BigQuery"
+      ],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Dados Pleno",
+    "url": "https://riachuelo.inhire.app/vagas/830078b9-2dd3-40f9-afcd-338e0ad89b7d/analista-de-dados-pleno",
+    "empresa": "Riachuelo",
+    "local": "Remoto · Brasil",
+    "fonte": "InHire",
+    "publicada_em": "2026-10-01",
+    "score": 3,
+    "categoria": "linkage",
+    "termos": [
+      "deduplicacao",
+      "golden record"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Golden Record",
+        "Databricks",
+        "PySpark",
+        "Python",
+        "Azure",
+        "Git",
+        "ETL",
+        "MDM",
+        "SQL"
+      ],
+      "desejaveis": [
+        "Airflow",
+        "Braze",
+        "AWS",
+        "S3"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "pleno",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.8,
+    "requisitos_estimados": true,
+    "encaixe": 0.71,
+    "compat_detalhe": {
+      "habilidades": 59,
+      "senioridade": 100,
+      "local": 100,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível pleno",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Azure"
+      ],
+      "parciais": [
+        "Databricks"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Estágio em Engenharia de Dados",
+    "url": "https://carreiras.inhire.app/vagas/d06a2962-7a4c-45a8-8b2b-3bc982d859a1/est-gio-em-engenharia-de-dados",
+    "empresa": "InHire",
+    "local": "Remoto · Brasil",
+    "fonte": "InHire",
+    "publicada_em": "2026-10-14",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "dados historicos",
+      "integracao de dados",
+      "limpeza de dados",
+      "mapeamento de campos"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "ETL",
+        "SQL",
+        "R"
+      ],
+      "desejaveis": [
+        "Airflow",
+        "dbt"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.66,
+    "compat_detalhe": {
+      "habilidades": 88,
+      "senioridade": 85,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Jr. Data Quality Analyst (Remote) - Afirmativa para Pessoas com Deficiência (PcD)",
+    "url": "https://involves.inhire.app/vagas/0b8c43c5-9feb-4eec-b91b-2fa5690a1c4c/jr-data-quality-analyst-remote-afirmativa-para-pessoas-com-defici-ncia-pcd",
+    "empresa": "Involves",
+    "local": "Remoto · Brasil",
+    "fonte": "InHire",
+    "publicada_em": "2026-10-16",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "data quality"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Data Quality",
+        "IA"
+      ],
+      "desejaveis": [
+        "Claude"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "junior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.61,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 100,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível junior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [],
+      "parciais": [
+        "IA"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Especialista Master Data | São Paulo-SP",
+    "url": "https://pageoutsourcingbr.gupy.io/job/eyJqb2JJZCI6MTI0NDU1NjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Michael Page | Enterprise Solutions 2",
+    "local": "São Paulo, São Paulo (híbrido)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-09-09",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "data cleansing",
+      "mapeamento de dados",
+      "padronizacao de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "master data management",
+        "Data Mapping",
+        "Power BI",
+        "Azure",
+        "MDM",
+        "SQL"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": 3,
+    "senioridade": "nao_informado",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.8,
+    "requisitos_estimados": true,
+    "encaixe": 0.56,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 100,
+      "local": 85,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI",
+        "Azure"
+      ],
+      "parciais": [
+        "master data management"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista Qualidade de Dados JR",
+    "url": "https://unimedcnu.gupy.io/job/eyJqb2JJZCI6MTI2MzQyMzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Unimed CNU",
+    "local": "São Paulo, São Paulo (híbrido)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-09-29",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "cruzamento de dados",
+      "padronizacao de dados",
+      "qualidade de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": [
+        "modelagem de dados",
+        "Databricks",
+        "PySpark",
+        "Python",
+        "Azure",
+        "AWS",
+        "SQL"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "junior",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.55,
+    "compat_detalhe": {
+      "habilidades": 64,
+      "senioridade": 100,
+      "local": 85,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível junior",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "[Job - 30900] Master Data Developer (Amazon Neptune), Brazil",
+    "url": "https://himalayas.app/companies/ci-t/jobs/job-30900-master-data-developer-amazon-neptune-brazil",
+    "empresa": "CI&T",
+    "local": "Remoto · Brazil",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-08-20",
+    "score": 4,
+    "categoria": "linkage",
+    "termos": [
+      "deduplication",
+      "entity matching",
+      "entity resolution",
+      "fuzzy matching"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Machine Learning",
+        "Entity Matching",
+        "Amazon Neptune",
+        "fuzzy matching",
+        "Deduplication",
+        "Retrieval",
+        "MarTech",
+        "Python"
+      ],
+      "desejaveis": [
+        "graph databases",
+        "AWS"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.75,
+    "requisitos_estimados": true,
+    "encaixe": 0.46,
+    "compat_detalhe": {
+      "habilidades": 47,
+      "senioridade": 85,
+      "local": 100,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Amazon Neptune",
+        "MarTech"
+      ],
+      "parciais": [
+        "Machine Learning",
+        "Retrieval"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista Dados Financeiros PL",
+    "url": "https://valgroup.gupy.io/job/eyJqb2JJZCI6MTI3MzYyMDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Vagas Valgroup",
+    "local": "Lorena, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-16",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "consolidacao de dados",
+      "integracao de dados",
+      "tratamento de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "modelagem de dados",
+        "Power BI",
+        "Python",
+        "SQL"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.45,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 85,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI"
+      ],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Inteligência de Dados Pleno",
+    "url": "https://porto.gupy.io/job/eyJqb2JJZCI6MTI0OTQxODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Porto",
+    "local": "Barueri, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-09-18",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "cruzamento de dados",
+      "dados cadastrais"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Power BI",
+        "Tableau",
+        "GCP",
+        "SQL"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "pleno",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.44,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 100,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível pleno",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Power BI",
+        "Tableau",
+        "GCP"
+      ],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "AI Senior Engineer - Graph",
+    "url": "https://himalayas.app/companies/able-co/jobs/ai-senior-engineer-graph",
+    "empresa": "Able",
+    "local": "Remoto · Argentina, Bolivia, Brazil, Chile, Colombia, Costa Rica, Cuba, Dominican Republic, Ecuador, El Salvador, Guatemala, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Trinidad and Tobago, Uruguay, Venezuela",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-10-07",
+    "score": 2,
+    "categoria": "linkage",
+    "termos": [
+      "deduplication",
+      "entity resolution"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Data Pipelines",
+        "Deduplication",
+        "Cypher",
+        "Python",
+        "Kafka",
+        "Neo4j",
+        "ETL",
+        "RAG"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": 4,
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.25,
+    "requisitos_estimados": true,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 80,
+      "local": 100,
+      "ingles": 85,
+      "foco": 89,
+      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Cypher",
+        "Kafka",
+        "Neo4j",
+        "RAG"
+      ],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer (Snowflake)",
+    "url": "https://himalayas.app/companies/massive-rocket/jobs/senior-data-engineer-snowflake-4845652708",
+    "empresa": "Massive Rocket",
+    "local": "Remoto · Brazil",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-09-20",
+    "score": 2,
+    "categoria": "linkage",
+    "termos": [
+      "customer 360",
+      "identity resolution"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Identity resolution",
+        "Data Governance",
+        "Data Quality",
+        "Snowflake",
+        "Braze",
+        "ETL",
+        "dbt",
+        "SQL"
+      ],
+      "desejaveis": [
+        "mParticle",
+        "Segment"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.75,
+    "requisitos_estimados": true,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 54,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "nível senior",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "Braze"
+      ],
+      "parciais": [
+        "Data Governance",
+        "Snowflake"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista Qualidade de Dados SR",
+    "url": "https://unimedcnu.gupy.io/job/eyJqb2JJZCI6MTI2MzQxODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Unimed CNU",
+    "local": "São Paulo, São Paulo (híbrido)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-09-29",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "padronizacao de dados",
+      "qualidade de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "modelagem de dados",
+        "Delta Lake",
+        "Databricks",
+        "Snowflake",
+        "PySpark",
+        "Python",
+        "Azure",
+        "AWS",
+        "ETL",
+        "SQL"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.42,
+    "compat_detalhe": {
+      "habilidades": 65,
+      "senioridade": 75,
+      "local": 85,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Azure",
+        "AWS"
+      ],
+      "parciais": [
+        "Delta Lake",
+        "Databricks",
+        "Snowflake"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Arquiteto de Dados Especialista AWS",
+    "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTEzMTkxMjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Grupo SysMap",
+    "local": "São Paulo, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-05-19",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "integracao de dados",
+      "qualidade de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "modelagem de dados",
+        "Machine Learning",
+        "Step Functions",
+        "Redshift",
+        "Airflow",
+        "PySpark",
+        "Python",
+        "Kafka",
+        "AWS",
+        "ETL",
+        "dbt",
+        "SQL",
+        "S3",
+        "IA"
+      ],
+      "desejaveis": [
+        "Data Quality"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.42,
+    "compat_detalhe": {
+      "habilidades": 66,
+      "senioridade": 85,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Step Functions",
+        "Kafka",
+        "AWS",
+        "S3"
+      ],
+      "parciais": [
+        "Machine Learning",
+        "Airflow",
+        "IA"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Dados e Insights Sênior",
+    "url": "https://porto.gupy.io/job/eyJqb2JJZCI6MTIzNzcyMzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Porto",
+    "local": "São Paulo, São Paulo (presencial)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-08-31",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "consolidacao de dados",
+      "padronizacao de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Power BI",
+        "Tableau",
+        "IA"
+      ],
+      "desejaveis": [
+        "modelagem de dados",
+        "R"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.38,
+    "compat_detalhe": {
+      "habilidades": 38,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Power BI",
+        "Tableau"
+      ],
+      "parciais": [
+        "IA"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer - São Paulo (Contract)",
+    "url": "https://jobs.workable.com/view/hd3xCTPUautSrA47L1mSSD/hybrid-senior-data-engineer---s%C3%A3o-paulo-(contract)-in-s%C3%A3o-paulo-at-first-help-financial",
+    "empresa": "First Help Financial",
+    "local": "São Paulo, Brazil",
+    "fonte": "Workable",
+    "publicada_em": "2026-10-16",
+    "score": 4,
+    "categoria": "linkage",
+    "termos": [
+      "entity resolution",
+      "master data management",
+      "survivorship"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "master data management",
+        "Entity Resolution",
+        "Data Governance",
+        "Data Modeling",
+        "Data Quality",
+        "Delta Lake",
+        "Databricks",
+        "Terraform",
+        "Airflow",
+        "PySpark",
+        "Python",
+        "MLOps",
+        "AWS",
+        "dbt",
+        "RAG"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "requisitos_estimados": true,
+    "encaixe": 0.37,
+    "compat_detalhe": {
+      "habilidades": 54,
+      "senioridade": 75,
+      "local": 85,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Terraform",
+        "AWS",
+        "RAG"
+      ],
+      "parciais": [
+        "master data management",
+        "Data Governance",
+        "Delta Lake",
+        "Databricks",
+        "Airflow",
+        "MLOps"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "BI AND DATA QUALITY ANALYST I | CORPORATE RECORDS MG",
+    "url": "https://boards.greenhouse.io/inter/jobs/4736710005?gh_jid=4736710005",
+    "empresa": "inter",
+    "local": "Belo Horizonte, MG",
+    "fonte": "Greenhouse/inter",
+    "publicada_em": "2026-09-30",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "bases cadastrais",
+      "conciliacao de dados",
+      "data quality",
+      "qualidade de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Data Quality",
+        "Power BI",
+        "Tableau",
+        "SQL",
+        "IA"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.37,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI",
+        "Tableau"
+      ],
+      "parciais": [
+        "IA"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "[Job - 30900] Master Data Developer, Brazil",
+    "url": "https://jobs.lever.co/ciandt/51618054-a487-4ffe-a60f-78392ad250d0",
+    "empresa": "ciandt",
+    "local": "Brazil",
+    "fonte": "Lever/ciandt",
+    "publicada_em": "2026-08-17",
+    "score": 4,
+    "categoria": "linkage",
+    "termos": [
+      "deduplication",
+      "entity matching",
+      "entity resolution",
+      "fuzzy matching"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Machine Learning",
+        "Entity Matching",
+        "fuzzy matching",
+        "Deduplication",
+        "Retrieval",
+        "MarTech",
+        "Python"
+      ],
+      "desejaveis": [
+        "graph databases",
+        "Amazon Neptune",
+        "AWS"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.75,
     "requisitos_estimados": true,
     "encaixe": 0.36,
     "compat_detalhe": {
       "habilidades": 57,
       "senioridade": 85,
-      "local": 60,
+      "local": 75,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "MarTech"
+      ],
+      "parciais": [
+        "Machine Learning",
+        "Retrieval"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Dados de FP&A SR",
+    "url": "https://nitro.gupy.io/job/eyJqb2JJZCI6MTI2OTM3MDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Nitro",
+    "local": "São Paulo, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-15",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de bases",
+      "integracao de dados",
+      "padronizacao de dados",
+      "qualidade de dados",
+      "tratamento de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "modelagem de dados",
+        "Power BI",
+        "IA"
+      ],
+      "desejaveis": [
+        "Python",
+        "SQL"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.36,
+    "compat_detalhe": {
+      "habilidades": 62,
+      "senioridade": 75,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI"
+      ],
+      "parciais": [
+        "IA"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Governança de Dados Sênior",
+    "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1MjU2MjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Grupo SysMap",
+    "local": "Remoto (Brasil)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-09-18",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "migracao de dados",
+      "qualidade de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "master data management",
+        "modelagem de dados",
+        "Data Quality",
+        "Informatica",
+        "AWS",
+        "MDM",
+        "GCP",
+        "IA"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": 5,
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.25,
+    "requisitos_estimados": true,
+    "encaixe": 0.33,
+    "compat_detalhe": {
+      "habilidades": 43,
+      "senioridade": 60,
+      "local": 100,
+      "ingles": 100,
+      "foco": 89,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Informatica",
+        "AWS",
+        "GCP"
+      ],
+      "parciais": [
+        "master data management",
+        "IA"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "[Job-31838] Senior Data Analyst (Data Quality & Reporting), Brazil",
+    "url": "https://jobs.lever.co/ciandt/a0c0fa6c-3ce8-4604-b0fd-054eccad48ce",
+    "empresa": "ciandt",
+    "local": "Brazil",
+    "fonte": "Lever/ciandt",
+    "publicada_em": "2026-10-15",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "data quality"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Data Pipelines",
+        "Data Quality",
+        "MarTech",
+        "Azure",
+        "SQL"
+      ],
+      "desejaveis": [
+        "Databricks",
+        "Python",
+        "Spark"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.32,
+    "compat_detalhe": {
+      "habilidades": 66,
+      "senioridade": 75,
+      "local": 75,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "MarTech",
+        "Azure"
+      ],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "ASSISTENTE DE QUALIDADE DE DADOS",
+    "url": "https://vemprotimefarmarcas.gupy.io/job/eyJqb2JJZCI6MTE1OTY0ODEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "vemprotimefarmarcas",
+    "local": "São Paulo, São Paulo (presencial)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-07-27",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "qualidade de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL"
+      ],
+      "desejaveis": [
+        "Data Quality",
+        "Python",
+        "R"
+      ]
+    },
+    "anos_experiencia_min": 10,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.26,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 40,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "pede 10+ anos (você tem 2.8)",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Engenharia de Machine Learning Sênior - Área Inteligência Artificial",
+    "url": "https://vemproitau.gupy.io/job/eyJqb2JJZCI6MTI1Njk3NjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Itaú Unibanco",
+    "local": "São Paulo, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-09-28",
+    "score": 1,
+    "categoria": "linkage",
+    "termos": [
+      "resolucao de entidades"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Machine Learning",
+        "Deep Learning",
+        "Transformers",
+        "embeddings",
+        "TensorFlow",
+        "Retrieval",
+        "Terraform",
+        "PyTorch",
+        "Python",
+        "Azure",
+        "AWS",
+        "RAG",
+        "GCP",
+        "IA"
+      ],
+      "desejaveis": [
+        "LangGraph",
+        "LangChain",
+        "LLMs"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.25,
+    "requisitos_estimados": true,
+    "encaixe": 0.23,
+    "compat_detalhe": {
+      "habilidades": 17,
+      "senioridade": 75,
+      "local": 75,
       "ingles": 100,
       "foco": 98,
       "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
       "faltam": [
-        "BigQuery"
+        "Transformers",
+        "TensorFlow",
+        "Terraform",
+        "PyTorch",
+        "Azure",
+        "AWS",
+        "RAG",
+        "GCP"
       ],
       "parciais": [
         "SQL"
@@ -64,10 +1503,142 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
-    "nova": false,
-    "juiz": "groq",
-    "resumo": "Cientista de Dados Pleno na BRQ, responsável pelo núcleo analítico de resolução de identidade, desenvolvendo matching, deduplicação e Golden Record.",
-    "confianca": 0.99
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Dados | Financeiros",
+    "url": "https://dannemann.gupy.io/job/eyJqb2JJZCI6MTI2NjIxODgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Dannemann",
+    "local": "Rio de Janeiro, Rio de Janeiro",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-01",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "consolidacao de bases",
+      "cruzamento de dados"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Power BI"
+      ],
+      "desejaveis": []
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "nao_exigido",
+    "foco_er": 0.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.19,
+    "compat_detalhe": {
+      "habilidades": 0,
+      "senioridade": 85,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI"
+      ],
+      "parciais": [],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "[Job - 32120] Principal Data Developer, Brazil",
+    "url": "https://jobs.lever.co/ciandt/a2ab7cb3-9304-4ddc-8d0d-847028bcc375",
+    "empresa": "ciandt",
+    "local": "Brazil",
+    "fonte": "Lever/ciandt",
+    "publicada_em": "2026-10-13",
+    "score": 1,
+    "categoria": "linkage",
+    "termos": [
+      "entity resolution"
+    ],
+    "nao_verificado": true,
+    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Infrastructure as Code",
+        "Entity Resolution",
+        "Machine Learning",
+        "Data Pipelines",
+        "Data Modeling",
+        "Databricks",
+        "Terraform",
+        "AWS CDK",
+        "MarTech",
+        "Azure",
+        "ETL",
+        "GCP"
+      ],
+      "desejaveis": [
+        "AWS"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "staff/principal",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM",
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "requisitos_estimados": true,
+    "encaixe": 0.14,
+    "compat_detalhe": {
+      "habilidades": 27,
+      "senioridade": 45,
+      "local": 75,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível staff/principal",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Infrastructure as Code",
+        "Terraform",
+        "AWS CDK",
+        "MarTech",
+        "Azure",
+        "GCP"
+      ],
+      "parciais": [
+        "Machine Learning",
+        "Databricks"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-16",
+    "nova": true
   }
 ]

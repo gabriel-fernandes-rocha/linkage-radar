@@ -52,3 +52,31 @@ def test_user_level_overrides_ai(tmp_path, monkeypatch):
     (tmp_path / "niveis.json").write_text(json.dumps({"BigQuery": "tem"}), "utf-8")
     cache = compat.apply_declared({"bigquery": {"nome": "BigQuery", "nivel": "nao"}}, {})
     assert cache["bigquery"]["nivel"] == "tem"
+
+
+INHIRE_ESTAGIO = {
+    "tipo": "vaga", "titulo": "Estágio em Engenharia de Dados", "empresa": "InHire", "fonte": "InHire",
+    "local": "Remoto · Brasil", "url": "https://carreiras.inhire.app/vagas/d06a2962/estagio-em-engenharia-de-dados",
+    "texto": "Você vai atuar no time de Importação, apoiando o processo de migração e integração de dados históricos "
+             "de sistemas externos. Construir scripts de ETL. Realizar o mapeamento de campos entre sistemas. Apoiar "
+             "no tratamento e limpeza de dados, garantindo consistência e qualidade antes da importação."}
+
+
+def test_data_integration_job_is_captured():
+    """Vaga do post do LinkedIn que o radar perdeu (integração/migração de dados, estágio)."""
+    it = dict(INHIRE_ESTAGIO)
+    assert brasil.passes(it) and it["categoria"] == "integracao" and brasil.strong(dict(INHIRE_ESTAGIO))
+
+
+def test_hiring_post_snippet_is_captured():
+    post = {"tipo": "vaga", "titulo": "Letícia Freitas on LinkedIn: Pessoal de Dados, vaga de estágio na InHire",
+            "texto": "estamos com uma vaga de estágio no time de Importação, trabalhando com Python, SQL e integração "
+                     "de dados.", "fonte": "Post · LinkedIn (Brasil)", "local": "Brasil", "social": True,
+            "url": "https://www.linkedin.com/posts/x_activity-1"}
+    assert brasil.passes(dict(post))
+
+
+def test_plain_bi_job_is_not_integration():
+    bi = {"tipo": "vaga", "titulo": "Analista de BI", "fonte": "Gupy", "local": "SP", "url": "u3",
+          "texto": "Criar dashboards em Power BI com qualidade de dados."}
+    assert not brasil.passes(bi)

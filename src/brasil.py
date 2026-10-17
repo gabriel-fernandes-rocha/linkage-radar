@@ -58,23 +58,54 @@ TEMA = [
 # termos que sozinhos são fracos (MDM no Brasil muitas vezes é cadastro manual no ERP)
 FRACOS = {"blocking", "dedup", "levenshtein", "geocodificacao", "master data management", "gestao de dados mestres",
           "higienizacao de dados", "customer 360", "cliente 360"}
+# 2ª família: integração/migração/consolidação de dados de várias fontes (parente próximo do linkage)
+INTEGRACAO = [
+    "integracao de dados", "data integration", "migracao de dados", "data migration", "importacao de dados",
+    "mapeamento de campos", "mapeamento de dados", "de-para", "de/para", "consolidacao de dados",
+    "consolidacao de bases", "unificacao de bases", "unificacao de dados", "cruzamento de bases",
+    "cruzamento de dados", "integracao de bases", "conciliacao de dados", "reconciliacao de dados",
+    "data reconciliation", "limpeza de dados", "data cleansing", "data cleaning", "padronizacao de dados",
+    "normalizacao de dados", "enriquecimento de dados", "dados cadastrais", "base cadastral", "bases cadastrais",
+    "qualidade de dados", "data quality", "consistencia de dados", "tratamento de dados", "dados historicos",
+]
+INT_FRACOS = {"qualidade de dados", "data quality", "tratamento de dados", "integracao de dados", "data integration",
+              "dados historicos"}
 TECH_TITLE = re.compile(r"(dados|data|analytics|cientista|engenheir|scientist|engineer|machine learning|\bml\b|"
                         r"\bia\b|\bai\b|mdm|arquitet|desenvolvedor|developer|governan|qualidade|estat[ií]stic|"
                         r"\bbi\b|intelig[eê]ncia)", re.I)
-NEG_TITLE = re.compile(r"(vendas|sales|comercial|account executive|recrutador|recruiter|estagi[aá]rio|"
+NEG_TITLE = re.compile(r"(vendas|sales|comercial|account executive|recrutador|recruiter|"
                        r"jovem aprendiz|auxiliar|assistente administrativo|motorista|atendente)", re.I)
 BR_LOCAL = re.compile(r"(brasil|brazil|\bbr\b|s[aã]o paulo|rio de janeiro|belo horizonte|curitiba|porto alegre|"
                       r"recife|salvador|florian[oó]polis|campinas|bras[ií]lia|fortaleza|goi[aâ]nia|manaus|bel[eé]m|"
                       r"vit[oó]ria|natal|jo[aã]o pessoa|macei[oó]|aracaju|teresina|s[aã]o lu[ií]s|cuiab[aá]|"
                       r"campo grande|londrina|joinville|blumenau|ribeir[aã]o preto|sorocaba|santos|\b(sp|rj|mg|pr|"
                       r"rs|sc|ba|pe|ce|df|go)\b|latam|latin america|am[eé]rica latina)", re.I)
-BR_SOURCES = ("Gupy", "InHire", "Google Jobs (Brasil)", "LinkedIn Jobs (Brasil)")
+BR_SOURCES = ("Gupy", "InHire", "Google Jobs (Brasil)", "LinkedIn Jobs (Brasil)", "Post · LinkedIn (Brasil)")
 
 
 def hits(it: dict) -> tuple[list[str], list[str]]:
     """(termos no título, termos no texto) distintos."""
     t, x = normalize(it.get("titulo", "")), normalize(it.get("texto", "") or "")
     return [k for k in TEMA if _has(k, t)], [k for k in TEMA if _has(k, x)]
+
+
+VAGA_POST = re.compile(r"(vaga|contratando|oportunidade|hiring|est[aá]gio|candidat)", re.I)
+
+
+def hits_int(it: dict) -> tuple[list[str], list[str]]:
+    t, x = normalize(it.get("titulo", "")), normalize(it.get("texto", "") or "")
+    return [k for k in INTEGRACAO if _has(k, t)], [k for k in INTEGRACAO if _has(k, x)]
+
+
+def integracao(it: dict, rigido: bool = False) -> bool:
+    """Vaga técnica de integração/migração/consolidação de dados. rigido=True: regra da contingência sem IA."""
+    if not TECH_TITLE.search(it.get("titulo", "")):
+        return False
+    ht, hx = hits_int(it)
+    fortes = [k for k in hx if k not in INT_FRACOS]
+    if rigido:
+        return bool(ht) or len(hx) >= 3 or (len(hx) >= 2 and len(fortes) >= 2)
+    return bool(ht) or len(hx) >= 3 or (len(hx) >= 2 and bool(fortes))
 
 
 def no_brasil(it: dict) -> bool:
@@ -94,15 +125,21 @@ def passes(it: dict) -> bool:
         return False
     ht, hx = hits(it)
     strong_x = [k for k in hx if k not in FRACOS]
-    it["score"] = 3 * len(ht) + len(set(hx))
-    it["termos"] = sorted(set(ht + hx))[:8]
-    return bool(ht) or bool(strong_x) or len(hx) >= 2
+    hti, hxi = hits_int(it)
+    it["score"] = 3 * len(ht) + len(set(hx)) + len(set(hti + hxi)) // 2
+    linkage = bool(ht) or bool(strong_x) or len(hx) >= 2
+    it["categoria"] = "linkage" if linkage else "integracao"
+    it["termos"] = sorted(set(ht + hx))[:8] if linkage else sorted(set(hti + hxi))[:8]
+    if it.get("social"):  # post: só um trecho do texto, que a busca já filtrou pelo termo
+        return bool(ht or hx or hti or hxi) and bool(VAGA_POST.search(it.get("texto", "") + " " + it["titulo"]))
+    return linkage or integracao(it)
 
 
 def central(it: dict) -> bool:
     """Regra para juízes reserva: tema no título ou 2+ termos fortes no texto."""
     ht, hx = hits(it)
-    return bool([k for k in ht if k not in FRACOS]) or len([k for k in hx if k not in FRACOS]) >= 2
+    return (bool([k for k in ht if k not in FRACOS]) or len([k for k in hx if k not in FRACOS]) >= 2
+            or integracao(it, rigido=True))
 
 
 # termos tão específicos que UMA menção já indica o tema (para não perder vaga quando nenhuma IA responde)
@@ -116,11 +153,14 @@ ESPECIFICOS = {"entity resolution", "resolucao de entidades", "resolucao de enti
 
 def strong(it: dict) -> bool:
     """Contingência sem IA: vaga técnica com o tema claramente presente."""
+    if it.get("social"):
+        return passes(dict(it))
     if not TECH_TITLE.search(it.get("titulo", "")):
         return False
     ht, hx = hits(it)
     fortes = [k for k in hx if k not in FRACOS]
-    return bool([k for k in ht if k not in FRACOS]) or len(fortes) >= 2 or any(k in ESPECIFICOS for k in fortes)
+    return (bool([k for k in ht if k not in FRACOS]) or len(fortes) >= 2 or any(k in ESPECIFICOS for k in fortes)
+            or integracao(it, rigido=True))
 
 
 SYSTEM = """Você avalia itens para a aba BRASIL de um engenheiro de dados especialista em entity resolution e \
@@ -132,8 +172,8 @@ Regras por tipo:
 - vaga: aprove se a vaga for no Brasil (ou remota aceitando o Brasil) E envolver entity resolution ou variações: \
 resolução de identidade/entidades, record linkage, data matching, matching determinístico/probabilístico, \
 deduplicação de registros, unificação de cadastros, golden record, MDM com regras de match/merge, Customer 360 / \
-visão única do cliente, identity graph, fuzzy matching de nomes/endereços. Reprove: vendas, suporte, vagas que só \
-citam o termo de passagem na descrição da empresa, e "dados mestres" que é só cadastro manual de materiais/\
+visão única do cliente, identity graph, fuzzy matching de nomes/endereços. TAMBÉM aprove vagas técnicas de INTEGRAÇÃO DE DADOS de várias fontes/sistemas: migração e importação de dados entre sistemas, mapeamento de campos (de-para), consolidação/unificação/cruzamento de bases, limpeza, padronização e qualidade de dados cadastrais, inclusive estágio e júnior. Reprove: vendas, suporte, vagas que só \
+citam o termo de passagem na descrição da empresa, BI/relatórios financeiros (FP&A) em que integração é só detalhe, e "dados mestres" que é só cadastro manual de materiais/\
 fornecedores no ERP (sem matching, deduplicação, regras ou qualidade de dados). Não reprove por senioridade.
 - vaga vinda de POST em rede social: aprove só se anunciar uma vaga concreta e aberta com esse tema.
 - pessoa (perfil do LinkedIn): aprove se a pessoa for do Brasil (ou trabalhar em empresa brasileira) e trabalhar, \
@@ -228,7 +268,8 @@ def run(cfg: dict, day: str, raw_jobs: list[dict], use_llm: bool) -> dict:
             approved.append(it)
     for it in approved:
         it["trilha"] = "brasil"
-        it.setdefault("termos", hits(it)[0] + hits(it)[1])
+        if "categoria" not in it:
+            passes(it)  # preenche categoria e termos
 
     if use_llm:
         _safe("requisitos", lambda: requirements.extract(approved, cfg))

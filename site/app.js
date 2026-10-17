@@ -46,6 +46,8 @@ const jobHTML = (v, withAge = false) => `
     ${v.encaixe != null ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span></p>` : ""}
     ${compatHTML(v.compat_detalhe)}
     ${v.usa_er?.length ? `<p class="er">🔗 Usa o seu diferencial: ${v.usa_er.slice(0, 4).map(esc).join(", ")}</p>` : ""}
+    ${v.categoria ? `<p class="er">${v.categoria === "integracao" ? "🔄 Integração de dados" : "🔗 Linkage / entity resolution"}${
+      v.termos?.length ? `: ${v.termos.slice(0, 5).map(esc).join(", ")}` : ""}</p>` : ""}
     ${reqHTML(v.requisitos)}
     ${v.motivo ? `<p class="why">✔ ${esc(v.motivo)}</p>` : ""}
     <a class="btn" href="${safeUrl(v.url)}" target="_blank" rel="noopener">Ver vaga</a>`;
