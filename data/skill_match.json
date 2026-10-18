@@ -8,6 +8,16 @@
   "nivel": "6b9881e72cfb",
   "nome": "_perfil_hash"
  },
+ "activate unified audiences": {
+  "motivo": "Nenhuma experiência em ativação de audiências.",
+  "nivel": "nao",
+  "nome": "activate unified audiences"
+ },
+ "activation": {
+  "motivo": "Não há referência a processos de ativação.",
+  "nivel": "nao",
+  "nome": "activation"
+ },
  "adtech": {
   "motivo": "atua em saúde pública, não adtech",
   "nivel": "nao",
@@ -18,6 +28,21 @@
   "nivel": "nao",
   "nome": "Agent frameworks"
  },
+ "agile/scrum": {
+  "motivo": "não consta prática ou certificação Agile/Scrum",
+  "nivel": "nao",
+  "nome": "Agile/Scrum"
+ },
+ "ai": {
+  "motivo": "usa scikit-learn para matching probabilístico, mas não IA avançada",
+  "nivel": "parcial",
+  "nome": "AI"
+ },
+ "ai architectures": {
+  "motivo": "nenhuma experiência ou menção a arquiteturas de IA",
+  "nivel": "nao",
+  "nome": "AI architectures"
+ },
  "airflow": {
   "motivo": "faz pipelines ETL batch, falta ferramenta específica",
   "nivel": "parcial",
@@ -27,6 +52,11 @@
   "motivo": "sem evidência de grafo/Neptune",
   "nivel": "nao",
   "nome": "Amazon Neptune"
+ },
+ "analytics interfaces": {
+  "motivo": "Não desenvolve interfaces analíticas.",
+  "nivel": "nao",
+  "nome": "analytics interfaces"
  },
  "angular": {
   "motivo": "sem evidência de frontend",
@@ -43,10 +73,20 @@
   "nivel": "nao",
   "nome": "API REST"
  },
+ "apis": {
+  "motivo": "não há evidência de desenvolvimento ou consumo de APIs",
+  "nivel": "parcial",
+  "nome": "APIs"
+ },
  "athena": {
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "Athena"
+ },
+ "audience building": {
+  "motivo": "Não trabalha com construção de audiências.",
+  "nivel": "nao",
+  "nome": "audience building"
  },
  "aws": {
   "motivo": "nenhuma menção a cloud AWS",
@@ -72,6 +112,16 @@
   "motivo": "sem evidência de cloud Azure",
   "nivel": "nao",
   "nome": "Azure"
+ },
+ "azure data factory": {
+  "motivo": "não há menção ao uso do Azure Data Factory",
+  "nivel": "nao",
+  "nome": "Azure Data Factory"
+ },
+ "azure devops": {
+  "motivo": "não há evidência de uso do Azure DevOps",
+  "nivel": "nao",
+  "nome": "Azure DevOps"
  },
  "b2b company data": {
   "motivo": "trabalha com dados públicos de saúde, não B2B",
@@ -108,6 +158,11 @@
   "nivel": "nao",
   "nome": "Braze"
  },
+ "calculated insights": {
+  "motivo": "Nenhum trabalho de insights calculados descrito.",
+  "nivel": "nao",
+  "nome": "calculated insights"
+ },
  "candidate generation": {
   "motivo": "implícito no blocking/matching",
   "nivel": "tem",
@@ -138,30 +193,65 @@
   "nivel": "nao",
   "nome": "Clojure"
  },
+ "cloud": {
+  "motivo": "não há indicação de trabalho em ambiente cloud",
+  "nivel": "nao",
+  "nome": "cloud"
+ },
  "clustering": {
   "motivo": "resolução de entidades envolve clustering",
   "nivel": "tem",
   "nome": "clustering"
+ },
+ "control-m": {
+  "motivo": "não há referência ao uso do Control-M",
+  "nivel": "nao",
+  "nome": "Control-M"
  },
  "cpra": {
   "motivo": "sem menção a compliance de privacidade EUA",
   "nivel": "nao",
   "nome": "CPRA"
  },
+ "crm platforms (insider, salesforce, braze, adobe)": {
+  "motivo": "nenhum trabalho com plataformas CRM mencionado",
+  "nivel": "nao",
+  "nome": "CRM platforms (Insider, Salesforce, Braze, Adobe)"
+ },
  "ctv": {
   "motivo": "sem relação com connected TV",
   "nivel": "nao",
   "nome": "CTV"
+ },
+ "customer data modelling": {
+  "motivo": "Modelagem de dados de clientes implícita via ER.",
+  "nivel": "parcial",
+  "nome": "customer data modelling"
  },
  "customer data platform": {
   "motivo": "próximo de MDM/golden record, não CDP específico",
   "nivel": "parcial",
   "nome": "Customer Data Platform"
  },
+ "customer data platforms": {
+  "motivo": "Plataforma CDP não citada.",
+  "nivel": "nao",
+  "nome": "customer data platforms"
+ },
  "cypher": {
   "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
   "nome": "Cypher"
+ },
+ "dama dmbok": {
+  "motivo": "não demonstra conhecimento do framework DAMA DMBOK",
+  "nivel": "nao",
+  "nome": "DAMA DMBOK"
+ },
+ "dashboards": {
+  "motivo": "Não menciona criação de dashboards.",
+  "nivel": "nao",
+  "nome": "dashboards"
  },
  "data annotation": {
   "motivo": "sem evidência de rotulagem manual de dados",
@@ -173,6 +263,11 @@
   "nivel": "tem",
   "nome": "Data Classification"
  },
+ "data cloud": {
+  "motivo": "Não há menção a Data Cloud.",
+  "nivel": "nao",
+  "nome": "Data Cloud"
+ },
  "data enrichment": {
   "motivo": "integra fontes de dados, próximo a enriquecimento",
   "nivel": "parcial",
@@ -182,6 +277,11 @@
   "motivo": "qualidade de dados próxima a governança",
   "nivel": "parcial",
   "nome": "Data Governance"
+ },
+ "data lake": {
+  "motivo": "trabalha em grande infraestrutura de dados, possivelmente data lake",
+  "nivel": "parcial",
+  "nome": "Data Lake"
  },
  "data mapping": {
   "motivo": "faz normalização e integração de dados heterogêneos",
@@ -193,20 +293,40 @@
   "nivel": "tem",
   "nome": "Data Matching"
  },
+ "data modeling": {
+  "motivo": "não há descrição explícita de modelagem de dados",
+  "nivel": "parcial",
+  "nome": "Data modeling"
+ },
  "data normalization": {
   "motivo": "normalização faz parte explícita do pipeline",
   "nivel": "tem",
   "nome": "Data Normalization"
+ },
+ "data pipelines": {
+  "motivo": "Constrói e mantém pipelines de resolução de entidades em produção",
+  "nivel": "tem",
+  "nome": "Data Pipelines"
  },
  "data quality": {
   "motivo": "garantia de qualidade explícita no trabalho",
   "nivel": "tem",
   "nome": "Data Quality"
  },
+ "data reconciliation": {
+  "motivo": "deduplicação e matching são formas de reconciliação de dados",
+  "nivel": "parcial",
+  "nome": "Data reconciliation"
+ },
  "data review": {
   "motivo": "QA de matching próximo a revisão de dados",
   "nivel": "parcial",
   "nome": "Data Review"
+ },
+ "data streams": {
+  "motivo": "Só pipelines batch, não streams.",
+  "nivel": "nao",
+  "nome": "data streams"
  },
  "data transformation": {
   "motivo": "ETL e normalização fazem parte do pipeline",
@@ -218,15 +338,30 @@
   "nivel": "parcial",
   "nome": "Data Verification"
  },
+ "data warehouse": {
+  "motivo": "experiência em data warehouse implícita, mas não detalhada",
+  "nivel": "parcial",
+  "nome": "Data Warehouse"
+ },
  "databricks": {
   "motivo": "domina Spark, base próxima a Databricks",
   "nivel": "parcial",
   "nome": "Databricks"
  },
+ "databricks sql": {
+  "motivo": "nenhum uso de Databricks SQL mencionado",
+  "nivel": "nao",
+  "nome": "Databricks SQL"
+ },
  "dataset documentation": {
   "motivo": "sem evidência de documentação formal de datasets",
   "nivel": "nao",
   "nome": "Dataset Documentation"
+ },
+ "dbt": {
+  "motivo": "nenhum uso de dbt reportado",
+  "nivel": "nao",
+  "nome": "dbt"
  },
  "dedupe": {
   "motivo": "deduplicação é parte central do trabalho",
@@ -238,10 +373,25 @@
   "nivel": "tem",
   "nome": "Deduplication"
  },
+ "deep learning": {
+  "motivo": "Nenhuma experiência ou menção a frameworks de deep learning",
+  "nivel": "nao",
+  "nome": "Deep Learning"
+ },
  "delta lake": {
   "motivo": "usa Spark/data lake, próximo a Delta Lake",
   "nivel": "parcial",
   "nome": "Delta Lake"
+ },
+ "delta live tables": {
+  "motivo": "não há evidência de uso de Delta Live Tables",
+  "nivel": "nao",
+  "nome": "Delta Live Tables"
+ },
+ "derived analytics": {
+  "motivo": "Nenhuma análise derivada descrita.",
+  "nivel": "nao",
+  "nome": "derived analytics"
  },
  "deterministic matching": {
   "motivo": "usa matching determinístico no trabalho",
@@ -252,6 +402,11 @@
   "motivo": "usa Spark em produção para bilhões de registros",
   "nivel": "tem",
   "nome": "Distributed Data Processing"
+ },
+ "dlo/dmo models": {
+  "motivo": "Nenhuma experiência ou estudo mencionado.",
+  "nivel": "nao",
+  "nome": "DLO/DMO models"
  },
  "dynamodb": {
   "motivo": "sem evidência de NoSQL além de Elasticsearch",
@@ -273,15 +428,30 @@
   "nivel": "nao",
   "nome": "Encryption"
  },
+ "entity matching": {
+  "motivo": "Especialista em record linkage e matching probabilístico/determinístico",
+  "nivel": "tem",
+  "nome": "Entity Matching"
+ },
  "entity resolution": {
   "motivo": "foco central do trabalho",
   "nivel": "tem",
   "nome": "entity resolution"
  },
+ "erwin": {
+  "motivo": "não há menção ao Erwin",
+  "nivel": "nao",
+  "nome": "Erwin"
+ },
  "etl": {
   "motivo": "desenvolve pipeline completo de ingestão e processamento",
   "nivel": "tem",
   "nome": "ETL"
+ },
+ "etl/elt": {
+  "motivo": "constrói e mantém pipelines de ETL/ELT em produção",
+  "nivel": "tem",
+  "nome": "ETL/ELT"
  },
  "etom": {
   "motivo": "sem evidência de framework de processos telecom",
@@ -292,6 +462,11 @@
   "motivo": "avalia matching, falta framework formal de evaluation",
   "nivel": "parcial",
   "nome": "Evaluation harness"
+ },
+ "excel": {
+  "motivo": "não há referência ao uso de Excel",
+  "nivel": "nao",
+  "nome": "Excel"
  },
  "fellegi-sunter": {
   "motivo": "usa matching probabilístico, base Fellegi-Sunter",
@@ -327,6 +502,11 @@
   "motivo": "não há menção no currículo",
   "nivel": "nao",
   "nome": "Git"
+ },
+ "github actions": {
+  "motivo": "usa Git, mas não GitHub Actions explicitamente",
+  "nivel": "parcial",
+  "nome": "GitHub Actions"
  },
  "golden records": {
   "motivo": "conceito MDM próximo de deduplicação/resolução praticada",
@@ -488,6 +668,11 @@
   "nivel": "parcial",
   "nome": "Machine Learning"
  },
+ "marketing attribution": {
+  "motivo": "Atribuição de marketing não abordada.",
+  "nivel": "nao",
+  "nome": "marketing attribution"
+ },
  "martech": {
   "motivo": "sem evidência de marketing tech",
   "nivel": "nao",
@@ -507,6 +692,11 @@
   "motivo": "plataforma específica não usada",
   "nivel": "nao",
   "nome": "Match 360"
+ },
+ "match and reconciliation rules": {
+  "motivo": "Implementa regras de matching e merge.",
+  "nivel": "parcial",
+  "nome": "match and reconciliation rules"
  },
  "matching": {
   "motivo": "core da experiência profissional",
@@ -553,15 +743,30 @@
   "nivel": "nao",
   "nome": "Neptune"
  },
+ "next.js": {
+  "motivo": "Tecnologia front-end não citada.",
+  "nivel": "nao",
+  "nome": "Next.js"
+ },
  "nlp": {
   "motivo": "normalização textual e fuzzy matching próximos de NLP",
   "nivel": "parcial",
   "nome": "NLP"
  },
+ "node": {
+  "motivo": "Nenhum uso de Node indicado.",
+  "nivel": "nao",
+  "nome": "Node"
+ },
  "nosql": {
   "motivo": "usa Elasticsearch como NoSQL de busca",
   "nivel": "tem",
   "nome": "NoSQL"
+ },
+ "observability": {
+  "motivo": "não há menção a ferramentas de observabilidade",
+  "nivel": "nao",
+  "nome": "Observability"
  },
  "ocr": {
   "motivo": "sem evidência de processamento de imagens",
@@ -582,6 +787,11 @@
   "motivo": "parte do Fellegi-Sunter/matching probabilístico",
   "nivel": "tem",
   "nome": "pairwise scoring"
+ },
+ "pandas": {
+  "motivo": "possível uso de Pandas, porém não citado",
+  "nivel": "parcial",
+  "nome": "Pandas"
  },
  "pgvector": {
   "motivo": "sem evidência de uso específico",
@@ -613,10 +823,20 @@
   "nivel": "tem",
   "nome": "Probabilistic matching"
  },
+ "process automation": {
+  "motivo": "automatiza pipelines de resolução de entidades",
+  "nivel": "tem",
+  "nome": "process automation"
+ },
  "programação orientada a objetos": {
   "motivo": "Python implica OOP, sem confirmação explícita",
   "nivel": "parcial",
   "nome": "programação orientada a objetos"
+ },
+ "programming": {
+  "motivo": "programa em Python e Spark regularmente",
+  "nivel": "tem",
+  "nome": "programming"
  },
  "protobuf": {
   "motivo": "sem evidência de serialização Protobuf",
@@ -698,6 +918,16 @@
   "nivel": "nao",
   "nome": "SageMaker"
  },
+ "salesforce": {
+  "motivo": "não há experiência com Salesforce",
+  "nivel": "nao",
+  "nome": "Salesforce"
+ },
+ "sap": {
+  "motivo": "nenhuma experiência com SAP indicada",
+  "nivel": "nao",
+  "nome": "SAP"
+ },
  "scala": {
   "motivo": "sem evidência, usa Python no Spark",
   "nivel": "nao",
@@ -713,6 +943,16 @@
   "nivel": "nao",
   "nome": "Segment"
  },
+ "segmentation": {
+  "motivo": "Realiza clustering de entidades, similar a segmentação.",
+  "nivel": "parcial",
+  "nome": "segmentation"
+ },
+ "segments": {
+  "motivo": "Cria grupos de registros semelhantes.",
+  "nivel": "parcial",
+  "nome": "segments"
+ },
  "semantic search": {
   "motivo": "usa Elasticsearch, próximo de busca semântica",
   "nivel": "parcial",
@@ -722,6 +962,16 @@
   "motivo": "sem evidência de MDM específico",
   "nivel": "nao",
   "nome": "Semarchy"
+ },
+ "sfmc": {
+  "motivo": "Salesforce Marketing Cloud não mencionado.",
+  "nivel": "nao",
+  "nome": "SFMC"
+ },
+ "shadcn/ui": {
+  "motivo": "UI library não mencionada.",
+  "nivel": "nao",
+  "nome": "shadcn/ui"
  },
  "similarity scoring": {
   "motivo": "core do matching com Splink/RapidFuzz",
@@ -748,6 +998,11 @@
   "nivel": "tem",
   "nome": "Spark"
  },
+ "sparksql": {
+  "motivo": "utiliza Spark, inclui SparkSQL nas pipelines",
+  "nivel": "tem",
+  "nome": "SparkSQL"
+ },
  "sparql": {
   "motivo": "sem evidência de uso",
   "nivel": "nao",
@@ -762,6 +1017,11 @@
   "motivo": "usa SQL em produção",
   "nivel": "tem",
   "nome": "SQL"
+ },
+ "star schema": {
+  "motivo": "não há evidência de modelagem Star Schema",
+  "nivel": "nao",
+  "nome": "Star Schema"
  },
  "statistics": {
   "motivo": "base estatística para matching probabilístico",
@@ -798,6 +1058,11 @@
   "nivel": "nao",
   "nome": "Tableau"
  },
+ "tailwind": {
+  "motivo": "Framework CSS não aparece no currículo.",
+  "nivel": "nao",
+  "nome": "Tailwind"
+ },
  "tensorflow": {
   "motivo": "sem evidência, usa scikit-learn",
   "nivel": "nao",
@@ -832,6 +1097,16 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "TypeScript"
+ },
+ "unified customer profiles": {
+  "motivo": "Trabalha golden record, perfil unificado implícito.",
+  "nivel": "parcial",
+  "nome": "unified customer profiles"
+ },
+ "unity catalog": {
+  "motivo": "nenhum uso de Unity Catalog mencionado",
+  "nivel": "nao",
+  "nome": "Unity Catalog"
  },
  "web scraping": {
   "motivo": "sem evidência no currículo",

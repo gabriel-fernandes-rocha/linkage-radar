@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +250,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -300,8 +300,8 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-17",
-    "nova": true
+    "verificada_em": "2026-10-18",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -346,7 +346,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -397,7 +397,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -447,7 +447,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -487,7 +487,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -527,7 +527,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -590,7 +590,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -639,7 +639,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -679,7 +679,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -719,7 +719,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -759,7 +759,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -799,7 +799,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -839,8 +839,68 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Salesforce Marketing Cloud Next and Data 360 Architect",
+    "url": "https://uk.linkedin.com/jobs/view/salesforce-marketing-cloud-next-and-data-360-architect-at-capgemini-4479894253",
+    "data": "Oct 15, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Data 360 Architect que exige expertise em identity resolution.",
+    "resumo": "Vaga para Salesforce Marketing Cloud Next and Data 360 Architect, com foco em modelagem de dados de cliente e resolução de identidade.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "SFMC",
+        "Data Cloud",
+        "customer data modelling",
+        "identity resolution",
+        "match and reconciliation rules",
+        "unified customer profiles",
+        "calculated insights",
+        "segmentation",
+        "activation"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.9,
+    "encaixe": 0.28,
+    "compat_detalhe": {
+      "habilidades": 33,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "SFMC",
+        "Data Cloud",
+        "calculated insights",
+        "activation"
+      ],
+      "parciais": [
+        "customer data modelling",
+        "match and reconciliation rules",
+        "unified customer profiles",
+        "segmentation"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-18",
+    "verificada_em": "2026-10-18",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -885,7 +945,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -944,8 +1004,68 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior SFMC & Data Cloud Solution Specialist",
+    "url": "https://in.linkedin.com/jobs/view/senior-sfmc-data-cloud-solution-specialist-at-astrazeneca-4469668762",
+    "data": "Sep 24, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Senior SFMC & Data Cloud Solution Specialist com responsabilidade de identity resolution.",
+    "resumo": "Vaga para especialista em Data Cloud e SFMC, incluindo configuração de fluxos de dados e resolução de identidade.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "Data Cloud",
+        "SFMC",
+        "audience building",
+        "data streams",
+        "DLO/DMO models",
+        "identity resolution",
+        "derived analytics",
+        "segments",
+        "activate unified audiences"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.6,
+    "encaixe": 0.22,
+    "compat_detalhe": {
+      "habilidades": 17,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 94,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Data Cloud",
+        "SFMC",
+        "audience building",
+        "data streams",
+        "DLO/DMO models",
+        "derived analytics",
+        "activate unified audiences"
+      ],
+      "parciais": [
+        "segments"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-18",
+    "verificada_em": "2026-10-18",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1012,8 +1132,69 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Full-Stack Engineer (React, Node, TypeScript)",
+    "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-node-js-typescript-aws-at-upstack-data-4470472248",
+    "data": "Sep 22, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Full‑Stack Engineer que requer experiência em identity resolution.",
+    "resumo": "Vaga para engenheiro full‑stack com experiência em identity resolution, plataformas de dados de cliente e atribuição de marketing.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "React",
+        "Node",
+        "TypeScript",
+        "Next.js",
+        "Tailwind",
+        "shadcn/ui",
+        "identity resolution",
+        "customer data platforms",
+        "marketing attribution",
+        "dashboards",
+        "analytics interfaces"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.19,
+    "compat_detalhe": {
+      "habilidades": 9,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "React",
+        "Node",
+        "TypeScript",
+        "Next.js",
+        "Tailwind",
+        "shadcn/ui",
+        "customer data platforms",
+        "marketing attribution"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-18",
+    "verificada_em": "2026-10-18",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1064,7 +1245,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1118,7 +1299,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1167,7 +1348,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1228,7 +1409,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1265,7 +1446,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1326,7 +1507,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1419,7 +1600,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1468,7 +1649,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1529,7 +1710,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -1593,7 +1774,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -1648,7 +1829,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -1715,7 +1896,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1764,54 +1945,8 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-17",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Science Intern at Affluense - LinkedIn India",
-    "url": "https://in.linkedin.com/jobs/view/data-science-intern-at-affluense-4473143995",
-    "data": "Oct 2, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 5,
-    "juiz": "gemini",
-    "motivo": "A vaga de estágio em Data Science possui como foco principal atuar em record linkage, deduplicação ou análise de redes.",
-    "resumo": "Oportunidade de Data Science Intern na Affluense para atuar com record linkage, deduplicação ou análise de redes. Os modelos desenvolvidos são voltados para o setor de gestão de patrimônio.",
-    "confianca": 0.95,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "India"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 8,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "em India, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-17",
-    "verificada_em": "2026-10-17",
-    "nova": true
+    "verificada_em": "2026-10-18",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1865,7 +2000,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1914,7 +2049,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -1963,7 +2098,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -2015,7 +2150,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -2075,7 +2210,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-06-11"
   },
@@ -2099,7 +2234,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2166,7 +2301,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2224,7 +2359,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2321,7 +2456,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2396,7 +2531,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2463,7 +2598,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2541,7 +2676,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2565,7 +2700,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2660,7 +2795,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -2720,7 +2855,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false
   },
   {
@@ -2784,7 +2919,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -2808,7 +2943,7 @@
     "senioridade": "staff/principal",
     "modalidade": "presencial",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2862,7 +2997,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-17",
+    "verificada_em": "2026-10-18",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

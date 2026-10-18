@@ -7,3 +7,108 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-10-17 22:20 =====
+INFO serpapi: 45 restantes no mês; orçamento de hoje = 3 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 195
+INFO jobs/greenhouse: 1425
+INFO jobs/lever: 310
+INFO jobs/ashby: 31
+INFO jobs/hn_who_is_hiring: 1
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO jobs/google: 0 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 211
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 126
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 131
+INFO jobs/social_linkedin/ddg: 4 aceitos de 4
+INFO jobs/social_posts: 4
+INFO linkedin_guest: 32 vagas, 25 descrições abertas, 32 consultas no total
+INFO jobs/linkedin_guest: 32
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011Cg8oXSv2oGpA2vGygnnRZ'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+WARNING judge: gemini/gemini-3.8-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+WARNING judge: não consegui listar modelos de github (Expecting value: line 1 column 1 (char 0))
+WARNING judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\r\n')
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-safeguard-20b, openai/gpt-oss-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO vagas: {'brutos': 2944, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 4
+INFO papers/openalex: 175
+INFO papers: {'brutos': 179, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 4, 'aprovados': 0}
+INFO open_jobs: fechou Data Science Intern at Affluense - LinkedIn India
+INFO open_jobs: 55 abertas (3 novas)
+INFO mercado: 72 vagas no nicho, 40 no mercado amplo
+INFO network/ddg: 9 aceitos de 9
+INFO network: 9 perfis após a consulta
+INFO network: 38 pessoas (5 novas), 16 empresas (0 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+WARNING carreira: análise de perfil falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire: 129
+INFO brasil/gupy: 417
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 40 vagas, 40 descrições abertas, 88 consultas no total
+INFO brasil/linkedin_guest_br: 40
+INFO brasil/greenhouse: 1180
+INFO brasil/lever: 239
+INFO brasil/ashby: 111
+INFO brasil: 5060 brutas, 32 candidatas para o juiz
+INFO judge: groq em limite por minuto; pausado 1 min
+WARNING judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {"error":{"message":"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on tokens per minute (TPM): Limit 20)
+INFO judge: modelos de openrouter disponíveis hoje: google/gemma-4-31b-it:free, google/gemma-4-26b-a4b-it:free, xingchen-agi/xing4.0-29b-a4b:free
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: usando openrouter (xingchen-agi/xing4.0-29b-a4b:free)
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO brasil: 11 vaga(s) não verificadas removidas após o juiz
+INFO open_jobs: 15 abertas (2 novas)
+INFO mercado: 26 vagas no nicho, 40 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 0 pessoas (0 novas), 17 empresas (3 novas)
+INFO brasil: {'novas': 8, 'abertas': 15, 'arquivadas': 26, 'rede': {'pessoas_novas': 0, 'empresas_novas': 3}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-10-18.json
+
