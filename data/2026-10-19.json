@@ -1,0 +1,184 @@
+{
+  "data": "2026-10-19",
+  "gerado_em": "2026-10-18T22:15-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Capital Dynamics hiring Technology Analyst (AI, Automation & Data ...",
+      "url": "https://uk.linkedin.com/jobs/view/technology-analyst-ai-automation-data-science-private-equity-at-capital-dynamics-4479861330?position=1",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Technology Analyst com foco em plataforma de MDM e entity resolution.",
+      "resumo": "Vaga de Technology Analyst (AI, Automation & Data) na Capital Dynamics, envolvendo uso da plataforma Tamr para identificação consistente de entidades.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Entity Resolution: The Hidden Bug That Breaks LLM-Built ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/entity-resolution-hidden-bug-breaks-llm-built-knowledge-mahdi-habibi-avhje",
+      "data": "Oct 17, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "post aborda problema de entity resolution em grafos de conhecimento, explicando sua importância",
+      "resumo": "O conteúdo descreve como determinar se duas menções referem‑se ao mesmo objeto real, ponto crítico em pipelines de LLM‑to‑graph.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "The Unwritten Rules Your AI Never Learned | TDN Digest",
+      "url": "https://www.linkedin.com/pulse/unwritten-rules-your-ai-never-learned-tdn-digest-modern-data-101-6xczf/",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn",
+      "score": 6,
+      "juiz": "groq",
+      "motivo": "post discute identidade e resolução de entidades como base de produtos de dados",
+      "resumo": "O texto apresenta um artigo que argumenta que a resolução de identidade é fundamental para stacks de produtos de dados, trazendo exemplos e arquitetura.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "The Enterprise Knowledge Graph: Connecting Customers, Assets ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/enterprise-knowledge-graph-connecting-customers-andre-y7obe",
+      "data": "Oct 17, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "post explica como a resolução de entidades unifica nomes diferentes de uma mesma empresa em grafos corporativos",
+      "resumo": "O artigo destaca a importância da resolução de entidades para conectar registros como “IBM Corporation” e “International Business Machines” em um grafo empresarial.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Graph Databases for Complex Business Relationship Analysis: Part 2",
+      "url": "https://www.linkedin.com/pulse/graph-databases-complex-business-relationship-analysis-dijlc",
+      "data": "Oct 10, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "post descreve combinação de regras determinísticas, ML e fila de revisão para entity resolution",
+      "resumo": "O autor propõe um fluxo que mistura regras claras, aprendizado de máquina para casos ambíguos e revisão humana, alimentando retroalimentação ao modelo.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Type 1 Models (Jev) for FDE - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/type-1-models-jev-fde-lukasz-jakubowski-qkbif/",
+      "data": "Sep 29, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "post menciona uso de clustering e entity resolution como parte de modelo Jev, indicando aplicação prática",
+      "resumo": "O autor sugere que o modelo Jev pode ser usado para agrupar e resolver entidades, acelerando fases de descoberta em projetos de dados.",
+      "confianca": 0.95
+    }
+  ],
+  "vagas_abertas_total": 53,
+  "vagas_arquivadas_total": 74,
+  "rede": {
+    "pessoas_novas": 5,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 12,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 18,
+    "semana": 3,
+    "tema": "O processo de data matching de ponta a ponta",
+    "tipo": "conceito",
+    "titulo": "Comparação de pares e vetores de comparação",
+    "modulo": "Semana 3: O processo de data matching de ponta a ponta",
+    "versao": 2,
+    "objetivo": "Entender como pares candidatos são transformados em vetores de comparação numéricos que servirão de entrada para a etapa de classificação.",
+    "conceito": "Depois que a indexação reduz o espaço de O(n×m) para um conjunto menor de pares candidatos, cada par precisa ser examinado em detalhe. Christen (2012, seç. 2.1, p. 23) descreve essa terceira etapa do processo como aquela em que os pares candidatos gerados pela indexação são comparados usando uma variedade de funções de comparação de campo e de registro. O resultado não é mais um par de registros brutos, mas um vetor de comparação (comparison vector), onde cada posição representa o grau de similaridade de um atributo específico entre os dois registros.\n\nA ideia central é que atributos diferentes exigem funções de comparação diferentes: um código postal ou CPF pede comparação exata, um nome pede uma métrica de string tolerante a erros de digitação (Jaro-Winkler, Levenshtein), uma data de nascimento pede comparação numérica que possivelmente tolere transposição de dia e mês. Cada função de comparação produz um valor normalizado, tipicamente entre 0 (totalmente diferente) e 1 (idêntico), ou um nível discreto como discordância, concordância parcial e concordância total.\n\nO vetor resultante, de dimensão K (um valor por atributo comparado), é a unidade de informação que alimenta a etapa seguinte de classificação, seja ela baseada no modelo probabilístico de Fellegi-Sunter, em regras ou em aprendizado de máquina (Christophides et al., 2020, discutem essa separação entre geração de features de comparação e o modelo de decisão em arquiteturas modernas de entity resolution).",
+    "como_funciona": "Para cada par candidato (ra, rb) gerado na indexação, execute:\n1. Liste os K atributos relevantes para comparação (nome, sobrenome, endereço, data de nascimento etc).\n2. Para cada atributo k, escolha a função de comparação adequada ao tipo de dado: exata para identificadores e códigos, aproximada por string para texto livre, numérica/temporal para datas e valores contínuos.\n3. Calcule gamma_k(ra,rb) = sim_k(valor_k(ra), valor_k(rb)), normalizado em [0,1] ou discretizado.\n4. Concatene os K resultados formando o vetor gamma = (gamma_1, gamma_2, ..., gamma_K) para aquele par.\n5. Armazene o vetor associado ao par (ra,rb); o conjunto de todos os vetores de todos os pares candidatos é a entrada da etapa de classificação.",
+    "exemplo": "Use o par candidato (a1, b3) do exemplo de Christen (2012, Fig. 2.3 e 2.5, p. 27-28): 'John Smith' em ambas as bases.\na1: givenname=john, surname=smith, gender=m, strnum=42, strname=miller, suburb=oconnor, state=act, bday=12, bmonth=11, byear=1970.\nb3: givenname=john, surname=smith, gender=m, strnum=47, strname=miller, suburb=canberra, state=act, bday=11, bmonth=12, byear=1970.\n\nVetor de comparação (funções: exata para nome/sobrenome/gênero/estado/strname, numérica tolerante para strnum e datas):\ngivenname=1 (exato), surname=1 (exato), gender=1, strname=1, strnum=0 (42 vs 47, diferença não trivial), suburb=0 (oconnor vs canberra, totalmente diferente), state=1, byear=1 (1970=1970), bday=0 (12 vs 11), bmonth=0 (11 vs 12).\nVetor final: gamma=(1,1,1,1,0,0,1,1,0,0). Note que bday e bmonth parecem discordar, mas na verdade houve transposição dia/mês: 12-11 (dd-mm) virou 11-12. Uma função de comparação ingênua perde essa pista; uma função específica para datas que testa também a versão transposta identificaria concordância.",
+    "na_pratica": "Em recordlinkage, o objeto Compare monta o vetor automaticamente, um por par candidato, combinando métodos string, exact e numeric em um DataFrame de features pronto para o classificador:\n```python\nimport recordlinkage\ncmp = recordlinkage.Compare()\ncmp.string('given_name','given_name', method='jarowinkler', threshold=0.85)\ncmp.exact('surname','surname')\ncmp.exact('postcode','postcode')\nfeatures = cmp.compute(pairs, dfA, dfB)\n```\nEm Splink, cada objeto em comparisons (cl.JaroWinklerAtThresholds, cl.ExactMatch) já define a função e os níveis discretos do vetor, e o linker.inference.predict() usa esses vetores como entrada do modelo Fellegi-Sunter treinado por EM.",
+    "armadilha": "Aplicar a mesma função de comparação para todos os atributos (por exemplo, exact match em tudo, ou Jaro-Winkler até em datas e códigos numéricos) ignora a natureza do dado e descarta sinais importantes, como erros de transposição em datas ou pequenas variações numéricas em CEPs vizinhos; escolha a função por tipo de campo, não por conveniência de código.",
+    "desafio": "Usando os dados pré-processados de Christen (2012, Fig. 2.3, p. 27) para o par (a3, b1), 'Mary Meier': a3 tem givenname=mary, surname=meier, suburb=sydney, state=nsw, postcode=2050, byear=1921; b1 tem givenname=mary, surname=meier, suburb=sydney, state=nsw, postcode=2000, byear=1927. Construa o vetor de comparação usando funções exatas para todos os seis atributos (givenname, surname, suburb, state, postcode, byear) e diga quantas posições concordam. Depois, discuta se o par ainda deve ser considerado candidato forte a match apesar das discordâncias.",
+    "gabarito": "Vetor gamma = (givenname=1, surname=1, suburb=1, state=1, postcode=0, byear=0). Quatro de seis posições concordam (nome, sobrenome, bairro e estado), enquanto CEP e ano de nascimento discordam. Mesmo com duas discordâncias, a forte concordância em nome completo e endereço sugere fortemente que é a mesma pessoa (como o próprio Christen confirma no texto), com erros prováveis de digitação no CEP e no ano de nascimento; isso ilustra por que a classificação não deve exigir concordância total, apenas peso suficiente, tema da próxima aula.",
+    "fontes": [
+      "Christen (2012), seç. 2.1, p. 23 (descrição da etapa de comparação de pares)",
+      "Christen (2012), seç. 2.2-2.3, p. 25-29 (exemplo das bases A e B, Fig. 2.3 e 2.5)",
+      "Christophides et al. (2020), ACM Computing Surveys 53(6) (separação entre geração de features de comparação e modelo de decisão em pipelines de entity resolution)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2938,
+      "pos_palavras_chave": 10,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 180,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 6,
+      "aprovados": 5
+    }
+  },
+  "saude": "problema"
+}

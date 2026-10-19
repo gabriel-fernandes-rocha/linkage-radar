@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +250,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -300,7 +300,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -346,7 +346,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -397,7 +397,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -447,47 +447,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior BI / Analytics Engineer, Strategic Accounts - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/senior-bi-analytics-engineer-strategic-accounts-at-resmed-4469192542",
-    "data": "Sep 18, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "groq",
-    "motivo": "Vaga de Senior BI / Analytics Engineer com responsabilidade de account master e entity resolution.",
-    "resumo": "A função foca na implementação de hierarquias de contas governadas, regras de sobrevivência e resolução de entidades.",
-    "confianca": 0.99,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.9,
-    "encaixe": 0.34,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 98,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -527,7 +487,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -590,7 +550,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -639,7 +599,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -679,8 +639,55 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Capital Dynamics hiring Technology Analyst (AI, Automation & Data ...",
+    "url": "https://uk.linkedin.com/jobs/view/technology-analyst-ai-automation-data-science-private-equity-at-capital-dynamics-4479861330?position=1",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Technology Analyst com foco em plataforma de MDM e entity resolution.",
+    "resumo": "Vaga de Technology Analyst (AI, Automation & Data) na Capital Dynamics, envolvendo uso da plataforma Tamr para identificação consistente de entidades.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-19",
+    "verificada_em": "2026-10-19",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -719,7 +726,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -759,7 +766,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -799,7 +806,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -839,7 +846,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -899,8 +906,8 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-18",
-    "nova": true
+    "verificada_em": "2026-10-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -945,7 +952,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1004,7 +1011,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1064,8 +1071,8 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-18",
-    "nova": true
+    "verificada_em": "2026-10-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1132,7 +1139,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1193,8 +1200,8 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-18",
-    "nova": true
+    "verificada_em": "2026-10-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1245,7 +1252,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1299,7 +1306,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1348,7 +1355,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1409,7 +1416,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1446,7 +1453,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1507,7 +1514,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1600,7 +1607,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1649,7 +1656,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1710,7 +1717,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -1774,7 +1781,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -1829,7 +1836,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -1896,7 +1903,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1945,7 +1952,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2000,7 +2007,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2049,7 +2056,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2098,7 +2105,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2150,7 +2157,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2210,62 +2217,9 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-06-11"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Scientist, Entity Resolution — High-Impact & Equity",
-    "url": "https://www.jobleads.com/us/job/senior-data-scientist-entity-resolution-high-impact-equity--new-york--california--e9e3850d4cfaa4fc5da4a4623c32af11f",
-    "empresa": "Enigma",
-    "local": "United States",
-    "fonte": "Google Jobs",
-    "score": 3,
-    "motivo": "Vaga core de Senior Data Scientist dedicado exclusivamente a Entity Resolution, end-to-end, com foco em modelos escaláveis, validação rigorosa e acurácia de dados.",
-    "resumo": "Enigma busca Staff/Senior Data Scientist para o time de Entity Resolution em Nova York. Responsabilidade de transformar dados brutos em modelos escaláveis, colaborar com cientistas, engenheiros e stakeholders, aplicar práticas estatísticas rigorosas e validação repetível.",
-    "confianca": 0.92,
-    "encaixe": 0.04,
-    "nota_perfil": "Vaga técnica core em ER pura, senioridade compatível (staff level); presencial em EUA exige visto e afasta do contexto Brasil; stack não especificado mas role é perfeita para especialista.",
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "New York",
-        "California"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 1,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 75,
-      "local": 8,
-      "ingles": 100,
-      "foco": 100,
-      "senioridade_txt": "nível senior",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    }
   },
   {
     "tipo": "vaga",
@@ -2301,7 +2255,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2359,7 +2313,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2456,7 +2410,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2531,7 +2485,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2598,7 +2552,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2676,7 +2630,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2700,7 +2654,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2795,7 +2749,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2855,7 +2809,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -2919,61 +2873,9 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "publicada_em": "2026-08-28"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Staff Data Scientist, Entity Resolution — Onsite LA, Equity",
-    "url": "https://www.jobleads.com/us/job/staff-data-scientist-entity-resolution-onsite-la-equity--los-angeles--e2ebabf5eadb730a11c4400da92289749",
-    "empresa": "Enigma",
-    "local": "Los Angeles, CA",
-    "fonte": "Google Jobs",
-    "score": 3,
-    "motivo": "Vaga Staff Data Scientist em Entity Resolution com requisitos técnicos (Spark, SQL, PySpark, Python) muito próximos do stack do leitor.",
-    "resumo": "Enigma busca Staff/Senior Data Scientist para Entity Resolution presencial em Los Angeles. Requer 6-8+ anos, liderança técnica e proficiência em Databricks, Spark SQL, PySpark, Python e ML/AI.",
-    "confianca": 0.8,
-    "encaixe": 0.02,
-    "nota_perfil": "Stack muito alinhado (Spark, SQL, Python) e seniority apropriada, mas exigência presencial em Los Angeles torna geograficamente incompatível.",
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "staff/principal",
-    "modalidade": "presencial",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "Los Angeles"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.5,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 45,
-      "local": 8,
-      "ingles": 85,
-      "foco": 92,
-      "senioridade_txt": "nível staff/principal",
-      "local_txt": "presencial em United States, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    }
   },
   {
     "tipo": "vaga",
@@ -2997,7 +2899,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

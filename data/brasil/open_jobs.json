@@ -69,7 +69,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -138,7 +138,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -210,7 +210,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -279,7 +279,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -349,7 +349,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -432,7 +432,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -493,8 +493,8 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-18",
-    "nova": true
+    "verificada_em": "2026-10-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -560,7 +560,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
@@ -623,78 +623,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-18",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Analista Qualidade de Dados SR",
-    "url": "https://unimedcnu.gupy.io/job/eyJqb2JJZCI6MTI2MzQxODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-    "empresa": "Unimed CNU",
-    "local": "São Paulo, São Paulo (híbrido)",
-    "fonte": "Gupy",
-    "publicada_em": "2026-09-29",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "padronizacao de dados",
-      "qualidade de dados"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Python",
-        "Pandas",
-        "Great Expectations",
-        "Spark",
-        "SparkSQL",
-        "Delta Lake",
-        "AWS",
-        "Azure",
-        "GCP",
-        "Databricks",
-        "Erwin"
-      ],
-      "desejaveis": []
-    },
-    "anos_experiencia_min": null,
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "ingles": "nao_informado",
-    "foco_er": 0,
-    "requisitos_estimados": true,
-    "encaixe": 0.26,
-    "compat_detalhe": {
-      "habilidades": 38,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Great Expectations",
-        "AWS",
-        "Azure",
-        "GCP",
-        "Databricks",
-        "Erwin"
-      ],
-      "parciais": [
-        "SQL",
-        "Pandas",
-        "Delta Lake"
-      ],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -779,143 +708,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Analista Qualidade de Dados JR",
-    "url": "https://unimedcnu.gupy.io/job/eyJqb2JJZCI6MTI2MzQyMzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-    "empresa": "Unimed CNU",
-    "local": "São Paulo, São Paulo (híbrido)",
-    "fonte": "Gupy",
-    "publicada_em": "2026-09-29",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "cruzamento de dados",
-      "padronizacao de dados",
-      "qualidade de dados"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Python",
-        "AWS",
-        "Azure",
-        "GCP",
-        "Data Warehouse",
-        "Data Lake",
-        "Star Schema"
-      ],
-      "desejaveis": [
-        "DAMA DMBOK",
-        "Erwin",
-        "Databricks",
-        "Spark",
-        "SparkSQL"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "ingles": "nao_informado",
-    "foco_er": 0,
-    "requisitos_estimados": true,
-    "encaixe": 0.25,
-    "compat_detalhe": {
-      "habilidades": 33,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "AWS",
-        "Azure",
-        "GCP",
-        "Star Schema"
-      ],
-      "parciais": [
-        "SQL",
-        "Data Warehouse",
-        "Data Lake"
-      ],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Analista de Inteligência de Dados Pleno",
-    "url": "https://porto.gupy.io/job/eyJqb2JJZCI6MTI0OTQxODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-    "empresa": "Porto",
-    "local": "Barueri, São Paulo",
-    "fonte": "Gupy",
-    "publicada_em": "2026-09-18",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "cruzamento de dados",
-      "dados cadastrais"
-    ],
-    "nao_verificado": true,
-    "motivo": "Aprovada pelas regras da aba Brasil (nenhuma IA respondeu); será reavaliada quando um juiz voltar.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Excel",
-        "SQL",
-        "Power BI",
-        "Tableau",
-        "GCP"
-      ],
-      "desejaveis": [
-        "AI",
-        "programming",
-        "process automation"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "ingles": "nao_informado",
-    "foco_er": 0,
-    "requisitos_estimados": true,
-    "encaixe": 0.23,
-    "compat_detalhe": {
-      "habilidades": 28,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Excel",
-        "Power BI",
-        "Tableau",
-        "GCP"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -993,7 +786,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false
   },
   {
@@ -1052,7 +845,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-18",
+    "verificada_em": "2026-10-19",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",
