@@ -8,3 +8,103 @@ INFO mensagem 2 parte 2/3 enviada
 INFO mensagem 2 parte 3/3 enviada
 INFO envio concluído
 
+===== coleta 2026-10-19 23:00 =====
+INFO serpapi: 39 restantes no mês; orçamento de hoje = 3 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 180
+INFO jobs/greenhouse: 1425
+INFO jobs/lever: 309
+INFO jobs/ashby: 31
+INFO jobs/hn_who_is_hiring: 1
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 0/3)
+INFO jobs/google: 0 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 199
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 137
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 152
+INFO jobs/social_linkedin/ddg: 7 aceitos de 7
+INFO jobs/social_posts: 7
+INFO linkedin_guest: 27 vagas, 25 descrições abertas, 34 consultas no total
+INFO jobs/linkedin_guest: 27
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011CgCesL6YBPRFihY2qo6B9'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+INFO judge: usando gemini (gemini-3.8-flash)
+INFO vagas: {'brutos': 2946, 'pos_palavras_chave': 5, 'aprovados': 1}
+INFO events: 10 candidatos
+INFO eventos: {'brutos': 10, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 6
+INFO papers/openalex: 175
+INFO papers: {'brutos': 181, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+WARNING judge: gemini/gemini-3.8-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+WARNING judge: não consegui listar modelos de github (Expecting value: line 1 column 1 (char 0))
+WARNING judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\r\n')
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-20b, openai/gpt-oss-safeguard-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 4, 'aprovados': 0}
+INFO open_jobs: 58 abertas (5 novas)
+INFO mercado: 78 vagas no nicho, 40 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 43 pessoas (0 novas), 16 empresas (0 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire: 124
+INFO brasil/gupy: 400
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 37 vagas, 37 descrições abertas, 84 consultas no total
+INFO brasil/linkedin_guest_br: 37
+INFO brasil/greenhouse: 1184
+INFO brasil/lever: 219
+INFO brasil/ashby: 109
+INFO brasil: 5019 brutas, 0 candidatas para o juiz
+INFO open_jobs: fechou Engenheiro de Integração de Dados - Trabalho Remoto
+INFO open_jobs: 11 abertas (0 novas)
+INFO mercado: 26 vagas no nicho, 40 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 3/3)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/3)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 0 pessoas (0 novas), 17 empresas (0 novas)
+INFO brasil: {'novas': 0, 'abertas': 11, 'arquivadas': 26, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: problema (3 alertas)
+INFO OK → data/2026-10-20.json
+

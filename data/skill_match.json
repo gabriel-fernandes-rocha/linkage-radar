@@ -18,6 +18,11 @@
   "nivel": "nao",
   "nome": "activation"
  },
+ "address standardization": {
+  "motivo": "Normaliza dados, mas não há foco específico em endereços.",
+  "nivel": "parcial",
+  "nome": "address standardization"
+ },
  "adtech": {
   "motivo": "atua em saúde pública, não adtech",
   "nivel": "nao",
@@ -87,6 +92,11 @@
   "motivo": "Não trabalha com construção de audiências.",
   "nivel": "nao",
   "nome": "audience building"
+ },
+ "automated data testing": {
+  "motivo": "Realiza garantia de qualidade, porém testes automatizados não citados.",
+  "nivel": "parcial",
+  "nome": "automated data testing"
  },
  "aws": {
   "motivo": "nenhuma menção a cloud AWS",
@@ -318,6 +328,11 @@
   "nivel": "parcial",
   "nome": "Data reconciliation"
  },
+ "data retention": {
+  "motivo": "Nenhuma evidência de políticas de retenção de dados.",
+  "nivel": "nao",
+  "nome": "data retention"
+ },
  "data review": {
   "motivo": "QA de matching próximo a revisão de dados",
   "nivel": "parcial",
@@ -342,6 +357,11 @@
   "motivo": "experiência em data warehouse implícita, mas não detalhada",
   "nivel": "parcial",
   "nome": "Data Warehouse"
+ },
+ "data-quality monitoring": {
+  "motivo": "Monitora qualidade dos pipelines de matching e deduplicação.",
+  "nivel": "tem",
+  "nome": "data-quality monitoring"
  },
  "databricks": {
   "motivo": "domina Spark, base próxima a Databricks",
@@ -417,6 +437,11 @@
   "motivo": "sem evidência de linguagem Elixir",
   "nivel": "nao",
   "nome": "Elixir"
+ },
+ "elt": {
+  "motivo": "Constrói pipelines de ingestão, transformação e carga de dados.",
+  "nivel": "tem",
+  "nome": "ELT"
  },
  "embeddings": {
   "motivo": "scikit-learn, mas sem evidência direta",
@@ -498,6 +523,11 @@
   "nivel": "nao",
   "nome": "GDPR"
  },
+ "geospatial data": {
+  "motivo": "Não há menção a dados geoespaciais.",
+  "nivel": "nao",
+  "nome": "geospatial data"
+ },
  "git": {
   "motivo": "não há menção no currículo",
   "nivel": "nao",
@@ -512,6 +542,11 @@
   "motivo": "conceito MDM próximo de deduplicação/resolução praticada",
   "nivel": "parcial",
   "nome": "Golden Records"
+ },
+ "graph database": {
+  "motivo": "Nenhum uso de banco de dados grafo indicado.",
+  "nivel": "nao",
+  "nome": "graph database"
  },
  "graph databases": {
   "motivo": "sem evidência de uso",
@@ -627,6 +662,11 @@
   "motivo": "sem evidência de streaming com Kafka",
   "nivel": "nao",
   "nome": "Kafka"
+ },
+ "knowledge graph": {
+  "motivo": "Não aparece experiência com knowledge graph.",
+  "nivel": "nao",
+  "nome": "knowledge graph"
  },
  "knowledge graphs": {
   "motivo": "clustering de entidades próximo de grafos de conhecimento",
@@ -818,6 +858,11 @@
   "nivel": "nao",
   "nome": "Privacy Enhancing Technologies"
  },
+ "private vpc deployment": {
+  "motivo": "Ausência de implantação em VPC privada.",
+  "nivel": "nao",
+  "nome": "private VPC deployment"
+ },
  "probabilistic matching": {
   "motivo": "usa matching probabilístico em produção",
   "nivel": "tem",
@@ -868,6 +913,11 @@
   "nivel": "nao",
   "nome": "RAG"
  },
+ "ranking": {
+  "motivo": "Aplica pontuação e ranking nas correspondências de entidades.",
+  "nivel": "tem",
+  "nome": "ranking"
+ },
  "rapidfuzz": {
   "motivo": "listado nas competências técnicas",
   "nivel": "tem",
@@ -888,6 +938,11 @@
   "nivel": "tem",
   "nome": "Record linkage"
  },
+ "redaction": {
+  "motivo": "Redação de dados sensíveis não citada.",
+  "nivel": "nao",
+  "nome": "redaction"
+ },
  "reltio": {
   "motivo": "plataforma MDM específica não usada",
   "nivel": "nao",
@@ -907,6 +962,11 @@
   "motivo": "blocking/indexação próximo de retrieval de dados",
   "nivel": "parcial",
   "nome": "Retrieval"
+ },
+ "retrieval-augmented generation": {
+  "motivo": "Nenhum indício de geração aumentada por recuperação.",
+  "nivel": "nao",
+  "nome": "retrieval-augmented generation"
  },
  "s3": {
   "motivo": "sem evidência de uso AWS S3",
@@ -937,6 +997,11 @@
   "motivo": "listado explicitamente como conhecimento usado",
   "nivel": "tem",
   "nome": "scikit-learn"
+ },
+ "scraping": {
+  "motivo": "Não há experiência em scraping de sites.",
+  "nivel": "nao",
+  "nome": "scraping"
  },
  "segment": {
   "motivo": "sem evidência de uso",
@@ -1023,6 +1088,11 @@
   "nivel": "nao",
   "nome": "Star Schema"
  },
+ "statistical sampling": {
+  "motivo": "Usa estatística básica, mas amostragem não explicitada.",
+  "nivel": "parcial",
+  "nome": "statistical sampling"
+ },
  "statistics": {
   "motivo": "base estatística para matching probabilístico",
   "nivel": "tem",
@@ -1107,6 +1177,11 @@
   "motivo": "nenhum uso de Unity Catalog mencionado",
   "nivel": "nao",
   "nome": "Unity Catalog"
+ },
+ "web research automation": {
+  "motivo": "Automação de pesquisa web não mencionada.",
+  "nivel": "nao",
+  "nome": "web research automation"
  },
  "web scraping": {
   "motivo": "sem evidência no currículo",

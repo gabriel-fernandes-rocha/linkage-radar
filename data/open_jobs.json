@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +250,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -300,7 +300,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -346,7 +346,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -397,8 +397,70 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Quality Assurance Analyst - LinkedIn",
+    "url": "https://za.linkedin.com/jobs/view/data-quality-assurance-analyst-at-office-beacon-south-africa-4479992077",
+    "data": "Oct 19, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 13,
+    "juiz": "groq",
+    "motivo": "Vaga anuncia posição que exige experiência em entity resolution e record linkage.",
+    "resumo": "O post descreve a vaga de Data Quality Assurance Analyst, destacando requisitos como entity resolution, record linkage, MDM, padronização de endereços e dados geoespaciais.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "record linkage",
+        "Master Data Management",
+        "knowledge graph",
+        "graph database",
+        "address standardization",
+        "geospatial data",
+        "ETL",
+        "ELT",
+        "automated data testing",
+        "statistical sampling",
+        "data-quality monitoring"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.35,
+    "compat_detalhe": {
+      "habilidades": 54,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management",
+        "knowledge graph",
+        "graph database",
+        "geospatial data"
+      ],
+      "parciais": [
+        "address standardization",
+        "automated data testing",
+        "statistical sampling"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-20",
+    "verificada_em": "2026-10-20",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -447,8 +509,110 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Sr. Applied Data Scientist - LinkedIn México",
+    "url": "https://mx.linkedin.com/jobs/view/sr-applied-data-scientist-at-applaudo-4479716876",
+    "data": "Oct 14, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 8,
+    "juiz": "groq",
+    "motivo": "Vaga de cientista de dados que menciona experiência desejada em entity resolution e record linkage.",
+    "resumo": "O post anuncia a vaga de Sr. Applied Data Scientist no LinkedIn México, listando entity resolution, record linkage e deduplicação como requisitos desejáveis, além de técnicas de ranking e scoring.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": [
+        "entity resolution",
+        "record linkage",
+        "deduplication",
+        "ranking",
+        "similarity scoring",
+        "retrieval",
+        "clustering",
+        "candidate generation",
+        "LLMs",
+        "embeddings",
+        "Spark",
+        "Snowflake",
+        "Databricks",
+        "BigQuery"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.2,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 64,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 88,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-20",
+    "verificada_em": "2026-10-20",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Neurons Lab hiring Data Engineer | Data Scientist - LinkedIn",
+    "url": "https://mt.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474768417?position=2&pageNum=0",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 7,
+    "juiz": "gemini",
+    "motivo": "A vaga exige explicitamente resolucao de entidades e record linkage deterministico e fuzzy.",
+    "resumo": "Oportunidade da Neurons Lab para Data Engineer ou Data Scientist. A posicao requer atuacao com entity resolution e record linkage sem chaves compartilhadas, orquestracao e stack de nuvem.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.32,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-20",
+    "verificada_em": "2026-10-20",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -487,7 +651,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -550,7 +714,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -599,7 +763,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -639,8 +803,73 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer | Data Scientist — Unstructured Data & AI Pipelines",
+    "url": "https://ee.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474772166",
+    "data": "Oct 2, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Vaga que inclui entity resolution e record linkage como responsabilidade central.",
+    "resumo": "O post apresenta a vaga de Data Engineer/Data Scientist, enfatizando trabalho com entity resolution, record linkage determinístico e fuzzy, orquestração de pipelines e segurança de dados PII.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "record linkage",
+        "deterministic matching",
+        "fuzzy matching",
+        "Airflow",
+        "Step Functions",
+        "AWS",
+        "GCP",
+        "private VPC deployment",
+        "PII detection",
+        "redaction",
+        "encryption",
+        "data retention"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.7,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 38,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Step Functions",
+        "AWS",
+        "GCP",
+        "private VPC deployment",
+        "redaction",
+        "encryption",
+        "data retention"
+      ],
+      "parciais": [
+        "Airflow",
+        "PII detection"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-20",
+    "verificada_em": "2026-10-20",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -686,8 +915,8 @@
       "estimado": false
     },
     "desde": "2026-10-19",
-    "verificada_em": "2026-10-19",
-    "nova": true
+    "verificada_em": "2026-10-20",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -726,7 +955,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -766,7 +995,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -806,7 +1035,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -846,7 +1075,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -906,7 +1135,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -952,8 +1181,56 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "AI Automation Intern, Knowledge Graph (Internship)",
+    "url": "https://es.linkedin.com/jobs/view/ai-automation-intern-knowledge-graph-internship-at-ravenpack-4476708620",
+    "data": "Oct 7, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Estágio que menciona experiência em entity resolution e record linkage como desejável.",
+    "resumo": "O post anuncia a vaga de estágio em AI Automation, destacando conhecimento em knowledge graphs, entity resolution e record linkage como diferencial.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": [
+        "knowledge graph",
+        "entity resolution",
+        "record linkage",
+        "web research automation",
+        "scraping",
+        "retrieval-augmented generation",
+        "RAG"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.2,
+    "encaixe": 0.24,
+    "compat_detalhe": {
+      "habilidades": 29,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 88,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-20",
+    "verificada_em": "2026-10-20",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1011,7 +1288,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1071,7 +1348,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1139,7 +1416,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1200,7 +1477,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1252,7 +1529,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1306,7 +1583,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1355,7 +1632,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1416,7 +1693,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1453,7 +1730,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1514,7 +1791,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1607,7 +1884,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1656,7 +1933,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -1717,7 +1994,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -1781,7 +2058,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -1836,7 +2113,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -1903,7 +2180,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1952,7 +2229,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2007,7 +2284,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2056,7 +2333,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2105,7 +2382,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2157,7 +2434,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2217,7 +2494,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-06-11"
   },
@@ -2255,7 +2532,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2313,7 +2590,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2410,7 +2687,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2485,7 +2762,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2552,7 +2829,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2630,7 +2907,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2654,7 +2931,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2749,7 +3026,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2809,7 +3086,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false
   },
   {
@@ -2873,7 +3150,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -2899,7 +3176,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-19",
+    "verificada_em": "2026-10-20",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

@@ -1,0 +1,345 @@
+{
+  "data": "2026-10-20",
+  "gerado_em": "2026-10-19T22:49-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Neurons Lab hiring Data Engineer | Data Scientist - LinkedIn",
+      "url": "https://mt.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474768417?position=2&pageNum=0",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "gemini",
+      "motivo": "A vaga exige explicitamente resolucao de entidades e record linkage deterministico e fuzzy.",
+      "resumo": "Oportunidade da Neurons Lab para Data Engineer ou Data Scientist. A posicao requer atuacao com entity resolution e record linkage sem chaves compartilhadas, orquestracao e stack de nuvem.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Quality Assurance Analyst - LinkedIn",
+      "url": "https://za.linkedin.com/jobs/view/data-quality-assurance-analyst-at-office-beacon-south-africa-4479992077",
+      "texto": "Entity resolution and record linkage Master Data Management (MDM) Knowledge graphs or graph databases Business and legal-entity data Address standardization and geospatial data Data pipelines and ETL/ELT processes Automated data testing Statistical sampling Data-quality monitoring and dashboards Government, financial, economic, or commercial ...",
+      "data": "Oct 19, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 13,
+      "juiz": "groq",
+      "motivo": "Vaga anuncia posição que exige experiência em entity resolution e record linkage.",
+      "resumo": "O post descreve a vaga de Data Quality Assurance Analyst, destacando requisitos como entity resolution, record linkage, MDM, padronização de endereços e dados geoespaciais.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "entity resolution",
+          "record linkage",
+          "Master Data Management",
+          "knowledge graph",
+          "graph database",
+          "address standardization",
+          "geospatial data",
+          "ETL",
+          "ELT",
+          "automated data testing",
+          "statistical sampling",
+          "data-quality monitoring"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.35,
+      "compat_detalhe": {
+        "habilidades": 54,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management",
+          "knowledge graph",
+          "graph database",
+          "geospatial data"
+        ],
+        "parciais": [
+          "address standardization",
+          "automated data testing",
+          "statistical sampling"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Sr. Applied Data Scientist - LinkedIn México",
+      "url": "https://mx.linkedin.com/jobs/view/sr-applied-data-scientist-at-applaudo-4479716876",
+      "texto": "Nice-to-Have Entity resolution, record linkage, or deduplication experience. Ranking and similarity scoring. Retrieval, clustering, or candidate-generation techniques. LLM/embedding solutions designed for cost and scale constraints. Spark, Snowflake, Databricks, or BigQuery. Experience with company, domain, website, or firmographic data.",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "groq",
+      "motivo": "Vaga de cientista de dados que menciona experiência desejada em entity resolution e record linkage.",
+      "resumo": "O post anuncia a vaga de Sr. Applied Data Scientist no LinkedIn México, listando entity resolution, record linkage e deduplicação como requisitos desejáveis, além de técnicas de ranking e scoring.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "entity resolution",
+          "record linkage",
+          "deduplication",
+          "ranking",
+          "similarity scoring",
+          "retrieval",
+          "clustering",
+          "candidate generation",
+          "LLMs",
+          "embeddings",
+          "Spark",
+          "Snowflake",
+          "Databricks",
+          "BigQuery"
+        ]
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.2,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 64,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 88,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer | Data Scientist — Unstructured Data & AI Pipelines",
+      "url": "https://ee.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474772166",
+      "texto": "Entity resolution / record linkage (deterministic + fuzzy) without a clean shared key Orchestration: Airflow, Step Functions or equivalent; idempotent, restartable jobs AWS and/or GCP data stack; comfortable in a private / VPC deployment PII detection, redaction, encryption and retention in practice",
+      "data": "Oct 2, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "Vaga que inclui entity resolution e record linkage como responsabilidade central.",
+      "resumo": "O post apresenta a vaga de Data Engineer/Data Scientist, enfatizando trabalho com entity resolution, record linkage determinístico e fuzzy, orquestração de pipelines e segurança de dados PII.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "entity resolution",
+          "record linkage",
+          "deterministic matching",
+          "fuzzy matching",
+          "Airflow",
+          "Step Functions",
+          "AWS",
+          "GCP",
+          "private VPC deployment",
+          "PII detection",
+          "redaction",
+          "encryption",
+          "data retention"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 38,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Step Functions",
+          "AWS",
+          "GCP",
+          "private VPC deployment",
+          "redaction",
+          "encryption",
+          "data retention"
+        ],
+        "parciais": [
+          "Airflow",
+          "PII detection"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "AI Automation Intern, Knowledge Graph (Internship)",
+      "url": "https://es.linkedin.com/jobs/view/ai-automation-intern-knowledge-graph-internship-at-ravenpack-4476708620",
+      "texto": "Nice to have Experience with knowledge graphs, entity resolution, or record linkage Familiarity with web research automation, scraping, or retrieval-augmented generation (RAG) Interest in financial markets or company data We are an equal opportunity employer and value diversity at our company.",
+      "data": "Oct 7, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "Estágio que menciona experiência em entity resolution e record linkage como desejável.",
+      "resumo": "O post anuncia a vaga de estágio em AI Automation, destacando conhecimento em knowledge graphs, entity resolution e record linkage como diferencial.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "knowledge graph",
+          "entity resolution",
+          "record linkage",
+          "web research automation",
+          "scraping",
+          "retrieval-augmented generation",
+          "RAG"
+        ]
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.2,
+      "encaixe": 0.24,
+      "compat_detalhe": {
+        "habilidades": 29,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 88,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 58,
+  "vagas_arquivadas_total": 79,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 19,
+    "semana": 3,
+    "tema": "O processo de data matching de ponta a ponta",
+    "tipo": "conceito",
+    "titulo": "Classificação, avaliação de qualidade e complexidade",
+    "modulo": "Semana 3: O processo de data matching de ponta a ponta",
+    "versao": 2,
+    "objetivo": "Entender como um pipeline de data matching classifica pares candidatos em match, non-match e potential match, e como medir sua qualidade (precision, recall, F-measure) e sua complexidade (redução de pares, pairs completeness), para diagnosticar corretamente o desempenho real de um sistema em produção.",
+    "conceito": "Depois que o vetor de comparação de cada par candidato é calculado (aula 18), entra a etapa de classificação: decidir, para cada par, se ele é match, non-match ou potential match (quando o modelo de decisão não tem confiança suficiente e exige revisão clerical humana). Christen (2012, cap. 2) descreve essa etapa como dependente do 'decision model' escolhido: regras de limiar sobre um escore (como no modelo probabilístico de Fellegi-Sunter), classificadores supervisionados, ou modelos EM não supervisionados (caso do Splink). O resultado nunca é perfeito: sempre existem falsos positivos (pares classificados como match que na verdade são entidades distintas) e falsos negativos (pares que são a mesma entidade mas foram classificados como non-match).\n\nA etapa de avaliação usa uma matriz de confusão com quatro quantidades: TM (true matches, verdadeiros positivos), TN (true non-matches, verdadeiros negativos), FM (false matches, falsos positivos) e FN (false non-matches, falsos negativos). A partir dela calculam-se precision, recall e F-measure. Mas a avaliação de um pipeline real não pode ignorar a etapa de indexação: se o blocking já descartou um par verdadeiro antes mesmo da classificação, isso é uma perda de recall que a matriz de confusão da classificação, por si só, não mostra. Por isso Christen define métricas específicas de indexação, como reduction ratio (RR) e pairs completeness (PC), que avaliam a complexidade e a perda de recall introduzidas antes da fase de comparação (Christen 2012, cap. 2 e cap. 4; Christophides et al. 2020 tratam isso como parte do trade-off 'blocking vs. recall' em escala de big data).",
+    "como_funciona": "1. Classificação: cada par comparado recebe um escore ou vetor; um modelo de decisão separa em match, non-match, potential match.\n2. Potential matches vão para revisão clerical (humana) antes do status final.\n3. Avaliação de classificação (sobre os pares candidatos, com ground truth):\n- precision = TM / (TM + FM)\n- recall = TM / (TM + FN)\n- F-measure = 2 * precision * recall / (precision + recall)\n4. Avaliação de complexidade/indexing:\n- reduction ratio RR = 1 - (pares candidatos gerados / pares totais possíveis sem indexação)\n- pairs completeness PC = (true matches que sobrevivem na indexação) / (total de true matches existentes)\n5. Recall real do pipeline completo = recall da classificação multiplicado por PC, porque pares perdidos na indexação nunca chegam ao classificador.",
+    "exemplo": "Duas bases de 7 registros cada (exemplo de Christen 2012, p. 27-29): sem indexação, 7x7 = 49 pares possíveis. Com blocking por Soundex do sobrenome e 3 primeiros dígitos do postcode, geram-se 12 pares candidatos.\nRR = 1 - (12/49) = 0,7551, ou seja, 75,51% dos pares foram descartados antes da comparação.\nSuponha que existam 7 true matches reais (bijeção 1 para 1 entre as bases) e que a indexação capturou 6 deles (perdeu o par 'Lynette Smithers'/'Lynette Cain', a4-b7, citado no livro).\nPC = 6/7 = 0,8571.\nAgora, dentro dos 12 pares candidatos, o classificador decide: 6 pares marcados como match (5 TM e 1 FM) e 6 marcados como non-match (5 TN e 1 FN).\nprecision = 5/6 = 0,833\nrecall (sobre os candidatos) = 5/6 = 0,833\nF1 = 2*0,833*0,833/(0,833+0,833) = 0,833\nMas o recall real do pipeline completo = 0,833 * PC = 0,833 * 0,8571 = 0,714, bem mais baixo que o recall 'local' da classificação.",
+    "na_pratica": "Em Splink, depois de linker.inference.predict(), você junta as previsões com um ground truth (se existir) e calcula a matriz de confusão diretamente em SQL/Pandas; em recordlinkage, recordlinkage.confusion_matrix(links_true, links_pred, total) já devolve TM/TN/FM/FN. Para medir RR e PC de um bloco, compare o total de pares gerados por idx.index(dfA, dfB) contra n_A * n_B, e contra o número de pares verdadeiros conhecidos (se houver amostra rotulada).\nimport recordlinkage\ncm = recordlinkage.confusion_matrix(links_true, pairs, total=len(dfA)*len(dfB))\nprecision = recordlinkage.precision(links_true, pairs)\nrecall = recordlinkage.recall(links_true, pairs)",
+    "armadilha": "Reportar apenas accuracy ou apenas o recall 'local' da classificação é um erro grave, porque non-matches dominam numericamente (accuracy fica artificialmente alta) e porque o recall local ignora os true matches já descartados na indexação; sempre combine recall da classificação com pairs completeness para ter o recall real do pipeline.",
+    "desafio": "Uma equipe reporta para o cliente: 'nosso classificador tem recall de 92% e precision de 95%, excelente resultado'. Você descobre que esses números foram calculados só sobre os pares candidatos que sobreviveram ao blocking, e que o blocking usado (bloco por CEP exato) tem pairs completeness de 70% medido numa amostra rotulada de 500 true matches, dos quais 150 nunca entraram nos pares candidatos. Calcule o recall real do pipeline completo e explique numericamente por que o número reportado pela equipe é enganoso.",
+    "gabarito": "Recall real = recall_classificação * PC = 0,92 * 0,70 = 0,644, ou seja, 64,4% dos true matches reais são corretamente identificados pelo pipeline completo, bem abaixo dos 92% reportados. Confirmação pela contagem: dos 500 true matches, 150 nunca chegaram ao classificador (perdidos no blocking), restando 350 nos pares candidatos; 92% de recall sobre esses 350 dá 322 TM corretamente classificados; 322/500 = 0,644. O número de 92% é enganoso porque mede apenas a qualidade da classificação condicionada a já ter sobrevivido à indexação, escondendo a perda de recall introduzida pelo blocking (que é exatamente o tipo de erro que a métrica pairs completeness existe para expor).",
+    "fontes": [
+      "Christen (2012), cap. 2, seç. 2.1 a 2.3, p. 23-29",
+      "Christen (2012), cap. 2, seç. 2.4 a 2.6 (classificação, avaliação de qualidade e complexidade)",
+      "Christophides et al. (2020), ACM Computing Surveys, 53(6), visão geral de entity resolution end-to-end e trade-offs de blocking em big data"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2946,
+      "pos_palavras_chave": 5,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 10,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 181,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 4,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}
