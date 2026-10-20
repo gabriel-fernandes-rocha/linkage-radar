@@ -550,9 +550,9 @@
     "anos_experiencia_min": null,
     "ingles": "nao_informado",
     "foco_er": 0.2,
-    "encaixe": 0.34,
+    "encaixe": 0.33,
     "compat_detalhe": {
-      "habilidades": 64,
+      "habilidades": 61,
       "senioridade": 85,
       "local": 60,
       "ingles": 100,
@@ -656,69 +656,6 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Neurons Lab hiring Data Engineer | Data Scientist — Unstructured Data ...",
-    "url": "https://ge.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474757863",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "score": 7,
-    "motivo": "Post de rede social anunciando vaga concreta (Neurons Lab, Data Engineer/Scientist) com entity resolution e record linkage (determinístico e fuzzy) como responsabilidade central.",
-    "resumo": "Neurons Lab contrata Data Engineer/Scientist para dados não estruturados com especialidade em entity resolution, record linkage determinístico e fuzzy, Airflow, AWS/GCP e segurança de dados.",
-    "confianca": 0.98,
-    "requisitos": {
-      "obrigatorios": [
-        "Entity resolution",
-        "Record linkage",
-        "Fuzzy matching",
-        "Airflow",
-        "Step Functions",
-        "AWS",
-        "GCP",
-        "PII detection",
-        "Encryption"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.7,
-    "encaixe": 0.31,
-    "compat_detalhe": {
-      "habilidades": 44,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 96,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Step Functions",
-        "AWS",
-        "GCP",
-        "Encryption"
-      ],
-      "parciais": [
-        "Airflow",
-        "PII detection"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-14",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
     "titulo": "AI Automation Intern, Knowledge Graph en RavenPack - LinkedIn",
     "url": "https://es.linkedin.com/jobs/view/ai-automation-intern-knowledge-graph-at-ravenpack-4476708620",
     "data": "",
@@ -808,36 +745,37 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Data Engineer | Data Scientist — Unstructured Data & AI Pipelines",
-    "url": "https://ee.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474772166",
-    "data": "Oct 2, 2026",
-    "fonte": "LinkedIn Jobs",
+    "titulo": "Neurons Lab hiring Data Engineer | Data Scientist — Unstructured Data ...",
+    "url": "https://ge.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474757863",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
     "score": 7,
-    "juiz": "groq",
-    "motivo": "Vaga que inclui entity resolution e record linkage como responsabilidade central.",
-    "resumo": "O post apresenta a vaga de Data Engineer/Data Scientist, enfatizando trabalho com entity resolution, record linkage determinístico e fuzzy, orquestração de pipelines e segurança de dados PII.",
-    "confianca": 0.96,
+    "motivo": "Post de rede social anunciando vaga concreta (Neurons Lab, Data Engineer/Scientist) com entity resolution e record linkage (determinístico e fuzzy) como responsabilidade central.",
+    "resumo": "Neurons Lab contrata Data Engineer/Scientist para dados não estruturados com especialidade em entity resolution, record linkage determinístico e fuzzy, Airflow, AWS/GCP e segurança de dados.",
+    "confianca": 0.98,
     "requisitos": {
       "obrigatorios": [
-        "entity resolution",
-        "record linkage",
-        "deterministic matching",
-        "fuzzy matching",
+        "Entity resolution",
+        "Record linkage",
+        "Fuzzy matching",
         "Airflow",
         "Step Functions",
         "AWS",
         "GCP",
-        "private VPC deployment",
         "PII detection",
-        "redaction",
-        "encryption",
-        "data retention"
+        "Encryption"
       ],
       "desejaveis": []
     },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
     "patrocina_visto": null,
     "contratacao": "nao_informado",
     "anos_experiencia_min": null,
@@ -845,7 +783,7 @@
     "foco_er": 0.7,
     "encaixe": 0.29,
     "compat_detalhe": {
-      "habilidades": 38,
+      "habilidades": 39,
       "senioridade": 85,
       "local": 60,
       "ingles": 100,
@@ -856,20 +794,17 @@
         "Step Functions",
         "AWS",
         "GCP",
-        "private VPC deployment",
-        "redaction",
-        "encryption",
-        "data retention"
+        "PII detection",
+        "Encryption"
       ],
       "parciais": [
-        "Airflow",
-        "PII detection"
+        "Airflow"
       ],
       "estimado": false
     },
-    "desde": "2026-10-20",
+    "desde": "2026-10-14",
     "verificada_em": "2026-10-20",
-    "nova": true
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1077,6 +1012,71 @@
     "desde": "2026-10-16",
     "verificada_em": "2026-10-20",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer | Data Scientist — Unstructured Data & AI Pipelines",
+    "url": "https://ee.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474772166",
+    "data": "Oct 2, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Vaga que inclui entity resolution e record linkage como responsabilidade central.",
+    "resumo": "O post apresenta a vaga de Data Engineer/Data Scientist, enfatizando trabalho com entity resolution, record linkage determinístico e fuzzy, orquestração de pipelines e segurança de dados PII.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "record linkage",
+        "deterministic matching",
+        "fuzzy matching",
+        "Airflow",
+        "Step Functions",
+        "AWS",
+        "GCP",
+        "private VPC deployment",
+        "PII detection",
+        "redaction",
+        "encryption",
+        "data retention"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.7,
+    "encaixe": 0.28,
+    "compat_detalhe": {
+      "habilidades": 35,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Step Functions",
+        "AWS",
+        "GCP",
+        "private VPC deployment",
+        "PII detection",
+        "redaction",
+        "encryption",
+        "data retention"
+      ],
+      "parciais": [
+        "Airflow"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-20",
+    "verificada_em": "2026-10-20",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1678,7 +1678,7 @@
     "foco_er": 0.3,
     "encaixe": 0.06,
     "compat_detalhe": {
-      "habilidades": 75,
+      "habilidades": 72,
       "senioridade": 75,
       "local": 12,
       "ingles": 85,
@@ -1866,7 +1866,7 @@
     "foco_er": 0.7,
     "encaixe": 0.05,
     "compat_detalhe": {
-      "habilidades": 65,
+      "habilidades": 60,
       "senioridade": 85,
       "local": 8,
       "ingles": 100,
@@ -1879,6 +1879,7 @@
         "BigQuery"
       ],
       "parciais": [
+        "Clustering",
         "LLMs"
       ],
       "estimado": false
@@ -2046,13 +2047,14 @@
       "senioridade_txt": "pede 4+ anos (você tem 2.8)",
       "local_txt": "remoto só para France: exige autorização de trabalho lá",
       "faltam": [
-        "Informatica",
         "Tibco EBX",
         "Stibo STEP",
         "Semarchy",
         "publish/subscribe"
       ],
       "parciais": [
+        "Informatica",
+        "modelagem de dados",
         "programação orientada a objetos"
       ],
       "estimado": false
@@ -2166,7 +2168,7 @@
     "foco_er": 1,
     "encaixe": 0.05,
     "compat_detalhe": {
-      "habilidades": 80,
+      "habilidades": 75,
       "senioridade": 60,
       "local": 12,
       "ingles": 85,
@@ -2175,7 +2177,8 @@
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
       "parciais": [
-        "SQL"
+        "SQL",
+        "clustering"
       ],
       "estimado": false
     },
@@ -2810,7 +2813,7 @@
     "foco_er": 0.5,
     "encaixe": 0.03,
     "compat_detalhe": {
-      "habilidades": 35,
+      "habilidades": 38,
       "senioridade": 60,
       "local": 12,
       "ingles": 85,
@@ -3007,7 +3010,7 @@
     "foco_er": 0.5,
     "encaixe": 0.02,
     "compat_detalhe": {
-      "habilidades": 39,
+      "habilidades": 34,
       "senioridade": 40,
       "local": 12,
       "ingles": 85,
@@ -3021,7 +3024,8 @@
         "CDR"
       ],
       "parciais": [
-        "SQL"
+        "SQL",
+        "Data Mapping"
       ],
       "estimado": false
     },

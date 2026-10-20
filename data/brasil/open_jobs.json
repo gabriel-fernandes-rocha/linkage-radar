@@ -405,9 +405,9 @@
     "ingles": "nao_informado",
     "foco_er": 0.9,
     "requisitos_estimados": true,
-    "encaixe": 0.3,
+    "encaixe": 0.29,
     "compat_detalhe": {
-      "habilidades": 38,
+      "habilidades": 35,
       "senioridade": 85,
       "local": 60,
       "ingles": 100,
@@ -420,14 +420,14 @@
         "AWS",
         "Terraform",
         "PostgreSQL",
-        "Observability"
+        "Observability",
+        "Data modeling"
       ],
       "parciais": [
         "SQL",
         "Delta Lake",
         "GitHub Actions",
-        "Data reconciliation",
-        "Data modeling"
+        "Data reconciliation"
       ],
       "estimado": true
     },
@@ -549,9 +549,9 @@
     "anos_experiencia_min": null,
     "ingles": "fluente",
     "foco_er": 0.05,
-    "encaixe": 0.26,
+    "encaixe": 0.27,
     "compat_detalhe": {
-      "habilidades": 55,
+      "habilidades": 57,
       "senioridade": 85,
       "local": 60,
       "ingles": 85,
@@ -706,7 +706,7 @@
     "requisitos_estimados": true,
     "encaixe": 0.14,
     "compat_detalhe": {
-      "habilidades": 28,
+      "habilidades": 25,
       "senioridade": 45,
       "local": 75,
       "ingles": 85,
@@ -715,6 +715,7 @@
       "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
       "faltam": [
         "Infrastructure as Code",
+        "Data Modeling",
         "Databricks",
         "Terraform",
         "AWS CDK",
@@ -722,9 +723,7 @@
         "Azure",
         "GCP"
       ],
-      "parciais": [
-        "Data Modeling"
-      ],
+      "parciais": [],
       "estimado": true
     },
     "desde": "2026-10-16",
