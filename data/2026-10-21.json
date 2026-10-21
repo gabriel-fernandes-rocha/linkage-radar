@@ -1,0 +1,300 @@
+{
+  "data": "2026-10-21",
+  "gerado_em": "2026-10-20T22:34-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Accelerant hiring Senior Data Engineer in London Area ... - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-data-engineer-at-accelerant-4475208459",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 9,
+      "juiz": "groq",
+      "motivo": "A vaga exige expertise prática em entity matching e record linkage.",
+      "resumo": "Senior Data Engineer na Accelerant. Responsável por aplicar técnicas de matching de registros e garantir qualidade de dados em produção.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "entity resolution",
+          "record linkage",
+          "data quality management",
+          "metadata management",
+          "data lineage",
+          "data governance"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.31,
+      "compat_detalhe": {
+        "habilidades": 58,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "metadata management"
+        ],
+        "parciais": [
+          "data quality management",
+          "data lineage",
+          "data governance"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Principal Software Architect (Graph Architect)",
+      "url": "https://www.linkedin.com/jobs/view/principal-software-architect-graph-architect-at-acxiom-4479593254",
+      "texto": "The Principal Software Architect should have significant experience designing or working with Identity Resolution, Entity Resolution, Customer 360, Master Data Management, identity graph, or ...",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 13,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de arquiteto de software com foco em Identity Resolution e MDM.",
+      "resumo": "Vaga de Principal Software Architect que requer experiência em Identity Resolution, Entity Resolution, Customer 360 e Master Data Management.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "Identity Resolution",
+          "Entity Resolution",
+          "Master Data Management",
+          "Graph"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.9,
+      "encaixe": 0.39,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Product Manager at Acxiom — United States | LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/product-manager-at-acxiom-4480133477",
+      "texto": "The ideal candidate combines strong product management and analytical skills with experience or familiarity in B2B data, identity resolution, entity matching, marketing data, or other data ...",
+      "data": "Oct 15, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Product Manager na Acxiom com foco em identity resolution e entity matching.",
+      "resumo": "Vaga de Product Manager que combina gestão de produto com experiência em resolução de identidade e matching de entidades.",
+      "confianca": 0.97,
+      "requisitos": {
+        "obrigatorios": [
+          "Identity Resolution",
+          "Entity Resolution",
+          "Master Data Management",
+          "Graph"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.38,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Director Product Manager, Identity & Activation - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/director-product-manager-identity-activation-at-samba-4478401627?position=4",
+      "texto": "Own Vision and Roadmap: Own the product vision and roadmap for identity resolution and activation, making the prioritization calls that keep the team focused. Advance Identity Resolution: Advance our identity resolution product: graph building and enrichment, cross-device and cross-identifier linking, and interoperability.",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Director Product Manager com responsabilidade sobre produtos de identity resolution.",
+      "resumo": "Cargo de Director Product Manager responsável por roadmap e desenvolvimento de soluções de identity resolution e ativação.",
+      "confianca": 0.97,
+      "requisitos": {
+        "obrigatorios": [
+          "Identity Resolution",
+          "Entity Resolution",
+          "Master Data Management",
+          "Graph"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.39,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Comorbidities of dementia in electronic health records: validation of a natural language processing app and comparison with data linkage",
+      "url": "https://doi.org/10.64898/2026.10.16.26365714",
+      "autores": "Laiba Mirza et al.",
+      "data": "2026-10-19",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "O estudo utiliza data linkage entre registros eletrônicos de saúde e bases de cuidados primários e hospitalares.",
+      "resumo": "O artigo valida um aplicativo de NLP para identificar comorbidades em EHRs e compara os resultados com dados vinculados de cuidados primários e hospitalares. O foco central está na ligação de registros de saúde.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Prediagnosis Smoking and Survival in Lung, Bladder, Kidney, and Head and Neck Cancers: A Population-Based Data Linkage Study",
+      "url": "https://doi.org/10.64898/2026.10.15.26365694",
+      "autores": "Edifofon Akpan et al.",
+      "data": "2026-10-19",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "A pesquisa realiza data linkage entre registros de câncer e prontuários de saúde para analisar efeitos do tabagismo.",
+      "resumo": "O estudo vincula dados do registro de câncer com registros de saúde rotineiros para avaliar a sobrevida de pacientes fumantes. O tema principal é a ligação de bases de dados populacionais.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 59,
+  "vagas_arquivadas_total": 83,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 20,
+    "semana": 3,
+    "tema": "O processo de data matching de ponta a ponta",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Pipeline mínimo em Python (pandas + recordlinkage) no dataset FEBRL",
+    "modulo": "Semana 3: O processo de data matching de ponta a ponta",
+    "versao": 2,
+    "objetivo": "Construir, em código, um pipeline mínimo de data matching ponta a ponta (pré-processamento leve, indexação por blocking, comparação de pares e classificação por soma de pesos), usando o dataset sintético FEBRL4 da biblioteca recordlinkage, e medir precisão e recall contra o gabarito conhecido.",
+    "contexto": "Você recebeu duas tabelas sintéticas geradas pelo FEBRL que simulam cadastros de pessoas com erros de digitação, abreviações e typos, no mesmo estilo do exemplo do capítulo 2 de Christen (2012, p. 23 a 29): nomes, endereços e datas de nascimento com variações. O objetivo é simular, em escala reduzida, o processo descrito na Fig. 2.1 (pré-processamento, indexação, comparação, classificação, avaliação) e comparar o resultado com os pares verdadeiros, pois o FEBRL4 traz rótulos de verdade (record_id compartilhado entre as duas bases) para avaliação.",
+    "passos": [
+      "Carregar dfA e dfB com recordlinkage.datasets.load_febrl4(), que já retorna duas tabelas com erros sintéticos e rec_id comum para os verdadeiros matches.",
+      "Fazer um pré-processamento minimo: converter texto para minúsculas e remover espaços extras nos campos given_name, surname e address (equivalente ao passo 1 do pré-processamento de Christen, p. 25, remover caracteres indesejados).",
+      "Criar o indexador com blocking por surname (idx.block('surname')), reproduzindo a lógica de Fig. 2.4 a 2.5 de Christen (p. 28), e gerar os pares candidatos com idx.index(dfA, dfB).",
+      "Calcular o vetor de comparação com recordlinkage.Compare(), usando jarowinkler para given_name e surname, e exact para date_of_birth e postcode.",
+      "Somar os escores do vetor de comparação para formar um score simples e classificar como match todo par com soma acima de um limiar (ex.: 3.0 de um máximo de 4.0).",
+      "Extrair o rótulo verdadeiro comparando o índice (rec_id_a, rec_id_b) com os pares onde os rec_id originais coincidem, e calcular precisão, recall e F1 com recordlinkage.evaluation ou manualmente.",
+      "Registrar quantos pares candidatos foram gerados versus o total de comparações sem blocking (7xN), para visualizar a redução de complexidade descrita na seção 2.3 de Christen (p. 27)."
+    ],
+    "codigo": "import recordlinkage\nfrom recordlinkage.datasets import load_febrl4\n\ndfA, dfB = load_febrl4()\n\nfor col in ['given_name', 'surname', 'address_1']:\n    dfA[col] = dfA[col].str.lower().str.strip()\n    dfB[col] = dfB[col].str.lower().str.strip()\n\nidx = recordlinkage.Index()\nidx.block('surname')\npairs = idx.index(dfA, dfB)\nprint('Pares candidatos:', len(pairs), 'de', len(dfA)*len(dfB), 'possiveis')\n\ncmp = recordlinkage.Compare()\ncmp.string('given_name', 'given_name', method='jarowinkler', label='gn')\ncmp.string('surname', 'surname', method='jarowinkler', label='sn')\ncmp.exact('date_of_birth', 'date_of_birth', label='dob')\ncmp.exact('postcode', 'postcode', label='pc')\nfeatures = cmp.compute(pairs, dfA, dfB)\n\nfeatures['score'] = features.sum(axis=1)\npreds = features[features['score'] >= 3.0].index\n\ntrue_links = [(a, b) for a, b in pairs if a.split('-')[-1] == b.split('-')[-1]]\nprint('Candidatos classificados como match:', len(preds))\nprint('Verdadeiros positivos possiveis no blocking:', len(true_links))",
+    "como_avaliar": "Calcule precisão = (pares preditos como match que também estão em true_links) dividido pelo total de preds. Calcule recall = (pares de true_links que foram capturados em preds) dividido pelo total de true_links conhecidos no FEBRL4 (geralmente 5000 pares verdadeiros no dataset completo, mas aqui conte apenas os que sobreviveram ao blocking). Um pipeline minimamente aceitável deve atingir recall acima de 0.80 dentro do subconjunto de pares candidatos, pois perdas adicionais de recall vêm do blocking, não da classificação. Se a precisão ficar muito baixa (abaixo de 0.5), o limiar de 3.0 está permissivo demais.",
+    "desafio": "No FEBRL4 alguns registros têm surname com erro de digitação suficiente para mudar o código Soundex e cair fora do bloco (como o caso a4/b7 'Smithers'/'Cain' descrito por Christen, p. 28 a 29, que o blocking por surname perde). Modifique o pipeline para usar uma segunda regra de blocking (ex.: idx.sortedneighbourhood('given_name', window=5)) combinada em união com o blocking por surname, e recalcule recall e o número total de pares candidatos. Avalie o custo (quantos pares extra) versus o ganho de recall.",
+    "gabarito": "Ao adicionar sortedneighbourhood em given_name com janela 5, você deve observar um aumento no número de pares candidatos (pois a união de duas regras de blocking sempre gera mais ou igual pares que uma regra isolada) e um aumento ou manutenção do recall, já que pares verdadeiros que tinham surname muito distorcido mas given_name preservado passam a ser capturados. Isso ilustra exatamente o trade-off de Christen (2012, seção 2.3, p. 27 a 29): reduzir a complexidade quadrática sem perder matches verdadeiros exige combinar múltiplas chaves de blocking, pagando o preço de mais comparações no passo seguinte.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer, Capítulo 2, Seções 2.1 a 2.3, páginas 23 a 29.",
+      "Christophides, V. et al. (2020). An overview of end-to-end entity resolution for big data. ACM Computing Surveys, 53(6)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2947,
+      "pos_palavras_chave": 5,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 187,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 6,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

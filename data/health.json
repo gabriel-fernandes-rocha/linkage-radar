@@ -1,12 +1,7 @@
 {
- "data": "2026-10-20",
+ "data": "2026-10-21",
  "status": "problema",
  "checks": [
-  {
-   "status": "problema",
-   "nome": "Perfis para seguir",
-   "detalhe": "0 itens (esperado pelo menos 1)"
-  },
   {
    "status": "problema",
    "nome": "Claude fora do ar",
@@ -15,34 +10,37 @@
   {
    "status": "atencao",
    "nome": "Juiz usado",
-   "detalhe": "gemini, groq (reserva gratuita assumiu)"
+   "detalhe": "groq, mistral, openrouter (reserva gratuita assumiu)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 180,
-  "jobs/greenhouse": 1425,
-  "jobs/lever": 309,
+  "jobs/remotive": 150,
+  "jobs/greenhouse": 1431,
+  "jobs/lever": 306,
   "jobs/ashby": 31,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
-  "jobs/gupy": 199,
+  "jobs/gupy": 202,
   "jobs/himalayas": 98,
   "jobs/jobicy": 137,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 152,
-  "jobs/social_posts": 7,
-  "jobs/linkedin_guest": 27,
-  "papers/arxiv": 6,
+  "jobs/weworkremotely": 161,
+  "jobs/social_posts": 6,
+  "jobs/linkedin_guest": 44,
+  "papers/arxiv": 12,
   "papers/openalex": 175,
-  "linkedin/posts": 10,
-  "network/perfis": 0
+  "linkedin/posts": 9,
+  "network/perfis": 8
  },
  "falhas": [
-  "judge: gemini/gemini-3.8-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
-  "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
+  "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
+  "judge: gemini/gemini-3.7-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
   "judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\\r\\n')",
+  "judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on toke",
+  "judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on toke",
+  "judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on toke",
   "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }

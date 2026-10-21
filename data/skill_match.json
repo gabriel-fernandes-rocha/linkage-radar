@@ -293,6 +293,11 @@
   "nivel": "parcial",
   "nome": "Data Lake"
  },
+ "data lineage": {
+  "motivo": "Desenvolve pipelines, mas não menciona rastreamento explícito",
+  "nivel": "parcial",
+  "nome": "data lineage"
+ },
  "data mapping": {
   "motivo": "faz normalização e integração de dados heterogêneos",
   "nivel": "tem",
@@ -322,6 +327,11 @@
   "motivo": "garantia de qualidade explícita no trabalho",
   "nivel": "tem",
   "nome": "Data Quality"
+ },
+ "data quality management": {
+  "motivo": "Fala de garantia de qualidade e dados ruidosos",
+  "nivel": "parcial",
+  "nome": "data quality management"
  },
  "data reconciliation": {
   "motivo": "deduplicação e matching são formas de reconciliação de dados",
@@ -543,6 +553,11 @@
   "nivel": "parcial",
   "nome": "Golden Records"
  },
+ "graph": {
+  "motivo": "currículo foca em record linkage linear, sem grafos explícitos",
+  "nivel": "nao",
+  "nome": "Graph"
+ },
  "graph database": {
   "motivo": "Nenhum uso de banco de dados grafo indicado.",
   "nivel": "nao",
@@ -747,6 +762,11 @@
   "motivo": "core do trabalho com matching determinístico/probabilístico",
   "nivel": "tem",
   "nome": "Matching Algorítmico"
+ },
+ "metadata management": {
+  "motivo": "Nenhuma evidência de gerenciamento de metadados",
+  "nivel": "nao",
+  "nome": "metadata management"
  },
  "metaflow": {
   "motivo": "sem evidência de uso dessa ferramenta",

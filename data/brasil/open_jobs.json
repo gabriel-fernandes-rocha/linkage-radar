@@ -69,7 +69,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -138,7 +138,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -210,7 +210,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -279,7 +279,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -349,7 +349,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -432,11 +432,71 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
     "confianca": 0.95
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "SENIOR DATA INTEGRATION ANALYST (DATABRICKS/PYTHON) (36005)",
+    "url": "https://www.linkedin.com/jobs/view/4469057508",
+    "empresa": "Bosch Brasil",
+    "local": "Curitiba e Região",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-14",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data integration",
+      "data quality"
+    ],
+    "juiz": "groq",
+    "motivo": "Posição de Senior Data Integration Analyst na Bosch Brasil envolve integração de múltiplas fontes e garantia de qualidade, atendendo ao critério de integração de dados.",
+    "resumo": "Senior Data Integration Analyst (Databricks/Python) na Bosch Brasil, Curitiba. Desenvolve processos ETL/ELT, integra dados de diferentes sistemas e assegura qualidade para a plataforma de analytics.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Databricks",
+        "ETL/ELT"
+      ],
+      "desejaveis": [
+        "Azure Data Factory",
+        "Azure DevOps",
+        "SQL",
+        "APIs",
+        "Agile/Scrum"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.05,
+    "encaixe": 0.27,
+    "compat_detalhe": {
+      "habilidades": 57,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Databricks"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-18",
+    "verificada_em": "2026-10-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -502,71 +562,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
     "confianca": 0.93
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "SENIOR DATA INTEGRATION ANALYST (DATABRICKS/PYTHON) (36005)",
-    "url": "https://www.linkedin.com/jobs/view/4469057508",
-    "empresa": "Bosch Brasil",
-    "local": "Curitiba e Região",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "publicada_em": "2026-10-14",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "data integration",
-      "data quality"
-    ],
-    "juiz": "groq",
-    "motivo": "Posição de Senior Data Integration Analyst na Bosch Brasil envolve integração de múltiplas fontes e garantia de qualidade, atendendo ao critério de integração de dados.",
-    "resumo": "Senior Data Integration Analyst (Databricks/Python) na Bosch Brasil, Curitiba. Desenvolve processos ETL/ELT, integra dados de diferentes sistemas e assegura qualidade para a plataforma de analytics.",
-    "confianca": 0.95,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "Databricks",
-        "ETL/ELT"
-      ],
-      "desejaveis": [
-        "Azure Data Factory",
-        "Azure DevOps",
-        "SQL",
-        "APIs",
-        "Agile/Scrum"
-      ]
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.05,
-    "encaixe": 0.27,
-    "compat_detalhe": {
-      "habilidades": 57,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 85,
-      "foco": 86,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Databricks"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-18",
-    "verificada_em": "2026-10-20",
-    "nova": false
   },
   {
     "tipo": "vaga",
@@ -650,7 +650,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -727,7 +727,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -786,7 +786,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",

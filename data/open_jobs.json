@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +250,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -300,7 +300,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -346,7 +346,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -397,7 +397,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -459,8 +459,8 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-20",
-    "nova": true
+    "verificada_em": "2026-10-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -509,8 +509,152 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Principal Software Architect (Graph Architect)",
+    "url": "https://www.linkedin.com/jobs/view/principal-software-architect-graph-architect-at-acxiom-4479593254",
+    "data": "Oct 14, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 13,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de arquiteto de software com foco em Identity Resolution e MDM.",
+    "resumo": "Vaga de Principal Software Architect que requer experiência em Identity Resolution, Entity Resolution, Customer 360 e Master Data Management.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "Identity Resolution",
+        "Entity Resolution",
+        "Master Data Management",
+        "Graph"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.9,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management",
+        "Graph"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-21",
+    "verificada_em": "2026-10-21",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Director Product Manager, Identity & Activation - LinkedIn",
+    "url": "https://uk.linkedin.com/jobs/view/director-product-manager-identity-activation-at-samba-4478401627?position=4",
+    "data": "Oct 14, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Director Product Manager com responsabilidade sobre produtos de identity resolution.",
+    "resumo": "Cargo de Director Product Manager responsável por roadmap e desenvolvimento de soluções de identity resolution e ativação.",
+    "confianca": 0.97,
+    "requisitos": {
+      "obrigatorios": [
+        "Identity Resolution",
+        "Entity Resolution",
+        "Master Data Management",
+        "Graph"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.33,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management",
+        "Graph"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-21",
+    "verificada_em": "2026-10-21",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Product Manager at Acxiom — United States | LinkedIn Jobs",
+    "url": "https://www.linkedin.com/jobs/view/product-manager-at-acxiom-4480133477",
+    "data": "Oct 15, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Product Manager na Acxiom com foco em identity resolution e entity matching.",
+    "resumo": "Vaga de Product Manager que combina gestão de produto com experiência em resolução de identidade e matching de entidades.",
+    "confianca": 0.97,
+    "requisitos": {
+      "obrigatorios": [
+        "Identity Resolution",
+        "Entity Resolution",
+        "Master Data Management",
+        "Graph"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.7,
+    "encaixe": 0.33,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management",
+        "Graph"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-21",
+    "verificada_em": "2026-10-21",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -564,8 +708,8 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-20",
-    "nova": true
+    "verificada_em": "2026-10-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -611,8 +755,8 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-20",
-    "nova": true
+    "verificada_em": "2026-10-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -651,8 +795,64 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Accelerant hiring Senior Data Engineer in London Area ... - LinkedIn",
+    "url": "https://uk.linkedin.com/jobs/view/senior-data-engineer-at-accelerant-4475208459",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 9,
+    "juiz": "groq",
+    "motivo": "A vaga exige expertise prática em entity matching e record linkage.",
+    "resumo": "Senior Data Engineer na Accelerant. Responsável por aplicar técnicas de matching de registros e garantir qualidade de dados em produção.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "record linkage",
+        "data quality management",
+        "metadata management",
+        "data lineage",
+        "data governance"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.31,
+    "compat_detalhe": {
+      "habilidades": 58,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "metadata management"
+      ],
+      "parciais": [
+        "data quality management",
+        "data lineage",
+        "data governance"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-21",
+    "verificada_em": "2026-10-21",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -700,7 +900,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -740,7 +940,174 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Capital Dynamics hiring Technology Analyst (AI, Automation & Data ...",
+    "url": "https://uk.linkedin.com/jobs/view/technology-analyst-ai-automation-data-science-private-equity-at-capital-dynamics-4479861330?position=1",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Post anuncia vaga de Technology Analyst com foco em plataforma de MDM e entity resolution.",
+    "resumo": "Vaga de Technology Analyst (AI, Automation & Data) na Capital Dynamics, envolvendo uso da plataforma Tamr para identificação consistente de entidades.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-19",
+    "verificada_em": "2026-10-21",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Fitch Solutions hiring Director, Knowledge Graph and Entity ...",
+    "url": "https://uk.linkedin.com/jobs/view/director-knowledge-graph-and-entity-infrastructure-at-fitch-solutions-4469698199",
+    "data": "Sep 24, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Anúncio de vaga de Diretor com responsabilidade principal em resolução de entidades.",
+    "resumo": "Vaga para Diretor de Knowledge Graph e Entity Resolution na Fitch Solutions, com foco em definir requisitos e testar soluções de linking.",
+    "confianca": 0.99,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-21",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior AI Engineer at Gaude Business & Infrastructure Solutions ...",
+    "url": "https://in.linkedin.com/jobs/view/senior-ai-engineer-at-gaude-business-infrastructure-solutions-4471581984",
+    "data": "Sep 29, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Anúncio de vaga de Senior AI Engineer que inclui entity resolution entre as atribuições.",
+    "resumo": "O cargo de Senior AI Engineer na Gaude Business & Infrastructure Solutions requer experiência em construção de knowledge graphs, design de esquemas e resolução de entidades.",
+    "confianca": 0.99,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-21",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Product Manager - Power Infrastructure Data - LinkedIn",
+    "url": "https://ca.linkedin.com/jobs/view/product-manager-power-infrastructure-data-at-enverus-4469717577",
+    "data": "Sep 25, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Vaga de Product Manager que menciona explicitamente entity resolution na pipeline de dados.",
+    "resumo": "A posição de Product Manager, Power Infrastructure Data busca liderar pipelines automatizados com lógica de entity resolution e validação mensurável.",
+    "confianca": 0.99,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-16",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -803,214 +1170,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Capital Dynamics hiring Technology Analyst (AI, Automation & Data ...",
-    "url": "https://uk.linkedin.com/jobs/view/technology-analyst-ai-automation-data-science-private-equity-at-capital-dynamics-4479861330?position=1",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 7,
-    "juiz": "groq",
-    "motivo": "Post anuncia vaga de Technology Analyst com foco em plataforma de MDM e entity resolution.",
-    "resumo": "Vaga de Technology Analyst (AI, Automation & Data) na Capital Dynamics, envolvendo uso da plataforma Tamr para identificação consistente de entidades.",
-    "confianca": 0.9,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-19",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Fitch Solutions hiring Director, Knowledge Graph and Entity ...",
-    "url": "https://uk.linkedin.com/jobs/view/director-knowledge-graph-and-entity-infrastructure-at-fitch-solutions-4469698199",
-    "data": "Sep 24, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "groq",
-    "motivo": "Anúncio de vaga de Diretor com responsabilidade principal em resolução de entidades.",
-    "resumo": "Vaga para Diretor de Knowledge Graph e Entity Resolution na Fitch Solutions, com foco em definir requisitos e testar soluções de linking.",
-    "confianca": 0.99,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.0,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior AI Engineer at Gaude Business & Infrastructure Solutions ...",
-    "url": "https://in.linkedin.com/jobs/view/senior-ai-engineer-at-gaude-business-infrastructure-solutions-4471581984",
-    "data": "Sep 29, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "groq",
-    "motivo": "Anúncio de vaga de Senior AI Engineer que inclui entity resolution entre as atribuições.",
-    "resumo": "O cargo de Senior AI Engineer na Gaude Business & Infrastructure Solutions requer experiência em construção de knowledge graphs, design de esquemas e resolução de entidades.",
-    "confianca": 0.99,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.0,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Product Manager - Power Infrastructure Data - LinkedIn",
-    "url": "https://ca.linkedin.com/jobs/view/product-manager-power-infrastructure-data-at-enverus-4469717577",
-    "data": "Sep 25, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "groq",
-    "motivo": "Vaga de Product Manager que menciona explicitamente entity resolution na pipeline de dados.",
-    "resumo": "A posição de Product Manager, Power Infrastructure Data busca liderar pipelines automatizados com lógica de entity resolution e validação mensurável.",
-    "confianca": 0.99,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.0,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Applied AI Engineer — LLM Reasoning & Evaluation",
-    "url": "https://in.linkedin.com/jobs/view/senior-applied-ai-engineer-%E2%80%94-llm-reasoning-evaluation-at-the-ops-layer-4475748057",
-    "data": "Oct 8, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "groq",
-    "motivo": "Anúncio de vaga de Senior Applied AI Engineer que lista entity resolution como competência técnica.",
-    "resumo": "O cargo envolve classificação semântica, resolução de entidades e normalização de informação, além de pipelines de IA multi‑estágio.",
-    "confianca": 0.99,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.0,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1075,8 +1235,8 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-20",
-    "nova": true
+    "verificada_em": "2026-10-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1135,7 +1295,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1181,7 +1341,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1229,8 +1389,8 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-20",
-    "nova": true
+    "verificada_em": "2026-10-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1288,7 +1448,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1348,7 +1508,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1416,7 +1576,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1477,7 +1637,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1529,110 +1689,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "B Corp™ hiring Data Engineer in United Kingdom - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/data-engineer-at-areti-group-b-corp%E2%84%A2-4459311339?position=40",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 4,
-    "motivo": "Vaga de Data Engineer com requisitos explícitos de entity matching/resolution em graph database em setor público, alinhada com o perfil do leitor.",
-    "resumo": "B Corp contrata Data Engineer no Reino Unido para trabalhar com soluções de graph database em Python, exigindo forte modelagem de dados e capacidades de entity matching/resolution em ambiente de setor público.",
-    "confianca": 0.82,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "Graph Databases",
-        "Entity Resolution"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United Kingdom"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.06,
-    "compat_detalhe": {
-      "habilidades": 83,
-      "senioridade": 85,
-      "local": 8,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "em United Kingdom, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [
-        "Graph Databases"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-15",
-    "verificada_em": "2026-10-20",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Engineer at Harrison Clarke — United States - LinkedIn",
-    "url": "https://www.linkedin.com/jobs/view/data-engineer-at-harrison-clarke-4476795457",
-    "data": "Oct 7, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 7,
-    "motivo": "Vaga de Data Engineer em Harrison Clarke que lista entity resolution, record linkage e identity graphs como experiências valorizadas.",
-    "resumo": "Vaga de Data Engineer em Harrison Clarke com exposição desejada a entity resolution, record linkage, identity graphs ou graph databases.",
-    "confianca": 0.9,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": [
-        "Entity resolution",
-        "Record linkage",
-        "Graph databases"
-      ]
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.06,
-    "compat_detalhe": {
-      "habilidades": 83,
-      "senioridade": 85,
-      "local": 8,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1693,7 +1750,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1730,7 +1787,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1791,7 +1848,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1885,7 +1942,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1934,7 +1991,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -1995,7 +2052,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2060,7 +2117,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2115,7 +2172,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2183,7 +2240,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2232,7 +2289,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -2287,7 +2344,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -2336,7 +2393,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -2385,7 +2442,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -2437,7 +2494,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -2497,7 +2554,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-06-11"
   },
@@ -2535,7 +2592,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2593,7 +2650,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2690,7 +2747,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2765,7 +2822,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2832,7 +2889,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2910,7 +2967,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2934,7 +2991,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3030,7 +3087,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -3090,7 +3147,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false
   },
   {
@@ -3154,7 +3211,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -3180,7 +3237,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-20",
+    "verificada_em": "2026-10-21",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
