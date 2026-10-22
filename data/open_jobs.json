@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +250,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -300,7 +300,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -346,7 +346,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -397,7 +397,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -459,7 +459,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -509,7 +509,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -557,8 +557,8 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-21",
-    "nova": true
+    "verificada_em": "2026-10-22",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -605,8 +605,8 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-21",
-    "nova": true
+    "verificada_em": "2026-10-22",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -653,8 +653,8 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-21",
-    "nova": true
+    "verificada_em": "2026-10-22",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -708,7 +708,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -755,7 +755,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -795,64 +795,8 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Accelerant hiring Senior Data Engineer in London Area ... - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/senior-data-engineer-at-accelerant-4475208459",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 9,
-    "juiz": "groq",
-    "motivo": "A vaga exige expertise prática em entity matching e record linkage.",
-    "resumo": "Senior Data Engineer na Accelerant. Responsável por aplicar técnicas de matching de registros e garantir qualidade de dados em produção.",
-    "confianca": 0.98,
-    "requisitos": {
-      "obrigatorios": [
-        "entity resolution",
-        "record linkage",
-        "data quality management",
-        "metadata management",
-        "data lineage",
-        "data governance"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "encaixe": 0.31,
-    "compat_detalhe": {
-      "habilidades": 58,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "metadata management"
-      ],
-      "parciais": [
-        "data quality management",
-        "data lineage",
-        "data governance"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-21",
-    "verificada_em": "2026-10-21",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -900,7 +844,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -940,54 +884,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-21",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Capital Dynamics hiring Technology Analyst (AI, Automation & Data ...",
-    "url": "https://uk.linkedin.com/jobs/view/technology-analyst-ai-automation-data-science-private-equity-at-capital-dynamics-4479861330?position=1",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 7,
-    "juiz": "groq",
-    "motivo": "Post anuncia vaga de Technology Analyst com foco em plataforma de MDM e entity resolution.",
-    "resumo": "Vaga de Technology Analyst (AI, Automation & Data) na Capital Dynamics, envolvendo uso da plataforma Tamr para identificação consistente de entidades.",
-    "confianca": 0.9,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-19",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1027,7 +924,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1067,7 +964,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1107,7 +1004,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1170,7 +1067,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1235,7 +1132,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1295,7 +1192,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1341,8 +1238,67 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analytics Engineer 5 - Ads Identity & Signals",
+    "url": "https://himalayas.app/companies/netflix/jobs/analytics-engineer-5-ads-identity-signals",
+    "empresa": "Netflix",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-10-21",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "A descrição destaca construção e manutenção de grafo de identidade e pipelines de entity‑matching, foco central da vaga.",
+    "resumo": "O time de Identity & Signals da Netflix desenvolve o grafo de identidade e sistemas de correspondência de entidades para reconhecer pessoas e domicílios em diferentes dispositivos e fontes de dados.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "deterministic matching",
+        "probabilistic matching",
+        "fuzzy matching",
+        "blocking",
+        "match quality evaluation",
+        "entity resolution",
+        "graph data structures"
+      ],
+      "desejaveis": [
+        "Neo4j",
+        "Neptune",
+        "GraphFrames",
+        "Metaflow"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.9,
+    "encaixe": 0.25,
+    "compat_detalhe": {
+      "habilidades": 74,
+      "senioridade": 60,
+      "local": 60,
+      "ingles": 85,
+      "foco": 98,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-22",
+    "verificada_em": "2026-10-22",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1389,7 +1345,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1448,7 +1404,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1508,7 +1464,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1576,7 +1532,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1637,7 +1593,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1689,7 +1645,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1750,7 +1706,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1787,7 +1743,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1848,7 +1804,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1942,7 +1898,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -1991,7 +1947,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -2052,7 +2008,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2117,7 +2073,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2172,7 +2128,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2240,57 +2196,9 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-10-02"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Scientist at proSapient — Greater London ... - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/senior-data-scientist-at-prosapient-4478457426",
-    "data": "",
-    "fonte": "LinkedIn Jobs",
-    "score": 8,
-    "juiz": "gemini",
-    "motivo": "A vaga para Senior Data Scientist exige experiência prática em entity resolution, record linkage ou deduplicação em larga escala.",
-    "resumo": "Oportunidade para Senior Data Scientist na proSapient requer experiência prática em entity resolution, record linkage e deduplicação em grande escala. O escopo também abrange grafos de conhecimento, embeddings e NLP.",
-    "confianca": 0.95,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United Kingdom"
-      ],
-      "cidades": [
-        "London"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 8,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "em United Kingdom, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-17",
-    "verificada_em": "2026-10-21",
-    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2344,7 +2252,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -2393,7 +2301,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -2442,7 +2350,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -2494,69 +2402,8 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Engineer - Financial Crime",
-    "url": "https://jobs.workable.com/view/54WNBXrf7xvDupUZaEakXH/hybrid-senior-data-engineer---financial-crime-in-ho-chi-minh-city-at-gotymex",
-    "empresa": "GoTymeX",
-    "local": "Ho Chi Minh City, Vietnam",
-    "fonte": "Workable",
-    "score": 4,
-    "motivo": "Vaga de Senior Data Engineer explicitamente citando 'entity resolution' como responsabilidade central em plataforma de detecção de fraude, com tech stack (Spark, Python, SQL) alinhado.",
-    "resumo": "Senior Data Engineer na GotymeX para construir pipelines de dados em detecção de fraude e conformidade, com entity resolution, matching de dados de múltiplas fontes em tempo real e batch usando Databricks, Python e PySpark. Suporta casos de uso de KYC, AML e risco financeiro.",
-    "confianca": 0.92,
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "Spark",
-        "SQL",
-        "PostgreSQL",
-        "Databricks",
-        "ETL"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "Vietnam"
-      ],
-      "cidades": [
-        "Ho Chi Minh City"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 58,
-      "senioridade": 75,
-      "local": 8,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível senior",
-      "local_txt": "em Vietnam, sem patrocínio de visto",
-      "faltam": [
-        "PostgreSQL",
-        "Databricks"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
-    "nova": false,
-    "publicada_em": "2026-06-11"
   },
   {
     "tipo": "vaga",
@@ -2592,7 +2439,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2650,7 +2497,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2747,7 +2594,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2822,7 +2669,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2889,7 +2736,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2967,7 +2814,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2991,7 +2838,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3087,7 +2934,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -3147,7 +2994,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false
   },
   {
@@ -3211,7 +3058,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -3237,7 +3084,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-21",
+    "verificada_em": "2026-10-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

@@ -1,0 +1,199 @@
+{
+  "data": "2026-10-22",
+  "gerado_em": "2026-10-21T22:30-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Analytics Engineer 5 - Ads Identity & Signals",
+      "url": "https://himalayas.app/companies/netflix/jobs/analytics-engineer-5-ads-identity-signals",
+      "empresa": "Netflix",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-10-21",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "A descrição destaca construção e manutenção de grafo de identidade e pipelines de entity‑matching, foco central da vaga.",
+      "resumo": "O time de Identity & Signals da Netflix desenvolve o grafo de identidade e sistemas de correspondência de entidades para reconhecer pessoas e domicílios em diferentes dispositivos e fontes de dados.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "deterministic matching",
+          "probabilistic matching",
+          "fuzzy matching",
+          "blocking",
+          "match quality evaluation",
+          "entity resolution",
+          "graph data structures"
+        ],
+        "desejaveis": [
+          "Neo4j",
+          "Neptune",
+          "GraphFrames",
+          "Metaflow"
+        ]
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.25,
+      "compat_detalhe": {
+        "habilidades": 74,
+        "senioridade": 60,
+        "local": 60,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Integration of Isolation Forest, Fellegi-Sunter, and DeepER for Anomaly Detection and Data Deduplication",
+      "url": "https://doi.org/10.30871/jaic.v10i5.13951",
+      "autores": "Jamaludin Jamaludin et al.",
+      "data": "2026-10-19",
+      "fonte": "OpenAlex",
+      "score": 11,
+      "juiz": "groq",
+      "motivo": "O paper trata de deduplicação de registros usando métodos de record linkage, incluindo Fellegi‑Sunter e DeepER.",
+      "resumo": "O estudo propõe um framework que combina Isolation Forest para detecção de anomalias e técnicas probabilísticas e de deep learning para deduplicação de dados meteorológicos. Avalia a eficácia dos métodos em um conjunto de dados sinóticos de um ano.",
+      "confianca": 0.96
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Building a Scalable Entity Resolution Pipeline Under ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/building-scalable-entity-resolution-pipeline-under-pressure-singhal-kcfrc/",
+      "data": "Oct 10, 2026",
+      "fonte": "LinkedIn",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "Post discute construção de pipeline escalável para entity resolution em grande escala.",
+      "resumo": "O texto descreve a tarefa de resolver entidades de negócios em milhões de registros sem identificadores comuns, abordando abordagens técnicas.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "From Keywords to Entities: How Google AI Overviews Interpret Your ...",
+      "url": "https://www.linkedin.com/pulse/from-keywords-entities-how-google-ai-overviews-interpret-hemant-kumar-tyeof",
+      "data": "Oct 6, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post apresenta estudo de caso que inclui entity resolution como tema central.",
+      "resumo": "O texto discute como o Google AI interpreta entidades, abordando resolução de entidades e correlação em um estudo de caso.",
+      "confianca": 0.94
+    }
+  ],
+  "vagas_abertas_total": 56,
+  "vagas_arquivadas_total": 84,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 21,
+    "semana": 3,
+    "tema": "O processo de data matching de ponta a ponta",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 3: O processo de data matching de ponta a ponta",
+    "modulo": "Semana 3: O processo de data matching de ponta a ponta",
+    "versao": 2,
+    "objetivo": "Consolidar, numa única revisão, as cinco etapas do processo de data matching (pré-processamento, indexação, comparação, classificação e avaliação) como um fluxo integrado, usando o exemplo canônico de Christen (2012, cap. 2) e conectando com complexidade computacional e métricas de qualidade.",
+    "conexao": "Pense no processo de data matching como uma linha de montagem com cinco estações, exatamente como Christen (2012, fig. 2.1, p. 23-24) desenha: primeiro o pré-processamento pega dados brutos e heterogêneos (como 'B. Santi, 55 East St' da aula 16) e produz atributos padronizados em formato comum; esses atributos alimentam a indexação (aula 17), que usa blocking keys como Soundex de sobrenome ou prefixo de CEP para cortar o universo quadrático de pares (|A|x|B|) em um conjunto muito menor de pares candidatos, trocando busca exaustiva por risco controlado de perder matches verdadeiros (recall de blocking, ou pairs completeness); cada par candidato sobrevivente vira um vetor de comparação na etapa de comparação (aula 18), onde cada posição gamma_k mede a similaridade de um campo específico (nome, CEP, ano de nascimento); esse vetor entra no classificador (aula 19), que decide match, non-match ou potential match, e cuja qualidade só pode ser avaliada corretamente combinando a métrica de classificação (precision, recall, F-measure) com a métrica de indexação (reduction ratio, pairs completeness), porque recall medido só sobre pares candidatos mascara perdas ocorridas no blocking; e o laboratório da aula 20 mostrou esse ciclo completo rodando de verdade em código com recordlinkage sobre o FEBRL, revelando na prática que melhorar blocking (união de regras) é tão crítico quanto melhorar o classificador.",
+    "perguntas": [
+      {
+        "pergunta": "Segundo Christen (2012, seç. 2.1, p. 23), quais são as cinco etapas macro do processo de data matching, na ordem correta, e o que a etapa de 'potential match' exige antes do status final?",
+        "resposta": "As cinco etapas são: pré-processamento, indexação, comparação, classificação e avaliação. Quando um par é classificado como 'potential match', ele precisa passar por revisão clerical humana antes de receber o status final de match ou non-match."
+      },
+      {
+        "pergunta": "No exemplo do pré-processamento (aula 16), qual etapa especificamente resolve o problema de um campo de endereço completo vir junto em uma única string, como 'Address' na base B de Christen, e qual é o nome técnico dado a essa etapa?",
+        "resposta": "É a etapa de segmentação, também chamada de parsing (Christen, 2012, p. 26), que divide um atributo composto em subcampos atômicos e consistentes (StrNum, StrName, StrType, Suburb, Postcode, State), facilitando a comparação campo a campo depois."
+      },
+      {
+        "pergunta": "Por que o número de comparações cresce quadraticamente com o tamanho das bases, enquanto o número de matches verdadeiros cresce apenas linearmente, e qual a consequência prática disso para a indexação?",
+        "resposta": "O total de pares possíveis é |A|x|B|, que cresce quadraticamente, mas cada registro de A tipicamente corresponde a no máximo um pequeno número (geralmente um) de registros em B, então o número de matches reais está limitado pelo tamanho da menor base e cresce linearmente. A consequência é que a imensa maioria dos pares comparados são óbvios não matches, justificando o uso de blocking para eliminar essas comparações desperdiçadas sem perder os poucos matches verdadeiros."
+      },
+      {
+        "pergunta": "No vetor de comparação do par (a3,b1) 'Mary Meier' do livro, dois dos seis atributos exatos discordam (postcode e byear). Isso automaticamente classifica o par como non-match? Justifique com base no raciocínio de Christen.",
+        "resposta": "Não. Christen mostra que mesmo com duas discordâncias (erros prováveis de digitação em CEP e ano de nascimento), a forte concordância em nome completo, bairro e estado é evidência suficientemente forte de que se trata da mesma pessoa. Isso ilustra por que a classificação não deve exigir concordância total em todos os campos, apenas um padrão de similaridade suficientemente forte segundo o modelo de decisão."
+      },
+      {
+        "pergunta": "Explique por que medir recall apenas sobre os pares candidatos que sobreviveram ao blocking pode enganar um cliente, e qual métrica adicional é necessária para obter o recall real do pipeline.",
+        "resposta": "O recall medido só sobre pares candidatos condiciona a avaliação aos matches que o blocking já deixou passar, ignorando os que foram perdidos antes mesmo de chegar ao classificador. É preciso multiplicar esse recall de classificação pelo pairs completeness (PC) do blocking, que mede a fração de true matches que efetivamente entraram nos pares candidatos, para obter o recall real do pipeline completo."
+      },
+      {
+        "pergunta": "(Aula 8) Segundo a lógica de Newcombe (1959), por que um sobrenome raro contribui com peso de concordância maior do que um sobrenome comum, mesmo que ambos concordem entre dois registros?",
+        "resposta": "Porque o peso de concordância reflete quão informativa é a coincidência: valores raros na população têm baixa probabilidade de coincidir por acaso entre pessoas diferentes, então concordar nesse valor é forte evidência de que é a mesma entidade; valores comuns coincidem por acaso com frequência, então a concordância neles é fraca evidência."
+      },
+      {
+        "pergunta": "(Aula 11) Por que, segundo Christen (2012, p. 14), aplicações de segurança/fraude com populações de referência muito grandes e poucos positivos verdadeiros tendem a gerar precisão baixa mesmo com taxas de falso positivo aparentemente baixas?",
+        "resposta": "Porque a escala assimétrica entre o número enorme de registros de referência (negativos) e o número ínfimo de positivos reais faz com que até uma taxa de falso positivo pequena, aplicada sobre uma base gigantesca, produza um número absoluto de falsos positivos muito maior do que o de verdadeiros positivos, reduzindo drasticamente a precisão dos alertas."
+      }
+    ],
+    "desafio": "Duas bases de clientes, E com 2.000 registros e F com 3.500 registros, sem duplicados internos, serão casadas. (a) Calcule o total de pares sem indexação. (b) Qual é o número máximo teórico de matches verdadeiros? (c) Você aplica blocking por Soundex de sobrenome e obtém 9.000 pares candidatos; calcule a reduction ratio (RR = 1 - pares_candidatos/pares_totais). (d) Uma amostra rotulada com 300 true matches conhecidos mostra que 270 deles aparecem nos 9.000 pares candidatos; calcule o pairs completeness (PC). (e) Se o classificador aplicado sobre os pares candidatos atinge recall de 88% (sobre os pares que chegaram até ele), qual é o recall real estimado do pipeline completo?",
+    "gabarito": "(a) 2.000 x 3.500 = 7.000.000 pares sem indexação. (b) Como nenhuma base tem duplicados, o máximo de matches verdadeiros é limitado pela menor base: 2.000. (c) RR = 1 - (9.000/7.000.000) = 1 - 0,001286 = 0,9987, ou seja, redução de aproximadamente 99,87%. (d) PC = 270/300 = 0,90, ou 90% dos true matches da amostra sobreviveram ao blocking. (e) Recall real = recall_classificação x PC = 0,88 x 0,90 = 0,792, ou seja, aproximadamente 79,2% dos true matches reais são corretamente identificados pelo pipeline completo, abaixo dos 88% que seriam reportados se medidos só sobre os pares candidatos.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer, cap. 2, seções 2.1 a 2.3, p. 23-29.",
+      "Christophides, V. et al. (2020). An overview of end-to-end entity resolution for big data. ACM Computing Surveys, 53(6)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2939,
+      "pos_palavras_chave": 8,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 186,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 5,
+      "aprovados": 2
+    }
+  },
+  "saude": "problema"
+}

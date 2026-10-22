@@ -558,6 +558,11 @@
   "nivel": "nao",
   "nome": "Graph"
  },
+ "graph data structures": {
+  "motivo": "Usa clustering de componentes conexos em pipelines",
+  "nivel": "tem",
+  "nome": "graph data structures"
+ },
  "graph database": {
   "motivo": "Nenhum uso de banco de dados grafo indicado.",
   "nivel": "nao",
@@ -752,6 +757,11 @@
   "motivo": "Implementa regras de matching e merge.",
   "nivel": "parcial",
   "nome": "match and reconciliation rules"
+ },
+ "match quality evaluation": {
+  "motivo": "Executa avaliação de precisão e recall nas correspondências",
+  "nivel": "tem",
+  "nome": "match quality evaluation"
  },
  "matching": {
   "motivo": "core da experiência profissional",
