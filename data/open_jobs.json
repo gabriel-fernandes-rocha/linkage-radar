@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,8 +151,54 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Founding Data Engineer (Pricing/Comps) at Jobgether - LinkedIn",
+    "url": "https://ca.linkedin.com/jobs/view/founding-data-engineer-pricing-comps-at-jobgether-4478823817",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 8,
+    "juiz": "groq",
+    "motivo": "vaga com responsabilidade de entity resolution em escala",
+    "resumo": "Anúncio de vaga de Founding Data Engineer que exige experiência em entity resolution e record linkage em produção.",
+    "confianca": 0.94,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "record linkage",
+        "data quality monitoring"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1.0,
+    "encaixe": 0.45,
+    "compat_detalhe": {
+      "habilidades": 83,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "data quality monitoring"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-23",
+    "verificada_em": "2026-10-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -164,7 +210,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +296,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -300,7 +346,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -346,7 +392,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -397,8 +443,63 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Společnost Neurons Lab najímá na pozici Data Engineer - LinkedIn",
+    "url": "https://cz.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474756838",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "vaga de Data Engineer com responsabilidade central em entity resolution e record linkage",
+    "resumo": "Anúncio de vaga de Data Engineer na Neurons Lab que inclui entity resolution determinístico e fuzzy como parte das atividades.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "record linkage",
+        "deterministic",
+        "fuzzy",
+        "Airflow",
+        "Step Functions",
+        "AWS",
+        "GCP"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1.0,
+    "encaixe": 0.36,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Step Functions",
+        "AWS",
+        "GCP"
+      ],
+      "parciais": [
+        "Airflow"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-23",
+    "verificada_em": "2026-10-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -459,7 +560,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -509,7 +610,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -557,7 +658,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -605,7 +706,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -653,7 +754,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -708,7 +809,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -755,7 +856,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -795,7 +896,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -844,7 +945,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -884,7 +985,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -924,7 +1025,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -964,7 +1065,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1004,7 +1105,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1067,7 +1168,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1132,7 +1233,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1192,7 +1293,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1238,7 +1339,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1297,8 +1398,8 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-10-22",
-    "nova": true
+    "verificada_em": "2026-10-23",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1345,7 +1446,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1404,7 +1505,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1464,7 +1565,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1532,7 +1633,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1593,7 +1694,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1645,7 +1746,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1706,7 +1807,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1743,7 +1844,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1804,7 +1905,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1898,7 +1999,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -1947,7 +2048,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -2008,7 +2109,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2073,7 +2174,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2128,7 +2229,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2196,7 +2297,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2252,7 +2353,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -2301,7 +2402,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -2350,7 +2451,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -2402,7 +2503,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -2439,7 +2540,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2497,7 +2598,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2594,7 +2695,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2669,7 +2770,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2736,7 +2837,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2814,7 +2915,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2838,7 +2939,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2934,7 +3035,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -2994,7 +3095,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false
   },
   {
@@ -3058,7 +3159,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -3084,7 +3185,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-22",
+    "verificada_em": "2026-10-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

@@ -1,0 +1,208 @@
+{
+  "data": "2026-10-23",
+  "gerado_em": "2026-10-22T22:30-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Společnost Neurons Lab najímá na pozici Data Engineer - LinkedIn",
+      "url": "https://cz.linkedin.com/jobs/view/data-engineer-data-scientist-%E2%80%94-unstructured-data-ai-pipelines-at-neurons-lab-4474756838",
+      "texto": "Entity resolution / record linkage (deterministic + fuzzy) without a clean shared key Orchestration: Airflow, Step Functions or equivalent; idempotent, restartable jobs AWS and/or GCP data stack; comfortable in a private / VPC deployment PII detection, redaction, encryption and retention in practice",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "vaga de Data Engineer com responsabilidade central em entity resolution e record linkage",
+      "resumo": "Anúncio de vaga de Data Engineer na Neurons Lab que inclui entity resolution determinístico e fuzzy como parte das atividades.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "entity resolution",
+          "record linkage",
+          "deterministic",
+          "fuzzy",
+          "Airflow",
+          "Step Functions",
+          "AWS",
+          "GCP"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1.0,
+      "encaixe": 0.36,
+      "compat_detalhe": {
+        "habilidades": 56,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Step Functions",
+          "AWS",
+          "GCP"
+        ],
+        "parciais": [
+          "Airflow"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Founding Data Engineer (Pricing/Comps) at Jobgether - LinkedIn",
+      "url": "https://ca.linkedin.com/jobs/view/founding-data-engineer-pricing-comps-at-jobgether-4478823817",
+      "texto": "Demonstrated experience with entity resolution, record linkage at scale, and production data quality monitoring. Strong analytical and problem-solving skills, with the ability to make sound decisions when data is incomplete, ambiguous, or unreliable.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "groq",
+      "motivo": "vaga com responsabilidade de entity resolution em escala",
+      "resumo": "Anúncio de vaga de Founding Data Engineer que exige experiência em entity resolution e record linkage em produção.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "entity resolution",
+          "record linkage",
+          "data quality monitoring"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1.0,
+      "encaixe": 0.45,
+      "compat_detalhe": {
+        "habilidades": 83,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "data quality monitoring"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Artificial Intelligence Benchmarking of Distributed Clinical Record Linkage Under Unmeasured Facility Identifier Recycling: A Healthcare Privacy-Robustness Evaluation",
+      "url": "https://doi.org/10.5281/zenodo.23543209",
+      "autores": "Amr Khaled El-Sayed et al.",
+      "data": "2026-10-21",
+      "fonte": "OpenAlex",
+      "score": 5,
+      "juiz": "groq",
+      "motivo": "O artigo trata de benchmark de algoritmos de record linkage em repositórios clínicos distribuídos, focando na reciclagem de identificadores de unidades.",
+      "resumo": "O estudo formaliza a reciclagem de identificadores de unidades como contaminação não medida no espaço de bloqueio e comparação, analisando seu impacto em pesos de correspondência, taxa de falsos links e risco de divulgação. O modelo é ilustrado com indicadores do DHS Program em 27 países africanos.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Artificial Intelligence Causal Effect Estimation of Oral PrEP Discontinuation Under Variable Pharmacy Dispensing Record Linkage: A Target Trial Emulation Evaluation of Healthcare HIV Prevention Equity",
+      "url": "https://doi.org/10.5281/zenodo.23542551",
+      "autores": "Chipo Mulenga et al.",
+      "data": "2026-10-21",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "O artigo avalia o uso de record linkage probabilístico para estimar efeitos causais de descontinuação de PrEP, tratando o erro de linkage como parâmetro de desenho.",
+      "resumo": "A pesquisa propõe um framework que combina emulação de ensaio alvo e aprendizado de máquina para realizar record linkage probabilístico entre registros de dispensação de farmácia e dados clínicos e demográficos. O estudo demonstra como o erro de linkage afeta o poder estatístico e a precisão das estimativas de efeito.",
+      "confianca": 0.96
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 58,
+  "vagas_arquivadas_total": 86,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 22,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "conceito",
+    "titulo": "ER como clustering: registros, entidades e partições",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Entender e aplicar a formalização moderna de entity resolution como um problema de particionamento (clustering) do conjunto de registros em classes de equivalência que representam entidades latentes do mundo real.",
+    "conceito": "Christen (2012, seç. 2.1, p. 23) descreve o processo de data matching em cinco passos (pré-processamento, indexação, comparação, classificação, avaliação), mas o resultado final desses passos, antes de ser formalizado como partição, é apenas um conjunto de decisões par a par (match/non-match). A literatura moderna, especialmente Binette e Steorts (2022), reformula esse problema de forma mais precisa: seja D o conjunto de registros observados (por exemplo, a1...a7 e b1...b7 do exemplo de Christen). Cada registro r pertence, na verdade, a uma entidade latente e(r), um objeto do mundo real que não observamos diretamente (uma pessoa, uma empresa). O objetivo de ER não é apenas dizer se dois registros formam um par match, mas sim encontrar a função e: D → E, ou equivalentemente, a partição C = {C1, C2, ..., Ck} de D tal que dois registros ri e rj estão no mesmo bloco Ck se e somente se e(ri) = e(rj).\n\nEssa visão de clustering generaliza tanto a deduplicação (partição dentro de uma única base) quanto o linkage entre duas ou mais bases (partição sobre a união das bases): ambos são casos particulares de encontrar a mesma partição latente de D. Isso também explica por que a relação 'é a mesma entidade que' precisa ser uma relação de equivalência: reflexiva, simétrica e transitiva. Classificadores par a par não garantem transitividade por construção, e é exatamente essa lacuna entre decisões binárias e partição consistente que motiva o estudo de algoritmos de clustering (ligação simples, conectada, centro) na etapa pós-classificação, tema de Getoor e Machanavajjhala (2012) e Christophides et al. (2020).",
+    "como_funciona": "1. Defina D = conjunto de todos os registros de todas as fontes (D = A ∪ B no caso de linkage, ou D = A no caso de dedup).\n2. Defina a função latente e: D → E, onde E é o conjunto (desconhecido) de entidades reais.\n3. Construa o grafo G = (D, M), onde M é o conjunto de pares classificados como match pelo pipeline (indexação + comparação + classificação, Christen 2012 cap 2).\n4. Calcule o fecho transitivo de G (ou aplique um algoritmo de clustering sobre os scores de similaridade) para obter componentes conectados.\n5. Cada componente conectado é um cluster Ck, candidato a representar uma entidade e ∈ E.\n6. Verifique consistência: a relação resultante deve ser reflexiva, simétrica e transitiva (classes de equivalência). Se não for, há decisões par a par conflitantes que precisam de reconciliação (tema da próxima aula).",
+    "exemplo": "Usando os registros de Christen (2012, p. 25, Fig. 2.3): suponha que o classificador retornou os pares match M = {(a1,b3), (a3,b1), (a3,b2), (a5,b4)}. Construindo o grafo: a1-b3 formam um cluster {a1, b3} (John Smith). a3-b1 e a3-b2 compartilham o nó a3, logo pelo fecho transitivo {a3, b1, b2} formam um único cluster (Mary Meier / Janice Meier), mesmo que b1 e b2 nunca tenham sido comparados diretamente. a5-b4 formam {a5, b4} (Ling Nguyen). Os registros restantes (a2, a4, a6, a7, b5, b6, b7) ficam como clusters unitários (singletons), cada um representando, supostamente, uma entidade sem duplicata detectada. O resultado final é a partição C = {{a1,b3}, {a3,b1,b2}, {a5,b4}, {a2}, {a4}, {a6}, {a7}, {b5}, {b6}, {b7}}, com 10 clusters cobrindo os 14 registros.",
+    "na_pratica": "Em pipelines reais (Splink, Elasticsearch com script de grafo, ou Spark GraphFrames), a etapa de classificação produz pares com probabilidade de match, e um passo separado de clustering agrega esses pares em componentes. No Splink isso é explícito:\nfrom splink import block_on\npred = linker.inference.predict(threshold_match_probability=0.9)\nclusters = linker.clustering.cluster_pairwise_predictions_at_threshold(pred, 0.95)\nO resultado de clusters já é a partição C, com uma coluna cluster_id atribuída a cada registro, exatamente o e(r) latente que buscamos estimar.",
+    "armadilha": "Tratar decisões par a par como suficientes e ignorar que a transitividade pode falhar (A liga com B, B liga com C, mas A não liga com C): isso gera clusters inconsistentes e exige um algoritmo de clustering explícito (não apenas union-find ingênuo) para resolver conflitos de forma robusta, como discutido em Getoor e Machanavajjhala (2012).",
+    "desafio": "Você recebeu os seguintes pares classificados como match por um classificador: M = {(r1,r2), (r2,r3), (r4,r5), (r3,r6)}. Pergunta: (a) quantos clusters (componentes conectados) resultam dessa relação? (b) Se adicionarmos a informação de que r1 e r6 foram revisados manualmente e classificados como non-match definitivo, isso gera algum conflito com a partição obtida em (a)? Explique por quê.",
+    "gabarito": "(a) Construindo o grafo com arestas (r1,r2), (r2,r3), (r4,r5), (r3,r6): r1-r2-r3-r6 formam um componente conectado único {r1,r2,r3,r6} via fecho transitivo, e r4-r5 formam outro componente {r4,r5}. Logo há 2 clusters (assumindo não existam outros registros isolados). (b) Sim, há conflito: pelo fecho transitivo do grafo de matches, r1 e r6 estão no mesmo cluster (logo seriam a mesma entidade), mas a revisão manual diz que são non-match. Isso expõe a inconsistência entre decisões par a par e a exigência de transitividade de uma partição válida: o pipeline precisa de uma etapa de reconciliação (por exemplo, remover a aresta mais fraca do caminho r1-r2-r3-r6, ou usar clustering baseado em score com corte de limiar) em vez de aceitar ciegamente o fecho transitivo.",
+    "fontes": [
+      "Christen (2012), cap. 2, seç. 2.1-2.3, p. 23-29",
+      "Binette, O. & Steorts, R. C. (2022), Science Advances 8(12)",
+      "Getoor, L. & Machanavajjhala, A. (2012), PVLDB 5(12)",
+      "Christophides, V. et al. (2020), ACM Computing Surveys 53(6)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2985,
+      "pos_palavras_chave": 4,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 175,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 3,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

@@ -333,6 +333,11 @@
   "nivel": "parcial",
   "nome": "data quality management"
  },
+ "data quality monitoring": {
+  "motivo": "faz validação e garantia de qualidade nos pipelines",
+  "nivel": "parcial",
+  "nome": "data quality monitoring"
+ },
  "data reconciliation": {
   "motivo": "deduplicação e matching são formas de reconciliação de dados",
   "nivel": "parcial",
@@ -422,6 +427,11 @@
   "motivo": "Nenhuma análise derivada descrita.",
   "nivel": "nao",
   "nome": "derived analytics"
+ },
+ "deterministic": {
+  "motivo": "usa correspondência determinística em produção",
+  "nivel": "tem",
+  "nome": "deterministic"
  },
  "deterministic matching": {
   "motivo": "usa matching determinístico no trabalho",
@@ -517,6 +527,11 @@
   "motivo": "sem evidência de uso de Flink",
   "nivel": "nao",
   "nome": "Flink"
+ },
+ "fuzzy": {
+  "motivo": "aplica fuzzy matching com RapidFuzz e Splink",
+  "nivel": "tem",
+  "nome": "fuzzy"
  },
  "fuzzy matching": {
   "motivo": "usa RapidFuzz diretamente",
