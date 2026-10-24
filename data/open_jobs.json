@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -108,6 +108,49 @@
       ],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Revenue Operations Analyst, Reporting & Data - LinkedIn",
+    "url": "https://ca.linkedin.com/jobs/view/revenue-operations-analyst-reporting-data-at-jobgether-4478418385",
+    "data": "Oct 14, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post indica vaga de analista de operações de receita que trabalha com resolução de identidade de clientes.",
+    "resumo": "Revenue Operations Analyst desenvolve modelos de dados e gerencia resolução de identidade de clientes entre sistemas.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "customer identity resolution",
+        "data management"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.47,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -151,7 +194,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -197,8 +240,8 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-10-23",
-    "nova": true
+    "verificada_em": "2026-10-24",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -210,7 +253,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -296,7 +339,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -346,7 +389,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -392,7 +435,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -443,7 +486,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -498,8 +541,8 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-10-23",
-    "nova": true
+    "verificada_em": "2026-10-24",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -560,7 +603,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -610,8 +653,91 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Director, Costa Coffee Global Master Data Management",
+    "url": "https://uk.linkedin.com/jobs/view/senior-director-costa-coffee-global-master-data-management-at-the-coca-cola-company-4475773559",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 4,
+    "juiz": "groq",
+    "motivo": "Diretor sênior de Global Master Data Management lidera equipe focada em governança e qualidade de dados mestres.",
+    "resumo": "O Senior Director coordenará a equipe global de Master Data Management da Costa Coffee, garantindo consistência e confiabilidade dos dados.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "AdOps Data & Audience Specialist at DataBeat.io Media — Hyderabad ...",
+    "url": "https://in.linkedin.com/jobs/view/adops-data-audience-specialist-at-databeat-io-media-4480397800",
+    "data": "Oct 16, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post apresenta vaga de especialista que projeta abordagens de identidade resolution para usuários anônimos e registrados.",
+    "resumo": "AdOps Data & Audience Specialist projeta soluções de identidade resolution usando hashes, IDs de dispositivos e outros identificadores.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.9,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -658,7 +784,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -706,7 +832,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -754,7 +880,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -809,8 +935,48 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Team Lead - Item Coding Management - LinkedIn",
+    "url": "https://za.linkedin.com/jobs/view/team-lead-item-coding-management-at-circana-4472938765",
+    "data": "Oct 1, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 4,
+    "juiz": "groq",
+    "motivo": "Post descreve vaga de Team Lead com responsabilidade de Matching & Identity Resolution.",
+    "resumo": "Team Lead - Item Coding Management lidera equipe de aquisição, codificação, enriquecimento, matching e resolução de identidade.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.32,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -856,7 +1022,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -896,8 +1062,48 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Director of Worldwide Marketing Data Strategy and Analytics",
+    "url": "https://ca.linkedin.com/jobs/view/director-of-worldwide-marketing-data-strategy-and-analytics-at-autodesk-4474632380",
+    "data": "Oct 5, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post anuncia posição de diretoria que inclui definição de identidade resolution em estratégias de dados de marketing.",
+    "resumo": "Director of Worldwide Marketing Data Strategy and Analytics define requisitos de dados, taxonomias e identidade resolution para conectar atividades de marketing a resultados.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.3,
+    "encaixe": 0.31,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 90,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -945,7 +1151,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -985,8 +1191,137 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Slalom hiring Master Data Management (MDM) - LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/master-data-management-mdm-principal-us-at-slalom-4480710826",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 5,
+    "juiz": "groq",
+    "motivo": "Vaga anuncia posição de MDM que inclui criação de fundações de dados confiáveis, implicando matching de registros.",
+    "resumo": "A vaga da Slalom busca liderar a estratégia e entrega de capacidades de Master Data Management, focando em dados mestres confiáveis para IA.",
+    "confianca": 0.97,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Software Engineer Junior - Master Data Management (MDM)",
+    "url": "https://mx.linkedin.com/jobs/view/software-engineer-junior-master-data-management-mdm-at-salesforce-4479744237",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 5,
+    "juiz": "groq",
+    "motivo": "Vaga de Software Engineer Junior em MDM na Salesforce indica foco em gerenciamento e matching de dados mestres.",
+    "resumo": "O candidato atuará como engenheiro de software júnior desenvolvendo soluções de Master Data Management na Salesforce.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Blood Cancer United hiring Senior Technical Lead Master Data Management ...",
+    "url": "https://www.linkedin.com/jobs/view/senior-technical-lead-master-data-management-at-blood-cancer-united-4481725143",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 4,
+    "juiz": "groq",
+    "motivo": "Cargo de Senior Technical Lead em MDM inclui configuração e operação diária de master data, implicando matching.",
+    "resumo": "O líder técnico será responsável pela configuração funcional e operação diária do Master Data Management da Blood Cancer United.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1025,7 +1360,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1065,7 +1400,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1105,7 +1440,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1168,7 +1503,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1233,7 +1568,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1293,8 +1628,48 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Adobe Experience Platform (AEP) Data Architect - LinkedIn",
+    "url": "https://uk.linkedin.com/jobs/view/adobe-experience-platform-aep-data-architect-at-infinity-quest-4478776471",
+    "data": "Oct 13, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Post descreve cargo de arquiteto de dados focado em identidade resolution dentro da Adobe Experience Platform.",
+    "resumo": "Adobe Experience Platform Data Architect projeta arquitetura end‑to‑end, modelagem XDM e resolução de identidade.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.27,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1339,7 +1714,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1398,7 +1773,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1446,7 +1821,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1505,7 +1880,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1565,7 +1940,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1633,7 +2008,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1694,7 +2069,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -1746,8 +2121,77 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "GTM Data Governance Manager (MDM)",
+    "url": "https://himalayas.app/companies/launchdarkly/jobs/gtm-data-governance-manager-mdm",
+    "empresa": "LaunchDarkly",
+    "local": "Remoto · United States",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-10-23",
+    "score": 10,
+    "juiz": "groq",
+    "motivo": "Vaga foca em MDM com definição de regras de matching e golden record.",
+    "resumo": "O cargo de GTM Data Governance Manager na LaunchDarkly será responsável por definir regras de correspondência, mesclagem e sobrevivência de registros, garantindo dados mestres consistentes.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "Salesforce",
+        "Master Data Management",
+        "Data governance",
+        "Matching",
+        "Merging",
+        "Survivorship",
+        "Golden record",
+        "Hierarchy modeling",
+        "Data quality",
+        "GDPR",
+        "CCPA"
+      ],
+      "desejaveis": [
+        "Enrichment",
+        "Firmographic data",
+        "ML-assisted matching",
+        "LLM-assisted matching",
+        "SOC 2"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 8,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.12,
+    "compat_detalhe": {
+      "habilidades": 42,
+      "senioridade": 40,
+      "local": 60,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Salesforce",
+        "Master Data Management",
+        "Hierarchy modeling",
+        "GDPR",
+        "CCPA"
+      ],
+      "parciais": [
+        "Data governance",
+        "Survivorship"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-24",
+    "verificada_em": "2026-10-24",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1807,7 +2251,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -1844,7 +2288,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1905,7 +2349,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -1999,7 +2443,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -2048,7 +2492,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -2109,7 +2553,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2174,7 +2618,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2229,7 +2673,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2297,7 +2741,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2353,7 +2797,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -2402,7 +2846,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -2451,7 +2895,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -2503,7 +2947,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -2540,7 +2984,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2598,7 +3042,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2695,7 +3139,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -2770,7 +3214,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -2837,7 +3281,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2915,7 +3359,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -2939,7 +3383,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3035,7 +3479,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -3095,7 +3539,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false
   },
   {
@@ -3159,7 +3603,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -3185,7 +3629,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-23",
+    "verificada_em": "2026-10-24",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

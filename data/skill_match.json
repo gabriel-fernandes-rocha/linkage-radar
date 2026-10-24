@@ -248,6 +248,11 @@
   "nivel": "nao",
   "nome": "customer data platforms"
  },
+ "customer identity resolution": {
+  "motivo": "Especialista em record linkage e entity resolution em produção",
+  "nivel": "tem",
+  "nome": "customer identity resolution"
+ },
  "cypher": {
   "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
@@ -297,6 +302,11 @@
   "motivo": "Desenvolve pipelines, mas não menciona rastreamento explícito",
   "nivel": "parcial",
   "nome": "data lineage"
+ },
+ "data management": {
+  "motivo": "Constrói pipelines de ingestão, ETL e qualidade de dados",
+  "nivel": "tem",
+  "nome": "data management"
  },
  "data mapping": {
   "motivo": "faz normalização e integração de dados heterogêneos",
@@ -473,6 +483,11 @@
   "nivel": "nao",
   "nome": "Encryption"
  },
+ "enrichment": {
+  "motivo": "Implementa ingestão e normalização, mas não menciona enriquecimento externo",
+  "nivel": "parcial",
+  "nome": "Enrichment"
+ },
  "entity matching": {
   "motivo": "Especialista em record linkage e matching probabilístico/determinístico",
   "nivel": "tem",
@@ -523,6 +538,11 @@
   "nivel": "nao",
   "nome": "FHIR"
  },
+ "firmographic data": {
+  "motivo": "Nenhuma experiência com dados firmográficos descrita",
+  "nivel": "nao",
+  "nome": "Firmographic data"
+ },
  "flink": {
   "motivo": "sem evidência de uso de Flink",
   "nivel": "nao",
@@ -562,6 +582,11 @@
   "motivo": "usa Git, mas não GitHub Actions explicitamente",
   "nivel": "parcial",
   "nome": "GitHub Actions"
+ },
+ "golden record": {
+  "motivo": "Trabalha deduplicação, mas golden record não explicitado",
+  "nivel": "parcial",
+  "nome": "Golden record"
  },
  "golden records": {
   "motivo": "conceito MDM próximo de deduplicação/resolução praticada",
@@ -617,6 +642,11 @@
   "motivo": "sem evidência de uso de H2O.ai",
   "nivel": "nao",
   "nome": "H2O"
+ },
+ "hierarchy modeling": {
+  "motivo": "Não há menção a modelagem hierárquica",
+  "nivel": "nao",
+  "nome": "Hierarchy modeling"
  },
  "hierarquias parent-child": {
   "motivo": "MDM/golden record implica relações hierárquicas",
@@ -728,6 +758,11 @@
   "nivel": "nao",
   "nome": "LLM agents"
  },
+ "llm-assisted matching": {
+  "motivo": "Nenhum uso de LLMs mencionado",
+  "nivel": "nao",
+  "nome": "LLM-assisted matching"
+ },
  "llms": {
   "motivo": "sem evidência de uso de LLMs",
   "nivel": "nao",
@@ -788,6 +823,11 @@
   "nivel": "tem",
   "nome": "Matching Algorítmico"
  },
+ "merging": {
+  "motivo": "Desenvolve lógica de merge após correspondência",
+  "nivel": "tem",
+  "nome": "Merging"
+ },
  "metadata management": {
   "motivo": "Nenhuma evidência de gerenciamento de metadados",
   "nivel": "nao",
@@ -797,6 +837,11 @@
   "motivo": "sem evidência de uso dessa ferramenta",
   "nivel": "nao",
   "nome": "Metaflow"
+ },
+ "ml-assisted matching": {
+  "motivo": "Usa Splink e scikit-learn para matching probabilístico",
+  "nivel": "tem",
+  "nome": "ML-assisted matching"
  },
  "mlflow": {
   "motivo": "sem evidência de uso de MLOps tools",
@@ -1098,6 +1143,11 @@
   "nivel": "parcial",
   "nome": "Snowflake"
  },
+ "soc 2": {
+  "motivo": "Não há evidência de conformidade SOC 2",
+  "nivel": "nao",
+  "nome": "SOC 2"
+ },
  "spacy": {
   "motivo": "sem menção a NLP com spaCy no currículo",
   "nivel": "nao",
@@ -1157,6 +1207,11 @@
   "motivo": "pipelines estruturados, não explícito em LLM",
   "nivel": "parcial",
   "nome": "Structured output"
+ },
+ "survivorship": {
+  "motivo": "Entende regras de sobrevivência, porém não detalhado",
+  "nivel": "parcial",
+  "nome": "Survivorship"
  },
  "survivorship rules": {
   "motivo": "conceito próximo de resolução/merge de entidades que já faz",

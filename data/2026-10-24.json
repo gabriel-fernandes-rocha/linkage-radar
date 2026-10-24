@@ -1,0 +1,504 @@
+{
+  "data": "2026-10-24",
+  "gerado_em": "2026-10-23T22:34-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "GTM Data Governance Manager (MDM)",
+      "url": "https://himalayas.app/companies/launchdarkly/jobs/gtm-data-governance-manager-mdm",
+      "empresa": "LaunchDarkly",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-10-23",
+      "score": 10,
+      "juiz": "groq",
+      "motivo": "Vaga foca em MDM com definição de regras de matching e golden record.",
+      "resumo": "O cargo de GTM Data Governance Manager na LaunchDarkly será responsável por definir regras de correspondência, mesclagem e sobrevivência de registros, garantindo dados mestres consistentes.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "Salesforce",
+          "Master Data Management",
+          "Data governance",
+          "Matching",
+          "Merging",
+          "Survivorship",
+          "Golden record",
+          "Hierarchy modeling",
+          "Data quality",
+          "GDPR",
+          "CCPA"
+        ],
+        "desejaveis": [
+          "Enrichment",
+          "Firmographic data",
+          "ML-assisted matching",
+          "LLM-assisted matching",
+          "SOC 2"
+        ]
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.12,
+      "compat_detalhe": {
+        "habilidades": 42,
+        "senioridade": 40,
+        "local": 60,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Salesforce",
+          "Master Data Management",
+          "Hierarchy modeling",
+          "GDPR",
+          "CCPA"
+        ],
+        "parciais": [
+          "Data governance",
+          "Survivorship"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Slalom hiring Master Data Management (MDM) - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/master-data-management-mdm-principal-us-at-slalom-4480710826",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 5,
+      "juiz": "groq",
+      "motivo": "Vaga anuncia posição de MDM que inclui criação de fundações de dados confiáveis, implicando matching de registros.",
+      "resumo": "A vaga da Slalom busca liderar a estratégia e entrega de capacidades de Master Data Management, focando em dados mestres confiáveis para IA.",
+      "confianca": 0.97,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Software Engineer Junior - Master Data Management (MDM)",
+      "url": "https://mx.linkedin.com/jobs/view/software-engineer-junior-master-data-management-mdm-at-salesforce-4479744237",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 5,
+      "juiz": "groq",
+      "motivo": "Vaga de Software Engineer Junior em MDM na Salesforce indica foco em gerenciamento e matching de dados mestres.",
+      "resumo": "O candidato atuará como engenheiro de software júnior desenvolvendo soluções de Master Data Management na Salesforce.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_exigido",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Blood Cancer United hiring Senior Technical Lead Master Data Management ...",
+      "url": "https://www.linkedin.com/jobs/view/senior-technical-lead-master-data-management-at-blood-cancer-united-4481725143",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "Cargo de Senior Technical Lead em MDM inclui configuração e operação diária de master data, implicando matching.",
+      "resumo": "O líder técnico será responsável pela configuração funcional e operação diária do Master Data Management da Blood Cancer United.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Director, Costa Coffee Global Master Data Management",
+      "url": "https://uk.linkedin.com/jobs/view/senior-director-costa-coffee-global-master-data-management-at-the-coca-cola-company-4475773559",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "Diretor sênior de Global Master Data Management lidera equipe focada em governança e qualidade de dados mestres.",
+      "resumo": "O Senior Director coordenará a equipe global de Master Data Management da Costa Coffee, garantindo consistência e confiabilidade dos dados.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Team Lead - Item Coding Management - LinkedIn",
+      "url": "https://za.linkedin.com/jobs/view/team-lead-item-coding-management-at-circana-4472938765",
+      "texto": "The Team Lead - Item Coding Management is responsible for leading a team responsible for Item Acquisition & Intake, Coding & Enrichment, Matching & Identity Resolution, Quality Control, and Item Content Management.",
+      "data": "Oct 1, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "Post descreve vaga de Team Lead com responsabilidade de Matching & Identity Resolution.",
+      "resumo": "Team Lead - Item Coding Management lidera equipe de aquisição, codificação, enriquecimento, matching e resolução de identidade.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "AdOps Data & Audience Specialist at DataBeat.io Media — Hyderabad ...",
+      "url": "https://in.linkedin.com/jobs/view/adops-data-audience-specialist-at-databeat-io-media-4480397800",
+      "texto": "Design identity resolution approaches for both anonymous and registered users across web, app and CTV. Work with identifiers such as hashed email, device IDs, MAIDs, ECID, UID2, publisher/account IDs and CTV IDs. Support cross-device and cross-brand identity resolution and creation of unified audience profiles.",
+      "data": "Oct 16, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post apresenta vaga de especialista que projeta abordagens de identidade resolution para usuários anônimos e registrados.",
+      "resumo": "AdOps Data & Audience Specialist projeta soluções de identidade resolution usando hashes, IDs de dispositivos e outros identificadores.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.9,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Adobe Experience Platform (AEP) Data Architect - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/adobe-experience-platform-aep-data-architect-at-infinity-quest-4478776471",
+      "texto": "Role: Adobe Experience Platform (AEP) Data Architect Location: London, UK Mode: Hybrid Type: Permanent/FTE Job Description: Key Responsibilities Design and own the end‑to‑end AEP / RT‑CDP data architecture, including ingestion, XDM modelling, identity resolution, profile enablement, and activation. Define Adobe XDM schemas (Profile‑enabled and non‑profile), datasets, and data flows ...",
+      "data": "Oct 13, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post descreve cargo de arquiteto de dados focado em identidade resolution dentro da Adobe Experience Platform.",
+      "resumo": "Adobe Experience Platform Data Architect projeta arquitetura end‑to‑end, modelagem XDM e resolução de identidade.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.27,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Director of Worldwide Marketing Data Strategy and Analytics",
+      "url": "https://ca.linkedin.com/jobs/view/director-of-worldwide-marketing-data-strategy-and-analytics-at-autodesk-4474632380",
+      "texto": "Establish Analytics-Ready Data Foundations: Define the business and analytical requirements for foundational marketing data structures, including data models, taxonomies, event structures, identity resolution, campaign hierarchies, and governance required to reliably connect marketing activity with customer and business outcomes.",
+      "data": "Oct 5, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post anuncia posição de diretoria que inclui definição de identidade resolution em estratégias de dados de marketing.",
+      "resumo": "Director of Worldwide Marketing Data Strategy and Analytics define requisitos de dados, taxonomias e identidade resolution para conectar atividades de marketing a resultados.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.31,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Revenue Operations Analyst, Reporting & Data - LinkedIn",
+      "url": "https://ca.linkedin.com/jobs/view/revenue-operations-analyst-reporting-data-at-jobgether-4478418385",
+      "texto": "Data model development: Build a strong understanding of customer and revenue data structures, including customer identity resolution across systems, and progressively assume greater ownership of data management and reporting processes.",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post indica vaga de analista de operações de receita que trabalha com resolução de identidade de clientes.",
+      "resumo": "Revenue Operations Analyst desenvolve modelos de dados e gerencia resolução de identidade de clientes entre sistemas.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "customer identity resolution",
+          "data management"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.47,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 68,
+  "vagas_arquivadas_total": 96,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 23,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "conceito",
+    "titulo": "Tipos de tarefa: 1 para 1, deduplicação, multi-fonte, incremental",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Classificar corretamente qualquer problema real de correspondência de dados em um dos quatro tipos de tarefa (1 para 1, deduplicação, multi-fonte, incremental) e justificar qual arquitetura de pipeline cada tipo exige.",
+    "conceito": "Christen (2012, seç. 2.1, p. 23) descreve o processo de matching com cinco etapas (pré-processamento, indexação, comparação, classificação, avaliação) e observa que, na deduplicação de uma única base, todas essas etapas continuam válidas, mudando apenas a origem dos pares candidatos: em vez de comparar registros de A contra B, comparam-se registros de uma mesma tabela entre si, o que gera complexidade quadrática no tamanho dessa única base em vez de no produto de duas bases.\n\nA partir disso, a literatura organiza as tarefas de entity resolution segundo duas dimensões: quantas fontes de dados existem e se o processo roda uma vez ou continuamente. Record linkage clássico (1 para 1, ou 'link only') compara duas bases distintas A e B, assumindo que cada registro de A corresponde a no máximo um registro de B (Christen, 2012, cap. 2). Deduplicação (dedupe_only) resolve duplicatas dentro de uma única base, onde qualquer registro pode ter zero, um ou vários duplicados. Multi-fonte (ou 'link_and_dedupe') generaliza para k ≥ 2 bases simultâneas, problema central discutido por Getoor & Machanavajjhala (2012) como collective entity resolution, pois decisões em um par de fontes afetam outras via transitividade. Christophides et al. (2020) formalizam ainda a dimensão temporal: ER incremental processa registros que chegam em fluxo (streaming) e precisa atualizar clusters de entidades já formados sem reprocessar tudo, problema distinto do batch clássico tratado por Christen.\n\nBinette & Steorts (2022) unificam essas variantes sob uma única formalização estatística de clustering sobre registros, mas, na prática de engenharia, a escolha do tipo de tarefa determina blocking, estrutura de pares candidatos e estratégia de manutenção de clusters.",
+    "como_funciona": "1. Conte quantas fontes de dados existem: uma (candidato a deduplicação) ou duas+ (candidato a linkage ou multi-fonte).\n2. Verifique a cardinalidade esperada: se cada entidade aparece no máximo uma vez por fonte, é 1 para 1 (link_only); se pode haver múltiplas ocorrências na mesma fonte, há componente de deduplicação.\n3. Se há três ou mais fontes sendo resolvidas simultaneamente com transitividade entre elas, é multi-fonte (link_and_dedupe).\n4. Verifique a temporalidade: se novos registros chegam continuamente e precisam ser comparados apenas contra o estado atual de clusters (não reprocessar tudo), é incremental.\n5. A combinação dessas respostas define a arquitetura: blocking por lote vs. blocking incremental, Linker com link_type apropriado, e se é preciso versionar cluster IDs ao longo do tempo.",
+    "exemplo": "Um hospital brasileiro quer unificar prontuários. Fonte única: banco de pacientes do próprio hospital, com 2 milhões de registros acumulados em 15 anos, onde o mesmo paciente pode ter sido cadastrado 3 vezes por erros de digitação. Isso é deduplicação pura (dedupe_only): compara-se a base contra ela mesma. Número de pares possíveis sem indexação seria 2.000.000 x 1.999.999 / 2 ≈ 2x10^12 pares, por isso blocking é obrigatório (Christen, 2012, seç. 2.3, p. 27). Agora suponha que esse hospital também recebe mensalmente um arquivo do sistema nacional de vacinação (fonte externa) e precisa linkar pacientes já deduplicados contra essa nova fonte toda vez que ela chega: isso vira uma tarefa incremental multi-fonte, pois a base interna já tem clusters formados e só os novos registros do arquivo mensal precisam ser comparados contra o estado atual.",
+    "na_pratica": "No Splink, a escolha do tipo de tarefa aparece literalmente no parâmetro link_type do SettingsCreator: 'dedupe_only' para uma base, 'link_only' para duas bases sem duplicatas internas, 'link_and_dedupe' para múltiplas fontes com duplicatas em cada uma. Para incremental, a prática comum é manter uma tabela de 'entidades canônicas' já resolvidas e, a cada novo lote, gerar pares candidatos apenas entre o lote novo e essa tabela canônica, nunca reprocessando o histórico inteiro:\nsettings = SettingsCreator(link_type=\"link_and_dedupe\", comparisons=[...], blocking_rules_to_generate_predictions=[block_on(\"postcode\")])\nlinker = Linker([df_hospital, df_vacinacao], settings, db_api=DuckDBAPI())",
+    "armadilha": "Tratar um problema multi-fonte como se fosse apenas vários linkages par a par independentes (A-B, depois A-C, depois B-C) ignora a transitividade: isso pode gerar clusters inconsistentes onde A liga a B, B liga a C, mas A não liga a C diretamente, exigindo reconciliação posterior; prefira resolver as três fontes juntas em um único grafo de pares.",
+    "desafio": "Uma rede de varejo tem: (1) base de clientes do e-commerce com 500 mil registros (pode ter duplicatas, pois clientes recriam contas), (2) base de clientes das lojas físicas com 300 mil registros (sem duplicatas internas, um CPF por registro), e recebe diariamente um arquivo de 10 mil novos cadastros do app que precisa ser conciliado contra as duas bases já resolvidas sem reprocessar tudo. Classifique essa situação nos quatro tipos de tarefa discutidos e explique por que é necessário mais de um tipo simultaneamente.",
+    "gabarito": "É uma combinação de três tipos: primeiro, dentro da base de e-commerce há deduplicação (pois ela tem duplicatas internas); segundo, entre e-commerce e lojas físicas há linkage multi-fonte com deduplicação de um lado só, ou seja, link_and_dedupe, já que uma fonte tem duplicatas e a outra não, mas ambas precisam ser conciliadas entre si considerando transitividade; terceiro, o processamento diário do arquivo do app é incremental, pois os 10 mil novos registros devem ser comparados apenas contra o estado atual consolidado das duas bases já resolvidas (clusters existentes), não contra todo o histórico, para evitar custo quadrático crescente a cada execução.",
+    "fontes": [
+      "Christen (2012), seç. 2.1, p. 23",
+      "Christen (2012), seç. 2.3, p. 27-28",
+      "Getoor & Machanavajjhala (2012), PVLDB 5(12)",
+      "Christophides et al. (2020), ACM Computing Surveys 53(6)",
+      "Binette & Steorts (2022), Science Advances 8(12)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2961,
+      "pos_palavras_chave": 11,
+      "aprovados": 5
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 185,
+      "pos_palavras_chave": 3,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 7,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}
