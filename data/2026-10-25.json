@@ -1,0 +1,110 @@
+{
+  "data": "2026-10-25",
+  "gerado_em": "2026-10-24T22:09-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Same Entity, Different Script: Diagnosing Cross-Script Entity Matching Failures in Language Models",
+      "url": "https://doi.org/10.48550/arxiv.2610.31407",
+      "autores": "Athira Gopal et al.",
+      "data": "2026-10-22",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "Aborda falhas de matching de entidades entre scripts diferentes, foco em identidade de nomes.",
+      "resumo": "O artigo investiga como modelos de linguagem multilingues falham ao comparar nomes da mesma pessoa escritos em scripts diferentes, avaliando precisão de matching. Propõe análises de viés e técnicas de calibração para melhorar a correspondência.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Constraining the Commit Boundary: A DIO/ODI-Informed Authorization Guardrail for Agentic Entity Resolution",
+      "url": "https://doi.org/10.5281/zenodo.23580732",
+      "autores": "Daniel Beránek",
+      "data": "2026-10-22",
+      "fonte": "OpenAlex",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Discute arquitetura e restrições para sistemas de Entity Resolution, foco em identidade persistente.",
+      "resumo": "O trabalho propõe um guardrail de autorização baseado em DIO/ODI para controlar mutações de identidade em sistemas de Entity Resolution. Define regras de continuidade e diagnóstico para preservar a identidade ao atualizar hipóteses.",
+      "confianca": 0.94
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 64,
+  "vagas_arquivadas_total": 96,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 24,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "conceito",
+    "titulo": "Correspondências, transitividade e consistência das decisões",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Entender por que decisões pairwise de match podem violar transitividade e aprender a impor consistência global via formalização por partições/clusters.",
+    "conceito": "Quando comparamos pares de registros (ai, bj) e classificamos cada par independentemente em match, non-match ou potential match (Christen, 2012, seç. 2.1, p. 23), estamos tomando decisões locais. O problema é que a relação 'é a mesma entidade' precisa ser uma relação de equivalência: reflexiva, simétrica e transitiva. Classificadores pairwise, mesmo muito bons, não garantem transitividade. É perfeitamente possível que o modelo diga match(A,B) = sim, match(B,C) = sim, mas match(A,C) = não, o que é logicamente inconsistente se A, B e C deveriam pertencer à mesma entidade real.\n\nBinette & Steorts (2022) formalizam isso explicitando que o objetivo verdadeiro do entity resolution não é um conjunto de decisões pairwise, mas sim uma partição do conjunto de registros em clusters, onde cada cluster corresponde a exatamente uma entidade latente. A tarefa de match pairwise é apenas um meio (ou um subproblema) para inferir essa partição; o problema real é combinatório sobre o espaço de todas as partições possíveis de n registros (número de Bell), não sobre pares isolados.\n\nGetoor & Machanavajjhala (2012) e Christophides et al. (2020) reforçam que, por isso, pipelines de produção precisam de uma etapa de resolução de conflitos pós-classificação: construir um grafo onde nós são registros e arestas são decisões de match, e então aplicar algoritmos de clustering sobre esse grafo (ex.: componentes conexas, clustering hierárquico, ou técnicas que toleram arestas fracas) para produzir uma partição final consistente.",
+    "como_funciona": "1. Construa o grafo de similaridade G = (V, E): V = registros, E = pares classificados como match (ou com probabilidade acima de um limiar).\n2. Verifique transitividade: para todo trio (A,B,C) com arestas AB e BC, exigir existência de AC seria o ideal, mas classificadores não garantem isso.\n3. Escolha uma estratégia de resolução de conflito: a) componentes conexas (une tudo que está ligado direta ou indiretamente; simples mas propensa a 'cadeias' espúrias que mesclam entidades distintas); b) clustering baseado em corte (ex.: remover arestas fracas até que cada componente seja denso, como no agrupamento de Splink por threshold); c) clustering com restrição de consistência (ex.: 'furthest-first' ou correlation clustering, que minimiza o número de decisões violadas).\n4. Aplique a partição resultante como saída final de entidades, não as decisões pairwise brutas.",
+    "exemplo": "Considere três registros de clientes: A = 'John Smith, DOB 12/11/1970', B = 'J. Smith, DOB 12/11/1970', C = 'John Smyth, DOB 01/01/1970'. O classificador pairwise retorna: match(A,B) = 0.95 (alta similaridade de nome e DOB idênticos), match(B,C) = 0.80 (nome parecido, DOB com erro de 1 dígito, passa do threshold de 0.75), match(A,C) = 0.60 (abaixo do threshold de 0.75, pois a DOB difere mais e o nome tem edição maior).\nSe o threshold é 0.75: A-B é aresta, B-C é aresta, mas A-C não é aresta. Usando componentes conexas, A, B e C acabam no mesmo cluster (porque A-B-C estão conectados via B), mesmo que a decisão direta A-C tenha dito 'não'. Isso é a transitividade forçada pelo clustering, que pode estar errada (C pode ser outra pessoa) ou certa (B é o elo que faltava nos dados de A e C). A decisão de usar componentes conexas versus um método que corta a aresta fraca B-C depende da densidade exigida.",
+    "na_pratica": "No Splink, essa é exatamente a função de clustering pairwise após o predict(): o cluster_pairwise_predictions_at_threshold constrói o grafo de arestas acima do threshold e aplica componentes conexas (ou variantes) para gerar a partição final.\nlinker.clustering.cluster_pairwise_predictions_at_threshold(pred, 0.95)\nEm pipelines próprios com Spark, o mesmo padrão aparece usando GraphFrames.connectedComponents() sobre o DataFrame de arestas (id_a, id_b, score) filtrado por threshold.",
+    "armadilha": "Aumentar o threshold de match para 'reduzir falsos positivos' pode piorar a consistência se isso fragmentar clusters que deveriam ser uma única entidade (quebrando pela aresta do meio); sempre avalie o impacto no nível de cluster, não só no nível de par.",
+    "desafio": "Você tem 4 registros de pacientes e as seguintes probabilidades de match pairwise (threshold de decisão = 0.80): match(P1,P2)=0.90, match(P2,P3)=0.85, match(P3,P4)=0.90, match(P1,P3)=0.40, match(P1,P4)=0.30, match(P2,P4)=0.50. Usando componentes conexas sobre as arestas que passam do threshold, quantas entidades (clusters) resultam? Essa partição é plausível ou sugere um problema de cadeia espúria? Justifique.",
+    "gabarito": "Arestas acima de 0.80: P1-P2 (0.90), P2-P3 (0.85), P3-P4 (0.90). P1-P3, P1-P4 e P2-P4 ficam abaixo do threshold e não entram no grafo.\nComponentes conexas: P1 conecta a P2, P2 conecta a P3, P3 conecta a P4; logo P1, P2, P3 e P4 caem todos no mesmo componente, resultando em 1 único cluster (1 entidade) para os 4 registros.\nIsso é um caso clássico de cadeia espúria (chaining): P1 e P4 têm score direto de apenas 0.30, bem abaixo do threshold, e provavelmente são pessoas diferentes, mas a transitividade imposta pelas componentes conexas via P2 e P3 os uniu incorretamente. A decisão correta exigiria um método mais conservador, como correlation clustering ou um corte mínimo que penalize a aresta fraca implícita P1-P4, em vez de aceitar qualquer caminho de conexão como prova de equivalência.",
+    "fontes": [
+      "Christen (2012), seç. 2.1, p. 23",
+      "Binette, O. & Steorts, R. C. (2022), Science Advances 8(12)",
+      "Getoor, L. & Machanavajjhala, A. (2012), PVLDB 5(12)",
+      "Christophides, V. et al. (2020), ACM Computing Surveys 53(6)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2997,
+      "pos_palavras_chave": 12,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 182,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

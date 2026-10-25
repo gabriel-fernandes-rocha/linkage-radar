@@ -1,5 +1,5 @@
 {
- "data": "2026-10-24",
+ "data": "2026-10-25",
  "status": "problema",
  "checks": [
   {
@@ -10,34 +10,35 @@
   {
    "status": "atencao",
    "nome": "Juiz usado",
-   "detalhe": "groq, mistral (reserva gratuita assumiu)"
+   "detalhe": "gemini, groq (reserva gratuita assumiu)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 135,
-  "jobs/greenhouse": 1438,
+  "jobs/remotive": 150,
+  "jobs/greenhouse": 1439,
   "jobs/lever": 309,
   "jobs/ashby": 29,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
-  "jobs/gupy": 217,
-  "jobs/himalayas": 97,
-  "jobs/jobicy": 147,
+  "jobs/gupy": 214,
+  "jobs/himalayas": 99,
+  "jobs/jobicy": 149,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 167,
-  "jobs/social_posts": 9,
-  "jobs/linkedin_guest": 32,
-  "papers/arxiv": 10,
+  "jobs/weworkremotely": 172,
+  "jobs/social_posts": 10,
+  "jobs/linkedin_guest": 45,
+  "papers/arxiv": 7,
   "papers/openalex": 175,
-  "linkedin/posts": 7,
-  "network/perfis": 7
+  "linkedin/posts": 9,
+  "network/perfis": 9
  },
  "falhas": [
   "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
-  "judge: gemini/gemini-3.7-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
+  "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
   "judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\\r\\n')",
-  "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
+  "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)",
+  "carreira: análise de perfil falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }
