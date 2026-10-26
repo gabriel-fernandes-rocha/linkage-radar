@@ -48,10 +48,20 @@
   "nivel": "nao",
   "nome": "AI architectures"
  },
+ "ai/ml": {
+  "motivo": "Usa scikit-learn e técnicas de matching probabilístico",
+  "nivel": "tem",
+  "nome": "AI/ML"
+ },
  "airflow": {
   "motivo": "faz pipelines ETL batch, falta ferramenta específica",
   "nivel": "parcial",
   "nome": "Airflow"
+ },
+ "alteryx": {
+  "motivo": "Nenhuma experiência ou ferramenta similar citada",
+  "nivel": "nao",
+  "nome": "Alteryx"
  },
  "amazon neptune": {
   "motivo": "sem evidência de grafo/Neptune",
@@ -223,6 +233,11 @@
   "nivel": "nao",
   "nome": "CPRA"
  },
+ "crm": {
+  "motivo": "Não há experiência declarada com sistemas CRM",
+  "nivel": "nao",
+  "nome": "CRM"
+ },
  "crm platforms (insider, salesforce, braze, adobe)": {
   "motivo": "nenhum trabalho com plataformas CRM mencionado",
   "nivel": "nao",
@@ -292,6 +307,11 @@
   "motivo": "qualidade de dados próxima a governança",
   "nivel": "parcial",
   "nome": "Data Governance"
+ },
+ "data hygiene": {
+  "motivo": "Realiza normalização, limpeza e deduplicação de dados",
+  "nivel": "tem",
+  "nome": "data hygiene"
  },
  "data lake": {
   "motivo": "trabalha em grande infraestrutura de dados, possivelmente data lake",
@@ -458,10 +478,20 @@
   "nivel": "nao",
   "nome": "DLO/DMO models"
  },
+ "docker": {
+  "motivo": "Nenhuma referência no currículo",
+  "nivel": "nao",
+  "nome": "Docker"
+ },
  "dynamodb": {
   "motivo": "sem evidência de NoSQL além de Elasticsearch",
   "nivel": "nao",
   "nome": "DynamoDB"
+ },
+ "elasticsearch": {
+  "motivo": "Pipeline de matching integra Elasticsearch",
+  "nivel": "tem",
+  "nome": "Elasticsearch"
  },
  "elixir": {
   "motivo": "sem evidência de linguagem Elixir",
@@ -528,6 +558,11 @@
   "nivel": "nao",
   "nome": "Excel"
  },
+ "false-positive optimisation": {
+  "motivo": "Redução de falsos positivos em record linkage",
+  "nivel": "tem",
+  "nome": "false-positive optimisation"
+ },
  "fellegi-sunter": {
   "motivo": "usa matching probabilístico, base Fellegi-Sunter",
   "nivel": "tem",
@@ -542,6 +577,11 @@
   "motivo": "Nenhuma experiência com dados firmográficos descrita",
   "nivel": "nao",
   "nome": "Firmographic data"
+ },
+ "fivetran": {
+  "motivo": "Nenhum uso ou menção ao Fivetran",
+  "nivel": "nao",
+  "nome": "Fivetran"
  },
  "flink": {
   "motivo": "sem evidência de uso de Flink",
@@ -658,6 +698,11 @@
   "nivel": "nao",
   "nome": "HL7"
  },
+ "householding": {
+  "motivo": "Entende deduplicação, mas householding não mencionado",
+  "nivel": "parcial",
+  "nome": "householding"
+ },
  "hugging face": {
   "motivo": "sem evidência de uso de Hugging Face",
   "nivel": "nao",
@@ -718,6 +763,11 @@
   "nivel": "nao",
   "nome": "Java"
  },
+ "json": {
+  "motivo": "Experiência geral com dados, mas JSON não citado",
+  "nivel": "parcial",
+  "nome": "JSON"
+ },
  "jupyter": {
   "motivo": "listado nas competências técnicas",
   "nivel": "tem",
@@ -737,6 +787,11 @@
   "motivo": "clustering de entidades próximo de grafos de conhecimento",
   "nivel": "parcial",
   "nome": "Knowledge graphs"
+ },
+ "kubernetes": {
+  "motivo": "Nenhuma referência no currículo",
+  "nivel": "nao",
+  "nome": "Kubernetes"
  },
  "langchain": {
   "motivo": "sem evidência no currículo",
@@ -783,6 +838,11 @@
   "nivel": "nao",
   "nome": "marketing attribution"
  },
+ "marketing campaign management": {
+  "motivo": "Nenhuma experiência em gestão de campanhas de marketing",
+  "nivel": "nao",
+  "nome": "Marketing Campaign Management"
+ },
  "martech": {
   "motivo": "sem evidência de marketing tech",
   "nivel": "nao",
@@ -813,6 +873,11 @@
   "nivel": "tem",
   "nome": "match quality evaluation"
  },
+ "match/merge": {
+  "motivo": "Desenvolve lógica de matching e regras de merge",
+  "nivel": "tem",
+  "nome": "match/merge"
+ },
  "matching": {
   "motivo": "core da experiência profissional",
   "nivel": "tem",
@@ -822,6 +887,11 @@
   "motivo": "core do trabalho com matching determinístico/probabilístico",
   "nivel": "tem",
   "nome": "Matching Algorítmico"
+ },
+ "matillion": {
+  "motivo": "Não há menção ao Matillion",
+  "nivel": "nao",
+  "nome": "Matillion"
  },
  "merging": {
   "motivo": "Desenvolve lógica de merge após correspondência",
@@ -893,6 +963,11 @@
   "nivel": "tem",
   "nome": "NoSQL"
  },
+ "numpy": {
+  "motivo": "Uso implícito em scikit-learn e Python",
+  "nivel": "parcial",
+  "nome": "NumPy"
+ },
  "observability": {
   "motivo": "não há menção a ferramentas de observabilidade",
   "nivel": "nao",
@@ -942,6 +1017,11 @@
   "motivo": "sem evidência de uso de Power BI",
   "nivel": "nao",
   "nome": "Power BI"
+ },
+ "precision": {
+  "motivo": "Avaliação de modelo inclui métrica de precisão",
+  "nivel": "tem",
+  "nome": "precision"
  },
  "privacy enhancing technologies": {
   "motivo": "sem evidência direta, mas trabalha com dados sensíveis",
@@ -1023,6 +1103,11 @@
   "nivel": "nao",
   "nome": "React"
  },
+ "recall": {
+  "motivo": "Avaliação de modelo inclui métrica de recall",
+  "nivel": "tem",
+  "nome": "recall"
+ },
  "record linkage": {
   "motivo": "especialidade central do candidato",
   "nivel": "tem",
@@ -1032,6 +1117,11 @@
   "motivo": "Redação de dados sensíveis não citada.",
   "nivel": "nao",
   "nome": "redaction"
+ },
+ "relational database design": {
+  "motivo": "Trabalha com SQL, mas design relacional não citado",
+  "nivel": "parcial",
+  "nome": "relational database design"
  },
  "reltio": {
   "motivo": "plataforma MDM específica não usada",
@@ -1142,6 +1232,11 @@
   "motivo": "sabe SQL, base próxima",
   "nivel": "parcial",
   "nome": "Snowflake"
+ },
+ "soap": {
+  "motivo": "Nenhum uso de serviços SOAP indicado",
+  "nivel": "nao",
+  "nome": "SOAP"
  },
  "soc 2": {
   "motivo": "Não há evidência de conformidade SOC 2",

@@ -1,0 +1,230 @@
+{
+  "data": "2026-10-26",
+  "gerado_em": "2026-10-25T22:08-03:00",
+  "llm": true,
+  "serpapi_orcamento": 3,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Solutions Engineer, Data Management",
+      "url": "https://himalayas.app/companies/redpoint-global-inc/jobs/solutions-engineer-data-management",
+      "empresa": "Redpoint Global Inc.",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-10-25",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "A posição inclui implementação de componentes de identity resolution dentro de produto de Data Management.",
+      "resumo": "Solutions Engineer na Redpoint Global, responsável por implementar o Redpoint Customer Engagement Hub, desenvolvendo ETL e componentes de identidade e qualidade de dados.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "ETL",
+          "Azure Data Factory",
+          "Fivetran",
+          "Matillion",
+          "Alteryx",
+          "Informatica",
+          "relational database design",
+          "data hygiene",
+          "identity resolution",
+          "match/merge",
+          "householding"
+        ],
+        "desejaveis": [
+          "Snowflake",
+          "AI/ML",
+          "Java",
+          "SOAP",
+          "JSON",
+          "Azure",
+          "AWS",
+          "Tableau",
+          "Marketing Campaign Management",
+          "CRM"
+        ]
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 2,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.3,
+      "compat_detalhe": {
+        "habilidades": 41,
+        "senioridade": 100,
+        "local": 60,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "pede 2+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Azure Data Factory",
+          "Fivetran",
+          "Matillion",
+          "Alteryx"
+        ],
+        "parciais": [
+          "SQL",
+          "Informatica",
+          "relational database design",
+          "householding"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "SC CLEARED SENIOR DATA SCIENTIST at Women Rock - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/sc-cleared-senior-data-scientist-at-women-rock-4481348704",
+      "texto": "Entity resolution, record linkage or fuzzy matching experience. Strong Python experience, including pandas, NumPy and scikit-learn. Solid SQL skills and experience working with large datasets. Experience with Elasticsearch, Kubernetes and Docker. Understanding of precision, recall and false-positive optimisation.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 9,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Senior Data Scientist com foco em entity resolution e record linkage.",
+      "resumo": "Vaga de Senior Data Scientist na Women Rock que requer experiência em entity resolution, record linkage e fuzzy matching, além de Python, SQL e Elasticsearch.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "pandas",
+          "NumPy",
+          "scikit-learn",
+          "SQL",
+          "Elasticsearch",
+          "Kubernetes",
+          "Docker",
+          "entity resolution",
+          "record linkage",
+          "fuzzy matching",
+          "precision",
+          "recall",
+          "false-positive optimisation"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.41,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Kubernetes",
+          "Docker"
+        ],
+        "parciais": [
+          "pandas",
+          "NumPy",
+          "SQL"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "A Sentence Transformer Based Technique for Entity Matching within Incomplete Data",
+      "url": "https://doi.org/10.5281/zenodo.23628593",
+      "autores": "Tariq Mahmood",
+      "data": "2026-10-25",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "O artigo trata de entity matching, foco central do leitor",
+      "resumo": "O trabalho propõe usar Sentence Transformers para representar registros como embeddings densos, permitindo comparar entidades mesmo com atributos ausentes. Experimentos mostram melhora na robustez do matching em dados incompletos.",
+      "confianca": 0.99
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 66,
+  "vagas_arquivadas_total": 98,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 0,
+    "abertas": 11,
+    "arquivadas": 26,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 25,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "conceito",
+    "titulo": "Datasets de referência: FEBRL, DBLP-ACM, Abt-Buy, Amazon-Google",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Reconhecer os principais datasets de benchmark em entity resolution (FEBRL, DBLP-ACM, Abt-Buy, Amazon-Google), saber por que cada um existe e escolher o certo para validar um pipeline.",
+    "conceito": "Datasets de referência cumprem na pesquisa de ER o mesmo papel que o MNIST cumpre em visão computacional: permitem comparar algoritmos diferentes sob as mesmas condições, com ground truth conhecido. Christen (2012, seç. 2.1, p. 23-26) usa como exemplo didático duas tabelas pequenas e sintéticas (Database A e B) justamente para ilustrar, de forma controlada, os problemas reais de formato, abreviação e erro de digitação que aparecem em produção. O FEBRL (Freely Extensible Biomedical Record Linkage) nasceu dessa mesma lógica: gera registros sintéticos de pessoas com duplicatas corrompidas de forma paramétrica (erros de digitação, OCR, foneticos), o que dá controle total sobre a taxa de erro e serve bem para testar indexação e comparação de campos, mas não captura a complexidade semântica de dados reais.\n\nJá DBLP-ACM, Abt-Buy e Amazon-Google pertencem a outra família: são benchmarks de matching entre duas fontes reais (não deduplicação), usados sobretudo em product matching e bibliographic matching. DBLP-ACM casa registros bibliográficos (título, autores, venue, ano) entre duas bases de citações. Abt-Buy e Amazon-Google casam produtos de varejo eletrônico descritos em texto livre, com nomes de produto, preço e descrição heterogêneos entre as duas lojas. Esses datasets expõem o desafio de atributos textuais ruidosos e sem schema fixo, diferente do FEBRL, que tem schema estruturado (nome, endereço, data de nascimento). Christophides et al. (2020) discutem como a heterogeneidade de schema e a escala são eixos centrais na avaliação de sistemas de ER end-to-end, e esses quatro benchmarks cobrem pontos distintos desses eixos.",
+    "como_funciona": "1. Classifique o dataset pelo tipo de tarefa (aula 23): FEBRL é deduplicação ou matching sintético 1 para 1; DBLP-ACM, Abt-Buy e Amazon-Google são matching 1 para 1 entre duas fontes reais.\n2. Verifique a natureza dos atributos: estruturados com campos separados (FEBRL, DBLP-ACM) versus texto livre semiestruturado (Abt-Buy, Amazon-Google, onde título e descrição carregam a maior parte da informação).\n3. Confirme a disponibilidade de ground truth: todos os quatro trazem rótulos de match conhecidos, o que permite calcular precisão, recall e F1 de forma objetiva (aula 19).\n4. Escolha o dataset conforme o que você quer testar: indexação e normalização de nomes/datas (FEBRL), comparação de strings textuais longas (Abt-Buy, Amazon-Google), ou casamento de metadados bibliográficos (DBLP-ACM).",
+    "exemplo": "Retomando o exemplo do livro (Christen, 2012, p. 27-29): duas tabelas pequenas, A com 7 registros e B com 7 registros, geram 7 x 7 = 49 pares possíveis sem indexação. Aplicando blocking por Soundex de sobrenome e pelos 3 primeiros dígitos do CEP, sobram apenas 12 pares candidatos (a união das listas da Fig. 2.5). A razão de redução é 1 - 12/49 = aproximadamente 0,755, ou seja, 75,5% dos pares foram descartados antes da comparação detalhada. Esse mesmo raciocínio de redução quadrática para um conjunto menor de candidatos é o que você vai medir, em escala maior, ao rodar blocking sobre Abt-Buy ou Amazon-Google.",
+    "na_pratica": "Em Python, o FEBRL já vem embutido no pacote recordlinkage: 'from recordlinkage.datasets import load_febrl4' retorna duas bases (dfA, dfB) prontas para indexar e comparar. Para Abt-Buy e Amazon-Google, o padrão da literatura é carregar dois CSVs (um por fonte) com colunas id, title, description, price e um terceiro arquivo de pares rotulados; em Splink isso se traduz em usar link_type='link_only' com Linker([df_abt, df_buy], settings, db_api=DuckDBAPI()) e comparações cl.JaroWinklerAtThresholds no campo title.",
+    "armadilha": "Tratar resultados obtidos em FEBRL como prova de desempenho em produção: por ser sintético e ter corrupção controlada, ele tende a inflar métricas de recall comparado a dados reais; sempre valide também em pelo menos um benchmark de texto livre como Abt-Buy antes de prometer números a um cliente.",
+    "desafio": "Um dataset no estilo Abt-Buy hipotético tem 1000 produtos na loja A e 1200 na loja B, sem duplicatas internas. (a) Calcule o número total de pares sem indexação. (b) Um esquema de blocking por categoria de produto gera 8 blocos de tamanho igual nas duas lojas (125 produtos de A e 150 de B por bloco). Calcule o número de pares candidatos após o blocking e a razão de redução.",
+    "gabarito": "(a) Total sem indexação: 1000 x 1200 = 1.200.000 pares. (b) Dentro de cada um dos 8 blocos: 125 x 150 = 18.750 pares; somando os 8 blocos: 8 x 18.750 = 150.000 pares candidatos. Razão de redução: 1 - 150.000/1.200.000 = 1 - 0,125 = 0,875, ou seja, 87,5% dos pares foram eliminados antes da comparação detalhada, exatamente a mesma lógica da Fig. 2.4-2.5 de Christen (2012), aplicada em escala maior.",
+    "fontes": [
+      "Christen (2012), seç. 2.1-2.3, p. 23-29",
+      "Christophides et al. (2020), ACM Computing Surveys 53(6)",
+      "Getoor & Machanavajjhala (2012), PVLDB 5(12)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2976,
+      "pos_palavras_chave": 4,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}
