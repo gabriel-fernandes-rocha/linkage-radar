@@ -38,8 +38,9 @@ LOG = ROOT / "data" / "logs" / "linkedin_local.log"
 OUT = ROOT / "data" / "brasil" / "linkedin_local.json"
 GEO_BR = "106057199"
 
+# "dados mestres"/"master data management" saíram: trazem analistas de cadastro SAP, não linkage
 PESSOAS = ["record linkage", "entity resolution", "identity resolution", "data matching", "deduplicação de dados",
-           "resolução de entidades", "master data management", "dados mestres", "golden record", "linkage de dados"]
+           "resolução de entidades", "golden record", "linkage de dados", "fuzzy matching", "MDM matching"]
 EMPRESAS = ["master data management", "entity resolution", "qualidade de dados", "dados cadastrais",
             "enriquecimento de dados"]
 VAGAS = ["entity resolution", "record linkage", "deduplicação", "dados mestres", "golden record",
@@ -103,6 +104,16 @@ def abrir(page, url: str) -> None:
         raise Bloqueado(f"LinkedIn pediu login/verificação ({u[:80]})")
 
 
+# termos que sozinhos não indicam linkage (MDM no Brasil costuma ser cadastro manual no ERP)
+FRACOS = {"mdm", "master data", "dados mestres", "master data management", "gestao de dados mestres", "blocking",
+          "dedup", "levenshtein", "geocodificacao", "customer 360", "cliente 360", "higienizacao de dados"}
+EMPRESA_EXTRA = ["qualidade de dados", "data quality", "dados cadastrais", "enriquecimento de dados", "governanca de dados"]
+
+
+def forte(texto: str) -> list[str]:
+    return [k for k in tema(texto) if k not in FRACOS]
+
+
 def tema(texto: str) -> list[str]:
     from filters.keywords import _has, normalize
 
@@ -120,7 +131,7 @@ def buscar_pessoas(page) -> list[dict]:
                     f"&geoUrn=%5B%22{GEO_BR}%22%5D")
         for r in page.evaluate(JS_PEOPLE, "/in/"):
             nome, resto = (r["lines"] or [""])[0], " | ".join(r["lines"][1:])
-            if EXCLUIR.search(r["url"] + resto) or not tema(resto):
+            if EXCLUIR.search(r["url"] + resto) or not forte(resto):
                 continue
             achados.append({"nome": nome, "titulo": nome, "url": r["url"], "resumo": resto[:220],
                             "fonte": "LinkedIn (varredura logada)", "texto": resto})
@@ -135,7 +146,10 @@ def buscar_empresas(page) -> list[dict]:
                     f"&companyHqGeo=%5B%22{GEO_BR}%22%5D")
         for r in page.evaluate(JS_PEOPLE, "/company/"):
             nome, resto = (r["lines"] or [""])[0], " | ".join(r["lines"][1:])
-            if not tema(nome + " " + resto) and not re.search(r"(dados|data)", nome + resto, re.I):
+            from filters.keywords import _has, normalize
+
+            txt = normalize(nome + " " + resto)
+            if not (tema(nome + " " + resto) or any(_has(k, txt) for k in EMPRESA_EXTRA)):
                 continue
             achados.append({"nome": nome, "titulo": nome, "url": r["url"], "resumo": resto[:220],
                             "fonte": "LinkedIn (varredura logada)"})
