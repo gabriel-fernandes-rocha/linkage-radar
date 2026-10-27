@@ -247,6 +247,15 @@ def main() -> int:
     from playwright.sync_api import sync_playwright
 
     if args.login:
+        # Chrome NORMAL (sem automação) na mesma pasta: o Google bloqueia "Entrar com Google" em navegador
+        # automatizado. Você entra, fecha a janela, e a varredura reaproveita o login salvo.
+        chrome = Path(os.environ.get("PROGRAMFILES", r"C:\Program Files")) / "Google/Chrome/Application/chrome.exe"
+        if chrome.exists():
+            PROFILE_DIR.mkdir(parents=True, exist_ok=True)
+            subprocess.run([str(chrome), f"--user-data-dir={PROFILE_DIR}", "--no-first-run",
+                            "https://www.linkedin.com/login"])
+            print("Entre na conta (pode ser pelo Google) e FECHE a janela do Chrome quando o feed aparecer.")
+            return 0
         with sync_playwright() as p:
             ctx = navegador(p, visivel=True)
             page = ctx.pages[0] if ctx.pages else ctx.new_page()
