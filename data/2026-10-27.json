@@ -1,0 +1,340 @@
+{
+  "data": "2026-10-27",
+  "gerado_em": "2026-10-26T23:04-03:00",
+  "llm": true,
+  "serpapi_orcamento": 50,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer (MDM Platform) at Incedo Inc. - LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/data-engineer-mdm-platform-at-incedo-inc-4483719154",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 10,
+      "juiz": "groq",
+      "motivo": "A vaga menciona implementação de workflows de MDM, incluindo entity matching e deduplicação, foco central em resolução de entidades.",
+      "resumo": "Data Engineer (MDM Platform) na Incedo. Responsável por implementar workflows de MDM, matching de entidades, survivorship e criação de golden record.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.9,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Netflix hiring Analytics Engineer 5 - Ads Identity & Signals ... - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/analytics-engineer-5-ads-identity-signals-at-netflix-4478939854",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "A descrição destaca construção de pipelines para identidade graph, entity matching e identity resolution, tema central da vaga.",
+      "resumo": "Analytics Engineer 5 na Netflix (Ads Identity & Signals). Desenvolve modelos de dados e pipelines que suportam construção de grafo de identidade e matching de entidades.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.33,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Salesforce Developer - Agentforce & Data 360",
+      "url": "https://in.linkedin.com/jobs/view/senior-salesforce-developer-%E2%80%93-agentforce-data-360-at-siemens-4471926375",
+      "texto": "Configure Data 360 capabilities, including Data Streams, DMO/DSO mapping, Identity Resolution, Calculated Insights, and Data Graphs. Develop Agentforce solutions using Prompt Builder, standard or custom actions, grounding techniques, and auto-launched Flows.",
+      "data": "Sep 29, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de desenvolvedor Salesforce com foco em Data 360 e Identity Resolution.",
+      "resumo": "Vaga para Senior Salesforce Developer que configurará capacidades de Data 360, incluindo Identity Resolution, em projetos de Agentforce.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Salesforce Data 360 Cloud and agentforce Developer",
+      "url": "https://in.linkedin.com/jobs/view/salesforce-data-360-cloud-and-agentforce-developer-at-ekloud-inc-4481437461",
+      "texto": "We are looking for an experienced Salesforce Data 360 Developer to support the implementation and development of Salesforce Data 360 (formerly Salesforce CDP/Data Cloud) solutions. The candidate will be responsible for configuring and implementing data ingestion, data modeling, transformations, identity resolution, unified customer profiles, calculated insights, segmentation, and data activation.",
+      "data": "Oct 26, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de desenvolvedor Salesforce Data 360 que inclui responsabilidades de identity resolution.",
+      "resumo": "Vaga para Salesforce Data 360 Developer responsável por ingestão, modelagem, transformações e identity resolution em soluções de CDP.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Analytics Implementation Specialist - LinkedIn",
+      "url": "https://za.linkedin.com/jobs/view/senior-analytics-implementation-specialist-at-vml-enterprise-solutions-4480042556",
+      "texto": "This includes defining identity resolution strategies and leveraging CDPs for unified customer profiles. Adaptability, Curiosity, and Innovation:Adapt quickly to rapidly changing toolkits, emerging technologies (e.g., new AI/ML applications in analytics), and varied client engagements.",
+      "data": "Oct 22, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de especialista em analytics que menciona definição de estratégias de identity resolution.",
+      "resumo": "Vaga para Senior Analytics Implementation Specialist que definirá estratégias de identity resolution e uso de CDPs para perfis unificados.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Software Engineer, Backend (Marketing & Privacy)",
+      "url": "https://ca.linkedin.com/jobs/view/senior-software-engineer-backend-marketing-privacy-at-affirm-4476886145",
+      "texto": "You have experience building production data pipelines and analytical models using technologies such as Snowflake, dbt, and Airflow, including event-level data, identity resolution, attribution, or conversion measurement.",
+      "data": "Oct 14, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Anúncio de vaga de engenheiro de software backend que requer experiência com pipelines de identity resolution.",
+      "resumo": "Vaga para Senior Software Engineer focado em backend, pipelines de dados e identity resolution em contextos de marketing e privacidade.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 85,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Ontology Alignment Goes Wide",
+      "url": "https://doi.org/10.5281/zenodo.23643399",
+      "autores": "Paul Groth",
+      "data": "2026-10-25",
+      "fonte": "OpenAlex",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "O artigo discute entity matching dentro de alinhamento de ontologias, tema central de record linkage.",
+      "resumo": "Apresentação keynote no workshop OM 2026 sobre alinhamento de ontologias usando LLMs. Aborda especificamente matching de instâncias e linking de entidades.",
+      "confianca": 0.96
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Efficient privacy-preserving electricity data matching via fuzzy private set intersection",
+      "url": "https://doi.org/10.1016/j.compeleceng.2026.111604",
+      "autores": "YuanLong Liu et al.",
+      "data": "2026-10-24",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "O trabalho propõe técnicas de matching de dados com preservação de privacidade, foco em record linkage.",
+      "resumo": "Propõe um método de interseção de conjuntos privados fuzzy para combinar registros de consumo elétrico. Visa eficiência e privacidade no processo de matching.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 72,
+  "vagas_arquivadas_total": 104,
+  "rede": {
+    "pessoas_novas": 3,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 2,
+    "abertas": 13,
+    "arquivadas": 28,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 26,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "conceito",
+    "titulo": "Glossário do especialista: os termos que caem em entrevista",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Dominar a terminologia técnica padrão de entity resolution (record linkage, data matching) usada em papers e entrevistas internacionais, sabendo definir e distinguir cada termo com precisão.",
+    "conceito": "Entity Resolution (ER) é uma área com vocabulário técnico específico que varia sutilmente entre autores, mas converge em alguns termos centrais. Christen (2012, cap. 2, p. 23-29) descreve o processo de data matching em cinco etapas: pré-processamento, indexação (indexing), comparação, classificação e avaliação, cada uma com jargão próprio. Dominar esses termos não é decoreba: em entrevista, o entrevistador usa 'blocking key' ou 'candidate pair' esperando que você reconheça o conceito exato por trás, não uma aproximação vaga.\n\nAlém dos termos de Christen, a literatura mais recente (Binette & Steorts, 2022; Getoor & Machanavajjhala, 2012; Christophides et al., 2020) formaliza ER como problema de clustering sobre um grafo de registros, trazendo termos como 'partição', 'correspondência' (correspondence) e 'cluster de entidade'. Esses termos já foram cobertos nas aulas 22 a 24 desta semana; aqui o foco é consolidar o glossário operacional do pipeline descrito no livro, que é o vocabulário mais cobrado em entrevistas técnicas sobre a arquitetura de um sistema de matching.",
+    "como_funciona": "Glossário essencial (Christen, 2012, cap. 2, p. 23-29):\n1. Data pre-processing: padronização de formato, limpeza, parsing de atributos (p. 25-26).\n2. Indexing/blocking: geração de candidate pairs reduzindo a complexidade quadrática (p. 27-28). Blocking key (ou blocking criteria): atributo (ou função dele, ex. Soundex) usado para agrupar registros em blocos.\n3. Blocking key value (BKV): valor concreto gerado pela blocking key para um registro (ex. Soundex de 'Smith' = 's530').\n4. Candidate record pair: par de registros que caiu no mesmo bloco e será efetivamente comparado.\n5. Comparison step: aplicação de funções de similaridade (campo a campo) aos candidate pairs.\n6. Classification: decisão sobre cada par comparado, em três classes possíveis: match, non-match, potential match (depende do decision model usado, p. 23).\n7. Clerical review: revisão manual dos potential matches para decidir match ou non-match final (p. 23).\n8. Decision model: regra ou modelo estatístico/probabilístico que mapeia vetores de comparação em classes.\n9. Evaluation: medição de qualidade e completude do resultado do matching (p. 23).",
+    "exemplo": "No exemplo do livro (p. 27-28), duas tabelas com 7 registros cada geram 7x7=49 comparações possíveis sem indexing. Com duas blocking keys (Soundex do sobrenome e os 3 primeiros dígitos do CEP), apenas 12 candidate pairs são gerados (Fig. 2.5), uma redução de cerca de 76% no número de comparações, sem perder pares verdadeiros como (a1,b3) 'John Smith' e (a3,b1) 'Mary Meier'. Isso ilustra concretamente a diferença entre complexidade quadrática do problema bruto (49 pares) e o conjunto de candidate pairs após indexing (12 pares), que ainda precisa passar por comparison e classification para virar matches de fato.",
+    "na_pratica": "No pipeline recordlinkage, blocking key e candidate pairs aparecem assim:\nimport recordlinkage\nidx = recordlinkage.Index()\nidx.block('surname')\npairs = idx.index(dfA, dfB)\n\nEm Splink, block_on define a blocking key, e settings.comparisons corresponde à etapa de comparison; o threshold em predict() implementa o decision model da etapa de classification. Em produção, é comum ter um dashboard separado para clerical review dos potential matches (scores em zona cinzenta), geralmente uma fila no Elasticsearch ou tabela no banco marcada como 'review_pending'.",
+    "armadilha": "Profissionais experientes confundem 'blocking' com 'filtering': blocking agrupa por igualdade de BKV e gera pares dentro de cada bloco, já filtering (ex. similarity join) pode gerar pares sem exigir igualdade exata; tratar os dois como sinônimos leva a arquiteturas erradas de indexação em escala.",
+    "desafio": "Você tem duas bases com 500.000 registros cada, sem duplicatas internas. Sem indexing, quantas comparações seriam necessárias? Se uma blocking key reduzir o número de candidate pairs para 0,002% do total, quantos candidate pairs restam, e qual é o limite teórico máximo de true matches possíveis (considerando a regra do livro)?",
+    "gabarito": "Sem indexing: 500.000 x 500.000 = 250.000.000.000 (250 bilhões) comparações, complexidade quadrática. Com blocking reduzindo para 0,002%: 250.000.000.000 x 0,00002 = 5.000.000 candidate pairs. Pelo critério de Christen (p. 27-28), como nenhuma das bases tem duplicatas internas, o número máximo de true matches é limitado pelo tamanho da menor base, ou seja, no máximo 500.000 matches verdadeiros, crescimento linear com n, enquanto o espaço de comparação cresce quadraticamente.",
+    "fontes": [
+      "Christen (2012), cap. 2, seç. 2.1-2.3, p. 23-29"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2980,
+      "pos_palavras_chave": 5,
+      "aprovados": 2
+    },
+    "eventos": {
+      "brutos": 4,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 175,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

@@ -148,6 +148,11 @@
   "nivel": "nao",
   "nome": "B2B company data"
  },
+ "batch processing": {
+  "motivo": "Desenvolve pipelines de ETL em lote",
+  "nivel": "tem",
+  "nome": "batch processing"
+ },
  "beam": {
   "motivo": "experiência com pipelines batch similares ao Beam",
   "nivel": "parcial",
@@ -483,6 +488,11 @@
   "nivel": "nao",
   "nome": "Docker"
  },
+ "duplicate detection": {
+  "motivo": "Implementa deduplicação em pipelines de record linkage",
+  "nivel": "tem",
+  "nome": "duplicate detection"
+ },
  "dynamodb": {
   "motivo": "sem evidência de NoSQL além de Elasticsearch",
   "nivel": "nao",
@@ -632,6 +642,11 @@
   "motivo": "conceito MDM próximo de deduplicação/resolução praticada",
   "nivel": "parcial",
   "nome": "Golden Records"
+ },
+ "golden-record": {
+  "motivo": "Trabalha com match/merge, mas não menciona golden record",
+  "nivel": "parcial",
+  "nome": "golden-record"
  },
  "graph": {
   "motivo": "currículo foca em record linkage linear, sem grafos explícitos",
@@ -1177,6 +1192,11 @@
   "motivo": "listado explicitamente como conhecimento usado",
   "nivel": "tem",
   "nome": "scikit-learn"
+ },
+ "scoring algorithms": {
+  "motivo": "Implementa pontuação de matches no pipeline",
+  "nivel": "tem",
+  "nome": "scoring algorithms"
  },
  "scraping": {
   "motivo": "Não há experiência em scraping de sites.",

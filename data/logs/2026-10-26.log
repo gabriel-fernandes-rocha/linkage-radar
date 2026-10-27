@@ -7,3 +7,73 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-10-26 23:18 =====
+INFO serpapi: 250 restantes no mês; orçamento de hoje = 50 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 150
+INFO jobs/greenhouse: 1438
+INFO jobs/lever: 307
+INFO jobs/ashby: 30
+INFO jobs/hn_who_is_hiring: 1
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 207
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 144
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 173
+INFO jobs/social_linkedin/ddg: 5 aceitos de 6
+INFO jobs/social_posts: 5
+INFO linkedin_guest: 45 vagas, 25 descrições abertas, 35 consultas no total
+INFO jobs/linkedin_guest: 45
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011CgRvkkqYGe5iSeBxWHzM6'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+WARNING judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+WARNING judge: não consegui listar modelos de github (Expecting value: line 1 column 1 (char 0))
+WARNING judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\r\n')
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-20b, openai/gpt-oss-safeguard-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO vagas: {'brutos': 2980, 'pos_palavras_chave': 5, 'aprovados': 2}
+INFO events: 4 candidatos
+INFO eventos: {'brutos': 4, 'pos_palavras_chave': 1, 'aprovados': 0}
+WARNING papers/arxiv falhou: cannot access local variable 'wait' where it is not associated with a value
+INFO papers/openalex: 175
+INFO papers: {'brutos': 175, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 9 aceitos de 9
+INFO linkedin: 9 candidatos
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: 72 abertas (6 novas)
+INFO mercado: 103 vagas no nicho, 75 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO network: 54 pessoas (3 novas), 19 empresas (0 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire: 125
+INFO brasil/gupy: 397
+INFO brasil/google_jobs_br: 0
+INFO brasil/linkedin/ddg: 7 aceitos de 7
+INFO brasil/linkedin_jobs_br: 7
+INFO linkedin_guest: 22 vagas, 22 descrições abertas, 70 consultas no total
+INFO brasil/linkedin_guest_br: 22
+INFO brasil/greenhouse: 1155
+INFO brasil/lever: 217
+INFO brasil/ashby: 103
+INFO brasil: 5006 brutas, 10 candidatas para o juiz
+INFO open_jobs: 13 abertas (2 novas)
+INFO mercado: 28 vagas no nicho, 75 no mercado amplo
+INFO network/ddg: 0 aceitos de 0
+INFO network/google: 0 aceitos de 10
+INFO network: 0 perfis após a consulta
+INFO network: 0 pessoas (0 novas), 17 empresas (0 novas)
+INFO brasil: {'novas': 2, 'abertas': 13, 'arquivadas': 28, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-10-27.json
+

@@ -1,6 +1,61 @@
 [
   {
     "tipo": "vaga",
+    "titulo": "A empresa CI&T está contratando para o cargo de Master Data ...",
+    "url": "https://br.linkedin.com/jobs/view/master-data-developer-brazil-at-ci-t-4455334674",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "score": 3,
+    "categoria": "linkage",
+    "termos": [
+      "deduplication",
+      "entity resolution",
+      "fuzzy matching"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga brasileira que exige experiência em lógica de entity resolution, fuzzy matching e deduplication entre fontes de dados.",
+    "resumo": "Cargo na CI&T focado em construção de lógica de resolução de entidades, algoritmos de pontuação e deduplicação usando Python.",
+    "confianca": 0.97,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "fuzzy matching",
+        "scoring algorithms",
+        "deduplication",
+        "Python",
+        "batch processing"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.9,
+    "encaixe": 0.5,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-27",
+    "verificada_em": "2026-10-27",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "[Job - 30900] Master Data Developer (Amazon Neptune), Brazil",
     "url": "https://himalayas.app/companies/ci-t/jobs/job-30900-master-data-developer-amazon-neptune-brazil",
     "empresa": "CI&T",
@@ -69,8 +124,72 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer na empresa BEES - LinkedIn Jobs",
+    "url": "https://br.linkedin.com/jobs/view/senior-data-engineer-at-bees-4483726838",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "score": 5,
+    "categoria": "linkage",
+    "termos": [
+      "blocking",
+      "duplicate detection",
+      "entity resolution",
+      "master data management",
+      "survivorship"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga no Brasil que menciona MDM com entity resolution, matching determinístico e probabilístico, blocking e deduplicação.",
+    "resumo": "Senior Data Engineer na BEES, responsável por master data management com resolução de entidades, regras de golden‑record e identidade entre sistemas.",
+    "confianca": 0.98,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "entity resolution",
+        "deterministic matching",
+        "probabilistic matching",
+        "blocking",
+        "duplicate detection",
+        "golden-record",
+        "survivorship rules"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1.0,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management"
+      ],
+      "parciais": [
+        "golden-record",
+        "survivorship rules"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-27",
+    "verificada_em": "2026-10-27",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -138,7 +257,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -210,7 +329,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -279,7 +398,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -349,7 +468,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -432,7 +551,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -495,7 +614,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -562,7 +681,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
@@ -650,7 +769,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -727,7 +846,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false
   },
   {
@@ -786,7 +905,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-26",
+    "verificada_em": "2026-10-27",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",

@@ -39,7 +39,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Senior Data Engineer - São Paulo (Contract)",
@@ -80,7 +80,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "[Job - 30900] Master Data Developer (Amazon Neptune), Brazil",
@@ -119,7 +119,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "[Job - 30900] Master Data Developer, Brazil",
@@ -158,7 +158,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Analista de Dados Pleno",
@@ -197,7 +197,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Analista de Dados de FP&A SR",
@@ -301,7 +301,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "BI AND DATA QUALITY ANALYST I | CORPORATE RECORDS MG",
@@ -370,7 +370,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Analista de Governança de Dados Sênior",
@@ -437,7 +437,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Analista Dados Financeiros PL",
@@ -506,7 +506,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Analista de Dados | Financeiros",
@@ -645,7 +645,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Analista de Inteligência de Dados Pleno",
@@ -878,7 +878,7 @@
   ],
   "primeira_vez": "2026-10-18",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-26"
+  "ultima_vez_aberta": "2026-10-27"
  },
  {
   "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto",
@@ -909,5 +909,71 @@
   "status": "fechada",
   "ultima_vez_aberta": "2026-10-19",
   "fechada_em": "2026-10-20"
+ },
+ {
+  "titulo": "Senior Data Engineer na empresa BEES - LinkedIn Jobs",
+  "empresa": "",
+  "local": "Brasil",
+  "url": "https://br.linkedin.com/jobs/view/senior-data-engineer-at-bees-4483726838",
+  "fonte": "LinkedIn Jobs (Brasil)",
+  "encaixe": 0.43,
+  "motivo": "Vaga no Brasil que menciona MDM com entity resolution, matching determinístico e probabilístico, blocking e deduplicação.",
+  "resumo": "Senior Data Engineer na BEES, responsável por master data management com resolução de entidades, regras de golden‑record e identidade entre sistemas.",
+  "requisitos": {
+   "obrigatorios": [
+    "Master Data Management",
+    "entity resolution",
+    "deterministic matching",
+    "probabilistic matching",
+    "blocking",
+    "duplicate detection",
+    "golden-record",
+    "survivorship rules"
+   ],
+   "desejaveis": []
+  },
+  "juiz": "groq",
+  "categoria": "linkage",
+  "termos": [
+   "blocking",
+   "duplicate detection",
+   "entity resolution",
+   "master data management",
+   "survivorship"
+  ],
+  "primeira_vez": "2026-10-27",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-10-27"
+ },
+ {
+  "titulo": "A empresa CI&T está contratando para o cargo de Master Data ...",
+  "empresa": "",
+  "local": "Brasil",
+  "url": "https://br.linkedin.com/jobs/view/master-data-developer-brazil-at-ci-t-4455334674",
+  "fonte": "LinkedIn Jobs (Brasil)",
+  "encaixe": 0.5,
+  "motivo": "Vaga brasileira que exige experiência em lógica de entity resolution, fuzzy matching e deduplication entre fontes de dados.",
+  "resumo": "Cargo na CI&T focado em construção de lógica de resolução de entidades, algoritmos de pontuação e deduplicação usando Python.",
+  "requisitos": {
+   "obrigatorios": [
+    "entity resolution",
+    "fuzzy matching",
+    "scoring algorithms",
+    "deduplication",
+    "Python",
+    "batch processing"
+   ],
+   "desejaveis": []
+  },
+  "juiz": "groq",
+  "categoria": "linkage",
+  "termos": [
+   "deduplication",
+   "entity resolution",
+   "fuzzy matching"
+  ],
+  "primeira_vez": "2026-10-27",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-10-27"
  }
 ]
