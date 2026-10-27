@@ -163,6 +163,10 @@ def _apply(batch: list[dict], rows) -> None:
                                               if isinstance(x, str) and x))
         must = dedup(row.get("obrigatorios"))
         nice = [x for x in dedup(row.get("desejaveis")) if x not in must]
-        job["requisitos"] = {"obrigatorios": must, "desejaveis": nice}
+        if must or nice or not job.get("requisitos"):
+            job["requisitos"] = {"obrigatorios": must, "desejaveis": nice}
+            job.pop("requisitos_estimados", None)  # agora uma IA leu a vaga
         for f in FIELDS:
-            job[f] = row.get(f)
+            # IA reserva às vezes omite campos: vazio não apaga o que a extração por regras já tinha achado
+            if row.get(f) not in (None, "", [], {}, "nao_informado") or f not in job:
+                job[f] = row.get(f)

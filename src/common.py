@@ -93,6 +93,7 @@ def get(url: str, retries: int = 3, **kw) -> requests.Response:
         try:
             r = requests.get(url, headers=headers, timeout=timeout, **kw)
         except (requests.ConnectionError, requests.Timeout):
+            wait = ""
             if attempt == retries:
                 raise
         else:

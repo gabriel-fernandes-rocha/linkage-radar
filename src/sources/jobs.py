@@ -177,6 +177,9 @@ def serpapi_google_jobs(cfg):
             except Exception as e:  # uma busca falhar não descarta as outras
                 log.warning("jobs/google '%s' falhou: %s", q, e)
                 break
+            if not data.get("jobs_results"):
+                log.info("google_jobs '%s': 0 vagas (%s)", q, str(data.get("error") or
+                         (data.get("search_information") or {}).get("jobs_results_state") or "sem motivo")[:150])
             for j in data.get("jobs_results", []):
                 link = (j.get("apply_options") or [{}])[0].get("link") or j.get("share_link", "")
                 out.append(_job(j.get("title"), link, j.get("company_name"), j.get("location"),

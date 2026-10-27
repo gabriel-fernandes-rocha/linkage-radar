@@ -61,9 +61,29 @@ def _link_alive(url: str) -> bool:
     return not CLOSED_PATTERNS.search(r.text[:300_000])
 
 
+def _inhire_alive(url: str) -> bool:
+    """A página da InHire abre mesmo com a vaga removida (é um app): pergunta à API pública."""
+    m = re.match(r"https?://([a-z0-9-]+)\.inhire\.app/vagas/([0-9a-f-]{36})", url)
+    if not m:
+        return True
+    try:
+        r = requests.get(f"https://api.inhire.app/job-posts/public/pages/{m[2]}",
+                         headers={"X-Tenant": m[1], "User-Agent": UA}, timeout=20)
+    except requests.RequestException:
+        return True  # erro de rede não fecha a vaga
+    if r.status_code == 404:
+        return False
+    try:
+        return r.json().get("status", "published") == "published"
+    except ValueError:
+        return True
+
+
 def still_open(job: dict, listed_today: set[str]) -> bool:
     if job.get("fonte", "").startswith(FULL_LISTING):
         return _norm_url(job["url"]) in listed_today
+    if "inhire.app/vagas/" in job["url"]:
+        return _inhire_alive(job["url"])
     return _link_alive(job["url"])
 
 
@@ -81,6 +101,8 @@ def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: i
         upd = fresh.get(_norm_url(job["url"]))
         if upd:  # reavaliada hoje: atualiza compatibilidade/requisitos, mantém a data de entrada
             job.update({k: v for k, v in upd.items() if k not in ("texto", "desde", "nova")})
+            if not upd.get("nao_verificado"):
+                job.pop("nao_verificado", None)  # um juiz de verdade confirmou
         age = (date.fromisoformat(day) - date.fromisoformat(job["desde"])).days
         if age > max_age_days:
             log.info("open_jobs: expirou (%dd) %s", age, job["titulo"])

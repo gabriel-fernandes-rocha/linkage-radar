@@ -80,3 +80,28 @@ def test_plain_bi_job_is_not_integration():
     bi = {"tipo": "vaga", "titulo": "Analista de BI", "fonte": "Gupy", "local": "SP", "url": "u3",
           "texto": "Criar dashboards em Power BI com qualidade de dados."}
     assert not brasil.passes(bi)
+
+
+def test_backup_ai_does_not_erase_known_fields():
+    from filters import requirements
+
+    job = {"titulo": "x", "local_contratacao": {"escopo": "pais", "paises": ["Brasil"]}, "senioridade": "pleno",
+           "requisitos": {"obrigatorios": ["Python"], "desejaveis": []}, "requisitos_estimados": True}
+    requirements._apply([job], [{"id": 0, "obrigatorios": ["Python", "SQL"], "desejaveis": [],
+                                 "local_contratacao": None, "senioridade": None}])
+    assert job["local_contratacao"]["paises"] == ["Brasil"] and job["senioridade"] == "pleno"
+    assert job["requisitos"]["obrigatorios"] == ["Python", "SQL"] and "requisitos_estimados" not in job
+
+
+def test_inhire_closed_job_is_detected(monkeypatch):
+    import open_jobs
+
+    class R:
+        status_code = 404
+
+        def json(self):
+            return {}
+
+    monkeypatch.setattr(open_jobs.requests, "get", lambda *a, **k: R())
+    job = {"url": "https://brq.inhire.app/vagas/fb7bcaee-7c24-4cc3-be6c-71b274f1ad17/x", "fonte": "InHire"}
+    assert not open_jobs.still_open(job, set())

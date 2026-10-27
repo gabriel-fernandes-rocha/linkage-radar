@@ -22,7 +22,7 @@ llm:
   # Cadeia de juízes: usa o 1º que responder. Sem chave = pulado. Chaves grátis não expiram.
   #   gemini: GEMINI_API_KEY | github: automático no Actions | groq: GROQ_API_KEY
   #   openrouter: OPENROUTER_API_KEY | mistral: MISTRAL_API_KEY | cerebras: CEREBRAS_API_KEY
-  cadeia: [anthropic, gemini, github, groq, openrouter, mistral, cerebras]
+  cadeia: [anthropic, gemini, groq, openrouter, mistral, cerebras]   # github saiu: responde "OK" vazio (out/2026)
 
 web_search:                 # usado para LinkedIn e eventos (fontes sem API)
   linkedin_weekdays: [0, 1, 2, 3, 4, 5, 6]   # 0=segunda ... 6=domingo
@@ -264,13 +264,14 @@ brasil:
   linkedin_busca_por_dia: 8
   linkedin_busca_dias: 7
   linkedin_max_descricoes: 40
-  rede_termos:                  # pessoas do Brasil para seguir
-    - "record linkage"
-    - "linkage de dados"
-    - "resolução de entidades"
-    - "deduplicação de dados"
-    - "entity resolution Brasil"
-    - "dados mestres MDM"
+  rede_termos:                  # pessoas do Brasil para seguir (DuckDuckGo só acha perfis com termos comuns)
+    - "record linkage Brasil"
+    - "entity resolution Brazil"
+    - "data matching Brasil"
+    - "MDM São Paulo"
+    - "qualidade de dados"
+    - "deduplicação"
+    - "integração de dados"
   empresas_termos:
     - "dados cadastrais"
     - "enriquecimento de dados"

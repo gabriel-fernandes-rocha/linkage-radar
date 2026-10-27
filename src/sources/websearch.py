@@ -35,7 +35,11 @@ def set_daily_budget() -> int | None:
         left = int(acc.get("plan_searches_left", 0))
         today = date.today()
         nxt = date(today.year + (today.month == 12), today.month % 12 + 1, 1)
-        BUDGET["hoje"] = max(left // max((nxt - today).days, 1), min(left, 3))
+        # o plano renova na data de assinatura (ex.: dia 26), não no dia 1: dividir pelos dias até o fim do
+        # mês queimava a cota em 5 dias. Teto = 1,5x a média diária do plano (250/30 -> 12).
+        plan = int(acc.get("searches_per_month") or 250)
+        teto = max(int(plan / 30 * 1.5), 3)
+        BUDGET["hoje"] = min(max(left // max((nxt - today).days, 1), min(left, 3)), teto, left)
         log.info("serpapi: %d restantes no mês; orçamento de hoje = %d buscas", left, BUDGET["hoje"])
     except Exception as e:
         log.warning("serpapi: não consegui ler a cota (%s)", e)

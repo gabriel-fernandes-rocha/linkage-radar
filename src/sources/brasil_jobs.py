@@ -130,6 +130,9 @@ def google_jobs_br(cfg: dict) -> list[dict]:
         except Exception as e:
             log.warning("brasil/google_jobs '%s' falhou: %s", q, e)
             continue
+        if not data.get("jobs_results"):
+            log.info("google_jobs '%s': 0 vagas (%s)", q, str(data.get("error") or
+                     (data.get("search_information") or {}).get("jobs_results_state") or "sem motivo")[:150])
         for j in data.get("jobs_results", []):
             links = [o.get("link", "") for o in (j.get("apply_options") or [])]
             link = next((u for u in links if "inhire.app" in u or "gupy.io" in u), links[0] if links else
