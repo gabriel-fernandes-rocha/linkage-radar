@@ -191,4 +191,15 @@ def linkedin_guest_br(cfg: dict, seen=None) -> list[dict]:
                                       source="LinkedIn Jobs (Brasil)")
 
 
-SOURCES = [inhire, gupy, google_jobs_br, linkedin_jobs_br, linkedin_guest_br]
+def linkedin_local(cfg: dict) -> list[dict]:
+    """Vagas e posts achados pela varredura do LinkedIn LOGADO no seu computador (scripts/linkedin_local.py)."""
+    path = DATA / "brasil" / "linkedin_local.json"
+    if not path.exists():
+        return []
+    from datetime import timedelta
+
+    limite = (date.today() - timedelta(days=7)).isoformat()
+    return [dict(j) for j in json.loads(path.read_text("utf-8")) if j.get("visto_em", "") >= limite]
+
+
+SOURCES = [inhire, gupy, google_jobs_br, linkedin_jobs_br, linkedin_guest_br, linkedin_local]

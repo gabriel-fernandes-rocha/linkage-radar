@@ -221,7 +221,7 @@ def collect(cfg: dict) -> list[dict]:
 
     out = []
     for fn, c in ((brasil_jobs.inhire, cfg), (brasil_jobs.gupy, cfg), (brasil_jobs.google_jobs_br, cfg),
-                  (brasil_jobs.linkedin_jobs_br, cfg), (linkedin_guest_br, cfg),
+                  (brasil_jobs.linkedin_jobs_br, cfg), (linkedin_guest_br, cfg), (brasil_jobs.linkedin_local, cfg),
                   (jobs.greenhouse, c2), (jobs.lever, c2), (jobs.ashby, c2)):
         try:
             got = fn(c)

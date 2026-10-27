@@ -42,7 +42,8 @@ const jobHTML = (v, withAge = false) => `
     <h3>${withAge && v.nova ? '<span class="badge">NOVA</span>' : ""}${esc(v.titulo)}</h3>
     <p class="meta">${esc(v.empresa)}${v.local ? " · " + esc(v.local) : ""} · ${esc(v.fonte)}${
       withAge && v.desde ? " · no radar desde " + fmtDate(v.desde) : ""}</p>
-    ${v.publicada_em ? `<p class="pub">🗓️ ${pubLabel(v.publicada_em)}</p>` : ""}
+    ${v.publicada_em ? `<p class="pub">🗓️ ${pubLabel(v.publicada_em)}</p>`
+      : v.desde ? `<p class="pub">🗓️ sem data de publicação · no radar desde ${fmtDate(v.desde)}</p>` : ""}
     ${v.encaixe != null ? `<p class="why"><span class="fit">🎯 ${Math.round(v.encaixe * 100)}% compatível com seu perfil</span></p>` : ""}
     ${compatHTML(v.compat_detalhe)}
     ${v.usa_er?.length ? `<p class="er">🔗 Usa o seu diferencial: ${v.usa_er.slice(0, 4).map(esc).join(", ")}</p>` : ""}
@@ -193,26 +194,24 @@ async function loadOpenJobs(file = "data/open_jobs.json", cardId = "abertas") {
     let expanded = false;
     const draw = () => {
     applyLive(jobs);
-    jobs.sort((a, b) => (b.encaixe || 0) - (a.encaixe || 0));
-    const FRESH_DAYS = 2;
+    // MAIS RECENTES PRIMEIRO: data de publicação (ou, sem ela, a data em que entrou no radar); empate = compatibilidade
+    const when = (j) => j.publicada_em || j.desde || "";
+    jobs.sort((a, b) => when(b).localeCompare(when(a)) || (b.encaixe || 0) - (a.encaixe || 0));
     const ref = LATEST_EDITION ? new Date(LATEST_EDITION + "T12:00:00") : new Date();
-    const ageDays = (j) => j.publicada_em ? Math.round((ref - new Date(j.publicada_em + "T12:00:00")) / 864e5) : null;
-    const frescas = jobs.filter((j) => ageDays(j) !== null && ageDays(j) <= FRESH_DAYS)
-      .sort((a, b) => (b.publicada_em || "").localeCompare(a.publicada_em || "") || (b.encaixe || 0) - (a.encaixe || 0));
-    const novas = jobs.filter((j) => j.nova && !frescas.includes(j));
-    const top = jobs.filter((j) => !j.nova && !frescas.includes(j)).slice(0, 4);
-    const shownSet = new Set([...frescas, ...novas, ...top]);
-    const rest = jobs.filter((j) => !shownSet.has(j));
+    const ageDays = (j) => when(j) ? Math.round((ref - new Date(when(j) + "T12:00:00")) / 864e5) : 999;
+    const frescas = jobs.filter((j) => ageDays(j) <= 2);
+    const semana = jobs.filter((j) => ageDays(j) > 2 && ageDays(j) <= 7);
+    const rest = jobs.filter((j) => ageDays(j) > 7);
     const block = (title, list) => list.length
       ? `<h3 class="sub">${title}</h3><div class="grid2">${list.map((j) => `<article class="item${j.nova ? " is-new" : ""}">${jobHTML(j, true)}</article>`).join("")}</div>` : "";
     const render = (all) => {
       $(".list", card).innerHTML =
-        (frescas.length ? block(`🔥 Publicadas nos últimos ${FRESH_DAYS + 1} dias: candidate-se cedo (${frescas.length})`, frescas)
-                        : `<p class="empty">Nenhuma vaga publicada nos últimos ${FRESH_DAYS + 1} dias ✅</p>`) +
-        block(`🆕 Novas no radar, publicadas há mais tempo (${novas.length})`, novas) +
-        block("🏆 As 4 mais compatíveis entre as que você já viu", top) +
-        (all ? block(`Todas as outras (${rest.length})`, rest)
-             : rest.length ? `<button class="btn more" type="button">Ver todas as ${jobs.length} vagas abertas</button>` : "");
+        `<p class="meta">Ordenadas das mais recentes para as mais antigas (data de publicação; sem ela, a data em que entraram no radar).</p>` +
+        (frescas.length ? block(`🔥 Últimos 3 dias: candidate-se cedo (${frescas.length})`, frescas)
+                        : `<p class="empty">Nenhuma vaga dos últimos 3 dias ✅</p>`) +
+        block(`📅 Últimos 7 dias (${semana.length})`, semana) +
+        (all ? block(`Mais antigas (${rest.length})`, rest)
+             : rest.length ? `<button class="btn more" type="button">Ver as ${rest.length} mais antigas (de ${jobs.length} abertas)</button>` : "");
       $(".more", card)?.addEventListener("click", () => { expanded = true; render(true); });
     };
     render(expanded);
