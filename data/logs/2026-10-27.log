@@ -7,3 +7,110 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-10-27 23:24 =====
+INFO serpapi: 239 restantes no mês; orçamento de hoje = 12 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 150
+INFO jobs/greenhouse: 1440
+INFO jobs/lever: 306
+INFO jobs/ashby: 32
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'record linkage remote LATAM': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'entity resolution engineer contractor': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 208
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 146
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 170
+INFO jobs/social_linkedin/ddg: 7 aceitos de 7
+INFO jobs/social_posts: 7
+INFO linkedin_guest: 32 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 32
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011CgTqBmZi9zT2MmjiKN5P9'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+WARNING judge: gemini/gemini-3.8-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-safeguard-20b, openai/gpt-oss-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO vagas: {'brutos': 2970, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 10
+INFO papers/openalex: 175
+INFO papers: {'brutos': 185, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 11 aceitos de 11
+INFO linkedin: 11 candidatos
+INFO linkedin: {'brutos': 11, 'pos_palavras_chave': 4, 'aprovados': 3}
+INFO open_jobs: fechou Neurons Lab hiring Data Engineer | Data Scientist - LinkedIn
+INFO open_jobs: fechou Salesforce Data 360 Cloud and agentforce Developer
+INFO open_jobs: fechou Neurons Lab hiring Data Engineer | Data Scientist — Unstructured Data ...
+INFO open_jobs: fechou Data Engineer | Data Scientist — Unstructured Data & AI Pipelines
+INFO open_jobs: fechou Senior Design Analyst & Design Analyst at Stats NZ — Wellington ...
+INFO open_jobs: fechou Senior Data Scientist — Entity Resolution & Data Pipelines
+INFO open_jobs: 67 abertas (1 novas)
+INFO judge: groq em limite por minuto; pausado 1 min
+WARNING judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {"error":{"message":"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on tokens per minute (TPM): Limit 20)
+INFO requisitos: nenhuma IA disponível; extração adiada para a próxima coleta
+INFO mercado amplo: +5 vagas na amostra (total 80)
+INFO mercado: 104 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: modelos de openrouter disponíveis hoje: google/gemma-4-31b-it:free, google/gemma-4-26b-a4b-it:free, xingchen-agi/xing4.0-29b-a4b:free
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: usando openrouter (xingchen-agi/xing4.0-29b-a4b:free)
+WARNING judge: resposta ilegível de openrouter (resposta sem JSON: ```json
+[
+  {
+    "id": 0,
+    "relevante": true,
+    "confianca": 0.8,
+    "motivo": "Matthew Evans trabalha com Entity Resolution)
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO network: 55 pessoas (1 novas), 19 empresas (0 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 129
+INFO brasil/gupy: 398
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'matching probabilístico': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 0
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/12)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 36 vagas, 36 descrições abertas, 74 consultas no total
+INFO brasil/linkedin_guest_br: 36
+INFO brasil/linkedin_local: 2
+INFO brasil/greenhouse: 1148
+INFO brasil/lever: 207
+INFO brasil/ashby: 106
+INFO brasil: 4996 brutas, 5 candidatas para o juiz
+INFO open_jobs: 13 abertas (1 novas)
+INFO mercado: 29 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 10/12)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 10/12)
+INFO network: 20 pessoas (15 novas), 27 empresas (8 novas)
+INFO brasil: {'novas': 1, 'abertas': 13, 'arquivadas': 29, 'rede': {'pessoas_novas': 15, 'empresas_novas': 8}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-10-28.json
+

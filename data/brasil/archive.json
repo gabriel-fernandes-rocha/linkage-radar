@@ -38,8 +38,9 @@
    "splink"
   ],
   "primeira_vez": "2026-10-16",
-  "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "status": "fechada",
+  "ultima_vez_aberta": "2026-10-27",
+  "fechada_em": "2026-10-28"
  },
  {
   "titulo": "Senior Data Engineer - São Paulo (Contract)",
@@ -80,7 +81,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "[Job - 30900] Master Data Developer (Amazon Neptune), Brazil",
@@ -119,7 +120,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "[Job - 30900] Master Data Developer, Brazil",
@@ -158,7 +159,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Analista de Dados Pleno",
@@ -197,7 +198,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Analista de Dados de FP&A SR",
@@ -301,7 +302,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "BI AND DATA QUALITY ANALYST I | CORPORATE RECORDS MG",
@@ -370,7 +371,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Analista de Governança de Dados Sênior",
@@ -437,7 +438,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Analista Dados Financeiros PL",
@@ -506,7 +507,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Analista de Dados | Financeiros",
@@ -645,7 +646,7 @@
   ],
   "primeira_vez": "2026-10-16",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Analista de Inteligência de Dados Pleno",
@@ -878,7 +879,7 @@
   ],
   "primeira_vez": "2026-10-18",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto",
@@ -943,7 +944,7 @@
   ],
   "primeira_vez": "2026-10-27",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
  },
  {
   "titulo": "A empresa CI&T está contratando para o cargo de Master Data ...",
@@ -974,6 +975,44 @@
   ],
   "primeira_vez": "2026-10-27",
   "status": "aberta",
-  "ultima_vez_aberta": "2026-10-27"
+  "ultima_vez_aberta": "2026-10-28"
+ },
+ {
+  "titulo": "Consultor(a) SAP SuccessFactors Data Migration (Infoporter) - Brasil",
+  "empresa": "Deloitte",
+  "local": "Remoto · Brasil",
+  "url": "https://deloitte.inhire.app/vagas/34176dcc-2558-4979-b905-1c516d0edc2e/consultor-a-sap-successfactors-data-migration-infoporter-brasil",
+  "fonte": "InHire",
+  "encaixe": 0.3,
+  "motivo": "Vaga de migração e saneamento de dados que envolve consolidação, limpeza e reconciliação de bases.",
+  "resumo": "Consultor(a) SAP SuccessFactors Data Migration na Deloitte, remoto no Brasil, planeja e executa migração de dados para SAP SuccessFactors, realizando extração, transformação, validação, saneamento e reconciliação.",
+  "requisitos": {
+   "obrigatorios": [
+    "SuccessFactors",
+    "Infoporter",
+    "SAP HCM",
+    "data migration",
+    "validation",
+    "reconciliation",
+    "cleansing",
+    "integrated testing",
+    "mock loads",
+    "cutover",
+    "master data"
+   ],
+   "desejaveis": [
+    "English"
+   ]
+  },
+  "publicada_em": "2026-10-27",
+  "juiz": "groq",
+  "categoria": "integracao",
+  "termos": [
+   "data migration",
+   "migracao de dados"
+  ],
+  "primeira_vez": "2026-10-28",
+  "status": "aberta",
+  "ultima_vez_aberta": "2026-10-28"
  }
 ]

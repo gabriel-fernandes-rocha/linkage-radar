@@ -208,6 +208,11 @@
   "nivel": "nao",
   "nome": "Claude"
  },
+ "cleansing": {
+  "motivo": "Realiza limpeza e normalização nos pipelines de dados",
+  "nivel": "tem",
+  "nome": "cleansing"
+ },
  "clinical ontologies": {
   "motivo": "trabalha com registros não ontologias clínicas",
   "nivel": "nao",
@@ -273,6 +278,11 @@
   "nivel": "tem",
   "nome": "customer identity resolution"
  },
+ "cutover": {
+  "motivo": "Nenhuma evidência de atuação em cutover",
+  "nivel": "nao",
+  "nome": "cutover"
+ },
  "cypher": {
   "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
@@ -287,6 +297,11 @@
   "motivo": "Não menciona criação de dashboards.",
   "nivel": "nao",
   "nome": "dashboards"
+ },
+ "data acquisition": {
+  "motivo": "Implementa ingestão de múltiplas fontes em pipelines",
+  "nivel": "tem",
+  "nome": "data acquisition"
  },
  "data annotation": {
   "motivo": "sem evidência de rotulagem manual de dados",
@@ -318,6 +333,11 @@
   "nivel": "tem",
   "nome": "data hygiene"
  },
+ "data integration": {
+  "motivo": "Integra registros heterogêneos via matching probabilístico",
+  "nivel": "tem",
+  "nome": "data integration"
+ },
  "data lake": {
   "motivo": "trabalha em grande infraestrutura de dados, possivelmente data lake",
   "nivel": "parcial",
@@ -342,6 +362,11 @@
   "motivo": "core da atuação profissional",
   "nivel": "tem",
   "nome": "Data Matching"
+ },
+ "data migration": {
+  "motivo": "Experiência em ingestão e integração de dados",
+  "nivel": "parcial",
+  "nome": "data migration"
  },
  "data modeling": {
   "motivo": "não há descrição explícita de modelagem de dados",
@@ -522,6 +547,11 @@
   "motivo": "sem evidência de criptografia no currículo",
   "nivel": "nao",
   "nome": "Encryption"
+ },
+ "english": {
+  "motivo": "Inglês intermediário mencionado no currículo",
+  "nivel": "tem",
+  "nome": "English"
  },
  "enrichment": {
   "motivo": "Implementa ingestão e normalização, mas não menciona enriquecimento externo",
@@ -753,6 +783,11 @@
   "nivel": "tem",
   "nome": "Identity resolution"
  },
+ "infoporter": {
+  "motivo": "Nenhuma experiência ou menção ao Infoporter",
+  "nivel": "nao",
+  "nome": "Infoporter"
+ },
  "informatica": {
   "motivo": "sem evidência da ferramenta Informatica",
   "nivel": "nao",
@@ -767,6 +802,11 @@
   "motivo": "sem evidência de IaC no currículo",
   "nivel": "nao",
   "nome": "Infrastructure as Code"
+ },
+ "integrated testing": {
+  "motivo": "Nenhuma menção a testes integrados",
+  "nivel": "nao",
+  "nome": "integrated testing"
  },
  "janusgraph": {
   "motivo": "sem evidência de uso de grafos distribuídos",
@@ -863,6 +903,11 @@
   "nivel": "nao",
   "nome": "MarTech"
  },
+ "master data": {
+  "motivo": "Conceitos de MDM implícitos no trabalho",
+  "nivel": "parcial",
+  "nome": "master data"
+ },
  "master data management": {
   "motivo": "conceitos próximos ao golden record",
   "nivel": "parcial",
@@ -937,6 +982,11 @@
   "motivo": "usa ML/scikit-learn, mas sem evidência de deploy/monitoramento",
   "nivel": "parcial",
   "nome": "MLOps"
+ },
+ "mock loads": {
+  "motivo": "Nenhuma evidência de uso de mock loads",
+  "nivel": "nao",
+  "nome": "mock loads"
  },
  "modelagem de dados": {
   "motivo": "implícito em pipelines de dados estruturados",
@@ -1123,6 +1173,11 @@
   "nivel": "tem",
   "nome": "recall"
  },
+ "reconciliation": {
+  "motivo": "Executa reconciliação de registros via matching",
+  "nivel": "tem",
+  "nome": "reconciliation"
+ },
  "record linkage": {
   "motivo": "especialidade central do candidato",
   "nivel": "tem",
@@ -1182,6 +1237,11 @@
   "motivo": "nenhuma experiência com SAP indicada",
   "nivel": "nao",
   "nome": "SAP"
+ },
+ "sap hcm": {
+  "motivo": "Nenhuma experiência ou menção ao SAP HCM",
+  "nivel": "nao",
+  "nome": "SAP HCM"
  },
  "scala": {
   "motivo": "sem evidência, usa Python no Spark",
@@ -1323,6 +1383,11 @@
   "nivel": "parcial",
   "nome": "Structured output"
  },
+ "successfactors": {
+  "motivo": "Nenhuma experiência ou menção ao SuccessFactors",
+  "nivel": "nao",
+  "nome": "SuccessFactors"
+ },
  "survivorship": {
   "motivo": "Entende regras de sobrevivência, porém não detalhado",
   "nivel": "parcial",
@@ -1392,6 +1457,11 @@
   "motivo": "nenhum uso de Unity Catalog mencionado",
   "nivel": "nao",
   "nome": "Unity Catalog"
+ },
+ "validation": {
+  "motivo": "Realiza validação de resultados (precisão/recall)",
+  "nivel": "tem",
+  "nome": "validation"
  },
  "web research automation": {
   "motivo": "Automação de pesquisa web não mencionada.",

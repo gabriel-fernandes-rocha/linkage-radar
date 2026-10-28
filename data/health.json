@@ -1,5 +1,5 @@
 {
- "data": "2026-10-27",
+ "data": "2026-10-28",
  "status": "problema",
  "checks": [
   {
@@ -10,35 +10,34 @@
   {
    "status": "atencao",
    "nome": "Juiz usado",
-   "detalhe": "groq (reserva gratuita assumiu)"
+   "detalhe": "groq, openrouter (reserva gratuita assumiu)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
   "jobs/remotive": 150,
-  "jobs/greenhouse": 1438,
-  "jobs/lever": 307,
-  "jobs/ashby": 30,
+  "jobs/greenhouse": 1440,
+  "jobs/lever": 306,
+  "jobs/ashby": 32,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
-  "jobs/gupy": 207,
-  "jobs/himalayas": 100,
-  "jobs/jobicy": 144,
+  "jobs/gupy": 208,
+  "jobs/himalayas": 98,
+  "jobs/jobicy": 146,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 173,
-  "jobs/social_posts": 5,
-  "jobs/linkedin_guest": 45,
-  "papers/arxiv": -1,
+  "jobs/weworkremotely": 170,
+  "jobs/social_posts": 7,
+  "jobs/linkedin_guest": 32,
+  "papers/arxiv": 10,
   "papers/openalex": 175,
-  "linkedin/posts": 9,
+  "linkedin/posts": 11,
   "network/perfis": 10
  },
  "falhas": [
-  "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
+  "judge: gemini/gemini-3.8-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
   "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
-  "judge: github/openai/gpt-4.1-mini falhou (github resposta inesperada 200: 'OK\\r\\n')",
-  "papers/arxiv falhou: cannot access local variable 'wait' where it is not associated with a value",
+  "judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on toke",
   "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }

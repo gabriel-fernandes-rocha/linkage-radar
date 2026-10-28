@@ -1,0 +1,201 @@
+{
+  "data": "2026-10-28",
+  "gerado_em": "2026-10-27T23:14-03:00",
+  "llm": true,
+  "serpapi_orcamento": 12,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer at People Data Labs — United States - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/data-engineer-at-people-data-labs-4484005367",
+      "texto": "Experience working with entity data (entity resolution / record linkage) Experience working with data acquisition / data integration Expertise with Python and the Python data stack (e.g., numpy ...",
+      "data": "Oct 27, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "Post anuncia vaga de Data Engineer que inclui responsabilidade de entity resolution/record linkage.",
+      "resumo": "Vaga de Data Engineer na People Data Labs nos EUA. Requer experiência com entity resolution, data acquisition e integração usando Python.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "numpy",
+          "entity resolution",
+          "record linkage",
+          "data acquisition",
+          "data integration"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.4,
+      "compat_detalhe": {
+        "habilidades": 92,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "numpy"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Entity Matching using Decision Models",
+      "url": "http://arxiv.org/abs/2610.34626v1",
+      "autores": "Aaron Steiner et al.",
+      "data": "2026-10-25",
+      "fonte": "arXiv",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "Trata de matching de entidades usando modelos de decisão, foco direto em entity matching.",
+      "resumo": "O artigo investiga modelos de decisão como alternativa a LLMs e PLMs para entity matching, avaliando seis modelos em oito benchmarks e comparando desempenho e custo. Alguns modelos alcançam F1 próximo ou superior ao de grandes LLMs.",
+      "confianca": 0.98
+    },
+    {
+      "tipo": "paper",
+      "titulo": "An Adaptive Multi-Agent Framework for Medication Safety: Evidence-Grounded Assessment, Medication Resolution, and Uncertainty Handling (Preprint)",
+      "url": "https://doi.org/10.2196/preprints.115307",
+      "autores": "Priyangshu Adhikari",
+      "data": "2026-10-25",
+      "fonte": "OpenAlex",
+      "score": 6,
+      "juiz": "groq",
+      "motivo": "Aborda resolução de identidade de medicamentos, tema central de entity resolution.",
+      "resumo": "O trabalho propõe um framework multiagente que inclui módulo de resolução de medicamentos usando recursos como RxNorm e openFDA, combinando avaliação de risco e tratamento de incerteza. Foi avaliado com consultas rotuladas, verificações ao vivo e testes automatizados.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Comparing Entity Resolution Software Manufacturers: Range ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/comparing-entity-resolution-software-manufacturers-range-kdiwe",
+      "data": "Oct 26, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post discute comparativo técnico de softwares de Entity Resolution.",
+      "resumo": "Artigo que mapeia os principais fabricantes de software de Entity Resolution, analisando recursos e posicionamento de mercado.",
+      "confianca": 0.98
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Data Foundation for Enterprise AI with SAP Reltio - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/building-stronger-data-foundation-enterprise-ai-sap-q0ebc",
+      "data": "Oct 16, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post apresenta solução que enfatiza entity resolution como parte central da oferta.",
+      "resumo": "Publicação sobre a fundação de dados para IA empresarial com SAP Reltio, destacando melhoria de consistência, entity resolution e governança.",
+      "confianca": 0.97
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Before You Automate, Make Your Data Worth Automating ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/before-you-automate-make-your-data-worth-automating-bridging-sharma-afysc",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post técnico que aborda camada de reconciliação e entity resolution em processos de automação.",
+      "resumo": "Artigo que recomenda garantir qualidade dos dados antes de automatizar, citando um agente de entity resolution que unifica nomes de empresas em diferentes sistemas.",
+      "confianca": 0.95
+    }
+  ],
+  "vagas_abertas_total": 67,
+  "vagas_arquivadas_total": 105,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 1,
+    "abertas": 13,
+    "arquivadas": 29,
+    "rede": {
+      "pessoas_novas": 15,
+      "empresas_novas": 8
+    }
+  },
+  "aula": {
+    "dia": 27,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Construir uma partição de entidades a partir de pares e medir conflitos de transitividade",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Construir uma partição de entidades a partir de um conjunto de pares classificados como match, usando a ideia de componentes conexos de um grafo, e medir onde a transitividade falha (quando a < > b e b < > c são match, mas a < > c foi comparado e classificado como não match).",
+    "contexto": "Você recebeu, de um pipeline de deduplicação, uma tabela de pares comparados com seus escores de similaridade. A equipe de dados quer transformar esses pares em 'entidades' (clusters), como descrito na Aula 22 (ER como clustering). Antes de entregar o resultado, você precisa auditar se a decisão par a par gerou inconsistências: Christen (2012, cap. 2, p. 23-28) mostra que a indexação reduz comparações mas não garante consistência global, e isso é exatamente o problema que você vai diagnosticar aqui, usando o dataset FEBRL1 (que tem duplicatas conhecidas via campos sintéticos).",
+    "passos": [
+      "Carregue o dataset load_febrl1() do pacote recordlinkage, que contém registros com duplicatas sintéticas.",
+      "Gere pares candidatos com blocking por sobrenome (idx.block('surname')), reduzindo o espaço quadrático de comparações, como descrito na seção 2.3 de Christen (2012, p. 27-28).",
+      "Compare os pares com Jaro-Winkler em given_name e surname, e exact match em date_of_birth, somando um escore simples por par.",
+      "Classifique como 'match' todo par com escore >= 2 (threshold arbitrário para fins didáticos).",
+      "Construa um grafo não direcionado em que cada par-match é uma aresta, e extraia os componentes conexos: cada componente é uma entidade candidata (partição).",
+      "Para cada componente com 3 ou mais registros, verifique se todos os pares internos que foram efetivamente comparados (estão no índice de features) têm escore >= 2; se algum par interno tiver escore < 2, isso é um conflito de transitividade.",
+      "Reporte o número de clusters, o tamanho médio dos clusters e a lista de pares conflitantes encontrados."
+    ],
+    "codigo": "from recordlinkage.datasets import load_febrl1\nimport recordlinkage\nimport networkx as nx\n\ndf = load_febrl1()\nidx = recordlinkage.Index()\nidx.block(\"surname\")\npairs = idx.index(df)\ncmp = recordlinkage.Compare()\ncmp.string(\"given_name\", \"given_name\", method=\"jarowinkler\", threshold=0.85)\ncmp.string(\"surname\", \"surname\", method=\"jarowinkler\", threshold=0.85)\ncmp.exact(\"date_of_birth\", \"date_of_birth\")\nfeatures = cmp.compute(pairs, df)\nfeatures[\"score\"] = features.sum(axis=1)\nmatches = features[features[\"score\"] >= 2]\n\nG = nx.Graph()\nG.add_edges_from(matches.index.tolist())\ncomponents = list(nx.connected_components(G))\n\nconflicts = []\nfor comp in components:\n    comp_pairs = [(a, b) for a in comp for b in comp if a < b]\n    for p in comp_pairs:\n        if p in features.index and features.loc[p, \"score\"] < 2:\n            conflicts.append(p)\n\nprint(len(components), \"clusters,\", len(conflicts), \"conflitos de transitividade\")\nprint(conflicts[:10])",
+    "como_avaliar": "Verifique três coisas: (1) o número de clusters deve ser menor que o número de registros originais (prova de que houve agrupamento real); (2) a lista de conflicts não deve estar vazia na maioria das rodadas com esse threshold baixo (score>=2), pois isso evidencia o problema de transitividade que o laboratório quer ensinar; (3) escolha dois ou três clusters grandes (tamanho >= 4) e confira manualmente, olhando given_name, surname e date_of_birth, se os registros parecem mesmo a mesma entidade ou se o cluster 'inchou' por encadeamento de pares fracos (efeito cadeia, chaining).",
+    "desafio": "Refaça o laboratório trocando a regra de agregação: em vez de usar componentes conexos (que aceitam qualquer caminho de matches), implemente uma regra mais estrita de clique (todos os pares dentro do cluster precisam ter sido comparados e classificados como match). Compare o número de clusters e o tamanho médio dos clusters nas duas abordagens, e explique por que a abordagem de clique tende a gerar mais clusters, porém menores.",
+    "gabarito": "Com blocking por sobrenome e o threshold score>=2, é comum aparecer pelo menos um caso de encadeamento: por exemplo, um registro A dá match forte com B (mesmo given_name e date_of_birth, surname levemente diferente por erro de digitação), B dá match com C (sobrenome idêntico, given_name diferente de A), mas A e C, quando comparados diretamente, têm escore baixo. Isso é exatamente o problema de transitividade discutido na Aula 24: decisões par a par, tomadas independentemente, não garantem uma relação de equivalência global. Ao trocar para a regra de clique no desafio, esses clusters 'frouxos' se quebram em subclusters menores e mais puros, geralmente aumentando o número total de clusters e reduzindo o tamanho médio, porque a exigência de que todos os pares internos sejam match elimina o efeito cadeia.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer, cap. 2, seções 2.1 a 2.3, p. 23-28.",
+      "Binette, O. & Steorts, R. C. (2022). (Almost) all of entity resolution. Science Advances, 8(12).",
+      "Getoor, L. & Machanavajjhala, A. (2012). Entity resolution: theory, practice & open challenges. PVLDB, 5(12)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2970,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 185,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 11,
+      "pos_palavras_chave": 4,
+      "aprovados": 3
+    }
+  },
+  "saude": "problema"
+}

@@ -51,8 +51,8 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-27",
-    "nova": true
+    "verificada_em": "2026-10-28",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -124,7 +124,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
   },
   {
@@ -188,8 +188,8 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-27",
-    "nova": true
+    "verificada_em": "2026-10-28",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -257,7 +257,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
   },
   {
@@ -329,7 +329,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
   },
   {
@@ -399,8 +399,80 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Consultor(a) SAP SuccessFactors Data Migration (Infoporter) - Brasil",
+    "url": "https://deloitte.inhire.app/vagas/34176dcc-2558-4979-b905-1c516d0edc2e/consultor-a-sap-successfactors-data-migration-infoporter-brasil",
+    "empresa": "Deloitte",
+    "local": "Remoto · Brasil",
+    "fonte": "InHire",
+    "publicada_em": "2026-10-27",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data migration",
+      "migracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga de migração e saneamento de dados que envolve consolidação, limpeza e reconciliação de bases.",
+    "resumo": "Consultor(a) SAP SuccessFactors Data Migration na Deloitte, remoto no Brasil, planeja e executa migração de dados para SAP SuccessFactors, realizando extração, transformação, validação, saneamento e reconciliação.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SuccessFactors",
+        "Infoporter",
+        "SAP HCM",
+        "data migration",
+        "validation",
+        "reconciliation",
+        "cleansing",
+        "integrated testing",
+        "mock loads",
+        "cutover",
+        "master data"
+      ],
+      "desejaveis": [
+        "English"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.1,
+    "encaixe": 0.3,
+    "compat_detalhe": {
+      "habilidades": 52,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "SuccessFactors",
+        "Infoporter",
+        "SAP HCM",
+        "integrated testing",
+        "mock loads",
+        "cutover"
+      ],
+      "parciais": [
+        "data migration",
+        "master data"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-28",
+    "verificada_em": "2026-10-28",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -482,7 +554,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -545,7 +617,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
   },
   {
@@ -612,7 +684,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
@@ -700,7 +772,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
   },
   {
@@ -777,7 +849,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false
   },
   {
@@ -836,7 +908,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-27",
+    "verificada_em": "2026-10-28",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",
