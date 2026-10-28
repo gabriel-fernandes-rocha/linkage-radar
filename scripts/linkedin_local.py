@@ -290,25 +290,39 @@ def main() -> int:
     if not args.forcar and STAMP.exists() and STAMP.read_text().strip() == hoje:
         print("A varredura de hoje já rodou.")
         return 0
-    time.sleep(random.uniform(30, 90))  # deixa o Windows e a internet subirem
+    # logo após ligar o PC o Chrome ainda está subindo (às vezes se atualizando) e não lê o login salvo:
+    # espera 2 a 4 min e, se cair na tela de login, fecha, espera 3 min e tenta de novo (até 3 vezes)
+    if not args.forcar:
+        time.sleep(random.uniform(120, 240))
     log("===== varredura do LinkedIn logado =====")
     pessoas, empresas, vagas = [], [], []
-    with sync_playwright() as p:
-        ctx = navegador(p, visivel=False)
-        page = ctx.pages[0] if ctx.pages else ctx.new_page()
-        try:
-            abrir(page, "https://www.linkedin.com/feed/")
-            pessoas = buscar_pessoas(page)
-            log(f"pessoas: {len(pessoas)} do tema")
-            empresas = buscar_empresas(page)
-            log(f"empresas: {len(empresas)}")
-            vagas = buscar_vagas(page) + buscar_posts(page)
-        except Bloqueado as e:
-            log(f"PAROU: {e}. Rode: python scripts/linkedin_local.py --login")
-        except Exception as e:  # nunca trava o computador do usuário
-            log(f"erro: {str(e)[:300]}")
-        finally:
-            ctx.close()
+    for tentativa in range(1, 4):
+        with sync_playwright() as p:
+            ctx = navegador(p, visivel=False)
+            page = ctx.pages[0] if ctx.pages else ctx.new_page()
+            try:
+                abrir(page, "https://www.linkedin.com/feed/")
+            except Bloqueado as e:
+                ctx.close()
+                if tentativa < 3:
+                    log(f"tentativa {tentativa}: sem login ainda ({str(e)[:60]}); nova tentativa em 3 min")
+                    time.sleep(180)
+                    continue
+                log(f"PAROU: {e}. Rode: python scripts/linkedin_local.py --login")
+                break
+            try:
+                pessoas = buscar_pessoas(page)
+                log(f"pessoas: {len(pessoas)} do tema")
+                empresas = buscar_empresas(page)
+                log(f"empresas: {len(empresas)}")
+                vagas = buscar_vagas(page) + buscar_posts(page)
+            except Bloqueado as e:
+                log(f"PAROU no meio: {e}")
+            except Exception as e:  # nunca trava o computador do usuário
+                log(f"erro: {str(e)[:300]}")
+            finally:
+                ctx.close()
+        break
     if pessoas or empresas or vagas:
         salvar(pessoas, empresas, vagas)
         STAMP.parent.mkdir(parents=True, exist_ok=True)
