@@ -1,3 +1,11 @@
 ===== coleta 2026-10-28 05:59 =====
 INFO edição 2026-10-28 já coletada; nada a fazer
 
+===== envio 2026-10-28 07:02 =====
+INFO mensagem 1 parte 1/1 enviada
+WARNING telegram: HTML recusado (Bad Request: can't parse entities: Can't find end tag corresponding to start tag "pre"); reenviando sem formatação
+INFO mensagem 2 parte 1/2 enviada
+WARNING telegram: HTML recusado (Bad Request: can't parse entities: Unexpected end tag at byte offset 1012); reenviando sem formatação
+INFO mensagem 2 parte 2/2 enviada
+INFO envio concluído
+
