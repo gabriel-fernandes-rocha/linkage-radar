@@ -194,24 +194,22 @@ async function loadOpenJobs(file = "data/open_jobs.json", cardId = "abertas") {
     let expanded = false;
     const draw = () => {
     applyLive(jobs);
-    // MAIS RECENTES PRIMEIRO: data de publicação (ou, sem ela, a data em que entrou no radar); empate = compatibilidade
+    // 1) novas no radar (desta edição), da mais compatível para a menos; 2) só as 4 mais compatíveis das demais;
+    // 3) botão "Ver todas" (das mais recentes para as mais antigas)
+    const byFit = (a, b) => (b.encaixe || 0) - (a.encaixe || 0);
     const when = (j) => j.publicada_em || j.desde || "";
-    jobs.sort((a, b) => when(b).localeCompare(when(a)) || (b.encaixe || 0) - (a.encaixe || 0));
-    const ref = LATEST_EDITION ? new Date(LATEST_EDITION + "T12:00:00") : new Date();
-    const ageDays = (j) => when(j) ? Math.round((ref - new Date(when(j) + "T12:00:00")) / 864e5) : 999;
-    const frescas = jobs.filter((j) => ageDays(j) <= 2);
-    const semana = jobs.filter((j) => ageDays(j) > 2 && ageDays(j) <= 7);
-    const rest = jobs.filter((j) => ageDays(j) > 7);
+    const novas = jobs.filter((j) => j.nova).sort(byFit);
+    const top = jobs.filter((j) => !j.nova).sort(byFit).slice(0, 4);
+    const todas = [...jobs].sort((a, b) => when(b).localeCompare(when(a)) || byFit(a, b));
     const block = (title, list) => list.length
       ? `<h3 class="sub">${title}</h3><div class="grid2">${list.map((j) => `<article class="item${j.nova ? " is-new" : ""}">${jobHTML(j, true)}</article>`).join("")}</div>` : "";
     const render = (all) => {
       $(".list", card).innerHTML =
-        `<p class="meta">Ordenadas das mais recentes para as mais antigas (data de publicação; sem ela, a data em que entraram no radar).</p>` +
-        (frescas.length ? block(`🔥 Últimos 3 dias: candidate-se cedo (${frescas.length})`, frescas)
-                        : `<p class="empty">Nenhuma vaga dos últimos 3 dias ✅</p>`) +
-        block(`📅 Últimos 7 dias (${semana.length})`, semana) +
-        (all ? block(`Mais antigas (${rest.length})`, rest)
-             : rest.length ? `<button class="btn more" type="button">Ver as ${rest.length} mais antigas (de ${jobs.length} abertas)</button>` : "");
+        (novas.length ? block(`🆕 Novas no radar (${novas.length}), das mais compatíveis`, novas)
+                      : `<p class="empty">Nenhuma vaga nova nesta edição ✅</p>`) +
+        block("🏆 As 4 mais compatíveis entre as que você já viu", top) +
+        (all ? block(`Todas as ${todas.length} vagas abertas, das mais recentes`, todas)
+             : `<button class="btn more" type="button">Ver todas as ${jobs.length} vagas abertas</button>`);
       $(".more", card)?.addEventListener("click", () => { expanded = true; render(true); });
     };
     render(expanded);
