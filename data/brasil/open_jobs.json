@@ -51,7 +51,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -124,7 +124,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -188,7 +188,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -257,7 +257,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -329,7 +329,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -399,8 +399,155 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "A empresa BRQ Digital Solutions está contratando para o cargo de ...",
+    "url": "https://br.linkedin.com/jobs/view/cientista-de-dados-pleno-at-brq-digital-solutions-4455789591",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "score": 4,
+    "categoria": "linkage",
+    "termos": [
+      "deduplicacao",
+      "rapidfuzz",
+      "record linkage",
+      "splink"
+    ],
+    "juiz": "groq",
+    "motivo": "vaga no Brasil envolvendo matching, deduplicação e ferramentas como RapidFuzz, Splink e Record Linkage",
+    "resumo": "Vaga para atuar em qualidade de dados, profiling, matching e deduplicação usando BigQuery, RapidFuzz, Splink e Record Linkage na BRQ Digital Solutions.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.9,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de dados",
+    "url": "https://fcamara.gupy.io/job/eyJqb2JJZCI6MTI3OTYyMTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "VENHA SER #SANGUELARANJA 🧡🚀",
+    "local": "Belo Horizonte, Minas Gerais (híbrido)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-28",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "integracao de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "vaga no Brasil que foca em integração, ETL/ELT e qualidade de dados, áreas relacionadas à consolidação e limpeza de cadastros",
+    "resumo": "Engenheiro de Dados para projetos de integração, processamento e disponibilização de dados de cliente bancário, desenvolvendo pipelines ETL/ELT na AWS.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.1,
+    "encaixe": 0.3,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de dados",
+    "url": "https://www.linkedin.com/jobs/view/4484493893",
+    "empresa": "FCamara",
+    "local": "Belo Horizonte, MG",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-28",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "integracao de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "vaga no Brasil que envolve integração de dados, pipelines ETL/ELT e garantia de qualidade, aspectos de consolidação de bases",
+    "resumo": "Engenheiro de Dados na FCamara para projetar e manter pipelines de integração e disponibilização de dados bancários na AWS, garantindo qualidade e rastreabilidade.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.1,
+    "encaixe": 0.3,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -471,8 +618,8 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-10-28",
-    "nova": true
+    "verificada_em": "2026-10-29",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -554,7 +701,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -617,7 +764,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -684,7 +831,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
@@ -772,7 +919,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -849,7 +996,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -908,7 +1055,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",

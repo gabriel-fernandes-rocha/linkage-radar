@@ -253,6 +253,11 @@
   "nivel": "nao",
   "nome": "CRM platforms (Insider, Salesforce, Braze, Adobe)"
  },
+ "crosswalks": {
+  "motivo": "Trabalha com integração de diferentes bases de dados",
+  "nivel": "parcial",
+  "nome": "crosswalks"
+ },
  "ctv": {
   "motivo": "sem relação com connected TV",
   "nivel": "nao",
@@ -593,6 +598,11 @@
   "nivel": "parcial",
   "nome": "Evaluation harness"
  },
+ "event-driven integration": {
+  "motivo": "Nenhum uso de Kafka ou arquitetura event-driven",
+  "nivel": "nao",
+  "nome": "event-driven integration"
+ },
  "excel": {
   "motivo": "não há referência ao uso de Excel",
   "nivel": "nao",
@@ -727,6 +737,11 @@
   "motivo": "sem evidência de uso de H2O.ai",
   "nivel": "nao",
   "nome": "H2O"
+ },
+ "hierarchy management": {
+  "motivo": "Sem menção a gestão de hierarquias",
+  "nivel": "nao",
+  "nome": "hierarchy management"
  },
  "hierarchy modeling": {
   "motivo": "Não há menção a modelagem hierárquica",
@@ -1188,6 +1203,11 @@
   "nivel": "nao",
   "nome": "redaction"
  },
+ "reference data management": {
+  "motivo": "Lida com registros de saúde como dados de referência",
+  "nivel": "parcial",
+  "nome": "reference data management"
+ },
  "relational database design": {
   "motivo": "Trabalha com SQL, mas design relacional não citado",
   "nivel": "parcial",
@@ -1372,6 +1392,11 @@
   "motivo": "sem evidência de AWS/orquestração serverless",
   "nivel": "nao",
   "nome": "Step Functions"
+ },
+ "stewardship workflows": {
+  "motivo": "Implementa garantia de qualidade, mas não processos de stewardship",
+  "nivel": "parcial",
+  "nome": "stewardship workflows"
  },
  "stibo step": {
   "motivo": "sem evidência de MDM específico",

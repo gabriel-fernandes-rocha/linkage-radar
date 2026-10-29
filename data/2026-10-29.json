@@ -1,0 +1,301 @@
+{
+  "data": "2026-10-29",
+  "gerado_em": "2026-10-28T23:26-03:00",
+  "llm": true,
+  "serpapi_orcamento": 12,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior ML Engineer — Impactful NLP & Entity Resolution",
+      "url": "https://www.jobleads.com/gb/job/senior-ml-engineer-impactful-nlp-entity-resolution--greater-london--e315bbe3e47bdbe27eca297cb5cce7cd5",
+      "empresa": "Inara",
+      "local": "London",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "gemini",
+      "motivo": "A posicao tem como foco direto liderar a estrategia de entity resolution e deduplicacao usando aprendizado de maquina.",
+      "resumo": "A Inara busca engenheiro de machine learning senior para liderar a estrategia de resolucao de entidades e deduplicacao em uma ONG orientada a dados. O profissional construira pipelines de ML em producao com foco em explicabilidade e ciclo completo dos modelos.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Solution Engineer, Master Data Management (MDM) - Reltio",
+      "url": "https://www.linkedin.com/jobs/view/4467228827",
+      "empresa": "Global Payments Inc.",
+      "local": "Alpharetta, Geórgia, Estados Unidos",
+      "fonte": "LinkedIn Jobs (remoto)",
+      "publicada_em": "2026-10-28",
+      "score": 17,
+      "juiz": "gemini",
+      "motivo": "A vaga foca no desenvolvimento de solucoes de MDM com Reltio, criacao de golden records e recursos de identity resolution.",
+      "resumo": "O profissional atuara como engenheiro de solucoes MDM com foco na plataforma Reltio na Global Payments. As responsabilidades incluem construir a base de dados mestres, unificando registros de clientes e comerciantes por meio de identity resolution e qualidade de dados.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Snowflake",
+          "entity resolution",
+          "matching",
+          "merging",
+          "survivorship",
+          "data quality",
+          "stewardship workflows",
+          "reference data management",
+          "crosswalks",
+          "hierarchy management",
+          "data modeling",
+          "ETL/ELT",
+          "event-driven integration"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.21,
+      "compat_detalhe": {
+        "habilidades": 54,
+        "senioridade": 60,
+        "local": 60,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Snowflake",
+          "hierarchy management",
+          "data modeling",
+          "event-driven integration"
+        ],
+        "parciais": [
+          "SQL",
+          "survivorship",
+          "stewardship workflows",
+          "reference data management",
+          "crosswalks"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer: Entity Resolution & Spark Pipelines",
+      "url": "https://talents.studysmarter.co.uk/companies/kpmg-international-cooperative/didsbury/data-engineer-entity-resolution-spark-pipelines-27595184/",
+      "empresa": "KPMG International Cooperative",
+      "local": "",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "gemini",
+      "motivo": "A oportunidade e direcionada a entity resolution e construcao de pipelines Spark junto a plataforma Quantexa.",
+      "resumo": "Vaga de engenharia de dados focada em resolucao de entidades para integrar o time de entrega da plataforma Quantexa. Exige experiencia com Apache Spark e Scala para criacao de pipelines escalaveis de dados.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Scala",
+          "Spark"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 3,
+      "ingles": "fluente",
+      "foco_er": 0.2,
+      "encaixe": 0.3,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 100,
+        "local": 60,
+        "ingles": 85,
+        "foco": 88,
+        "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Scala"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer at People Data Labs - LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-people-data-labs-4484005345",
+      "texto": "Experience working with entity data (entity resolution / record linkage) Experience working with data acquisition / data integration Expertise with Python and the Python data stack (e.g., numpy ...",
+      "data": "Oct 27, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "groq",
+      "motivo": "Vaga de Senior Data Engineer que exige experiência em entity resolution/record linkage.",
+      "resumo": "A posição é para Senior Data Engineer na People Data Labs. O anúncio destaca a necessidade de trabalhar com resolução de entidades e integração de dados usando Python.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "numpy"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.9,
+      "encaixe": 0.42,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "numpy"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 70,
+  "vagas_arquivadas_total": 109,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 3,
+    "abertas": 16,
+    "arquivadas": 32,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 2
+    }
+  },
+  "aula": {
+    "dia": 28,
+    "semana": 4,
+    "tema": "Formalização moderna de entity resolution",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 4: Formalização moderna de entity resolution",
+    "modulo": "Semana 4: Formalização moderna de entity resolution",
+    "versao": 2,
+    "objetivo": "Consolidar a formalização moderna de entity resolution como problema de clustering sobre registros, conectando essa visão aos quatro tipos de tarefa, ao problema de transitividade nas decisões pairwise, aos datasets de benchmark usados para validar pipelines e ao vocabulário técnico cobrado em entrevistas, fixando tudo via recuperação ativa.",
+    "conexao": "A semana inteira gira em torno de uma ideia central: ER não é só decidir par a par se dois registros batem, é construir uma partição consistente do conjunto de registros D em classes de equivalência que representem entidades reais (aula 22). Essa formalização por clustering explica por que o tipo de tarefa importa (aula 23): 1 para 1, deduplicação, multi-fonte e incremental diferem em como D é composto e em que arestas do grafo de matches são permitidas a priori. O problema prático que aparece ao tentar transformar pares em partição é a quebra de transitividade (aula 24): classificadores pairwise não garantem que a relação 'mesma entidade' seja uma relação de equivalência, e isso gera cadeias espúrias. Para medir se um pipeline resolve isso bem, a comunidade usa datasets de referência com ground truth conhecido, como FEBRL, DBLP-ACM, Abt-Buy e Amazon-Google (aula 25), que servem de terreno comum de comparação. E para discutir tudo isso com precisão, numa entrevista ou num paper, você precisa do vocabulário exato (aula 26): blocking key, BKV, candidate pair, classificação, clerical review. O laboratório da aula 27 juntou essas peças na mão, construindo partições reais e expondo conflitos de transitividade com dados concretos.",
+    "perguntas": [
+      {
+        "pergunta": "Segundo a formalização de Binette e Steorts (2022) revisitada na aula 22, quais são os três elementos que você precisa definir para transformar decisões pairwise de um pipeline de Christen (2012, cap.2) numa partição de entidades, e qual operação sobre o grafo M produz essa partição?",
+        "resposta": "Você precisa definir D (conjunto de registros observados, D=A união B no linkage ou D=A na dedup), a função latente e:D->E que mapeia cada registro à sua entidade real desconhecida, e o grafo G=(D,M) onde M são os pares classificados como match pelo pipeline de cinco etapas de Christen. A operação que produz a partição é o fecho transitivo de G (componentes conexas) ou, alternativamente, um algoritmo de clustering sobre os scores de similaridade."
+      },
+      {
+        "pergunta": "Uma empresa tem uma base de fornecedores (sem duplicatas internas) e recebe, uma vez por mês, um lote de novos fornecedores cadastrados que precisa comparar contra a base já consolidada, sem reprocessar tudo. Que tipo de tarefa é essa, segundo a aula 23, e o que isso implica sobre o escopo das comparações?",
+        "resposta": "É matching incremental (streaming/incremental record linkage): o lote novo só precisa ser comparado contra a base já consolidada (e, se houver duplicatas possíveis dentro do próprio lote, também entre si), nunca reexecutando a comparação completa da base antiga contra ela mesma. Isso reduz drasticamente o custo computacional em relação a reprocessar tudo do zero a cada rodada."
+      },
+      {
+        "pergunta": "Explique, usando o conceito de cadeia espúria (chaining) da aula 24, por que componentes conexas pode unir dois registros que, comparados diretamente, têm escore de similaridade muito baixo e provavelmente são entidades diferentes.",
+        "resposta": "Componentes conexas aceita qualquer caminho de arestas acima do threshold para unir dois nós no mesmo cluster, mesmo que a aresta direta entre eles não exista ou tenha escore baixo. Se A-B tem escore alto e B-C tem escore alto, A e C caem no mesmo componente mesmo que o escore direto A-C seja baixo (por exemplo 0.30 contra threshold 0.80), porque a transitividade é imposta pela construção do grafo e não pela evidência real de similaridade entre A e C."
+      },
+      {
+        "pergunta": "Por que o FEBRL e o DBLP-ACM são classificados como tendo atributos estruturados, enquanto Abt-Buy e Amazon-Google são tratados como texto livre semiestruturado, e que consequência isso tem na etapa de comparação do pipeline de Christen?",
+        "resposta": "No FEBRL e DBLP-ACM, cada atributo (nome, sobrenome, ano de publicação, autores) vem em campos separados e bem definidos, permitindo comparadores de campo específicos (Jaro-Winkler em nome, exato em ano). Em Abt-Buy e Amazon-Google, a maior parte da informação distintiva está concentrada em título e descrição de produto como texto corrido, exigindo comparadores baseados em similaridade textual mais ampla (tokenização, TF-IDF, embeddings) em vez de comparação campo a campo, porque não há segmentação clara como na etapa de pré-processamento (seç. 2.2 de Christen)."
+      },
+      {
+        "pergunta": "Defina, com a precisão exigida em entrevista (aula 26), a diferença entre blocking key e blocking key value (BKV), usando o exemplo de Soundex de sobrenome do livro de Christen.",
+        "resposta": "Blocking key é o atributo ou função aplicada a um atributo (por exemplo, Soundex do sobrenome) usada como critério para agrupar registros em blocos. Blocking key value (BKV) é o valor concreto que essa função produz para um registro específico, por exemplo o Soundex de 'Smith' é 's530'; registros de bases diferentes com o mesmo BKV caem no mesmo bloco e se tornam candidate pairs."
+      },
+      {
+        "pergunta": "Retomando a aula 1: uma fintech funde duas bases de clientes com customer_id próprios e independentes, e suspeita de cadastros duplicados dentro de uma das bases. Usando a terminologia de Christen (2012), diga que tarefa resolve o problema entre as duas bases e que tarefa resolve o problema dentro de uma única base.",
+        "resposta": "Entre as duas bases (sem identificador comum confiável) é um caso de data matching/record linkage, cenário link_only. Dentro de uma única base, encontrar os cadastros duplicados da mesma pessoa é deduplicação, cenário dedupe_only; os customer_id de cada sistema não servem para um JOIN direto porque são identificadores locais sem correspondência garantida entre os sistemas."
+      },
+      {
+        "pergunta": "Retomando a aula 4: por que normalmente não existe ground truth em projetos reais de data matching, e qual é a estratégia recomendada para alocar um orçamento limitado de revisão manual entre faixas de score?",
+        "resposta": "Não existe ground truth porque confirmar o status real de cada par exigiria contato direto com as pessoas ou auditoria manual de toda a base, o que é inviável em bases grandes (Christen, 2012, seç.1.1.3, p.6). A estratégia recomendada é amostragem estratificada por faixa de score, concentrando proporcionalmente mais revisão nas faixas intermediárias (score ambíguo, por exemplo 0.4 a 0.7), onde a incerteza sobre match/non-match é maior, em vez de distribuir a amostra proporcionalmente ao volume de cada faixa, que desperdiçaria orçamento em faixas já quase certas."
+      }
+    ],
+    "desafio": "Você recebe pares classificados como match entre três fontes de um projeto multi-fonte com possível duplicação interna (A com 500 registros sem duplicatas, B com 500 registros sem duplicatas, C recém-chegada). Os pares e seus escores de probabilidade de match são: (a1,b1)=0.92, (b1,c1)=0.88, (a1,c1)=0.35, (a2,b2)=0.91. O threshold de decisão é 0.80. (a) Que tipo de tarefa é esse pipeline, segundo a aula 23, considerando que C está sendo conciliada contra A e B já consolidadas sem reprocessar tudo? (b) Construa o grafo de matches usando apenas arestas com escore maior ou igual ao threshold e calcule os componentes conexos (clusters) resultantes entre os registros citados. (c) Há conflito de transitividade entre o cluster obtido em (b) e o par (a1,c1) comparado diretamente? Explique. (d) Dado que A e B não têm duplicatas internas, qual é o número máximo teórico de true matches possíveis entre A e B, segundo o critério da aula 26 (Christen, 2012, p.27-28)?",
+    "gabarito": "(a) É matching incremental: C é um lote novo sendo conciliado contra A e B já consolidadas, sem reprocessar a comparação entre A e B do zero; como há três fontes envolvidas com transitividade entre elas, tem também componente de link_and_dedupe, mas o traço decisivo aqui é a chegada incremental de C. (b) Arestas acima do threshold 0.80: (a1,b1)=0.92 e (b1,c1)=0.88 entram; (a1,c1)=0.35 fica fora; (a2,b2)=0.91 entra. Componentes conexas: {a1,b1,c1} formam um único cluster via fecho transitivo (a1-b1-c1), e {a2,b2} formam outro cluster separado. Total: 2 clusters considerando os registros citados. (c) Sim, há conflito de transitividade: pelo componente conexo, a1 e c1 estão no mesmo cluster (seriam a mesma entidade), mas o escore direto comparado entre eles é 0.35, bem abaixo do threshold, sugerindo que na realidade são entidades diferentes e que o cluster foi formado por uma cadeia espúria via b1. (d) Como nem A nem B têm duplicatas internas, pelo critério de Christen (2012, p.27-28) o número máximo de true matches entre A e B é limitado pelo tamanho da menor base, ou seja, no máximo 500 true matches, já que o crescimento do espaço de comparação é quadrático mas o número de matches verdadeiros possíveis cresce apenas linearmente com n.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer, cap. 2, p. 23-29.",
+      "Binette, O. & Steorts, R. C. (2022). (Almost) all of entity resolution. Science Advances, 8(12).",
+      "Getoor, L. & Machanavajjhala, A. (2012). Entity resolution: theory, practice & open challenges. PVLDB, 5(12).",
+      "Christophides, V. et al. (2020). An overview of end-to-end entity resolution for big data. ACM Computing Surveys, 53(6)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        23,
+        35
+      ],
+      [
+        243,
+        250
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2999,
+      "pos_palavras_chave": 3,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 8,
+      "pos_palavras_chave": 3,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

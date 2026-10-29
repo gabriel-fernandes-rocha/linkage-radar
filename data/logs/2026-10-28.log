@@ -9,3 +9,81 @@ WARNING telegram: HTML recusado (Bad Request: can't parse entities: Unexpected e
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-10-28 23:39 =====
+INFO serpapi: 229 restantes no mês; orçamento de hoje = 12 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 165
+INFO jobs/greenhouse: 1444
+INFO jobs/lever: 304
+INFO jobs/ashby: 32
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'entity resolution engineer contractor': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 2
+INFO jobs/gupy: 212
+INFO jobs/himalayas: 99
+INFO jobs/jobicy: 145
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 172
+INFO jobs/social_linkedin/ddg: 1 aceitos de 1
+INFO jobs/social_linkedin/google: 0 aceitos de 7
+INFO jobs/social_posts: 1
+INFO linkedin_guest: 42 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 42
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011CgVkAnaNQu7zjK6qtv64B'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+INFO judge: usando gemini (gemini-3.8-flash)
+WARNING judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-20b, openai/gpt-oss-safeguard-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO vagas: {'brutos': 2999, 'pos_palavras_chave': 3, 'aprovados': 3}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 9
+INFO papers/openalex: 175
+INFO papers: {'brutos': 184, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 8 aceitos de 8
+INFO linkedin: 8 candidatos
+INFO linkedin: {'brutos': 8, 'pos_palavras_chave': 3, 'aprovados': 0}
+INFO open_jobs: fechou Puck hiring Data Analyst Intern in San Francisco, CA | LinkedIn
+INFO open_jobs: 70 abertas (4 novas)
+INFO mercado: 108 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 7 aceitos de 7
+INFO network: 7 perfis após a consulta
+INFO network: 57 pessoas (2 novas), 22 empresas (3 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 127
+INFO brasil/gupy: 408
+INFO google_jobs 'unificação de cadastros': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'dados mestres MDM matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 0
+INFO brasil/linkedin/ddg: 7 aceitos de 7
+INFO brasil/linkedin_jobs_br: 7
+INFO linkedin_guest: 18 vagas, 18 descrições abertas, 56 consultas no total
+INFO brasil/linkedin_guest_br: 18
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 1152
+INFO brasil/lever: 210
+INFO brasil/ashby: 108
+INFO brasil: 5033 brutas, 7 candidatas para o juiz
+INFO open_jobs: 16 abertas (3 novas)
+INFO mercado: 32 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 5 aceitos de 5
+INFO network: 5 perfis após a consulta
+INFO network: 29 pessoas (0 novas), 29 empresas (2 novas)
+INFO brasil: {'novas': 3, 'abertas': 16, 'arquivadas': 32, 'rede': {'pessoas_novas': 0, 'empresas_novas': 2}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-10-29.json
+

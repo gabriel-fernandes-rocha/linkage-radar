@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,8 +250,53 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer at People Data Labs - LinkedIn Jobs",
+    "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-people-data-labs-4484005345",
+    "data": "Oct 27, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "groq",
+    "motivo": "Vaga de Senior Data Engineer que exige experiência em entity resolution/record linkage.",
+    "resumo": "A posição é para Senior Data Engineer na People Data Labs. O anúncio destaca a necessidade de trabalhar com resolução de entidades e integração de dados usando Python.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "numpy"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.9,
+    "encaixe": 0.42,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "numpy"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -300,7 +345,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -346,7 +391,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -408,7 +453,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -457,8 +502,8 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-10-28",
-    "nova": true
+    "verificada_em": "2026-10-29",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -508,7 +553,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -563,7 +608,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -625,7 +670,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -675,7 +720,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -718,7 +763,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -761,7 +806,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -801,7 +846,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -849,7 +894,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -892,7 +937,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -940,7 +985,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -988,7 +1033,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1043,7 +1088,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1083,7 +1128,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1123,7 +1168,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1163,7 +1208,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1212,8 +1257,55 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer: Entity Resolution & Spark Pipelines",
+    "url": "https://talents.studysmarter.co.uk/companies/kpmg-international-cooperative/didsbury/data-engineer-entity-resolution-spark-pipelines-27595184/",
+    "empresa": "KPMG International Cooperative",
+    "local": "",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "gemini",
+    "motivo": "A oportunidade e direcionada a entity resolution e construcao de pipelines Spark junto a plataforma Quantexa.",
+    "resumo": "Vaga de engenharia de dados focada em resolucao de entidades para integrar o time de entrega da plataforma Quantexa. Exige experiencia com Apache Spark e Scala para criacao de pipelines escalaveis de dados.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Scala",
+        "Spark"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 3,
+    "ingles": "fluente",
+    "foco_er": 0.2,
+    "encaixe": 0.3,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 100,
+      "local": 60,
+      "ingles": 85,
+      "foco": 88,
+      "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Scala"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1288,7 +1380,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1328,8 +1420,50 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior ML Engineer — Impactful NLP & Entity Resolution",
+    "url": "https://www.jobleads.com/gb/job/senior-ml-engineer-impactful-nlp-entity-resolution--greater-london--e315bbe3e47bdbe27eca297cb5cce7cd5",
+    "empresa": "Inara",
+    "local": "London",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "gemini",
+    "motivo": "A posicao tem como foco direto liderar a estrategia de entity resolution e deduplicacao usando aprendizado de maquina.",
+    "resumo": "A Inara busca engenheiro de machine learning senior para liderar a estrategia de resolucao de entidades e deduplicacao em uma ONG orientada a dados. O profissional construira pipelines de ML em producao com foco em explicabilidade e ciclo completo dos modelos.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.9,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 98,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1368,7 +1502,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1408,7 +1542,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1448,7 +1582,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1491,7 +1625,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1534,7 +1668,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1577,7 +1711,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1617,7 +1751,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1657,7 +1791,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1697,7 +1831,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1757,7 +1891,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1803,7 +1937,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1862,7 +1996,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1910,7 +2044,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -1969,8 +2103,76 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Solution Engineer, Master Data Management (MDM) - Reltio",
+    "url": "https://www.linkedin.com/jobs/view/4467228827",
+    "empresa": "Global Payments Inc.",
+    "local": "Alpharetta, Geórgia, Estados Unidos",
+    "fonte": "LinkedIn Jobs (remoto)",
+    "publicada_em": "2026-10-28",
+    "score": 17,
+    "juiz": "gemini",
+    "motivo": "A vaga foca no desenvolvimento de solucoes de MDM com Reltio, criacao de golden records e recursos de identity resolution.",
+    "resumo": "O profissional atuara como engenheiro de solucoes MDM com foco na plataforma Reltio na Global Payments. As responsabilidades incluem construir a base de dados mestres, unificando registros de clientes e comerciantes por meio de identity resolution e qualidade de dados.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Snowflake",
+        "entity resolution",
+        "matching",
+        "merging",
+        "survivorship",
+        "data quality",
+        "stewardship workflows",
+        "reference data management",
+        "crosswalks",
+        "hierarchy management",
+        "data modeling",
+        "ETL/ELT",
+        "event-driven integration"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.21,
+    "compat_detalhe": {
+      "habilidades": 54,
+      "senioridade": 60,
+      "local": 60,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Snowflake",
+        "hierarchy management",
+        "data modeling",
+        "event-driven integration"
+      ],
+      "parciais": [
+        "SQL",
+        "survivorship",
+        "stewardship workflows",
+        "reference data management",
+        "crosswalks"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-29",
+    "verificada_em": "2026-10-29",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2037,7 +2239,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2098,7 +2300,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2150,7 +2352,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2219,7 +2421,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2280,7 +2482,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2317,7 +2519,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2378,7 +2580,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2472,7 +2674,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2533,7 +2735,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2598,7 +2800,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2653,7 +2855,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2721,7 +2923,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2777,56 +2979,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-28",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Puck hiring Data Analyst Intern in San Francisco, CA | LinkedIn",
-    "url": "https://www.linkedin.com/jobs/view/4465203715/",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "score": 4,
-    "motivo": "Post de vaga concreta menciona entity resolution e deduplicação com tratamento de nomes distintos, endereços antigos e identificadores parciais, cenário típico de matching.",
-    "resumo": "Puck contrata Data Analyst Intern para lidar com deduplicação entre fontes heterogêneas (nomes variados, endereços obsoletos, identificadores incompletos) e medir qualidade de enriquecimento.",
-    "confianca": 0.82,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "junior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "San Francisco"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.5,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 100,
-      "local": 8,
-      "ingles": 85,
-      "foco": 92,
-      "senioridade_txt": "nível junior",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-13",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2875,7 +3028,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2927,7 +3080,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -2964,7 +3117,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3022,7 +3175,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3119,7 +3272,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -3194,7 +3347,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -3261,7 +3414,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -3339,7 +3492,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -3407,7 +3560,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -3467,7 +3620,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false
   },
   {
@@ -3531,7 +3684,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -3557,7 +3710,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-28",
+    "verificada_em": "2026-10-29",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

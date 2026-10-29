@@ -1,5 +1,5 @@
 {
- "data": "2026-10-28",
+ "data": "2026-10-29",
  "status": "problema",
  "checks": [
   {
@@ -10,34 +10,33 @@
   {
    "status": "atencao",
    "nome": "Juiz usado",
-   "detalhe": "groq, openrouter (reserva gratuita assumiu)"
+   "detalhe": "gemini, groq (reserva gratuita assumiu)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 150,
-  "jobs/greenhouse": 1440,
-  "jobs/lever": 306,
+  "jobs/remotive": 165,
+  "jobs/greenhouse": 1444,
+  "jobs/lever": 304,
   "jobs/ashby": 32,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 0,
-  "jobs/gupy": 208,
-  "jobs/himalayas": 98,
-  "jobs/jobicy": 146,
+  "jobs/serpapi_google_jobs": 2,
+  "jobs/gupy": 212,
+  "jobs/himalayas": 99,
+  "jobs/jobicy": 145,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 170,
-  "jobs/social_posts": 7,
-  "jobs/linkedin_guest": 32,
-  "papers/arxiv": 10,
+  "jobs/weworkremotely": 172,
+  "jobs/social_posts": 1,
+  "jobs/linkedin_guest": 42,
+  "papers/arxiv": 9,
   "papers/openalex": 175,
-  "linkedin/posts": 11,
-  "network/perfis": 10
+  "linkedin/posts": 8,
+  "network/perfis": 7
  },
  "falhas": [
-  "judge: gemini/gemini-3.8-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
+  "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
   "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
-  "judge: groq/openai/gpt-oss-safeguard-20b falhou (groq 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-safeguard-20b` in organization `org_01m502a21ke4wtcag6arw7kz8c` service tier `on_demand` on toke",
   "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }
