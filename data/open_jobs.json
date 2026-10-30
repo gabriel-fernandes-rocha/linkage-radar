@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -151,7 +151,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -164,7 +164,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +250,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -295,8 +295,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -345,7 +345,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -391,7 +391,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -453,7 +453,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -502,7 +502,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -553,7 +553,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -602,7 +602,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -651,7 +651,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -700,7 +700,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -755,7 +755,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -817,7 +817,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -867,8 +867,56 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Scientist, Entity Resolution & Impact",
+    "url": "https://bebee.com/us/jobs/senior-data-scientist-entity-resolution-impact-enigmaio-california--lifeworq-67ca4826-55df-4b7c-bc7e-192ab60d89aa",
+    "empresa": "Enigmaio",
+    "local": "California, MO",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Função de Data Scientist focada em todo o ciclo de entity resolution, de ingestão a modelos escaláveis.",
+    "resumo": "Cientista de Dados sênior na Enigma, responsável por pipelines de entity resolution e melhoria de precisão de produtos.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Spark",
+        "Databricks"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1.0,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 67,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Databricks"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -910,7 +958,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -953,7 +1001,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -993,8 +1041,48 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Lead Analyst Salesforce Data Cloud Hygiene - LinkedIn India",
+    "url": "https://in.linkedin.com/jobs/view/lead-analyst-salesforce-data-cloud-hygiene-at-emerson-4477663674",
+    "data": "Oct 9, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 8,
+    "juiz": "groq",
+    "motivo": "Vaga concreta de Lead Analyst focada em identity resolution e governança de dados.",
+    "resumo": "Anúncio de vaga para Lead Analyst Salesforce Data Cloud Hygiene, com responsabilidade sobre identity resolution, unificação de perfis, master data management e monitoramento de qualidade de dados.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.7,
+    "encaixe": 0.33,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 96,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1036,7 +1124,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1091,8 +1179,48 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Customer Data & Identity Specialist (CDP/CRM ecosystem)",
+    "url": "https://ca.linkedin.com/jobs/view/customer-data-identity-specialist-cdp-crm-ecosystem-at-air-canada-vacations-4483828131",
+    "data": "Oct 28, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Vaga específica de Customer Data & Identity Specialist que gerencia regras de identity resolution.",
+    "resumo": "Anúncio de vaga para Customer Data & Identity Specialist, responsável por regras de stitching e unificação de identificadores de clientes em canais e dispositivos.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.6,
+    "encaixe": 0.32,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 94,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1131,7 +1259,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1171,7 +1299,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1211,7 +1339,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1260,7 +1388,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1307,8 +1435,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1383,7 +1511,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1423,8 +1551,50 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Remote Entity Resolution & Search Engineer - Real Ownership",
+    "url": "https://www.jobleads.com/us/job/remote-entity-resolution-search-engineer-real-ownership--california--ec57f10981887b2b24f58d501a1920911",
+    "empresa": "NimbleFig",
+    "local": "California",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Cargo centraliza design e implementação de sistemas de entity resolution e ranking.",
+    "resumo": "Engenheiro remoto de Entity Resolution e Search na NimbleFig, desenvolvendo pipelines de resolução de entidades e grafos de conhecimento.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1.0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1465,8 +1635,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1505,7 +1675,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1545,7 +1715,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1585,7 +1755,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1628,7 +1798,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1671,7 +1841,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1714,7 +1884,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1754,7 +1924,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1794,7 +1964,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1834,7 +2004,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1894,7 +2064,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1940,8 +2110,55 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Entity Resolution Engineer (Fully Remote)",
+    "url": "https://bebee.com/us/jobs/senior-entity-resolution-engineer-fully-remote-defcon-ai-inc--lensa-7428_86f75d95a15f0a0455898d849d65c182c91812c0387b294819731c21396baf64",
+    "empresa": "DEFCON AI, Inc.",
+    "local": "United States",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 11,
+    "juiz": "groq",
+    "motivo": "A vaga descreve explicitamente todo o ciclo de vida de entity matching, incluindo blocking e clustering.",
+    "resumo": "Senior Entity Resolution Engineer na DEFCON AI, trabalho remoto, responsável por todo o pipeline de matching de entidades, de bloqueio a clustering, com requisitos de experiência em produção.",
+    "confianca": 0.97,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": false,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 1.0,
+    "encaixe": 0.26,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 60,
+      "local": 60,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1999,7 +2216,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -2047,7 +2264,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -2106,8 +2323,59 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Quantexa Developer (Contract) – Real-Time Entity Resolution Specialist",
+    "url": "https://talents.vaia.com/companies/coelate-technologies/quantexa-developer-contract-real-time-entity-resolution-specialist-131916258/",
+    "empresa": "Coelate Technologies",
+    "local": "United States",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "groq",
+    "motivo": "Posição dedicada ao desenvolvimento de módulos Quantexa para resolução de entidades em tempo real.",
+    "resumo": "Desenvolvedor Quantexa, especialista em resolução de entidades em batch e streaming, usando Scala e GCP.",
+    "confianca": 0.98,
+    "requisitos": {
+      "obrigatorios": [
+        "Scala",
+        "GCP",
+        "ETL",
+        "Quantexa"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1.0,
+    "encaixe": 0.22,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Scala",
+        "GCP",
+        "Quantexa"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2174,7 +2442,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -2243,8 +2511,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2304,7 +2572,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -2356,7 +2624,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -2426,8 +2694,76 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Entity Resolution & Search Engineer",
+    "url": "https://www.linkedin.com/jobs/view/entity-resolution-search-engineer-at-nimblefig-4459067623",
+    "empresa": "NimbleFig",
+    "local": "San Francisco, CA",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 8,
+    "juiz": "groq",
+    "motivo": "A posição menciona construção e melhoria de entity resolution e record linkage como principais responsabilidades.",
+    "resumo": "Entity Resolution & Search Engineer na NimbleFig, atuação em San Francisco ou remoto, foco em decidir quando duas entidades são iguais e consolidá‑las em registros limpos.",
+    "confianca": 0.96,
+    "requisitos": {
+      "obrigatorios": [
+        "entity resolution",
+        "Record linkage",
+        "precision",
+        "Retrieval",
+        "matching",
+        "recall",
+        "Python",
+        "fuzzy",
+        "Graph"
+      ],
+      "desejaveis": [
+        "Knowledge Graphs",
+        "Elasticsearch",
+        "embeddings",
+        "ranking"
+      ]
+    },
+    "anos_experiencia_min": null,
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "ingles": "fluente",
+    "foco_er": 1.0,
+    "requisitos_estimados": true,
+    "encaixe": 0.08,
+    "compat_detalhe": {
+      "habilidades": 81,
+      "senioridade": 85,
+      "local": 12,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Retrieval"
+      ],
+      "parciais": [
+        "Graph"
+      ],
+      "estimado": true
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2487,7 +2823,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2524,7 +2860,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2585,7 +2921,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2679,7 +3015,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -2740,7 +3076,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2805,7 +3141,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2860,7 +3196,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2928,7 +3264,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2984,7 +3320,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -3033,7 +3369,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -3085,7 +3421,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -3122,7 +3458,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3180,7 +3516,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3277,7 +3613,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -3352,7 +3688,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -3419,7 +3755,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -3497,7 +3833,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -3565,7 +3901,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -3625,7 +3961,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -3689,7 +4025,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -3715,7 +4051,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

@@ -1,5 +1,5 @@
 {
- "data": "2026-10-29",
+ "data": "2026-10-30",
  "status": "problema",
  "checks": [
   {
@@ -10,33 +10,33 @@
   {
    "status": "atencao",
    "nome": "Juiz usado",
-   "detalhe": "gemini, groq (reserva gratuita assumiu)"
+   "detalhe": "groq, mistral (reserva gratuita assumiu)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 165,
-  "jobs/greenhouse": 1444,
-  "jobs/lever": 304,
-  "jobs/ashby": 32,
+  "jobs/remotive": 180,
+  "jobs/greenhouse": 1441,
+  "jobs/lever": 302,
+  "jobs/ashby": 36,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 2,
-  "jobs/gupy": 212,
+  "jobs/serpapi_google_jobs": 10,
+  "jobs/gupy": 207,
   "jobs/himalayas": 99,
-  "jobs/jobicy": 145,
+  "jobs/jobicy": 150,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 172,
-  "jobs/social_posts": 1,
-  "jobs/linkedin_guest": 42,
-  "papers/arxiv": 9,
+  "jobs/weworkremotely": 167,
+  "jobs/social_posts": 9,
+  "jobs/linkedin_guest": 31,
+  "papers/arxiv": 8,
   "papers/openalex": 175,
-  "linkedin/posts": 8,
+  "linkedin/posts": 10,
   "network/perfis": 7
  },
  "falhas": [
   "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
-  "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
+  "judge: gemini/gemini-3.7-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
   "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }

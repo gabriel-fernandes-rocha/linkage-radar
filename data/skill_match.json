@@ -58,6 +58,11 @@
   "nivel": "parcial",
   "nome": "Airflow"
  },
+ "alation": {
+  "motivo": "não citado no currículo",
+  "nivel": "nao",
+  "nome": "Alation"
+ },
  "alteryx": {
   "motivo": "Nenhuma experiência ou ferramenta similar citada",
   "nivel": "nao",
@@ -122,6 +127,11 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "AWS Glue"
+ },
+ "aws glue data catalog": {
+  "motivo": "não citado no currículo",
+  "nivel": "nao",
+  "nome": "AWS Glue Data Catalog"
  },
  "aws machine learning": {
   "motivo": "sem evidência de uso",
@@ -233,6 +243,11 @@
   "nivel": "tem",
   "nome": "clustering"
  },
+ "collibra": {
+  "motivo": "não citado no currículo",
+  "nivel": "nao",
+  "nome": "Collibra"
+ },
  "control-m": {
   "motivo": "não há referência ao uso do Control-M",
   "nivel": "nao",
@@ -318,6 +333,11 @@
   "nivel": "tem",
   "nome": "Data Classification"
  },
+ "data cleansing": {
+  "motivo": "realiza normalização, deduplicação e tratamento de dados",
+  "nivel": "tem",
+  "nome": "Data Cleansing"
+ },
  "data cloud": {
   "motivo": "Não há menção a Data Cloud.",
   "nivel": "nao",
@@ -388,6 +408,11 @@
   "nivel": "tem",
   "nome": "Data Pipelines"
  },
+ "data qa": {
+  "motivo": "garantia de qualidade incluída nas pipelines",
+  "nivel": "tem",
+  "nome": "Data QA"
+ },
  "data quality": {
   "motivo": "garantia de qualidade explícita no trabalho",
   "nivel": "tem",
@@ -428,6 +453,11 @@
   "nivel": "tem",
   "nome": "Data Transformation"
  },
+ "data validation": {
+  "motivo": "valida correspondências e métricas de qualidade",
+  "nivel": "tem",
+  "nome": "Data Validation"
+ },
  "data verification": {
   "motivo": "validação de matches próxima a verificação",
   "nivel": "parcial",
@@ -453,6 +483,11 @@
   "nivel": "nao",
   "nome": "Databricks SQL"
  },
+ "datahub": {
+  "motivo": "não mencionado",
+  "nivel": "nao",
+  "nome": "Datahub"
+ },
  "dataset documentation": {
   "motivo": "sem evidência de documentação formal de datasets",
   "nivel": "nao",
@@ -462,6 +497,11 @@
   "motivo": "nenhum uso de dbt reportado",
   "nivel": "nao",
   "nome": "dbt"
+ },
+ "dbt tests": {
+  "motivo": "não mencionado",
+  "nivel": "nao",
+  "nome": "dbt tests"
  },
  "dedupe": {
   "motivo": "deduplicação é parte central do trabalho",
@@ -618,6 +658,11 @@
   "nivel": "tem",
   "nome": "Fellegi-Sunter"
  },
+ "ferramentas de integração de dados": {
+  "motivo": "usa Spark, Python e SQL para integração",
+  "nivel": "tem",
+  "nome": "Ferramentas de Integração de Dados"
+ },
  "fhir": {
   "motivo": "sem evidência de padrão FHIR em saúde",
   "nivel": "nao",
@@ -672,6 +717,11 @@
   "motivo": "usa Git, mas não GitHub Actions explicitamente",
   "nivel": "parcial",
   "nome": "GitHub Actions"
+ },
+ "go-live": {
+  "motivo": "não há evidência de gerenciamento de go-live",
+  "nivel": "nao",
+  "nome": "Go-live"
  },
  "golden record": {
   "motivo": "Trabalha deduplicação, mas golden record não explicitado",
@@ -833,6 +883,11 @@
   "nivel": "nao",
   "nome": "Java"
  },
+ "jira": {
+  "motivo": "não citado",
+  "nivel": "nao",
+  "nome": "Jira"
+ },
  "json": {
   "motivo": "Experiência geral com dados, mas JSON não citado",
   "nivel": "parcial",
@@ -897,6 +952,11 @@
   "motivo": "BI tool não mencionada, mas BI próximo",
   "nivel": "nao",
   "nome": "Looker"
+ },
+ "looker studio": {
+  "motivo": "não mencionado",
+  "nivel": "nao",
+  "nome": "Looker Studio"
  },
  "machine learning": {
   "motivo": "usa scikit-learn e classificação em matching",
@@ -1158,6 +1218,11 @@
   "nivel": "tem",
   "nome": "Quality Control"
  },
+ "quantexa": {
+  "motivo": "nenhuma menção ou base implícita em MDM/ERP avançado",
+  "nivel": "nao",
+  "nome": "Quantexa"
+ },
  "rag": {
   "motivo": "sem evidência de retrieval-augmented generation",
   "nivel": "nao",
@@ -1258,10 +1323,30 @@
   "nivel": "nao",
   "nome": "SAP"
  },
+ "sap data services": {
+  "motivo": "não citado",
+  "nivel": "nao",
+  "nome": "SAP Data Services"
+ },
  "sap hcm": {
   "motivo": "Nenhuma experiência ou menção ao SAP HCM",
   "nivel": "nao",
   "nome": "SAP HCM"
+ },
+ "sap mdg": {
+  "motivo": "não citado",
+  "nivel": "nao",
+  "nome": "SAP MDG"
+ },
+ "sap migration cockpit": {
+  "motivo": "não citado",
+  "nivel": "nao",
+  "nome": "SAP Migration Cockpit"
+ },
+ "sap s/4hana": {
+  "motivo": "não citado",
+  "nivel": "nao",
+  "nome": "SAP S/4HANA"
  },
  "scala": {
   "motivo": "sem evidência, usa Python no Spark",

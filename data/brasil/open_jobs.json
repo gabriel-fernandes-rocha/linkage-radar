@@ -51,7 +51,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -124,7 +124,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -186,7 +186,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -255,8 +255,66 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "ENGENHEIRO DE INTEGRAÇÃO DE DADOS [INTEGRAL - SINOP MT]",
+    "url": "https://www.linkedin.com/jobs/view/4483059139",
+    "empresa": "JMJ Sistemas e Consultoria",
+    "local": "Sinop, MT",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-29",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Função similar à anterior, envolvendo integração, transformação e manutenção de dados entre sistemas, relevante para o tema.",
+    "resumo": "Engenheiro de Integração de Dados na JMJ Sistemas, desenvolvendo, monitorando e mantendo integrações entre sistemas, com foco em ETL/ELT, SQL e APIs.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "ETL",
+        "ELT",
+        "APIs"
+      ],
+      "desejaveis": [
+        "Python",
+        "Ferramentas de Integração de Dados"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.1,
+    "encaixe": 0.39,
+    "compat_detalhe": {
+      "habilidades": 81,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "SQL",
+        "APIs"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -327,8 +385,63 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de Integração de Dados",
+    "url": "https://www.linkedin.com/jobs/view/4484984550",
+    "empresa": "Jobbol",
+    "local": "Sinop, MT",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-29",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Engenheiro de Integração de Dados com foco em integração entre sistemas, ETL/ELT e monitoramento de inconsistências, que são parte de integração e qualidade de dados.",
+    "resumo": "Engenheiro de Integração de Dados em Sinop, desenvolvendo e mantendo processos de integração entre sistemas, ETL/ELT, consultas SQL e monitoramento de inconsistências.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "ETL",
+        "ELT",
+        "APIs"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.1,
+    "encaixe": 0.37,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "SQL",
+        "APIs"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -397,7 +510,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -446,8 +559,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -495,8 +608,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -544,8 +657,8 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-29",
-    "nova": true
+    "verificada_em": "2026-10-30",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -616,8 +729,55 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Consultor SAP Infoporter – Migração de Dados HCM / SuccessFactors - Remoto",
+    "url": "https://bebee.com/br/jobs/consultor-sap-infoporter-migracao-de-dados-hcm-successfactors-remoto-brivia--ss-br-a684b8",
+    "empresa": "Brivia",
+    "local": "Qualquer lugar",
+    "fonte": "Google Jobs (Brasil)",
+    "publicada_em": null,
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "migracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga remota aceita candidatos no Brasil e envolve migração, validação, reconciliação e saneamento de dados mestres, atividades de integração e qualidade de dados.",
+    "resumo": "Consultor SAP Infoporter para migração de dados HCM/SuccessFactors, atuando em extração, transformação, carga, validação e saneamento de dados mestres de RH.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -699,7 +859,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -762,7 +922,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -829,7 +989,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
@@ -917,8 +1077,155 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Requisitos, Governança e Qualidade de Dados (QA) Sênior",
+    "url": "https://www.linkedin.com/jobs/view/4480689944",
+    "empresa": "Insi",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-23",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "qualidade de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Atua com governança e qualidade de dados, incluindo testes de duplicidade, aspecto central de deduplicação e validação de registros.",
+    "resumo": "Analista de Requisitos, Governança e Qualidade de Dados (QA) Sênior, responsável por mapear requisitos, elaborar documentação, definir e executar testes de qualidade, incluindo verificação de duplicidade e consistência.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Power BI",
+        "Tableau",
+        "Looker Studio",
+        "Jira",
+        "Azure DevOps",
+        "Data QA",
+        "Data Governance"
+      ],
+      "desejaveis": [
+        "Great Expectations",
+        "dbt tests",
+        "Collibra",
+        "Datahub",
+        "AWS Glue Data Catalog",
+        "Alation"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_exigido",
+    "foco_er": 0.1,
+    "encaixe": 0.21,
+    "compat_detalhe": {
+      "habilidades": 19,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Power BI",
+        "Tableau",
+        "Looker Studio",
+        "Jira",
+        "Azure DevOps"
+      ],
+      "parciais": [
+        "SQL",
+        "Data Governance"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Owner - Sênior - Migração de Dados SAP S/4HANA",
+    "url": "https://www.linkedin.com/jobs/view/4484591736",
+    "empresa": "Tec2Cloud",
+    "local": "Barueri, SP",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-30",
+    "score": 3,
+    "categoria": "integracao",
+    "termos": [
+      "dados historicos",
+      "data cleansing",
+      "data migration",
+      "mapeamento de dados",
+      "migracao de dados",
+      "reconciliacao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga no Brasil que envolve migração, mapeamento, saneamento e reconciliação de dados, atividades centrais de integração e qualidade de dados.",
+    "resumo": "Data Owner Sênior para projeto de migração de dados para SAP S/4HANA, responsável por preparação, mapeamento, saneamento, validação e reconciliação dos dados nas áreas de Logística, Suprimentos, Procure to Pay, Order to Cash e Record to Report.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SAP S/4HANA",
+        "Excel",
+        "Data Mapping",
+        "Data Cleansing",
+        "Data Validation",
+        "Data Reconciliation",
+        "Mock Loads",
+        "Cutover",
+        "Go-live"
+      ],
+      "desejaveis": [
+        "SAP Migration Cockpit",
+        "SAP Data Services",
+        "SAP MDG"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.1,
+    "encaixe": 0.19,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 85,
+      "foco": 86,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "SAP S/4HANA",
+        "Excel",
+        "Mock Loads",
+        "Cutover",
+        "Go-live"
+      ],
+      "parciais": [
+        "Data Mapping",
+        "Data Reconciliation"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-30",
+    "verificada_em": "2026-10-30",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -994,7 +1301,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false
   },
   {
@@ -1053,7 +1360,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-29",
+    "verificada_em": "2026-10-30",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",

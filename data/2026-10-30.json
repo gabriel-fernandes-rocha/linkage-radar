@@ -1,0 +1,436 @@
+{
+  "data": "2026-10-30",
+  "gerado_em": "2026-10-29T23:35-03:00",
+  "llm": true,
+  "serpapi_orcamento": 12,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Remote Entity Resolution & Search Engineer - Real Ownership",
+      "url": "https://www.jobleads.com/us/job/remote-entity-resolution-search-engineer-real-ownership--california--ec57f10981887b2b24f58d501a1920911",
+      "empresa": "NimbleFig",
+      "local": "California",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Cargo centraliza design e implementação de sistemas de entity resolution e ranking.",
+      "resumo": "Engenheiro remoto de Entity Resolution e Search na NimbleFig, desenvolvendo pipelines de resolução de entidades e grafos de conhecimento.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1.0,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Quantexa Developer (Contract) – Real-Time Entity Resolution Specialist",
+      "url": "https://talents.vaia.com/companies/coelate-technologies/quantexa-developer-contract-real-time-entity-resolution-specialist-131916258/",
+      "empresa": "Coelate Technologies",
+      "local": "United States",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Posição dedicada ao desenvolvimento de módulos Quantexa para resolução de entidades em tempo real.",
+      "resumo": "Desenvolvedor Quantexa, especialista em resolução de entidades em batch e streaming, usando Scala e GCP.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "Scala",
+          "GCP",
+          "ETL",
+          "Quantexa"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1.0,
+      "encaixe": 0.22,
+      "compat_detalhe": {
+        "habilidades": 25,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Scala",
+          "GCP",
+          "Quantexa"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Scientist, Entity Resolution & Impact",
+      "url": "https://bebee.com/us/jobs/senior-data-scientist-entity-resolution-impact-enigmaio-california--lifeworq-67ca4826-55df-4b7c-bc7e-192ab60d89aa",
+      "empresa": "Enigmaio",
+      "local": "California, MO",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Função de Data Scientist focada em todo o ciclo de entity resolution, de ingestão a modelos escaláveis.",
+      "resumo": "Cientista de Dados sênior na Enigma, responsável por pipelines de entity resolution e melhoria de precisão de produtos.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Spark",
+          "Databricks"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1.0,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Databricks"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Entity Resolution Engineer (Fully Remote)",
+      "url": "https://bebee.com/us/jobs/senior-entity-resolution-engineer-fully-remote-defcon-ai-inc--lensa-7428_86f75d95a15f0a0455898d849d65c182c91812c0387b294819731c21396baf64",
+      "empresa": "DEFCON AI, Inc.",
+      "local": "United States",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 11,
+      "juiz": "groq",
+      "motivo": "A vaga descreve explicitamente todo o ciclo de vida de entity matching, incluindo blocking e clustering.",
+      "resumo": "Senior Entity Resolution Engineer na DEFCON AI, trabalho remoto, responsável por todo o pipeline de matching de entidades, de bloqueio a clustering, com requisitos de experiência em produção.",
+      "confianca": 0.97,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 1.0,
+      "encaixe": 0.26,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 60,
+        "local": 60,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Entity Resolution & Search Engineer",
+      "url": "https://www.linkedin.com/jobs/view/entity-resolution-search-engineer-at-nimblefig-4459067623",
+      "empresa": "NimbleFig",
+      "local": "San Francisco, CA",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 8,
+      "juiz": "groq",
+      "motivo": "A posição menciona construção e melhoria de entity resolution e record linkage como principais responsabilidades.",
+      "resumo": "Entity Resolution & Search Engineer na NimbleFig, atuação em San Francisco ou remoto, foco em decidir quando duas entidades são iguais e consolidá‑las em registros limpos.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [
+          "entity resolution",
+          "Record linkage",
+          "precision",
+          "Retrieval",
+          "matching",
+          "recall",
+          "Python",
+          "fuzzy",
+          "Graph"
+        ],
+        "desejaveis": [
+          "Knowledge Graphs",
+          "Elasticsearch",
+          "embeddings",
+          "ranking"
+        ]
+      },
+      "anos_experiencia_min": null,
+      "senioridade": "nao_informado",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "ingles": "fluente",
+      "foco_er": 1.0,
+      "requisitos_estimados": true,
+      "encaixe": 0.08,
+      "compat_detalhe": {
+        "habilidades": 81,
+        "senioridade": 85,
+        "local": 12,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Retrieval"
+        ],
+        "parciais": [
+          "Graph"
+        ],
+        "estimado": true
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Lead Analyst Salesforce Data Cloud Hygiene - LinkedIn India",
+      "url": "https://in.linkedin.com/jobs/view/lead-analyst-salesforce-data-cloud-hygiene-at-emerson-4477663674",
+      "texto": "Salesforce Data Cloud, including data streams, identity resolution, profile unification, segmentation, calculated insights, and activation governance Data governance frameworks, master data management, stewardship operating models, data quality monitoring, and data issue remediation",
+      "data": "Oct 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "groq",
+      "motivo": "Vaga concreta de Lead Analyst focada em identity resolution e governança de dados.",
+      "resumo": "Anúncio de vaga para Lead Analyst Salesforce Data Cloud Hygiene, com responsabilidade sobre identity resolution, unificação de perfis, master data management e monitoramento de qualidade de dados.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.33,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Customer Data & Identity Specialist (CDP/CRM ecosystem)",
+      "url": "https://ca.linkedin.com/jobs/view/customer-data-identity-specialist-cdp-crm-ecosystem-at-air-canada-vacations-4483828131",
+      "texto": "Manage identity resolution rules (stitching) to ensure correct merging of customer identifiers (Email, Cookies, IDs) across channels and devices. Partner with Digital Analytics, Martech, CRM, and Enterprise Architects to define requirements for data pipelines, ensuring incoming data is \"activation-ready\" for marketing use cases.",
+      "data": "Oct 28, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Vaga específica de Customer Data & Identity Specialist que gerencia regras de identity resolution.",
+      "resumo": "Anúncio de vaga para Customer Data & Identity Specialist, responsável por regras de stitching e unificação de identificadores de clientes em canais e dispositivos.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": null,
+      "modalidade": null,
+      "local_contratacao": null,
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Reconstructing End-User Demand under Batch-Level Ambiguity: Flow-Constrained Record Linkage and Audit Allocation in Orthopedic Consignment Networks",
+      "url": "https://doi.org/10.21203/rs.3.rs-11527479/v1",
+      "autores": "Hongjie Jiang",
+      "data": "2026-10-29",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "O título menciona explicitamente \"Record Linkage\", indicando foco no tema.",
+      "resumo": "O trabalho propõe reconstruir a demanda de usuários finais em redes de consignação ortopédica usando record linkage com restrições de fluxo e alocação de auditoria.",
+      "confianca": 0.9
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Early life exposure to PM2.5 and ADHD prescribing in childhood: A data linkage study in Victoria, Australia",
+      "url": "https://osf.io/4h8t7",
+      "autores": "Caroline X. Gao et al.",
+      "data": "2026-10-26",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "groq",
+      "motivo": "O título descreve um \"data linkage study\", o que caracteriza pesquisa de record linkage.",
+      "resumo": "O estudo investiga a associação entre exposição precoce a PM2.5 e prescrições de TDAH na infância, utilizando ligação de bases de dados na Austrália.",
+      "confianca": 0.9
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Safari may block identity resolution: what to audit and how ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/safari-may-block-identity-resolution-what-audit-how-re-baseline-g7gge",
+      "data": "Oct 26, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "groq",
+      "motivo": "Post discute tecnicamente como auditar processos de identity resolution diante de restrições do Safari.",
+      "resumo": "Publicação que analisa como a limitação do Safari pode afetar providers de identity resolution e orienta auditorias e ajustes necessários.",
+      "confianca": 0.94
+    }
+  ],
+  "vagas_abertas_total": 77,
+  "vagas_arquivadas_total": 116,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": null,
+  "brasil": {
+    "novas": 5,
+    "abertas": 21,
+    "arquivadas": 37,
+    "rede": {
+      "pessoas_novas": 1,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 29,
+    "semana": 5,
+    "tema": "Qualidade de dados para matching",
+    "tipo": "conceito",
+    "titulo": "Dimensões de qualidade que afetam o matching",
+    "modulo": "Semana 5: Qualidade de dados para matching",
+    "versao": 2,
+    "objetivo": "Reconhecer as dimensões de qualidade de dados (consistência de codificação, complexidade de representação, volume, regras de entrada, mudança temporal, heterogeneidade de sistemas) que determinam o sucesso ou fracasso de um pipeline de matching.",
+    "conceito": "Christen (2012, seção 3.1, p. 39-40) lista causas-raiz de baixa qualidade que vão muito além de 'typos': dados codificados de forma diferente entre disciplinas ou organizações, representações complexas (XML, bases multi-relacionais), volume crescente que exige indexação escalável, regras de entrada contornadas (quando um campo é usado para propósito diferente do original) e necessidades de informação que mudam ao longo do tempo, fazendo com que atributos apareçam, desapareçam ou mudem de formato. Cada uma dessas dimensões não é um 'bug' isolado, mas um padrão sistemático de erro que se repete em milhões de registros.\n\nO exemplo clássico do livro é a data de nascimento '01/01' em prontuários de pacientes inconscientes: a recepcionista, sob pressão de tempo e sem informação real, insere uma data fictícia só para satisfazer a validação do sistema. Isso gera um pico estatístico anômalo de nascimentos em 1º de janeiro, um artefato de processo, não um erro aleatório. Reconhecer esse padrão antes de treinar um modelo de matching evita que o engenheiro trate esse campo como confiável e penalize pares verdadeiros por 'data diferente', quando na verdade ambos os lados podem ter o mesmo sentinela.\n\nA lição central é que qualidade de dados para matching não é sobre 'limpar sujeira genérica', mas sobre entender a origem sistêmica de cada tipo de erro para decidir se um campo deve ser comparado, ponderado de forma diferente, ou simplesmente descartado da comparação.",
+    "como_funciona": "Passos para diagnosticar qualidade antes de montar comparações:\n1. Mapear a origem de cada atributo (sistema, formulário, API) e perguntar se o campo foi desenhado para esse propósito.\n2. Verificar distribuição de valores sentinela (datas 01/01, '0000-00-00', '999-999-9999', strings 'N/A', 'unknown').\n3. Checar se há mudança de schema ao longo do tempo (campos adicionados/removidos entre safras de dados).\n4. Avaliar heterogeneidade entre fontes: mesmo atributo, formatos distintos (ex.: data DD/MM/AAAA vs ISO 8601).\n5. Medir volume e decidir estratégia de indexação/blocking compatível com a escala (Capítulo 4 de Christen).\n6. Para cada issue encontrado, decidir: corrigir na limpeza, ponderar menos na função de comparação, ou excluir o campo.",
+    "exemplo": "Um hospital brasileiro tem uma base de 2 milhões de pacientes. Ao plotar o histograma de dia/mês de nascimento, você nota que 8% dos registros têm data '01/01'. Isso é 8x mais que o esperado (1/365 ≈ 0,27%) se a distribuição fosse uniforme. Isso indica sentinela de data desconhecida, não coincidência. Se dois registros candidatos a duplicata têm ambos data '01/01' mas anos diferentes (ex.: 1950-01-01 e 1952-01-01), a comparação exata de data de nascimento pode erroneamente contribuir como 'forte desacordo', quando na verdade o campo é não informativo para ambos. A decisão correta é marcar esses valores como ausentes/sentinela antes de calcular os pesos de m e u (vistos na Aula sobre Fellegi-Sunter) em vez de tratá-los como data real.",
+    "na_pratica": "Em PySpark, antes do matching, crie uma flag de sentinela e neutralize o campo na comparação:\nfrom pyspark.sql import functions as F\ndf = df.withColumn('dob_is_sentinel', (F.dayofmonth('dob')==1) & (F.month('dob')==1))\ndf = df.withColumn('dob_clean', F.when(F.col('dob_is_sentinel'), F.lit(None)).otherwise(F.col('dob')))\nNo Splink, você então usa cl.ExactMatch('dob_clean') apenas nos registros onde dob_is_sentinel é falso em ambos os lados, ou cria uma comparação customizada que trata nulo como 'sem informação', evitando que o sentinela infle a taxa de falsos negativos.",
+    "armadilha": "Tratar todo valor de data '01/01' ou campo 'default' como erro aleatório de digitação e aplicar apenas distância de edição; isso ignora que são artefatos sistêmicos de processo e exige tratamento específico (flag de sentinela), não comparação fonética ou de string.",
+    "desafio": "Você recebe uma base de clientes de um varejo com 3 milhões de registros e nota que 15% dos CPFs têm o valor '00000000000'. Além disso, ao comparar duas safras da mesma base coletadas em 2019 e 2023, você percebe que o campo 'profissao' existia em 2019 mas foi removido em 2023, substituído por 'segmento_cliente'. Projete em 3 frases como você ajustaria o pipeline de matching para lidar com esses dois problemas sem descartar os registros.",
+    "gabarito": "Primeiro, para o CPF '00000000000', crie uma flag de sentinela e trate o campo como ausente (nulo) nesses casos, removendo-o da função de comparação para esses pares em vez de comparar strings idênticas que gerariam falsos positivos em massa. Segundo, para o campo descontinuado 'profissao', não force uma comparação direta entre 'profissao' (2019) e 'segmento_cliente' (2023); em vez disso, construa um mapeamento de categorias equivalentes (ex.: 'engenheiro' -> 'profissional_liberal') ou simplesmente exclua esse atributo da comparação entre safras distintas, usando apenas os campos comuns e estáveis (nome, data de nascimento, endereço) como evidência principal. Terceiro, documente essas decisões como metadados de qualidade do dataset, pois elas afetam a estimativa dos parâmetros m e u do modelo Fellegi-Sunter.",
+    "fontes": [
+      "Christen (2012), seção 3.1, p. 39-40",
+      "Christen (2012), seção 3.2, p. 41-43",
+      "Christen (2006), IEEE ICDM Workshops"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        39,
+        51
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3013,
+      "pos_palavras_chave": 14,
+      "aprovados": 5
+    },
+    "eventos": {
+      "brutos": 2,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 183,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 5,
+      "aprovados": 1
+    }
+  },
+  "saude": "problema"
+}
