@@ -7,3 +7,95 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-10-30 23:30 =====
+INFO serpapi: 208 restantes no mês; orçamento de hoje = 12 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 180
+INFO jobs/greenhouse: 1426
+INFO jobs/lever: 299
+INFO jobs/ashby: 39
+INFO jobs/hn_who_is_hiring: 1
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 13
+INFO jobs/gupy: 200
+INFO jobs/himalayas: 99
+INFO jobs/jobicy: 56
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 166
+INFO jobs/social_linkedin/ddg: 5 aceitos de 6
+INFO jobs/social_posts: 5
+INFO linkedin_guest: 42 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 42
+WARNING claude indisponível: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'request_id': 'req_011CgZX3gVK5PQzxZpTDcDPJ'}
+INFO judge: modelos de gemini disponíveis hoje: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash
+WARNING judge: gemini/gemini-3.8-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+WARNING judge: gemini/gemini-3.7-flash falhou (gemini 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILAB)
+INFO judge: gemini congestionado; seguindo para o próximo provedor
+INFO judge: modelos de groq disponíveis hoje: openai/gpt-oss-120b, openai/gpt-oss-20b, openai/gpt-oss-safeguard-20b
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO judge: groq em limite por minuto; pausado 1 min
+INFO judge: modelos de openrouter disponíveis hoje: google/gemma-4-31b-it:free, google/gemma-4-26b-a4b-it:free, xingchen-agi/xing4.0-29b-a4b:free
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: openrouter em limite por minuto; pausado 1 min
+INFO judge: modelos de mistral disponíveis hoje: mistral-small-latest, mistral-small-2603, ministral-14b-2512
+INFO judge: mistral em limite por minuto; pausado 1 min
+INFO judge: mistral em limite por minuto; pausado 1 min
+INFO judge: usando mistral (ministral-14b-2512)
+INFO judge: todas as IAs em limite por minuto; aguardando 2 s
+INFO judge: usando groq (openai/gpt-oss-120b)
+INFO vagas: {'brutos': 2906, 'pos_palavras_chave': 18, 'aprovados': 8}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 9
+INFO papers/openalex: 175
+INFO papers: {'brutos': 184, 'pos_palavras_chave': 1, 'aprovados': 1}
+INFO linkedin/ddg: 11 aceitos de 11
+INFO linkedin: 11 candidatos
+INFO linkedin: {'brutos': 11, 'pos_palavras_chave': 3, 'aprovados': 2}
+INFO open_jobs: fechou SC CLEARED SENIOR DATA SCIENTIST at Women Rock - LinkedIn
+INFO open_jobs: fechou Senior Data Scientist, Entity Resolution & Impact
+INFO open_jobs: fechou Senior Entity Resolution Engineer (Fully Remote)
+INFO open_jobs: 82 abertas (8 novas)
+INFO mercado: 123 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 9 aceitos de 9
+INFO network: 9 perfis após a consulta
+INFO network: 60 pessoas (2 novas), 28 empresas (3 novas)
+WARNING carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 159
+INFO brasil/gupy: 396
+INFO google_jobs 'consolidação de bases de dados': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 1
+INFO brasil/linkedin/ddg: 10 aceitos de 10
+INFO brasil/linkedin_jobs_br: 10
+INFO linkedin_guest: 14 vagas, 14 descrições abertas, 53 consultas no total
+INFO brasil/linkedin_guest_br: 14
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 1132
+INFO brasil/lever: 197
+INFO brasil/ashby: 110
+INFO brasil: 4929 brutas, 7 candidatas para o juiz
+INFO open_jobs: fechou Consultor SAP Infoporter – Migração de Dados HCM / SuccessFactors - Remoto
+INFO open_jobs: 24 abertas (4 novas)
+INFO mercado: 41 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 11 aceitos de 11
+INFO network: 11 perfis após a consulta
+INFO network: 35 pessoas (5 novas), 33 empresas (1 novas)
+INFO brasil: {'novas': 4, 'abertas': 24, 'arquivadas': 41, 'rede': {'pessoas_novas': 5, 'empresas_novas': 1}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-10-31.json
+

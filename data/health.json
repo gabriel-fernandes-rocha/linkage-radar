@@ -1,5 +1,5 @@
 {
- "data": "2026-10-30",
+ "data": "2026-10-31",
  "status": "problema",
  "checks": [
   {
@@ -17,26 +17,26 @@
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
   "jobs/remotive": 180,
-  "jobs/greenhouse": 1441,
-  "jobs/lever": 302,
-  "jobs/ashby": 36,
+  "jobs/greenhouse": 1426,
+  "jobs/lever": 299,
+  "jobs/ashby": 39,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 10,
-  "jobs/gupy": 207,
+  "jobs/serpapi_google_jobs": 13,
+  "jobs/gupy": 200,
   "jobs/himalayas": 99,
-  "jobs/jobicy": 150,
+  "jobs/jobicy": 56,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 167,
-  "jobs/social_posts": 9,
-  "jobs/linkedin_guest": 31,
-  "papers/arxiv": 8,
+  "jobs/weworkremotely": 166,
+  "jobs/social_posts": 5,
+  "jobs/linkedin_guest": 42,
+  "papers/arxiv": 9,
   "papers/openalex": 175,
-  "linkedin/posts": 10,
-  "network/perfis": 7
+  "linkedin/posts": 11,
+  "network/perfis": 11
  },
  "falhas": [
-  "judge: gemini/gemini-3.8-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
-  "judge: gemini/gemini-3.7-flash falhou (HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=45))",
+  "judge: gemini/gemini-3.8-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
+  "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
   "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
  ]
 }

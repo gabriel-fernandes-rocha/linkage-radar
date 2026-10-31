@@ -118,6 +118,11 @@
   "nivel": "nao",
   "nome": "AWS"
  },
+ "aws athena": {
+  "motivo": "Nenhuma evidência de uso ou experiência com Athena",
+  "nivel": "nao",
+  "nome": "AWS Athena"
+ },
  "aws cdk": {
   "motivo": "sem evidência de uso",
   "nivel": "nao",
@@ -137,6 +142,11 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "AWS Machine Learning"
+ },
+ "aws s3": {
+  "motivo": "Não há menção a S3 ou armazenamento AWS",
+  "nivel": "nao",
+  "nome": "AWS S3"
  },
  "azure": {
   "motivo": "sem evidência de cloud Azure",
@@ -403,6 +413,11 @@
   "nivel": "tem",
   "nome": "Data Normalization"
  },
+ "data observability dashboards": {
+  "motivo": "Não citou dashboards de observabilidade de dados",
+  "nivel": "nao",
+  "nome": "data observability dashboards"
+ },
  "data pipelines": {
   "motivo": "Constrói e mantém pipelines de resolução de entidades em produção",
   "nivel": "tem",
@@ -543,6 +558,11 @@
   "nivel": "tem",
   "nome": "Deterministic Matching"
  },
+ "dimensional modeling": {
+  "motivo": "cursos de DW/BI sugerem conhecimento básico",
+  "nivel": "parcial",
+  "nome": "dimensional modeling"
+ },
  "distributed data processing": {
   "motivo": "usa Spark em produção para bilhões de registros",
   "nivel": "tem",
@@ -647,6 +667,11 @@
   "motivo": "não há referência ao uso de Excel",
   "nivel": "nao",
   "nome": "Excel"
+ },
+ "external apis (factset, sec tools)": {
+  "motivo": "Sem experiência declarada com APIs externas",
+  "nivel": "nao",
+  "nome": "external APIs (FactSet, SEC tools)"
  },
  "false-positive optimisation": {
   "motivo": "Redução de falsos positivos em record linkage",
@@ -903,6 +928,11 @@
   "nivel": "nao",
   "nome": "Kafka"
  },
+ "kanban": {
+  "motivo": "não há evidência no currículo",
+  "nivel": "nao",
+  "nome": "Kanban"
+ },
  "knowledge graph": {
   "motivo": "Não aparece experiência com knowledge graph.",
   "nivel": "nao",
@@ -927,6 +957,11 @@
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "LangGraph"
+ },
+ "lgpd": {
+  "motivo": "não há menção ao regulamento",
+  "nivel": "nao",
+  "nome": "LGPD"
  },
  "liveramp": {
   "motivo": "plataforma específica não mencionada",
@@ -1083,6 +1118,11 @@
   "nivel": "nao",
   "nome": "Neptune"
  },
+ "netsuite": {
+  "motivo": "não há experiência declarada",
+  "nivel": "nao",
+  "nome": "NetSuite"
+ },
  "next.js": {
   "motivo": "Tecnologia front-end não citada.",
   "nivel": "nao",
@@ -1142,6 +1182,11 @@
   "motivo": "sem evidência de uso específico",
   "nivel": "nao",
   "nome": "pgvector"
+ },
+ "phoenix": {
+  "motivo": "Nenhum registro de uso de Apache Phoenix",
+  "nivel": "nao",
+  "nome": "Phoenix"
  },
  "pii detection": {
   "motivo": "lida com dados sensíveis de saúde/identidade, próximo",
@@ -1368,6 +1413,11 @@
   "nivel": "nao",
   "nome": "scraping"
  },
+ "scrum": {
+  "motivo": "não há indicação de uso",
+  "nivel": "nao",
+  "nome": "Scrum"
+ },
  "segment": {
   "motivo": "sem evidência de uso",
   "nivel": "nao",
@@ -1413,6 +1463,11 @@
   "nivel": "parcial",
   "nome": "Single Customer View"
  },
+ "small language models": {
+  "motivo": "Nenhum trabalho com modelos de linguagem pequeno",
+  "nivel": "nao",
+  "nome": "small language models"
+ },
  "snowflake": {
   "motivo": "sabe SQL, base próxima",
   "nivel": "parcial",
@@ -1452,6 +1507,11 @@
   "motivo": "ferramenta declarada e usada",
   "nivel": "tem",
   "nome": "Splink"
+ },
+ "sports data providers": {
+  "motivo": "Nenhum envolvimento com dados esportivos",
+  "nivel": "nao",
+  "nome": "sports data providers"
  },
  "sql": {
   "motivo": "usa SQL em produção",
@@ -1523,6 +1583,11 @@
   "nivel": "nao",
   "nome": "Tailwind"
  },
+ "taxonomies": {
+  "motivo": "Taxonomias não aparecem no currículo",
+  "nivel": "nao",
+  "nome": "taxonomies"
+ },
  "tensorflow": {
   "motivo": "sem evidência, usa scikit-learn",
   "nivel": "nao",
@@ -1572,6 +1637,11 @@
   "motivo": "Realiza validação de resultados (precisão/recall)",
   "nivel": "tem",
   "nome": "validation"
+ },
+ "vector databases": {
+  "motivo": "Não há menção a bancos vetoriais",
+  "nivel": "nao",
+  "nome": "vector databases"
  },
  "web research automation": {
   "motivo": "Automação de pesquisa web não mencionada.",

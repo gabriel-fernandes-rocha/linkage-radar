@@ -51,7 +51,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -124,8 +124,56 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto",
+    "url": "https://br.linkedin.com/jobs/view/engenheiro-de-integra%C3%A7%C3%A3o-de-dados-trabalho-remoto-at-bairesdev-4480277080",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Descrição menciona projetar e desenvolver pipelines ETL para integrar diversas fontes, atendendo ao critério de integração de dados.",
+    "resumo": "Engenheiro de Integração de Dados será responsável por projetar e construir pipelines ETL que conectam múltiplas fontes de dados, garantindo qualidade e confiabilidade.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "ETL"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-31",
+    "verificada_em": "2026-10-31",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -186,7 +234,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -255,7 +303,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -313,8 +361,8 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-30",
-    "nova": true
+    "verificada_em": "2026-10-31",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -385,7 +433,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -440,8 +488,8 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-30",
-    "nova": true
+    "verificada_em": "2026-10-31",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -510,7 +558,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -559,7 +607,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -608,7 +656,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -657,7 +705,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -729,25 +777,24 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
     "tipo": "vaga",
-    "titulo": "Consultor SAP Infoporter – Migração de Dados HCM / SuccessFactors - Remoto",
-    "url": "https://bebee.com/br/jobs/consultor-sap-infoporter-migracao-de-dados-hcm-successfactors-remoto-brivia--ss-br-a684b8",
-    "empresa": "Brivia",
-    "local": "Qualquer lugar",
-    "fonte": "Google Jobs (Brasil)",
-    "publicada_em": null,
+    "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto",
+    "url": "https://br.linkedin.com/jobs/view/engenheiro-de-integra%C3%A7%C3%A3o-de-dados-trabalho-remoto-at-bairesdev-4480258857",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
     "score": 0,
     "categoria": "integracao",
     "termos": [
-      "migracao de dados"
+      "integracao de dados"
     ],
     "juiz": "groq",
-    "motivo": "Vaga remota aceita candidatos no Brasil e envolve migração, validação, reconciliação e saneamento de dados mestres, atividades de integração e qualidade de dados.",
-    "resumo": "Consultor SAP Infoporter para migração de dados HCM/SuccessFactors, atuando em extração, transformação, carga, validação e saneamento de dados mestres de RH.",
+    "motivo": "Vaga de Engenheiro de Integração de Dados na BairesDev inclui desenvolvimento de pipelines e integração de sistemas, alinhado ao tema.",
+    "resumo": "Engenheiro de Integração de Dados (remoto) na BairesDev, em Curitiba, atuará no desenvolvimento de pipelines ETL e na integração de dados de diferentes sistemas.",
     "confianca": 0.9,
     "trilha": "brasil",
     "requisitos": {
@@ -758,10 +805,10 @@
     "modalidade": null,
     "local_contratacao": null,
     "patrocina_visto": null,
-    "contratacao": "contractor_global",
+    "contratacao": "clt_ou_fulltime",
     "anos_experiencia_min": null,
-    "ingles": "nao_exigido",
-    "foco_er": 0,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
     "encaixe": 0.29,
     "compat_detalhe": {
       "habilidades": 50,
@@ -775,8 +822,54 @@
       "parciais": [],
       "estimado": false
     },
-    "desde": "2026-10-30",
-    "verificada_em": "2026-10-30",
+    "desde": "2026-10-31",
+    "verificada_em": "2026-10-31",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Desenvolvedor (a) de Integração de Dados - Sênior (112088)",
+    "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-de-integra%C3%A7%C3%A3o-de-dados-s%C3%AAnior-112088-at-prezensa-people-tech-4485225411",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Cargo de Desenvolvedor de Integração de Dados envolve criação de pipelines e consolidação de fontes, atendendo ao critério de integração de dados.",
+    "resumo": "Desenvolvedor de Integração de Dados na Prezensa People Tech será responsável por projetar e implementar soluções de integração e consolidação de dados.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-10-31",
+    "verificada_em": "2026-10-31",
     "nova": true
   },
   {
@@ -859,7 +952,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -922,7 +1015,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -989,11 +1082,83 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
     "confianca": 0.93
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Dados e BI",
+    "url": "https://casadofitness.gupy.io/job/eyJqb2JJZCI6MTI4MTE0NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "CASA DO FITNESS",
+    "local": "São José dos Campos, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-30",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados",
+      "qualidade de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga inclui construção de pipelines ETL, integração de ERP, e‑commerce e definição de governança e qualidade de dados, temas centrais de integração e limpeza de dados.",
+    "resumo": "Analista de Dados e BI na Casa do Fitness será responsável por projetar a arquitetura de dados, desenvolver pipelines ETL integrando múltiplas fontes e definir padrões de governança e qualidade.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Power BI",
+        "Python",
+        "ETL",
+        "REST APIs",
+        "Data Warehouse",
+        "dimensional modeling",
+        "data governance"
+      ],
+      "desejaveis": [
+        "NetSuite",
+        "Git",
+        "Scrum",
+        "Kanban",
+        "LGPD"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.26,
+    "compat_detalhe": {
+      "habilidades": 40,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Power BI",
+        "REST APIs"
+      ],
+      "parciais": [
+        "SQL",
+        "Data Warehouse",
+        "dimensional modeling",
+        "data governance"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-31",
+    "verificada_em": "2026-10-31",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1077,7 +1242,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -1149,8 +1314,8 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-30",
-    "nova": true
+    "verificada_em": "2026-10-31",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1224,8 +1389,8 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-30",
-    "nova": true
+    "verificada_em": "2026-10-31",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1301,7 +1466,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false
   },
   {
@@ -1360,7 +1525,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-30",
+    "verificada_em": "2026-10-31",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",
