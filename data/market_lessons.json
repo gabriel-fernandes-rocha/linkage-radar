@@ -1,5 +1,51 @@
 [
  {
+  "data": "2026-11-01",
+  "habilidade": "graph databases",
+  "pct_vagas": 4,
+  "nivel_atual": "nao",
+  "o_que_e": "Graph databases são sistemas de armazenamento que modelam dados como nós (entidades) e arestas (relacionamentos), otimizados para consultas de travessia (ex: 'quem está conectado a quem em N passos'). Os principais exemplos são Neo4j, Amazon Neptune, TigerGraph e ArangoDB. Em entity resolution, grafos são usados para representar clusters de entidades resolvidas e suas relações de similaridade, permitindo detectar comunidades, caminhos e conexões indiretas entre registros.",
+  "por_que_pedem": "Em entity resolution avançado, depois do matching par-a-par, você precisa agregar pares em clusters/entidades via componentes conectados ou algoritmos de comunidade, isso é naturalmente um problema de grafo. Vagas de identity resolution e MDM também usam grafos para modelar redes de relacionamento (ex: mesma pessoa em contextos diferentes, fraude, household linkage), então conhecer graph databases mostra que você entende a camada pós-matching, não só o scoring.",
+  "ponte_com_o_que_voce_sabe": "Você já faz isso sem chamar de 'grafo': clusters do Splink são componentes conectados de um grafo de pares com score acima de um limiar. Você já entende blocking, similaridade e thresholds, o que falta é a camada de armazenamento/consulta nativa de grafos e algoritmos como community detection, shortest path e centralidade. Spark tem GraphFrames, que é uma ponte direta pro seu stack atual.",
+  "minimo_para_ficar_apto": [
+   "Entender modelo de nós/arestas/propriedades e diferença para relacional",
+   "Saber escrever queries básicas em Cypher (Neo4j) para buscar, filtrar e percorrer caminhos",
+   "Conhecer algoritmos clássicos: connected components, PageRank, community detection (Louvain), shortest path",
+   "Saber explicar como grafos se aplicam a entity resolution (clustering de pares, redes de identidade, detecção de fraude)",
+   "Ter rodado pelo menos um exemplo prático com GraphFrames (Spark) ou Neo4j local"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de graph databases e quando usar vs relacional (doc Neo4j 'Graph Database Concepts')",
+   "3h: fazer o tutorial oficial Neo4j (Cypher basics, Neo4j Sandbox ou Neo4j Desktop)",
+   "3h: estudar GraphFrames do Spark (docs oficiais) e rodar connected components num dataset seu",
+   "2h: implementar Louvain ou label propagation num grafo pequeno de pares do Splink exportado",
+   "2h: ler sobre uso de grafos em identity resolution (buscar 'graph based entity resolution' em papers/blogs técnicos de empresas como Neo4j, Senzing)",
+   "1h: preparar 2-3 frases de como você conectaria Splink + grafo num pipeline real"
+  ],
+  "mini_projeto": "Pegue um dataset de pares candidatos gerado pelo seu pipeline Splink (ou sintético), exporte as arestas (id1, id2, score) acima de um threshold, carregue num grafo com GraphFrames ou Neo4j, rode connected components para formar clusters de entidades e compare com o clustering nativo do Splink. Depois rode um algoritmo de centralidade ou Louvain para identificar sub-comunidades dentro de clusters grandes (útil para separar entidades que colapsaram erroneamente).",
+  "como_colocar_no_curriculo": "Experiência com clustering de entidades via grafos (GraphFrames/Spark, conceitos de Neo4j) para pós-processamento de matching probabilístico em pipelines de record linkage em larga escala.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Como você usaria um grafo para transformar pares de matches em clusters de entidades?",
+    "resposta": "Trato cada par com score acima do threshold como uma aresta entre dois nós (registros). Depois rodo connected components para agrupar tudo que está transitivamente conectado em uma mesma entidade. Isso é exatamente o que já faço com Splink, mas posso fazer de forma mais explícita e escalável com GraphFrames no Spark ou carregando num banco como Neo4j para consultas mais ricas."
+   },
+   {
+    "pergunta": "Qual a diferença entre um graph database e usar tabelas relacionais para modelar relacionamentos?",
+    "resposta": "Bancos relacionais exigem joins custosos para travessias de múltiplos saltos, o que degrada muito com profundidade. Graph databases armazenam relacionamentos como cidadãos de primeira classe, então consultas de caminho e vizinhança são muito mais eficientes, essencial quando você precisa achar conexões indiretas entre entidades, por exemplo em detecção de fraude ou household linkage."
+   },
+   {
+    "pergunta": "Você já usou algum algoritmo de community detection? Para que serviria em entity resolution?",
+    "resposta": "Sim, conceitualmente com connected components no contexto de clustering de matches. Louvain ou label propagation ajudam quando connected components geram clusters grandes demais (over-merging), permitindo subdividir em comunidades mais coesas baseadas na força das conexões, útil para refinar clusters antes da etapa de QA."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial Neo4j (Graph Database Concepts e Cypher Manual)",
+   "Neo4j Graph Data Science Library docs (algoritmos: Louvain, PageRank, connected components)",
+   "Apache Spark GraphFrames documentation",
+   "Curso gratuito Neo4j GraphAcademy (Neo4j Fundamentals)"
+  ]
+ },
+ {
   "data": "2026-10-14",
   "habilidade": "Machine Learning",
   "pct_vagas": 8,

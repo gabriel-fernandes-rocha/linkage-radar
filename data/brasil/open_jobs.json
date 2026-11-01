@@ -1,6 +1,74 @@
 [
   {
     "tipo": "vaga",
+    "titulo": "Desenvolvedor Databricks/Python",
+    "url": "https://www.linkedin.com/jobs/view/4484882843",
+    "empresa": "Compass UOL",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-30",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados",
+      "limpeza de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro de dados em Databricks/PySpark com responsabilidades em limpeza, transformação, integração de dados heterogêneos (XML, estruturados) e qualidade de dados em pipelines de larga escala.",
+    "resumo": "Compass UOL busca desenvolvedor Databricks/Python para construir pipelines escaláveis com limpeza, transformação e integração de dados heterogêneos em ambiente de processamento de larga escala.",
+    "confianca": 0.88,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Databricks",
+        "Spark",
+        "Azure",
+        "Pandas"
+      ],
+      "desejaveis": [
+        "Processamento distribuído"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.55,
+    "compat_detalhe": {
+      "habilidades": 62,
+      "senioridade": 85,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Databricks",
+        "Azure"
+      ],
+      "parciais": [
+        "Pandas"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-01",
+    "verificada_em": "2026-11-01",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
     "titulo": "A empresa CI&T está contratando para o cargo de Master Data ...",
     "url": "https://br.linkedin.com/jobs/view/master-data-developer-brazil-at-ci-t-4455334674",
     "empresa": "",
@@ -51,7 +119,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -124,7 +192,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -172,8 +240,8 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-10-31",
-    "nova": true
+    "verificada_em": "2026-11-01",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -234,7 +302,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -303,7 +371,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -361,7 +429,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -433,7 +501,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -488,7 +556,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -558,8 +626,79 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Sr Data Migration / Data Quality - COM INGLÊS - Remoto",
+    "url": "https://www.linkedin.com/jobs/view/4477843281",
+    "empresa": "Capco",
+    "local": "São Paulo, SP",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-31",
+    "score": 3,
+    "categoria": "integracao",
+    "termos": [
+      "data migration",
+      "data quality",
+      "mapeamento de dados",
+      "migracao de dados",
+      "qualidade de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga sênior de migração e qualidade de dados com foco em consolidação de CRM, envolvendo extração, transformação, mapeamento de dados e data profiling entre múltiplas plataformas.",
+    "resumo": "Capco busca profissional sênior para liderar migração de dados de múltiplas plataformas de CRM para Salesforce, com atividades de ETL, data profiling e mapeamento de campos em São Paulo.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Salesforce",
+        "ETL",
+        "Data Profiling",
+        "Data Mapping",
+        "Master Data Management"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.2,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 40,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 85,
+      "foco": 88,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Salesforce",
+        "Master Data Management"
+      ],
+      "parciais": [
+        "Data Profiling",
+        "Data Mapping"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-01",
+    "verificada_em": "2026-11-01",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -607,7 +746,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -656,7 +795,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -705,7 +844,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -777,7 +916,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -823,8 +962,8 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-10-31",
-    "nova": true
+    "verificada_em": "2026-11-01",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -869,8 +1008,8 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-10-31",
-    "nova": true
+    "verificada_em": "2026-11-01",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -952,7 +1091,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false,
     "juiz": "groq",
     "resumo": "Senior Data Engineer na First Help Financial, trabalho híbrido em São Paulo. A empresa transforma registros públicos em inteligência comercial, focando em resolução de entidades e qualidade dos dados.",
@@ -1015,7 +1154,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -1082,7 +1221,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false,
     "juiz": "groq",
     "resumo": "Analista de Dados Pleno na Riachuelo, desenvolve pipelines em Databricks, realiza deduplicação e regras de priorização de dados de CRM.",
@@ -1157,8 +1296,8 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-10-31",
-    "nova": true
+    "verificada_em": "2026-11-01",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1242,7 +1381,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -1314,7 +1453,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -1389,8 +1528,97 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Latin America (ALAC) AIML Data Quality & Governance Scientist",
+    "url": "https://www.linkedin.com/jobs/view/4484858491",
+    "empresa": "Apple",
+    "local": "São Paulo e Região",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-30",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "data quality"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Cientista de dados especializado em qualidade e governança de dados com foco em construir enterprise knowledge graphs, ontologias, ingestion architectures e políticas de dados consistentes entre múltiplos sistemas.",
+    "resumo": "Apple busca cientista em São Paulo para liderar qualidade de dados e governança em knowledge graphs empresariais, traduzindo estratégias de governança em padrões operacionais e arquiteturas de ingestão de dados heterogêneos.",
+    "confianca": 0.85,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Neo4j",
+        "GraphDB",
+        "Amazon Neptune",
+        "Cypher",
+        "SPARQL",
+        "Gremlin",
+        "RDF",
+        "OWL",
+        "SHACL",
+        "Collibra",
+        "Alation",
+        "DataHub",
+        "SQL",
+        "Python",
+        "Snowflake",
+        "Spark",
+        "Hadoop",
+        "RAG",
+        "ETL"
+      ],
+      "desejaveis": [
+        "LLMs"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 6,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.18,
+    "compat_detalhe": {
+      "habilidades": 28,
+      "senioridade": 60,
+      "local": 75,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "pede 6+ anos (você tem 2.8)",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Neo4j",
+        "GraphDB",
+        "Amazon Neptune",
+        "Cypher",
+        "SPARQL",
+        "Gremlin",
+        "RDF",
+        "OWL"
+      ],
+      "parciais": [
+        "SQL",
+        "Hadoop"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-01",
+    "verificada_em": "2026-11-01",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1466,7 +1694,7 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false
   },
   {
@@ -1525,10 +1753,80 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-10-31",
+    "verificada_em": "2026-11-01",
     "nova": false,
     "juiz": "groq",
     "resumo": "Especialista Master Data, responsável por padronizar e limpar cadastros de clientes, fornecedores e materiais, garantindo integridade e reduzindo redundância.",
     "confianca": 0.95
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Master Data Quality Lead",
+    "url": "https://www.linkedin.com/jobs/view/4484895066",
+    "empresa": "Mars",
+    "local": "Guararema, SP",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-10-30",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "data cleansing",
+      "data migration",
+      "data quality"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Liderança estratégica de qualidade de dados em portfólio global com foco em ERP integrations, data cleansing, governance e master data management em ambiente de consolidação.",
+    "resumo": "Mars busca líder para gerenciar qualidade de dados em integração ERP global, envolvendo data cleansing, governance e master data councils em Guararema, SP.",
+    "confianca": 0.92,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "SAP",
+        "SAP Data Services",
+        "Information Steward",
+        "ETL",
+        "Collibra"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "gerencia",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": [
+        "Guararema"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 10,
+    "ingles": "fluente",
+    "foco_er": 0.2,
+    "encaixe": 0.1,
+    "compat_detalhe": {
+      "habilidades": 17,
+      "senioridade": 40,
+      "local": 75,
+      "ingles": 85,
+      "foco": 88,
+      "senioridade_txt": "pede 10+ anos (você tem 2.8)",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Master Data Management",
+        "SAP",
+        "SAP Data Services",
+        "Information Steward",
+        "Collibra"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-01",
+    "verificada_em": "2026-11-01",
+    "nova": true
   }
 ]

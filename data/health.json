@@ -1,42 +1,38 @@
 {
- "data": "2026-10-31",
- "status": "problema",
+ "data": "2026-11-01",
+ "status": "ok",
  "checks": [
   {
-   "status": "problema",
-   "nome": "Claude fora do ar",
-   "detalhe": "limite de gasto mensal da sua conta Anthropic atingido. Aumente em console.anthropic.com → Settings → Limits (sem isso, volta sozinho em 01/11). Juiz reserva Gemini em uso."
+   "status": "ok",
+   "nome": "Juiz usado",
+   "detalhe": "anthropic"
   },
   {
-   "status": "atencao",
-   "nome": "Juiz usado",
-   "detalhe": "groq, mistral (reserva gratuita assumiu)"
+   "status": "ok",
+   "nome": "Cota SerpAPI",
+   "detalhe": "193 buscas restantes para 30 dias (~6/dia; LinkedIn e pessoas têm prioridade)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 180,
+  "jobs/remotive": 195,
   "jobs/greenhouse": 1426,
-  "jobs/lever": 299,
+  "jobs/lever": 301,
   "jobs/ashby": 39,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 13,
-  "jobs/gupy": 200,
-  "jobs/himalayas": 99,
-  "jobs/jobicy": 56,
+  "jobs/serpapi_google_jobs": 1,
+  "jobs/gupy": 191,
+  "jobs/himalayas": 100,
+  "jobs/jobicy": 52,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 166,
-  "jobs/social_posts": 5,
-  "jobs/linkedin_guest": 42,
-  "papers/arxiv": 9,
+  "jobs/weworkremotely": 173,
+  "jobs/social_posts": 1,
+  "jobs/linkedin_guest": 33,
+  "papers/arxiv": 6,
   "papers/openalex": 175,
-  "linkedin/posts": 11,
-  "network/perfis": 11
+  "linkedin/posts": 7,
+  "network/perfis": 6
  },
- "falhas": [
-  "judge: gemini/gemini-3.8-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
-  "judge: gemini/gemini-3.7-flash falhou (gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"",
-  "carreira: pílula falhou (Claude indisponível nesta coleta (limite/saldo); tento de novo amanhã)"
- ]
+ "falhas": []
 }

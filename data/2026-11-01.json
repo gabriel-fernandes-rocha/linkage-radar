@@ -1,0 +1,247 @@
+{
+  "data": "2026-11-01",
+  "gerado_em": "2026-10-31T23:13-03:00",
+  "llm": true,
+  "serpapi_orcamento": 6,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Scientist at Onit India — Pune Division, Maharashtra, India ...",
+      "url": "https://in.linkedin.com/jobs/view/data-scientist-at-onit-india-4485343096",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 12,
+      "juiz": "anthropic",
+      "motivo": "Vaga concreta anunciando posição de Data Scientist com foco explícito em entity resolution, record linkage, deduplicação e MDM, competências centrais do leitor.",
+      "resumo": "Vaga de Data Scientist na Onit India (Pune) requer experiência prática em entity resolution, record linkage, deduplicação e master data management, com stack em SQL, Python, Spark e Databricks.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Record Linkage",
+          "Deduplication",
+          "Master Data Management",
+          "SQL",
+          "Python",
+          "Ruby",
+          "Databricks",
+          "Spark",
+          "Delta Lake"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "India"
+        ],
+        "cidades": [
+          "Pune"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 60,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em India, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management",
+          "Ruby",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL",
+          "Delta Lake"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Scientist/Engineer IRC307996 - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-data-scientist-engineer-irc307996-at-globallogic-4484862812",
+      "texto": "You have deep technical expertise in record linkage, fuzzy matching, graph algorithms, and machine learning techniques for entity resolution. You bring hands-on experience building, operationalizing, and maintaining enterprise Master Data Management (MDM) or Customer 360 platforms. You are proficient in modern MLOps practices, including model deployment pipelines, feature stores, and automated ...",
+      "data": "Oct 30, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 17,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Data Scientist/Engineer com foco explícito em record linkage, fuzzy matching, entity resolution e MDM/Customer 360, alinhada com expertise do leitor.",
+      "resumo": "Vaga para Senior Data Scientist/Engineer com expertise em record linkage, fuzzy matching, graph algorithms e entity resolution, além de experiência em plataformas MDM e Customer 360 em produção.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Record linkage",
+          "Fuzzy matching",
+          "Graph algorithms",
+          "Machine learning",
+          "Master Data Management"
+        ],
+        "desejaveis": [
+          "MLOps",
+          "Feature stores"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.9,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 59,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 98,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [
+          "Graph algorithms"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Database Analyst at SoTalent — United States | LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/database-analyst-at-sotalent-4480654640",
+      "texto": "You will also be tasked with implementing complex patient matching and record linkage logic, harmonizing datasets from diverse sources, and establishing automated validation checks to identify ...",
+      "data": "Oct 23, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Database Analyst com responsabilidade central em patient matching, record linkage e harmonização de dados de múltiplas fontes, tema crítico em saúde.",
+      "resumo": "Vaga de Database Analyst com foco em implementação de patient matching, record linkage e harmonização de datasets heterogêneos com validação automatizada.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Record linkage",
+          "Patient matching"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 79,
+  "vagas_arquivadas_total": 127,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "graph databases",
+  "brasil": {
+    "novas": 4,
+    "abertas": 28,
+    "arquivadas": 45,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 31,
+    "semana": 5,
+    "tema": "Qualidade de dados para matching",
+    "tipo": "conceito",
+    "titulo": "Tipos e fontes de variação em nomes",
+    "modulo": "Semana 5: Qualidade de dados para matching",
+    "versao": 2,
+    "objetivo": "Classificar corretamente as variações e erros em nomes (ortográficos, fonéticos, culturais, estruturais) para escolher a técnica de comparação adequada em cada caso.",
+    "conceito": "Christen (2012, seç. 3.2, p. 41-43) mostra que nomes não são texto genérico: há dezenas de variantes legítimas para um mesmo nome (ex.: mais de 40 formas de 'Amelia'), apelidos sem relação fonética óbvia com o nome oficial ('Bob' para 'Robert'), nomes compostos em culturas distintas (hispânicos com dois sobrenomes, alemães com 'Hans-Peter'), mudanças por casamento/divórcio e problemas de transliteração de alfabetos não romanos (chinês, árabe, coreano). Isso difere do estudo clássico de Damerau sobre erros ortográficos em texto geral.\n\nNa seção 3.3 (p. 43-44), Christen contrasta o estudo de Damerau, onde mais de 80% dos erros eram de um único caractere (inserção, deleção, substituição, transposição), com um estudo mais recente em bases hospitalares (Friedman & Sideli, citado como [113]), onde apenas 39% dos erros eram de caractere único. Nesse estudo, a categoria mais comum (36%) foi inserção de palavra extra (nome do meio, título), seguida por erros de grafia/apelidos (14%), pontuação como em 'O'Brian' vs 'OBrian' (12%) e mudança de sobrenome por casamento (8%).\n\nA conclusão prática é que nomes exigem taxonomia própria de erro: variações ortográficas (não mudam fonética, ex. 'Meier'/'Meyer'), variações fonéticas (mudam estrutura sonora, ex. 'Sinclair'/'St. Clair') e variações estruturais (nomes duplos, ordem trocada, títulos inseridos).",
+    "como_funciona": "Taxonomia prática para diagnosticar variação em nomes, seguindo Christen (2012, seç. 3.3):\n1. Verificar se é erro de caractere único (del/ins/sub/transposição): típico de digitação rápida, resolvido com distância de edição (Levenshtein).\n2. Verificar se é variação ortográfica que preserva fonética (Meier/Meyer): resolvido com comparadores fonéticos (Soundex, Double Metaphone) além de edit distance.\n3. Verificar se é variação fonética forte, onde a estrutura muda bastante (Sinclair/St. Clair): exige codificação fonética robusta, edit distance pode falhar.\n4. Verificar se é inserção/remoção de palavra (nome do meio, título, sufixo): exige tokenização e comparação por conjunto de tokens, não string completa.\n5. Verificar se é variação de pontuação/espaçamento (O'Brian/OBrian/O Brian): resolvido com normalização antes da comparação.\n6. Verificar se é mudança de sobrenome por casamento ou nome composto: exige lógica de negócio (histórico de nomes) além de comparação textual.\n7. Verificar se é transliteração de alfabeto não romano: exige dicionário de mapeamento ou comparação fonética adaptada ao idioma de origem.",
+    "exemplo": "Suponha uma base hospitalar com 1000 pares de registros variantes do mesmo paciente, replicando a distribuição do estudo citado por Christen (p. 44): 360 casos de inserção de palavra extra (36%), 140 de erro ortográfico/apelido (14%), 120 de pontuação (12%), 80 de mudança de sobrenome (8%), e o restante (300 casos, 30%) distribuído entre erros de caractere único e outras causas.\n\nSe você aplicar só Levenshtein com limiar de 1 edição, você captura bem os erros de caractere único, mas falha nos 360 casos de inserção de palavra (ex.: 'Maria Silva' vs 'Maria Clara Silva'), porque a distância de edição entre as strings completas é grande mesmo sendo a mesma pessoa. Seria necessário comparação por tokens (conjunto de palavras) para recuperar esses 36%.",
+    "na_pratica": "Em pipelines reais, a diagnose dessas categorias direciona a escolha de comparadores no Splink ou recordlinkage: para inserção de palavra, usar comparação por token set; para ortografia preservando fonética, usar Jaro-Winkler combinado com Soundex/Metaphone.\nimport recordlinkage\ncmp = recordlinkage.Compare()\ncmp.string('given_name', 'given_name', method='jarowinkler', threshold=0.85)\ncmp.string('surname', 'surname', method='levenshtein', threshold=0.8)\nfeatures = cmp.compute(pairs, dfA, dfB)\nO ponto chave é não tratar nome como string única: separar given_name, middle_name e surname permite capturar o padrão de inserção/remoção de token.",
+    "armadilha": "Aplicar apenas distância de edição de caractere (Levenshtein) em nomes completos assumindo que a maioria dos erros é de caractere único, como em Damerau (1964): isso ignora que, em dados reais de pessoas, inserção de palavras e mudança estrutural podem ser a maioria dos casos, conforme o estudo citado em Christen (2012, p. 44).",
+    "desafio": "Uma base de clientes tem 500 pares verdadeiros não capturados pelo matching atual (que usa só Jaro-Winkler em full_name com limiar 0.85). Uma auditoria amostral de 50 desses pares mostra: 20 casos de nome do meio ausente em um dos registros, 10 casos de sobrenome trocado por casamento, 15 casos de pontuação diferente em sobrenomes com apóstrofo, 5 casos de transliteração diferente de nome asiático. Com base nessa distribuição, proponha a ordem de prioridade de correção e justifique qual técnica resolve cada categoria.",
+    "gabarito": "Prioridade por impacto (maior % primeiro): 1) nome do meio ausente (40% dos casos, 20/50): resolver separando given_name/middle_name/surname em campos e comparando por token set em vez de full_name string, pois Jaro-Winkler na string completa penaliza a palavra extra. 2) Pontuação em apóstrofo (30%, 15/50): resolver com normalização prévia (remover apóstrofos e espaços antes de comparar), resolvendo imediatamente sem precisar mudar o algoritmo de comparação. 3) Sobrenome trocado por casamento (20%, 10/50): exige lógica além de comparação textual, como manter histórico de sobrenomes ou usar dado adicional (data de nascimento, nome do meio) como evidência complementar, já que a string de sobrenome pode ser completamente diferente. 4) Transliteração (10%, 5/50): menor prioridade numérica, mas tecnicamente mais difícil; resolver com dicionário de transliteração ou comparação fonética adaptada ao idioma de origem. A correção de 1 e 2 juntas recupera 70% dos pares perdidos com esforço de engenharia relativamente baixo (normalização e tokenização), devendo ser implementada primeiro.",
+    "fontes": [
+      "Christen (2012), seç. 3.2, p. 41-43",
+      "Christen (2012), seç. 3.3, p. 43-44",
+      "Christen (2006), IEEE ICDM Workshops"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        39,
+        51
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2893,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 181,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 7,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

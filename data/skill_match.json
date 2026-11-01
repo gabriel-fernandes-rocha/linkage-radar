@@ -423,6 +423,11 @@
   "nivel": "tem",
   "nome": "Data Pipelines"
  },
+ "data profiling": {
+  "motivo": "faz qualidade de dados, não ferramenta específica",
+  "nivel": "parcial",
+  "nome": "Data Profiling"
+ },
  "data qa": {
   "motivo": "garantia de qualidade incluída nas pipelines",
   "nivel": "tem",
@@ -678,6 +683,11 @@
   "nivel": "tem",
   "nome": "false-positive optimisation"
  },
+ "feature stores": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Feature stores"
+ },
  "fellegi-sunter": {
   "motivo": "usa matching probabilístico, base Fellegi-Sunter",
   "nivel": "tem",
@@ -768,6 +778,11 @@
   "nivel": "nao",
   "nome": "Graph"
  },
+ "graph algorithms": {
+  "motivo": "clustering de entidades implica componentes conexos",
+  "nivel": "parcial",
+  "nome": "Graph algorithms"
+ },
  "graph data structures": {
   "motivo": "Usa clustering de componentes conexos em pipelines",
   "nivel": "tem",
@@ -787,6 +802,11 @@
   "motivo": "clustering de entidades implica modelagem de grafos",
   "nivel": "parcial",
   "nome": "Graph Modeling"
+ },
+ "graphdb": {
+  "motivo": "sem evidência de uso de grafo",
+  "nivel": "nao",
+  "nome": "GraphDB"
  },
  "graphframes": {
   "motivo": "usa Spark, próximo de GraphFrames",
@@ -812,6 +832,11 @@
   "motivo": "sem evidência de uso de H2O.ai",
   "nivel": "nao",
   "nome": "H2O"
+ },
+ "hadoop": {
+  "motivo": "usa Spark, ecossistema próximo",
+  "nivel": "parcial",
+  "nome": "Hadoop"
  },
  "hierarchy management": {
   "motivo": "Sem menção a gestão de hierarquias",
@@ -887,6 +912,11 @@
   "motivo": "sem evidência da plataforma Informatica MDM",
   "nivel": "nao",
   "nome": "Informatica MDM"
+ },
+ "information steward": {
+  "motivo": "ferramenta específica não mencionada",
+  "nivel": "nao",
+  "nome": "Information Steward"
  },
  "infrastructure as code": {
   "motivo": "sem evidência de IaC no currículo",
@@ -1178,6 +1208,11 @@
   "nivel": "parcial",
   "nome": "Pandas"
  },
+ "patient matching": {
+  "motivo": "integra registros de saúde pública com matching",
+  "nivel": "tem",
+  "nome": "Patient matching"
+ },
  "pgvector": {
   "motivo": "sem evidência de uso específico",
   "nivel": "nao",
@@ -1227,6 +1262,11 @@
   "motivo": "automatiza pipelines de resolução de entidades",
   "nivel": "tem",
   "nome": "process automation"
+ },
+ "processamento distribuído": {
+  "motivo": "usa Spark em escala de bilhões registros",
+  "nivel": "tem",
+  "nome": "Processamento distribuído"
  },
  "programação orientada a objetos": {
   "motivo": "Python implica OOP, sem confirmação explícita",
@@ -1348,6 +1388,11 @@
   "nivel": "nao",
   "nome": "retrieval-augmented generation"
  },
+ "ruby": {
+  "motivo": "sem evidência de uso no currículo",
+  "nivel": "nao",
+  "nome": "Ruby"
+ },
  "s3": {
   "motivo": "sem evidência de uso AWS S3",
   "nivel": "nao",
@@ -1447,6 +1492,11 @@
   "motivo": "Salesforce Marketing Cloud não mencionado.",
   "nivel": "nao",
   "nome": "SFMC"
+ },
+ "shacl": {
+  "motivo": "sem evidência de uso de RDF/SHACL",
+  "nivel": "nao",
+  "nome": "SHACL"
  },
  "shadcn/ui": {
   "motivo": "UI library não mencionada.",
