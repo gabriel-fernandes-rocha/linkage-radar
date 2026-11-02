@@ -1,5 +1,53 @@
 [
  {
+  "data": "2026-11-02",
+  "habilidade": "GCP",
+  "pct_vagas": 4,
+  "nivel_atual": "nao",
+  "o_que_e": "GCP (Google Cloud Platform) é a plataforma de nuvem do Google, com serviços de armazenamento (GCS), processamento distribuído (Dataproc, Dataflow), data warehouse (BigQuery) e orquestração (Composer). Para quem já usa Spark, SQL e pipelines de dados, é essencialmente aprender onde e como rodar essas mesmas cargas na infraestrutura do Google, com algumas APIs e serviços gerenciados próprios.",
+  "por_que_pedem": "Vagas de entity resolution e MDM frequentemente lidam com volumes enormes de dados que precisam de infraestrutura escalável e gerenciada; muitas empresas (como as que usam Quantexa ou arquiteturas de AI pipelines) rodam seus pipelines de matching e scoring em nuvem, e GCP é comum em empresas que usam BigQuery para análises massivas ou Vertex AI para componentes de ML. Pedir GCP é também um proxy para 'sabe operar em ambiente cloud', não necessariamente profundidade total na plataforma.",
+  "ponte_com_o_que_voce_sabe": "Seu domínio de Spark se transfere quase diretamente para Dataproc (Spark gerenciado no GCP) e para a lógica de particionamento/otimização que você já aplica em pipelines de bilhões de registros. Seu SQL avançado converte rápido para BigQuery (sintaxe muito similar, com algumas funções próprias). Sua experiência com Elasticsearch ajuda a entender conceitos de busca e indexação que aparecem em serviços como Vertex AI Search. O maior ganho de tempo é que você não precisa aprender 'dados distribuídos' do zero, só a casca de APIs e configuração do Google.",
+  "minimo_para_ficar_apto": [
+   "Criar e navegar um projeto no console do GCP (IAM, billing, projetos)",
+   "Rodar uma query no BigQuery e entender particionamento/clustering de tabelas",
+   "Subir um job Spark no Dataproc (cluster efêmero) lendo/escrevendo no GCS",
+   "Entender diferença entre Dataflow (Apache Beam) e Dataproc (Spark) e quando usar cada um",
+   "Noção básica de Cloud Storage (buckets, classes de armazenamento) e IAM (roles, service accounts)",
+   "Conhecer superficialmente Vertex AI para contextualizar perguntas sobre ML em produção"
+  ],
+  "plano_rapido": [
+   "2h: criar conta GCP free tier e explorar console (projetos, billing, IAM)",
+   "3h: fazer tutorial oficial de BigQuery, rodar queries em dataset público",
+   "4h: subir cluster Dataproc, rodar um job PySpark simples lendo CSV do GCS e escrevendo no BigQuery",
+   "2h: ler overview de Dataflow e Composer (Airflow gerenciado) para saber posicionar na conversa",
+   "2h: revisar conceitos de IAM, service accounts e segurança básica",
+   "1h: assistir um vídeo overview de Vertex AI para falar com segurança em entrevista"
+  ],
+  "mini_projeto": "Pegue um subconjunto sintético do seu pipeline de record linkage (ex: dataset público de nomes/endereços) e recrie uma versão mínima no GCP: carregue os dados no GCS, rode blocking e scoring com PySpark no Dataproc, grave os resultados no BigQuery, e documente no GitHub com um README explicando a arquitetura e comparando com sua stack on-premise atual.",
+  "como_colocar_no_curriculo": "Pipeline de entity resolution com Spark migrado para prova de conceito em GCP (Dataproc, GCS, BigQuery), aplicando normalização, blocking e scoring em ambiente cloud gerenciado.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre Dataproc e Dataflow, e quando você usaria cada um?",
+    "resposta": "Dataproc é Spark/Hadoop gerenciado, ideal quando já se tem código Spark (como o meu) e se quer controle sobre o cluster. Dataflow é baseado em Apache Beam, mais indicado para pipelines de streaming/batch unificados com autoscaling totalmente gerenciado sem precisar administrar cluster. Como já tenho pipelines Spark prontos, Dataproc é o caminho mais natural para reaproveitar esse código."
+   },
+   {
+    "pergunta": "Como você garantiria performance de uma query no BigQuery sobre bilhões de registros?",
+    "resposta": "Usando particionamento por data ou chave relevante, clustering nas colunas mais filtradas/agrupadas, evitando SELECT * e materializando resultados intermediários em tabelas temporárias, aproveitando a mesma lógica de otimização que já aplico em Spark com particionamento e broadcast joins."
+   },
+   {
+    "pergunta": "Como você estruturaria permissões para um pipeline de dados sensíveis de saúde no GCP?",
+    "resposta": "Usaria service accounts com princípio de menor privilégio, papéis IAM específicos por serviço (leitura no GCS, execução no Dataproc, escrita no BigQuery), criptografia em repouso e trânsito, e VPC Service Controls para isolar o perímetro de dados sensíveis, alinhado com os princípios de governança que já aplico em dados de saúde pública."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Google Cloud Documentation (cloud.google.com/docs)",
+   "Google Cloud Skill Boost (cursos gratuitos oficiais)",
+   "BigQuery Documentation",
+   "Dataproc Documentation",
+   "Coursera: Google Cloud Fundamentals: Core Infrastructure"
+  ]
+ },
+ {
   "data": "2026-11-01",
   "habilidade": "graph databases",
   "pct_vagas": 4,

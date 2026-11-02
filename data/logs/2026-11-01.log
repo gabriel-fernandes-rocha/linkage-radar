@@ -8,3 +8,84 @@ INFO mensagem 2 parte 2/3 enviada
 INFO mensagem 2 parte 3/3 enviada
 INFO envio concluído
 
+===== coleta 2026-11-01 23:42 =====
+INFO serpapi: 193 restantes no mês; orçamento de hoje = 6 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 180
+INFO jobs/greenhouse: 1434
+INFO jobs/lever: 301
+INFO jobs/ashby: 39
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'entity matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'data matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 190
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 55
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 182
+INFO jobs/social_linkedin/ddg: 0 aceitos de 1
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/6)
+INFO jobs/social_linkedin/google: 0 aceitos de 0
+INFO jobs/social_posts: 0
+INFO linkedin_guest: 43 vagas, 25 descrições abertas, 40 consultas no total
+INFO jobs/linkedin_guest: 43
+INFO judge: tokens in=1265 out=177
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO vagas: {'brutos': 2903, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 6
+INFO papers/openalex: 175
+INFO papers: {'brutos': 181, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 11 aceitos de 11
+INFO linkedin: 11 candidatos
+INFO judge: tokens in=1555 out=610
+INFO requisitos: tokens in=2602 out=977
+INFO linkedin: {'brutos': 11, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: 83 abertas (4 novas)
+INFO mercado: 130 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2226 out=1038
+INFO judge: tokens in=1132 out=132
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/6)
+INFO network: 64 pessoas (3 novas), 28 empresas (0 novas)
+INFO carreira: tokens in=1521 out=1966
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 159
+INFO brasil/gupy: 377
+INFO google_jobs 'golden record': 0 vagas (Google hasn't returned any results for this query.)
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 16 vagas, 16 descrições abertas, 74 consultas no total
+INFO brasil/linkedin_guest_br: 16
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 1132
+INFO brasil/lever: 193
+INFO brasil/ashby: 110
+INFO brasil: 4894 brutas, 0 candidatas para o juiz
+INFO open_jobs: 28 abertas (0 novas)
+INFO mercado: 45 vagas no nicho, 80 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO network: 35 pessoas (0 novas), 36 empresas (0 novas)
+INFO brasil: {'novas': 0, 'abertas': 28, 'arquivadas': 45, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-02.json
+

@@ -1,0 +1,270 @@
+{
+  "data": "2026-11-02",
+  "gerado_em": "2026-11-01T23:29-03:00",
+  "llm": true,
+  "serpapi_orcamento": 6,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Braze Architect at Smart IT Frame LLC — Canada | LinkedIn Jobs",
+      "url": "https://ca.linkedin.com/jobs/view/braze-architect-at-smart-it-frame-llc-4484124335",
+      "texto": "Design identity resolution and unified customer profile strategy, including external ID management, anonymous-to-known merges, and alias handling. Architect warehouse-native activation using Snowflake with Hightouch or Census, and Braze Cloud Data Ingestion and Snowflake Data Sharing.",
+      "data": "Oct 28, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Design de identity resolution strategy, unified customer profiles, anonymous-to-known merges e alias handling são atividades diretas de record linkage e MDM.",
+      "resumo": "Vaga de Braze Architect focada em arquitetar strategy de identity resolution, unified profiles e alias handling com ativação em Snowflake e Braze.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Braze",
+          "Snowflake",
+          "Hightouch",
+          "Census"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "Canada"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.01,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 45,
+        "local": 8,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível staff/principal",
+        "local_txt": "em Canada, sem patrocínio de visto",
+        "faltam": [
+          "Braze",
+          "Snowflake",
+          "Hightouch",
+          "Census"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data 360 - Lead/ Principal Forward Deployed Engineer",
+      "url": "https://ae.linkedin.com/jobs/view/data-360-lead-principal-forward-deployed-engineer-at-fde-times-4479436834",
+      "texto": "Engineer the data layer. Build ingestion, harmonization, and identity resolution across batch and streaming sources. Materialize views of data optimized for specific application, analytical, and agentic workloads, tuning latency and cost tradeoffs to meet use-case requirements.",
+      "data": "Oct 21, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Build identity resolution across batch e streaming, harmonização e matching de dados são centrais ao record linkage e entity resolution.",
+      "resumo": "Vaga de Forward Deployed Engineer focada em engenharia da camada de dados com identity resolution, ingestion e harmonização em batch e streaming.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.15,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 45,
+        "local": 60,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "nível staff/principal",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Dynamics 365 Customer Insights - Data Consultant - LinkedIn",
+      "url": "https://au.linkedin.com/jobs/view/dynamics-365-customer-insights-%E2%80%93-data-consultant-at-dynamo-recruitment-4483832761",
+      "texto": "Customer Identity Resolution: Configure matching and reconciliation rules to resolve customer identities, consolidate duplicate records and create unified customer profiles. Data Modelling: Design data models, relationships and mappings that accurately represent customer information across source systems.",
+      "data": "Oct 28, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Identity resolution, matching rules, duplicate record consolidation e unified profiles são centrais ao record linkage e MDM.",
+      "resumo": "Vaga de Data Consultant em Dynamics 365 Customer Insights focada em configurar regras de matching, reconciliação e resolução de identidades de clientes com consolidação de duplicatas.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Dynamics 365 Customer Insights"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.14,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Dynamics 365 Customer Insights"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Salesforce Solution Architect at Customertimes - LinkedIn Jobs",
+      "url": "https://in.linkedin.com/jobs/view/salesforce-solution-architect-at-customertimes-4485115002",
+      "texto": "Experience with Salesforce Data Cloud, including identity resolution, segmentation, activation, and data model design; MuleSoft development experience or MuleSoft Certified Developer - Level 1 (Mule 4) certification;",
+      "data": "Oct 30, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Identity resolution é responsabilidade explícita em Salesforce Data Cloud, core de MDM e customer 360.",
+      "resumo": "Vaga de Solution Architect Salesforce que exige experiência com identity resolution, segmentação e design de data models em Salesforce Data Cloud.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [
+          "Salesforce Data Cloud",
+          "MuleSoft"
+        ],
+        "desejaveis": [
+          "MuleSoft Certified Developer"
+        ]
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.07,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 45,
+        "local": 60,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível staff/principal",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Salesforce Data Cloud",
+          "MuleSoft"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 83,
+  "vagas_arquivadas_total": 131,
+  "rede": {
+    "pessoas_novas": 3,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "GCP",
+  "brasil": {
+    "novas": 0,
+    "abertas": 28,
+    "arquivadas": 45,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 32,
+    "semana": 5,
+    "tema": "Qualidade de dados para matching",
+    "tipo": "conceito",
+    "titulo": "Erros tipográficos, fonéticos, de OCR e de transcrição",
+    "modulo": "Semana 5: Qualidade de dados para matching",
+    "versao": 2,
+    "objetivo": "Classificar um erro observado entre duas strings de nome como tipográfico, fonético, de OCR ou de transcrição, e escolher a técnica de comparação mais adequada para cada caso.",
+    "conceito": "Christen (2012, seç. 3.3, p. 43-45) mostra que nem todo erro em nomes tem a mesma origem, e que confundir essas origens leva a escolhas erradas de função de comparação. O estudo de Damerau, citado por Christen, encontrou que mais de 80% dos erros em palavras gerais são de um único caractere: inserção, deleção, substituição ou transposição adjacente. Esses são erros tipográficos clássicos, como 'Meier' vs 'Meyer', que não alteram a estrutura fonética do nome.\n\nJá os erros fonéticos mudam a estrutura sonora de forma mais drástica, como 'Sinclair' para 'St. Clair', geralmente originados por quem ouve mal durante a coleta oral do dado. Christen também cita um estudo em bases hospitalares (p. 44) que encontrou distribuição bem diferente da de Damerau: 36% dos erros eram inserção de uma palavra extra no nome (título, inicial), 14% eram erros de grafia ou uso de apelidos, 12% eram diferenças de pontuação (como 'O'Brian' vs 'OBrian'), e 8% eram troca de sobrenome por casamento. Nessa base, erros de um único caractere caíram para 39%, bem abaixo dos 80% de Damerau. Isso prova que a distribuição de erros depende fortemente do domínio e da fonte dos dados.\n\nErros de OCR têm padrão próprio: confusão entre caracteres visualmente parecidos ('rn' lido como 'm', '0' como 'O', '1' como 'l' ou 'I', 'c' como 'e'), geralmente formando blocos de caracteres errados em vez de edições isoladas. Erros de transcrição surgem quando um humano copia um dado falado ou manuscrito, misturando elementos tipográficos e fonéticos, e são sensíveis ao contexto cultural de quem digitou.",
+    "como_funciona": "1. Observe o par de strings divergente e pergunte: a diferença muda o som da palavra? Se não, é candidato a erro tipográfico.\n2. Se muda o som mas mantém uma leitura plausível em voz alta, é candidato a erro fonético (ex.: Sinclair -> St. Clair).\n3. Se os caracteres trocados são visualmente similares em fontes impressas (rn/m, 0/O, 1/l/I, 5/S), suspeite de erro de OCR.\n4. Se há inserção de palavras extras (título, inicial, segundo nome) ou mudança de pontuação, suspeite de erro de transcrição humana ou mudança de estado civil.\n5. Escolha a função de comparação de acordo: edit distance (Levenshtein/Damerau-Levenshtein) para tipográfico; codificação fonética (Soundex, NYSIIS, Double Metaphone) para fonético; dicionário de confusão de caracteres para OCR; comparação tokenizada e por campo para transcrição estrutural.",
+    "exemplo": "Quatro pares observados em uma base de cadastro:\n1. 'Meyer' vs 'Meier': troca de posição de e/i, distância de edição = 2 substituições, mas som quase idêntico. Classificação: tipográfico.\n2. 'Catherine' vs 'Katherine': C/K soam igual no início, distância de edição = 1 substituição, som idêntico. Classificação: tipográfico com leve componente fonético (ainda assim tratável por edit distance).\n3. 'Sinclair' vs 'StClair': estrutura de sílabas mudou (Sin-clair para St-Clair), distância de edição alta (4 operações), mas pronúncia aproximada preservada. Classificação: fonético.\n4. 'I1end0za' vs 'Mendoza' (nome digitalizado de documento escaneado): '1' no lugar de 'l', '0' no lugar de 'o', 'I' no lugar de 'M' quebrado em duas letras. Distância de edição alta e os caracteres trocados são visualmente parecidos em fonte serifada. Classificação: erro de OCR.",
+    "na_pratica": "Em pipelines reais, trate cada classe com uma etapa separada de pré-processamento. Para blocos de dados escaneados, aplique um dicionário de substituição de confusão OCR antes do matching. Para nomes digitados, use distância de edição direta:\nfrom rapidfuzz.distance import Levenshtein\nd = Levenshtein.distance('Meyer', 'Meier')\nPara suspeita de erro fonético, combine uma codificação fonética com comparação de string, por exemplo usando Splink com duas comparações paralelas (uma ExactMatch sobre o código fonético pré-calculado e outra JaroWinklerAtThresholds sobre a string bruta), deixando o EM decidir o peso de cada evidência.",
+    "armadilha": "Aplicar só edit distance (ou só comparação fonética) em toda a base assumindo que todos os erros têm a mesma origem; como Christen mostra, a distribuição de tipos de erro muda radicalmente entre domínios (texto geral vs nomes hospitalares), então o pré-processamento deve ser calibrado por amostra real do seu próprio dado, não copiado de outro estudo.",
+    "desafio": "Você recebe quatro pares de nomes extraídos de uma base de óbitos digitalizada por OCR e misturada com cadastros digitados manualmente: (a) 'Silva' / 'Sliva', (b) 'Wright' / 'Rite', (c) 'Johnson' / 'J0hnson', (d) 'Dr. Ana Souza' / 'Ana Souza'. Classifique cada par como tipográfico, fonético, de OCR ou de transcrição, e justifique com base na natureza da diferença.",
+    "gabarito": "(a) 'Silva'/'Sliva': transposição de duas letras adjacentes (i e l), som diferente mas edição mínima: erro tipográfico clássico (transposição, categoria de Damerau). (b) 'Wright'/'Rite': grafia completamente distinta mas pronúncia quase idêntica: erro fonético. (c) 'Johnson'/'J0hnson': o caractere '0' substitui 'o', visualmente parecido em muitas fontes digitalizadas: erro de OCR. (d) 'Dr. Ana Souza'/'Ana Souza': inserção de título no início, sem mudança na grafia do nome em si: erro de transcrição (inserção de palavra extra, o tipo mais comum encontrado no estudo hospitalar citado por Christen, 36% dos casos).",
+    "fontes": [
+      "Christen (2012), Data Matching, seç. 3.2-3.3, p. 42-45",
+      "Christen (2006), A comparison of personal name matching: techniques and practical issues, IEEE ICDM Workshops"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        39,
+        51
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2903,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 181,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 11,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

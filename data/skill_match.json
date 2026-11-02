@@ -223,6 +223,11 @@
   "nivel": "nao",
   "nome": "CDR"
  },
+ "census": {
+  "motivo": "Ferramenta específica nunca usada, sem relação próxima",
+  "nivel": "nao",
+  "nome": "Census"
+ },
  "claude": {
   "motivo": "sem menção a LLMs/Claude",
   "nivel": "nao",
@@ -588,6 +593,11 @@
   "nivel": "tem",
   "nome": "duplicate detection"
  },
+ "dynamics 365 customer insights": {
+  "motivo": "Plataforma CRM específica, sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Dynamics 365 Customer Insights"
+ },
  "dynamodb": {
   "motivo": "sem evidência de NoSQL além de Elasticsearch",
   "nivel": "nao",
@@ -852,6 +862,11 @@
   "motivo": "MDM/golden record implica relações hierárquicas",
   "nivel": "parcial",
   "nome": "Hierarquias Parent-Child"
+ },
+ "hightouch": {
+  "motivo": "Ferramenta de reverse ETL específica não mencionada",
+  "nivel": "nao",
+  "nome": "Hightouch"
  },
  "hl7": {
   "motivo": "sem evidência de padrão de interoperabilidade em saúde",
@@ -1138,6 +1153,16 @@
   "nivel": "nao",
   "nome": "mParticle"
  },
+ "mulesoft": {
+  "motivo": "Plataforma de integração específica, sem evidência",
+  "nivel": "nao",
+  "nome": "MuleSoft"
+ },
+ "mulesoft certified developer": {
+  "motivo": "Certificação específica não possuída",
+  "nivel": "nao",
+  "nome": "MuleSoft Certified Developer"
+ },
  "neo4j": {
   "motivo": "sem evidência de uso de grafos",
   "nivel": "nao",
@@ -1407,6 +1432,11 @@
   "motivo": "não há experiência com Salesforce",
   "nivel": "nao",
   "nome": "Salesforce"
+ },
+ "salesforce data cloud": {
+  "motivo": "Plataforma específica, sem experiência declarada",
+  "nivel": "nao",
+  "nome": "Salesforce Data Cloud"
  },
  "sap": {
   "motivo": "nenhuma experiência com SAP indicada",
