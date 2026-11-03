@@ -1,0 +1,84 @@
+===== coleta 2026-11-03 01:10 =====
+INFO serpapi: 187 restantes no mês; orçamento de hoje = 6 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 180
+INFO jobs/greenhouse: 1423
+INFO jobs/lever: 305
+INFO jobs/ashby: 38
+INFO jobs/hn_who_is_hiring: 0
+INFO google_jobs 'data matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 10
+INFO jobs/gupy: 190
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 58
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 189
+INFO jobs/social_linkedin/ddg: 3 aceitos de 4
+INFO jobs/social_posts: 3
+INFO linkedin_guest: 35 vagas, 25 descrições abertas, 33 consultas no total
+INFO jobs/linkedin_guest: 35
+INFO judge: tokens in=3342 out=1087
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO judge: tokens in=1089 out=152
+INFO requisitos: tokens in=10484 out=2483
+INFO requisitos: tokens in=8406 out=707
+INFO vagas: {'brutos': 2909, 'pos_palavras_chave': 9, 'aprovados': 8}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 3
+INFO papers/openalex: 175
+INFO judge: tokens in=1261 out=148
+INFO papers: {'brutos': 178, 'pos_palavras_chave': 1, 'aprovados': 1}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1555 out=667
+INFO requisitos: tokens in=2304 out=339
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: fechou Salesforce Solution Architect at Customertimes - LinkedIn Jobs
+INFO open_jobs: fechou Database Analyst at SoTalent — United States | LinkedIn Jobs
+INFO open_jobs: 91 abertas (10 novas)
+INFO mercado: 140 vagas no nicho, 80 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2081 out=904
+INFO judge: tokens in=1245 out=327
+INFO network: 67 pessoas (3 novas), 31 empresas (3 novas)
+INFO carreira: tokens in=1443 out=2033
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 159
+INFO brasil/gupy: 376
+INFO google_jobs 'matching probabilístico': 0 vagas (Google hasn't returned any results for this query.)
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 31 vagas, 31 descrições abertas, 78 consultas no total
+INFO brasil/linkedin_guest_br: 31
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 1133
+INFO brasil/lever: 192
+INFO brasil/ashby: 109
+INFO brasil: 4913 brutas, 0 candidatas para o juiz
+INFO open_jobs: fechou Engenheiro de Integração de Dados - Trabalho Remoto
+INFO open_jobs: fechou Engenheiro de Integração de Dados - Trabalho Remoto
+INFO open_jobs: 26 abertas (0 novas)
+INFO mercado: 45 vagas no nicho, 80 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 35 pessoas (0 novas), 36 empresas (0 novas)
+INFO brasil: {'novas': 0, 'abertas': 26, 'arquivadas': 45, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-03.json
+

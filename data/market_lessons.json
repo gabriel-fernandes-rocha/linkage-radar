@@ -1,5 +1,54 @@
 [
  {
+  "data": "2026-11-03",
+  "habilidade": "Data Governance",
+  "pct_vagas": 4,
+  "nivel_atual": "parcial",
+  "o_que_e": "Data Governance é o conjunto de políticas, papéis, processos e ferramentas que garantem que dados sejam confiáveis, rastreáveis, seguros e usados de forma consistente em uma organização. Inclui definição de ownership de dados, linhagem, catálogo de dados, qualidade, metadados, políticas de acesso e conformidade com regulações como LGPD e GDPR. Em MDM e entity resolution, governance define quem é o dono do 'golden record', como ele é mantido e quem pode alterá-lo.",
+  "por_que_pedem": "Vagas de ER/MDM/linkage lidam com dados sensíveis e cadastros mestres que alimentam múltiplos sistemas, então erros se propagam. Empresas querem engenheiros que entendam não só o matching técnico, mas também como garantir qualidade, auditabilidade e conformidade regulatória dos dados resultantes, especialmente em contextos como saúde, telecom e ads (dados pessoais).",
+  "ponte_com_o_que_voce_sabe": "Você já faz, na prática, boa parte de governance sem chamar assim: QA de matching, normalização consistente, rastreabilidade de decisões de linkage, trabalho com dados sensíveis de saúde (que exige cuidado tipo LGPD/HIPAA). Falta só formalizar isso no vocabulário de governance: data ownership, data lineage, data quality framework, catálogo de dados, políticas de acesso. Seu pipeline de ER é essencialmente um componente de um programa de MDM/governance maior.",
+  "minimo_para_ficar_apto": [
+   "Saber explicar os pilares de data governance: qualidade, metadados, linhagem, segurança/privacidade, ownership e compliance",
+   "Conhecer conceitos de MDM: golden record, survivorship rules, master data vs transactional data",
+   "Entender LGPD/GDPR na prática: dados pessoais, anonimização, consentimento, direito ao esquecimento",
+   "Saber o que é um Data Catalog e lineage tooling (ex: conceito geral, não precisa dominar ferramenta específica)",
+   "Conseguir descrever como seu pipeline de ER se encaixa em um fluxo de governance (quem aprova mudanças no golden record, auditoria de decisões)"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de Data Governance Framework (DAMA-DMBOK resumo) e anotar os pilares",
+   "2h: estudar conceitos de MDM (golden record, survivorship, match/merge) e relacionar com seu trabalho em Splink",
+   "2h: revisar LGPD (pontos principais: bases legais, dados sensíveis, anonimização vs pseudonimização) aplicado a dados de saúde",
+   "1h: ler sobre Data Catalog e lineage (conceito geral, exemplos: Collibra, Informatica, Alation, Amundsen)",
+   "2h: documentar por escrito como seu pipeline atual implementa elementos de governance (QA, auditoria, versionamento de regras de matching)"
+  ],
+  "mini_projeto": "Documentar um 'Data Governance one-pager' do seu pipeline de entity resolution atual: defina quem é o data owner do golden record, quais regras de survivorship são usadas, como é feita auditoria/rastreabilidade das decisões de matching, quais campos são sensíveis (LGPD) e como são tratados, e qual seria o fluxo de aprovação para mudar uma regra de matching em produção. Isso vira artefato de portfólio e resposta pronta para entrevista.",
+  "como_colocar_no_curriculo": "Aplicação prática de princípios de Data Governance (data quality, lineage, ownership e conformidade LGPD) em pipelines de entity resolution e MDM processando bilhões de registros sensíveis de saúde e registro civil.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é um golden record e como garantir sua qualidade ao longo do tempo?",
+    "resposta": "É o registro mestre consolidado que representa a versão mais confiável de uma entidade após matching e merge de múltiplas fontes. Qualidade se garante com survivorship rules claras, auditoria de mudanças, QA contínuo (como faço com métricas de precision/recall no linkage) e processo de governança definindo quem pode alterar o registro e como reverter erros."
+   },
+   {
+    "pergunta": "Como você lida com dados pessoais sensíveis em pipelines de MDM considerando LGPD?",
+    "resposta": "Aplico minimização de dados, pseudonimização/anonimização quando possível, controle de acesso por papel, logging de quem acessa dados sensíveis, e documento a base legal de tratamento. Em saúde isso é crítico, então separo dados identificáveis dos dados de análise sempre que possível."
+   },
+   {
+    "pergunta": "Qual a diferença entre data governance e data quality?",
+    "resposta": "Data quality é uma dimensão operacional (completude, acurácia, consistência dos dados), enquanto data governance é o framework mais amplo de políticas, papéis e processos que garante que a qualidade, segurança e uso dos dados sejam geridos de forma consistente na organização, incluindo quem é responsável por cada dado."
+   },
+   {
+    "pergunta": "Como você garantiria rastreabilidade (lineage) nas decisões de matching do seu pipeline?",
+    "resposta": "Registrando metadados de cada decisão: quais regras/scores geraram o match, versão do modelo usado, timestamp, e mantendo histórico de mudanças no golden record para permitir auditoria e reprocessamento se uma regra for corrigida."
+   }
+  ],
+  "fontes_para_estudar": [
+   "DAMA-DMBOK (Data Management Body of Knowledge)",
+   "Documentação oficial da LGPD (gov.br/lgpd)",
+   "Documentação da Informatica sobre MDM e IDMC",
+   "Curso Data Governance Fundamentals (Coursera/edX, buscar por DAMA ou universidades parceiras)"
+  ]
+ },
+ {
   "data": "2026-11-02",
   "habilidade": "GCP",
   "pct_vagas": 4,

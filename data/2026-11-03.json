@@ -1,0 +1,719 @@
+{
+  "data": "2026-11-03",
+  "gerado_em": "2026-11-03T00:55-03:00",
+  "llm": true,
+  "serpapi_orcamento": 6,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Technical Lead Master Data Management",
+      "url": "https://careers.bloodcancerunited.org/us/en/job/1378/Senior-Technical-Lead-Master-Data-Management",
+      "empresa": "The Leukemia & Lymphoma Society",
+      "local": "United States",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 15,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Technical Lead em MDM com foco explícito em matching rules, duplicate resolution e single trusted version of records (entity resolution core).",
+      "resumo": "The Leukemia & Lymphoma Society busca Senior Technical Lead em Master Data Management para configurar e operar programa de dados mestres, com responsabilidade de construir matching rules, resolver duplicatas e definir requisitos de dados de referência.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "MDM Platform (Informatica MDM/Semarchy/Stibo STEP)",
+          "Entity Resolution",
+          "CRM/ERP"
+        ],
+        "desejaveis": [
+          "Python",
+          "Power Query",
+          "Salesforce",
+          "Raiser's Edge NXT",
+          "Microsoft Dynamics 365",
+          "Snowflake",
+          "BigQuery",
+          "DAMA-DMBOK"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 7,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 42,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "CRM/ERP"
+        ],
+        "parciais": [
+          "SQL",
+          "MDM Platform (Informatica MDM/Semarchy/Stibo STEP)"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Snowflake Engineer - MDM Architecture",
+      "url": "https://bebee.com/us/jobs/senior-snowflake-engineer-mdm-architecture-syncredible-solutions-baltimore--lifeworq-de925111-d968-446d-a50d-bae5a0cbfb2d",
+      "empresa": "Syncredible Solutions",
+      "local": "Baltimore, MD",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 15,
+      "juiz": "anthropic",
+      "motivo": "Vaga Senior Snowflake Engineer com foco explícito em entity resolution, matching, survivorship, golden records e MDM architecture em escala empresarial.",
+      "resumo": "Syncredible Solutions procura Senior Snowflake Engineer com expertise em MDM architecture, entity resolution, matching e golden records para desenhar e desenvolver pipelines de dados em escala empresarial usando Snowflake e AWS.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "Snowflake",
+          "AWS",
+          "dbt",
+          "SQL",
+          "Spark",
+          "Git",
+          "CI/CD",
+          "Master Data Management",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Baltimore, MD"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 33,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Snowflake",
+          "AWS",
+          "dbt",
+          "CI/CD",
+          "Master Data Management"
+        ],
+        "parciais": [
+          "SQL",
+          "Git"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Informatica IDMC MDM Engineer (Configuration Specialist) - Product",
+      "url": "https://www.monster.com/job-openings/informatica-idmc-mdm-engineer-configuration-specialist-product-austin-tx--9931b705-490e-4c6d-8e09-037949624f66",
+      "empresa": "Perficient Inc",
+      "local": "Austin, TX",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 14,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Informatica IDMC MDM Configuration Specialist focada em match and merge logic, survivorship rules e golden record creation.",
+      "resumo": "Perficient Inc procura especialista em configuração de Informatica IDMC MDM para implementar soluções de Master Data Management com foco em match and merge logic, survivorship rules e criação de golden records.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "Informatica MDM (IDMC)",
+          "SQL",
+          "Entity Resolution",
+          "Data Governance"
+        ],
+        "desejaveis": [
+          "Informatica CDGC",
+          "CDI",
+          "IICS",
+          "IAC",
+          "Customer 360",
+          "Product 360",
+          "Supplier 360",
+          "Informatica Certifications"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Chicago, IL",
+          "Dallas, TX",
+          "Houston, TX",
+          "Austin, TX",
+          "Charlotte, NC",
+          "Atlanta, GA",
+          "Denver, CO",
+          "Detroit, MI"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 7,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 41,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Informatica MDM (IDMC)"
+        ],
+        "parciais": [
+          "SQL",
+          "Data Governance"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "IBM Master Data Management (MDM) & Integration Developer",
+      "url": "https://www.linkedin.com/jobs/view/ibm-master-data-management-mdm-integration-developer-at-predica-inc-4486430969",
+      "empresa": "Predica Inc",
+      "local": "United States",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 9,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior IBM MDM Developer focada em Master Person Index (MPI) e data stewardship, com aplicação direta em ambiente de saúde.",
+      "resumo": "Predica Inc busca Senior IBM MDM Developer para Michigan MDHHS com expertise em Master Person Index, IBM InfoSphere MDM e integração de dados de saúde em produção.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "IBM InfoSphere MDM",
+          "Java",
+          "J2EE",
+          "JSP",
+          "REST",
+          "SOAP",
+          "Kafka",
+          "WildFly",
+          "Linux",
+          "SQL",
+          "Oracle",
+          "Microsoft SQL Server",
+          "Shell Scripting",
+          "PowerShell",
+          "CRON",
+          "Git",
+          "GitHub",
+          "Azure DevOps",
+          "CI/CD",
+          "Entity Resolution"
+        ],
+        "desejaveis": [
+          "OpenShift",
+          "Kubernetes",
+          "AWS",
+          "Azure",
+          "ELK Stack",
+          "Flowable"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Lansing, MI"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.01,
+      "compat_detalhe": {
+        "habilidades": 23,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+        "local_txt": "hibrido em United States, sem patrocínio de visto",
+        "faltam": [
+          "IBM InfoSphere MDM",
+          "Java",
+          "J2EE",
+          "JSP",
+          "SOAP",
+          "Kafka",
+          "WildFly",
+          "PowerShell"
+        ],
+        "parciais": [
+          "REST",
+          "Linux",
+          "SQL",
+          "Oracle",
+          "Microsoft SQL Server",
+          "Shell Scripting",
+          "CRON",
+          "Git"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "REMOTE Lead Systems Analyst with MDM across investment-data and reference-data environments",
+      "url": "https://www.linkedin.com/jobs/view/remote-lead-systems-analyst-with-mdm-across-investment-data-and-reference-data-environments-at-yoh-a-day-zimmermann-company-4485351303",
+      "empresa": "Yoh, A Day & Zimmermann Company",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga Lead Systems Analyst em MDM com requisitos de design de solução, data quality, lineage e stewardship em plataformas de gestão de dados mestres (investment data e reference data).",
+      "resumo": "Yoh busca Lead Systems Analyst com experiência em MDM (Informatica, Salesforce ou EDM) e gestão de investment-data e reference-data, com foco em data quality, lineage e governance.",
+      "confianca": 0.89,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Informatica MDM"
+        ],
+        "desejaveis": [
+          "Salesforce",
+          "Markit EDM"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 19,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Informatica MDM"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Manager, Data Engineering (Master Data Management) MDM",
+      "url": "https://jobs.equest.com/jobs/NC/triwest-healthcare-alliance/manager-data-engineering-master-data-management-mdm-494055145.html",
+      "empresa": "TriWest Healthcare Alliance",
+      "local": "Charlotte, NC",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Manager Data Engineering em MDM em ambiente de saúde (TriWest Healthcare), foco em desenvolvimento e manutenção de sistemas de Master Data Management.",
+      "resumo": "TriWest Healthcare Alliance busca Manager em Data Engineering (Master Data Management) para liderar equipe no desenvolvimento e suporte de aplicações MDM em ambiente de saúde.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL Server",
+          "SQL"
+        ],
+        "desejaveis": [
+          "Profisee",
+          "Azure",
+          "Databricks",
+          "Azure Data Factory"
+        ]
+      },
+      "senioridade": "gerencia",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 38,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [
+          "SQL Server",
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Quality Analytics Engineer",
+      "url": "https://www.gravityitresources.com/job/9870-data-quality-analytics-engineer-miami-florida/",
+      "empresa": "Gravity IT Resources",
+      "local": "Miami, FL",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Data Quality Analytics Engineer que situa MDM como responsabilidade central, design e operação de frameworks de data quality e MDM em escala empresarial.",
+      "resumo": "Gravity IT Resources procura Data Quality Analytics Engineer que combine data quality, master data management, data protection e analytics, operacionalizando frameworks MDM em escala empresarial.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Python",
+          "Snowflake",
+          "AWS"
+        ],
+        "desejaveis": [
+          "Ataccama ONE",
+          "Reltio",
+          "Varonis",
+          "AWS Bedrock",
+          "S3",
+          "Glue",
+          "Lambda",
+          "Step Functions"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Miami",
+          "Irving"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "contractor_global",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.21,
+      "compat_detalhe": {
+        "habilidades": 28,
+        "senioridade": 60,
+        "local": 85,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "freelance/contractor (United States)",
+        "faltam": [
+          "Snowflake",
+          "AWS"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Technical Lead at Cloudigital — Greater London, England ... - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/technical-lead-at-cloudigital-4486130755",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga menciona explicitamente identity resolution e Data 360, que são centrais em record linkage e MDM, como responsabilidade técnica principal do cargo.",
+      "resumo": "Vaga de Technical Lead com foco em visão técnica end-to-end incluindo modelos de dados, ingestão Data 360 e identity resolution, journeys, gestão de consentimento e integrações em Data Cloud.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Data Cloud",
+          "Identity resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United Kingdom"
+        ],
+        "cidades": [
+          "London"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United Kingdom, sem patrocínio de visto",
+        "faltam": [
+          "Data Cloud"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Head of Entity Data at Intelix.AI — Greater London ... - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/head-of-entity-data-at-intelix-ai-4482961270",
+      "texto": "Head of Entity Data Entity Data Product, Credit Risk Data Entity Resolution | Master Data | Ownership Hierarchies | Knowledge Graph | Credit Risk | AI Product Manager, Entity Data - Credit Domain, Platform Products London (hybrid, 3 days) £120-150k + B&B (band to be confirmed) This is an entity data product, master data strategy, entity resolution, ownership hierarchy, graph-ready ...",
+      "data": "Oct 26, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Head of Entity Data com entity resolution, master data e ownership hierarchies como responsabilidades centrais; conhecimento graph e credit risk domain complementam o escopo.",
+      "resumo": "Vaga sênior em Londres (hybrid) focada em estratégia de master data, entity resolution e ownership hierarchies para credit risk domain.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Master Data Management",
+          "Knowledge Graph"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "gerencia",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United Kingdom"
+        ],
+        "cidades": [
+          "London"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 33,
+        "senioridade": 35,
+        "local": 8,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "hibrido em United Kingdom, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management",
+          "Knowledge Graph"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Vice President, AI Data Scientist, Private Markets",
+      "url": "https://in.linkedin.com/jobs/view/vice-president-ai-data-scientist-private-markets-at-blackrock-4478039904",
+      "texto": "Build and evolve enterprise knowledge-graph capabilities, including domain modelling, entity resolution, relationship discovery, graph quality, provenance, temporal context and integration with operational data products.",
+      "data": "Oct 10, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga VP AI Data Scientist mencionando entity resolution, relationship discovery, graph quality e provenance como responsabilidades em knowledge graph; alinhado com perfil de resolução de entidades em escala.",
+      "resumo": "Vaga de VP AI Data Scientist focada em entity resolution, relação discovery, graph quality e integração com data products em private markets.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Knowledge Graph"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.28,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Knowledge Graph"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Causal Record Linkage",
+      "url": "http://arxiv.org/abs/2611.00760v1",
+      "autores": "Kayané Robach et al.",
+      "data": "2026-10-31",
+      "fonte": "arXiv",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper central sobre record linkage e seus desafios em inferência causal, cobrindo erros de linkage, bias, e validação de métodos.",
+      "resumo": "Artigo que examina como erros em record linkage afetam suposições de inferência causal, analisando attenuation bias, sampling bias e condições para combinar linkage com causal inference de forma válida.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 91,
+  "vagas_arquivadas_total": 141,
+  "rede": {
+    "pessoas_novas": 3,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": "Data Governance",
+  "brasil": {
+    "novas": 0,
+    "abertas": 26,
+    "arquivadas": 45,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 33,
+    "semana": 5,
+    "tema": "Qualidade de dados para matching",
+    "tipo": "conceito",
+    "titulo": "Tarefas gerais de limpeza: valores ausentes, sentinelas e outliers",
+    "modulo": "Semana 5: Qualidade de dados para matching",
+    "versao": 2,
+    "objetivo": "Aplicar técnicas de detecção e tratamento de valores ausentes, códigos sentinela e outliers em bases antes do matching, evitando que esses defeitos distorçam a comparação de registros.",
+    "conceito": "Christen (2012, seç. 3.1, p. 39) descreve o fenômeno das 'input rules too restrictive or bypassed': quando um campo é obrigatório mas o dado real não está disponível, o operador do sistema insere um valor plausível porém falso. O exemplo do livro é clássico: em prontuários de pronto-socorro, pacientes inconscientes sem documentos recebem uma data de nascimento estimada, e por pressão de tempo a recepcionista frequentemente zera dia e mês, gravando '01/01/AAAA'. O resultado é uma proporção anormalmente alta de nascimentos em 1º de janeiro, um sentinela disfarçado de dado real.\n\nIsso diferencia três problemas de qualidade que precisam de tratamento distinto antes do matching. Valores ausentes verdadeiros (NULL, vazio) são relativamente fáceis de detectar. Valores sentinela são piores: parecem válidos sintaticamente (uma data bem formada, um CEP '00000-000', um telefone '00000000') mas semanticamente representam 'eu não sei'. Outliers são valores extremos ou implausíveis (idade 150 anos, data de nascimento no futuro) que podem ser erro de digitação ou sentinela mal escolhido.\n\nO risco para matching é duplo: se dois registros diferentes compartilham o mesmo valor sentinela (ambos com data '01/01/1900'), um comparador ingênuo gera similaridade alta espúria, inflando falsos positivos; se o sentinela for tratado como dado real na estimação de pesos (seção 5 do livro), ele distorce as frequências m/u usadas no modelo probabilístico de Fellegi-Sunter.",
+    "como_funciona": "1. Perfilar cada atributo (frequência de valores, min/max, distribuição) antes de qualquer matching.\n2. Detectar candidatos a sentinela: valores com frequência muito acima do esperado dado a cardinalidade do domínio (ex: '01/01/1900' aparecendo 3% das vezes quando deveria ser ~1/(dias do ano)).\n3. Detectar outliers por regras de domínio (idade negativa, data futura) ou por desvio estatístico (z-score, IQR) quando o atributo é numérico contínuo.\n4. Classificar: ausente explícito (NULL/vazio) vai para tratamento de missing; sentinela confirmado é convertido para NULL; outlier genuíno é marcado para revisão ou removido do cálculo de probabilidade.\n5. Na etapa de comparação (Fellegi-Sunter), excluir pares onde o campo é NULL/sentinela do cálculo daquele campo específico, em vez de comparar strings e gerar similaridade artificial.",
+    "exemplo": "Base de pacientes com 50.000 registros. Perfilando a coluna data_nascimento, encontramos: 01/01 em 1.800 registros (3,6%), enquanto qualquer outro dia-mês combinado aparece em média 50.000/365 = 137 registros (0,27%). A razão 3,6/0,27 ≈ 13x é um sinal forte de sentinela, condizente com o caso do livro (p. 39-40).\nAção: para esses 1.800 registros, converte-se data_nascimento para NULL (mantendo apenas o ano, se confiável) e, no linker, a comparação desse campo passa a retornar 'missing', não 'match' nem 'non-match', para esses pares.\nSe não tratado, dois pacientes distintos nascidos em datas desconhecidas e registrados como '01/01/1975' e '01/01/1975' teriam comparação de data = match exato, empurrando o score de matching para cima indevidamente.",
+    "na_pratica": "Em Splink, campos com sentinela conhecido devem ser nulificados antes do linker receber os dados, pois o ComparisonLevel de 'exact match' não distingue NULL legítimo de sentinela. Exemplo em pandas:\ndf.loc[df['dob'].astype(str).str.endswith('-01-01'), 'dob'] = None\nNo recordlinkage, o mesmo: limpar antes de chamar cmp.exact, pois o Compare não sabe que '01/01/1900' é sentinela.\nEm SQL, um perfilamento rápido: SELECT dob, COUNT(*) FROM tabela GROUP BY dob ORDER BY COUNT(*) DESC LIMIT 20, para achar picos suspeitos.",
+    "armadilha": "Tratar o sentinela como 'dado ausente óbvio' só quando ele é um valor claramente artificial (ex: '9999-99-99'); sentinelas disfarçados de data real (como '01/01/1900') passam despercebidos em validações de formato e só aparecem via análise de frequência, então sempre perfile a distribuição, não apenas o schema.",
+    "desafio": "Uma base de clientes de varejo tem 200.000 registros. Ao perfilar o campo CEP, você observa que o valor '00000-000' aparece em 9.000 registros, e o segundo CEP mais frequente aparece em 420 registros. Calcule a razão entre a frequência do CEP suspeito e a frequência média esperada se os CEPs fossem distribuídos uniformemente entre as 15.000 localidades (CEPs) distintas presentes na base, e decida se há evidência de sentinela.",
+    "gabarito": "Frequência média esperada por CEP = 200.000/15.000 ≈ 13,3 registros. O CEP '00000-000' aparece 9.000 vezes, razão = 9.000/13,3 ≈ 677x acima do esperado. Mesmo comparado ao segundo CEP mais comum (420, já 31,5x acima da média, possivelmente uma região real de alta densidade), o '00000-000' está mais de 20x além desse segundo maior valor. Conclusão: evidência fortíssima de sentinela (provavelmente usado quando o cliente não informa CEP), deve ser convertido para NULL antes do matching, e o campo CEP não deve ser comparado para os 9.000 registros afetados.",
+    "fontes": [
+      "Christen (2012), seç. 3.1, p. 39-40",
+      "Christen (2012), seç. 3.2, p. 41-43 (dates as identifying information)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        39,
+        51
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2909,
+      "pos_palavras_chave": 9,
+      "aprovados": 8
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 178,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}
