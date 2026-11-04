@@ -32,7 +32,9 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-PROFILE_DIR = Path(os.environ.get("LOCALAPPDATA", str(Path.home()))) / "linkage-radar" / "linkedin-chrome"
+# Fora do AppData de propósito: o app do Claude é empacotado e redireciona o AppData dos programas que ele abre.
+# Na pasta do usuário, o script aberto pelo Windows e o aberto pelo Claude enxergam o MESMO navegador logado.
+PROFILE_DIR = Path.home() / ".linkage-radar" / "linkedin-chrome"
 STAMP = PROFILE_DIR.parent / "ultima_varredura.txt"
 LOG = ROOT / "data" / "logs" / "linkedin_local.log"
 OUT = ROOT / "data" / "brasil" / "linkedin_local.json"
