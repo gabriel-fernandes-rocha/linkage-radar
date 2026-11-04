@@ -221,18 +221,16 @@ brasil:
     - "analytics engineer"
     - "arquiteto de dados"
     - "estatístico"
-  google_jobs:                  # Google Jobs no Brasil (SerpAPI, 2 por dia em rodízio)
-    - "resolução de identidade"
-    - "record linkage"
-    - "deduplicação de dados"
-    - "golden record"
-    - "entity resolution"
-    - "matching probabilístico"
-    - "unificação de cadastros"
-    - "dados mestres MDM matching"
+  google_jobs:                  # Google Jobs no Brasil (2 por dia em rodízio). Frases do nicho voltam vazias:
+    - "cientista de dados"      # buscamos cargos e o filtro acha o tema na descrição
+    - "engenheiro de dados"
+    - "analista de dados"
+    - "dados mestres"
+    - "qualidade de dados"
     - "integração de dados"
     - "migração de dados"
-    - "consolidação de bases de dados"
+    - "governança de dados"
+    - "entity resolution"
   google_jobs_por_dia: 2
   linkedin_termos:              # vagas e POSTS de vaga do LinkedIn Brasil (1 por dia em rodízio, alternando)
     - "integração de dados"

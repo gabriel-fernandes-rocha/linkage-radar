@@ -147,6 +147,13 @@ def check(cfg: dict, day: str, report: dict) -> dict:
     if st_report.get("vagas", {}).get("brutos", 0) < 500:
         add("problema", "Coleta de vagas", f"só {st_report.get('vagas', {}).get('brutos', 0)} vagas brutas no total")
 
+    local = DATA / "logs" / "linkedin_local.log"
+    if local.exists():
+        ok = [l for l in local.read_text("utf-8").splitlines() if " salvo: " in l]
+        age = (date.fromisoformat(day) - date.fromisoformat(ok[-1][:10])).days if ok else 99
+        if age > 3:
+            add("atencao", "LinkedIn logado", f"sem varredura com sucesso há {age} dias (computador desligado ou sem "
+                                              "login: python scripts/linkedin_local.py --login)")
     worst = "problema" if any(c["status"] == "problema" for c in checks) else \
         "atencao" if any(c["status"] == "atencao" for c in checks) else "ok"
     result = {"data": day, "status": worst, "checks": [c for c in checks if c["status"] != "ok"] or checks,

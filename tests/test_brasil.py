@@ -105,3 +105,15 @@ def test_inhire_closed_job_is_detected(monkeypatch):
     monkeypatch.setattr(open_jobs.requests, "get", lambda *a, **k: R())
     job = {"url": "https://brq.inhire.app/vagas/fb7bcaee-7c24-4cc3-be6c-71b274f1ad17/x", "fonte": "InHire"}
     assert not open_jobs.still_open(job, set())
+
+
+def test_health_warns_when_logged_linkedin_stops(tmp_path, monkeypatch):
+    import health
+
+    (tmp_path / "logs").mkdir()
+    (tmp_path / "logs" / "linkedin_local.log").write_text("2026-10-28 07:53 salvo: 1 pessoas\n2026-11-04 06:30 PAROU: x\n", "utf-8")
+    monkeypatch.setattr(health, "DATA", tmp_path)
+    monkeypatch.setattr(health, "HEALTH", tmp_path / "h.json")
+    monkeypatch.setattr(health, "HISTORY", tmp_path / "hh.json")
+    r = health.check({"limits": {}}, "2026-11-04", {"estatisticas": {}})
+    assert any(c["nome"] == "LinkedIn logado" for c in r["checks"])

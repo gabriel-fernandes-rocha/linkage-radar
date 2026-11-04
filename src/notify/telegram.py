@@ -18,8 +18,33 @@ PART_GAP = 1
 RETRIES = (10, 30, 90)
 
 
+TAG = re.compile(r"<(/?)([a-zA-Z-]+)([^<>]*)>")
+HTML_TAGS = {"b", "strong", "i", "em", "u", "s", "code", "pre", "a", "tg-spoiler", "blockquote"}
+
+
+def balance(parts: list[str]) -> list[str]:
+    """Tag aberta numa parte é fechada no fim dela e reaberta na seguinte (o Telegram recusa HTML desbalanceado)."""
+    out, carry = [], []
+    for part in parts:
+        stack = list(carry)
+        for m in TAG.finditer(part):
+            name = m[2].lower()
+            if name not in HTML_TAGS:
+                continue
+            if not m[1]:
+                stack.append((name, m[0]))
+                continue
+            for i in range(len(stack) - 1, -1, -1):
+                if stack[i][0] == name:
+                    del stack[i]
+                    break
+        out.append("".join(t for _, t in carry) + part + "".join(f"</{n}>" for n, _ in reversed(stack)))
+        carry = stack
+    return out
+
+
 def split(text: str, limit: int = LIMIT) -> list[str]:
-    return textsplit.split(text, limit, len)
+    return balance(textsplit.split(text, limit, len))
 
 
 def fits(text: str) -> bool:

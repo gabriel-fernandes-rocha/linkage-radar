@@ -22,6 +22,7 @@ WEB_SEARCH_TOOL = "web_search_20250305"  # variante suportada pelo Claude Haiku 
 # pode usar tudo; "baixa" (Google Jobs, empresas) só usa se sobrar acima da reserva.
 BUDGET = {"hoje": None, "usadas": 0}
 RESERVA_ALTA = 4
+RENOVA_DIA = 26  # dia do mês em que o plano da SerpAPI renova
 
 
 def set_daily_budget() -> int | None:
@@ -34,7 +35,9 @@ def set_daily_budget() -> int | None:
         acc = get("https://serpapi.com/account.json", params={"api_key": key}, timeout=30).json()
         left = int(acc.get("plan_searches_left", 0))
         today = date.today()
-        nxt = date(today.year + (today.month == 12), today.month % 12 + 1, 1)
+        nxt = date(today.year, today.month, RENOVA_DIA)
+        if today >= nxt:
+            nxt = date(today.year + (today.month == 12), today.month % 12 + 1, RENOVA_DIA)
         # o plano renova na data de assinatura (ex.: dia 26), não no dia 1: dividir pelos dias até o fim do
         # mês queimava a cota em 5 dias. Teto = 1,5x a média diária do plano (250/30 -> 12).
         plan = int(acc.get("searches_per_month") or 250)

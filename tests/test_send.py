@@ -58,3 +58,13 @@ def test_callmebot_split_respects_encoded_limit():
     assert len(parts) > 1
     assert all(len(quote_plus(p)) <= MAX_ENCODED for p in parts)
     assert "\n".join(parts) == text  # nada se perde
+
+
+def test_telegram_parts_have_balanced_html():
+    from notify import telegram
+
+    text = "<b>Aula</b>\n<pre>" + "\n".join(f"linha {i} de código" * 8 for i in range(120)) + "</pre>\n<i>fim</i>"
+    parts = telegram.split(text)
+    assert len(parts) > 1
+    for p in parts:
+        assert p.count("<pre>") == p.count("</pre>") and len(p) <= 4096

@@ -261,6 +261,13 @@ def run(cfg: dict, day: str, raw_jobs: list[dict], use_llm: bool) -> dict:
     cands = [it for it in unique(pool) if (bootstrap or seen.is_new(it)) and passes(it)]
     cands.sort(key=lambda it: (it["score"], it.get("publicada_em") or ""), reverse=True)
     cands = cands[: bcfg.get("max_julgar_por_dia", 60) * (2 if bootstrap else 1)]
+    if use_llm:
+        ja = {_norm_url(it["url"]) for it in cands}
+        for j in open_jobs.load(OPEN):
+            if j.get("nao_verificado") and _norm_url(j["url"]) not in ja:
+                req = j.get("requisitos") or {}
+                resumo = ", ".join((req.get("obrigatorios") or []) + (req.get("desejaveis") or []))
+                cands.append({**j, "tipo": "vaga", "texto": f"Requisitos: {resumo}. Termos: {', '.join(j.get('termos') or [])}"})
     log.info("brasil: %d brutas, %d candidatas para o juiz", len(pool), len(cands))
 
     approved = []
@@ -283,7 +290,7 @@ def run(cfg: dict, day: str, raw_jobs: list[dict], use_llm: bool) -> dict:
             passes(it)  # preenche categoria e termos
 
     if use_llm:
-        _safe("requisitos", lambda: requirements.extract(approved, cfg))
+        _safe("requisitos", lambda: requirements.extract([a for a in approved if not a.get("requisitos")], cfg))
     _safe("requisitos sem IA", lambda: requirements.ensure(approved))
     _safe("compatibilidade", lambda: compat.score_jobs(approved, cfg))
 
