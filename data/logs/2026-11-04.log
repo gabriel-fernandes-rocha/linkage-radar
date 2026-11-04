@@ -93,3 +93,11 @@ INFO brasil: {'novas': 3, 'abertas': 28, 'arquivadas': 48, 'rede': {'pessoas_nov
 INFO saúde: ok (0 alertas)
 INFO OK → data/2026-11-04.json
 
+===== envio 2026-11-04 07:02 =====
+INFO mensagem 1 parte 1/1 enviada
+WARNING telegram: HTML recusado (Bad Request: can't parse entities: Can't find end tag corresponding to start tag "pre"); reenviando sem formatação
+INFO mensagem 2 parte 1/2 enviada
+WARNING telegram: HTML recusado (Bad Request: can't parse entities: Unexpected end tag at byte offset 1564); reenviando sem formatação
+INFO mensagem 2 parte 2/2 enviada
+INFO envio concluído
+
