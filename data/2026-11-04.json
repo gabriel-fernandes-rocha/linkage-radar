@@ -1,0 +1,565 @@
+{
+  "data": "2026-11-04",
+  "gerado_em": "2026-11-04T00:00-03:00",
+  "llm": true,
+  "serpapi_orcamento": 6,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Technical Lead Master Data Management",
+      "url": "https://www.jobilize.com/job/us-remote-senior-technical-lead-master-data-management-blood-cancer",
+      "empresa": "Blood Cancer United",
+      "local": "Remote, OR",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 15,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Technical Lead MDM com responsabilidade explícita por matching rules, resolução de duplicatas e operação de programa de master data com foco em dados críticos.",
+      "resumo": "Vaga de Senior Technical Lead Master Data Management na Blood Cancer United para operação e configuração funcional do programa de dados mestres, incluindo construção de matching rules, resolução de duplicatas e garantia de single trusted version de registros críticos.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Entity Resolution",
+          "Master Data Management"
+        ],
+        "desejaveis": [
+          "Python",
+          "Power Query"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 7,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.14,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 40,
+        "local": 60,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Reltio Developer",
+      "url": "https://www.linkedin.com/jobs/view/4484551836",
+      "empresa": "Global Payments Inc.",
+      "local": "Alpharetta, Geórgia, Estados Unidos",
+      "fonte": "LinkedIn Jobs (remoto)",
+      "publicada_em": "2026-10-29",
+      "score": 17,
+      "juiz": "anthropic",
+      "motivo": "Vaga explícita de MDM (Reltio) Solution Engineer focada em identity resolution, golden records e transformação de dados fragmentados em single source of truth empresarial.",
+      "resumo": "Vaga de MDM (Reltio) Solution Engineer na Global Payments para design e implementação de capacidades de resolução de identidades e criação de golden records de clientes e comerciantes, estabelecendo fonte única de verdade empresarial.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "SQL",
+          "Reltio",
+          "APIs",
+          "ETL"
+        ],
+        "desejaveis": [
+          "Snowflake",
+          "Python",
+          "Graph databases"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Alpharetta"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 43,
+        "senioridade": 60,
+        "local": 8,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management",
+          "Reltio"
+        ],
+        "parciais": [
+          "SQL",
+          "APIs"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Sr. Advisor, Data Engineer MDM",
+      "url": "https://www.learn4good.com/jobs/hendersonville/tennessee/info_technology/5567175874/e/",
+      "empresa": "OP RaaS",
+      "local": "Hendersonville, TN",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Sr. Advisor Data Engineer MDM focada em arquitetura, design de entity models, matching rules, survivorship strategies e implementação de soluções de Master Data Management em escala empresarial.",
+      "resumo": "Vaga de Sr. Advisor Data Engineer MDM em OP RaaS para design e implementação de arquitetura de Master Data Management, incluindo entity models, matching rules, workflows de stewardship e integração de dados mestres em plataformas cloud.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Java",
+          "JSON",
+          "Spring",
+          "Python",
+          "Spark",
+          "Master Data Management",
+          "REST APIs",
+          "Azure",
+          "Databricks"
+        ],
+        "desejaveis": [
+          "Microsoft Fabric",
+          "Microsoft Foundry"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Hendersonville"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.01,
+      "compat_detalhe": {
+        "habilidades": 22,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Java",
+          "Spring",
+          "Master Data Management",
+          "REST APIs",
+          "Azure",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL",
+          "JSON"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "ETS Principal Solution Engineer-Member Master Data Management",
+      "url": "https://www.ziprecruiter.com/c/navy-federal-credit-union/Job/ETS-Principal-Solution-Engineer-Member-Master-Data-Management/-in-Vienna,VA?jid=31a21b4398879aa6",
+      "empresa": "Navy Federal Credit Union",
+      "local": "Vienna, VA",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 17,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Principal Solution Engineer especializada em Member Master Data Management, com foco em criação de single trusted view, matching de dados e resolução de identidades em escala empresarial.",
+      "resumo": "Vaga de Principal Solution Engineer focada em design e implementação de plataforma de Member Master Data Management para Navy Federal, estabelecendo visão única e confiável de dados de membros através de canais e sistemas bancários.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "APIs",
+          "Azure",
+          "AWS",
+          "OCI"
+        ],
+        "desejaveis": [
+          "Reltio",
+          "Profisee",
+          "Semarchy",
+          "Ataccama",
+          "FSLDM",
+          "BFMDW",
+          "OFSDF"
+        ]
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Vienna"
+        ]
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 12,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.01,
+      "compat_detalhe": {
+        "habilidades": 8,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management",
+          "Azure",
+          "AWS",
+          "OCI"
+        ],
+        "parciais": [
+          "APIs"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Strategic MDM Customer Architect – Enterprise Data Governance, AI‑Ready Master Data Management & Cloud Integration Lead",
+      "url": "https://kestrelpoint.liveblog365.com/remote-jobs/strategic-mdm-customer-architect-enterprise-data-governance-aiready-master-data-management-cloud-int",
+      "empresa": "Pendo",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Strategic MDM Customer Architect em brighthush focada em design e implementação de soluções empresariais de MDM e data governance que suportam AI-ready architectures.",
+      "resumo": "Vaga de Strategic MDM Customer Architect na brighthush (consultoria) para liderança arquitetural e implementação de plataformas empresariais de Master Data Management que formem backbone de ecossistemas de dados para transformação digital e AI.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "Informatica IDMC",
+          "ETL",
+          "API",
+          "Data Modeling",
+          "Cloud Integration"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "global",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 25,
+        "senioridade": 75,
+        "local": 100,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "aceita candidatos do mundo todo",
+        "faltam": [
+          "Master Data Management",
+          "Informatica IDMC",
+          "Data Modeling",
+          "Cloud Integration"
+        ],
+        "parciais": [
+          "API"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Advanced Customer Engineer-Level 1",
+      "url": "https://job-boards.greenhouse.io/reltio/jobs/6237312004",
+      "empresa": "reltio",
+      "local": "Bangalore",
+      "fonte": "Greenhouse/reltio",
+      "publicada_em": "2026-11-03",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Vaga em Reltio (plataforma MDM de entity matching e data governance) com foco em unificação de dados, harmonização e resolução de identidades em escala empresarial.",
+      "resumo": "Vaga de Advanced Customer Engineer na Reltio (SAP Company), plataforma de Master Data Management que harmoniza, unifica e governa dados fragmentados em tempo real para criar contexto de dados confiável e conectado para AI em escala empresarial.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "NoSQL",
+          "Java",
+          "AWS",
+          "GCP",
+          "Azure",
+          "Reltio",
+          "JavaScript",
+          "Bitbucket",
+          "SVN",
+          "API Design"
+        ],
+        "desejaveis": [
+          "OOP",
+          "Data Structures",
+          "Big Data"
+        ]
+      },
+      "senioridade": "pleno",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "India"
+        ],
+        "cidades": [
+          "Bangalore"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 5,
+      "ingles": "nao_informado",
+      "foco_er": 0.4,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 30,
+        "senioridade": 60,
+        "local": 8,
+        "ingles": 100,
+        "foco": 91,
+        "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+        "local_txt": "em India, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management",
+          "Java",
+          "AWS",
+          "GCP",
+          "Azure",
+          "Reltio",
+          "JavaScript",
+          "API Design"
+        ],
+        "parciais": [
+          "Bitbucket",
+          "SVN"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Probabilistic Record Linkage Specialist - LinkedIn",
+      "url": "https://ae.linkedin.com/jobs/view/senior-probabilistic-record-linkage-specialist-at-slk-industrial-support-and-lighting-4483946718",
+      "texto": "Job Title: Senior Probabilistic Record Linkage Specialist Location: United Arab Emirates (Remote) Employment Type: Full-Time Work Arrangement: 100% Remote — Work From Home Level: Senior About the Role We are seeking an experienced Senior Probabilistic Record Linkage Specialist to design, develop, and validate methodologies for identifying and matching records that refer to the same ...",
+      "data": "Oct 31, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Post anuncia vaga concreta de Senior Probabilistic Record Linkage Specialist focada em design, desenvolvimento e validação de metodologias de matching de registros.",
+      "resumo": "Vaga de Senior Probabilistic Record Linkage Specialist em regime 100% remoto nos Emirados Árabes, procurando especialista para design e validação de metodologias de identificação e matching de registros.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Probabilistic Record Linkage"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United Arab Emirates"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1,
+      "encaixe": 0.09,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United Arab Emirates: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer (Databricks) at Onit India - LinkedIn India",
+      "url": "https://in.linkedin.com/jobs/view/data-engineer-databricks-at-onit-india-4484659970",
+      "texto": "Practical experience with deduplication, record linkage, or entity resolution, and with diagnosing and remediating data quality problems at scale. Experience implementing automated data quality checks, pipeline monitoring, and Spark performance and cost optimisation.",
+      "data": "Nov 3, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 9,
+      "juiz": "anthropic",
+      "motivo": "Post menciona deduplicação, record linkage e entity resolution como experiências práticas necessárias, além de Spark e qualidade de dados em escala.",
+      "resumo": "Vaga de Data Engineer em Databricks na Onit India que requer experiência prática com deduplicação, record linkage, entity resolution e qualidade de dados em escala, incluindo Spark e otimização de pipeline.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Spark",
+          "Entity Resolution",
+          "Record Linkage"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.47,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 98,
+  "vagas_arquivadas_total": 149,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": "embeddings",
+  "brasil": {
+    "novas": 3,
+    "abertas": 28,
+    "arquivadas": 48,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 2
+    }
+  },
+  "aula": {
+    "dia": 34,
+    "semana": 5,
+    "tema": "Qualidade de dados para matching",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Perfilar uma base: preenchimento, frequências, sentinelas e formatos",
+    "modulo": "Semana 5: Qualidade de dados para matching",
+    "versao": 2,
+    "objetivo": "Realizar um perfilamento sistemático de uma base de registros pessoais sintética, medindo completude por campo, detectando valores sentinela (como datas 01/01 usadas como substituto de data de nascimento desconhecida) e identificando inconsistências de formato em nomes e endereços, antes de qualquer etapa de comparação ou blocking.",
+    "contexto": "Gabriel recebeu uma extração de cadastro de pacientes de um pronto-socorro para um projeto de deduplicação. Antes de montar regras de blocking ou treinar um Splink, ele precisa saber o estado real dos dados: quantos campos estão vazios, quais valores aparecem com frequência suspeita, e quais formatos de nome e data variam. Christen (2012, p.40) descreve exatamente esse cenário: recepcionistas sob pressão de tempo que não sabem a data de nascimento do paciente tendem a registrar '01' de dia e mês, gerando um excesso artificial de nascidos em 1º de janeiro. Esse tipo de sentinela distorce qualquer comparação de datas se não for tratado antes do matching.",
+    "passos": [
+      "Gerar (ou carregar) uma base sintética de 500 a 1000 registros com nome, sobrenome, data de nascimento, cidade e telefone, injetando deliberadamente valores ausentes, sentinelas (01/01), e variações de formato (maiúsculas, abreviações, pontuação em nomes compostos).",
+      "Calcular a taxa de preenchimento (completude) de cada coluna: proporção de valores não nulos e não vazios.",
+      "Calcular a distribuição de frequência de cada campo categórico e de data, ordenando do mais frequente ao menos frequente, para localizar valores anormalmente concentrados.",
+      "Isolar especificamente a frequência de dia=1 e mês=1 nas datas de nascimento e comparar com a frequência esperada sob distribuição uniforme (1/365 aproximadamente 0,27%).",
+      "Detectar inconsistências de formato em nomes (letras minúsculas vs maiúsculas, presença de títulos como 'Dr', pontuação em nomes compostos como O'Brian) usando expressões regulares simples.",
+      "Resumir os achados em uma tabela de 'problemas por campo' com contagem e percentual, que servirá de insumo para a aula de padronização."
+    ],
+    "codigo": "import pandas as pd\nimport numpy as np\nimport re\n\nnp.random.seed(42)\nn = 500\nnomes = ['peter','Peter','PETER','Dr Peter','O Brian','OBrian',\"O'Brian\", 'maria', 'Maria-Jose', None]\ncidades = ['sydney','Sydeny','SYDNEY', 'rio de janeiro','Rio De Janeiro', None]\ndatas = pd.date_range('1930-01-01','2005-12-31').to_pydatetime().tolist()\n\ndf = pd.DataFrame({\n    'nome': np.random.choice(nomes, n),\n    'cidade': np.random.choice(cidades, n),\n    'dob': np.random.choice(datas, n)\n})\nsentinela_idx = np.random.choice(df.index, size=int(n*0.12), replace=False)\ndf.loc[sentinela_idx, 'dob'] = pd.Timestamp('1976-01-01')\n\ncompletude = df.notna().mean().round(3) * 100\nprint('Completude (%):\\n', completude)\n\ndf['dob'] = pd.to_datetime(df['dob'])\nfreq_dia1mes1 = (df['dob'].dt.day.eq(1) & df['dob'].dt.month.eq(1)).mean() * 100\nprint(f'\\n% de registros com dia=1 e mes=1: {freq_dia1mes1:.2f}%')\nprint('Esperado sob distribuicao uniforme: ~0.27%')\n\npadrao_titulo = df['nome'].dropna().str.contains(r'^(Dr|Mr|Mrs)\\b', regex=True, case=False)\nprint('\\nRegistros com titulo embutido no nome:', padrao_titulo.sum())\n\nvariação_pontuacao = df['nome'].dropna().str.contains(r\"O[' ]?Brian\", regex=True, case=False)\nprint('Variações de O Brian:', variação_pontuacao.sum())",
+    "como_avaliar": "O laboratório está correto se: 1) a completude de cada coluna for calculada como percentual exato de não nulos; 2) a frequência de dia=1/mês=1 encontrada for muito maior que 0,27% (o valor esperado sob distribuição uniforme ao longo de 365 dias), confirmando a presença de sentinelas artificiais; 3) o código identificar corretamente as variações de formato de nome (títulos embutidos, apóstrofos, maiúsculas) sem falsos negativos grosseiros. Compare o percentual observado de 01/01 com o esperado e verifique se a diferença é estatisticamente e praticamente relevante (ordem de grandeza, não só diferença absoluta pequena).",
+    "desafio": "Usando a mesma base, construa uma função que classifique cada registro em um 'score de confiabilidade do campo dob' de 0 a 1, penalizando fortemente quando dia=1 e mês=1 (sentinela provável), moderadamente quando apenas o dia=1 (possível arredondamento de mês conhecido), e sem penalidade nos demais casos. Depois, calcule qual fração da base teria sua data de nascimento tratada como 'não confiável' sob esse score, e discuta o impacto disso se essa data fosse usada como campo de bloqueio (blocking key) num pipeline de matching.",
+    "gabarito": "O score pode ser definido como: 0.0 se dia==1 e mês==1 (sentinela forte, como descrito por Christen 2012 p.40), 0.5 se apenas dia==1 e mês!=1 (possível aproximação de 'início do mês'), e 1.0 nos demais casos. Rodando esse score na base sintética do laboratório, espera-se que aproximadamente 12% dos registros (a fração injetada deliberadamente) caiam no score 0.0, bem acima do 0,27% esperado por acaso. O impacto prático: se 'dob' for usada como chave de blocking exata, todos esses ~12% de registros sentinela cairiam no mesmo bloco (01/01), criando um bloco gigante e desbalanceado que aumenta o custo computacional de comparação dentro do bloco sem ganho de recall real, já que esses registros não compartilham de fato a mesma data de nascimento verdadeira. A solução é excluir ou isolar esses valores antes de usá-los como chave de blocking, tratando-os como dados ausentes de fato.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.1, p.39-40 (sentinelas de data de nascimento, '01 Jan' como placeholder)",
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.2, p.41-44 (variações em nomes e endereços)",
+      "Christen, P. (2006). A comparison of personal name matching: techniques and practical issues. IEEE ICDM Workshops."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        39,
+        51
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3000,
+      "pos_palavras_chave": 8,
+      "aprovados": 6
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 179,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 8,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

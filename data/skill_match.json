@@ -83,6 +83,16 @@
   "nivel": "nao",
   "nome": "Angular"
  },
+ "api": {
+  "motivo": "Integra dados via Elasticsearch, próximo de APIs",
+  "nivel": "parcial",
+  "nome": "API"
+ },
+ "api design": {
+  "motivo": "Sem evidência de design de APIs",
+  "nivel": "nao",
+  "nome": "API Design"
+ },
  "api enrichment": {
   "motivo": "integra dados administrativos, próximo a enriquecimento",
   "nivel": "parcial",
@@ -97,6 +107,11 @@
   "motivo": "não há evidência de desenvolvimento ou consumo de APIs",
   "nivel": "parcial",
   "nome": "APIs"
+ },
+ "ataccama": {
+  "motivo": "Ferramenta específica não mencionada",
+  "nivel": "nao",
+  "nome": "Ataccama"
  },
  "ataccama one": {
   "motivo": "sem evidência de ferramenta MDM específica",
@@ -188,6 +203,16 @@
   "nivel": "parcial",
   "nome": "Beam"
  },
+ "bfmdw": {
+  "motivo": "Sem evidência de modelo bancário específico",
+  "nivel": "nao",
+  "nome": "BFMDW"
+ },
+ "big data": {
+  "motivo": "Processa bilhões de registros em produção",
+  "nivel": "tem",
+  "nome": "Big Data"
+ },
  "big data platforms": {
   "motivo": "trabalha com bilhões de registros, Spark",
   "nivel": "tem",
@@ -272,6 +297,11 @@
   "motivo": "não há indicação de trabalho em ambiente cloud",
   "nivel": "nao",
   "nome": "cloud"
+ },
+ "cloud integration": {
+  "motivo": "Sem evidência de cloud no currículo",
+  "nivel": "nao",
+  "nome": "Cloud Integration"
  },
  "clustering": {
   "motivo": "resolução de entidades envolve clustering",
@@ -512,6 +542,11 @@
   "motivo": "Só pipelines batch, não streams.",
   "nivel": "nao",
   "nome": "data streams"
+ },
+ "data structures": {
+  "motivo": "Implícito em programação e engenharia de dados",
+  "nivel": "parcial",
+  "nome": "Data Structures"
  },
  "data transformation": {
   "motivo": "ETL e normalização fazem parte do pipeline",
@@ -778,6 +813,11 @@
   "nivel": "nao",
   "nome": "Flowable"
  },
+ "fsldm": {
+  "motivo": "Modelo financeiro específico não mencionado",
+  "nivel": "nao",
+  "nome": "FSLDM"
+ },
  "fuzzy": {
   "motivo": "aplica fuzzy matching com RapidFuzz e Splink",
   "nivel": "tem",
@@ -1008,6 +1048,11 @@
   "nivel": "nao",
   "nome": "Informatica Certifications"
  },
+ "informatica idmc": {
+  "motivo": "Ferramenta MDM específica não usada",
+  "nivel": "nao",
+  "nome": "Informatica IDMC"
+ },
  "informatica mdm": {
   "motivo": "sem evidência da plataforma Informatica MDM",
   "nivel": "nao",
@@ -1047,6 +1092,11 @@
   "motivo": "sem menção a Java no currículo",
   "nivel": "nao",
   "nome": "Java"
+ },
+ "javascript": {
+  "motivo": "Sem menção a JavaScript",
+  "nivel": "nao",
+  "nome": "JavaScript"
  },
  "jira": {
   "motivo": "não citado",
@@ -1248,6 +1298,16 @@
   "nivel": "nao",
   "nome": "Microsoft Dynamics 365"
  },
+ "microsoft fabric": {
+  "motivo": "Plataforma não mencionada no currículo",
+  "nivel": "nao",
+  "nome": "Microsoft Fabric"
+ },
+ "microsoft foundry": {
+  "motivo": "Plataforma não mencionada no currículo",
+  "nivel": "nao",
+  "nome": "Microsoft Foundry"
+ },
  "microsoft sql server": {
   "motivo": "sabe SQL, falta SQL Server específico",
   "nivel": "parcial",
@@ -1338,15 +1398,30 @@
   "nivel": "nao",
   "nome": "Observability"
  },
+ "oci": {
+  "motivo": "Oracle Cloud não mencionado",
+  "nivel": "nao",
+  "nome": "OCI"
+ },
  "ocr": {
   "motivo": "sem evidência de processamento de imagens",
   "nivel": "nao",
   "nome": "OCR"
  },
+ "ofsdf": {
+  "motivo": "Modelo financeiro Oracle não mencionado",
+  "nivel": "nao",
+  "nome": "OFSDF"
+ },
  "ontology": {
   "motivo": "sem evidência de modelagem ontológica",
   "nivel": "nao",
   "nome": "Ontology"
+ },
+ "oop": {
+  "motivo": "Uso de Python implica conhecimento de OOP",
+  "nivel": "parcial",
+  "nome": "OOP"
  },
  "openshift": {
   "motivo": "sem evidência de containers/orquestração",
@@ -1432,6 +1507,11 @@
   "motivo": "usa matching probabilístico em produção",
   "nivel": "tem",
   "nome": "Probabilistic matching"
+ },
+ "probabilistic record linkage": {
+  "motivo": "Experiência direta em produção com matching probabilístico",
+  "nivel": "tem",
+  "nome": "Probabilistic Record Linkage"
  },
  "process automation": {
   "motivo": "automatiza pipelines de resolução de entidades",
@@ -1767,6 +1847,11 @@
   "motivo": "Nenhum envolvimento com dados esportivos",
   "nivel": "nao",
   "nome": "sports data providers"
+ },
+ "spring": {
+  "motivo": "Framework Java não mencionado",
+  "nivel": "nao",
+  "nome": "Spring"
  },
  "sql": {
   "motivo": "usa SQL em produção",

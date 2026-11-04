@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -108,6 +108,54 @@
       ],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer (Databricks) at Onit India - LinkedIn India",
+    "url": "https://in.linkedin.com/jobs/view/data-engineer-databricks-at-onit-india-4484659970",
+    "data": "Nov 3, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Post menciona deduplicação, record linkage e entity resolution como experiências práticas necessárias, além de Spark e qualidade de dados em escala.",
+    "resumo": "Vaga de Data Engineer em Databricks na Onit India que requer experiência prática com deduplicação, record linkage, entity resolution e qualidade de dados em escala, incluindo Spark e otimização de pipeline.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "Spark",
+        "Entity Resolution",
+        "Record Linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.47,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -151,7 +199,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -164,7 +212,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -250,7 +298,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -295,7 +343,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -345,7 +393,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -391,7 +439,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -440,7 +488,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -491,7 +539,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -540,7 +588,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -589,7 +637,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -638,7 +686,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -693,7 +741,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -755,7 +803,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -805,7 +853,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -848,7 +896,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -891,7 +939,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -931,7 +979,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -971,7 +1019,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1014,7 +1062,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1069,7 +1117,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1126,7 +1174,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1166,7 +1214,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1206,7 +1254,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1246,7 +1294,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1286,7 +1334,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1335,7 +1383,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1382,7 +1430,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1458,7 +1506,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1498,8 +1546,68 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Strategic MDM Customer Architect – Enterprise Data Governance, AI‑Ready Master Data Management & Cloud Integration Lead",
+    "url": "https://kestrelpoint.liveblog365.com/remote-jobs/strategic-mdm-customer-architect-enterprise-data-governance-aiready-master-data-management-cloud-int",
+    "empresa": "Pendo",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Strategic MDM Customer Architect em brighthush focada em design e implementação de soluções empresariais de MDM e data governance que suportam AI-ready architectures.",
+    "resumo": "Vaga de Strategic MDM Customer Architect na brighthush (consultoria) para liderança arquitetural e implementação de plataformas empresariais de Master Data Management que formem backbone de ecossistemas de dados para transformação digital e AI.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "Informatica IDMC",
+        "ETL",
+        "API",
+        "Data Modeling",
+        "Cloud Integration"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.29,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível senior",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "Master Data Management",
+        "Informatica IDMC",
+        "Data Modeling",
+        "Cloud Integration"
+      ],
+      "parciais": [
+        "API"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1540,7 +1648,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1582,7 +1690,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1622,7 +1730,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1662,7 +1770,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1702,7 +1810,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1745,7 +1853,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1788,7 +1896,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1831,7 +1939,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1871,7 +1979,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1911,7 +2019,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -1951,7 +2059,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2000,8 +2108,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2060,7 +2168,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2106,7 +2214,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2165,7 +2273,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2213,7 +2321,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2272,7 +2380,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2323,7 +2431,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2393,8 +2501,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2461,7 +2569,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2530,7 +2638,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2591,7 +2699,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2635,7 +2743,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2702,7 +2810,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2754,8 +2862,65 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Technical Lead Master Data Management",
+    "url": "https://www.jobilize.com/job/us-remote-senior-technical-lead-master-data-management-blood-cancer",
+    "empresa": "Blood Cancer United",
+    "local": "Remote, OR",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 15,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Senior Technical Lead MDM com responsabilidade explícita por matching rules, resolução de duplicatas e operação de programa de master data com foco em dados críticos.",
+    "resumo": "Vaga de Senior Technical Lead Master Data Management na Blood Cancer United para operação e configuração funcional do programa de dados mestres, incluindo construção de matching rules, resolução de duplicatas e garantia de single trusted version de registros críticos.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Entity Resolution",
+        "Master Data Management"
+      ],
+      "desejaveis": [
+        "Python",
+        "Power Query"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 7,
+    "ingles": "fluente",
+    "foco_er": 0.9,
+    "encaixe": 0.14,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 40,
+      "local": 60,
+      "ingles": 85,
+      "foco": 98,
+      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2802,7 +2967,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2844,7 +3009,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -2914,8 +3079,56 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Probabilistic Record Linkage Specialist - LinkedIn",
+    "url": "https://ae.linkedin.com/jobs/view/senior-probabilistic-record-linkage-specialist-at-slk-industrial-support-and-lighting-4483946718",
+    "data": "Oct 31, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 5,
+    "juiz": "anthropic",
+    "motivo": "Post anuncia vaga concreta de Senior Probabilistic Record Linkage Specialist focada em design, desenvolvimento e validação de metodologias de matching de registros.",
+    "resumo": "Vaga de Senior Probabilistic Record Linkage Specialist em regime 100% remoto nos Emirados Árabes, procurando especialista para design e validação de metodologias de identificação e matching de registros.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Probabilistic Record Linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United Arab Emirates"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "encaixe": 0.09,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United Arab Emirates: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2982,7 +3195,7 @@
       "estimado": true
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -3043,7 +3256,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3080,7 +3293,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3141,7 +3354,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3239,7 +3452,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -3304,7 +3517,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -3365,7 +3578,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -3430,7 +3643,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -3485,7 +3698,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -3553,7 +3766,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3610,8 +3823,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -3665,7 +3878,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -3714,7 +3927,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -3766,7 +3979,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -3803,7 +4016,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3861,7 +4074,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3892,75 +4105,6 @@
       "parciais": [],
       "estimado": false
     }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Snowflake Engineer - MDM Architecture",
-    "url": "https://bebee.com/us/jobs/senior-snowflake-engineer-mdm-architecture-syncredible-solutions-baltimore--lifeworq-de925111-d968-446d-a50d-bae5a0cbfb2d",
-    "empresa": "Syncredible Solutions",
-    "local": "Baltimore, MD",
-    "fonte": "Google Jobs",
-    "publicada_em": null,
-    "score": 15,
-    "juiz": "anthropic",
-    "motivo": "Vaga Senior Snowflake Engineer com foco explícito em entity resolution, matching, survivorship, golden records e MDM architecture em escala empresarial.",
-    "resumo": "Syncredible Solutions procura Senior Snowflake Engineer com expertise em MDM architecture, entity resolution, matching e golden records para desenhar e desenvolver pipelines de dados em escala empresarial usando Snowflake e AWS.",
-    "confianca": 0.94,
-    "requisitos": {
-      "obrigatorios": [
-        "Snowflake",
-        "AWS",
-        "dbt",
-        "SQL",
-        "Spark",
-        "Git",
-        "CI/CD",
-        "Master Data Management",
-        "Entity Resolution"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "Baltimore, MD"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "encaixe": 0.03,
-    "compat_detalhe": {
-      "habilidades": 33,
-      "senioridade": 75,
-      "local": 8,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível senior",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [
-        "Snowflake",
-        "AWS",
-        "dbt",
-        "CI/CD",
-        "Master Data Management"
-      ],
-      "parciais": [
-        "SQL",
-        "Git"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -4017,8 +4161,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4076,8 +4220,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4144,7 +4288,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -4219,7 +4363,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -4286,7 +4430,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -4364,9 +4508,153 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-09-06"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Reltio Developer",
+    "url": "https://www.linkedin.com/jobs/view/4484551836",
+    "empresa": "Global Payments Inc.",
+    "local": "Alpharetta, Geórgia, Estados Unidos",
+    "fonte": "LinkedIn Jobs (remoto)",
+    "publicada_em": "2026-10-29",
+    "score": 17,
+    "juiz": "anthropic",
+    "motivo": "Vaga explícita de MDM (Reltio) Solution Engineer focada em identity resolution, golden records e transformação de dados fragmentados em single source of truth empresarial.",
+    "resumo": "Vaga de MDM (Reltio) Solution Engineer na Global Payments para design e implementação de capacidades de resolução de identidades e criação de golden records de clientes e comerciantes, estabelecendo fonte única de verdade empresarial.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "SQL",
+        "Reltio",
+        "APIs",
+        "ETL"
+      ],
+      "desejaveis": [
+        "Snowflake",
+        "Python",
+        "Graph databases"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Alpharetta"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.02,
+    "compat_detalhe": {
+      "habilidades": 43,
+      "senioridade": 60,
+      "local": 8,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [
+        "Master Data Management",
+        "Reltio"
+      ],
+      "parciais": [
+        "SQL",
+        "APIs"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Advanced Customer Engineer-Level 1",
+    "url": "https://job-boards.greenhouse.io/reltio/jobs/6237312004",
+    "empresa": "reltio",
+    "local": "Bangalore",
+    "fonte": "Greenhouse/reltio",
+    "publicada_em": "2026-11-03",
+    "score": 5,
+    "juiz": "anthropic",
+    "motivo": "Vaga em Reltio (plataforma MDM de entity matching e data governance) com foco em unificação de dados, harmonização e resolução de identidades em escala empresarial.",
+    "resumo": "Vaga de Advanced Customer Engineer na Reltio (SAP Company), plataforma de Master Data Management que harmoniza, unifica e governa dados fragmentados em tempo real para criar contexto de dados confiável e conectado para AI em escala empresarial.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "NoSQL",
+        "Java",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Reltio",
+        "JavaScript",
+        "Bitbucket",
+        "SVN",
+        "API Design"
+      ],
+      "desejaveis": [
+        "OOP",
+        "Data Structures",
+        "Big Data"
+      ]
+    },
+    "senioridade": "pleno",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "India"
+      ],
+      "cidades": [
+        "Bangalore"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 5,
+    "ingles": "nao_informado",
+    "foco_er": 0.4,
+    "encaixe": 0.02,
+    "compat_detalhe": {
+      "habilidades": 30,
+      "senioridade": 60,
+      "local": 8,
+      "ingles": 100,
+      "foco": 91,
+      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "local_txt": "em India, sem patrocínio de visto",
+      "faltam": [
+        "Master Data Management",
+        "Java",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Reltio",
+        "JavaScript",
+        "API Design"
+      ],
+      "parciais": [
+        "Bitbucket",
+        "SVN"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -4432,8 +4720,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4508,8 +4796,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4563,8 +4851,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4630,7 +4918,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -4690,7 +4978,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -4754,9 +5042,154 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "publicada_em": "2026-08-28"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Sr. Advisor, Data Engineer MDM",
+    "url": "https://www.learn4good.com/jobs/hendersonville/tennessee/info_technology/5567175874/e/",
+    "empresa": "OP RaaS",
+    "local": "Hendersonville, TN",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Sr. Advisor Data Engineer MDM focada em arquitetura, design de entity models, matching rules, survivorship strategies e implementação de soluções de Master Data Management em escala empresarial.",
+    "resumo": "Vaga de Sr. Advisor Data Engineer MDM em OP RaaS para design e implementação de arquitetura de Master Data Management, incluindo entity models, matching rules, workflows de stewardship e integração de dados mestres em plataformas cloud.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Java",
+        "JSON",
+        "Spring",
+        "Python",
+        "Spark",
+        "Master Data Management",
+        "REST APIs",
+        "Azure",
+        "Databricks"
+      ],
+      "desejaveis": [
+        "Microsoft Fabric",
+        "Microsoft Foundry"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Hendersonville"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 8,
+    "ingles": "fluente",
+    "foco_er": 0.6,
+    "encaixe": 0.01,
+    "compat_detalhe": {
+      "habilidades": 22,
+      "senioridade": 40,
+      "local": 8,
+      "ingles": 85,
+      "foco": 94,
+      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [
+        "Java",
+        "Spring",
+        "Master Data Management",
+        "REST APIs",
+        "Azure",
+        "Databricks"
+      ],
+      "parciais": [
+        "SQL",
+        "JSON"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "ETS Principal Solution Engineer-Member Master Data Management",
+    "url": "https://www.ziprecruiter.com/c/navy-federal-credit-union/Job/ETS-Principal-Solution-Engineer-Member-Master-Data-Management/-in-Vienna,VA?jid=31a21b4398879aa6",
+    "empresa": "Navy Federal Credit Union",
+    "local": "Vienna, VA",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 17,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Principal Solution Engineer especializada em Member Master Data Management, com foco em criação de single trusted view, matching de dados e resolução de identidades em escala empresarial.",
+    "resumo": "Vaga de Principal Solution Engineer focada em design e implementação de plataforma de Member Master Data Management para Navy Federal, estabelecendo visão única e confiável de dados de membros através de canais e sistemas bancários.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "APIs",
+        "Azure",
+        "AWS",
+        "OCI"
+      ],
+      "desejaveis": [
+        "Reltio",
+        "Profisee",
+        "Semarchy",
+        "Ataccama",
+        "FSLDM",
+        "BFMDW",
+        "OFSDF"
+      ]
+    },
+    "senioridade": "staff/principal",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Vienna"
+      ]
+    },
+    "patrocina_visto": false,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 12,
+    "ingles": "fluente",
+    "foco_er": 0.6,
+    "encaixe": 0.01,
+    "compat_detalhe": {
+      "habilidades": 8,
+      "senioridade": 40,
+      "local": 8,
+      "ingles": 85,
+      "foco": 94,
+      "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [
+        "Master Data Management",
+        "Azure",
+        "AWS",
+        "OCI"
+      ],
+      "parciais": [
+        "APIs"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-04",
+    "verificada_em": "2026-11-04",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -4851,8 +5284,8 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-03",
-    "nova": true
+    "verificada_em": "2026-11-04",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4907,7 +5340,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false
   },
   {
@@ -4932,7 +5365,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-03",
+    "verificada_em": "2026-11-04",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

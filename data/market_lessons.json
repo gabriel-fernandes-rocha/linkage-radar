@@ -1,5 +1,50 @@
 [
  {
+  "data": "2026-11-04",
+  "habilidade": "embeddings",
+  "pct_vagas": 3,
+  "nivel_atual": "parcial",
+  "o_que_e": "Embeddings são representações vetoriais densas de objetos (texto, nomes, endereços, registros inteiros) em um espaço numérico onde similaridade semântica se traduz em proximidade geométrica. Em vez de comparar strings caractere a caractere, você treina ou usa um modelo que mapeia cada entidade para um vetor, e aí usa distância (cosseno, euclidiana) para medir o quão parecidos dois registros são. É a base de buscas semânticas, matching fuzzy avançado e deduplicação em escala usando ANN (approximate nearest neighbors).",
+  "por_que_pedem": "Em entity resolution, embeddings resolvem o problema de blocking e matching quando regras determinísticas e fuzzy matching tradicional (Levenshtein, Jaro-Winkler) falham, por exemplo com nomes em idiomas diferentes, abreviações, ou quando você quer juntar texto livre (endereços, descrições) sem regras manuais. Para MLE e Applied Scientist, embeddings também aparecem em recomendação, busca semântica e NLP geral, então é uma habilidade transversal que sinaliza que você entende representações aprendidas, não só regras.",
+  "ponte_com_o_que_voce_sabe": "Você já faz blocking e scoring em Splink e já usa Elasticsearch, que tem suporte nativo a dense_vector e kNN search, então a infraestrutura de indexação e busca você já domina. O salto é conceitual: trocar ou complementar seu blocking por um embedding model (sentence-transformers) que gera vetores para nomes/endereços, indexar esses vetores no Elasticsearch (ou FAISS) e usar similaridade de cosseno como feature adicional no seu scoring, inclusive dentro do próprio Splink como uma comparação customizada.",
+  "minimo_para_ficar_apto": [
+   "Entender a diferença entre embeddings estáticos (word2vec) e contextuais (BERT, sentence-transformers)",
+   "Saber gerar embeddings de texto com a biblioteca sentence-transformers em poucas linhas de Python",
+   "Entender similaridade de cosseno e por que é a métrica padrão para embeddings normalizados",
+   "Saber indexar e buscar vetores no Elasticsearch usando dense_vector e kNN search (ou alternativa como FAISS)",
+   "Saber explicar quando embeddings ajudam mais que fuzzy matching tradicional e quando não valem o custo computacional"
+  ],
+  "plano_rapido": [
+   "2h: ler a documentação do sentence-transformers e rodar o quickstart gerando embeddings de frases simples",
+   "2h: estudar dense_vector e kNN search na documentação oficial do Elasticsearch",
+   "3h: montar um mini pipeline que gera embeddings de nomes/endereços de um dataset de teste e indexa no Elasticsearch",
+   "2h: comparar resultados desse matching semântico com seu pipeline Splink existente no mesmo dataset",
+   "1h: ler sobre bi-encoders vs cross-encoders para já ter resposta pronta em entrevista"
+  ],
+  "mini_projeto": "Pegue um dataset público de entity resolution (ex: febrl ou um dump de empresas com nomes variados) e construa um pipeline híbrido: gere embeddings dos nomes com sentence-transformers, indexe no Elasticsearch com dense_vector, faça kNN search para blocking candidato, e depois passe os candidatos pro Splink fazer o scoring final combinando a similaridade de embedding como uma feature extra no modelo probabilístico. Documente no GitHub comparando recall/precision desse blocking semântico vs seu blocking tradicional baseado em regras.",
+  "como_colocar_no_curriculo": "Implementei blocking semântico com embeddings (sentence-transformers) indexados em Elasticsearch via kNN search, combinando similaridade vetorial com scoring probabilístico no Splink para melhorar recall em registros com variações textuais complexas.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Quando você usaria embeddings em vez de fuzzy matching tradicional (Jaro-Winkler, Levenshtein) em entity resolution?",
+    "resposta": "Fuzzy matching tradicional funciona bem para erros de digitação e pequenas variações ortográficas na mesma língua, mas falha com sinônimos, abreviações semânticas, tradução entre idiomas ou quando o campo é texto livre mais longo, como endereços ou descrições. Embeddings capturam semântica e funcionam melhor nesses casos, mas custam mais caro computacionalmente e exigem infraestrutura de indexação vetorial, então uso fuzzy matching como primeira linha e embeddings quando a qualidade do blocking tradicional não é suficiente."
+   },
+   {
+    "pergunta": "Como você indexaria milhões de embeddings para busca eficiente?",
+    "resposta": "Usaria uma estrutura de ANN (approximate nearest neighbors), como HNSW, disponível nativamente no Elasticsearch via dense_vector com kNN search, ou uma biblioteca dedicada como FAISS se precisar de mais controle e performance fora do Elasticsearch. A ideia é evitar busca exata O(n) e aceitar uma pequena perda de precisão em troca de velocidade em escala."
+   },
+   {
+    "pergunta": "Qual a diferença entre um bi-encoder e um cross-encoder, e qual você usaria para blocking em entity resolution?",
+    "resposta": "Bi-encoder gera embeddings independentes para cada registro, permitindo pré-computar e indexar vetores para busca rápida, ideal para blocking em escala. Cross-encoder processa o par de registros junto e dá uma pontuação de similaridade mais precisa, mas é caro demais para rodar em todos os pares, então uso para re-ranking dos candidatos que o bi-encoder já filtrou, de forma similar ao que já faço com blocking seguido de scoring no Splink."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do sentence-transformers (sbert.net)",
+   "Documentação oficial do Elasticsearch sobre dense_vector e kNN search",
+   "Documentação oficial do FAISS (Facebook AI Similarity Search)",
+   "Curso Natural Language Processing Specialization (deeplearning.ai) para fundamentos de embeddings"
+  ]
+ },
+ {
   "data": "2026-11-03",
   "habilidade": "Data Governance",
   "pct_vagas": 4,

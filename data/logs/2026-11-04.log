@@ -1,0 +1,95 @@
+===== coleta 2026-11-04 00:11 =====
+INFO serpapi: 181 restantes no mês; orçamento de hoje = 6 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 150
+INFO jobs/greenhouse: 1425
+INFO jobs/lever: 305
+INFO jobs/ashby: 43
+INFO jobs/hn_who_is_hiring: 0
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 16
+INFO jobs/gupy: 197
+INFO jobs/himalayas: 97
+INFO jobs/jobicy: 150
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 190
+INFO jobs/social_linkedin/ddg: 2 aceitos de 3
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 3/6)
+INFO jobs/social_linkedin/google: 0 aceitos de 0
+INFO jobs/social_posts: 2
+INFO linkedin_guest: 45 vagas, 25 descrições abertas, 31 consultas no total
+INFO jobs/linkedin_guest: 45
+INFO judge: tokens in=2965 out=1194
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=9474 out=780
+INFO requisitos: tokens in=5937 out=831
+INFO vagas: {'brutos': 3000, 'pos_palavras_chave': 8, 'aprovados': 6}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 4
+INFO papers/openalex: 175
+INFO papers: {'brutos': 179, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 8 aceitos de 8
+INFO linkedin: 8 candidatos
+INFO judge: tokens in=1235 out=292
+INFO requisitos: tokens in=2304 out=327
+INFO linkedin: {'brutos': 8, 'pos_palavras_chave': 2, 'aprovados': 0}
+INFO open_jobs: fechou Senior Snowflake Engineer - MDM Architecture
+INFO open_jobs: 98 abertas (8 novas)
+INFO requisitos: tokens in=4979 out=769
+INFO requisitos: tokens in=5357 out=756
+INFO requisitos: tokens in=8159 out=972
+INFO requisitos: tokens in=7306 out=784
+INFO requisitos: tokens in=7462 out=716
+INFO requisitos: tokens in=5833 out=908
+INFO requisitos: tokens in=7412 out=810
+INFO requisitos: tokens in=6231 out=770
+INFO mercado amplo: +40 vagas na amostra (total 120)
+INFO mercado: 148 vagas no nicho, 120 no mercado amplo
+INFO network/ddg: 4 aceitos de 4
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/6)
+INFO network/google: 0 aceitos de 0
+INFO network: 4 perfis após a consulta
+INFO judge: tokens in=1511 out=501
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/6)
+INFO network: 67 pessoas (0 novas), 34 empresas (3 novas)
+INFO carreira: tokens in=1427 out=2175
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 153
+INFO brasil/gupy: 386
+INFO google_jobs 'dados mestres MDM matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 18 vagas, 18 descrições abertas, 57 consultas no total
+INFO brasil/linkedin_guest_br: 18
+INFO brasil/linkedin_local: 2
+INFO brasil/greenhouse: 1105
+INFO brasil/lever: 184
+INFO brasil/ashby: 113
+INFO brasil: 4961 brutas, 4 candidatas para o juiz
+INFO judge: tokens in=2575 out=638
+INFO requisitos: tokens in=6336 out=725
+INFO open_jobs: fechou Analista de Dados Pleno
+INFO open_jobs: 28 abertas (3 novas)
+INFO mercado: 48 vagas no nicho, 120 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 6/6)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/6)
+INFO network: 35 pessoas (0 novas), 38 empresas (2 novas)
+INFO brasil: {'novas': 3, 'abertas': 28, 'arquivadas': 48, 'rede': {'pessoas_novas': 0, 'empresas_novas': 2}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-04.json
+
