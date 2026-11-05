@@ -312,6 +312,13 @@ def main() -> int:
                     continue
                 log(f"PAROU: {e}. Rode: python scripts/linkedin_local.py --login")
                 break
+            except Exception as e:  # internet ainda subindo, timeout...: tenta de novo
+                ctx.close()
+                log(f"tentativa {tentativa}: erro ao abrir o LinkedIn ({str(e)[:160]})")
+                if tentativa < 3:
+                    time.sleep(180)
+                    continue
+                break
             try:
                 pessoas = buscar_pessoas(page)
                 log(f"pessoas: {len(pessoas)} do tema")
@@ -334,4 +341,10 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except Exception:  # pythonw não tem console: sem isto a falha some sem deixar rastro
+        import traceback
+
+        log("FALHOU: " + " | ".join(traceback.format_exc(limit=4).splitlines())[:700])
+        raise
