@@ -1,0 +1,83 @@
+===== coleta 2026-11-05 00:47 =====
+INFO serpapi: 175 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 165
+INFO jobs/greenhouse: 1434
+INFO jobs/lever: 309
+INFO jobs/ashby: 45
+INFO jobs/hn_who_is_hiring: 0
+INFO google_jobs 'geocoding engineer': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 7
+INFO jobs/gupy: 203
+INFO jobs/himalayas: 97
+INFO jobs/jobicy: 147
+INFO jobs/workable: 281
+INFO jobs/weworkremotely: 191
+INFO jobs/social_linkedin/ddg: 4 aceitos de 6
+INFO jobs/social_posts: 4
+INFO linkedin_guest: 35 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 35
+INFO judge: tokens in=1617 out=581
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2281 out=327
+INFO vagas: {'brutos': 3017, 'pos_palavras_chave': 4, 'aprovados': 2}
+INFO events: 4 candidatos
+INFO eventos: {'brutos': 4, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 4
+WARNING papers: busca 'entity matching' falhou: 429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=entity+matching&filter=from_publication_date%3A2026-10-29%2Ctype%3Aarticle%7Cpreprint&per-page=25&mailto=linkage.radar.bot%40gmail.com
+WARNING papers: busca 'geocoding' falhou: 429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=geocoding&filter=from_publication_date%3A2026-10-29%2Ctype%3Aarticle%7Cpreprint&per-page=25&mailto=linkage.radar.bot%40gmail.com
+WARNING papers: busca 'data linkage' falhou: 429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=data+linkage&filter=from_publication_date%3A2026-10-29%2Ctype%3Aarticle%7Cpreprint&per-page=25&mailto=linkage.radar.bot%40gmail.com
+INFO papers/openalex: 100
+INFO judge: tokens in=1601 out=350
+INFO papers: {'brutos': 104, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1646 out=832
+INFO requisitos: tokens in=2101 out=160
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 6, 'aprovados': 0}
+INFO open_jobs: 96 abertas (3 novas)
+INFO mercado: 145 vagas no nicho, 120 no mercado amplo
+INFO network/ddg: 9 aceitos de 9
+INFO network: 9 perfis após a consulta
+INFO judge: tokens in=2119 out=938
+INFO network: 67 pessoas (0 novas), 34 empresas (0 novas)
+INFO carreira: tokens in=1477 out=2209
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 147
+INFO brasil/gupy: 392
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 37 vagas, 37 descrições abertas, 75 consultas no total
+INFO brasil/linkedin_guest_br: 37
+INFO brasil/linkedin_local: 8
+INFO brasil/greenhouse: 1105
+INFO brasil/lever: 177
+INFO brasil/ashby: 113
+INFO brasil: 5006 brutas, 13 candidatas para o juiz
+INFO judge: tokens in=3369 out=1191
+INFO judge: tokens in=1537 out=627
+INFO requisitos: tokens in=6368 out=493
+INFO brasil: 2 vaga(s) não verificadas removidas após o juiz
+INFO open_jobs: 29 abertas (3 novas)
+INFO mercado: 51 vagas no nicho, 120 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 44 pessoas (0 novas), 42 empresas (3 novas)
+INFO brasil: {'novas': 9, 'abertas': 29, 'arquivadas': 51, 'rede': {'pessoas_novas': 0, 'empresas_novas': 3}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-05.json
+

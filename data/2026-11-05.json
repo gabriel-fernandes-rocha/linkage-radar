@@ -1,0 +1,286 @@
+{
+  "data": "2026-11-05",
+  "gerado_em": "2026-11-05T00:29-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Master Data Product Owner en Roche — Sant Cugat del Vallès - LinkedIn",
+      "url": "https://es.linkedin.com/jobs/view/master-data-product-owner-at-roche-4479882276",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Master Data Product Owner em MDM com foco em criação e entrega de cadeias de dados e ferramentas de gestão de dados mestres, área diretamente relacionada a entity resolution e data matching.",
+      "resumo": "Procura-se Master Data Product Owner na Roche para conduzir criação de cadeias de dados sofisticadas e ferramentas em Product Master Data management (MDM) e Product Information Management (PIM).",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "PIM"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Spain"
+        ],
+        "cidades": [
+          "Sant Cugat del Vallès"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 25,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em Spain, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [
+          "PIM"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Management Operation Lead di Hearst - LinkedIn Jobs",
+      "url": "https://id.linkedin.com/jobs/view/data-management-operation-lead-at-hearst-4485733414",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga de MDM Operations Lead com foco em qualidade de dados mestres e governança, que são responsabilidades relevantes em record linkage e entity resolution, embora não explicite o tema.",
+      "resumo": "Procura-se líder de operações MDM em Jakarta para garantir qualidade de dados mestres e aderência a políticas em time local de master data management.",
+      "confianca": 0.82,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Indonesia"
+        ],
+        "cidades": [
+          "Jakarta"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "hibrido em Indonesia, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Sr. Salesforce Data Cloud Dev at Showtime Consulting - LinkedIn",
+      "url": "https://au.linkedin.com/jobs/view/sr-salesforce-data-cloud-dev-at-showtime-consulting-4476998476",
+      "texto": "Design identity resolution models and customer relationship structures. Develop customer, account, product, service, and subscription data models. Create audience segmentation strategies to support targeted marketing campaigns. Design and implement consent and preference management frameworks. Develop data transformation processes including:",
+      "data": "Oct 8, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga sênior de Salesforce Data Cloud Dev que coloca identity resolution modeling como primeira responsabilidade técnica, junto com data modeling e transformação; alinhada com resolução de entidades.",
+      "resumo": "Desenvolvedor sênior para design de modelos de identity resolution, estruturas de relacionamento entre entidades e processos de transformação de dados em Salesforce Data Cloud.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [
+          "Salesforce Data Cloud"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.15,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Salesforce Data Cloud"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "AI Based Detection of Ghost Workers in the Public Sector Payroll System of the Democratic Republic of Congo",
+      "url": "https://doi.org/10.5281/zenodo.23918322",
+      "autores": "Iyete Nigo",
+      "data": "2026-11-03",
+      "fonte": "OpenAlex",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Paper com foco central em record linkage e entity resolution para detecção de fraude em folha de pagamento usando regras e scoring probabilístico.",
+      "resumo": "Propõe framework de identity, screening e verification conectando registros de funcionários a períodos de emprego usando record linkage e learned scores para detecção de ghost workers na República Democrática do Congo. Aborda qualidade de linkage, validação temporal e investigação de não-alertas em contexto de auditoria pública.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "VL-Dedup: Graded Multimodal Entity Resolution for Image-Text Data Deduplication",
+      "url": "https://doi.org/10.48550/arxiv.2611.03080",
+      "autores": "Zhenxi Liu et al.",
+      "data": "2026-11-02",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre entity resolution multimodal e deduplicação de registros com avaliação em múltiplos níveis (pares, clusters, conjunto retido).",
+      "resumo": "Propõe VL-Dedup, método de graded multimodal entity resolution para deduplicação de corpora image-text, agrupando registros da mesma entidade visual em clusters e decidindo qual conteúdo manter. Inclui benchmark VL-DedupBench com 50 mil registros e avaliação em pares, clusters e conjuntos retidos.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 96,
+  "vagas_arquivadas_total": 146,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Scala",
+  "brasil": {
+    "novas": 9,
+    "abertas": 29,
+    "arquivadas": 51,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 35,
+    "semana": 5,
+    "tema": "Qualidade de dados para matching",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 5: Qualidade de dados para matching",
+    "modulo": "Semana 5: Qualidade de dados para matching",
+    "versao": 2,
+    "objetivo": "Consolidar, via recuperação ativa, os conceitos da semana 5 (dimensões de qualidade, dificuldades estruturais de nomes, taxonomia de erros e limpeza de valores ausentes/sentinelas) e conectar com o histórico de Fellegi-Sunter, aplicações de fraude e tipos de tarefa.",
+    "conexao": "Pense nesta semana como um funil que começa na raiz dos problemas (Aula 29: por que organizações geram dados ruins, como campos cujo propósito foi burlado ou que desapareceram com o tempo), passa pelo caso mais crítico dessas raízes aplicado a pessoas (Aula 30-31: nomes têm dezenas de variantes legítimas, apelidos, nomes compostos e transliterações, muito além de erro de digitação), desce ao nível operacional de diagnosticar cada erro específico (Aula 32: distinguir tipográfico, fonético, OCR e transcrição para escolher a função de comparação certa) e termina na faxina prática antes de qualquer blocking ou comparação (Aula 33-34: achar sentinelas como '01/01' e CPFs zerados e tratá-los como ausentes). O fio que une tudo é que nenhuma técnica de comparação (Jaro-Winkler, Soundex, edit distance) compensa um diagnóstico errado da origem do ruído: primeiro você entende de onde vem o defeito, só depois escolhe a ferramenta.",
+    "perguntas": [
+      {
+        "pergunta": "Segundo Christen (2012, seç. 3.1, p.40), por que um campo de data de nascimento em prontuários de pronto-socorro tende a acumular um excesso de registros com dia=01 e mês=01, e isso é um erro aleatório ou sistemático?",
+        "resposta": "É sistemático: quando o paciente está inconsciente e sem documentos, a recepcionista sob pressão de tempo estima a idade e registra dia e mês como '01' por ser uma entrada rápida e válida para um campo obrigatório. Isso gera uma concentração anômala de datas 01/01, um sentinela, não um erro aleatório de digitação."
+      },
+      {
+        "pergunta": "Cite duas razões, segundo Christen (2012, seç.3.2, p.41-42), pelas quais nomes pessoais são estruturalmente mais difíceis de comparar do que texto genérico.",
+        "resposta": "Primeiro, uma mesma pessoa pode ter dezenas de variantes legítimas do nome (ex.: mais de 40 formas de 'Amelia'), que não são erros, diferente de palavras de dicionário que têm só uma forma correta. Segundo, apelidos (nicknames) podem não ter nenhuma relação fonética com o nome oficial (ex.: 'Ginger' para pessoa ruiva, 'Bob' para 'Robert'), tornando a comparação baseada em similaridade de string ou fonética ineficaz nesses casos."
+      },
+      {
+        "pergunta": "Classifique o par 'Johnson' / 'J0hnson' segundo a taxonomia da Aula 32 e explique por que não deve ser tratado como erro tipográfico de Damerau.",
+        "resposta": "É um erro de OCR, não tipográfico: o caractere '0' substitui a letra 'o' por semelhança visual em fontes digitalizadas, não por proximidade de teclas ou troca fonética. Tratar como erro de Damerau levaria a aplicar apenas edit distance, ignorando que a causa raiz é a digitalização, o que pode exigir normalização específica (mapa de caracteres ambíguos) antes da comparação."
+      },
+      {
+        "pergunta": "Em um perfilamento de base de clientes, o CEP '00000-000' aparece com frequência 677 vezes maior que a média esperada sob distribuição uniforme. O que essa razão indica e qual ação prática deve ser tomada (Aula 33)?",
+        "resposta": "Essa razão altíssima indica fortemente que o valor é um sentinela usado quando o cliente não informa CEP, não um valor real recorrente. A ação prática é converter esse valor para NULL (ausente) antes do matching e remover esse atributo da comparação para esses registros, evitando que ele seja tratado como concordância real de endereço."
+      },
+      {
+        "pergunta": "Por que o campo 'profissao' (2019) não deve ser comparado diretamente com 'segmento_cliente' (2023) ao deduplicar duas safras da mesma base de clientes (Aula 29)?",
+        "resposta": "Porque são atributos de schemas diferentes: 'profissao' foi descontinuado e substituído por uma categoria de outro domínio ('segmento_cliente'), refletindo mudança de necessidade de informação da organização ao longo do tempo (Christen 2012, p.40). Comparar diretamente strings de domínios distintos geraria ruído; o correto é construir um mapeamento de equivalência de categorias ou simplesmente excluir o atributo da comparação entre safras."
+      },
+      {
+        "pergunta": "(Aula 8) Newcombe propôs que o peso de concordância de um atributo dependa da frequência do valor na população. Se o sobrenome 'Pereira' ocorre em 6% da população e o primeiro nome 'Wandernilson' ocorre em 0,005%, qual dos dois deveria ter maior peso de concordância e por quê?",
+        "resposta": "'Wandernilson' deve ter peso de concordância muito maior, porque sendo raro, a chance de duas pessoas distintas coincidirem nesse valor por acaso é baixíssima, tornando a concordância forte evidência de que é o mesmo indivíduo. 'Pereira', sendo comum, gera concordância por acaso com frequência alta entre pessoas diferentes, logo carrega menos informação discriminante."
+      },
+      {
+        "pergunta": "(Aula 23) Uma base de e-commerce tem duplicatas internas e precisa ser conciliada com uma base de lojas físicas sem duplicatas, além de receber um arquivo diário de novos cadastros. Quais tipos de tarefa de matching, dos quatro vistos na Aula 23, estão presentes simultaneamente?",
+        "resposta": "Três tipos combinados: deduplicação dentro da base de e-commerce (que tem duplicatas internas), linkage multi-fonte com deduplicação de um lado (link_and_dedupe) entre e-commerce e lojas físicas, e processamento incremental para o arquivo diário de novos cadastros do app, que deve ser comparado só contra as bases já resolvidas, sem reprocessar tudo."
+      }
+    ],
+    "desafio": "Você está auditando uma base de 1 milhão de registros de pacientes antes de configurar um linker no Splink. O perfilamento revela: (1) o campo 'data_nascimento' tem 8% dos registros com dia=01 e mês=01; (2) o campo 'nome_completo' tem 22% dos registros com um token extra entre parênteses ou após vírgula (títulos como 'Dr.', 'Sra.' ou sufixos como 'Jr.'); (3) o campo 'sobrenome' tem 500 ocorrências do par ortográfico 'Meyer'/'Meier' e 500 ocorrências do par fonético 'Sinclair'/'St Clair'. Projete, em até 4 frases, como você trataria cada um dos três problemas antes de montar as comparisons do Splink, indicando qual técnica/ação específica usar em cada caso e por quê a mesma técnica não serve para os três.",
+    "gabarito": "Para 'data_nascimento', crie uma flag de confiabilidade (0 quando dia=1 e mês=1) e trate esses casos como ausentes na comparação, pois é um sentinela sistemático (Christen 2012, p.40) e não uma data real, evitando usá-la como blocking key direto. Para 'nome_completo', normalize removendo títulos e sufixos (lista de stopwords de título) antes de qualquer comparação de string, pois é um erro de transcrição que infla a distância de edição sem refletir diferença real de identidade (Aula 32). Para os pares de sobrenome, use comparadores diferentes para cada subtipo: 'Meyer'/'Meier' é variação ortográfica que preserva a fonética, então edit distance (Levenshtein/Jaro-Winkler) já captura bem; 'Sinclair'/'St Clair' é variação fonética forte que quebra a estrutura da string, exigindo um comparador fonético (Double Metaphone/Soundex) além ou no lugar da edit distance. A mesma técnica não serve para os três porque as causas raiz são distintas (sentinela de data, ruído de transcrição textual, e dois tipos opostos de variação de nome), e aplicar só Jaro-Winkler em tudo deixaria o caso fonético sem cobertura adequada, conforme a taxonomia de Christen (2012, seç.3.3, p.43-44).",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.1, p.39-40.",
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.2, p.41-44.",
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.3, p.43-45.",
+      "Christen, P. (2006). A comparison of personal name matching: techniques and practical issues. IEEE ICDM Workshops."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        39,
+        51
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3017,
+      "pos_palavras_chave": 4,
+      "aprovados": 2
+    },
+    "eventos": {
+      "brutos": 4,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 104,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 6,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

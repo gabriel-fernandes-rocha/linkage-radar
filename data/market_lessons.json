@@ -1,5 +1,53 @@
 [
  {
+  "data": "2026-11-05",
+  "habilidade": "Scala",
+  "pct_vagas": 3,
+  "nivel_atual": "nao",
+  "o_que_e": "Scala é a linguagem nativa do Spark, usada para escrever jobs de alta performance e para interagir diretamente com APIs internas do Spark (RDDs, Catalyst, UDFs otimizadas). Muitas plataformas de entity resolution de larga escala, como Quantexa, são construídas em Scala/Spark e expõem suas APIs principais nessa linguagem. Saber Scala permite ler, debugar e eventualmente contribuir com código de pipelines que hoje você só usa via PySpark.",
+  "por_que_pedem": "Vagas de Knowledge Graph e Quantexa Developer pedem Scala porque essas plataformas (Quantexa, muitos frameworks proprietários de graph analytics) são escritas nativamente em Scala, e customizações, UDFs de performance crítica e extensões do motor exigem a linguagem original. Também é comum em arquiteturas Spark legadas de bancos e empresas que adotaram Spark antes do PySpark amadurecer.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em termos de Spark (DataFrames, joins, UDFs, particionamento, blocking distribuído), só que em Python. Scala usa os mesmos conceitos com sintaxe de linguagem funcional tipada: case classes parecem com seus esquemas de dados, Option é parecido com tratar nulos que você já faz em matching probabilístico, e a API de DataFrame é quase idêntica à do PySpark. Sua experiência com SQL e programação funcional (lambdas, map/filter/reduce em Python) acelera muito o aprendizado da sintaxe funcional de Scala.",
+  "minimo_para_ficar_apto": [
+   "Ler e entender um job Spark escrito em Scala (sintaxe básica, tipos, case classes, Option/Some/None)",
+   "Escrever um script simples de leitura, transformação (map/filter/groupBy/join) e escrita de DataFrame em Scala",
+   "Entender a diferença entre RDD e DataFrame API em Scala e quando usar cada um",
+   "Saber compilar e rodar um job com sbt e submeter via spark-submit",
+   "Conseguir explicar por que Scala é usada em motores como Quantexa (performance JVM, tipagem estática, integração nativa com Spark)"
+  ],
+  "plano_rapido": [
+   "2h: instalar Scala + sbt, rodar REPL, revisar sintaxe básica (val/var, funções, classes, case classes, pattern matching)",
+   "3h: curso rápido 'Scala for Spark' ou tutorial oficial do Spark em Scala, reescrever 2-3 jobs PySpark que você já tem em Scala",
+   "2h: estudar Option/Try/Either (tratamento funcional de erros) e pattern matching, comparando com try/except em Python",
+   "2h: praticar DataFrame API em Scala, fazer um join e um groupBy equivalentes a um pipeline de blocking que você já fez em PySpark",
+   "1h: aprender sbt básico (build.sbt, dependências, spark-submit de um jar)",
+   "2h: ler trechos de código aberto do Quantexa ou de projetos Scala/Spark no GitHub para se acostumar a ler código de terceiros",
+   "2h: montar um mini pipeline de entity resolution simplificado em Scala (normalização + blocking + score simples) como prova de conceito"
+  ],
+  "mini_projeto": "Reescrever em Scala um pedaço simplificado do seu pipeline de record linkage: ler dois datasets fake (nomes, CPF fictício, endereço), normalizar strings, gerar blocking keys, calcular similaridade simples (Levenshtein) via UDF em Scala, e gerar pares candidatos com score. Publicar no GitHub com README explicando a equivalência com a versão PySpark/Splink que você já domina, mostrando que entende os mesmos conceitos em ambas linguagens.",
+  "como_colocar_no_curriculo": "Scala (nível básico/intermediário): capacidade de ler, adaptar e escrever jobs Spark em Scala, aplicando conceitos de entity resolution (blocking, scoring, matching) já dominados em PySpark.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença prática entre usar Spark com Scala versus PySpark?",
+    "resposta": "Scala roda nativamente na JVM, sem overhead de serialização entre processos Python e JVM, então UDFs e operações customizadas tendem a ser mais rápidas. Scala também dá acesso a APIs internas do Spark (Catalyst, Dataset tipado) que não existem totalmente em Python. Em troca, PySpark é mais produtivo para prototipagem e tem ecossistema Python (pandas, sklearn) mais rico, que é o que eu uso hoje em entity resolution."
+   },
+   {
+    "pergunta": "O que é Option em Scala e como isso se relaciona com tratamento de nulos em matching de registros?",
+    "resposta": "Option é um container que representa um valor que pode existir (Some) ou não (None), forçando tratamento explícito de ausência de dado em tempo de compilação. Isso é equivalente a quando eu trato campos nulos ou faltantes em registros antes de calcular similaridade, por exemplo CPF ausente, mas em Scala o compilador obriga você a lidar com esse caso, reduzindo erros em produção."
+   },
+   {
+    "pergunta": "Você já usou Scala em produção? Como lidaria com uma vaga que exige isso no dia a dia?",
+    "resposta": "Sou honesto que minha experiência prática é majoritariamente em PySpark, mas entendo os conceitos centrais de Spark profundamente, e Scala é principalmente uma mudança de sintaxe sobre esses mesmos conceitos. Me comprometeria a evoluir rapidamente lendo o codebase existente e, se necessário, dedicaria tempo de onboarding estruturado focado em Scala idiomático e nas particularidades do framework da empresa, como Quantexa."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Apache Spark (API Scala)",
+   "Scala official documentation (docs.scala-lang.org), seção Tour of Scala",
+   "Livro 'Programming in Scala' (Odersky, Spoon, Venners), capítulos iniciais",
+   "Curso 'Functional Programming Principles in Scala' (Coursera, EPFL, Martin Odersky)",
+   "Documentação oficial do sbt (scala-sbt.org)"
+  ]
+ },
+ {
   "data": "2026-11-04",
   "habilidade": "embeddings",
   "pct_vagas": 3,

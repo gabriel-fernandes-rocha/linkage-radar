@@ -1468,6 +1468,11 @@
   "nivel": "parcial",
   "nome": "PII detection"
  },
+ "pim": {
+  "motivo": "Conceitos de golden record/matching próximos, mas sem ferramenta PIM específica",
+  "nivel": "parcial",
+  "nome": "PIM"
+ },
  "postgresql": {
   "motivo": "domina SQL, fácil adaptação a Postgres",
   "nivel": "parcial",
@@ -1693,6 +1698,11 @@
   "nivel": "nao",
   "nome": "SAP"
  },
+ "sap business objects": {
+  "motivo": "sem evidência de uso dessa ferramenta BI",
+  "nivel": "nao",
+  "nome": "SAP Business Objects"
+ },
  "sap data services": {
   "motivo": "não citado",
   "nivel": "nao",
@@ -1767,6 +1777,11 @@
   "motivo": "sem evidência de MDM específico",
   "nivel": "nao",
   "nome": "Semarchy"
+ },
+ "servicenow": {
+  "motivo": "sem evidência de uso dessa plataforma ITSM",
+  "nivel": "nao",
+  "nome": "ServiceNow"
  },
  "sfmc": {
   "motivo": "Salesforce Marketing Cloud não mencionado.",

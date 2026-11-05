@@ -1,5 +1,5 @@
 {
- "data": "2026-11-04",
+ "data": "2026-11-05",
  "status": "ok",
  "checks": [
   {
@@ -10,29 +10,33 @@
   {
    "status": "ok",
    "nome": "Cota SerpAPI",
-   "detalhe": "175 buscas restantes para 27 dias (~6/dia; LinkedIn e pessoas têm prioridade)"
+   "detalhe": "167 buscas restantes para 26 dias (~6/dia; LinkedIn e pessoas têm prioridade)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 99,
-  "jobs/remotive": 150,
-  "jobs/greenhouse": 1425,
-  "jobs/lever": 305,
-  "jobs/ashby": 43,
+  "jobs/remotive": 165,
+  "jobs/greenhouse": 1434,
+  "jobs/lever": 309,
+  "jobs/ashby": 45,
   "jobs/hn_who_is_hiring": 0,
-  "jobs/serpapi_google_jobs": 16,
-  "jobs/gupy": 197,
+  "jobs/serpapi_google_jobs": 7,
+  "jobs/gupy": 203,
   "jobs/himalayas": 97,
-  "jobs/jobicy": 150,
+  "jobs/jobicy": 147,
   "jobs/workable": 281,
-  "jobs/weworkremotely": 190,
-  "jobs/social_posts": 2,
-  "jobs/linkedin_guest": 45,
+  "jobs/weworkremotely": 191,
+  "jobs/social_posts": 4,
+  "jobs/linkedin_guest": 35,
   "papers/arxiv": 4,
-  "papers/openalex": 175,
-  "linkedin/posts": 8,
-  "network/perfis": 4
+  "papers/openalex": 100,
+  "linkedin/posts": 10,
+  "network/perfis": 9
  },
- "falhas": []
+ "falhas": [
+  "papers: busca 'entity matching' falhou: 429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=entity+matching&filter=from_publication_date%3A2026-10-29%2Ctype%3Aarticle%7Cpreprint&per-page=25",
+  "papers: busca 'geocoding' falhou: 429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=geocoding&filter=from_publication_date%3A2026-10-29%2Ctype%3Aarticle%7Cpreprint&per-page=25&mailto=link",
+  "papers: busca 'data linkage' falhou: 429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=data+linkage&filter=from_publication_date%3A2026-10-29%2Ctype%3Aarticle%7Cpreprint&per-page=25&mailt"
+ ]
 }
