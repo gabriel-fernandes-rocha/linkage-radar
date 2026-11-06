@@ -188,6 +188,11 @@
   "nivel": "nao",
   "nome": "Azure DevOps"
  },
+ "azure openai": {
+  "motivo": "sem evidência de uso de LLMs/Azure",
+  "nivel": "nao",
+  "nome": "Azure OpenAI"
+ },
  "b2b company data": {
   "motivo": "trabalha com dados públicos de saúde, não B2B",
   "nivel": "nao",
@@ -227,6 +232,11 @@
   "motivo": "usa Git, ferramenta próxima",
   "nivel": "parcial",
   "nome": "Bitbucket"
+ },
+ "bitrix24": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Bitrix24"
  },
  "blocking": {
   "motivo": "parte central do pipeline de matching",
@@ -583,6 +593,11 @@
   "nivel": "nao",
   "nome": "Databricks SQL"
  },
+ "datadog": {
+  "motivo": "sem evidência de ferramentas de monitoramento",
+  "nivel": "nao",
+  "nome": "Datadog"
+ },
  "datahub": {
   "motivo": "não mencionado",
   "nivel": "nao",
@@ -682,6 +697,11 @@
   "motivo": "Pipeline de matching integra Elasticsearch",
   "nivel": "tem",
   "nome": "Elasticsearch"
+ },
+ "elasticsearch/opensearch": {
+  "motivo": "usa Elasticsearch em produção",
+  "nivel": "tem",
+  "nome": "Elasticsearch/OpenSearch"
  },
  "elixir": {
   "motivo": "sem evidência de linguagem Elixir",
@@ -1063,6 +1083,11 @@
   "nivel": "nao",
   "nome": "Informatica MDM (IDMC)"
  },
+ "information retrieval": {
+  "motivo": "Elasticsearch, blocking e matching em produção implicam IR",
+  "nivel": "tem",
+  "nome": "Information Retrieval"
+ },
  "information steward": {
   "motivo": "ferramenta específica não mencionada",
   "nivel": "nao",
@@ -1157,6 +1182,11 @@
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "LangGraph"
+ },
+ "lemit": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Lemit"
  },
  "lgpd": {
   "motivo": "não há menção ao regulamento",
@@ -1288,6 +1318,11 @@
   "nivel": "nao",
   "nome": "metadata management"
  },
+ "metadata standards": {
+  "motivo": "lida com padronização de dados, próximo de metadados",
+  "nivel": "parcial",
+  "nome": "Metadata standards"
+ },
  "metaflow": {
   "motivo": "sem evidência de uso dessa ferramenta",
   "nivel": "nao",
@@ -1338,6 +1373,11 @@
   "nivel": "tem",
   "nome": "modelagem de dados"
  },
+ "mongodb": {
+  "motivo": "sem evidência de NoSQL documental",
+  "nivel": "nao",
+  "nome": "MongoDB"
+ },
  "mparticle": {
   "motivo": "sem evidência de uso",
   "nivel": "nao",
@@ -1363,6 +1403,11 @@
   "nivel": "nao",
   "nome": "Neptune"
  },
+ "ner": {
+  "motivo": "entity resolution próximo de extração de entidades",
+  "nivel": "parcial",
+  "nome": "NER"
+ },
  "netsuite": {
   "motivo": "não há experiência declarada",
   "nivel": "nao",
@@ -1382,6 +1427,11 @@
   "motivo": "Nenhum uso de Node indicado.",
   "nivel": "nao",
   "nome": "Node"
+ },
+ "node.js": {
+  "motivo": "sem evidência de JavaScript/Node",
+  "nivel": "nao",
+  "nome": "Node.js"
  },
  "nosql": {
   "motivo": "usa Elasticsearch como NoSQL de busca",
@@ -1422,6 +1472,11 @@
   "motivo": "Uso de Python implica conhecimento de OOP",
   "nivel": "parcial",
   "nome": "OOP"
+ },
+ "open-source energy modeling tools": {
+  "motivo": "sem relação com domínio de energia",
+  "nivel": "nao",
+  "nome": "Open-source energy modeling tools"
  },
  "openshift": {
   "motivo": "sem evidência de containers/orquestração",
@@ -1472,6 +1527,11 @@
   "motivo": "Conceitos de golden record/matching próximos, mas sem ferramenta PIM específica",
   "nivel": "parcial",
   "nome": "PIM"
+ },
+ "playwright": {
+  "motivo": "sem evidência de automação web/testes",
+  "nivel": "nao",
+  "nome": "Playwright"
  },
  "postgresql": {
   "motivo": "domina SQL, fácil adaptação a Postgres",
@@ -1648,6 +1708,11 @@
   "nivel": "nao",
   "nome": "Reltio Cloud"
  },
+ "reproducible data pipelines": {
+  "motivo": "constrói pipelines ETL reprodutíveis em produção",
+  "nivel": "tem",
+  "nome": "Reproducible data pipelines"
+ },
  "rest": {
   "motivo": "provável integração via APIs em pipelines",
   "nivel": "parcial",
@@ -1712,6 +1777,11 @@
   "motivo": "Nenhuma experiência ou menção ao SAP HCM",
   "nivel": "nao",
   "nome": "SAP HCM"
+ },
+ "sap idocs": {
+  "motivo": "sem evidência de integração SAP",
+  "nivel": "nao",
+  "nome": "SAP IDocs"
  },
  "sap mdg": {
   "motivo": "não citado",
@@ -1982,6 +2052,11 @@
   "motivo": "sem evidência de uso de NLP profundo",
   "nivel": "nao",
   "nome": "Transformers"
+ },
+ "transunion": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "TransUnion"
  },
  "typescript": {
   "motivo": "sem evidência de uso",

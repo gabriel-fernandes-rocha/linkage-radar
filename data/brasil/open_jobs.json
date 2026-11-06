@@ -54,8 +54,8 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-05",
-    "nova": true
+    "verificada_em": "2026-11-06",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -111,7 +111,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -168,7 +168,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -234,8 +234,8 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-05",
-    "nova": true
+    "verificada_em": "2026-11-06",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -302,7 +302,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -357,7 +357,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -377,7 +377,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remoto no Brasil de Master Data Developer com requisitos explícitos: Entity Resolution, Entity Matching, Deduplication, fuzzy matching, todos os termos-chave do tema.",
+    "motivo": "Vaga explicitamente listando Entity Resolution, Entity Matching, Deduplication, fuzzy matching e Amazon Neptune como requisitos centrais para Master Data Developer no Brasil.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -430,11 +430,76 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Desenvolvedor Master Data remoto no Brasil especializado em Entity Resolution, Entity Matching, Deduplication e fuzzy matching com Amazon Neptune, Python e graph databases.",
-    "confianca": 0.95
+    "resumo": "CI&T contrata Master Data Developer (Amazon Neptune) em remoto Brasil com requisitos diretos em entity resolution, entity matching, deduplication e fuzzy matching. Stack: Python, AWS, grafo.",
+    "confianca": 0.98
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Matheus Raul on LinkedIn: há 6 h Seguir Um pedido entregue às 13:10 voltou para \"pago\" às 13:30. O evento era mais novo, chegou depois, e o robô a",
+    "url": "https://lnkd.in/ddRCM4iP",
+    "empresa": "",
+    "local": "Brasil",
+    "fonte": "Post · LinkedIn (Brasil)",
+    "publicada_em": null,
+    "social": true,
+    "visto_em": "2026-11-05",
+    "score": 2,
+    "categoria": "linkage",
+    "termos": [
+      "dedup",
+      "deduplicacao"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Post demonstra deduplicação de pedidos por conteúdo com idempotência, watermark, mapeamento de status (de-para) e sincronização entre múltiplos marketplaces, exemplificando integração e consolidação de dados.",
+    "resumo": "Matheus Raul apresenta sincronizador de pedidos entre 3 marketplaces com deduplicação por conteúdo, idempotência, watermark e regras de status em dados. Solução técnica de integração e consolidação de múltiplas fontes.",
+    "confianca": 0.92,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Python"
+      ],
+      "desejaveis": [
+        "Playwright",
+        "Bitrix24",
+        "Azure",
+        "TypeScript",
+        "SQL",
+        "Power BI"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.3,
+    "encaixe": 0.49,
+    "compat_detalhe": {
+      "habilidades": 77,
+      "senioridade": 85,
+      "local": 75,
+      "ingles": 100,
+      "foco": 90,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -495,7 +560,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -513,7 +578,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga de Senior Engineer Graph remota aceitando Brasil com requisitos incluindo Entity Resolution, Deduplication e Data Pipelines, stack com Neo4j, Kafka, Python e ETL.",
+    "motivo": "Vaga para AI Senior Engineer com Entity Resolution e Deduplication explícitos nos requisitos, além de pipelines ETL, Neo4j e processamento com Kafka em contexto latino-americano que aceita Brasil.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -564,11 +629,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Engenheiro Sênior de Graphs remoto aceitando Brasil com foco em Entity Resolution, Deduplication, Data Pipelines e RAG usando Neo4j, Kafka, Python e ETL.",
-    "confianca": 0.85
+    "resumo": "Able contrata AI Senior Engineer para grafo (Neo4j, Cypher) remoto em América Latina, aceitando Brasil, com requisitos em entity resolution, deduplication e data pipelines ETL.",
+    "confianca": 0.95
   },
   {
     "tipo": "vaga",
@@ -625,7 +690,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -645,7 +710,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga de Master Data Developer no Brasil com requisitos explícitos: Entity Resolution, Entity Matching, Deduplication, fuzzy matching, todos centrais ao tema.",
+    "motivo": "Vaga no Brasil com requisitos centrais em entity resolution, entity matching, fuzzy matching e deduplicação, alinhados perfeitamente com a especialidade do candidato.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -697,10 +762,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Desenvolvedor Master Data no Brasil especializado em Entity Resolution, Entity Matching, Deduplication e fuzzy matching com Machine Learning, Python e graph databases na AWS.",
+    "resumo": "Master Data Developer na Ci&T Brasil com foco em resolução de entidades, matching fuzzy, deduplicação e graph databases (Neptune, AWS).",
     "confianca": 0.95
   },
   {
@@ -755,7 +820,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -773,7 +838,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil com foco explícito em identity resolution e customer 360, stack alinhada (Snowflake, dbt, SQL).",
+    "motivo": "Vaga remota com Brasil como localização e requisitos explícitos de identity resolution e customer 360, temas centrais em entity resolution.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -825,11 +890,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer em empresa remota especializada em identity resolution, data governance e customer 360 com Snowflake e ferramentas de CDP (Braze, Segment).",
-    "confianca": 0.95
+    "resumo": "Senior Data Engineer remoto na Massive Rocket com ênfase em identity resolution, customer 360 e data governance em Snowflake.",
+    "confianca": 0.9
   },
   {
     "tipo": "vaga",
@@ -895,7 +960,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -966,7 +1031,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1015,7 +1080,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1064,7 +1129,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1113,7 +1178,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1185,7 +1250,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1231,7 +1296,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1250,7 +1315,7 @@
       "survivorship"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga em São Paulo com entity resolution, master data management e data reconciliation como requisitos principais, stack Spark/Databricks alinhada ao perfil.",
+    "motivo": "Vaga em São Paulo com entity resolution e master data management como requisitos técnicos explícitos, complementados por data quality e reconciliation.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1314,11 +1379,80 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer em contrato em São Paulo com foco em entity resolution, master data management, data quality e reconciliação usando Spark, Databricks e Delta Lake.",
-    "confianca": 0.98
+    "resumo": "Senior Data Engineer na First Help Financial (São Paulo) especializado em entity resolution, MDM, data reconciliation e arquiteturas com Spark, Databricks e Delta Lake.",
+    "confianca": 0.92
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Database Marketing",
+    "url": "https://www.linkedin.com/jobs/view/4485537260",
+    "empresa": "RCB Investimentos",
+    "local": "São Paulo, SP",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-04",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "dados cadastrais",
+      "qualidade de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Analista de Database Marketing envolvendo higienização, enriquecimento, validação de dados cadastrais, cruzamento de bases com SQL e garantia de integridade e qualidade de dados.",
+    "resumo": "RCB Investimentos contrata Analista de Database Marketing para enriquecimento, higienização e validação de bases cadastrais, cruzamento de dados com SQL e governança. Foco em qualidade e padronização de dados.",
+    "confianca": 0.88,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Power BI",
+        "Excel"
+      ],
+      "desejaveis": [
+        "Lemit",
+        "TransUnion"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.4,
+    "encaixe": 0.28,
+    "compat_detalhe": {
+      "habilidades": 12,
+      "senioridade": 85,
+      "local": 85,
+      "ingles": 100,
+      "foco": 91,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI",
+        "Excel"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1377,7 +1511,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1449,8 +1583,72 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de Dados - Microsoft Fabric",
+    "url": "https://www.linkedin.com/jobs/view/4485575530",
+    "empresa": "innolevels",
+    "local": "São Paulo e Região",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-05",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados",
+      "migracao de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Engenheiro de Dados com foco em migração, integração e análise de dados ponta a ponta entre ambientes cloud, envolvendo ingestão, normalização e consolidação de bases.",
+    "resumo": "Innolevels contrata Especialista em Dados para migração de dados AWS para GCP com Microsoft Fabric. Requisita experiência em integração, migração e análise de dados ponta a ponta.",
+    "confianca": 0.85,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Microsoft Fabric",
+        "AWS",
+        "GCP"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.25,
+    "compat_detalhe": {
+      "habilidades": 0,
+      "senioridade": 85,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Microsoft Fabric",
+        "AWS",
+        "GCP"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1521,7 +1719,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1589,8 +1787,8 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-05",
-    "nova": true
+    "verificada_em": "2026-11-06",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1664,7 +1862,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1753,88 +1951,8 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "[Job - 32120] Principal Data Developer, Brazil",
-    "url": "https://jobs.lever.co/ciandt/a2ab7cb3-9304-4ddc-8d0d-847028bcc375",
-    "empresa": "ciandt",
-    "local": "Brazil",
-    "fonte": "Lever/ciandt",
-    "publicada_em": "2026-10-13",
-    "score": 1,
-    "categoria": "linkage",
-    "termos": [
-      "entity resolution"
-    ],
-    "nao_verificado": true,
-    "motivo": "Vaga Brasil com entity resolution como requisito principal, stack de data pipelines e data modeling em Databricks/AWS alinhada ao perfil.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Infrastructure as Code",
-        "Entity Resolution",
-        "Machine Learning",
-        "Data Pipelines",
-        "Data Modeling",
-        "Databricks",
-        "Terraform",
-        "AWS CDK",
-        "MarTech",
-        "Azure",
-        "ETL",
-        "GCP"
-      ],
-      "desejaveis": [
-        "AWS"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": "staff/principal",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "regiao",
-      "paises": [
-        "LATAM",
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "fluente",
-    "foco_er": 0.5,
-    "requisitos_estimados": true,
-    "encaixe": 0.14,
-    "compat_detalhe": {
-      "habilidades": 25,
-      "senioridade": 45,
-      "local": 75,
-      "ingles": 85,
-      "foco": 92,
-      "senioridade_txt": "nível staff/principal",
-      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "Infrastructure as Code",
-        "Data Modeling",
-        "Databricks",
-        "Terraform",
-        "AWS CDK",
-        "MarTech",
-        "Azure",
-        "GCP"
-      ],
-      "parciais": [],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
-    "nova": false,
-    "juiz": "anthropic",
-    "resumo": "Principal Data Developer na ciandt focado em entity resolution, data pipelines e machine learning em infraestrutura Databricks e AWS.",
-    "confianca": 0.92
   },
   {
     "tipo": "vaga",
@@ -1903,7 +2021,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   }
 ]

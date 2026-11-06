@@ -1,5 +1,54 @@
 [
  {
+  "data": "2026-11-06",
+  "habilidade": "Knowledge Graphs",
+  "pct_vagas": 4,
+  "nivel_atual": "parcial",
+  "o_que_e": "Knowledge Graphs são estruturas de dados que representam entidades (pessoas, lugares, organizações) como nós e seus relacionamentos como arestas, geralmente armazenadas em bancos de grafos (Neo4j, Amazon Neptune) ou triplestores RDF (ontologias, SPARQL). Em contextos de entity resolution, o KG é o passo seguinte ao matching: depois de identificar que registros se referem à mesma entidade, você modela essa entidade e suas relações num grafo para consultas complexas e inferência. Envolve conceitos como ontologias, esquemas (schema.org, OWL), e consultas via Cypher ou SPARQL.",
+  "por_que_pedem": "Vagas de entity resolution avançadas não param no matching, elas querem alguém que consiga representar as entidades resolvidas como um grafo consultável, permitindo análises de rede, deduplicação hierárquica e integração com sistemas de MDM. Empresas como LexDana e CMC Global claramente buscam combinar resolução de entidades com ontologias e grafos para produtos de IA que exigem raciocínio sobre relações, não só matching par a par.",
+  "ponte_com_o_que_voce_sabe": "Seu pipeline de record linkage já produz exatamente o input ideal para um KG: entidades canonizadas e seus relacionamentos (ex: pessoa-endereço-família em registro civil e proteção social). A transição é conceitual mais que técnica: ao invés de salvar o resultado do Splink como tabelas relacionais, você passa a modelar isso como nós e arestas. SQL já te dá base para aprender Cypher rapidamente, e sua experiência com Elasticsearch ajuda a entender indexação e busca em dados conectados.",
+  "minimo_para_ficar_apto": [
+   "Saber explicar a diferença entre banco relacional, grafo de propriedades (Neo4j) e RDF triplestore",
+   "Conseguir escrever queries básicas em Cypher (MATCH, CREATE, WHERE, relacionamentos)",
+   "Entender o conceito de ontologia e schema em grafos (classes, propriedades, namespaces)",
+   "Saber desenhar um modelo de grafo a partir de dados resolvidos (ex: pessoa -MORA_EM-> endereço -PERTENCE_A-> município)",
+   "Conhecer superficialmente SPARQL e RDF para não travar em entrevista sobre linked data"
+  ],
+  "plano_rapido": [
+   "2h: fazer o tutorial oficial 'Neo4j Fundamentals' (gratuito) para entender grafo de propriedades e Cypher básico",
+   "3h: praticar queries Cypher com um dataset pequeno, modelando pessoas e relações a partir de uma saída fictícia do Splink",
+   "2h: ler sobre RDF, triplas e ontologias na documentação do W3C (RDF Primer) para ter vocabulário de entrevista",
+   "2h: estudar diferenças entre Neo4j, Amazon Neptune e triplestores (Stardog, GraphDB) e quando usar cada um",
+   "1h: revisar casos de uso de KG em MDM e entity resolution (ex: Palantir, AWS Neptune ML) para discurso de entrevista"
+  ],
+  "mini_projeto": "Pegue uma amostra de saída do seu pipeline Splink (clusters de entidades resolvidas) e carregue num Neo4j local (Docker). Modele pessoas, endereços e vínculos familiares como grafo, escreva 5 queries Cypher demonstrando buscas por relação (ex: encontrar todas as pessoas conectadas a um mesmo domicílio em até 2 saltos). Documente no GitHub com um README explicando a ponte entre record linkage e knowledge graph.",
+  "como_colocar_no_curriculo": "Modelei entidades resolvidas via record linkage (Splink) como knowledge graph em Neo4j, implementando queries Cypher para análise de relacionamentos entre registros vinculados.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre um knowledge graph e um banco de dados relacional tradicional?",
+    "resposta": "Banco relacional organiza dados em tabelas fixas com joins custosos para relações complexas; knowledge graph representa entidades como nós e relacionamentos como arestas de primeira classe, permitindo consultas eficientes sobre caminhos e conexões de múltiplos saltos sem joins repetidos, além de ser mais flexível para esquemas evolutivos."
+   },
+   {
+    "pergunta": "Como você conectaria a saída de um pipeline de entity resolution a um knowledge graph?",
+    "resposta": "Cada entidade resolvida (cluster do Splink) vira um nó com atributos canonizados, e os relacionamentos identificados nos dados (endereço, família, vínculo organizacional) viram arestas tipadas. O ID do cluster serve de chave para ligar o nó no grafo, criando uma camada de consulta relacional sobre o resultado do matching."
+   },
+   {
+    "pergunta": "O que é uma ontologia e por que ela importa em knowledge graphs?",
+    "resposta": "Ontologia é a definição formal das classes de entidades, suas propriedades e relações permitidas, funcionando como o schema semântico do grafo. Ela garante consistência, permite inferência automática e interoperabilidade entre sistemas diferentes que usam o mesmo vocabulário."
+   },
+   {
+    "pergunta": "Quando você usaria Neo4j versus RDF/SPARQL?",
+    "resposta": "Neo4j é mais indicado para casos de aplicação prática com performance em consultas de caminhos e propriedades flexíveis; RDF/SPARQL é melhor quando há necessidade de interoperabilidade semântica, padrões abertos e integração com linked data na web, comum em contextos acadêmicos ou governamentais."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial Neo4j (Neo4j Graph Academy, curso 'Neo4j Fundamentals')",
+   "W3C RDF Primer e SPARQL 1.1 Query Language (documentação oficial W3C)",
+   "Documentação da AWS sobre Amazon Neptune",
+   "Google Knowledge Graph documentation (developers.google.com)"
+  ]
+ },
+ {
   "data": "2026-11-05",
   "habilidade": "Scala",
   "pct_vagas": 3,

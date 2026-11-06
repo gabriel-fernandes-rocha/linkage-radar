@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -154,7 +154,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -199,8 +199,55 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "(1609) Senior AI Engineer (Full Stack) - LinkedIn Brasil",
+    "url": "https://br.linkedin.com/jobs/view/1609-senior-ai-engineer-full-stack-at-nortal-4487023121",
+    "data": "Nov 3, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 4,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Senior AI Engineer lista entity resolution e data quality como conhecimentos fortes exigidos, indicando responsabilidade relevante no pipeline de dados.",
+    "resumo": "Vaga de Senior AI Engineer (Full Stack) que exige forte conhecimento em transformação de dados, entity resolution, design de schema e qualidade de dados, com 3+ anos em Python/backend.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 3,
+    "ingles": "fluente",
+    "foco_er": 0.2,
+    "encaixe": 0.45,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 100,
+      "local": 60,
+      "ingles": 85,
+      "foco": 88,
+      "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -212,7 +259,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -298,7 +345,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -343,7 +390,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -393,7 +440,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -439,7 +486,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -488,7 +535,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -539,7 +586,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -588,7 +635,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -637,7 +684,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -686,8 +733,63 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Independent Consultancy - Technical Planning and Coordination",
+    "url": "https://it.linkedin.com/jobs/view/independent-consultancy-technical-planning-and-coordination-at-jobgether-4480756814",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Post anunciando consultoria independente com entity resolution listado como requisito central junto a integração de dados e interoperabilidade, embora contexto seja energia aberta.",
+    "resumo": "Vaga de Consultoria Independente em planejamento técnico exigindo experiência com entity resolution, schemas comuns e integração de dados em ecossistemas de energia aberta. Post concreto.",
+    "confianca": 0.8,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity resolution",
+        "Metadata standards"
+      ],
+      "desejaveis": [
+        "Open-source energy modeling tools",
+        "Reproducible data pipelines"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "freelance",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.3,
+    "encaixe": 0.36,
+    "compat_detalhe": {
+      "habilidades": 69,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 90,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "Metadata standards"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -741,7 +843,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -803,7 +905,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -853,8 +955,54 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Information Extraction Engineer",
+    "url": "https://th.linkedin.com/jobs/view/senior-information-extraction-engineer-at-well-inked-memoirs-4481302187",
+    "data": "Oct 22, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Senior Information Extraction Engineer com entity resolution, provenance e qualidade de extração como responsabilidades práticas centrais em sistemas em produção.",
+    "resumo": "Vaga de Senior Information Extraction Engineer exigindo compreensão prática de entity resolution, source provenance e capacidade de avaliar qualidade e investigar falhas em sistemas de produção confiáveis.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 75,
+      "local": 60,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível senior",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -896,7 +1044,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -939,7 +1087,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -979,7 +1127,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1022,7 +1170,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1077,34 +1225,28 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
     "tipo": "vaga",
-    "titulo": "Senior Data Scientist/Engineer IRC307996 - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/senior-data-scientist-engineer-irc307996-at-globallogic-4484862812",
-    "data": "Oct 30, 2026",
+    "titulo": "AI Engineering Lead, Data Ontology & Knowledge",
+    "url": "https://pl.linkedin.com/jobs/view/ai-engineering-lead-data-ontology-knowledge-at-bain-company-4482134869",
+    "data": "Oct 21, 2026",
     "fonte": "LinkedIn Jobs",
-    "score": 17,
+    "score": 3,
     "juiz": "anthropic",
-    "motivo": "Vaga de Senior Data Scientist/Engineer com foco explícito em record linkage, fuzzy matching, entity resolution e MDM/Customer 360, alinhada com expertise do leitor.",
-    "resumo": "Vaga para Senior Data Scientist/Engineer com expertise em record linkage, fuzzy matching, graph algorithms e entity resolution, além de experiência em plataformas MDM e Customer 360 em produção.",
-    "confianca": 0.95,
+    "motivo": "Vaga de AI Engineering Lead explicita experiência com entity resolution techniques e data classification systems como requisitos centrais para lidar com dados ambíguos ou conflitantes.",
+    "resumo": "Vaga de AI Engineering Lead em Data Ontology & Knowledge que requer familiaridade com entity resolution techniques e sistemas de classificação de dados para processar saídas de knowledge graphs.",
+    "confianca": 0.85,
     "requisitos": {
       "obrigatorios": [
-        "Record linkage",
-        "Fuzzy matching",
-        "Graph algorithms",
-        "Machine learning",
-        "Master Data Management"
+        "Knowledge Graphs",
+        "Entity Resolution"
       ],
-      "desejaveis": [
-        "MLOps",
-        "Feature stores"
-      ]
+      "desejaveis": []
     },
-    "senioridade": "senior",
+    "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "local_contratacao": {
       "escopo": "nao_informado",
@@ -1114,28 +1256,26 @@
     "patrocina_visto": null,
     "contratacao": "nao_informado",
     "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.9,
+    "ingles": "fluente",
+    "foco_er": 0.3,
     "encaixe": 0.32,
     "compat_detalhe": {
-      "habilidades": 59,
-      "senioridade": 75,
+      "habilidades": 75,
+      "senioridade": 85,
       "local": 60,
-      "ingles": 100,
-      "foco": 98,
-      "senioridade_txt": "nível senior",
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível nao informado",
       "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Master Data Management"
-      ],
+      "faltam": [],
       "parciais": [
-        "Graph algorithms"
+        "Knowledge Graphs"
       ],
       "estimado": false
     },
-    "desde": "2026-11-01",
-    "verificada_em": "2026-11-05",
-    "nova": false
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1174,7 +1314,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1214,7 +1354,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1254,7 +1394,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1303,7 +1443,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1350,7 +1490,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1426,7 +1566,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1466,7 +1606,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1526,7 +1666,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1568,7 +1708,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1610,7 +1750,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1650,7 +1790,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1690,7 +1830,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1733,7 +1873,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1776,7 +1916,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1819,7 +1959,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1859,7 +1999,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1899,7 +2039,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -1939,8 +2079,55 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer (Ontology & Knowledge Graphs)",
+    "url": "https://uk.linkedin.com/jobs/view/senior-data-engineer-ontology-knowledge-graphs-at-dex-4486128185",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 4,
+    "juiz": "anthropic",
+    "motivo": "Post anunciando vaga concreta (Senior Data Engineer em Ontology & Knowledge Graphs) com requisito explícito de entity resolution, deduplicação e source reconciliation como foco central.",
+    "resumo": "Vaga de Senior Data Engineer em Knowledge Graphs com foco em entity resolution, deduplicação e reconciliação de fontes mantendo linhagem de dados. Função concreta anunciada.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.28,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1988,7 +2175,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2034,7 +2221,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2093,7 +2280,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2141,7 +2328,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2200,8 +2387,79 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior AI Platform Engineer en Encora Inc. - LinkedIn México",
+    "url": "https://mx.linkedin.com/jobs/view/senior-ai-platform-engineer-at-encora-inc-4484247333",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Post anunciando vaga concreta (Senior AI Platform Engineer / Knowledge Graph Engineer em Encora/Coforge, LATAM remoto) com entity resolution, Neo4j e knowledge graphs como skills centrais.",
+    "resumo": "Vaga de Senior AI Platform Engineer / Knowledge Graph Engineer em LATAM remoto exigindo 7+ anos em Knowledge Graphs, entity resolution, Neo4j, Elasticsearch e NLP. Post concreto.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "Neo4j",
+        "Elasticsearch",
+        "Elasticsearch/OpenSearch",
+        "Entity Resolution",
+        "NLP",
+        "NER",
+        "LLMs",
+        "spaCy",
+        "PostgreSQL",
+        "Kubernetes",
+        "Datadog"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 7,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.23,
+    "compat_detalhe": {
+      "habilidades": 41,
+      "senioridade": 40,
+      "local": 100,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Neo4j",
+        "spaCy",
+        "PostgreSQL",
+        "Kubernetes",
+        "Datadog"
+      ],
+      "parciais": [
+        "NLP",
+        "NER",
+        "LLMs"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2251,7 +2509,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2321,7 +2579,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2389,7 +2647,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2458,8 +2716,72 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Ingénieur de données senior – SAP / Jaggaer SLM / Data Migration",
+    "url": "https://himalayas.app/companies/xideral/jobs/ingenieur-de-donnees-senior-sap-jaggaer-slm-data-migration",
+    "empresa": "Xideral",
+    "local": "Remoto · Canada",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-11-06",
+    "score": 11,
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro de dados sênior com foco explícito em master data, golden record de fornecedores, integração e qualidade de dados em ambiente SAP/Jaggaer, alinhado com MDM e data matching.",
+    "resumo": "Engenheiro de dados sênior para programa de transformação SAP/Jaggaer em manufatura, responsável por pipelines de master data de fornecedores com golden record, qualidade e integração entre sistemas. Remoto, Canada, 12 meses, inglês obrigatório.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Python",
+        "SAP IDocs",
+        "ETL/ELT"
+      ],
+      "desejaveis": [
+        "Snowflake",
+        "dbt",
+        "Azure Data Factory",
+        "Informatica",
+        "Collibra",
+        "SAP S/4HANA"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Canada"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": 8,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.18,
+    "compat_detalhe": {
+      "habilidades": 49,
+      "senioridade": 40,
+      "local": 85,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "local_txt": "freelance/contractor (Canada)",
+      "faltam": [
+        "SAP IDocs"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2506,8 +2828,8 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-05",
-    "nova": true
+    "verificada_em": "2026-11-06",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2550,7 +2872,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2617,7 +2939,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2669,7 +2991,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2726,7 +3048,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2774,7 +3096,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2816,7 +3138,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2886,7 +3208,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -2934,7 +3256,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3002,7 +3324,7 @@
       "estimado": true
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3063,7 +3385,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3100,7 +3422,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3161,7 +3483,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3259,7 +3581,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3324,7 +3646,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3385,7 +3707,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -3450,7 +3772,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -3505,7 +3827,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -3573,9 +3895,120 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-02"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Software Engineer III at ZoomInfo — United States | LinkedIn Jobs",
+    "url": "https://www.linkedin.com/jobs/view/software-engineer-iii-at-zoominfo-4487506479",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Post anunciando vaga concreta (Software Engineer III na ZoomInfo) com entity resolution e match service como foco central do produto, operando em escala de bilhões de documentos.",
+    "resumo": "Vaga de Software Engineer III para construir serviço de entity resolution e matching operando em escala global com bilhões de documentos na ZoomInfo. Post com vaga concreta.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Founding AI Product Engineer at LexDana — Canada - LinkedIn",
+    "url": "https://ca.linkedin.com/jobs/view/founding-ai-product-engineer-at-lexdana-4484094558",
+    "data": "Oct 27, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 8,
+    "juiz": "anthropic",
+    "motivo": "Post anuncia vaga concreta de AI Product Engineer com foco central em entity resolution, record linkage e identity matching como responsabilidades técnicas principais.",
+    "resumo": "Vaga de Founding AI Product Engineer na LexDana (Canadá) com foco em entity resolution, record linkage, identity matching e sistemas de recuperação de informação, além de aplicações com LLM e RAG.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Record Linkage",
+        "Information Retrieval",
+        "Knowledge Graphs",
+        "LLMs",
+        "RAG",
+        "Vector Databases",
+        "Semantic Search"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Canada"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em Canada, sem patrocínio de visto",
+      "faltam": [
+        "RAG",
+        "Vector Databases"
+      ],
+      "parciais": [
+        "Knowledge Graphs",
+        "LLMs",
+        "Semantic Search"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -3630,7 +4063,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3685,7 +4118,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3734,7 +4167,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -3786,7 +4219,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
@@ -3824,7 +4257,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3882,7 +4315,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3969,65 +4402,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-05",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "REMOTE Lead Systems Analyst with MDM across investment-data and reference-data environments",
-    "url": "https://www.linkedin.com/jobs/view/remote-lead-systems-analyst-with-mdm-across-investment-data-and-reference-data-environments-at-yoh-a-day-zimmermann-company-4485351303",
-    "empresa": "Yoh, A Day & Zimmermann Company",
-    "local": "Anywhere",
-    "fonte": "Google Jobs",
-    "publicada_em": null,
-    "score": 7,
-    "juiz": "anthropic",
-    "motivo": "Vaga Lead Systems Analyst em MDM com requisitos de design de solução, data quality, lineage e stewardship em plataformas de gestão de dados mestres (investment data e reference data).",
-    "resumo": "Yoh busca Lead Systems Analyst com experiência em MDM (Informatica, Salesforce ou EDM) e gestão de investment-data e reference-data, com foco em data quality, lineage e governance.",
-    "confianca": 0.89,
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Informatica MDM"
-      ],
-      "desejaveis": [
-        "Salesforce",
-        "Markit EDM"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.3,
-    "encaixe": 0.03,
-    "compat_detalhe": {
-      "habilidades": 19,
-      "senioridade": 75,
-      "local": 12,
-      "ingles": 85,
-      "foco": 90,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [
-        "Informatica MDM"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4086,7 +4461,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4154,7 +4529,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -4229,7 +4604,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -4296,7 +4671,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -4374,7 +4749,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -4430,8 +4805,8 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-05",
-    "nova": true
+    "verificada_em": "2026-11-06",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4496,7 +4871,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4574,7 +4949,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4641,7 +5016,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4717,7 +5092,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4772,7 +5147,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4839,7 +5214,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4899,7 +5274,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -4963,9 +5338,73 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "publicada_em": "2026-08-28"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "CrossTalent hiring Staff Backend Engineer, AI Systems in Gibraltar ...",
+    "url": "https://gi.linkedin.com/jobs/view/staff-backend-engineer-ai-systems-at-crosstalent-4481747135",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Post anunciando vaga concreta (Staff Backend Engineer em AI Systems na Encora/CrossTalent) com entity resolution, knowledge graphs e relationship-aware retrieval como requisitos centrais.",
+    "resumo": "Vaga de Staff Backend Engineer em AI Systems em Gibraltar/LATAM remoto com foco em knowledge graphs, entity resolution e sistemas de recuperação baseados em relações. Post concreto.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "Azure OpenAI",
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "desejaveis": [
+        "Knowledge graphs",
+        "Entity resolution"
+      ]
+    },
+    "senioridade": "staff/principal",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Gibraltar"
+      ],
+      "cidades": [
+        "Gibraltar"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.01,
+    "compat_detalhe": {
+      "habilidades": 19,
+      "senioridade": 45,
+      "local": 8,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível staff/principal",
+      "local_txt": "em Gibraltar, sem patrocínio de visto",
+      "faltam": [
+        "Azure OpenAI",
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-06",
+    "verificada_em": "2026-11-06",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -5038,7 +5477,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -5109,103 +5548,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-05",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "IBM Master Data Management (MDM) & Integration Developer",
-    "url": "https://www.linkedin.com/jobs/view/ibm-master-data-management-mdm-integration-developer-at-predica-inc-4486430969",
-    "empresa": "Predica Inc",
-    "local": "United States",
-    "fonte": "Google Jobs",
-    "publicada_em": null,
-    "score": 9,
-    "juiz": "anthropic",
-    "motivo": "Vaga de Senior IBM MDM Developer focada em Master Person Index (MPI) e data stewardship, com aplicação direta em ambiente de saúde.",
-    "resumo": "Predica Inc busca Senior IBM MDM Developer para Michigan MDHHS com expertise em Master Person Index, IBM InfoSphere MDM e integração de dados de saúde em produção.",
-    "confianca": 0.92,
-    "requisitos": {
-      "obrigatorios": [
-        "IBM InfoSphere MDM",
-        "Java",
-        "J2EE",
-        "JSP",
-        "REST",
-        "SOAP",
-        "Kafka",
-        "WildFly",
-        "Linux",
-        "SQL",
-        "Oracle",
-        "Microsoft SQL Server",
-        "Shell Scripting",
-        "PowerShell",
-        "CRON",
-        "Git",
-        "GitHub",
-        "Azure DevOps",
-        "CI/CD",
-        "Entity Resolution"
-      ],
-      "desejaveis": [
-        "OpenShift",
-        "Kubernetes",
-        "AWS",
-        "Azure",
-        "ELK Stack",
-        "Flowable"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "hibrido",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "Lansing, MI"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": 8,
-    "ingles": "fluente",
-    "foco_er": 0.7,
-    "encaixe": 0.01,
-    "compat_detalhe": {
-      "habilidades": 23,
-      "senioridade": 40,
-      "local": 8,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
-      "local_txt": "hibrido em United States, sem patrocínio de visto",
-      "faltam": [
-        "IBM InfoSphere MDM",
-        "Java",
-        "J2EE",
-        "JSP",
-        "SOAP",
-        "Kafka",
-        "WildFly",
-        "PowerShell"
-      ],
-      "parciais": [
-        "REST",
-        "Linux",
-        "SQL",
-        "Oracle",
-        "Microsoft SQL Server",
-        "Shell Scripting",
-        "CRON",
-        "Git"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-03",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -5261,7 +5604,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false
   },
   {
@@ -5286,7 +5629,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-05",
+    "verificada_em": "2026-11-06",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

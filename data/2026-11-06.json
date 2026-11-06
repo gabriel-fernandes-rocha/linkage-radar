@@ -1,0 +1,607 @@
+{
+  "data": "2026-11-06",
+  "gerado_em": "2026-11-06T00:26-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Software Engineer III at ZoomInfo — United States | LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-iii-at-zoominfo-4487506479",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando vaga concreta (Software Engineer III na ZoomInfo) com entity resolution e match service como foco central do produto, operando em escala de bilhões de documentos.",
+      "resumo": "Vaga de Software Engineer III para construir serviço de entity resolution e matching operando em escala global com bilhões de documentos na ZoomInfo. Post com vaga concreta.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Ingénieur de données senior – SAP / Jaggaer SLM / Data Migration",
+      "url": "https://himalayas.app/companies/xideral/jobs/ingenieur-de-donnees-senior-sap-jaggaer-slm-data-migration",
+      "empresa": "Xideral",
+      "local": "Remoto · Canada",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-06",
+      "score": 11,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenheiro de dados sênior com foco explícito em master data, golden record de fornecedores, integração e qualidade de dados em ambiente SAP/Jaggaer, alinhado com MDM e data matching.",
+      "resumo": "Engenheiro de dados sênior para programa de transformação SAP/Jaggaer em manufatura, responsável por pipelines de master data de fornecedores com golden record, qualidade e integração entre sistemas. Remoto, Canada, 12 meses, inglês obrigatório.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Python",
+          "SAP IDocs",
+          "ETL/ELT"
+        ],
+        "desejaveis": [
+          "Snowflake",
+          "dbt",
+          "Azure Data Factory",
+          "Informatica",
+          "Collibra",
+          "SAP S/4HANA"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "Canada"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "contractor_global",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.18,
+      "compat_detalhe": {
+        "habilidades": 49,
+        "senioridade": 40,
+        "local": 85,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+        "local_txt": "freelance/contractor (Canada)",
+        "faltam": [
+          "SAP IDocs"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer (Ontology & Knowledge Graphs)",
+      "url": "https://uk.linkedin.com/jobs/view/senior-data-engineer-ontology-knowledge-graphs-at-dex-4486128185",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando vaga concreta (Senior Data Engineer em Ontology & Knowledge Graphs) com requisito explícito de entity resolution, deduplicação e source reconciliation como foco central.",
+      "resumo": "Vaga de Senior Data Engineer em Knowledge Graphs com foco em entity resolution, deduplicação e reconciliação de fontes mantendo linhagem de dados. Função concreta anunciada.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.28,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior AI Platform Engineer en Encora Inc. - LinkedIn México",
+      "url": "https://mx.linkedin.com/jobs/view/senior-ai-platform-engineer-at-encora-inc-4484247333",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando vaga concreta (Senior AI Platform Engineer / Knowledge Graph Engineer em Encora/Coforge, LATAM remoto) com entity resolution, Neo4j e knowledge graphs como skills centrais.",
+      "resumo": "Vaga de Senior AI Platform Engineer / Knowledge Graph Engineer em LATAM remoto exigindo 7+ anos em Knowledge Graphs, entity resolution, Neo4j, Elasticsearch e NLP. Post concreto.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Neo4j",
+          "Elasticsearch",
+          "Elasticsearch/OpenSearch",
+          "Entity Resolution",
+          "NLP",
+          "NER",
+          "LLMs",
+          "spaCy",
+          "PostgreSQL",
+          "Kubernetes",
+          "Datadog"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "regiao",
+        "paises": [
+          "LATAM"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 7,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.23,
+      "compat_detalhe": {
+        "habilidades": 41,
+        "senioridade": 40,
+        "local": 100,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+        "local_txt": "remoto e aceita Brasil/LATAM",
+        "faltam": [
+          "Neo4j",
+          "spaCy",
+          "PostgreSQL",
+          "Kubernetes",
+          "Datadog"
+        ],
+        "parciais": [
+          "NLP",
+          "NER",
+          "LLMs"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "CrossTalent hiring Staff Backend Engineer, AI Systems in Gibraltar ...",
+      "url": "https://gi.linkedin.com/jobs/view/staff-backend-engineer-ai-systems-at-crosstalent-4481747135",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando vaga concreta (Staff Backend Engineer em AI Systems na Encora/CrossTalent) com entity resolution, knowledge graphs e relationship-aware retrieval como requisitos centrais.",
+      "resumo": "Vaga de Staff Backend Engineer em AI Systems em Gibraltar/LATAM remoto com foco em knowledge graphs, entity resolution e sistemas de recuperação baseados em relações. Post concreto.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Azure OpenAI",
+          "React",
+          "Node.js",
+          "MongoDB"
+        ],
+        "desejaveis": [
+          "Knowledge graphs",
+          "Entity resolution"
+        ]
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Gibraltar"
+        ],
+        "cidades": [
+          "Gibraltar"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.01,
+      "compat_detalhe": {
+        "habilidades": 19,
+        "senioridade": 45,
+        "local": 8,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível staff/principal",
+        "local_txt": "em Gibraltar, sem patrocínio de visto",
+        "faltam": [
+          "Azure OpenAI",
+          "React",
+          "Node.js",
+          "MongoDB"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Independent Consultancy - Technical Planning and Coordination",
+      "url": "https://it.linkedin.com/jobs/view/independent-consultancy-technical-planning-and-coordination-at-jobgether-4480756814",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando consultoria independente com entity resolution listado como requisito central junto a integração de dados e interoperabilidade, embora contexto seja energia aberta.",
+      "resumo": "Vaga de Consultoria Independente em planejamento técnico exigindo experiência com entity resolution, schemas comuns e integração de dados em ecossistemas de energia aberta. Post concreto.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity resolution",
+          "Metadata standards"
+        ],
+        "desejaveis": [
+          "Open-source energy modeling tools",
+          "Reproducible data pipelines"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "freelance",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.36,
+      "compat_detalhe": {
+        "habilidades": 69,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "Metadata standards"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Founding AI Product Engineer at LexDana — Canada - LinkedIn",
+      "url": "https://ca.linkedin.com/jobs/view/founding-ai-product-engineer-at-lexdana-4484094558",
+      "texto": "Data & retrieval: entity resolution, record linkage, identity matching, information retrieval, search systems, knowledge graphs AI systems: LLM applications, RAG, vector databases, semantic search",
+      "data": "Oct 27, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Post anuncia vaga concreta de AI Product Engineer com foco central em entity resolution, record linkage e identity matching como responsabilidades técnicas principais.",
+      "resumo": "Vaga de Founding AI Product Engineer na LexDana (Canadá) com foco em entity resolution, record linkage, identity matching e sistemas de recuperação de informação, além de aplicações com LLM e RAG.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Record Linkage",
+          "Information Retrieval",
+          "Knowledge Graphs",
+          "LLMs",
+          "RAG",
+          "Vector Databases",
+          "Semantic Search"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "Canada"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 56,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em Canada, sem patrocínio de visto",
+        "faltam": [
+          "RAG",
+          "Vector Databases"
+        ],
+        "parciais": [
+          "Knowledge Graphs",
+          "LLMs",
+          "Semantic Search"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Information Extraction Engineer",
+      "url": "https://th.linkedin.com/jobs/view/senior-information-extraction-engineer-at-well-inked-memoirs-4481302187",
+      "texto": "Practical understanding of entity resolution, source provenance and evidence-backed extraction Ability to evaluate extraction quality, investigate failure modes and improve the system over time Evidence of shipping and supporting reliable production systems—not just chatbot demos or prompt prototypes",
+      "data": "Oct 22, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Information Extraction Engineer com entity resolution, provenance e qualidade de extração como responsabilidades práticas centrais em sistemas em produção.",
+      "resumo": "Vaga de Senior Information Extraction Engineer exigindo compreensão prática de entity resolution, source provenance e capacidade de avaliar qualidade e investigar falhas em sistemas de produção confiáveis.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "(1609) Senior AI Engineer (Full Stack) - LinkedIn Brasil",
+      "url": "https://br.linkedin.com/jobs/view/1609-senior-ai-engineer-full-stack-at-nortal-4487023121",
+      "texto": "Strong knowledge of data transformation, entity resolution, schema design, and data quality. 3+ years of Python or Equivalent Backend Development: Strong programming skills with the ability to independently develop, integrate, and maintain production-grade AI applications.",
+      "data": "Nov 3, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior AI Engineer lista entity resolution e data quality como conhecimentos fortes exigidos, indicando responsabilidade relevante no pipeline de dados.",
+      "resumo": "Vaga de Senior AI Engineer (Full Stack) que exige forte conhecimento em transformação de dados, entity resolution, design de schema e qualidade de dados, com 3+ anos em Python/backend.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 3,
+      "ingles": "fluente",
+      "foco_er": 0.2,
+      "encaixe": 0.45,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 100,
+        "local": 60,
+        "ingles": 85,
+        "foco": 88,
+        "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "AI Engineering Lead, Data Ontology & Knowledge",
+      "url": "https://pl.linkedin.com/jobs/view/ai-engineering-lead-data-ontology-knowledge-at-bain-company-4482134869",
+      "texto": "Experience building data pipelines that translate knowledge graph outputs into structured, versioned data products consumable by downstream AI and analytics systems Familiarity with entity resolution techniques and data classification systems; understanding of how to handle ambiguous, incomplete, or conflicting data at the knowledge layer",
+      "data": "Oct 21, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de AI Engineering Lead explicita experiência com entity resolution techniques e data classification systems como requisitos centrais para lidar com dados ambíguos ou conflitantes.",
+      "resumo": "Vaga de AI Engineering Lead em Data Ontology & Knowledge que requer familiaridade com entity resolution techniques e sistemas de classificação de dados para processar saídas de knowledge graphs.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Knowledge Graphs",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "Knowledge Graphs"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 103,
+  "vagas_arquivadas_total": 156,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "Knowledge Graphs",
+  "brasil": {
+    "novas": 9,
+    "abertas": 31,
+    "arquivadas": 54,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 36,
+    "semana": 6,
+    "tema": "Pré-processamento para data matching",
+    "tipo": "conceito",
+    "titulo": "Remover caracteres e tokens indesejados",
+    "modulo": "Semana 6: Pré-processamento para data matching",
+    "versao": 2,
+    "objetivo": "Aplicar a primeira etapa do pré-processamento de Christen (remoção de caracteres e tokens indesejados) para limpar nomes e endereços antes da tokenização e padronização.",
+    "conceito": "Christen (2012, seç. 3.5.1, p.51) descreve a primeira etapa de pré-processamento como a limpeza de caracteres: remover ou normalizar espaços em branco múltiplos, caracteres de controle, pontuação espúria e converter tudo para minúsculas (ou maiúsculas) antes de qualquer comparação. O exemplo do livro mostra ' Paul Peter Miller ' sendo convertido em 'paul peter miller', eliminando espaços nas bordas e colapsando espaços internos em um único caractere separador.\n\nAlém da limpeza de caracteres, existe a remoção de tokens indesejados: palavras ou símbolos que não carregam informação útil para o matching, como 'n/a', 'unknown', 'none', aspas, parênteses vazios, ou sufixos de sistema. Na tabela de tags da FEBRL (Christen 2012, Tabela 3.1, p.55) isso é formalizado pela tag RU ('Rubbish'), atribuída via look-up table a tokens que devem ser descartados do fluxo de segmentação, e por tags hard-coded como CO (vírgulas, ponto e vírgula), SL (barras) e VB (parênteses, chaves, aspas) que isolam pontuação para tratamento separado.\n\nEssa etapa é anterior e distinta da padronização com tabelas de correspondência (aula seguinte): aqui não se substitui um token por outro válido, apenas se decide o que entra ou sai do fluxo antes de qualquer comparação ou lookup.",
+    "como_funciona": "1. Normalizar espaços: trim nas bordas, colapsar múltiplos espaços/tabs/quebras de linha em um único separador.\n2. Normalizar caixa: converter para minúsculas (ou maiúsculas, conforme convenção do pipeline).\n3. Remover ou isolar caracteres de controle e pontuação não informativa (aspas, parênteses vazios, hífens soltos) usando tags hard-coded como CO, SL, VB, HY (Christen 2012, Tabela 3.1, p.55).\n4. Comparar cada token contra uma look-up table de 'rubbish' (tag RU) contendo valores sentinela como 'n/a', 'unknown', 'none', 'null', '-', '.' e remover esses tokens do campo.\n5. Registrar o que foi removido em log/auditoria, nunca sobrescrever o dado bruto original.",
+    "exemplo": "Campo bruto de nome: '  Mr. JOHN   O'Brien (n/a)  '.\nPasso 1 (trim + colapso de espaço): 'Mr. JOHN O'Brien (n/a)'.\nPasso 2 (minúsculas): 'mr. john o'brien (n/a)'.\nPasso 3 (isolar pontuação com tags VB para parênteses): tokens tornam-se ['mr.', 'john', \"o'brien\", '(', 'n/a', ')'].\nPasso 4 (remover tokens com tag RU, aqui 'n/a', e os parênteses vazios de conteúdo útil): resultado final ['mr.', 'john', \"o'brien\"].\nO campo limpo pronto para tokenização é 'mr. john o'brien', sem o ruído '(n/a)' que não representa nenhuma informação de nome.",
+    "na_pratica": "Em PySpark, isso entra como UDF ou função de coluna antes do blocking:\n\nimport re\ndef limpar(texto):\n    if texto is None: return None\n    t = re.sub(r\"\\s+\", \" \", texto.strip().lower())\n    rubbish = {\"n/a\", \"unknown\", \"none\", \"null\", \"-\"}\n    tokens = [tok for tok in t.split() if tok not in rubbish]\n    return \" \".join(tokens)\n\nEsse tipo de função roda como primeira transformação no pipeline, antes de qualquer cl.JaroWinklerAtThresholds do Splink, porque comparações de similaridade feitas sobre texto não limpo degradam m e u probabilities.",
+    "armadilha": "Remover tokens de forma agressiva demais (por exemplo, descartar todo parêntese) pode apagar informação útil, como sufixos 'Jr.' ou números de apartamento; sempre valide a lista de rubbish tokens com um domain expert antes de aplicar em produção, como recomenda Christen (2012, p.51-52).",
+    "desafio": "Você recebe o campo de endereço bruto: '  Rua das Flores, Apto. (N/A) - 2 B  '. Usando as etapas 1 a 4 descritas, escreva o resultado final do campo após remoção de caracteres e tokens indesejados, indicando explicitamente quais tokens foram descartados e por quê.",
+    "gabarito": "Passo 1 (trim+colapso espaço): 'Rua das Flores, Apto. (N/A) - 2 B'.\nPasso 2 (minúsculas): 'rua das flores, apto. (n/a) - 2 b'.\nPasso 3 (isolar pontuação, tags CO para vírgulas repetidas, VB para parênteses, HY para hífen): tokens = ['rua','das','flores',',',',','apto.','(','n/a',')','-','2','b'].\nPasso 4 (remover rubbish): descarta-se a vírgula duplicada extra (mantém-se só uma), o par de parênteses vazio de conteúdo (mantendo apenas se 'n/a' for removido) e o próprio token 'n/a' (tag RU, sentinela de valor ausente), e o hífen solto sem função (não é separador de intervalo numérico válido).\nResultado final: 'rua das flores, apto. 2 b'. Tokens descartados: vírgula duplicada, 'n/a', parênteses vazios, hífen solto, porque nenhum carrega informação de endereço útil para o matching.",
+    "fontes": [
+      "Christen (2012), seç. 3.5.1, p.51-52",
+      "Christen (2012), Tabela 3.1 (tags RU, CO, SL, VB, HY), p.55",
+      "Churches, Christen, Lim & Zhu (2002), BMC Medical Informatics and Decision Making, 2(9)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        51,
+        58
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3008,
+      "pos_palavras_chave": 9,
+      "aprovados": 6
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 180,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "atencao"
+}
