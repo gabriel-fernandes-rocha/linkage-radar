@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -154,7 +154,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -199,7 +199,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -239,14 +239,64 @@
       "local": 60,
       "ingles": 85,
       "foco": 88,
-      "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [],
       "parciais": [],
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Doktorand Graph Machine Learning & Financial Crime Analytics (w|m|d ...",
+    "url": "https://de.linkedin.com/jobs/view/doktorand-graph-machine-learning-financial-crime-analytics-w-m-d-findic-at-zeb-consulting-4486845957",
+    "data": "Nov 3, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Posição de doutorado focada em graph machine learning com Entity Resolution e Record Linkage como desafios centrais da construção de grafos.",
+    "resumo": "Oportunidade de doutorado em Graph Machine Learning e Financial Crime Analytics com foco em Entity Resolution, Record Linkage e construção de grafos.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Record Linkage",
+        "Graph"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.6,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 83,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 94,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "Graph"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-07",
+    "verificada_em": "2026-11-07",
     "nova": true
   },
   {
@@ -259,7 +309,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -345,7 +395,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -390,7 +440,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -440,7 +490,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -486,7 +536,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -535,7 +585,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -586,7 +636,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -635,7 +685,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -684,7 +734,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -733,7 +783,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -788,8 +838,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -843,7 +893,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -905,7 +955,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -955,8 +1005,58 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Software Engineer - Identity Resolution",
+    "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-%E2%80%93-identity-resolution-at-acxiom-4487284849",
+    "data": "Nov 4, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 17,
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro sênior com foco explícito em Identity Resolution, Entity Resolution, MDM e record linkage como responsabilidades centrais.",
+    "resumo": "Vaga de Senior Software Engineer especializada em Identity Resolution, Entity Resolution, Customer 360, Master Data Management e record linkage.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Master Data Management",
+        "Record Linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.34,
+    "compat_detalhe": {
+      "habilidades": 67,
+      "senioridade": 75,
+      "local": 60,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-07",
+    "verificada_em": "2026-11-07",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1001,8 +1101,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1044,7 +1144,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1087,7 +1187,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1127,7 +1227,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1170,7 +1270,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1225,7 +1325,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1274,8 +1374,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1314,7 +1414,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1354,7 +1454,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1394,7 +1494,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1443,7 +1543,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1481,7 +1581,7 @@
       "local": 60,
       "ingles": 85,
       "foco": 88,
-      "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [
         "Scala"
@@ -1490,7 +1590,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1549,7 +1649,7 @@
       "local": 60,
       "ingles": 85,
       "foco": 96,
-      "senioridade_txt": "pede 2+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 2+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [
         "Azure Data Factory",
@@ -1566,7 +1666,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1606,7 +1706,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1666,7 +1766,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1708,7 +1808,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1750,7 +1850,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1790,7 +1890,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1830,7 +1930,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1873,7 +1973,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1916,7 +2016,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1959,7 +2059,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -1999,7 +2099,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2039,7 +2139,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2079,7 +2179,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2126,8 +2226,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2175,8 +2275,63 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Product Manager, Data at CertifyOS - LinkedIn India",
+    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-data-at-certifyos-4488142193",
+    "data": "Nov 6, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Product Manager em dados que exige experiência prática em entity resolution, record linkage, MDM ou identity matching como requisito principal.",
+    "resumo": "Vaga de Senior Product Manager em Data que requer experiência em entity resolution, record linkage, MDM ou identity matching, além de SQL e data literacy.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Entity Resolution",
+        "Record Linkage",
+        "Master Data Management"
+      ],
+      "desejaveis": [
+        "BigQuery"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.27,
+    "compat_detalhe": {
+      "habilidades": 47,
+      "senioridade": 75,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível senior",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Master Data Management"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-07",
+    "verificada_em": "2026-11-07",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2221,7 +2376,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2271,7 +2426,7 @@
       "local": 60,
       "ingles": 85,
       "foco": 98,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [],
       "parciais": [
@@ -2280,7 +2435,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2328,7 +2483,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2387,7 +2542,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2441,7 +2596,7 @@
       "local": 100,
       "ingles": 100,
       "foco": 92,
-      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 7+ anos (você tem 2.9)",
       "local_txt": "remoto e aceita Brasil/LATAM",
       "faltam": [
         "Neo4j",
@@ -2458,8 +2613,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2509,7 +2664,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2567,7 +2722,7 @@
       "local": 85,
       "ingles": 85,
       "foco": 92,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "freelance/contractor (United States)",
       "faltam": [
         "Snowflake",
@@ -2579,7 +2734,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2632,7 +2787,7 @@
       "local": 100,
       "ingles": 85,
       "foco": 92,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto e aceita Brasil/LATAM",
       "faltam": [
         "AWS",
@@ -2647,7 +2802,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2697,7 +2852,7 @@
       "local": 60,
       "ingles": 85,
       "foco": 97,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [
         "Snowflake",
@@ -2716,7 +2871,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2769,7 +2924,7 @@
       "local": 85,
       "ingles": 85,
       "foco": 92,
-      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 8+ anos (você tem 2.9)",
       "local_txt": "freelance/contractor (Canada)",
       "faltam": [
         "SAP IDocs"
@@ -2780,8 +2935,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2828,7 +2983,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2872,7 +3027,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2923,7 +3078,7 @@
       "local": 60,
       "ingles": 100,
       "foco": 90,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [
         "AWS Glue",
@@ -2939,7 +3094,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -2991,7 +3146,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3037,7 +3192,7 @@
       "local": 60,
       "ingles": 85,
       "foco": 98,
-      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 7+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [
         "Master Data Management"
@@ -3048,7 +3203,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3096,7 +3251,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3131,14 +3286,14 @@
       "local": 60,
       "ingles": 85,
       "foco": 88,
-      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 8+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [],
       "parciais": [],
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3191,7 +3346,7 @@
       "local": 60,
       "ingles": 85,
       "foco": 97,
-      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 8+ anos (você tem 2.9)",
       "local_txt": "local de contratação não informado",
       "faltam": [
         "Salesforce",
@@ -3208,7 +3363,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3256,7 +3411,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3324,8 +3479,62 @@
       "estimado": true
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Graph & Identity Engineer: Build Production Graphs",
+    "url": "https://www.learn4good.com/jobs/chicago/illinois/software_development/5584140858/e/",
+    "empresa": "zerohash",
+    "local": "Chicago, IL",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 6,
+    "juiz": "anthropic",
+    "motivo": "Vaga para Graph & Identity Engineer com foco explícito em entity resolution, knowledge graphs e data pipelines escaláveis, requer experiência em identity systems e Python production-grade.",
+    "resumo": "zerohash procura Graph & Identity Engineer para liderar projetos de entity resolution e construir pipelines escaláveis de conhecimento gráfico com foco em identity resolution. Requer Python e experiência em produção com graph e relational data.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Entity resolution",
+        "Knowledge graphs"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 83,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [
+        "Knowledge graphs"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-07",
+    "verificada_em": "2026-11-07",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -3385,7 +3594,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3422,7 +3631,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3483,7 +3692,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3581,7 +3790,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3646,7 +3855,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -3697,7 +3906,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 98,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
       "parciais": [
@@ -3707,7 +3916,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -3756,7 +3965,7 @@
       "local": 12,
       "ingles": 100,
       "foco": 91,
-      "senioridade_txt": "pede 4+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 4+ anos (você tem 2.9)",
       "local_txt": "remoto só para France: exige autorização de trabalho lá",
       "faltam": [
         "Tibco EBX",
@@ -3772,7 +3981,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -3820,14 +4029,14 @@
       "local": 12,
       "ingles": 85,
       "foco": 92,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
       "parciais": [],
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -3885,7 +4094,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 100,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
       "parciais": [
@@ -3895,7 +4104,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3945,70 +4154,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Founding AI Product Engineer at LexDana — Canada - LinkedIn",
-    "url": "https://ca.linkedin.com/jobs/view/founding-ai-product-engineer-at-lexdana-4484094558",
-    "data": "Oct 27, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 8,
-    "juiz": "anthropic",
-    "motivo": "Post anuncia vaga concreta de AI Product Engineer com foco central em entity resolution, record linkage e identity matching como responsabilidades técnicas principais.",
-    "resumo": "Vaga de Founding AI Product Engineer na LexDana (Canadá) com foco em entity resolution, record linkage, identity matching e sistemas de recuperação de informação, além de aplicações com LLM e RAG.",
-    "confianca": 0.92,
-    "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Record Linkage",
-        "Information Retrieval",
-        "Knowledge Graphs",
-        "LLMs",
-        "RAG",
-        "Vector Databases",
-        "Semantic Search"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Canada"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.5,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 56,
-      "senioridade": 85,
-      "local": 8,
-      "ingles": 85,
-      "foco": 92,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "em Canada, sem patrocínio de visto",
-      "faltam": [
-        "RAG",
-        "Vector Databases"
-      ],
-      "parciais": [
-        "Knowledge Graphs",
-        "LLMs",
-        "Semantic Search"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
+    "verificada_em": "2026-11-07",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -4063,7 +4210,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4118,7 +4265,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4167,7 +4314,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4210,7 +4357,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 91,
-      "senioridade_txt": "pede 3+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "Master Data Management"
@@ -4219,7 +4366,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
@@ -4257,7 +4404,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4315,7 +4462,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4346,6 +4493,79 @@
       "parciais": [],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Software Engineer – Identity Resolution",
+    "url": "https://abletoowork.com/nashville-tn/senior-software-engineer-identity-resolution/191052010671402FB7E548A249716807/job/",
+    "empresa": "Acxiom",
+    "local": "Nashville, TN",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 26,
+    "juiz": "anthropic",
+    "motivo": "Vaga focada em Identity Resolution e Entity Resolution em sistemas de larga escala, com matching e linking de identidades em múltiplos datasets, stack técnico compatível (Spark, Python, SQL, AWS).",
+    "resumo": "Acxiom procura Senior Software Engineer para equipe de Identity Resolution focada em design e desenvolvimento de sistemas de entity resolution em larga escala que fazem matching, linking e consolidação de identidades em múltiplos datasets. Stack: Java, Python, Scala, Spark, SQL, AWS, Databricks.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Python",
+        "Scala",
+        "Spark",
+        "SQL",
+        "AWS",
+        "Databricks"
+      ],
+      "desejaveis": [
+        "Graph databases",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "CloudFormation",
+        "Grafana",
+        "CloudWatch",
+        "Fuzzy matching",
+        "Record linkage"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 34,
+      "senioridade": 60,
+      "local": 12,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Java",
+        "Scala",
+        "AWS",
+        "Databricks"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-07",
+    "verificada_em": "2026-11-07",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -4402,7 +4622,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4451,7 +4671,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 90,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [],
       "parciais": [
@@ -4461,7 +4681,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4513,7 +4733,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 90,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "API REST",
@@ -4529,7 +4749,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -4585,7 +4805,7 @@
       "local": 8,
       "ingles": 100,
       "foco": 92,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "em India, sem patrocínio de visto",
       "faltam": [
         "Master Data Management",
@@ -4604,7 +4824,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -4657,7 +4877,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 92,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "TypeScript",
@@ -4671,7 +4891,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -4734,7 +4954,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 90,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "LangChain",
@@ -4749,9 +4969,63 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-09-06"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer — Hybrid (Healthcare Data)",
+    "url": "https://www.jobleads.com/us/job/senior-identity-resolution-engineer-hybrid-healthcare-data--irving--ef70423cd0c95265b09a41d95cbe3b113",
+    "empresa": "Caris Life Sciences",
+    "local": "Irving, TX",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Senior Identity Resolution Engineer com foco em identity-resolution e master data management services para dados de saúde, gerenciamento de identidades de pacientes e providers, alinhado com perfil do leitor.",
+    "resumo": "Caris Life Sciences busca Senior Software Engineer para design e operação de serviços de identity resolution e master data management com foco em precisão de registros de pacientes e provedores em dados de saúde. Localização: Irving, TX com modelo híbrido.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Irving"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.02,
+    "compat_detalhe": {
+      "habilidades": 0,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "hibrido em United States, sem patrocínio de visto",
+      "faltam": [
+        "Master Data Management"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-07",
+    "verificada_em": "2026-11-07",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -4805,7 +5079,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4858,7 +5132,7 @@
       "local": 8,
       "ingles": 85,
       "foco": 97,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
         "Master Data Management",
@@ -4871,7 +5145,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -4930,7 +5204,7 @@
       "local": 8,
       "ingles": 100,
       "foco": 91,
-      "senioridade_txt": "pede 5+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
       "local_txt": "em India, sem patrocínio de visto",
       "faltam": [
         "Master Data Management",
@@ -4949,7 +5223,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5004,7 +5278,7 @@
       "local": 8,
       "ingles": 85,
       "foco": 98,
-      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 7+ anos (você tem 2.9)",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
         "CRM/ERP"
@@ -5016,7 +5290,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5080,7 +5354,7 @@
       "local": 8,
       "ingles": 85,
       "foco": 98,
-      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 7+ anos (você tem 2.9)",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
         "Informatica MDM (IDMC)"
@@ -5092,7 +5366,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5147,7 +5421,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5199,7 +5473,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 92,
-      "senioridade_txt": "pede 7+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 7+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "TM Forum SID",
@@ -5214,7 +5488,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5260,7 +5534,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 100,
-      "senioridade_txt": "pede 10+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 10+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "TensorFlow",
@@ -5274,7 +5548,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5325,7 +5599,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 94,
-      "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 12+ anos (você tem 2.9)",
       "local_txt": "remoto só para United States: exige autorização de trabalho lá",
       "faltam": [
         "Snowflake",
@@ -5338,73 +5612,9 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "publicada_em": "2026-08-28"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "CrossTalent hiring Staff Backend Engineer, AI Systems in Gibraltar ...",
-    "url": "https://gi.linkedin.com/jobs/view/staff-backend-engineer-ai-systems-at-crosstalent-4481747135",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 3,
-    "juiz": "anthropic",
-    "motivo": "Post anunciando vaga concreta (Staff Backend Engineer em AI Systems na Encora/CrossTalent) com entity resolution, knowledge graphs e relationship-aware retrieval como requisitos centrais.",
-    "resumo": "Vaga de Staff Backend Engineer em AI Systems em Gibraltar/LATAM remoto com foco em knowledge graphs, entity resolution e sistemas de recuperação baseados em relações. Post concreto.",
-    "confianca": 0.85,
-    "requisitos": {
-      "obrigatorios": [
-        "Azure OpenAI",
-        "React",
-        "Node.js",
-        "MongoDB"
-      ],
-      "desejaveis": [
-        "Knowledge graphs",
-        "Entity resolution"
-      ]
-    },
-    "senioridade": "staff/principal",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "Gibraltar"
-      ],
-      "cidades": [
-        "Gibraltar"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.3,
-    "encaixe": 0.01,
-    "compat_detalhe": {
-      "habilidades": 19,
-      "senioridade": 45,
-      "local": 8,
-      "ingles": 85,
-      "foco": 90,
-      "senioridade_txt": "nível staff/principal",
-      "local_txt": "em Gibraltar, sem patrocínio de visto",
-      "faltam": [
-        "Azure OpenAI",
-        "React",
-        "Node.js",
-        "MongoDB"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-11-06",
-    "verificada_em": "2026-11-06",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -5460,7 +5670,7 @@
       "local": 8,
       "ingles": 85,
       "foco": 94,
-      "senioridade_txt": "pede 8+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 8+ anos (você tem 2.9)",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
         "Java",
@@ -5477,7 +5687,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5534,7 +5744,7 @@
       "local": 8,
       "ingles": 85,
       "foco": 94,
-      "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 12+ anos (você tem 2.9)",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
         "Master Data Management",
@@ -5548,7 +5758,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5604,7 +5814,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false
   },
   {
@@ -5629,7 +5839,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-06",
+    "verificada_em": "2026-11-07",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -5652,7 +5862,7 @@
       "local": 12,
       "ingles": 85,
       "foco": 91,
-      "senioridade_txt": "pede 12+ anos (você tem 2.8)",
+      "senioridade_txt": "pede 12+ anos (você tem 2.9)",
       "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
       "faltam": [
         "Clojure"

@@ -313,6 +313,16 @@
   "nivel": "nao",
   "nome": "Cloud Integration"
  },
+ "cloudformation": {
+  "motivo": "sem evidência de AWS/IaC no currículo",
+  "nivel": "nao",
+  "nome": "CloudFormation"
+ },
+ "cloudwatch": {
+  "motivo": "sem evidência de uso de AWS",
+  "nivel": "nao",
+  "nome": "CloudWatch"
+ },
  "clustering": {
   "motivo": "resolução de entidades envolve clustering",
   "nivel": "tem",
@@ -902,6 +912,11 @@
   "motivo": "Trabalha com match/merge, mas não menciona golden record",
   "nivel": "parcial",
   "nome": "golden-record"
+ },
+ "grafana": {
+  "motivo": "sem evidência de monitoramento/visualização Grafana",
+  "nivel": "nao",
+  "nome": "Grafana"
  },
  "graph": {
   "motivo": "currículo foca em record linkage linear, sem grafos explícitos",

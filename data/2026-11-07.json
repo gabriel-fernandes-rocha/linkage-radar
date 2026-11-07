@@ -1,0 +1,427 @@
+{
+  "data": "2026-11-07",
+  "gerado_em": "2026-11-06T23:47-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Software Engineer – Identity Resolution",
+      "url": "https://abletoowork.com/nashville-tn/senior-software-engineer-identity-resolution/191052010671402FB7E548A249716807/job/",
+      "empresa": "Acxiom",
+      "local": "Nashville, TN",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 26,
+      "juiz": "anthropic",
+      "motivo": "Vaga focada em Identity Resolution e Entity Resolution em sistemas de larga escala, com matching e linking de identidades em múltiplos datasets, stack técnico compatível (Spark, Python, SQL, AWS).",
+      "resumo": "Acxiom procura Senior Software Engineer para equipe de Identity Resolution focada em design e desenvolvimento de sistemas de entity resolution em larga escala que fazem matching, linking e consolidação de identidades em múltiplos datasets. Stack: Java, Python, Scala, Spark, SQL, AWS, Databricks.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS",
+          "Databricks"
+        ],
+        "desejaveis": [
+          "Graph databases",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "CloudFormation",
+          "Grafana",
+          "CloudWatch",
+          "Fuzzy matching",
+          "Record linkage"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 34,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer — Hybrid (Healthcare Data)",
+      "url": "https://www.jobleads.com/us/job/senior-identity-resolution-engineer-hybrid-healthcare-data--irving--ef70423cd0c95265b09a41d95cbe3b113",
+      "empresa": "Caris Life Sciences",
+      "local": "Irving, TX",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Identity Resolution Engineer com foco em identity-resolution e master data management services para dados de saúde, gerenciamento de identidades de pacientes e providers, alinhado com perfil do leitor.",
+      "resumo": "Caris Life Sciences busca Senior Software Engineer para design e operação de serviços de identity resolution e master data management com foco em precisão de registros de pacientes e provedores em dados de saúde. Localização: Irving, TX com modelo híbrido.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Irving"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "hibrido em United States, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Graph & Identity Engineer: Build Production Graphs",
+      "url": "https://www.learn4good.com/jobs/chicago/illinois/software_development/5584140858/e/",
+      "empresa": "zerohash",
+      "local": "Chicago, IL",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga para Graph & Identity Engineer com foco explícito em entity resolution, knowledge graphs e data pipelines escaláveis, requer experiência em identity systems e Python production-grade.",
+      "resumo": "zerohash procura Graph & Identity Engineer para liderar projetos de entity resolution e construir pipelines escaláveis de conhecimento gráfico com foco em identity resolution. Requer Python e experiência em produção com graph e relational data.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Entity resolution",
+          "Knowledge graphs"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 83,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [
+          "Knowledge graphs"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Software Engineer - Identity Resolution",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-%E2%80%93-identity-resolution-at-acxiom-4487284849",
+      "texto": "The Senior Software Engineer should have experience with, or strong familiarity with, Identity Resolution, Entity Resolution, Customer 360, Master Data Management, identity graph, record linkage ...",
+      "data": "Nov 4, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 17,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenheiro sênior com foco explícito em Identity Resolution, Entity Resolution, MDM e record linkage como responsabilidades centrais.",
+      "resumo": "Vaga de Senior Software Engineer especializada em Identity Resolution, Entity Resolution, Customer 360, Master Data Management e record linkage.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Master Data Management",
+          "Record Linkage"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Product Manager, Data at CertifyOS - LinkedIn India",
+      "url": "https://in.linkedin.com/jobs/view/senior-product-manager-data-at-certifyos-4488142193",
+      "texto": "Hands-on experience with at least one of: data acquisition, scraping or ingestion; or entity resolution, record linkage, MDM or identity matching. Strong SQL and data literacy: completeness and freshness metrics, data modeling basics, warehouse tooling (BigQuery a plus).",
+      "data": "Nov 6, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 9,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Product Manager em dados que exige experiência prática em entity resolution, record linkage, MDM ou identity matching como requisito principal.",
+      "resumo": "Vaga de Senior Product Manager em Data que requer experiência em entity resolution, record linkage, MDM ou identity matching, além de SQL e data literacy.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Entity Resolution",
+          "Record Linkage",
+          "Master Data Management"
+        ],
+        "desejaveis": [
+          "BigQuery"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.27,
+      "compat_detalhe": {
+        "habilidades": 47,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Doktorand Graph Machine Learning & Financial Crime Analytics (w|m|d ...",
+      "url": "https://de.linkedin.com/jobs/view/doktorand-graph-machine-learning-financial-crime-analytics-w-m-d-findic-at-zeb-consulting-4486845957",
+      "texto": "Du kennst zentrale Herausforderungen der Graphkonstruktion, darunter Entity Resolution, Record Linkage, kNN-basierter Graphaufbau sowie die Auswirkungen fehlerhafter, fehlender oder zeitlich inkonsistenter Kanten.",
+      "data": "Nov 3, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Posição de doutorado focada em graph machine learning com Entity Resolution e Record Linkage como desafios centrais da construção de grafos.",
+      "resumo": "Oportunidade de doutorado em Graph Machine Learning e Financial Crime Analytics com foco em Entity Resolution, Record Linkage e construção de grafos.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Record Linkage",
+          "Graph"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.43,
+      "compat_detalhe": {
+        "habilidades": 83,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "Graph"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Privacy-Preserving Duplicate Record Detection Across Decentralized Healthcare Institutions",
+      "url": "https://doi.org/10.67440/ahj.vi.3055",
+      "autores": "Kotha Raja Dinesh et al.",
+      "data": "2026-11-03",
+      "fonte": "OpenAlex",
+      "score": 11,
+      "juiz": "anthropic",
+      "motivo": "Paper central sobre privacy-preserving record linkage (PPRL) em dados de saúde descentralizados, com implementação de blocking, matching e Bloom filters.",
+      "resumo": "Paper sobre detecção de registros duplicados de pacientes entre instituições de saúde usando técnicas de record linkage preservando privacidade (PPRL), com normalização demográfica, blocking por HMAC-SHA-256 e comparação por similaridade exata e 3-gram em dataset sintético FHIR.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Locked Out or Linked Up: Lessons in Cross-agency Data Linkage and a Call for State-based Measures for Substance Use Surveillance",
+      "url": "https://doi.org/10.1097/adm.0000000000001805",
+      "autores": "Jake R. Morgan et al.",
+      "data": "2026-11-05",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre cross-agency data linkage em saúde pública para vigilância de uso de substâncias, discutindo estratégias de linkage de dados person-level entre agências.",
+      "resumo": "Paper que relata lições aprendidas em iniciativas de linkage de dados entre agências estaduais de saúde em 7 estados para monitorar crise de overdose, identificando estratégias de capacitação, mandatos legislativos, parcerias acadêmico-governamentais e medidas padronizadas de vigilância.",
+      "confianca": 0.9
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 107,
+  "vagas_arquivadas_total": 162,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 2
+  },
+  "pilula_mercado": "Graph",
+  "brasil": {
+    "novas": 5,
+    "abertas": 30,
+    "arquivadas": 54,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 37,
+    "semana": 6,
+    "tema": "Pré-processamento para data matching",
+    "tipo": "conceito",
+    "titulo": "Padronização e tokenização com tabelas de correspondência",
+    "modulo": "Semana 6: Pré-processamento para data matching",
+    "versao": 2,
+    "objetivo": "Aplicar tabelas de correspondência (lookup tables) e tokenização gulosa para padronizar nomes e endereços em tokens taggeados, antes da etapa de segmentação em campos.",
+    "conceito": "A padronização e tokenização é o segundo passo do pré-processamento (Christen, 2012, seç. 3.5.2, p.51-53), feito após a limpeza básica de caracteres (aula 36). A ideia é comparar sequências de tokens do valor de entrada contra tabelas de correspondência que mapeiam variações, erros e abreviações para formas canônicas, atribuindo também uma tag que indica o tipo do token (nome de localidade, sobrenome, dado masculino, etc). Essas tabelas são específicas por componente: para endereços, há tabelas separadas de ruas, localidades, estados e países; para nomes, tabelas de títulos, nomes próprios (idealmente separadas por gênero) e sobrenomes.\n\nO ponto central é que a tokenização é gulosa (greedy): o algoritmo sempre tenta casar primeiro a sequência mais longa de tokens presente em qualquer tabela antes de tentar sequências mais curtas. Isso evita, por exemplo, que 'sydney uni' seja incorretamente dividido em 'sydney' (localidade) e 'uni' (desconhecido), quando na verdade a sequência completa corresponde a 'the university of sydney'. As tabelas podem ser construídas a partir de bases internas, adquiridas comercialmente ou fornecidas por correios nacionais, e podem ser expandidas automaticamente usando comparação aproximada de strings (capítulo 5 do livro) para sugerir variações candidatas, sempre validadas por um especialista de domínio antes de entrarem na tabela definitiva.",
+    "como_funciona": "Algoritmo de tokenização gulosa (Christen, 2012, p.51-52):\n1. Determine o tamanho máximo l de sequência de tokens presente em qualquer tabela de lookup usada (ex.: 'syd inter airport' tem l=3).\n2. A partir do início (ou fim) do valor de entrada, pegue os próximos l tokens como candidatos.\n3. Procure essa sequência exata nas tabelas de lookup.\n4. Se encontrada: substitua pela forma padronizada do lado esquerdo do ':=' e atribua a tag correspondente (ex.: LN para localidade).\n5. Se não encontrada: reduza o tamanho da janela para l-1 e repita a busca.\n6. Se chegar a um único token sem correspondência em nenhuma tabela, aplique uma regra hard-coded (ex.: II para inicial de uma letra, N4 para número de 4 dígitos) ou marque como UN (desconhecido).\n7. Avance a janela para os tokens seguintes e repita até processar todo o valor.\nUm token pode receber múltiplas tags se aparecer em mais de uma tabela.",
+    "exemplo": "Entrada já limpa (aula 36): 'syd inter airport nsw'.\nTabela de localidades tem a entrada: sydney airport := syd inter airport (tag LN), l máximo = 3.\nPasso 1: janela de 3 tokens 'syd inter airport' casa com a tabela. Substitui por 'sydney airport', tag LN.\nPasso 2: próximo token 'nsw'. Nenhuma tabela de 1 token casa diretamente, mas há regra hard-coded ou tabela de territórios mapeando 'nsw' para 'nsw' com tag TR (território).\nResultado tokenizado: [sydney airport]/LN [nsw]/TR.\nCompare com o exemplo do livro (Fig.3.4, p.53): 'Bevely Park' é corrigido para 'beverly park' com tag LN,SN (ambíguo, pode ser localidade ou sobrenome), exigindo a etapa de segmentação (próxima aula) para resolver a ambiguidade.",
+    "na_pratica": "Em produção, essas tabelas de correspondência costumam ser dicionários Python ou tabelas DuckDB/Spark carregadas em memória, aplicadas antes do blocking do Splink. Um exemplo simplificado de tokenização gulosa em Python:\n\ndef tokenize_greedy(tokens, lookup, max_len):\n    out = []\n    i = 0\n    while i < len(tokens):\n        for l in range(min(max_len, len(tokens)-i), 0, -1):\n            seq = tuple(tokens[i:i+l])\n            if seq in lookup:\n                out.append(lookup[seq])\n                i += l\n                break\n        else:\n            out.append((tokens[i], 'UN'))\n            i += 1\n    return out\n\nO 'lookup' mapeia tuplas de tokens para (forma_padronizada, tag), construído a partir de tabelas como a da Fig.3.3 do livro.",
+    "armadilha": "Construir a tabela de lookup sem ordenar a busca por sequências mais longas primeiro faz o sistema quebrar compostos válidos (como 'the university of sydney') em pedaços menores e errados; sempre implemente a busca gulosa do maior l para o menor.",
+    "desafio": "Você tem a tabela de lookup: {('são','paulo'): ('são paulo','LN'), ('sao','paulo'): ('são paulo','LN'), ('sp',): ('sp','TR')}. A entrada tokenizada (após limpeza) é: ['sao', 'paulo', 'sp']. Usando o algoritmo guloso com l máximo = 2, mostre passo a passo a sequência de tags e tokens de saída.",
+    "gabarito": "l máximo = 2. Passo 1: janela i=0, tokens ('sao','paulo') tem tamanho 2, casa na tabela -> substitui por 'são paulo', tag LN. Avança i para 2. Passo 2: janela i=2, só resta 1 token ('sp',), tamanho 1 (menor que max mas é o que resta), casa na tabela -> 'sp', tag TR. Avança i para 3, fim. Saída final: [são paulo]/LN [sp]/TR.",
+    "fontes": [
+      "Christen (2012), seç. 3.5.2, p. 51-53",
+      "Christen (2012), Tabela 3.1, p. 55",
+      "Churches, Christen, Lim & Zhu (2002)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        51,
+        58
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3042,
+      "pos_palavras_chave": 4,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 180,
+      "pos_palavras_chave": 3,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 3,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

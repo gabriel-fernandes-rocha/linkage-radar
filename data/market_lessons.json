@@ -1,5 +1,56 @@
 [
  {
+  "data": "2026-11-07",
+  "habilidade": "Graph",
+  "pct_vagas": 3,
+  "nivel_atual": "nao",
+  "o_que_e": "Graph, no contexto de entity resolution e MDM, significa modelar entidades e seus relacionamentos como nós e arestas (grafos) em vez de apenas pares de registros. Isso envolve usar bancos de grafo (Neo4j, Amazon Neptune, JanusGraph) ou bibliotecas de processamento de grafo (GraphX no Spark, NetworkX, igraph) para detectar clusters de entidades conectadas, aplicar algoritmos como connected components, community detection e PageRank, e representar identidades complexas (famílias, empresas, redes de fraude) que vão além de match par a par.",
+  "por_que_pedem": "Vagas de identity resolution, MDM e fraude financeira frequentemente lidam com relacionamentos multi-hop (pessoa-endereço-telefone-conta), que não são bem capturados só com matching par a par. Modelar isso como grafo permite resolver clusters inteiros de identidades, detectar anéis de fraude e dar explicabilidade visual às conexões, algo que arquiteturas tradicionais de linkage não entregam sozinhas.",
+  "ponte_com_o_que_voce_sabe": "Você já faz, na prática, a parte mais difícil de grafos de entidade sem chamar assim: blocking e scoring geram pares, e a etapa de clustering (ex: connected components do Splink) já é um algoritmo de grafo disfarçado. Spark também tem GraphX/GraphFrames rodando sobre o mesmo RDD/DataFrame que você já domina, então a curva de aprendizado é mais de vocabulário e ferramentas específicas do que de conceito novo.",
+  "minimo_para_ficar_apto": [
+   "Entender terminologia básica: nó, aresta, grafo direcionado/não-direcionado, propriedades, grau",
+   "Saber explicar connected components, community detection (Louvain) e shortest path em termos de entity resolution",
+   "Ter rodado pelo menos um exemplo com GraphFrames (Spark) ou NetworkX em Python",
+   "Conhecer superficialmente um banco de grafo nativo (Neo4j é o mais citado) e como ele difere de SQL/Elasticsearch",
+   "Saber discutir quando usar grafo vs. clustering tradicional em um pipeline de linkage"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de GraphFrames (Spark) e mapear conceitos para o que você já faz com clustering no Splink",
+   "3h: fazer tutorial oficial do Neo4j (Cypher básico, criar nós/relacionamentos, queries simples)",
+   "3h: rodar exemplo prático com GraphFrames em PySpark usando seus próprios dados de linkage (criar grafo de pares scored, rodar connected components)",
+   "2h: estudar algoritmo Louvain/community detection e PageRank em alto nível (conceito, não implementação)",
+   "2h: ler estudos de caso de uso de grafo em fraude/identity resolution (ex: documentação Neo4j para fraud detection, papers da Senzing)",
+   "1h: preparar 3-4 frases para falar em entrevista conectando Splink clustering a graph theory"
+  ],
+  "mini_projeto": "Pegue um dataset já processado no seu pipeline de linkage (pares com score de similaridade) e construa um grafo com GraphFrames no Spark: nós são registros, arestas são pares com score acima de um threshold. Rode connected components para formar clusters de entidades e compare com o resultado do clustering do Splink. Depois, exporte um subconjunto para Neo4j e escreva 2-3 queries Cypher que respondam perguntas como 'quais entidades têm mais de 5 conexões' ou 'existe caminho entre entidade A e B'. Documente no GitHub com um README explicando a ponte entre record linkage tradicional e graph-based entity resolution.",
+  "como_colocar_no_curriculo": "Experiência aplicando técnicas de graph analytics (Spark GraphFrames, connected components, Neo4j/Cypher) para modelar e resolver clusters de entidades em pipelines de record linkage em produção.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre resolver entidades via pares (pairwise matching) e via grafo?",
+    "resposta": "Pairwise matching compara registros dois a dois e gera scores de similaridade; para formar entidades, ainda é preciso agrupar esses pares, o que geralmente já é feito via connected components, um algoritmo de grafo. A abordagem explicitamente baseada em grafo vai além: trata cada registro como nó e usa toda a topologia da rede (graus, caminhos, comunidades) para resolver identidades complexas, como famílias ou redes de fraude, onde conexões indiretas (multi-hop) importam."
+   },
+   {
+    "pergunta": "Como você usaria connected components em um pipeline de entity resolution?",
+    "resposta": "Depois do blocking e scoring, cada par com score acima de um threshold vira uma aresta entre dois nós (registros). Rodando connected components nesse grafo, cada componente conectado representa um cluster de registros que devem ser resolvidos para a mesma entidade. É exatamente o que o Splink faz internamente na etapa de clustering, só que de forma explícita usando GraphFrames ou GraphX."
+   },
+   {
+    "pergunta": "Quando você usaria um banco de grafo nativo como Neo4j em vez de Elasticsearch ou SQL?",
+    "resposta": "Quando as consultas envolvem navegação multi-hop (ex: 'encontre todas as pessoas conectadas a esse endereço através de até 3 relacionamentos') ou análise de rede (detecção de comunidades, centralidade), bancos de grafo são muito mais eficientes e expressivos que joins repetidos em SQL ou buscas em Elasticsearch, que não foram desenhados para percorrer relacionamentos em profundidade."
+   },
+   {
+    "pergunta": "Você tem experiência prática com alguma ferramenta de grafo?",
+    "resposta": "Tenho experiência sólida com clustering via connected components no Splink, que é conceitualmente um algoritmo de grafo, e estudei/pratiquei GraphFrames no Spark e Cypher no Neo4j para consolidar esse conhecimento de forma mais explícita, aplicando a pipelines de linkage que já construí em produção."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Apache Spark GraphFrames",
+   "Documentação oficial do Neo4j (Getting Started e Cypher Manual)",
+   "Neo4j Graph Academy (curso gratuito introdutório)",
+   "Documentação do NetworkX (Python)",
+   "Papers e blog posts da Senzing sobre entity resolution com grafos"
+  ]
+ },
+ {
   "data": "2026-11-06",
   "habilidade": "Knowledge Graphs",
   "pct_vagas": 4,

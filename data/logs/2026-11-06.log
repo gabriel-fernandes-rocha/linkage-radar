@@ -94,3 +94,84 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-11-06 23:57 =====
+INFO serpapi: 159 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 180
+INFO jobs/greenhouse: 1434
+INFO jobs/lever: 305
+INFO jobs/ashby: 45
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'deduplication data engineer': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 8
+INFO jobs/gupy: 208
+INFO jobs/himalayas: 96
+INFO jobs/jobicy: 148
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 201
+INFO jobs/social_linkedin/ddg: 1 aceitos de 1
+INFO jobs/social_linkedin/google: 0 aceitos de 6
+INFO jobs/social_posts: 1
+INFO linkedin_guest: 36 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 36
+INFO judge: tokens in=1819 out=656
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=4729 out=1037
+INFO vagas: {'brutos': 3042, 'pos_palavras_chave': 4, 'aprovados': 3}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 5
+INFO papers/openalex: 175
+INFO judge: tokens in=1852 out=493
+INFO papers: {'brutos': 180, 'pos_palavras_chave': 3, 'aprovados': 2}
+INFO linkedin/ddg: 9 aceitos de 9
+INFO linkedin: 9 candidatos
+INFO judge: tokens in=1328 out=361
+INFO requisitos: tokens in=2429 out=524
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 3, 'aprovados': 0}
+INFO open_jobs: fechou Founding AI Product Engineer at LexDana — Canada - LinkedIn
+INFO open_jobs: fechou CrossTalent hiring Staff Backend Engineer, AI Systems in Gibraltar ...
+INFO open_jobs: 107 abertas (6 novas)
+INFO mercado: 161 vagas no nicho, 120 no mercado amplo
+INFO network/ddg: 5 aceitos de 5
+INFO network: 5 perfis após a consulta
+INFO judge: tokens in=1678 out=656
+INFO network: 68 pessoas (1 novas), 37 empresas (2 novas)
+INFO carreira: tokens in=1491 out=2295
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 164
+INFO brasil/gupy: 393
+INFO brasil/google_jobs_br: 12
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 36 vagas, 36 descrições abertas, 78 consultas no total
+INFO brasil/linkedin_guest_br: 36
+INFO brasil/linkedin_local: 13
+INFO brasil/greenhouse: 1094
+INFO brasil/lever: 174
+INFO brasil/ashby: 114
+INFO brasil/inhire: novas empresas descobertas: bridge
+INFO brasil: 5042 brutas, 6 candidatas para o juiz
+INFO judge: tokens in=1832 out=725
+INFO open_jobs: fechou Analista de Database Marketing
+INFO open_jobs: 30 abertas (0 novas)
+INFO mercado: 54 vagas no nicho, 120 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 44 pessoas (0 novas), 45 empresas (0 novas)
+INFO brasil: {'novas': 5, 'abertas': 30, 'arquivadas': 54, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-07.json
+
