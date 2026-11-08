@@ -408,6 +408,11 @@
   "nivel": "nao",
   "nome": "Cypher"
  },
+ "dagster": {
+  "motivo": "sem evidência, orquestrador específico não mencionado",
+  "nivel": "nao",
+  "nome": "Dagster"
+ },
  "dama dmbok": {
   "motivo": "não demonstra conhecimento do framework DAMA DMBOK",
   "nivel": "nao",
@@ -432,6 +437,11 @@
   "motivo": "sem evidência de rotulagem manual de dados",
   "nivel": "nao",
   "nome": "Data Annotation"
+ },
+ "data catalog": {
+  "motivo": "lida com dados massivos, conceito próximo de MDM",
+  "nivel": "parcial",
+  "nome": "Data Catalog"
  },
  "data classification": {
   "motivo": "classificação faz parte do pipeline de matching",
@@ -617,6 +627,11 @@
   "motivo": "sem evidência de documentação formal de datasets",
   "nivel": "nao",
   "nome": "Dataset Documentation"
+ },
+ "dbeaver": {
+  "motivo": "usa SQL/bancos, cliente GUI é trivial aprender",
+  "nivel": "parcial",
+  "nome": "DBeaver"
  },
  "dbt": {
   "motivo": "nenhum uso de dbt reportado",
@@ -868,6 +883,16 @@
   "nivel": "nao",
   "nome": "GDPR"
  },
+ "geopandas": {
+  "motivo": "sem evidência de dados geoespaciais",
+  "nivel": "nao",
+  "nome": "GeoPandas"
+ },
+ "geoserver": {
+  "motivo": "sem evidência de uso geoespacial",
+  "nivel": "nao",
+  "nome": "GeoServer"
+ },
  "geospatial data": {
   "motivo": "Não há menção a dados geoespaciais.",
   "nivel": "nao",
@@ -887,6 +912,11 @@
   "motivo": "usa Git, mas não GitHub Actions explicitamente",
   "nivel": "parcial",
   "nome": "GitHub Actions"
+ },
+ "gitlab ci/cd": {
+  "motivo": "usa Git, CI/CD é extensão natural",
+  "nivel": "parcial",
+  "nome": "GitLab CI/CD"
  },
  "glue": {
   "motivo": "sem evidência de AWS Glue",
@@ -1548,6 +1578,11 @@
   "nivel": "nao",
   "nome": "Playwright"
  },
+ "postgis": {
+  "motivo": "sem evidência de extensão espacial de SQL",
+  "nivel": "nao",
+  "nome": "PostGIS"
+ },
  "postgresql": {
   "motivo": "domina SQL, fácil adaptação a Postgres",
   "nivel": "parcial",
@@ -1572,6 +1607,11 @@
   "motivo": "Avaliação de modelo inclui métrica de precisão",
   "nivel": "tem",
   "nome": "precision"
+ },
+ "pricing intelligence": {
+  "motivo": "sem relação com matching/dados de saúde",
+  "nivel": "nao",
+  "nome": "Pricing intelligence"
  },
  "privacy enhancing technologies": {
   "motivo": "sem evidência direta, mas trabalha com dados sensíveis",
@@ -1633,6 +1673,11 @@
   "nivel": "nao",
   "nome": "publish/subscribe"
  },
+ "pyqgis": {
+  "motivo": "sem evidência de uso de QGIS/geoprocessamento",
+  "nivel": "nao",
+  "nome": "PyQGIS"
+ },
  "python": {
   "motivo": "linguagem principal usada em pipelines",
   "nivel": "tem",
@@ -1642,6 +1687,11 @@
   "motivo": "sem evidência de deep learning frameworks",
   "nivel": "nao",
   "nome": "PyTorch"
+ },
+ "qgis": {
+  "motivo": "sem evidência de ferramentas GIS",
+  "nivel": "nao",
+  "nome": "QGIS"
  },
  "quality control": {
   "motivo": "garantia de qualidade parte do pipeline",
@@ -2047,6 +2097,11 @@
   "motivo": "sem evidência de infraestrutura como código",
   "nivel": "nao",
   "nome": "Terraform"
+ },
+ "third-party data licensing": {
+  "motivo": "sem evidência de licenciamento de dados",
+  "nivel": "nao",
+  "nome": "Third-party data licensing"
  },
  "tibco ebx": {
   "motivo": "sem evidência de MDM específico",

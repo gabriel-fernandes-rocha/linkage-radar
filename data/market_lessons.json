@@ -1,5 +1,51 @@
 [
  {
+  "data": "2026-11-08",
+  "habilidade": "BigQuery",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "BigQuery é o data warehouse serverless do Google Cloud, baseado em SQL, projetado para analisar grandes volumes de dados com escalabilidade automática e cobrança por consulta/armazenamento. Ele separa computação e armazenamento, usa engine colunar (Dremel) e suporta funções analíticas avançadas, particionamento e clustering de tabelas. É muito usado para analytics em escala e como camada de consumo de pipelines de dados.",
+  "por_que_pedem": "Vagas de entity resolution e MDM frequentemente lidam com dados corporativos hospedados em nuvem, e BigQuery é um dos destinos mais comuns para armazenar dados mestres e resultados de linkage antes de servir para BI ou ciência de dados. Pedem isso para garantir que o candidato consiga integrar pipelines de matching com a infraestrutura analítica da empresa, sem depender de outro time para consultas ou exportações.",
+  "ponte_com_o_que_voce_sabe": "Você já domina SQL avançado, Spark e pipelines de dados em escala, então a transição para BigQuery é mais sobre sintaxe e arquitetura gerenciada do que sobre conceitos novos. A lógica de particionamento, joins otimizados e agregações que você já aplica em Spark SQL mapeia quase diretamente para BigQuery SQL. O maior ganho de tempo é entender o modelo de custo e a integração com GCP (Cloud Storage, Dataflow, Pub/Sub).",
+  "minimo_para_ficar_apto": [
+   "Escrever queries SQL padrão e com funções analíticas no BigQuery (window functions, ARRAY, STRUCT)",
+   "Entender particionamento e clustering de tabelas e seu impacto em custo/performance",
+   "Saber carregar dados via Cloud Storage, bq load ou Dataflow",
+   "Conhecer BigQuery ML básico (criar e avaliar um modelo simples)",
+   "Entender diferenças de preço entre modelo on-demand e capacidade reservada (slots)"
+  ],
+  "plano_rapido": [
+   "2h: criar conta GCP free tier e explorar console do BigQuery com datasets públicos",
+   "3h: praticar queries SQL (joins, window functions, CTEs) nos datasets públicos (ex: bigquery-public-data)",
+   "2h: estudar particionamento, clustering e otimização de custo via documentação oficial",
+   "2h: carregar um CSV próprio (ex: resultado de um linkage) via Cloud Storage para o BigQuery",
+   "2h: criar um modelo simples com BigQuery ML (regressão logística) e avaliar",
+   "1h: revisar conceitos de IAM, datasets, jobs e pricing para entrevista"
+  ],
+  "mini_projeto": "Pegue um dataset de entity resolution que você já processou (ex: saída do Splink com scores de matching) e carregue no BigQuery. Crie queries que calculem métricas de qualidade de linkage (precision/recall por bloco, duplicatas remanescentes) usando window functions e particionamento por data de execução. Documente o fluxo: Spark/Python gera resultado, exporta para Cloud Storage, carrega no BigQuery, consome via SQL analítico.",
+  "como_colocar_no_curriculo": "Experiência prática em SQL analítico e modelagem de dados em escala (Spark, BigQuery) aplicada a pipelines de resolução de entidades e qualidade de dados mestres.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre BigQuery e um data warehouse tradicional como Spark SQL on-premise?",
+    "resposta": "BigQuery é totalmente gerenciado e serverless, separa armazenamento e computação, escala automaticamente e cobra por consulta/armazenamento. Spark exige gerenciamento de cluster e recursos, mas oferece mais controle sobre execução e é melhor para processamento distribuído customizado fora de SQL."
+   },
+   {
+    "pergunta": "Como você otimizaria custo e performance de uma tabela grande no BigQuery?",
+    "resposta": "Usando particionamento (por data, por exemplo) e clustering em colunas frequentemente filtradas, evitando SELECT *, e limitando o volume de dados escaneado com filtros nas colunas de partição."
+   },
+   {
+    "pergunta": "Como você integraria um pipeline Spark de record linkage com BigQuery?",
+    "resposta": "Eu exportaria os resultados do Spark para Cloud Storage em formato Parquet/Avro e depois carregaria no BigQuery via job de load ou Dataflow, aproveitando particionamento para facilitar consultas analíticas subsequentes."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Google Cloud BigQuery",
+   "Google Cloud Skills Boost (cursos gratuitos de BigQuery)",
+   "Coursera: Google Cloud Platform Fundamentals",
+   "BigQuery public datasets (console do GCP)"
+  ]
+ },
+ {
   "data": "2026-11-07",
   "habilidade": "Graph",
   "pct_vagas": 3,

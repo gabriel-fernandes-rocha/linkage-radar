@@ -1,0 +1,144 @@
+{
+  "data": "2026-11-08",
+  "gerado_em": "2026-11-07T23:28-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Founding Data Engineer, Pricing and Comps",
+      "url": "https://himalayas.app/companies/clera/jobs/founding-data-engineer-pricing-and-comps-8142192912",
+      "empresa": "Clera",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-07",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de data engineer focada em entity resolution (matching de listing inconsistentes), design de sistemas de resolução de entidades e data quality em pipeline de dados de marketplace.",
+      "resumo": "Vaga de founding data engineer em marketplace que requer construir pipelines de ingestão de dados de vendas e sistemas de entity resolution para unificar listagens inconsistentes em vendas comparáveis confiáveis, com foco em data quality e matching de itens.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "dbt",
+          "Airflow",
+          "Dagster",
+          "Spark",
+          "Entity Resolution",
+          "Record Linkage"
+        ],
+        "desejaveis": [
+          "Pricing intelligence",
+          "Third-party data licensing"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "New York"
+        ]
+      },
+      "patrocina_visto": false,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 43,
+        "senioridade": 60,
+        "local": 8,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+        "local_txt": "hibrido em United States, sem patrocínio de visto",
+        "faltam": [
+          "dbt",
+          "Dagster"
+        ],
+        "parciais": [
+          "SQL",
+          "Airflow"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 108,
+  "vagas_arquivadas_total": 163,
+  "rede": {
+    "pessoas_novas": 3,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "BigQuery",
+  "brasil": {
+    "novas": 9,
+    "abertas": 34,
+    "arquivadas": 58,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 38,
+    "semana": 6,
+    "tema": "Pré-processamento para data matching",
+    "tipo": "conceito",
+    "titulo": "Segmentação em campos de saída",
+    "modulo": "Semana 6: Pré-processamento para data matching",
+    "versao": 2,
+    "objetivo": "Entender o terceiro passo do pré-processamento (segmentação) e saber decidir como distribuir tokens tagueados em campos de saída bem definidos para nomes e endereços.",
+    "conceito": "A segmentação é o processo de pegar a sequência de tokens já limpos, padronizados e tagueados (aulas anteriores) e atribuí-los a campos de saída específicos, como título, primeiro nome, sobrenome, número da rua, cidade, etc. Christen (2012, seç. 3.5.3, p. 53) chama esse passo de o mais desafiador do pré-processamento, porque frequentemente existem múltiplas atribuições possíveis para a mesma sequência de tokens, e o objetivo é escolher a mais provável. Isso é equivalente à tarefa de parsing em processamento de linguagem natural, relacionada à extração de informação em texto semiestruturado.\n\nO princípio central é que cada campo de saída deve conter uma única peça de informação atômica, em vez de várias informações misturadas num único atributo (como acontecia antes da limpeza, quando 'nome completo' trazia título, nome e sobrenome juntos). Isso melhora substancialmente a qualidade do matching, porque permite comparação campo a campo no passo de comparação detalhada (capítulo 5 do livro).\n\nAmbiguidades reais existem: no exemplo do livro, 'Paul Peter Miller' pode ter 'Peter' como nome do meio ou como parte de um sobrenome composto 'Peter-Miller'. A segmentação não resolve isso sozinha, ela depende de técnicas baseadas em regras (seç. 3.6) ou estatísticas (seç. 3.7, ex. HMM de Churches et al., 2002) para escolher a interpretação mais provável.",
+    "como_funciona": "1. Parta da sequência de tokens já tagueados pela etapa de padronização/tokenização (aula 37), ex.: 17[NU] eppin g road[WN] beverly park[LN] nsw[TR] 2011[PC].\n2. Defina o esquema de campos de saída apropriado ao tipo de dado: nomes (título, prefixo, primeiro nome, iniciais, nome do meio, sobrenome, sobrenome alternativo, sufixo), endereços de rua (prefixo de unidade, número, nome e tipo de via, nome de prédio/instituição), localidade (cidade, estado, CEP, país), datas (dia, mês, ano), telefones (código do país, DDD, número, ramal).\n3. Percorra a sequência de tags da esquerda para a direita (padrão para nomes ocidentais e parte de rua) ou da direita para a esquerda (padrão para localidade: CEP, cidade, estado, país geralmente vêm ao final).\n4. Aplique regras do tipo 'se condição na tag então ação de atribuição a campo' (seç. 3.6), testando tags e não tokens diretamente, pois tags generalizam melhor variações de entrada.\n5. Quando há ambiguidade (mais de uma regra dispara), use ordenação por especificidade (regra que cobre mais tags primeiro) ou por prioridade do campo de saída (ex.: given_name e surname são mais críticos que middle_name).\n6. Registre também quando um campo fica vazio, pois nem todo registro terá valor para todos os campos.",
+    "exemplo": "Entrada tagueada (Fig. 3.4 do livro): 'paul peter miller' com tags GM, SN, SN (ou seja, 'paul' é tag GM, e tanto 'peter' quanto 'miller' aparecem como candidatos SN).\n\nAplicando as regras da Fig. 3.5 esquerda para direita: regra 'se t[i]=GM e t[i+1]=SN então given_name=o[i], surname=o[i+1]' dispara em i=1, atribuindo given_name='paul' e surname='peter'. Sobra o token 'miller' com tag SN não consumido pela regra.\n\nAqui está a ambiguidade real do livro: 'miller' pode ser (a) ignorado como sobrenome alternativo não usado, (b) tratado como segundo elemento de um sobrenome composto 'peter-miller', ou (c) reinterpretado trocando given_name/middle_name. Um sistema baseado em regras simples como o da Fig. 3.5 resolveria isso com uma regra adicional específica (ex.: se restar token SN após a regra principal, concatenar como surname composto), enquanto um sistema estatístico (HMM) calcularia qual segmentação tem maior probabilidade dado um corpus de treinamento, conforme Churches et al. (2002).",
+    "na_pratica": "Em Python, após tokenizar e tagear (aula 37), a segmentação pode ser implementada como uma máquina de regras simples sobre a lista de (token, tags):\n\ndef segmentar_nome(tokens_tags):\n    campos = {}\n    i = 0\n    while i < len(tokens_tags):\n        tok, tags = tokens_tags[i]\n        if 'TI' in tags:\n            campos['title'] = tok\n        elif 'GM' in tags or 'GF' in tags:\n            campos['given_name'] = tok\n            if i+1 < len(tokens_tags) and 'SN' in tokens_tags[i+1][1]:\n                campos['surname'] = tokens_tags[i+1][0]\n                i += 1\n        i += 1\n    return campos\n\nEm pipelines de produção com Splink ou Elasticsearch, essa etapa roda ANTES do linkage, geralmente como job Spark/Python separado, gerando colunas given_name, surname, street_number, locality etc. que depois alimentam as comparisons (cl.JaroWinklerAtThresholds) campo a campo.",
+    "armadilha": "Tratar a segmentação como determinística e aplicar apenas a primeira regra que dispara sem considerar ambiguidade residual (como o token 'miller' sobrando no exemplo); isso silenciosamente descarta informação. Sempre logue tokens não consumidos por nenhuma regra para auditoria.",
+    "desafio": "Você recebe a sequência tagueada: 'maria := GF', 'da := SP', 'silva := SN', 'santos := SN'. Usando a lógica de regras do livro (uma regra casa GF seguido de SN atribuindo given_name e surname), proponha uma regra adicional para capturar corretamente given_name='maria', surname='da silva santos' (sobrenome composto brasileiro com partícula), e explique por que a regra padrão do livro (apenas GF+SN) falharia aqui.",
+    "gabarito": "A regra padrão do livro (t[i]=GF e t[i+1]=SN então given_name=o[i], surname=o[i+1]) falha porque ela só consome dois tokens: atribuiria given_name='maria' e, ao tentar casar com t[i+1], encontraria a tag SP ('da'), não SN, então a regra nem dispararia diretamente sobre 'silva'. Seria necessário tratar 'da' separadamente. A regra adicional correta seria: 'se t[i]=GF então given_name=o[i]; em seguida, enquanto t[i+1]=SP ou t[i+1]=SN, concatene o[i+1] ao campo surname e avance i'. Isso produz surname='da silva santos', tratando SP (separador/qualificador como 'da', 'de', 'dos') como parte integrante do sobrenome composto, em vez de um campo isolado. Esse tipo de regra é essencial para nomes brasileiros, tema da próxima aula da semana.",
+    "fontes": [
+      "Christen (2012), seç. 3.5.3, p. 53-54",
+      "Christen (2012), seç. 3.5.4, p. 54-56",
+      "Christen (2012), seç. 3.6, p. 56-58, Fig. 3.5",
+      "Churches, Christen, Lim & Zhu (2002)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        51,
+        58
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3044,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 180,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 11,
+      "pos_palavras_chave": 3,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

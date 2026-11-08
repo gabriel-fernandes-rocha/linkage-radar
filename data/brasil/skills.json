@@ -1,28 +1,28 @@
 {
- "atualizado_em": "2026-11-07",
+ "atualizado_em": "2026-11-08",
  "geral": {
-  "vagas_analisadas": 54,
+  "vagas_analisadas": 58,
   "ranking": [
    {
     "nome": "SQL",
-    "vagas": 28,
-    "pct": 52,
-    "obrigatorio": 24,
-    "desejavel": 4,
+    "vagas": 32,
+    "pct": 55,
+    "obrigatorio": 27,
+    "desejavel": 5,
     "voce": "parcial"
    },
    {
     "nome": "Python",
-    "vagas": 23,
-    "pct": 43,
-    "obrigatorio": 18,
-    "desejavel": 5,
+    "vagas": 27,
+    "pct": 47,
+    "obrigatorio": 21,
+    "desejavel": 6,
     "voce": "tem"
    },
    {
     "nome": "ETL",
     "vagas": 18,
-    "pct": 33,
+    "pct": 31,
     "obrigatorio": 18,
     "desejavel": 0,
     "voce": "tem"
@@ -30,7 +30,7 @@
    {
     "nome": "AWS",
     "vagas": 11,
-    "pct": 20,
+    "pct": 19,
     "obrigatorio": 6,
     "desejavel": 5,
     "voce": "nao"
@@ -38,31 +38,31 @@
    {
     "nome": "Power BI",
     "vagas": 11,
-    "pct": 20,
+    "pct": 19,
     "obrigatorio": 10,
     "desejavel": 1,
     "voce": "nao"
    },
    {
+    "nome": "Databricks",
+    "vagas": 10,
+    "pct": 17,
+    "obrigatorio": 8,
+    "desejavel": 2,
+    "voce": "nao"
+   },
+   {
     "nome": "Data Quality",
     "vagas": 9,
-    "pct": 17,
+    "pct": 16,
     "obrigatorio": 7,
     "desejavel": 2,
     "voce": "tem"
    },
    {
-    "nome": "Databricks",
-    "vagas": 9,
-    "pct": 17,
-    "obrigatorio": 7,
-    "desejavel": 2,
-    "voce": "nao"
-   },
-   {
     "nome": "Azure",
     "vagas": 9,
-    "pct": 17,
+    "pct": 16,
     "obrigatorio": 7,
     "desejavel": 2,
     "voce": "nao"
@@ -70,7 +70,7 @@
    {
     "nome": "Entity Resolution",
     "vagas": 8,
-    "pct": 15,
+    "pct": 14,
     "obrigatorio": 8,
     "desejavel": 0,
     "voce": "tem"
@@ -78,7 +78,7 @@
    {
     "nome": "IA",
     "vagas": 7,
-    "pct": 13,
+    "pct": 12,
     "obrigatorio": 7,
     "desejavel": 0,
     "voce": "parcial"
@@ -86,7 +86,7 @@
    {
     "nome": "modelagem de dados",
     "vagas": 7,
-    "pct": 13,
+    "pct": 12,
     "obrigatorio": 5,
     "desejavel": 2,
     "voce": "parcial"
@@ -94,10 +94,26 @@
    {
     "nome": "master data management",
     "vagas": 6,
-    "pct": 11,
+    "pct": 10,
     "obrigatorio": 6,
     "desejavel": 0,
     "voce": "nao"
+   },
+   {
+    "nome": "GCP",
+    "vagas": 6,
+    "pct": 10,
+    "obrigatorio": 6,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Airflow",
+    "vagas": 5,
+    "pct": 9,
+    "obrigatorio": 3,
+    "desejavel": 2,
+    "voce": "parcial"
    },
    {
     "nome": "PySpark",
@@ -116,12 +132,12 @@
     "voce": "tem"
    },
    {
-    "nome": "GCP",
+    "nome": "Spark",
     "vagas": 5,
     "pct": 9,
-    "obrigatorio": 5,
-    "desejavel": 0,
-    "voce": "nao"
+    "obrigatorio": 4,
+    "desejavel": 1,
+    "voce": "tem"
    },
    {
     "nome": "Git",
@@ -154,14 +170,6 @@
     "obrigatorio": 4,
     "desejavel": 0,
     "voce": "nao"
-   },
-   {
-    "nome": "Airflow",
-    "vagas": 4,
-    "pct": 7,
-    "obrigatorio": 2,
-    "desejavel": 2,
-    "voce": "parcial"
    },
    {
     "nome": "MarTech",
@@ -198,23 +206,15 @@
    {
     "nome": "Terraform",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
    },
    {
-    "nome": "Amazon Neptune",
-    "vagas": 3,
-    "pct": 6,
-    "obrigatorio": 2,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "fuzzy matching",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "tem"
@@ -222,15 +222,23 @@
    {
     "nome": "Retrieval",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
    },
    {
+    "nome": "Amazon Neptune",
+    "vagas": 3,
+    "pct": 5,
+    "obrigatorio": 2,
+    "desejavel": 1,
+    "voce": "nao"
+   },
+   {
     "nome": "MDM",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
@@ -238,7 +246,7 @@
    {
     "nome": "R",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 1,
     "desejavel": 2,
     "voce": "nao"
@@ -246,7 +254,7 @@
    {
     "nome": "Data Pipelines",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "tem"
@@ -254,7 +262,7 @@
    {
     "nome": "Snowflake",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
@@ -262,23 +270,15 @@
    {
     "nome": "Data Mapping",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "parcial"
    },
    {
-    "nome": "Spark",
-    "vagas": 3,
-    "pct": 6,
-    "obrigatorio": 2,
-    "desejavel": 1,
-    "voce": "tem"
-   },
-   {
     "nome": "Azure DevOps",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 2,
     "desejavel": 1,
     "voce": "nao"
@@ -286,23 +286,31 @@
    {
     "nome": "Collibra",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 2,
     "desejavel": 1,
     "voce": "nao"
    },
    {
-    "nome": "Golden Record",
+    "nome": "matching",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "tem"
    },
    {
-    "nome": "matching",
+    "nome": "BigQuery",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Golden Record",
+    "vagas": 2,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "tem"
@@ -310,7 +318,7 @@
    {
     "nome": "Data Modeling",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -318,31 +326,31 @@
    {
     "nome": "Delta Lake",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "parcial"
    },
    {
-    "nome": "Entity Matching",
-    "vagas": 2,
-    "pct": 4,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "graph databases",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 0,
     "desejavel": 2,
     "voce": "parcial"
    },
    {
+    "nome": "Entity Matching",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "tem"
+   },
+   {
     "nome": "S3",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -350,7 +358,7 @@
    {
     "nome": "Braze",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -358,15 +366,7 @@
    {
     "nome": "Kafka",
     "vagas": 2,
-    "pct": 4,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
-    "nome": "Cypher",
-    "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -374,7 +374,15 @@
    {
     "nome": "Neo4j",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Cypher",
+    "vagas": 2,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -382,23 +390,23 @@
    {
     "nome": "LLMs",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 0,
     "desejavel": 2,
     "voce": "parcial"
    },
    {
-    "nome": "cutover",
+    "nome": "mock loads",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
    },
    {
-    "nome": "mock loads",
+    "nome": "cutover",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -406,7 +414,7 @@
    {
     "nome": "Excel",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -414,7 +422,7 @@
    {
     "nome": "SAP Data Services",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -422,7 +430,7 @@
    {
     "nome": "ELT",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "tem"
@@ -430,7 +438,7 @@
    {
     "nome": "Alation",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -438,7 +446,7 @@
    {
     "nome": "Datahub",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -446,13 +454,21 @@
    {
     "nome": "SAP",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
    },
    {
-    "nome": "scikit-learn",
+    "nome": "CI/CD",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Record linkage",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 0,
@@ -468,15 +484,7 @@
     "voce": "tem"
    },
    {
-    "nome": "BigQuery",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
-    "nome": "Record linkage",
+    "nome": "scikit-learn",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 0,
@@ -492,12 +500,12 @@
     "voce": "parcial"
    },
    {
-    "nome": "Segment",
+    "nome": "Identity resolution",
     "vagas": 1,
     "pct": 2,
-    "obrigatorio": 0,
-    "desejavel": 1,
-    "voce": "nao"
+    "obrigatorio": 1,
+    "desejavel": 0,
+    "voce": "tem"
    },
    {
     "nome": "mParticle",
@@ -508,12 +516,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Identity resolution",
+    "nome": "Segment",
     "vagas": 1,
     "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "tem"
+    "obrigatorio": 0,
+    "desejavel": 1,
+    "voce": "nao"
    },
    {
     "nome": "Informatica",
@@ -524,14 +532,6 @@
     "voce": "parcial"
    },
    {
-    "nome": "AWS CDK",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "Infrastructure as Code",
     "vagas": 1,
     "pct": 2,
@@ -540,15 +540,7 @@
     "voce": "nao"
    },
    {
-    "nome": "embeddings",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "parcial"
-   },
-   {
-    "nome": "TensorFlow",
+    "nome": "AWS CDK",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 1,
@@ -564,12 +556,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Transformers",
+    "nome": "TensorFlow",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 0,
-    "voce": "parcial"
+    "voce": "nao"
    },
    {
     "nome": "LangGraph",
@@ -588,12 +580,28 @@
     "voce": "parcial"
    },
    {
+    "nome": "Transformers",
+    "vagas": 1,
+    "pct": 2,
+    "obrigatorio": 1,
+    "desejavel": 0,
+    "voce": "parcial"
+   },
+   {
     "nome": "LangChain",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 0,
     "desejavel": 1,
     "voce": "nao"
+   },
+   {
+    "nome": "embeddings",
+    "vagas": 1,
+    "pct": 2,
+    "obrigatorio": 1,
+    "desejavel": 0,
+    "voce": "parcial"
    },
    {
     "nome": "Redshift",
@@ -620,14 +628,6 @@
     "voce": "parcial"
    },
    {
-    "nome": "Agile/Scrum",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 0,
-    "desejavel": 1,
-    "voce": "parcial"
-   },
-   {
     "nome": "Azure Data Factory",
     "vagas": 1,
     "pct": 2,
@@ -647,21 +647,34 @@
   "familias": [
    {
     "nome": "Nuvem (AWS, Azure ou GCP)",
-    "vagas": 20,
-    "pct": 37,
+    "vagas": 21,
+    "pct": 36,
     "exemplos": [
      "AWS",
      "Azure",
      "GCP",
      "Amazon Neptune",
-     "S3"
+     "BigQuery"
     ],
     "voce": "nao"
    },
    {
+    "nome": "Containers e DevOps (Docker, Kubernetes, CI/CD)",
+    "vagas": 12,
+    "pct": 21,
+    "exemplos": [
+     "Git",
+     "Terraform",
+     "Azure DevOps",
+     "CI/CD",
+     "GitLab CI/CD"
+    ],
+    "voce": "parcial"
+   },
+   {
     "nome": "BI (Tableau, Power BI, Looker)",
     "vagas": 11,
-    "pct": 20,
+    "pct": 19,
     "exemplos": [
      "Power BI",
      "Tableau",
@@ -670,20 +683,8 @@
     "voce": "nao"
    },
    {
-    "nome": "Containers e DevOps (Docker, Kubernetes, CI/CD)",
-    "vagas": 10,
-    "pct": 19,
-    "exemplos": [
-     "Git",
-     "Terraform",
-     "Azure DevOps",
-     "CI/CD"
-    ],
-    "voce": "parcial"
-   },
-   {
     "nome": "Lakehouse (Databricks, Delta, Iceberg)",
-    "vagas": 9,
+    "vagas": 10,
     "pct": 17,
     "exemplos": [
      "Databricks",
@@ -692,9 +693,20 @@
     "voce": "parcial"
    },
    {
+    "nome": "Data warehouse na nuvem (Snowflake, BigQuery, Redshift)",
+    "vagas": 6,
+    "pct": 10,
+    "exemplos": [
+     "Snowflake",
+     "BigQuery",
+     "Redshift"
+    ],
+    "voce": "nao"
+   },
+   {
     "nome": "Transformação e modelagem (dbt, data modeling)",
     "vagas": 6,
-    "pct": 11,
+    "pct": 10,
     "exemplos": [
      "dbt",
      "Data Modeling",
@@ -703,15 +715,13 @@
     "voce": "parcial"
    },
    {
-    "nome": "Data warehouse na nuvem (Snowflake, BigQuery, Redshift)",
+    "nome": "Orquestração (Airflow, Dagster, Prefect)",
     "vagas": 5,
     "pct": 9,
     "exemplos": [
-     "Snowflake",
-     "BigQuery",
-     "Redshift"
+     "Airflow"
     ],
-    "voce": "nao"
+    "voce": "parcial"
    },
    {
     "nome": "LLMs e IA generativa",
@@ -721,15 +731,6 @@
      "RAG",
      "LLMs",
      "LangChain"
-    ],
-    "voce": "parcial"
-   },
-   {
-    "nome": "Orquestração (Airflow, Dagster, Prefect)",
-    "vagas": 4,
-    "pct": 7,
-    "exemplos": [
-     "Airflow"
     ],
     "voce": "parcial"
    },
@@ -747,7 +748,7 @@
    {
     "nome": "Streaming (Kafka, Kinesis, Flink)",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "exemplos": [
      "Kafka"
     ],
@@ -756,7 +757,7 @@
    {
     "nome": "Plataformas de MDM (Reltio, Informatica, IBM, Profisee, Tamr)",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "exemplos": [
      "Informatica",
      "SAP MDG"
@@ -768,8 +769,8 @@
     "vagas": 1,
     "pct": 2,
     "exemplos": [
-     "TensorFlow",
      "PyTorch",
+     "TensorFlow",
      "Deep Learning"
     ],
     "voce": "parcial"
@@ -777,28 +778,28 @@
   ]
  },
  "ultimos_90_dias": {
-  "vagas_analisadas": 54,
+  "vagas_analisadas": 58,
   "ranking": [
    {
     "nome": "SQL",
-    "vagas": 28,
-    "pct": 52,
-    "obrigatorio": 24,
-    "desejavel": 4,
+    "vagas": 32,
+    "pct": 55,
+    "obrigatorio": 27,
+    "desejavel": 5,
     "voce": "parcial"
    },
    {
     "nome": "Python",
-    "vagas": 23,
-    "pct": 43,
-    "obrigatorio": 18,
-    "desejavel": 5,
+    "vagas": 27,
+    "pct": 47,
+    "obrigatorio": 21,
+    "desejavel": 6,
     "voce": "tem"
    },
    {
     "nome": "ETL",
     "vagas": 18,
-    "pct": 33,
+    "pct": 31,
     "obrigatorio": 18,
     "desejavel": 0,
     "voce": "tem"
@@ -806,7 +807,7 @@
    {
     "nome": "AWS",
     "vagas": 11,
-    "pct": 20,
+    "pct": 19,
     "obrigatorio": 6,
     "desejavel": 5,
     "voce": "nao"
@@ -814,31 +815,31 @@
    {
     "nome": "Power BI",
     "vagas": 11,
-    "pct": 20,
+    "pct": 19,
     "obrigatorio": 10,
     "desejavel": 1,
     "voce": "nao"
    },
    {
+    "nome": "Databricks",
+    "vagas": 10,
+    "pct": 17,
+    "obrigatorio": 8,
+    "desejavel": 2,
+    "voce": "nao"
+   },
+   {
     "nome": "Data Quality",
     "vagas": 9,
-    "pct": 17,
+    "pct": 16,
     "obrigatorio": 7,
     "desejavel": 2,
     "voce": "tem"
    },
    {
-    "nome": "Databricks",
-    "vagas": 9,
-    "pct": 17,
-    "obrigatorio": 7,
-    "desejavel": 2,
-    "voce": "nao"
-   },
-   {
     "nome": "Azure",
     "vagas": 9,
-    "pct": 17,
+    "pct": 16,
     "obrigatorio": 7,
     "desejavel": 2,
     "voce": "nao"
@@ -846,7 +847,7 @@
    {
     "nome": "Entity Resolution",
     "vagas": 8,
-    "pct": 15,
+    "pct": 14,
     "obrigatorio": 8,
     "desejavel": 0,
     "voce": "tem"
@@ -854,7 +855,7 @@
    {
     "nome": "IA",
     "vagas": 7,
-    "pct": 13,
+    "pct": 12,
     "obrigatorio": 7,
     "desejavel": 0,
     "voce": "parcial"
@@ -862,7 +863,7 @@
    {
     "nome": "modelagem de dados",
     "vagas": 7,
-    "pct": 13,
+    "pct": 12,
     "obrigatorio": 5,
     "desejavel": 2,
     "voce": "parcial"
@@ -870,10 +871,26 @@
    {
     "nome": "master data management",
     "vagas": 6,
-    "pct": 11,
+    "pct": 10,
     "obrigatorio": 6,
     "desejavel": 0,
     "voce": "nao"
+   },
+   {
+    "nome": "GCP",
+    "vagas": 6,
+    "pct": 10,
+    "obrigatorio": 6,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Airflow",
+    "vagas": 5,
+    "pct": 9,
+    "obrigatorio": 3,
+    "desejavel": 2,
+    "voce": "parcial"
    },
    {
     "nome": "PySpark",
@@ -892,12 +909,12 @@
     "voce": "tem"
    },
    {
-    "nome": "GCP",
+    "nome": "Spark",
     "vagas": 5,
     "pct": 9,
-    "obrigatorio": 5,
-    "desejavel": 0,
-    "voce": "nao"
+    "obrigatorio": 4,
+    "desejavel": 1,
+    "voce": "tem"
    },
    {
     "nome": "Git",
@@ -930,14 +947,6 @@
     "obrigatorio": 4,
     "desejavel": 0,
     "voce": "nao"
-   },
-   {
-    "nome": "Airflow",
-    "vagas": 4,
-    "pct": 7,
-    "obrigatorio": 2,
-    "desejavel": 2,
-    "voce": "parcial"
    },
    {
     "nome": "MarTech",
@@ -974,23 +983,15 @@
    {
     "nome": "Terraform",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
    },
    {
-    "nome": "Amazon Neptune",
-    "vagas": 3,
-    "pct": 6,
-    "obrigatorio": 2,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "fuzzy matching",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "tem"
@@ -998,15 +999,23 @@
    {
     "nome": "Retrieval",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
    },
    {
+    "nome": "Amazon Neptune",
+    "vagas": 3,
+    "pct": 5,
+    "obrigatorio": 2,
+    "desejavel": 1,
+    "voce": "nao"
+   },
+   {
     "nome": "MDM",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
@@ -1014,7 +1023,7 @@
    {
     "nome": "R",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 1,
     "desejavel": 2,
     "voce": "nao"
@@ -1022,7 +1031,7 @@
    {
     "nome": "Data Pipelines",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "tem"
@@ -1030,7 +1039,7 @@
    {
     "nome": "Snowflake",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "nao"
@@ -1038,23 +1047,15 @@
    {
     "nome": "Data Mapping",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "parcial"
    },
    {
-    "nome": "Spark",
-    "vagas": 3,
-    "pct": 6,
-    "obrigatorio": 2,
-    "desejavel": 1,
-    "voce": "tem"
-   },
-   {
     "nome": "Azure DevOps",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 2,
     "desejavel": 1,
     "voce": "nao"
@@ -1062,23 +1063,31 @@
    {
     "nome": "Collibra",
     "vagas": 3,
-    "pct": 6,
+    "pct": 5,
     "obrigatorio": 2,
     "desejavel": 1,
     "voce": "nao"
    },
    {
-    "nome": "Golden Record",
+    "nome": "matching",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "tem"
    },
    {
-    "nome": "matching",
+    "nome": "BigQuery",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Golden Record",
+    "vagas": 2,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "tem"
@@ -1086,7 +1095,7 @@
    {
     "nome": "Data Modeling",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -1094,31 +1103,31 @@
    {
     "nome": "Delta Lake",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "parcial"
    },
    {
-    "nome": "Entity Matching",
-    "vagas": 2,
-    "pct": 4,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "graph databases",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 0,
     "desejavel": 2,
     "voce": "parcial"
    },
    {
+    "nome": "Entity Matching",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "tem"
+   },
+   {
     "nome": "S3",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -1126,7 +1135,7 @@
    {
     "nome": "Braze",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -1134,15 +1143,7 @@
    {
     "nome": "Kafka",
     "vagas": 2,
-    "pct": 4,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
-    "nome": "Cypher",
-    "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -1150,7 +1151,15 @@
    {
     "nome": "Neo4j",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Cypher",
+    "vagas": 2,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -1158,23 +1167,23 @@
    {
     "nome": "LLMs",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 0,
     "desejavel": 2,
     "voce": "parcial"
    },
    {
-    "nome": "cutover",
+    "nome": "mock loads",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
    },
    {
-    "nome": "mock loads",
+    "nome": "cutover",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -1182,7 +1191,7 @@
    {
     "nome": "Excel",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
@@ -1190,7 +1199,7 @@
    {
     "nome": "SAP Data Services",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -1198,7 +1207,7 @@
    {
     "nome": "ELT",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "tem"
@@ -1206,7 +1215,7 @@
    {
     "nome": "Alation",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -1214,7 +1223,7 @@
    {
     "nome": "Datahub",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
@@ -1222,13 +1231,21 @@
    {
     "nome": "SAP",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "obrigatorio": 2,
     "desejavel": 0,
     "voce": "nao"
    },
    {
-    "nome": "scikit-learn",
+    "nome": "CI/CD",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Record linkage",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 0,
@@ -1244,15 +1261,7 @@
     "voce": "tem"
    },
    {
-    "nome": "BigQuery",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
-    "nome": "Record linkage",
+    "nome": "scikit-learn",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 0,
@@ -1268,12 +1277,12 @@
     "voce": "parcial"
    },
    {
-    "nome": "Segment",
+    "nome": "Identity resolution",
     "vagas": 1,
     "pct": 2,
-    "obrigatorio": 0,
-    "desejavel": 1,
-    "voce": "nao"
+    "obrigatorio": 1,
+    "desejavel": 0,
+    "voce": "tem"
    },
    {
     "nome": "mParticle",
@@ -1284,12 +1293,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Identity resolution",
+    "nome": "Segment",
     "vagas": 1,
     "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "tem"
+    "obrigatorio": 0,
+    "desejavel": 1,
+    "voce": "nao"
    },
    {
     "nome": "Informatica",
@@ -1300,14 +1309,6 @@
     "voce": "parcial"
    },
    {
-    "nome": "AWS CDK",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "Infrastructure as Code",
     "vagas": 1,
     "pct": 2,
@@ -1316,15 +1317,7 @@
     "voce": "nao"
    },
    {
-    "nome": "embeddings",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 0,
-    "voce": "parcial"
-   },
-   {
-    "nome": "TensorFlow",
+    "nome": "AWS CDK",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 1,
@@ -1340,12 +1333,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Transformers",
+    "nome": "TensorFlow",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 0,
-    "voce": "parcial"
+    "voce": "nao"
    },
    {
     "nome": "LangGraph",
@@ -1364,12 +1357,28 @@
     "voce": "parcial"
    },
    {
+    "nome": "Transformers",
+    "vagas": 1,
+    "pct": 2,
+    "obrigatorio": 1,
+    "desejavel": 0,
+    "voce": "parcial"
+   },
+   {
     "nome": "LangChain",
     "vagas": 1,
     "pct": 2,
     "obrigatorio": 0,
     "desejavel": 1,
     "voce": "nao"
+   },
+   {
+    "nome": "embeddings",
+    "vagas": 1,
+    "pct": 2,
+    "obrigatorio": 1,
+    "desejavel": 0,
+    "voce": "parcial"
    },
    {
     "nome": "Redshift",
@@ -1396,14 +1405,6 @@
     "voce": "parcial"
    },
    {
-    "nome": "Agile/Scrum",
-    "vagas": 1,
-    "pct": 2,
-    "obrigatorio": 0,
-    "desejavel": 1,
-    "voce": "parcial"
-   },
-   {
     "nome": "Azure Data Factory",
     "vagas": 1,
     "pct": 2,
@@ -1423,21 +1424,34 @@
   "familias": [
    {
     "nome": "Nuvem (AWS, Azure ou GCP)",
-    "vagas": 20,
-    "pct": 37,
+    "vagas": 21,
+    "pct": 36,
     "exemplos": [
      "AWS",
      "Azure",
      "GCP",
      "Amazon Neptune",
-     "S3"
+     "BigQuery"
     ],
     "voce": "nao"
    },
    {
+    "nome": "Containers e DevOps (Docker, Kubernetes, CI/CD)",
+    "vagas": 12,
+    "pct": 21,
+    "exemplos": [
+     "Git",
+     "Terraform",
+     "Azure DevOps",
+     "CI/CD",
+     "GitLab CI/CD"
+    ],
+    "voce": "parcial"
+   },
+   {
     "nome": "BI (Tableau, Power BI, Looker)",
     "vagas": 11,
-    "pct": 20,
+    "pct": 19,
     "exemplos": [
      "Power BI",
      "Tableau",
@@ -1446,20 +1460,8 @@
     "voce": "nao"
    },
    {
-    "nome": "Containers e DevOps (Docker, Kubernetes, CI/CD)",
-    "vagas": 10,
-    "pct": 19,
-    "exemplos": [
-     "Git",
-     "Terraform",
-     "Azure DevOps",
-     "CI/CD"
-    ],
-    "voce": "parcial"
-   },
-   {
     "nome": "Lakehouse (Databricks, Delta, Iceberg)",
-    "vagas": 9,
+    "vagas": 10,
     "pct": 17,
     "exemplos": [
      "Databricks",
@@ -1468,9 +1470,20 @@
     "voce": "parcial"
    },
    {
+    "nome": "Data warehouse na nuvem (Snowflake, BigQuery, Redshift)",
+    "vagas": 6,
+    "pct": 10,
+    "exemplos": [
+     "Snowflake",
+     "BigQuery",
+     "Redshift"
+    ],
+    "voce": "nao"
+   },
+   {
     "nome": "Transformação e modelagem (dbt, data modeling)",
     "vagas": 6,
-    "pct": 11,
+    "pct": 10,
     "exemplos": [
      "dbt",
      "Data Modeling",
@@ -1479,15 +1492,13 @@
     "voce": "parcial"
    },
    {
-    "nome": "Data warehouse na nuvem (Snowflake, BigQuery, Redshift)",
+    "nome": "Orquestração (Airflow, Dagster, Prefect)",
     "vagas": 5,
     "pct": 9,
     "exemplos": [
-     "Snowflake",
-     "BigQuery",
-     "Redshift"
+     "Airflow"
     ],
-    "voce": "nao"
+    "voce": "parcial"
    },
    {
     "nome": "LLMs e IA generativa",
@@ -1497,15 +1508,6 @@
      "RAG",
      "LLMs",
      "LangChain"
-    ],
-    "voce": "parcial"
-   },
-   {
-    "nome": "Orquestração (Airflow, Dagster, Prefect)",
-    "vagas": 4,
-    "pct": 7,
-    "exemplos": [
-     "Airflow"
     ],
     "voce": "parcial"
    },
@@ -1523,7 +1525,7 @@
    {
     "nome": "Streaming (Kafka, Kinesis, Flink)",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "exemplos": [
      "Kafka"
     ],
@@ -1532,7 +1534,7 @@
    {
     "nome": "Plataformas de MDM (Reltio, Informatica, IBM, Profisee, Tamr)",
     "vagas": 2,
-    "pct": 4,
+    "pct": 3,
     "exemplos": [
      "Informatica",
      "SAP MDG"
@@ -1544,8 +1546,8 @@
     "vagas": 1,
     "pct": 2,
     "exemplos": [
-     "TensorFlow",
      "PyTorch",
+     "TensorFlow",
      "Deep Learning"
     ],
     "voce": "parcial"
@@ -1636,20 +1638,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Git",
-    "vagas": 13,
-    "pct": 11,
-    "obrigatorio": 11,
-    "desejavel": 2,
-    "voce": "parcial"
-   },
-   {
     "nome": "GCP",
     "vagas": 13,
     "pct": 11,
     "obrigatorio": 7,
     "desejavel": 6,
     "voce": "nao"
+   },
+   {
+    "nome": "Git",
+    "vagas": 13,
+    "pct": 11,
+    "obrigatorio": 11,
+    "desejavel": 2,
+    "voce": "parcial"
    },
    {
     "nome": "Airflow",
@@ -1660,19 +1662,19 @@
     "voce": "parcial"
    },
    {
-    "nome": "PostgreSQL",
-    "vagas": 12,
-    "pct": 10,
-    "obrigatorio": 12,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "CI/CD",
     "vagas": 12,
     "pct": 10,
     "obrigatorio": 8,
     "desejavel": 4,
+    "voce": "nao"
+   },
+   {
+    "nome": "PostgreSQL",
+    "vagas": 12,
+    "pct": 10,
+    "obrigatorio": 12,
+    "desejavel": 0,
     "voce": "nao"
    },
    {
@@ -1708,20 +1710,20 @@
     "voce": "tem"
    },
    {
-    "nome": "data governance",
-    "vagas": 8,
-    "pct": 7,
-    "obrigatorio": 7,
-    "desejavel": 1,
-    "voce": "parcial"
-   },
-   {
     "nome": "data quality",
     "vagas": 8,
     "pct": 7,
     "obrigatorio": 6,
     "desejavel": 2,
     "voce": "tem"
+   },
+   {
+    "nome": "data governance",
+    "vagas": 8,
+    "pct": 7,
+    "obrigatorio": 7,
+    "desejavel": 1,
+    "voce": "parcial"
    },
    {
     "nome": "data pipelines",
@@ -1764,20 +1766,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Amazon Redshift",
-    "vagas": 5,
-    "pct": 4,
-    "obrigatorio": 4,
-    "desejavel": 1,
-    "voce": "pendente"
-   },
-   {
     "nome": "Fivetran",
     "vagas": 5,
     "pct": 4,
     "obrigatorio": 3,
     "desejavel": 2,
     "voce": "nao"
+   },
+   {
+    "nome": "Amazon Redshift",
+    "vagas": 5,
+    "pct": 4,
+    "obrigatorio": 4,
+    "desejavel": 1,
+    "voce": "pendente"
    },
    {
     "nome": "data lineage",
@@ -1812,19 +1814,19 @@
     "voce": "parcial"
    },
    {
-    "nome": "Kafka",
-    "vagas": 5,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 5,
-    "voce": "nao"
-   },
-   {
     "nome": "BigQuery",
     "vagas": 5,
     "pct": 4,
     "obrigatorio": 5,
     "desejavel": 0,
+    "voce": "nao"
+   },
+   {
+    "nome": "Kafka",
+    "vagas": 5,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 5,
     "voce": "nao"
    },
    {
@@ -1860,20 +1862,20 @@
     "voce": "pendente"
    },
    {
-    "nome": "Claude",
-    "vagas": 4,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 2,
-    "voce": "parcial"
-   },
-   {
     "nome": "Infrastructure as code",
     "vagas": 4,
     "pct": 3,
     "obrigatorio": 0,
     "desejavel": 4,
     "voce": "nao"
+   },
+   {
+    "nome": "Claude",
+    "vagas": 4,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 2,
+    "voce": "parcial"
    },
    {
     "nome": "Sigma",
@@ -1924,20 +1926,20 @@
     "voce": "parcial"
    },
    {
-    "nome": "Data Warehouse",
-    "vagas": 4,
-    "pct": 3,
-    "obrigatorio": 1,
-    "desejavel": 3,
-    "voce": "parcial"
-   },
-   {
     "nome": "Terraform",
     "vagas": 4,
     "pct": 3,
     "obrigatorio": 1,
     "desejavel": 3,
     "voce": "nao"
+   },
+   {
+    "nome": "Data Warehouse",
+    "vagas": 4,
+    "pct": 3,
+    "obrigatorio": 1,
+    "desejavel": 3,
+    "voce": "parcial"
    },
    {
     "nome": "Feature Engineering",
@@ -2020,12 +2022,12 @@
     "voce": "parcial"
    },
    {
-    "nome": "Generative AI",
+    "nome": "Lambda",
     "vagas": 3,
     "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 2,
-    "voce": "pendente"
+    "obrigatorio": 0,
+    "desejavel": 3,
+    "voce": "nao"
    },
    {
     "nome": "Microsoft Fabric",
@@ -2036,12 +2038,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Lambda",
+    "nome": "Generative AI",
     "vagas": 3,
     "pct": 2,
-    "obrigatorio": 0,
-    "desejavel": 3,
-    "voce": "nao"
+    "obrigatorio": 1,
+    "desejavel": 2,
+    "voce": "pendente"
    },
    {
     "nome": "ELT",
@@ -2068,14 +2070,6 @@
     "voce": "nao"
    },
    {
-    "nome": "TensorFlow",
-    "vagas": 3,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 2,
-    "voce": "nao"
-   },
-   {
     "nome": "Kubernetes",
     "vagas": 3,
     "pct": 2,
@@ -2084,12 +2078,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Dataform",
+    "nome": "TensorFlow",
     "vagas": 3,
     "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 1,
-    "voce": "pendente"
+    "obrigatorio": 1,
+    "desejavel": 2,
+    "voce": "nao"
    },
    {
     "nome": "NoSQL",
@@ -2100,6 +2094,14 @@
     "voce": "tem"
    },
    {
+    "nome": "Dataform",
+    "vagas": 3,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 1,
+    "voce": "pendente"
+   },
+   {
     "nome": "Medallion Architecture",
     "vagas": 3,
     "pct": 2,
@@ -2108,20 +2110,20 @@
     "voce": "pendente"
    },
    {
-    "nome": "Unity Catalog",
-    "vagas": 3,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "modelagem de dados",
     "vagas": 3,
     "pct": 2,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "parcial"
+   },
+   {
+    "nome": "Unity Catalog",
+    "vagas": 3,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 1,
+    "voce": "nao"
    },
    {
     "nome": "Azure Data Factory",
@@ -2148,20 +2150,20 @@
     "voce": "nao"
    },
    {
-    "nome": "PyTorch",
-    "vagas": 3,
-    "pct": 2,
-    "obrigatorio": 3,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "NumPy",
     "vagas": 3,
     "pct": 2,
     "obrigatorio": 3,
     "desejavel": 0,
     "voce": "parcial"
+   },
+   {
+    "nome": "PyTorch",
+    "vagas": 3,
+    "pct": 2,
+    "obrigatorio": 3,
+    "desejavel": 0,
+    "voce": "nao"
    },
    {
     "nome": "Relational Databases",
@@ -2352,79 +2354,79 @@
   ]
  },
  "ganhos": {
-  "cobertura_atual": 41.9,
+  "cobertura_atual": 42.4,
   "vagas_completas_hoje": 3,
-  "vagas_analisadas": 54,
+  "vagas_analisadas": 58,
   "habilidades": [
    {
     "nome": "SQL",
-    "ganho_cobertura": 5.4,
-    "vagas_completas_a_mais": 4,
+    "ganho_cobertura": 5.7,
+    "vagas_completas_a_mais": 5,
     "voce": "parcial",
-    "pct_nicho": 52
+    "pct_nicho": 55
    },
    {
     "nome": "Power BI",
-    "ganho_cobertura": 5.3,
+    "ganho_cobertura": 4.9,
     "vagas_completas_a_mais": 1,
     "voce": "nao",
-    "pct_nicho": 20
+    "pct_nicho": 19
    },
    {
     "nome": "AWS",
-    "ganho_cobertura": 2.6,
+    "ganho_cobertura": 2.4,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 20
+    "pct_nicho": 19
    },
    {
     "nome": "Databricks",
-    "ganho_cobertura": 2.1,
+    "ganho_cobertura": 2.3,
     "vagas_completas_a_mais": 1,
     "voce": "nao",
     "pct_nicho": 17
    },
    {
-    "nome": "Azure",
-    "ganho_cobertura": 1.8,
+    "nome": "GCP",
+    "ganho_cobertura": 1.9,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 17
+    "pct_nicho": 10
    },
    {
-    "nome": "master data management",
+    "nome": "Azure",
     "ganho_cobertura": 1.6,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 11
+    "pct_nicho": 16
    },
    {
-    "nome": "GCP",
+    "nome": "master data management",
     "ganho_cobertura": 1.5,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 9
+    "pct_nicho": 10
    },
    {
     "nome": "Tableau",
-    "ganho_cobertura": 1.5,
+    "ganho_cobertura": 1.4,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
     "pct_nicho": 7
    },
    {
     "nome": "IA",
-    "ganho_cobertura": 1.2,
+    "ganho_cobertura": 1.1,
     "vagas_completas_a_mais": 1,
     "voce": "parcial",
-    "pct_nicho": 13
+    "pct_nicho": 12
    },
    {
     "nome": "modelagem de dados",
-    "ganho_cobertura": 1.0,
+    "ganho_cobertura": 0.9,
     "vagas_completas_a_mais": 0,
     "voce": "parcial",
-    "pct_nicho": 13
+    "pct_nicho": 12
    },
    {
     "nome": "MarTech",
@@ -2434,32 +2436,18 @@
     "pct_nicho": 7
    },
    {
-    "nome": "APIs",
-    "ganho_cobertura": 0.7,
-    "vagas_completas_a_mais": 0,
-    "voce": "parcial",
-    "pct_nicho": 7
-   },
-   {
-    "nome": "MDM",
-    "ganho_cobertura": 0.7,
-    "vagas_completas_a_mais": 0,
-    "voce": "nao",
-    "pct_nicho": 6
-   },
-   {
     "nome": "R",
     "ganho_cobertura": 0.7,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 6
+    "pct_nicho": 5
    },
    {
-    "nome": "SAP",
+    "nome": "CI/CD",
     "ganho_cobertura": 0.7,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 4
+    "pct_nicho": 3
    },
    {
     "nome": "dbt",
@@ -2469,18 +2457,53 @@
     "pct_nicho": 7
    },
    {
+    "nome": "APIs",
+    "ganho_cobertura": 0.6,
+    "vagas_completas_a_mais": 0,
+    "voce": "parcial",
+    "pct_nicho": 7
+   },
+   {
+    "nome": "MDM",
+    "ganho_cobertura": 0.6,
+    "vagas_completas_a_mais": 0,
+    "voce": "nao",
+    "pct_nicho": 5
+   },
+   {
     "nome": "Azure DevOps",
     "ganho_cobertura": 0.6,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 6
+    "pct_nicho": 5
+   },
+   {
+    "nome": "BigQuery",
+    "ganho_cobertura": 0.6,
+    "vagas_completas_a_mais": 0,
+    "voce": "nao",
+    "pct_nicho": 3
    },
    {
     "nome": "Excel",
     "ganho_cobertura": 0.6,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 4
+    "pct_nicho": 3
+   },
+   {
+    "nome": "SAP",
+    "ganho_cobertura": 0.6,
+    "vagas_completas_a_mais": 0,
+    "voce": "nao",
+    "pct_nicho": 3
+   },
+   {
+    "nome": "Airflow",
+    "ganho_cobertura": 0.5,
+    "vagas_completas_a_mais": 0,
+    "voce": "parcial",
+    "pct_nicho": 9
    },
    {
     "nome": "RAG",
@@ -2490,125 +2513,104 @@
     "pct_nicho": 7
    },
    {
-    "nome": "Collibra",
-    "ganho_cobertura": 0.5,
-    "vagas_completas_a_mais": 0,
-    "voce": "nao",
-    "pct_nicho": 6
-   },
-   {
-    "nome": "SAP Data Services",
-    "ganho_cobertura": 0.5,
-    "vagas_completas_a_mais": 0,
-    "voce": "nao",
-    "pct_nicho": 4
-   },
-   {
-    "nome": "Git",
+    "nome": "Retrieval",
     "ganho_cobertura": 0.4,
     "vagas_completas_a_mais": 0,
-    "voce": "parcial",
-    "pct_nicho": 7
+    "voce": "nao",
+    "pct_nicho": 5
    },
    {
     "nome": "Amazon Neptune",
     "ganho_cobertura": 0.4,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 6
-   },
-   {
-    "nome": "Retrieval",
-    "ganho_cobertura": 0.4,
-    "vagas_completas_a_mais": 0,
-    "voce": "nao",
-    "pct_nicho": 6
+    "pct_nicho": 5
    },
    {
     "nome": "Snowflake",
     "ganho_cobertura": 0.4,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 6
+    "pct_nicho": 5
    }
   ],
   "familias": [
    {
-    "nome": "BI (Tableau, Power BI, Looker)",
-    "ganho_cobertura": 6.9,
-    "vagas_completas_a_mais": 1,
-    "voce": "nao",
-    "pct_nicho": 20
-   },
-   {
     "nome": "Nuvem (AWS, Azure ou GCP)",
-    "ganho_cobertura": 6.5,
+    "ganho_cobertura": 6.9,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 37
+    "pct_nicho": 36
+   },
+   {
+    "nome": "BI (Tableau, Power BI, Looker)",
+    "ganho_cobertura": 6.4,
+    "vagas_completas_a_mais": 1,
+    "voce": "nao",
+    "pct_nicho": 19
    },
    {
     "nome": "Lakehouse (Databricks, Delta, Iceberg)",
-    "ganho_cobertura": 2.3,
+    "ganho_cobertura": 2.5,
     "vagas_completas_a_mais": 1,
     "voce": "parcial",
     "pct_nicho": 17
    },
    {
     "nome": "Containers e DevOps (Docker, Kubernetes, CI/CD)",
-    "ganho_cobertura": 1.7,
+    "ganho_cobertura": 2.0,
     "vagas_completas_a_mais": 0,
     "voce": "parcial",
-    "pct_nicho": 19
+    "pct_nicho": 21
+   },
+   {
+    "nome": "Data warehouse na nuvem (Snowflake, BigQuery, Redshift)",
+    "ganho_cobertura": 1.1,
+    "vagas_completas_a_mais": 0,
+    "voce": "nao",
+    "pct_nicho": 10
    },
    {
     "nome": "Transformação e modelagem (dbt, data modeling)",
-    "ganho_cobertura": 1.0,
+    "ganho_cobertura": 0.9,
     "vagas_completas_a_mais": 0,
     "voce": "parcial",
-    "pct_nicho": 11
+    "pct_nicho": 10
    },
    {
     "nome": "LLMs e IA generativa",
-    "ganho_cobertura": 1.0,
-    "vagas_completas_a_mais": 0,
-    "voce": "parcial",
-    "pct_nicho": 7
-   },
-   {
-    "nome": "Bancos de grafos (Neo4j, GraphFrames)",
     "ganho_cobertura": 0.9,
     "vagas_completas_a_mais": 0,
     "voce": "parcial",
     "pct_nicho": 7
    },
    {
-    "nome": "Data warehouse na nuvem (Snowflake, BigQuery, Redshift)",
+    "nome": "Bancos de grafos (Neo4j, GraphFrames)",
     "ganho_cobertura": 0.8,
-    "vagas_completas_a_mais": 0,
-    "voce": "nao",
-    "pct_nicho": 9
-   },
-   {
-    "nome": "Orquestração (Airflow, Dagster, Prefect)",
-    "ganho_cobertura": 0.3,
     "vagas_completas_a_mais": 0,
     "voce": "parcial",
     "pct_nicho": 7
+   },
+   {
+    "nome": "Orquestração (Airflow, Dagster, Prefect)",
+    "ganho_cobertura": 0.5,
+    "vagas_completas_a_mais": 0,
+    "voce": "parcial",
+    "pct_nicho": 9
    },
    {
     "nome": "Streaming (Kafka, Kinesis, Flink)",
     "ganho_cobertura": 0.3,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
-    "pct_nicho": 4
+    "pct_nicho": 3
    },
    {
     "nome": "Plataformas de MDM (Reltio, Informatica, IBM, Profisee, Tamr)",
     "ganho_cobertura": 0.3,
     "vagas_completas_a_mais": 0,
     "voce": "parcial",
-    "pct_nicho": 4
+    "pct_nicho": 3
    },
    {
     "nome": "Deep learning (PyTorch, TensorFlow)",
@@ -2622,7 +2624,7 @@
  "senioridade": [
   [
    "nao_informado",
-   34
+   37
   ],
   [
    "senior",
@@ -2630,7 +2632,7 @@
   ],
   [
    "pleno",
-   3
+   4
   ],
   [
    "junior",
@@ -2648,15 +2650,19 @@
  "modalidade": [
   [
    "nao_informado",
-   31
+   32
   ],
   [
    "remoto",
-   17
+   19
   ],
   [
    "hibrido",
    6
+  ],
+  [
+   "presencial",
+   1
   ]
  ]
 }
