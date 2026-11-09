@@ -108,6 +108,11 @@
   "nivel": "parcial",
   "nome": "APIs"
  },
+ "arquitetura de dados medalhão": {
+  "motivo": "pipelines ETL/Data Lake próximos do conceito medalhão",
+  "nivel": "parcial",
+  "nome": "arquitetura de dados medalhão"
+ },
  "ataccama": {
   "motivo": "Ferramenta específica não mencionada",
   "nivel": "nao",
@@ -122,6 +127,11 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "Athena"
+ },
+ "attribute extraction": {
+  "motivo": "parsing/normalização de campos aplicável, não direto no CV",
+  "nivel": "parcial",
+  "nome": "Attribute extraction"
  },
  "audience building": {
   "motivo": "Não trabalha com construção de audiências.",
@@ -257,6 +267,11 @@
   "motivo": "implícito no blocking/matching",
   "nivel": "tem",
   "nome": "candidate generation"
+ },
+ "catalog matching": {
+  "motivo": "equivalente a record linkage/entity matching que já faz",
+  "nivel": "tem",
+  "nome": "Catalog matching"
  },
  "ccpa": {
   "motivo": "sem menção a compliance de privacidade EUA",
@@ -1273,6 +1288,11 @@
   "nivel": "nao",
   "nome": "Looker Studio"
  },
+ "lsmw": {
+  "motivo": "ferramenta SAP sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "LSMW"
+ },
  "machine learning": {
   "motivo": "usa scikit-learn e classificação em matching",
   "nivel": "parcial",
@@ -1863,6 +1883,11 @@
   "nivel": "nao",
   "nome": "SAP S/4HANA"
  },
+ "sap s/4hana migration cockpit": {
+  "motivo": "sem evidência de experiência com SAP",
+  "nivel": "nao",
+  "nome": "SAP S/4HANA Migration Cockpit"
+ },
  "scala": {
   "motivo": "sem evidência, usa Python no Spark",
   "nivel": "nao",
@@ -1942,6 +1967,11 @@
   "motivo": "core do matching com Splink/RapidFuzz",
   "nivel": "tem",
   "nome": "Similarity Scoring"
+ },
+ "similarity search": {
+  "motivo": "fuzzy matching, cosseno, Elasticsearch já utilizados",
+  "nivel": "tem",
+  "nome": "Similarity search"
  },
  "single customer view": {
   "motivo": "conceito próximo de golden record/entity resolution",
@@ -2087,6 +2117,11 @@
   "motivo": "Taxonomias não aparecem no currículo",
   "nivel": "nao",
   "nome": "taxonomies"
+ },
+ "taxonomy mapping": {
+  "motivo": "sem evidência direta, mas normalização/classificação relacionada",
+  "nivel": "parcial",
+  "nome": "Taxonomy mapping"
  },
  "tensorflow": {
   "motivo": "sem evidência, usa scikit-learn",

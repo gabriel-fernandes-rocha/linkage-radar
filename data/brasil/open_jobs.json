@@ -1,66 +1,6 @@
 [
   {
     "tipo": "vaga",
-    "titulo": "Bolsista Mestre [SQL, Modelagem relacional, Data quality, Python/PySpark] ICT",
-    "url": "https://bebee.com/br/jobs/bolsista-mestre-sql-modelagem-relacional-data-quality-python-ict-iel--ss-br-1jcs1jf",
-    "empresa": "IEL",
-    "local": "Qualquer lugar",
-    "fonte": "Google Jobs (Brasil)",
-    "publicada_em": null,
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "data quality",
-      "integracao de bases"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Bolsista Mestre no Brasil para projeto ICT-Itaú envolvendo inventário de múltiplas fontes de dados, modelagem de dados, definição de critérios de qualidade, linhagem, validação de consistência e integração de bases com Python/PySpark.",
-    "resumo": "Bolsista Mestre em projeto de inovação ICT-Itaú para construir modelo de dados mínimo, definir critérios de qualidade e linhagem, preparar datasets, automatizar validações de consistência e integrar múltiplas fontes de dados com SQL e PySpark.",
-    "confianca": 0.92,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Python",
-        "Spark"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.1,
-    "encaixe": 0.66,
-    "compat_detalhe": {
-      "habilidades": 83,
-      "senioridade": 85,
-      "local": 100,
-      "ingles": 100,
-      "foco": 86,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "remoto e aceita Brasil/LATAM",
-      "faltam": [],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-08",
-    "verificada_em": "2026-11-08",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Selecionada, Engenheiro de Integração de Dados - Trabalho Remoto | REF#308248 (vaga verificada)",
     "url": "https://www.linkedin.com/jobs/view/4487026401",
     "empresa": "Engenheiro de Integração de Dados - Trabalho Remoto | REF#308248",
@@ -114,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -171,7 +111,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -228,7 +168,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -295,8 +235,8 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-08",
-    "nova": true
+    "verificada_em": "2026-11-09",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -361,7 +301,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -429,7 +369,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -484,7 +424,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -504,7 +444,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Master Data Developer remoto no Brasil com requisitos diretos: Entity Resolution, Entity Matching, fuzzy matching, Deduplication, graph databases (Amazon Neptune), alinhado perfeitamente com especialidade do leitor.",
+    "motivo": "Vaga remota no Brasil com requisitos explícitos de entity resolution, entity matching, fuzzy matching, deduplication e graph databases, alinhados totalmente com o perfil.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -557,11 +497,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T para trabalhar com Entity Resolution, Entity Matching, fuzzy matching, deduplicação e bancos de dados em grafo (Amazon Neptune) usando Python e AWS.",
-    "confianca": 0.98
+    "resumo": "Master Data Developer na CI&T com foco em entity resolution, matching de entidades, deduplicação e bancos de dados em grafo usando Amazon Neptune, Python e AWS.",
+    "confianca": 0.95
   },
   {
     "tipo": "vaga",
@@ -625,7 +565,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -687,7 +627,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -705,7 +645,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "AI Senior Engineer remoto em múltiplos países da América Latina incluindo Brasil, com requisitos de Entity Resolution, Deduplication, Data Pipelines e Neo4j, embora requira especialização em Graph que extrapola o foco principal.",
+    "motivo": "Vaga remota aceita Brasil com requisitos de entity resolution, deduplication, data pipelines e ETL usando Neo4j, Kafka e Python, alinhados ao perfil técnico.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -756,11 +696,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "AI Senior Engineer remoto (aceitando Brasil) focado em Entity Resolution, Deduplication, Data Pipelines, Neo4j, Cypher, Python, Kafka e RAG para construir soluções baseadas em grafos.",
-    "confianca": 0.88
+    "resumo": "Senior Engineer de IA/Graph na Able com foco em entity resolution, deduplicação, pipelines de dados e ETL usando Neo4j, Kafka e Python para múltiplos países da América Latina.",
+    "confianca": 0.9
   },
   {
     "tipo": "vaga",
@@ -817,7 +757,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -837,7 +777,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Master Data Developer no Brasil com requisitos diretos: Entity Resolution, Entity Matching, fuzzy matching, Deduplication, Machine Learning, graph databases (Amazon Neptune), alinhado perfeitamente com especialidade do leitor.",
+    "motivo": "Vaga no Brasil com requisitos explícitos de entity resolution, entity matching, fuzzy matching, deduplication, machine learning e graph databases, totalmente relevante.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -889,11 +829,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T para trabalhar com Entity Resolution, Entity Matching, fuzzy matching, deduplicação, Machine Learning e bancos de dados em grafo (Amazon Neptune) usando Python e AWS.",
-    "confianca": 0.98
+    "resumo": "Master Data Developer da CI&T com expertise em entity resolution, matching de entidades, deduplicação, retrieval e machine learning em bancos de dados em grafo.",
+    "confianca": 0.95
   },
   {
     "tipo": "vaga",
@@ -947,7 +887,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -965,7 +905,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Senior Data Engineer remoto no Brasil com foco em Identity resolution, Data Governance e Data Quality usando Snowflake, dbt e ETL, alinhado com unificação de identidades e qualidade de dados (Customer 360).",
+    "motivo": "Vaga remota no Brasil com identity resolution (synonym de entity resolution), data governance, qualidade de dados e integrações de dados de múltiplas plataformas (Braze, mParticle, Segment) em Snowflake.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1017,11 +957,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer remoto na Massive Rocket focado em Identity resolution, Data Governance, Data Quality e pipelines ETL com Snowflake, dbt e integrações com Braze e mParticle para Customer 360.",
-    "confianca": 0.9
+    "resumo": "Senior Data Engineer na Massive Rocket com foco em identity resolution, data governance e qualidade de dados em Snowflake, integrando múltiplas plataformas como Braze, mParticle e Segment.",
+    "confianca": 0.88
   },
   {
     "tipo": "vaga",
@@ -1087,7 +1027,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1158,7 +1098,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1207,7 +1147,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1279,8 +1219,8 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-08",
-    "nova": true
+    "verificada_em": "2026-11-09",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1328,7 +1268,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1377,7 +1317,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1449,78 +1389,8 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Quality",
-    "url": "https://br.trabajo.org/emprego-2251-a44f4fe124e8139fcfa0cefc8fdfb5b4",
-    "empresa": "4DF Connect",
-    "local": "Brasil",
-    "fonte": "Google Jobs (Brasil)",
-    "publicada_em": null,
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "data quality",
-      "qualidade de dados",
-      "tratamento de dados"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Data Quality & Governance Analyst no Brasil focado em qualidade, consistência, rastreabilidade e conformidade de dados, com atividades de análise de inconsistências, controles de qualidade e monitoramento de pipelines.",
-    "resumo": "Data Quality & Governance Analyst pela 4DF Connect atuando em projeto estratégico para garantir qualidade, consistência, rastreabilidade e conformidade dos dados ao longo do ciclo de desenvolvimento, com foco em padrões e boas práticas.",
-    "confianca": 0.9,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "BigQuery",
-        "GCP",
-        "Airflow"
-      ],
-      "desejaveis": [
-        "SQL",
-        "Python",
-        "GitLab CI/CD",
-        "Data Catalog",
-        "Data Lineage"
-      ]
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Brasil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.1,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 28,
-      "senioridade": 85,
-      "local": 75,
-      "ingles": 100,
-      "foco": 86,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "BigQuery",
-        "GCP"
-      ],
-      "parciais": [
-        "Airflow"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-08",
-    "verificada_em": "2026-11-08",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1565,7 +1435,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1584,7 +1454,7 @@
       "survivorship"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga em São Paulo com requisitos diretos: entity resolution, master data management, survivorship, data reconciliation, data quality, e stack técnico (Spark, Python, SQL, Databricks) totalmente alinhado ao perfil.",
+    "motivo": "Vaga Senior Data Engineer em São Paulo com requisitos diretos em entity resolution, master data management, data reconciliation e survivorship, alinhados perfeitamente com o perfil do leitor.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1648,10 +1518,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Vaga de Senior Data Engineer em São Paulo com foco em entity resolution, master data management e data quality. Stack: Python, SQL, Spark, Databricks, Delta Lake, dbt, AWS, Terraform, PostgreSQL.",
+    "resumo": "First Help Financial busca Senior Data Engineer em São Paulo para trabalhar com entity resolution, master data management e data reconciliation usando Python, SQL, Spark, Databricks e dbt. Stack técnica inclui Delta Lake, AWS, data quality e governance.",
     "confianca": 0.95
   },
   {
@@ -1711,7 +1581,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1783,7 +1653,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1847,8 +1717,72 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Lead Técnico de Migração de Dados",
+    "url": "https://br.trabajo.org/emprego-4037-726fb2788d3677e6ec84641e0a340c00",
+    "empresa": "Blend IT",
+    "local": "Brasil",
+    "fonte": "Google Jobs (Brasil)",
+    "publicada_em": null,
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "migracao de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Lead técnico de migração de dados SAP com foco em ingestão, transformação e qualidade em projeto complexo, envolvendo arquitetura medalhão e integração de dados entre sistemas.",
+    "resumo": "Lead técnico responsável por coordenar migração complexa de dados SAP com experiência em SAP Data Services, S/4HANA Migration Cockpit e arquitetura medalhão. Atua na estratégia global de migração e garantia de qualidade dos dados.",
+    "confianca": 0.82,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SAP Data Services",
+        "SAP S/4HANA Migration Cockpit",
+        "arquitetura de dados medalhão"
+      ],
+      "desejaveis": [
+        "LSMW"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.21,
+    "compat_detalhe": {
+      "habilidades": 12,
+      "senioridade": 75,
+      "local": 75,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "SAP Data Services",
+        "SAP S/4HANA Migration Cockpit"
+      ],
+      "parciais": [
+        "arquitetura de dados medalhão"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-09",
+    "verificada_em": "2026-11-09",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1919,7 +1853,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -1987,7 +1921,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -2062,7 +1996,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -2151,7 +2085,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   },
   {
@@ -2221,7 +2155,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-08",
+    "verificada_em": "2026-11-09",
     "nova": false
   }
 ]

@@ -7,3 +7,85 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-11-08 23:56 =====
+INFO serpapi: 143 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 195
+INFO jobs/greenhouse: 1434
+INFO jobs/lever: 305
+INFO jobs/ashby: 45
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'splink': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 6
+INFO jobs/gupy: 203
+INFO jobs/himalayas: 97
+INFO jobs/jobicy: 149
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 215
+INFO jobs/social_linkedin/ddg: 3 aceitos de 5
+INFO jobs/social_posts: 3
+INFO linkedin_guest: 37 vagas, 25 descrições abertas, 36 consultas no total
+INFO jobs/linkedin_guest: 37
+INFO judge: tokens in=1194 out=253
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2260 out=301
+INFO vagas: {'brutos': 3069, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 4
+INFO papers/openalex: 175
+INFO judge: tokens in=1361 out=208
+INFO papers: {'brutos': 179, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1691 out=799
+INFO requisitos: tokens in=2105 out=191
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 7, 'aprovados': 4}
+INFO open_jobs: 111 abertas (3 novas)
+INFO mercado: 165 vagas no nicho, 120 no mercado amplo
+INFO network/ddg: 9 aceitos de 9
+INFO network: 9 perfis após a consulta
+INFO judge: tokens in=2151 out=1038
+INFO judge: tokens in=1156 out=150
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/8)
+INFO network: 72 pessoas (1 novas), 38 empresas (0 novas)
+INFO carreira: tokens in=1515 out=2126
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 182
+INFO brasil/gupy: 384
+INFO brasil/google_jobs_br: 13
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 39 vagas, 39 descrições abertas, 88 consultas no total
+INFO brasil/linkedin_guest_br: 39
+INFO brasil/linkedin_local: 16
+INFO brasil/greenhouse: 1095
+INFO brasil/lever: 174
+INFO brasil/ashby: 114
+INFO brasil: 5086 brutas, 9 candidatas para o juiz
+INFO judge: tokens in=2938 out=1149
+INFO judge: tokens in=1064 out=159
+INFO requisitos: tokens in=2528 out=192
+INFO open_jobs: fechou Bolsista Mestre [SQL, Modelagem relacional, Data quality, Python/PySpark] ICT
+INFO open_jobs: fechou Data Quality
+INFO open_jobs: 33 abertas (1 novas)
+INFO mercado: 59 vagas no nicho, 120 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network: 45 pessoas (0 novas), 49 empresas (1 novas)
+INFO brasil: {'novas': 6, 'abertas': 33, 'arquivadas': 59, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-09.json
+

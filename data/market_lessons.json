@@ -1,5 +1,61 @@
 [
  {
+  "data": "2026-11-09",
+  "habilidade": "Airflow",
+  "pct_vagas": 3,
+  "nivel_atual": "parcial",
+  "o_que_e": "Airflow é uma ferramenta de orquestração de pipelines de dados baseada em DAGs (grafos acíclicos dirigidos), onde cada nó é uma task com dependências explícitas. Permite agendar, monitorar, reexecutar e versionar fluxos de ETL/ELT. É o padrão de mercado para orquestrar jobs Spark, scripts Python e cargas em bancos.",
+  "por_que_pedem": "Vagas de entity resolution e MDM lidam com pipelines complexos (ingestão, normalização, blocking, scoring, QA) que precisam rodar de forma agendada, confiável e rastreável em produção. Empresas querem alguém que não só escreva o código de matching, mas também orquestre todo o fluxo com retries, alertas e dependências claras entre etapas.",
+  "ponte_com_o_que_voce_sabe": "Você já tem o pipeline mental completo (ingestão, normalização, blocking, scoring, classificação, QA) rodando em Spark e Python, isso é exatamente o que vira uma DAG no Airflow. Cada etapa do seu pipeline de record linkage mapeia direto para uma task ou um grupo de tasks (TaskGroup). Sua experiência com produção em escala (bilhões de registros) também ajuda a entender conceitos como backfill, SLA e idempotência, que são naturais no seu domínio.",
+  "minimo_para_ficar_apto": [
+   "Entender a arquitetura: scheduler, webserver, executor, metadata DB",
+   "Saber escrever uma DAG simples em Python com PythonOperator e dependências (>>)",
+   "Conhecer operators comuns: BashOperator, PythonOperator, SparkSubmitOperator, SensorOperator",
+   "Entender conceitos de scheduling: cron, catchup, backfill, retries, SLA",
+   "Saber usar XCom para passar pequenos dados entre tasks",
+   "Conhecer Connections e Variables para gerenciar credenciais e configs",
+   "Ter rodado localmente via Docker ou Astronomer CLI pelo menos uma vez"
+  ],
+  "plano_rapido": [
+   "2h: ler a documentação oficial do Airflow (conceitos core: DAG, task, operator, scheduler)",
+   "3h: fazer o tutorial oficial 'Fundamentals' do site do Airflow, escrevendo DAGs simples",
+   "2h: instalar Airflow localmente via Docker Compose (docker-compose oficial da Apache)",
+   "4h: migrar um pipeline seu (ex: normalização + blocking + scoring) para uma DAG com 3-4 tasks usando PythonOperator, incluindo retries e alertas por e-mail/Slack mockado",
+   "2h: estudar SparkSubmitOperator e como ele se conectaria ao seu cluster Spark existente",
+   "1h: revisar boas práticas de idempotência e particionamento por data de execução (execution_date)"
+  ],
+  "mini_projeto": "Monte uma DAG no Airflow que orquestra seu pipeline de entity resolution: task 1 lê e normaliza dados brutos (Python/Spark), task 2 roda blocking com Splink, task 3 faz scoring e classificação, task 4 roda QA (métricas de precisão/recall em uma amostra rotulada) e task 5 exporta resultado para Elasticsearch. Adicione retries, um sensor que espera arquivo de entrada e um alerta de falha. Suba no GitHub com docker-compose para rodar localmente.",
+  "como_colocar_no_curriculo": "Orquestração de pipelines de resolução de entidades (ingestão, blocking, scoring, QA) com Apache Airflow, incluindo DAGs com retries, sensors e integração com Spark e Elasticsearch.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é uma DAG e por que o Airflow não permite ciclos?",
+    "resposta": "DAG é um grafo acíclico dirigido que representa as tasks e suas dependências. Sem ciclos porque o scheduler precisa determinar uma ordem de execução finita e determinística; um ciclo criaria uma dependência circular impossível de resolver."
+   },
+   {
+    "pergunta": "Qual a diferença entre execution_date e a data real de execução da DAG?",
+    "resposta": "execution_date representa o início do intervalo de dados que a DAG está processando (lógica, não o momento real do run). Uma DAG agendada para rodar diariamente às 00h do dia 2 processa dados com execution_date do dia 1, por exemplo, por causa do conceito de 'data interval'."
+   },
+   {
+    "pergunta": "Como você orquestraria um job Spark dentro do Airflow?",
+    "resposta": "Usando o SparkSubmitOperator (ou SSHOperator/BashOperator chamando spark-submit) configurado com uma Connection do tipo Spark, apontando para o cluster. Para jobs grandes como os meus de record linkage, eu separaria em tasks por etapa (normalização, blocking, scoring) para facilitar reprocessamento parcial."
+   },
+   {
+    "pergunta": "Como lidar com falhas parciais e reprocessamento em um pipeline de várias etapas?",
+    "resposta": "Projetando tasks idempotentes (que podem rodar novamente sem duplicar dados), usando retries com backoff, e aproveitando o backfill do Airflow para reprocessar execuções específicas por execution_date sem afetar o restante do histórico."
+   },
+   {
+    "pergunta": "O que são XComs e quando evitar usá-los?",
+    "resposta": "XComs permitem passar pequenas informações entre tasks via metadata DB. Devem ser evitados para dados grandes (como dataframes inteiros); nesses casos o ideal é persistir em storage intermediário (S3, HDFS, Elasticsearch) e passar apenas o caminho/referência via XCom."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Apache Airflow (airflow.apache.org)",
+   "Tutorial 'Airflow Fundamentals' na documentação oficial",
+   "Curso 'Airflow DAG: Data Pipelining and Scheduling' do Astronomer (Astronomer Academy, gratuito)",
+   "Repositório oficial apache/airflow no GitHub para exemplos de DAGs"
+  ]
+ },
+ {
   "data": "2026-11-08",
   "habilidade": "BigQuery",
   "pct_vagas": 2,
