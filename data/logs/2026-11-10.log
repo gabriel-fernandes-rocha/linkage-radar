@@ -1,0 +1,86 @@
+===== coleta 2026-11-10 01:47 =====
+INFO serpapi: 133 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 180
+INFO jobs/greenhouse: 1437
+INFO jobs/lever: 304
+INFO jobs/ashby: 48
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'data linkage analyst': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 6
+INFO jobs/gupy: 203
+INFO jobs/himalayas: 97
+INFO jobs/jobicy: 141
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 215
+INFO jobs/social_linkedin/ddg: 1 aceitos de 2
+INFO jobs/social_linkedin/google: 0 aceitos de 7
+INFO jobs/social_posts: 1
+INFO linkedin_guest: 41 vagas, 25 descrições abertas, 33 consultas no total
+INFO jobs/linkedin_guest: 41
+INFO judge: tokens in=1529 out=315
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=4040 out=186
+INFO vagas: {'brutos': 3053, 'pos_palavras_chave': 2, 'aprovados': 1}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 7
+INFO papers/openalex: 175
+INFO judge: tokens in=1486 out=344
+INFO papers: {'brutos': 182, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1690 out=782
+INFO requisitos: tokens in=2671 out=763
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 6, 'aprovados': 0}
+INFO open_jobs: fechou Senior Director, Costa Coffee Global Master Data Management
+INFO open_jobs: fechou Vice President, AI Data Scientist, Private Markets
+INFO open_jobs: fechou Senior Product Manager, Data at CertifyOS - LinkedIn India
+INFO open_jobs: fechou Salesforce Data Cloud Developer at Themesoft Inc. - LinkedIn
+INFO open_jobs: fechou Braze Architect at Smart IT Frame LLC — Canada | LinkedIn Jobs
+INFO open_jobs: 111 abertas (5 novas)
+INFO mercado: 170 vagas no nicho, 120 no mercado amplo
+INFO network/ddg: 8 aceitos de 8
+INFO network: 8 perfis após a consulta
+INFO judge: tokens in=2160 out=1155
+INFO network: 73 pessoas (1 novas), 39 empresas (1 novas)
+INFO carreira: tokens in=1489 out=1632
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 179
+INFO brasil/gupy: 377
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 23 vagas, 23 descrições abertas, 67 consultas no total
+INFO brasil/linkedin_guest_br: 23
+INFO brasil/linkedin_local: 16
+INFO brasil/greenhouse: 1090
+INFO brasil/lever: 164
+INFO brasil/ashby: 116
+INFO brasil/inhire: novas empresas descobertas: growdev
+INFO brasil: 5028 brutas, 6 candidatas para o juiz
+INFO judge: tokens in=1867 out=811
+INFO open_jobs: fechou Engenheiro(a) de Dados Pleno
+INFO open_jobs: fechou Lead Técnico de Migração de Dados
+INFO open_jobs: 31 abertas (0 novas)
+INFO mercado: 59 vagas no nicho, 120 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 45 pessoas (0 novas), 49 empresas (0 novas)
+INFO brasil: {'novas': 5, 'abertas': 31, 'arquivadas': 59, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-10.json
+

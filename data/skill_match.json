@@ -8,6 +8,11 @@
   "nivel": "6b9881e72cfb",
   "nome": "_perfil_hash"
  },
+ "a/b testing": {
+  "motivo": "sem evidência de testes A/B no currículo",
+  "nivel": "nao",
+  "nome": "A/B testing"
+ },
  "activate unified audiences": {
   "motivo": "Nenhuma experiência em ativação de audiências.",
   "nivel": "nao",
@@ -272,6 +277,11 @@
   "motivo": "equivalente a record linkage/entity matching que já faz",
   "nivel": "tem",
   "nome": "Catalog matching"
+ },
+ "causal inference": {
+  "motivo": "sem evidência de inferência causal no currículo",
+  "nivel": "nao",
+  "nome": "causal inference"
  },
  "ccpa": {
   "motivo": "sem menção a compliance de privacidade EUA",
@@ -733,6 +743,11 @@
   "nivel": "nao",
   "nome": "DynamoDB"
  },
+ "ehr": {
+  "motivo": "trabalha com dados de saúde pública, não EHR específico",
+  "nivel": "parcial",
+  "nome": "EHR"
+ },
  "elasticsearch": {
   "motivo": "Pipeline de matching integra Elasticsearch",
   "nivel": "tem",
@@ -762,6 +777,11 @@
   "motivo": "scikit-learn, mas sem evidência direta",
   "nivel": "parcial",
   "nome": "embeddings"
+ },
+ "emr": {
+  "motivo": "dados administrativos de saúde, não EMR clínico direto",
+  "nivel": "parcial",
+  "nome": "EMR"
  },
  "encryption": {
   "motivo": "sem evidência de criptografia no currículo",
@@ -1028,6 +1048,11 @@
   "nivel": "parcial",
   "nome": "Hadoop"
  },
+ "hie": {
+  "motivo": "integra registros de saúde nacionais, conceito próximo",
+  "nivel": "parcial",
+  "nome": "HIE"
+ },
  "hierarchy management": {
   "motivo": "Sem menção a gestão de hierarquias",
   "nivel": "nao",
@@ -1092,6 +1117,11 @@
   "motivo": "entity resolution próximo do conceito de identity graph",
   "nivel": "parcial",
   "nome": "Identity Graph"
+ },
+ "identity graphs": {
+  "motivo": "clustering de entidades é conceito próximo",
+  "nivel": "parcial",
+  "nome": "identity graphs"
  },
  "identity matching": {
   "motivo": "core do trabalho: resolução de entidades/identidades",
@@ -1197,6 +1227,11 @@
   "motivo": "sem evidência de JSP",
   "nivel": "nao",
   "nome": "JSP"
+ },
+ "julia": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Julia"
  },
  "jupyter": {
   "motivo": "listado nas competências técnicas",
@@ -1327,6 +1362,11 @@
   "motivo": "conceitos próximos ao golden record",
   "nivel": "parcial",
   "nome": "master data management"
+ },
+ "master patient index": {
+  "motivo": "resolução de identidades em dados de saúde é MPI",
+  "nivel": "tem",
+  "nome": "Master Patient Index"
  },
  "match & merge": {
   "motivo": "faz matching/classificação, próximo de merge rules",
@@ -1723,6 +1763,11 @@
   "nivel": "nao",
   "nome": "Quantexa"
  },
+ "r": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "R"
+ },
  "rag": {
   "motivo": "sem evidência de retrieval-augmented generation",
   "nivel": "nao",
@@ -1888,6 +1933,11 @@
   "nivel": "nao",
   "nome": "SAP S/4HANA Migration Cockpit"
  },
+ "sas": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "SAS"
+ },
  "scala": {
   "motivo": "sem evidência, usa Python no Spark",
   "nivel": "nao",
@@ -2048,6 +2098,11 @@
   "nivel": "nao",
   "nome": "Star Schema"
  },
+ "stata": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "STATA"
+ },
  "statistical sampling": {
   "motivo": "Usa estatística básica, mas amostragem não explicitada.",
   "nivel": "parcial",
@@ -2177,6 +2232,11 @@
   "motivo": "nenhum uso de Unity Catalog mencionado",
   "nivel": "nao",
   "nome": "Unity Catalog"
+ },
+ "uplift modeling": {
+  "motivo": "sem evidência de modelagem de uplift",
+  "nivel": "nao",
+  "nome": "uplift modeling"
  },
  "validation": {
   "motivo": "Realiza validação de resultados (precisão/recall)",

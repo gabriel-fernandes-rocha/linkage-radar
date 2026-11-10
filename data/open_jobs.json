@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -154,7 +154,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -199,7 +199,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -246,8 +246,59 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engineering Lead with Healthcare experience - LinkedIn",
+    "url": "https://es.linkedin.com/jobs/view/engineering-lead-with-healthcare-experience-at-intellias-4486869834",
+    "data": "Nov 3, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 5,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Engineering Lead com Master Patient Index (MPI) e patient matching como experiência chave, integração de múltiplos sistemas de saúde e regulações de interoperabilidade.",
+    "resumo": "Engineering Lead com foco em Master Patient Index, patient matching e record linkage em contexto de integração de EHR/EMR, HIE e sistemas de farmácia/lab.",
+    "confianca": 0.87,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Patient Index",
+        "record linkage"
+      ],
+      "desejaveis": [
+        "HIE",
+        "EHR",
+        "EMR"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 88,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-10",
+    "verificada_em": "2026-11-10",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -296,7 +347,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -309,7 +360,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -395,7 +446,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -440,7 +491,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -490,7 +541,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -536,7 +587,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -585,7 +636,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -636,7 +687,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -685,7 +736,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -734,7 +785,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -783,7 +834,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -838,7 +889,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -893,7 +944,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -944,8 +995,8 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-09",
-    "nova": true
+    "verificada_em": "2026-11-10",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1006,7 +1057,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1056,7 +1107,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1106,7 +1157,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1152,7 +1203,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1195,50 +1246,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-09",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Director, Costa Coffee Global Master Data Management",
-    "url": "https://uk.linkedin.com/jobs/view/senior-director-costa-coffee-global-master-data-management-at-the-coca-cola-company-4475773559",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 4,
-    "juiz": "groq",
-    "motivo": "Diretor sênior de Global Master Data Management lidera equipe focada em governança e qualidade de dados mestres.",
-    "resumo": "O Senior Director coordenará a equipe global de Master Data Management da Costa Coffee, garantindo consistência e confiabilidade dos dados.",
-    "confianca": 0.96,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 1,
-    "encaixe": 0.34,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 100,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1278,7 +1286,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1321,7 +1329,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1376,7 +1384,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1425,7 +1433,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1465,7 +1473,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1505,7 +1513,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1545,7 +1553,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1594,7 +1602,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1641,7 +1649,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1717,7 +1725,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1757,7 +1765,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1817,7 +1825,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1859,7 +1867,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1901,7 +1909,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1941,7 +1949,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -1981,7 +1989,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2024,7 +2032,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2067,7 +2075,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2110,7 +2118,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2150,7 +2158,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2190,7 +2198,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2230,7 +2238,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2277,111 +2285,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Vice President, AI Data Scientist, Private Markets",
-    "url": "https://in.linkedin.com/jobs/view/vice-president-ai-data-scientist-private-markets-at-blackrock-4478039904",
-    "data": "Oct 10, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "anthropic",
-    "motivo": "Vaga VP AI Data Scientist mencionando entity resolution, relationship discovery, graph quality e provenance como responsabilidades em knowledge graph; alinhado com perfil de resolução de entidades em escala.",
-    "resumo": "Vaga de VP AI Data Scientist focada em entity resolution, relação discovery, graph quality e integração com data products em private markets.",
-    "confianca": 0.85,
-    "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Knowledge Graph"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.28,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 75,
-      "local": 60,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível senior",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Knowledge Graph"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Product Manager, Data at CertifyOS - LinkedIn India",
-    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-data-at-certifyos-4488142193",
-    "data": "Nov 6, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 9,
-    "juiz": "anthropic",
-    "motivo": "Vaga de Product Manager em dados que exige experiência prática em entity resolution, record linkage, MDM ou identity matching como requisito principal.",
-    "resumo": "Vaga de Senior Product Manager em Data que requer experiência em entity resolution, record linkage, MDM ou identity matching, além de SQL e data literacy.",
-    "confianca": 0.92,
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Entity Resolution",
-        "Record Linkage",
-        "Master Data Management"
-      ],
-      "desejaveis": [
-        "BigQuery"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.27,
-    "compat_detalhe": {
-      "habilidades": 47,
-      "senioridade": 75,
-      "local": 60,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível senior",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Master Data Management"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2427,7 +2331,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2486,7 +2390,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2534,7 +2438,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2593,7 +2497,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2664,7 +2568,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2715,7 +2619,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2785,7 +2689,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2853,7 +2757,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2922,7 +2826,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -2969,8 +2873,8 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-09",
-    "nova": true
+    "verificada_em": "2026-11-10",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -3033,59 +2937,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Salesforce Data Cloud Developer at Themesoft Inc. - LinkedIn",
-    "url": "https://ca.linkedin.com/jobs/view/salesforce-data-cloud-developer-at-themesoft-inc-4487082252",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 3,
-    "juiz": "anthropic",
-    "motivo": "Vaga concreta de desenvolvedor Salesforce Data Cloud com foco em identity resolution, data modeling e customer data solutions, alinhada ao tema de entity resolution.",
-    "resumo": "Desenvolvedora de Salesforce Data Cloud na Themesoft com especialidade em identity resolution, data modeling, data ingestion e customer segmentation em escala empresarial.",
-    "confianca": 0.88,
-    "requisitos": {
-      "obrigatorios": [
-        "Salesforce Data Cloud"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.17,
-    "compat_detalhe": {
-      "habilidades": 0,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Salesforce Data Cloud"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-11-09",
-    "verificada_em": "2026-11-09",
-    "nova": true
   },
   {
     "tipo": "vaga",
@@ -3132,7 +2985,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3176,7 +3029,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3243,7 +3096,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3295,7 +3148,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3352,7 +3205,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3400,7 +3253,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3442,7 +3295,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3512,7 +3365,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3560,7 +3413,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3628,8 +3481,63 @@
       "estimado": true
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Analyst - Identity & Graph Analytics at Anblicks — Hyderabad ...",
+    "url": "https://in.linkedin.com/jobs/view/data-analyst-%E2%80%93-identity-graph-analytics-at-anblicks-4476086891",
+    "data": "Oct 13, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 11,
+    "juiz": "anthropic",
+    "motivo": "Vaga explícita em identity resolution, entity matching e record linkage com foco em identity graphs e large-scale data processing.",
+    "resumo": "Data Analyst em identity resolution, entity matching e record linkage com experiência em identity graphs e sistemas baseados em grafos para processamento em larga escala.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "identity resolution",
+        "Entity Resolution",
+        "record linkage"
+      ],
+      "desejaveis": [
+        "identity graphs",
+        "graph databases"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "India"
+      ],
+      "cidades": [
+        "Hyderabad"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 88,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em India, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-10",
+    "verificada_em": "2026-11-10",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -3682,7 +3590,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -3743,7 +3651,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3780,7 +3688,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3841,7 +3749,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3872,6 +3780,63 @@
       "parciais": [],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Scientist en Applaudo — Honduras | Empleos de LinkedIn",
+    "url": "https://hn.linkedin.com/jobs/view/data-scientist-at-applaudo-4479244280",
+    "data": "Oct 14, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 8,
+    "juiz": "anthropic",
+    "motivo": "Vaga com entity resolution, record linkage e deduplication como nice-to-have principal, mais similarity scoring, clustering e retrieval; stack técnico relevante (Spark, Snowflake, Databricks).",
+    "resumo": "Data Scientist com entity resolution, record linkage, deduplication, ranking, similarity scoring e técnicas de retrieval/clustering em Spark, Snowflake ou Databricks.",
+    "confianca": 0.88,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": [
+        "entity resolution",
+        "record linkage",
+        "deduplication",
+        "similarity scoring",
+        "clustering",
+        "LLMs",
+        "Spark",
+        "Snowflake",
+        "Databricks",
+        "BigQuery"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Honduras"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.5,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 60,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em Honduras, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-10",
+    "verificada_em": "2026-11-10",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -3939,7 +3904,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4004,7 +3969,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4065,7 +4030,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -4130,7 +4095,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -4185,7 +4150,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -4253,9 +4218,125 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-02"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Lead Research Analyst",
+    "url": "https://umiami.wd1.myworkdayjobs.com/en-US/UMCareerStaff/job/Miami-FL/Lead-Research-Analyst_R100102381",
+    "empresa": "200 UM Corp (Enterprise)",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Vaga de analista sênior focada explicitamente em record linkage de registros de câncer, incluindo metodologias probabilísticas, determinísticas e híbridas, desenvolvimento e validação de software de matching.",
+    "resumo": "Lead Research Analyst na Universidade de Miami para atividades de record linkage em registro de câncer, desenvolvimento de metodologias probabilísticas/determinísticas/híbridas, integração de dados e vigilância em saúde pública.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Julia",
+        "STATA",
+        "SAS",
+        "R",
+        "record linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 4,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 33,
+      "senioridade": 80,
+      "local": 12,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "pede 4+ anos (você tem 2.9)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Julia",
+        "STATA",
+        "SAS",
+        "R"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-10",
+    "verificada_em": "2026-11-10",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Scientist w firmie DOU Polska — Warszawa - LinkedIn Polska",
+    "url": "https://pl.linkedin.com/jobs/view/data-scientist-at-dou-polska-4484673953",
+    "data": "Nov 3, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Vaga altamente especializada em probabilistic record linkage, identity graphs, embedding-based entity matching, deduplication e web-to-TV linkage.",
+    "resumo": "Data Scientist com foco em probabilistic record linkage, identity graphs, embedding-based entity matching at scale, deduplication e web-to-TV linkage problems.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": [
+        "record linkage",
+        "identity graph",
+        "Entity Resolution",
+        "causal inference",
+        "A/B testing",
+        "uplift modeling",
+        "deduplication"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Poland"
+      ],
+      "cidades": [
+        "Warszawa"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.6,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 94,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em Poland, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-10",
+    "verificada_em": "2026-11-10",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -4303,7 +4384,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4359,7 +4440,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4414,7 +4495,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4463,7 +4544,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4515,7 +4596,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
@@ -4553,7 +4634,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4611,7 +4692,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4713,7 +4794,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4771,7 +4852,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4830,7 +4911,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -4898,7 +4979,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -4973,7 +5054,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -5040,7 +5121,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -5118,7 +5199,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -5186,7 +5267,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5240,7 +5321,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5295,7 +5376,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5361,7 +5442,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5439,7 +5520,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5506,7 +5587,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5582,7 +5663,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5637,7 +5718,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5704,7 +5785,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5764,7 +5845,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5828,7 +5909,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -5903,7 +5984,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -5974,63 +6055,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-09",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Braze Architect at Smart IT Frame LLC — Canada | LinkedIn Jobs",
-    "url": "https://ca.linkedin.com/jobs/view/braze-architect-at-smart-it-frame-llc-4484124335",
-    "data": "Oct 28, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 3,
-    "juiz": "anthropic",
-    "motivo": "Design de identity resolution strategy, unified customer profiles, anonymous-to-known merges e alias handling são atividades diretas de record linkage e MDM.",
-    "resumo": "Vaga de Braze Architect focada em arquitetar strategy de identity resolution, unified profiles e alias handling com ativação em Snowflake e Braze.",
-    "confianca": 0.9,
-    "requisitos": {
-      "obrigatorios": [
-        "Braze",
-        "Snowflake",
-        "Hightouch",
-        "Census"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "staff/principal",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Canada"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.7,
-    "encaixe": 0.01,
-    "compat_detalhe": {
-      "habilidades": 0,
-      "senioridade": 45,
-      "local": 8,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "nível staff/principal",
-      "local_txt": "em Canada, sem patrocínio de visto",
-      "faltam": [
-        "Braze",
-        "Snowflake",
-        "Hightouch",
-        "Census"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-11-02",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false
   },
   {
@@ -6055,7 +6080,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-09",
+    "verificada_em": "2026-11-10",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

@@ -1,5 +1,49 @@
 [
  {
+  "data": "2026-11-10",
+  "habilidade": "Step Functions",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "AWS Step Functions é um serviço de orquestração serverless que coordena múltiplas etapas de um workflow (Lambda, Glue, ECS, Batch) usando máquinas de estado definidas em JSON (Amazon States Language). Ele gerencia retries, paralelismo, branching condicional e tratamento de erros sem você escrever código de orquestração manual. É muito usado para pipelines de dados em AWS que precisam de visibilidade e confiabilidade.",
+  "por_que_pedem": "Vagas de entity resolution/linkage em produção frequentemente rodam em nuvem (AWS) e precisam orquestrar etapas como ingestão, normalização, blocking, scoring e QA de forma confiável e auditável. Step Functions é a ferramenta nativa da AWS para isso, equivalente a Airflow mas serverless, e empresas que usam stack AWS pedem essa habilidade para reduzir dependência de infra própria.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em pipelines como etapas sequenciais com dependências (ingestão, blocking, scoring, QA), que é exatamente o modelo mental do Step Functions. Sua experiência com Spark jobs orquestrados e com lógica condicional de classificação de matches se traduz diretamente em estados Choice, Parallel e Retry. O aprendizado é mais sintaxe e serviço gerenciado do que conceito novo.",
+  "minimo_para_ficar_apto": [
+   "Entender Amazon States Language (JSON) e os tipos de estado: Task, Choice, Parallel, Map, Wait, Catch/Retry",
+   "Saber integrar Step Functions com Lambda e Glue (casos mais comuns em pipelines de dados)",
+   "Conseguir explicar quando usar Step Functions vs Airflow vs MWAA",
+   "Montar um workflow simples via console ou SAM/CDK e explicar o diagrama"
+  ],
+  "plano_rapido": [
+   "2h: ler a documentação oficial da AWS sobre Step Functions e Amazon States Language",
+   "2h: fazer o tutorial oficial 'Getting Started' criando uma state machine simples com Lambda",
+   "3h: criar um workflow que simula seu pipeline de linkage (ingest -> normalize -> block -> score -> QA) usando estados Choice e Parallel",
+   "1h: estudar integração com AWS Glue, já que você usa Spark",
+   "2h: praticar explicar o diagrama de estados e justificar decisões de retry/erro em entrevista"
+  ],
+  "mini_projeto": "Monte uma state machine no AWS Step Functions que orquestra um pipeline de entity resolution simplificado: uma Lambda de ingestão, um job Glue simulando blocking/scoring em Spark, um estado Choice que decide se o score passa para revisão manual ou auto-aprovação, e um estado final de QA com tratamento de erro via Catch/Retry. Documente com um diagrama exportado do console e um README explicando as decisões.",
+  "como_colocar_no_curriculo": "Orquestração de pipelines de dados com AWS Step Functions, incluindo workflows paralelos, tratamento de erros e integração com Glue/Lambda (projeto pessoal aplicado a entity resolution).",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Quando você usaria Step Functions em vez de Airflow?",
+    "resposta": "Step Functions é serverless, integra nativamente com serviços AWS e é ideal quando não quero gerenciar infraestrutura de orquestração; Airflow é melhor quando já existe um ecossistema multi-cloud ou necessidade de plugins customizados e um scheduler mais flexível para workflows complexos fora da AWS."
+   },
+   {
+    "pergunta": "Como você trataria falhas transitórias em uma etapa do workflow?",
+    "resposta": "Usaria o campo Retry no estado Task configurando backoff exponencial e número máximo de tentativas, e um Catch para direcionar falhas persistentes a um estado de tratamento de erro ou notificação, sem derrubar o pipeline inteiro."
+   },
+   {
+    "pergunta": "Como você orquestraria etapas paralelas, como rodar blocking e normalização simultaneamente?",
+    "resposta": "Usaria o estado Parallel para executar branches independentes ao mesmo tempo, ou o estado Map se fosse a mesma lógica aplicada a múltiplos itens de uma lista, como lotes de dados particionados."
+   }
+  ],
+  "fontes_para_estudar": [
+   "AWS Step Functions Developer Guide (documentação oficial)",
+   "Amazon States Language specification (documentação oficial da AWS)",
+   "AWS Step Functions Getting Started tutorial (console oficial da AWS)",
+   "Documentação de integração AWS Step Functions com AWS Glue"
+  ]
+ },
+ {
   "data": "2026-11-09",
   "habilidade": "Airflow",
   "pct_vagas": 3,
