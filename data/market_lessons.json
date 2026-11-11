@@ -1,5 +1,51 @@
 [
  {
+  "data": "2026-11-11",
+  "habilidade": "knowledge graph",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Knowledge Graph é uma forma de representar entidades (pessoas, lugares, organizações) e seus relacionamentos como nós e arestas em um grafo, geralmente com ontologias/esquemas que dão significado semântico aos dados. Ferramentas comuns incluem Neo4j, RDF/SPARQL, propriedades e triplas (sujeito-predicado-objeto). É usado para consultas de relacionamento complexas, inferência e integração de dados heterogêneos.",
+  "por_que_pedem": "Em entity resolution e MDM, depois de resolver quais registros são a mesma entidade, o próximo passo natural é modelar como essas entidades se relacionam entre si (família, endereço, organização, transações). Vagas de Data Quality e MDM frequentemente pedem KG porque ele é usado para visualizar e auditar essas relações, detectar inconsistências e enriquecer o golden record com contexto relacional.",
+  "ponte_com_o_que_voce_sabe": "Você já faz o trabalho mais difícil, que é decidir quais registros são a mesma entidade (resolução). Um knowledge graph é essencialmente o passo seguinte: pegar essas entidades resolvidas e seus relacionamentos (ex: mesma família, mesmo endereço, mesmo CPF vinculado) e armazená-los como grafo. Sua experiência com Elasticsearch ajuda porque a lógica de modelagem de nós/propriedades é parecida, e seu domínio de SQL acelera o aprendizado de Cypher (linguagem do Neo4j) e até SPARQL.",
+  "minimo_para_ficar_apto": [
+   "Entender os conceitos de nó, aresta, propriedade e ontologia/esquema",
+   "Saber escrever queries básicas em Cypher (Neo4j) ou SPARQL (RDF)",
+   "Entender a diferença entre grafo de propriedades e grafo RDF/triplas",
+   "Saber modelar um caso simples de entity resolution como grafo (nós = entidades resolvidas, arestas = relacionamentos)",
+   "Conhecer o conceito de inferência e como KG se conecta a MDM/golden record"
+  ],
+  "plano_rapido": [
+   "2h: ler overview de Knowledge Graphs na documentação da Neo4j (Graph Academy)",
+   "3h: fazer o curso gratuito 'Neo4j Fundamentals' no Neo4j GraphAcademy",
+   "2h: praticar Cypher com queries básicas (MATCH, CREATE, relacionamentos)",
+   "2h: ler sobre RDF e SPARQL na documentação do W3C (conceitual, não precisa aprofundar)",
+   "3h: modelar um mini knowledge graph a partir de dados já resolvidos por você (ex: pessoas + endereços + vínculos familiares)",
+   "1h: revisar como KG se conecta com MDM e data quality (ler artigos da Neo4j sobre MDM)"
+  ],
+  "mini_projeto": "Pegue uma amostra de dados que você já resolveu com Splink (entidades + clusters) e carregue no Neo4j (pode ser local, Neo4j Desktop ou Aura free tier). Modele pessoas como nós, com arestas representando relacionamentos (mesmo endereço, mesmo telefone, vínculo familiar inferido). Escreva queries Cypher para encontrar comunidades, caminhos entre entidades e possíveis duplicatas não capturadas pelo matching tradicional. Documente no GitHub com um README explicando a ponte entre entity resolution e knowledge graph.",
+  "como_colocar_no_curriculo": "Modelagem exploratória de Knowledge Graph (Neo4j/Cypher) para representar entidades resolvidas e relacionamentos, complementando pipeline de entity resolution em Spark/Splink.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é um knowledge graph e como ele se relaciona com entity resolution?",
+    "resposta": "É uma estrutura de nós e arestas que representa entidades e seus relacionamentos. Entity resolution identifica quais registros são a mesma entidade (os nós); o knowledge graph vai além, modelando como essas entidades resolvidas se conectam entre si, permitindo consultas de relacionamento e detecção de padrões que matching tradicional não captura."
+   },
+   {
+    "pergunta": "Qual a diferença entre um grafo de propriedades (Neo4j) e um grafo RDF?",
+    "resposta": "Grafo de propriedades armazena atributos diretamente em nós e arestas, sendo mais flexível e performático para consultas; RDF representa tudo como triplas (sujeito-predicado-objeto) seguindo padrões W3C, favorecendo interoperabilidade semântica e uso de ontologias formais como OWL."
+   },
+   {
+    "pergunta": "Como você usaria um knowledge graph para melhorar a qualidade de dados em um MDM?",
+    "resposta": "Usaria o grafo para visualizar relações entre registros golden e seus vínculos (família, endereço, transações), facilitando auditoria, detecção de inconsistências transitivas (ex: A ligado a B ligado a C, mas A e C não foram pareados) e enriquecimento do golden record com contexto relacional."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Neo4j GraphAcademy (curso gratuito Neo4j Fundamentals)",
+   "Documentação oficial do Neo4j (Cypher Manual)",
+   "W3C RDF Primer (documentação oficial)",
+   "Documentação oficial do Neo4j sobre Knowledge Graphs e MDM"
+  ]
+ },
+ {
   "data": "2026-11-10",
   "habilidade": "Step Functions",
   "pct_vagas": 2,

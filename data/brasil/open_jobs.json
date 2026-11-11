@@ -54,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -111,7 +111,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -168,7 +168,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -234,7 +234,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -302,7 +302,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -357,7 +357,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -377,7 +377,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga explicitamente sobre Entity Resolution, fuzzy matching, deduplicação e entity matching com graph databases, tecnologias centrais ao perfil.",
+    "motivo": "Vaga remota no Brasil de Master Data Developer com requisitos diretos: entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Amazon Neptune), perfeitamente alinhada com expertise do leitor.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -430,11 +430,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "CI&T contrata Master Data Developer com expertise em Entity Resolution, Entity Matching, fuzzy matching e deduplicação usando Amazon Neptune e Python em ambiente remoto Brasil.",
-    "confianca": 0.95
+    "resumo": "CI&T contrata Master Data Developer remoto no Brasil com foco em entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Amazon Neptune) com Python e AWS.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -498,7 +498,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -560,7 +560,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -578,7 +578,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga sobre Entity Resolution e Deduplication com data pipelines em graph database (Neo4j), aceita Brasil em modelo remoto.",
+    "motivo": "Vaga remota com Brasil como localização aceitável de AI Senior Engineer focada em entity resolution, deduplication, data pipelines e ETL com Neo4j, Python e Kafka, core da especialidade do leitor.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -629,10 +629,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Able busca AI Senior Engineer especialista em Entity Resolution, deduplicação e pipelines de dados com Neo4j, Kafka e Python para região da América Latina incluindo Brasil.",
+    "resumo": "Able procura AI Senior Engineer remoto em múltiplos países da América Latina (incluindo Brasil) para trabalhar com entity resolution, deduplication, pipelines de dados, Cypher, Neo4j e Kafka.",
     "confianca": 0.9
   },
   {
@@ -690,7 +690,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -710,7 +710,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga core em Entity Resolution, Entity Matching, fuzzy matching e deduplicação com machine learning e graph databases, perfeitamente alinhada ao perfil.",
+    "motivo": "Vaga remota no Brasil de Master Data Developer com requisitos essenciais: entity resolution, entity matching, fuzzy matching, deduplication, retrieval com Python e graph databases, exatamente no escopo do leitor.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -762,11 +762,79 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "CI&T contrata Master Data Developer especialista em Entity Resolution, Entity Matching, fuzzy matching e deduplicação com Python, graph databases e Amazon Neptune no Brasil.",
-    "confianca": 0.95
+    "resumo": "CI&T oferece vaga de Master Data Developer remoto no Brasil com entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Amazon Neptune), Python e AWS.",
+    "confianca": 0.98
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro(a) de Dados - Pleno | Legal Operations (Afirmativa para Mulheres e/ou pessoas Pretas e Pardas)",
+    "url": "https://porto.gupy.io/job/eyJqb2JJZCI6MTI3MzU4MTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Porto",
+    "local": "São Paulo, São Paulo (híbrido)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-29",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de bases",
+      "qualidade de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga técnica de Engenheiro de Dados Pleno em Legal Operations focada em estruturação, ingestão e transformação de dados de múltiplas fontes, construção de camada de dados robusta e confiável, alinhada com integração e consolidação de bases.",
+    "resumo": "Porto contrata Engenheiro de Dados Pleno híbrido em São Paulo para Legal Operations, responsável por estruturação, ingestão e transformação de dados de diferentes fontes e construção de camada de dados robusta para indicadores analíticos.",
+    "confianca": 0.8,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Power BI"
+      ],
+      "desejaveis": [
+        "Python",
+        "GCP",
+        "OCI"
+      ]
+    },
+    "senioridade": "pleno",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0,
+    "encaixe": 0.38,
+    "compat_detalhe": {
+      "habilidades": 27,
+      "senioridade": 100,
+      "local": 85,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível pleno",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Power BI"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-11",
+    "verificada_em": "2026-11-11",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -820,7 +888,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -838,7 +906,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga de Senior Data Engineer em identity resolution e Customer 360 com data quality e governance, diretamente relacionada a resolução de identidades e visão única do cliente.",
+    "motivo": "Vaga remota no Brasil de Senior Data Engineer com requisitos de identity resolution (sinônimo de entity resolution), data governance, data quality, ETL e plataformas de CDP (Braze, Segment, mParticle) alinhadas com Customer 360.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -890,11 +958,70 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Massive Rocket procura Senior Data Engineer remoto com experiência em identity resolution, Customer 360, Snowflake, data governance e qualidade de dados em ambiente Brasil.",
+    "resumo": "Massive Rocket busca Senior Data Engineer remoto no Brasil com experiência em identity resolution, data governance, data quality, Snowflake, ETL, dbt e plataformas de CDP (Braze, mParticle, Segment).",
     "confianca": 0.85
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto | REF#309354",
+    "url": "https://www.linkedin.com/jobs/view/4489667238",
+    "empresa": "BairesDev",
+    "local": "Curitiba, PR",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-10",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados",
+      "qualidade de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Engenheiro de Integração de Dados com foco em pipelines ETL conectando múltiplas fontes, qualidade de dados e workflows de integração, alinhada com experiência do leitor em consolidação de bases e normalização.",
+    "resumo": "BairesDev procura Engenheiro de Integração de Dados remoto para projetar e construir pipelines ETL conectando múltiplas fontes, implementar verificações de qualidade e colaborar com equipes de analytics e engenharia.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "ETL"
+      ],
+      "desejaveis": [
+        "APIs"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 3,
+    "ingles": "fluente",
+    "foco_er": 0,
+    "encaixe": 0.35,
+    "compat_detalhe": {
+      "habilidades": 69,
+      "senioridade": 100,
+      "local": 60,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-11",
+    "verificada_em": "2026-11-11",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -960,7 +1087,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1031,7 +1158,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1080,7 +1207,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1152,7 +1279,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1201,7 +1328,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1250,7 +1377,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1322,7 +1449,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1368,7 +1495,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1387,7 +1514,7 @@
       "survivorship"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga que lista entity resolution, master data management e survivorship explicitamente, com stack técnico (Spark, Databricks, dbt) alinhado ao perfil em São Paulo.",
+    "motivo": "Vaga de Senior Data Engineer em São Paulo com requisitos diretos em entity resolution, data reconciliation, master data management e survivorship, alinhados perfeitamente com especialização do leitor.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1451,11 +1578,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "First Help Financial contrata Senior Data Engineer em São Paulo com expertise em Entity resolution, master data management, data quality e survivorship usando Spark, Databricks e dbt.",
-    "confianca": 0.9
+    "resumo": "First Help Financial busca Senior Data Engineer em São Paulo com experiência em entity resolution, master data management, Python, Spark, Databricks e AWS. Vaga remota/contrato com foco em reconciliação de dados, qualidade e governança.",
+    "confianca": 0.95
   },
   {
     "tipo": "vaga",
@@ -1514,7 +1641,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1586,7 +1713,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1650,7 +1777,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1722,7 +1849,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1790,7 +1917,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1865,7 +1992,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -1954,7 +2081,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   },
   {
@@ -2024,7 +2151,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-10",
+    "verificada_em": "2026-11-11",
     "nova": false
   }
 ]

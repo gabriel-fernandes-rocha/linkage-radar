@@ -1,0 +1,167 @@
+{
+  "data": "2026-11-11",
+  "gerado_em": "2026-11-10T23:46-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Lead Research Analyst",
+      "url": "https://himalayas.app/companies/university-of-miami/jobs/lead-research-analyst",
+      "empresa": "University of Miami",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-10",
+      "score": 9,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Lead Research Analyst focada em record linkage de registros de câncer, com desenvolvimento e implementação de metodologias probabilísticas, determinísticas e híbridas.",
+      "resumo": "Posição de analista sênior na Universidade de Miami para liderar atividades de record linkage probabilístico e determinístico em registro de câncer, incluindo desenvolvimento, validação e melhoria contínua de metodologias e infraestrutura técnica.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Julia",
+          "STATA",
+          "SAS",
+          "R",
+          "record linkage"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 4,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 33,
+        "senioridade": 80,
+        "local": 12,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 4+ anos (você tem 2.9)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Julia",
+          "STATA",
+          "SAS",
+          "R"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "The Heartbeat - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/heartbeat-joshua-wick-cfwae/",
+      "data": "Nov 1, 2026",
+      "fonte": "LinkedIn",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post anuncia STEP, solução concreta de matching configurável para identity resolution, que é core do tema do leitor.",
+      "resumo": "Post anunciando STEP, ferramenta de identity resolution com capacidades de matching configurável e stewardship.",
+      "confianca": 0.9
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Automation's Role in Streamlining Identity Resolution Processes",
+      "url": "https://www.linkedin.com/pulse/automations-role-streamlining-identity-resolution-processes-jv1af",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post discute tecnicamente identity resolution e seu papel em governança de dados, prevenção de fraude e experiência do cliente, com menção explícita a matching de registros.",
+      "resumo": "Post sobre automação em processos de identity resolution, abordando matching de registros, governança de dados e prevenção de fraude.",
+      "confianca": 0.85
+    }
+  ],
+  "vagas_abertas_total": 112,
+  "vagas_arquivadas_total": 172,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "knowledge graph",
+  "brasil": {
+    "novas": 7,
+    "abertas": 33,
+    "arquivadas": 61,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 41,
+    "semana": 6,
+    "tema": "Pré-processamento para data matching",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Escrever um padronizador de nomes e endereços brasileiros com testes",
+    "modulo": "Semana 6: Pré-processamento para data matching",
+    "versao": 2,
+    "objetivo": "Construir, em Python puro, um padronizador de nomes e endereços brasileiros que aplica as quatro etapas de Christen (2012, Seção 3.5): limpeza, tokenização com tabela de correspondência, segmentação em campos de saída e verificação contra uma base de referência, cobrindo o caso de sobrenomes compostos e partículas (de, da, dos) visto na Aula 40.",
+    "contexto": "Você recebeu uma planilha de cadastro de clientes de uma rede de varejo brasileira com nomes e endereços digitados por atendentes de call center, cheios de abreviações, acentos variados e ordem inconsistente (ex.: 'maria DA SILVA Neto', 'r. das Flores, 123 apt 4B'). Antes de rodar qualquer comparação de similaridade (Jaro-Winkler, etc.), o time pediu um módulo único que padronize essas strings e grite (via teste automatizado) quando algo não bater com uma lista de bairros válidos de referência. Esse laboratório consolida as cinco aulas da semana num pipeline só.",
+    "passos": [
+      "Crie um CSV sintético em memória com 8 a 10 registros de nomes e endereços brasileiros contendo variações: abreviações ('r.', 'av.'), partículas ('de', 'da', 'dos'), maiúsculas inconsistentes e bairros com erro de digitação.",
+      "Implemente a função limpar(texto) que remove pontuação excedente, normaliza espaços e caixa, replicando a etapa 'remover caracteres indesejados' (Christen, 2012, p.51).",
+      "Implemente tabelas de lookup (dict) para tipo de logradouro ('r' -> 'rua', 'av' -> 'avenida') e para bairros válidos com variações conhecidas, no estilo da Fig. 3.3 (p.52), e uma função tokenizar_tag que faz a varredura gulosa (greedy) de sequências mais longas primeiro.",
+      "Escreva segmentar_nome(tokens) que separa partícula, sobrenome composto e primeiro nome usando regras no estilo da Fig. 3.5 (p.57), tratando 'da', 'de', 'dos' como prefixo de sobrenome (não como token isolado).",
+      "Escreva verificar_bairro(bairro_padronizado, tabela_referencia) que usa RapidFuzz (process.extractOne) para encontrar o bairro de referência mais próximo quando o nome exato não está na tabela, sinalizando como 'flag_revisao' se a distância for grande.",
+      "Escreva ao menos 5 asserts (testes) cobrindo: remoção de espaços duplos, expansão de abreviação de logradouro, segmentação correta de 'maria da silva neto', correção de bairro com erro de digitação, e um caso que deve cair em flag_revisao.",
+      "Rode o pipeline completo sobre o CSV sintético e imprima uma tabela final com nome_padronizado, logradouro_padronizado, bairro_padronizado e flag_revisao."
+    ],
+    "codigo": "import re\nfrom rapidfuzz import process, fuzz\n\ndef limpar(t):\n    t = t.lower().strip()\n    t = re.sub(r'[^a-z0-9çãáéíóúâêôõü. ]', ' ', t)\n    return re.sub(r'\\s+', ' ', t).strip()\n\nTIPO_LOGRADOURO = {'r': 'rua', 'r.': 'rua', 'av': 'avenida', 'av.': 'avenida'}\nPARTICULAS = {'de', 'da', 'do', 'das', 'dos'}\nBAIRROS_REF = ['jardim paulista', 'vila madalena', 'pinheiros', 'moema']\n\ndef segmentar_nome(tokens):\n    primeiro = tokens[0]\n    resto = tokens[1:]\n    sobrenome = []\n    for tk in resto:\n        sobrenome.append(tk)\n    return primeiro, ' '.join(sobrenome)\n\ndef padronizar_logradouro(tokens):\n    if tokens and tokens[0] in TIPO_LOGRADOURO:\n        tokens[0] = TIPO_LOGRADOURO[tokens[0]]\n    return ' '.join(tokens)\n\ndef verificar_bairro(bairro, limiar=80):\n    match, score, _ = process.extractOne(bairro, BAIRROS_REF, scorer=fuzz.ratio)\n    return match, score < limiar\n\nassert limpar('  Maria   DA Silva  ') == 'maria da silva'\nassert padronizar_logradouro(['r.', 'das', 'flores']) == 'rua das flores'\nnome, sob = segmentar_nome(limpar('maria da silva neto').split())\nassert nome == 'maria' and sob == 'da silva neto'\nbairro_corrigido, flag = verificar_bairro('jardim paulsta')\nassert bairro_corrigido == 'jardim paulista' and flag is False\n_, flag2 = verificar_bairro('bairro inexistente xyz')\nassert flag2 is True\nprint('todos os testes passaram')",
+    "como_avaliar": "O laboratório está correto se: (1) todos os asserts passam sem exceção; (2) o pipeline roda sobre o CSV sintético completo sem erros e produz nome_padronizado e logradouro_padronizado consistentes com as tabelas de lookup; (3) ao menos um registro do CSV cai em flag_revisao=True, mostrando que a verificação (Seção 3.5.4, p.54-55) está funcionando; (4) nenhuma partícula ('da', 'de', 'dos') aparece isolada como sobrenome separado, respeitando o conteúdo da Aula 40.",
+    "desafio": "Estenda tokenizar_tag para fazer a varredura gulosa de sequências de até 3 tokens (como no exemplo 'the university of sydney' do livro, p.51-52, adaptado para 'avenida presidente vargas'), de forma que tipos de logradouro compostos sejam capturados antes de tipos de um token só. Depois, construa um caso de teste em que a tokenização greedy de 3 tokens produz resultado diferente (e correto) do que uma tokenização ingênua de 1 token produziria.",
+    "gabarito": "Ao implementar a varredura gulosa, você deve primeiro tentar casar janelas de 3 tokens contra a tabela de lookup, depois 2, depois 1, só avançando o ponteiro quando nenhuma janela maior casar. Isso replica exatamente o algoritmo descrito por Christen (2012, p.51-52): 'a tokenização é conduzida de forma greedy, considerando sequências mais longas antes das mais curtas'. O caso de teste esperado é algo como tokens = ['avenida', 'presidente', 'vargas', '123']; uma tokenização ingênua de 1 token reconheceria só 'avenida' como tipo de logradouro e deixaria 'presidente' e 'vargas' como tokens desconhecidos (tag UN), enquanto a tokenização gulosa de 3 tokens reconhece 'avenida presidente vargas' como um nome de logradouro composto único, com tag WN, exatamente como o livro trata 'the university of sydney' versus o reconhecimento incorreto de apenas 'sydney' como LN.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.5 (p.51-56), Seção 3.6 (p.56-57), Tabela 3.1 (p.55), Figuras 3.3-3.5 (p.52-57).",
+      "Churches, T., Christen, P., Lim, K. & Zhu, J. X. (2002). Preparation of name and address data for record linkage using hidden Markov models. BMC Medical Informatics and Decision Making, 2(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        51,
+        58
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3058,
+      "pos_palavras_chave": 6,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 186,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 4,
+      "aprovados": 2
+    }
+  },
+  "saude": "ok"
+}

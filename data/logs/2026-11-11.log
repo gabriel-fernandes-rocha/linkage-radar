@@ -1,0 +1,91 @@
+===== coleta 2026-11-11 00:00 =====
+INFO serpapi: 125 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 99
+INFO jobs/remotive: 195
+INFO jobs/greenhouse: 1442
+INFO jobs/lever: 304
+INFO jobs/ashby: 47
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'entity resolution remote worldwide': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 1
+INFO jobs/gupy: 200
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 144
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 209
+INFO jobs/social_linkedin/ddg: 5 aceitos de 6
+INFO jobs/social_posts: 5
+INFO linkedin_guest: 33 vagas, 25 descrições abertas, 36 consultas no total
+INFO jobs/linkedin_guest: 33
+INFO judge: tokens in=2140 out=857
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=3887 out=171
+INFO vagas: {'brutos': 3058, 'pos_palavras_chave': 6, 'aprovados': 1}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 11
+INFO papers/openalex: 175
+INFO papers: {'brutos': 186, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 10 aceitos de 11
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1328 out=499
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 4, 'aprovados': 2}
+INFO open_jobs: 112 abertas (1 novas)
+INFO requisitos: tokens in=5220 out=898
+INFO requisitos: tokens in=6258 out=833
+INFO requisitos: tokens in=5783 out=732
+INFO requisitos: tokens in=6283 out=703
+INFO requisitos: tokens in=6252 out=829
+INFO requisitos: tokens in=5833 out=968
+INFO requisitos: tokens in=6078 out=1040
+INFO requisitos: tokens in=7466 out=1051
+INFO mercado amplo: +40 vagas na amostra (total 160)
+INFO mercado: 171 vagas no nicho, 160 no mercado amplo
+INFO network/ddg: 11 aceitos de 11
+INFO network: 11 perfis após a consulta
+INFO judge: tokens in=2234 out=1078
+INFO judge: tokens in=1096 out=142
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/8)
+INFO network: 74 pessoas (1 novas), 40 empresas (1 novas)
+INFO carreira: tokens in=1424 out=1904
+INFO brasil/inhire 'klavi' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ultragaz' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 184
+INFO brasil/gupy: 375
+INFO google_jobs 'engenheiro de dados': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 38 vagas, 38 descrições abertas, 87 consultas no total
+INFO brasil/linkedin_guest_br: 38
+INFO brasil/linkedin_local: 18
+INFO brasil/greenhouse: 1099
+INFO brasil/lever: 160
+INFO brasil/ashby: 118
+INFO brasil/inhire: novas empresas descobertas: jump
+INFO brasil: 5060 brutas, 9 candidatas para o juiz
+INFO judge: tokens in=3023 out=1259
+INFO judge: tokens in=1064 out=161
+INFO requisitos: tokens in=4769 out=326
+INFO open_jobs: 33 abertas (2 novas)
+INFO mercado: 61 vagas no nicho, 160 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network: 45 pessoas (0 novas), 50 empresas (1 novas)
+INFO brasil: {'novas': 7, 'abertas': 33, 'arquivadas': 61, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-11.json
+
