@@ -1,0 +1,81 @@
+===== coleta 2026-11-12 00:59 =====
+INFO serpapi: 117 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 98
+INFO jobs/remotive: 195
+INFO jobs/greenhouse: 1436
+INFO jobs/lever: 303
+INFO jobs/ashby: 48
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'record linkage remote LATAM': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'entity resolution engineer contractor': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 193
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 142
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 216
+INFO jobs/social_linkedin/ddg: 5 aceitos de 5
+INFO jobs/social_posts: 5
+INFO linkedin_guest: 42 vagas, 25 descrições abertas, 32 consultas no total
+INFO jobs/linkedin_guest: 42
+INFO judge: tokens in=1559 out=529
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=4528 out=634
+INFO vagas: {'brutos': 3057, 'pos_palavras_chave': 4, 'aprovados': 3}
+INFO events: 5 candidatos
+INFO eventos: {'brutos': 5, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 9
+INFO papers/openalex: 175
+INFO papers: {'brutos': 184, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 9 aceitos de 9
+INFO linkedin: 9 candidatos
+INFO judge: tokens in=1691 out=932
+INFO requisitos: tokens in=2457 out=448
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 6, 'aprovados': 0}
+INFO open_jobs: 118 abertas (6 novas)
+INFO mercado: 177 vagas no nicho, 160 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2159 out=1028
+INFO judge: tokens in=1306 out=284
+INFO network: 75 pessoas (1 novas), 41 empresas (1 novas)
+INFO carreira: tokens in=1485 out=1723
+INFO brasil/inhire 'klavi' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ultragaz' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 199
+INFO brasil/gupy: 371
+INFO brasil/google_jobs_br: 11
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 26 vagas, 26 descrições abertas, 66 consultas no total
+INFO brasil/linkedin_guest_br: 26
+INFO brasil/linkedin_local: 15
+INFO brasil/greenhouse: 1093
+INFO brasil/lever: 168
+INFO brasil/ashby: 117
+INFO brasil: 5057 brutas, 9 candidatas para o juiz
+INFO judge: tokens in=2979 out=1144
+INFO judge: tokens in=1064 out=171
+INFO requisitos: tokens in=5515 out=593
+INFO open_jobs: 36 abertas (3 novas)
+INFO mercado: 64 vagas no nicho, 160 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 45 pessoas (0 novas), 53 empresas (3 novas)
+INFO brasil: {'novas': 8, 'abertas': 36, 'arquivadas': 64, 'rede': {'pessoas_novas': 0, 'empresas_novas': 3}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-12.json
+

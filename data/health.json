@@ -1,5 +1,5 @@
 {
- "data": "2026-11-11",
+ "data": "2026-11-12",
  "status": "ok",
  "checks": [
   {
@@ -10,29 +10,29 @@
   {
    "status": "ok",
    "nome": "Cota SerpAPI",
-   "detalhe": "117 buscas restantes para 20 dias (~5/dia; LinkedIn e pessoas têm prioridade)"
+   "detalhe": "109 buscas restantes para 19 dias (~5/dia; LinkedIn e pessoas têm prioridade)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
-  "jobs/remoteok": 99,
+  "jobs/remoteok": 98,
   "jobs/remotive": 195,
-  "jobs/greenhouse": 1442,
-  "jobs/lever": 304,
-  "jobs/ashby": 47,
+  "jobs/greenhouse": 1436,
+  "jobs/lever": 303,
+  "jobs/ashby": 48,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 1,
-  "jobs/gupy": 200,
+  "jobs/serpapi_google_jobs": 0,
+  "jobs/gupy": 193,
   "jobs/himalayas": 98,
-  "jobs/jobicy": 144,
+  "jobs/jobicy": 142,
   "jobs/workable": 280,
-  "jobs/weworkremotely": 209,
+  "jobs/weworkremotely": 216,
   "jobs/social_posts": 5,
-  "jobs/linkedin_guest": 33,
-  "papers/arxiv": 11,
+  "jobs/linkedin_guest": 42,
+  "papers/arxiv": 9,
   "papers/openalex": 175,
-  "linkedin/posts": 10,
-  "network/perfis": 11
+  "linkedin/posts": 9,
+  "network/perfis": 10
  },
  "falhas": []
 }

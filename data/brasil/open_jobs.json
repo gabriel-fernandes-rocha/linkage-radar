@@ -54,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -111,7 +111,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -168,7 +168,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -234,7 +234,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -302,7 +302,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -357,7 +357,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -377,7 +377,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil de Master Data Developer com requisitos diretos: entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Amazon Neptune), perfeitamente alinhada com expertise do leitor.",
+    "motivo": "Vaga Master Data Developer no Brasil com foco explícito em entity resolution, entity matching, fuzzy matching, deduplicação e Amazon Neptune, alinhada perfeitamente ao tema.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -430,10 +430,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "CI&T contrata Master Data Developer remoto no Brasil com foco em entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Amazon Neptune) com Python e AWS.",
+    "resumo": "Master Data Developer com requisitos de Entity Resolution, Entity Matching, fuzzy matching, deduplication e Amazon Neptune com Python e AWS para trabalhar em ecossistema de dados na CI&T.",
     "confianca": 0.98
   },
   {
@@ -498,8 +498,62 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Selecionada, Desenvolvedor(a) de Integração de Dados - Sênior (112088) (vaga verificada)",
+    "url": "https://www.linkedin.com/jobs/view/4487524690",
+    "empresa": "Desenvolvedor(a) de Integração de Dados - Sênior (112088)",
+    "local": "Brasil (Remoto)",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": null,
+    "visto_em": "2026-11-11",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga sênior de Desenvolvedor de Integração de Dados no Brasil remoto, alinhada com consolidação, mapeamento e qualidade de dados entre sistemas.",
+    "resumo": "Desenvolvedor sênior de integração de dados pela Prezensa em modelo People Tech, para trabalhar como copiloto em projetos de tecnologia com responsabilidade real e propósito.",
+    "confianca": 0.88,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.43,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-12",
+    "verificada_em": "2026-11-12",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -560,7 +614,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -578,7 +632,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota com Brasil como localização aceitável de AI Senior Engineer focada em entity resolution, deduplication, data pipelines e ETL com Neo4j, Python e Kafka, core da especialidade do leitor.",
+    "motivo": "Vaga AI Senior Engineer com entity resolution e deduplication explícitos, remota aberta a Brasil com Neo4j, Kafka e Python para data pipelines.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -629,11 +683,79 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Able procura AI Senior Engineer remoto em múltiplos países da América Latina (incluindo Brasil) para trabalhar com entity resolution, deduplication, pipelines de dados, Cypher, Neo4j e Kafka.",
-    "confianca": 0.9
+    "resumo": "AI Senior Engineer na Able com foco em Entity Resolution, Data Pipelines, Deduplication em Neo4j e Kafka, com Python e ETL/RAG, remota para América Latina incluindo Brasil.",
+    "confianca": 0.93
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista Data Quality",
+    "url": "https://jump.inhire.app/vagas/0f2082f2-ee80-478d-a319-5d9512c17456/analista-data-quality",
+    "empresa": "Jump",
+    "local": "Remoto · Brasil",
+    "fonte": "InHire",
+    "publicada_em": "2026-11-11",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "qualidade de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Analista Data Quality sênior no Brasil focada em regras, validações, métricas e monitoramento de qualidade de dados, essencial para integração e consolidação de bases.",
+    "resumo": "Analista Data Quality para estruturar regras e processos de qualidade de dados em projeto do mercado financeiro, incluindo profiling, modelagem de validações, métricas, investigação de inconsistências e integração de checagens aos pipelines.",
+    "confianca": 0.92,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Spark",
+        "Data Quality",
+        "Great Expectations",
+        "Deequ"
+      ],
+      "desejaveis": [
+        "Databricks",
+        "DQX"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brasil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.1,
+    "encaixe": 0.42,
+    "compat_detalhe": {
+      "habilidades": 45,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Great Expectations"
+      ],
+      "parciais": [
+        "SQL",
+        "Deequ"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-12",
+    "verificada_em": "2026-11-12",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -690,7 +812,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -710,7 +832,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil de Master Data Developer com requisitos essenciais: entity resolution, entity matching, fuzzy matching, deduplication, retrieval com Python e graph databases, exatamente no escopo do leitor.",
+    "motivo": "Vaga Master Data Developer no Brasil com requisitos idênticos ao id 4: entity resolution, entity matching, fuzzy matching, deduplication, machine learning e Amazon Neptune.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -762,10 +884,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "CI&T oferece vaga de Master Data Developer remoto no Brasil com entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Amazon Neptune), Python e AWS.",
+    "resumo": "Master Data Developer com foco em Entity Resolution, Entity Matching, fuzzy matching, Deduplication, ML, Python e Amazon Neptune para trabalhar em dados mestres e resolução de identidades.",
     "confianca": 0.98
   },
   {
@@ -833,8 +955,8 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-11",
-    "nova": true
+    "verificada_em": "2026-11-12",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -888,7 +1010,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -906,7 +1028,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil de Senior Data Engineer com requisitos de identity resolution (sinônimo de entity resolution), data governance, data quality, ETL e plataformas de CDP (Braze, Segment, mParticle) alinhadas com Customer 360.",
+    "motivo": "Vaga Senior Data Engineer no Brasil com identity resolution e data quality explícitos, usando Snowflake, Braze, Segment e mParticle para orquestração de dados de identidade.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -958,11 +1080,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Massive Rocket busca Senior Data Engineer remoto no Brasil com experiência em identity resolution, data governance, data quality, Snowflake, ETL, dbt e plataformas de CDP (Braze, mParticle, Segment).",
-    "confianca": 0.85
+    "resumo": "Senior Data Engineer remoto no Brasil especializado em Identity Resolution, Data Governance e Data Quality com Snowflake, dbt, Braze, Segment e mParticle para Customer 360.",
+    "confianca": 0.9
   },
   {
     "tipo": "vaga",
@@ -1020,8 +1142,8 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-11",
-    "nova": true
+    "verificada_em": "2026-11-12",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1087,7 +1209,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1158,7 +1280,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1207,7 +1329,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1279,7 +1401,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1328,7 +1450,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1377,7 +1499,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1449,7 +1571,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1495,7 +1617,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1514,7 +1636,7 @@
       "survivorship"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga de Senior Data Engineer em São Paulo com requisitos diretos em entity resolution, data reconciliation, master data management e survivorship, alinhados perfeitamente com especialização do leitor.",
+    "motivo": "Vaga em São Paulo com requisitos explícitos em entity resolution, data reconciliation, master data management e survivorship, alinhados perfeitamente com o perfil do especialista.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1578,10 +1700,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "First Help Financial busca Senior Data Engineer em São Paulo com experiência em entity resolution, master data management, Python, Spark, Databricks e AWS. Vaga remota/contrato com foco em reconciliação de dados, qualidade e governança.",
+    "resumo": "Vaga de Senior Data Engineer em São Paulo com stack técnica em Spark, Python, SQL, Databricks e requisitos específicos em entity resolution, master data management e data quality. Contrato com First Help Financial, requer experiência em reconciliação de dados e arquiteturas de dados com governança.",
     "confianca": 0.95
   },
   {
@@ -1641,7 +1763,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1713,7 +1835,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1777,7 +1899,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1849,7 +1971,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1917,7 +2039,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -1992,7 +2114,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   },
   {
@@ -2081,8 +2203,102 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Staff Reltio Data Engineer",
+    "url": "https://www.linkedin.com/jobs/view/4489066602",
+    "empresa": "Jobgether",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-12",
+    "score": 5,
+    "categoria": "linkage",
+    "termos": [
+      "entity resolution",
+      "golden record",
+      "master data management",
+      "match and merge",
+      "survivorship"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga sênior de engenheiro de dados com Reltio MDM no Brasil, focada em resolução de entidades, qualidade de dados e unificação de cadastros em ecossistema de dados empresariais.",
+    "resumo": "Staff Data Engineer para liderar design e implementação de soluções Master Data Management (MDM) com Reltio, estabelecendo ecossistemas de dados confiáveis, escaláveis e unificados que melhoram qualidade, consistência e acessibilidade de dados entre domínios de negócio.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Reltio",
+        "SQL",
+        "Python",
+        "Java",
+        "AWS",
+        "Azure",
+        "GCP",
+        "REST APIs",
+        "ETL/ELT",
+        "CI/CD",
+        "Master Data Management",
+        "entity resolution"
+      ],
+      "desejaveis": [
+        "Informatica",
+        "Profisee",
+        "Databricks",
+        "Snowflake",
+        "Azure Synapse",
+        "BigQuery",
+        "Redshift",
+        "Kafka",
+        "Azure Event Hubs",
+        "Kinesis",
+        "Microsoft Purview",
+        "Collibra",
+        "Alation",
+        "LLMs"
+      ]
+    },
+    "senioridade": "staff/principal",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 10,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.17,
+    "compat_detalhe": {
+      "habilidades": 24,
+      "senioridade": 40,
+      "local": 100,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "pede 10+ anos (você tem 2.9)",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "Reltio",
+        "Java",
+        "AWS",
+        "Azure",
+        "GCP",
+        "REST APIs",
+        "CI/CD",
+        "Master Data Management"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-12",
+    "verificada_em": "2026-11-12",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2151,7 +2367,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-11",
+    "verificada_em": "2026-11-12",
     "nova": false
   }
 ]

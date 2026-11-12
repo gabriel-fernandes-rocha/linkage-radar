@@ -1,5 +1,56 @@
 [
  {
+  "data": "2026-11-12",
+  "habilidade": "Kubernetes",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Kubernetes é um orquestrador de containers que automatiza deploy, escalonamento e gerenciamento de aplicações distribuídas. Ele organiza containers em pods, gerencia recursos via deployments e services, e permite rodar workloads de forma resiliente em clusters. Para pipelines de dados, é comum usar Kubernetes para rodar Spark on Kubernetes, jobs agendados e APIs de serviços como Elasticsearch ou microsserviços de matching.",
+  "por_que_pedem": "Vagas de ER/MDM/linkage em escala frequentemente rodam em ambientes cloud nativos, onde Spark, Elasticsearch e APIs de resolução de entidades são empacotados em containers e orquestrados via Kubernetes para garantir escalabilidade e resiliência em produção. Pedem isso para saber se você consegue operar e fazer deploy dos seus próprios pipelines sem depender só do time de infra.",
+  "ponte_com_o_que_voce_sabe": "Você já roda Spark em produção com dados em escala massiva, então entende conceitos de paralelismo, particionamento e tolerância a falhas que são exatamente os problemas que Kubernetes resolve na camada de infraestrutura. Sua familiaridade com Docker (mesmo que básica) e deploys de serviços como Elasticsearch acelera muito o aprendizado, pois Kubernetes é essencialmente 'Docker em escala com orquestração automática'.",
+  "minimo_para_ficar_apto": [
+   "Entender os conceitos de Pod, Deployment, Service, ConfigMap e Secret",
+   "Saber escrever e aplicar um manifesto YAML simples (kubectl apply -f)",
+   "Rodar um container Docker e expô-lo via Service no Kubernetes local (minikube ou kind)",
+   "Entender conceito de Spark on Kubernetes (spark-submit com master k8s)",
+   "Saber explicar diferença entre Deployment, StatefulSet e Job/CronJob"
+  ],
+  "plano_rapido": [
+   "2h: revisar conceitos básicos de containers e Docker se tiver lacunas",
+   "3h: fazer tutorial oficial Kubernetes Basics (kubernetes.io) com minikube",
+   "3h: criar um deployment simples de uma API Python (ex: Flask) com Service e ConfigMap",
+   "2h: estudar Spark on Kubernetes na documentação oficial do Spark (Running Spark on Kubernetes)",
+   "2h: praticar kubectl (get, describe, logs, exec, scale) e entender probes de liveness/readiness",
+   "1h: ler sobre CronJob para simular jobs batch de ER agendados"
+  ],
+  "mini_projeto": "Containerizar um pipeline simples de record linkage (ex: normalização + blocking com RapidFuzz em Python) como um Job do Kubernetes, rodando em minikube, com um CronJob que executa o matching periodicamente e grava resultado em um volume ou banco, documentando o YAML e o fluxo no GitHub.",
+  "como_colocar_no_curriculo": "Experiência prática containerizando e orquestrando pipelines de dados (Docker e Kubernetes básico) incluindo Jobs agendados e deploy de serviços relacionados a record linkage.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é um Pod e qual a diferença para um container?",
+    "resposta": "Pod é a menor unidade de deploy no Kubernetes, que pode conter um ou mais containers que compartilham rede e armazenamento. Geralmente um Pod roda um único container de aplicação, mas pode ter sidecars para logging ou proxy."
+   },
+   {
+    "pergunta": "Como você rodaria um job Spark de record linkage no Kubernetes?",
+    "resposta": "Usando spark-submit com master k8s://, apontando para a imagem Docker do Spark, configurando número de executores e recursos via flags, e o Kubernetes cria pods driver e executor dinamicamente para o job."
+   },
+   {
+    "pergunta": "Qual a diferença entre Deployment e Job/CronJob?",
+    "resposta": "Deployment mantém réplicas de um serviço rodando continuamente, útil para APIs. Job executa uma tarefa até completar e termina, e CronJob agenda Jobs periodicamente, ideal para pipelines batch como matching noturno."
+   },
+   {
+    "pergunta": "Como você expõe um serviço de Elasticsearch rodando no cluster para outras aplicações?",
+    "resposta": "Criando um Service do tipo ClusterIP (para acesso interno) ou LoadBalancer/NodePort se precisar de acesso externo, apontando para os pods do Elasticsearch via label selector."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial Kubernetes (kubernetes.io/docs)",
+   "Kubernetes Basics tutorial oficial",
+   "Documentação oficial do Apache Spark - Running Spark on Kubernetes",
+   "Curso Kubernetes for Developers (LFD259) da Linux Foundation",
+   "Docker official documentation (docs.docker.com)"
+  ]
+ },
+ {
   "data": "2026-11-11",
   "habilidade": "knowledge graph",
   "pct_vagas": 2,

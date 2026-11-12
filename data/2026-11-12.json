@@ -1,0 +1,390 @@
+{
+  "data": "2026-11-12",
+  "gerado_em": "2026-11-12T00:48-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Director, Machine Learning",
+      "url": "https://himalayas.app/companies/narvar-com/jobs/director-machine-learning-7645768496",
+      "empresa": "Narvar",
+      "local": "Remoto · Canada",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-11",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga de liderança em ML com foco direto em identity resolution engine (Graphite) e fraud detection, core do perfil do leitor.",
+      "resumo": "Narvar busca Director de Machine Learning para liderar sistemas de identity resolution (Graphite), fraud detection (IRIS) e inteligência para IA agentic, operando 20B+ pedidos e 1.300+ marcas de varejo. Remoto no Canadá, requer EST/EDT ou PST.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Spark",
+          "Airflow",
+          "GCP"
+        ],
+        "desejaveis": [
+          "LLMs",
+          "Graph databases"
+        ]
+      },
+      "senioridade": "gerencia",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "Canada"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 12,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 59,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 12+ anos (você tem 2.9)",
+        "local_txt": "remoto só para Canada: exige autorização de trabalho lá",
+        "faltam": [
+          "GCP"
+        ],
+        "parciais": [
+          "Airflow"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior AI Data Engineer, Data Products & RAG Foundations",
+      "url": "https://es.linkedin.com/jobs/view/senior-ai-data-engineer-data-products-rag-foundations-at-agilent-technologies-4481265399",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior AI Data Engineer com entity resolution explícito como técnica central para qualidade e descoberta de dados.",
+      "resumo": "Post de vaga Senior AI Data Engineer focado em Data Products e RAG Foundations, aplicando entity resolution, metadata generation e content classification para melhorar qualidade e escalabilidade de ativos de dados.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "Entity resolution"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.4,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Director, Product Management, Data Foundation and Ontology",
+      "url": "https://sg.linkedin.com/jobs/view/director-product-management-data-foundation-and-ontology-at-univers-4479134533",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Post de vaga que cita entity resolution explicitamente entre ferramentas procuradas (data catalogs, semantic layers, ontology, entity resolution).",
+      "resumo": "Post anunciando vaga de Director de Product Management em Data Foundation e Ontology, com experiência em data catalogs, semantic layers, MDM, entity resolution, IA agentic e RAG.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "Master Data Management",
+          "Entity resolution"
+        ]
+      },
+      "senioridade": "gerencia",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.2,
+      "encaixe": 0.12,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 35,
+        "local": 60,
+        "ingles": 100,
+        "foco": 88,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Semantic AI Engineer - Remote Work - LinkedIn Brasil",
+      "url": "https://br.linkedin.com/jobs/view/semantic-ai-engineer-remote-work-at-bairesdev-4486508883",
+      "texto": "- Build entity resolution and semantic alignment pipelines, mapping model-generated concepts to canonical ontology entities. - Implement formal constraint reasoning for satisfiability, contradiction detection, and counterexample generation. - Build SPARQL and RDF store operations behind an encapsulated semantic API.",
+      "data": "Nov 4, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga com entity resolution como responsabilidade central e explícita em pipelines de alinhamento semântico, mapeamento para ontologias canônicas e operações com SPARQL e RDF, remota e em português.",
+      "resumo": "Vaga de Semantic AI Engineer remota que tem entity resolution e alinhamento semântico como foco principal, com tarefas de mapeamento de conceitos para entidades canônicas, raciocínio formal de restrições e operações com SPARQL e RDF stores.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "SPARQL",
+          "RDF"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.17,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "SPARQL",
+          "RDF"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Head of Ontology - Platform (m/f/d) at Bain & Company - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/head-of-ontology-platform-m-f-d-at-bain-company-4482156036",
+      "texto": "The problems span entity resolution at scale, knowledge graph and taxonomy design, retrieval and embedding architecture, and the data pipelines that keep all of it fresh and correct — hard engineering problems where a wrong call quietly propagates into every downstream model and agent.",
+      "data": "Nov 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga com entity resolution at scale como problema central explícito, junto com grafos de conhecimento, taxonomias e pipelines de dados em produção na Bain & Company.",
+      "resumo": "Vaga de Head of Ontology na Bain & Company que cita entity resolution at scale, design de grafos de conhecimento e taxonomias, arquitetura de retrieval e pipelines de dados para manter qualidade e correção em modelos e agentes.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.4,
+      "encaixe": 0.31,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 91,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Head of Ontology - Platform na empresa Bain & Company — São Paulo e ...",
+      "url": "https://br.linkedin.com/jobs/view/head-of-ontology-platform-at-bain-company-4481195097",
+      "texto": "The problems span entity resolution at scale, knowledge graph and taxonomy design, retrieval and embedding architecture, and the data pipelines that keep all of it fresh and correct — hard engineering problems where a wrong call quietly propagates into every downstream model and agent.",
+      "data": "Oct 22, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Mesma vaga da Bain & Company com entity resolution at scale como problema central, agora com localização (São Paulo), explicitando relevância geográfica.",
+      "resumo": "Vaga de Head of Ontology na Bain & Company com localização em São Paulo que cita entity resolution at scale, design de grafos de conhecimento, taxonomias e pipelines de dados para manter qualidade em produção.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Brazil"
+        ],
+        "cidades": [
+          "São Paulo"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.4,
+      "encaixe": 0.39,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 75,
+        "ingles": 100,
+        "foco": 91,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 118,
+  "vagas_arquivadas_total": 178,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "Kubernetes",
+  "brasil": {
+    "novas": 8,
+    "abertas": 36,
+    "arquivadas": 64,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 42,
+    "semana": 6,
+    "tema": "Pré-processamento para data matching",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 6: Pré-processamento para data matching",
+    "modulo": "Semana 6: Pré-processamento para data matching",
+    "versao": 2,
+    "objetivo": "Consolidar, por recuperação ativa, as quatro etapas do pré-processamento de Christen (2012, seç. 3.5): limpeza de caracteres, padronização/tokenização gulosa com tabelas de correspondência, segmentação em campos de saída e verificação contra bases de referência, incluindo sua aplicação ao caso de nomes brasileiros com partículas e sobrenomes compostos.",
+    "conexao": "Pense no pré-processamento como um funil de quatro estágios que converte texto bruto e ambíguo em dados estruturados e confiáveis: primeiro a aula 36 limpa o ruído sintático (espaços, pontuação, tokens-lixo), deixando uma string normalizada; depois a aula 37 passa essa string por tabelas de lookup usando o algoritmo guloso (janelas de l tokens, começando pela maior), atribuindo tags como GM, SN, LN; em seguida a aula 38 usa essas tags para decidir, via regras condição-ação, em qual campo de saída (given_name, surname, cidade) cada token cai, o que é especialmente delicado nos sobrenomes brasileiros compostos por partículas (aula 40), onde a regra ingênua GF+SN falha e precisa ser estendida para absorver sequências PR+SN; finalmente a aula 39 fecha o funil checando se o resultado segmentado é plausível internamente (nome x gênero) e externamente (CEP x cidade numa base de referência), decidindo entre corrigir automaticamente ou apenas flagar. A aula 41 amarra tudo isso num padronizador Python testável, mostrando que essas quatro etapas não são teoria isolada, mas um pipeline sequencial que, se mal implementado (por exemplo ignorando a tokenização gulosa de 3 tokens), produz segmentações erradas que contaminam toda a comparação posterior (aula 18) e a indexação (aula 15).",
+    "perguntas": [
+      {
+        "pergunta": "Segundo Christen (2012, seç. 3.5.1, p.51), quais são as três ações básicas da etapa de limpeza de caracteres antes de qualquer tokenização, e o que aconteceria com o exemplo ' Paul Peter Miller ' depois de aplicá-las?",
+        "resposta": "As três ações são: normalizar espaços em branco (trim nas bordas e colapso de múltiplos espaços em um só), normalizar a caixa (converter para minúsculas) e remover/isolar caracteres de controle e pontuação espúria. Aplicadas a ' Paul Peter Miller ', o resultado é 'paul peter miller'."
+      },
+      {
+        "pergunta": "No algoritmo de tokenização gulosa (aula 37), por que é essencial testar primeiro a janela de tamanho l (máximo) antes de reduzir para l-1, l-2 etc., usando o exemplo 'sydney uni' versus 'the university of sydney' do livro?",
+        "resposta": "Porque se o algoritmo testasse janelas pequenas primeiro, o token 'sydney' isolado seria casado como locality name antes de se verificar se 'sydney uni' (dois tokens) corresponde à forma padronizada composta 'the university of sydney'. A ordem gulosa (maior janela primeiro) evita essa segmentação prematura e incorreta, garantindo que sequências mais longas e mais específicas tenham prioridade sobre as mais curtas."
+      },
+      {
+        "pergunta": "Na aula 38, por que a segmentação é descrita por Christen (2012, p.53) como a etapa mais desafiadora do pré-processamento, e que ambiguidade clássica o próprio exemplo 'Paul Peter Miller' ilustra?",
+        "resposta": "Porque frequentemente existem múltiplas atribuições possíveis de tokens a campos de saída, e o sistema precisa escolher a mais provável, uma tarefa equivalente a parsing. No exemplo, 'Peter' pode ser o nome do meio de 'Paul Peter Miller', ou pode ser parte de um sobrenome composto original 'Peter-Miller', e o livro mostra que a tag sozinha não resolve essa ambiguidade sem lógica adicional."
+      },
+      {
+        "pergunta": "Explique por que, na verificação (aula 39), uma inconsistência interna como nome='Maria' com gênero='M' costuma ser apenas flagada em vez de corrigida automaticamente, enquanto uma inconsistência externa clara (CEP que pertence a outra cidade na base de referência) pode justificar correção automática mais frequentemente.",
+        "resposta": "Inconsistências internas entre nome e gênero dependem de uma tabela probabilística de associação nome-gênero, que não é determinística: há nomes unissex e erros podem estar tanto no nome quanto no gênero digitado, então corrigir automaticamente arrisca introduzir um erro novo. Já uma combinação CEP-cidade checada contra uma base de referência externa validada (como a dos correios) é factual e determinística, caso a cidade e o CEP sejam efetivamente incompatíveis segundo essa fonte confiável, a correção automática tem uma base mais sólida, embora ainda deva ser feita com cautela, como o próprio Christen (2012, p.55) adverte sobre o risco de correções introduzirem novos erros."
+      },
+      {
+        "pergunta": "Para o nome brasileiro 'João da Silva Pereira' (aula 40), descreva a sequência de tags antes e depois da fusão de partículas, e explique por que uma regra de segmentação baseada em 'último token = surname' erra o resultado.",
+        "resposta": "Tokens e tags antes da fusão: joão/GM, da/PR, silva/SN, pereira/SN. Após a regra de fusão PR+SN, 'da'+'silva' se torna um único token 'da silva' com tag SN, resultando na sequência GM, SN, SN, cujo surname composto correto é 'da silva pereira'. A regra naive de 'último token = surname' pegaria apenas 'pereira', perdendo a partícula e o sobrenome 'silva', o que pode fazer esse registro parecer diferente de outro registro do mesmo indivíduo cujo surname foi capturado de forma completa."
+      },
+      {
+        "pergunta": "(Aula 15, repetição espaçada) Para bases C (1.200 registros) e D (900 registros) sem duplicados internos, qual é o número máximo teórico de matches verdadeiros e por quê?",
+        "resposta": "O máximo é 900, limitado pelo tamanho da menor base, já que sem duplicados internos cada registro de D pode corresponder a no máximo um registro de C, então o número de pares verdadeiros não pode exceder o tamanho da base menor."
+      },
+      {
+        "pergunta": "(Aula 18, repetição espaçada) No par 'Mary Meier' (a3 x b1) de Christen (2012, Fig.2.3), com concordância em givenname, surname, suburb e state, mas discordância em postcode e byear, por que a classificação não deveria exigir concordância em todas as seis posições do vetor de comparação?",
+        "resposta": "Porque exigir concordância total descartaria pares que são matches verdadeiros apesar de pequenos erros de digitação em campos específicos (como postcode ou ano de nascimento), que são comuns em bases reais. A forte concordância em quatro de seis campos, especialmente nome completo e localização, já é evidência suficiente de que se trata da mesma pessoa, sendo as duas discordâncias explicáveis por erros de captura, não por serem registros de pessoas diferentes."
+      }
+    ],
+    "desafio": "Você recebe o campo bruto de cadastro: '  José  DA Costa-Neto , apto (s/n) 45B  '. Aplique mentalmente as quatro etapas da semana nesta ordem: (1) limpeza de caracteres, (2) tokenização gulosa com tags (considere tabelas: partículas PR={da,de,do,dos,das}, given names masculinos GM={josé}, e trate 'costa' e 'neto' como candidatos a SN via tabela de sobrenomes, hífen HY, tokens entre parênteses tag VB, 's/n' como RU), (3) segmentação em given_name e surname usando a regra de fusão PR+SN, e (4) aponte qual verificação (interna ou externa) você aplicaria no resultado final e por quê. Não se preocupe com o campo de endereço 'apto 45B', foque no nome.",
+    "gabarito": "Etapa 1 (limpeza): trim e colapso de espaços, minúsculas, isolamento de pontuação: 'josé da costa-neto , apto ( s/n ) 45b'. Etapa 2 (tokenização e tags): 'josé'/GM, 'da'/PR, 'costa'/SN, '-'/HY, 'neto'/SN, ','/CO, 'apto'/(fora do escopo do nome), '('/VB, 's/n'/RU, ')'/VB, '45b'/NU+alfanumérico. O hífen entre 'costa' e 'neto' sinaliza sobrenome composto por hifenização (não partícula), então 'costa-neto' deve ser tratado como um único token composto SN, mantendo o hífen ou fundindo conforme convenção do pipeline. Etapa 3 (segmentação): aplicando a regra estendida GM seguido de (PR* + SN): given_name='josé'; em seguida 'da' (PR) funde com o próximo SN 'costa-neto', produzindo surname='da costa-neto'. Etapa 4 (verificação): a verificação apropriada aqui é interna, comparando o padrão do nome segmentado contra uma tabela de sobrenomes brasileiros conhecidos para confirmar se 'costa-neto' é um sobrenome plausível (não é verificação externa de endereço, pois o desafio pede foco no nome); se 'costa-neto' não constar na tabela de referência de sobrenomes, o registro deve ser flagado para revisão manual, não corrigido automaticamente, pois sobrenomes compostos por hífen são legítimos e variados no Brasil.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.5 (3.5.1 a 3.5.4), p.51-56.",
+      "Churches, T., Christen, P., Lim, K. & Zhu, J. X. (2002). Preparation of name and address data for record linkage using hidden Markov models. BMC Medical Informatics and Decision Making, 2(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        51,
+        58
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3057,
+      "pos_palavras_chave": 4,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 5,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 6,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

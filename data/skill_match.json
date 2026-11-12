@@ -203,10 +203,20 @@
   "nivel": "nao",
   "nome": "Azure DevOps"
  },
+ "azure event hubs": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Azure Event Hubs"
+ },
  "azure openai": {
   "motivo": "sem evidência de uso de LLMs/Azure",
   "nivel": "nao",
   "nome": "Azure OpenAI"
+ },
+ "azure synapse": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Azure Synapse"
  },
  "b2b company data": {
   "motivo": "trabalha com dados públicos de saúde, não B2B",
@@ -683,6 +693,11 @@
   "nivel": "nao",
   "nome": "Deep Learning"
  },
+ "deequ": {
+  "motivo": "faz data quality, mas não Deequ específico",
+  "nivel": "parcial",
+  "nome": "Deequ"
+ },
  "delta lake": {
   "motivo": "usa Spark/data lake, próximo a Delta Lake",
   "nivel": "parcial",
@@ -727,6 +742,11 @@
   "motivo": "Nenhuma referência no currículo",
   "nivel": "nao",
   "nome": "Docker"
+ },
+ "dqx": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "DQX"
  },
  "duplicate detection": {
   "motivo": "Implementa deduplicação em pipelines de record linkage",
@@ -1248,6 +1268,11 @@
   "nivel": "nao",
   "nome": "Kanban"
  },
+ "kinesis": {
+  "motivo": "sem evidência de streaming AWS",
+  "nivel": "nao",
+  "nome": "Kinesis"
+ },
  "knowledge graph": {
   "motivo": "Não aparece experiência com knowledge graph.",
   "nivel": "nao",
@@ -1447,6 +1472,11 @@
   "motivo": "Plataforma não mencionada no currículo",
   "nivel": "nao",
   "nome": "Microsoft Foundry"
+ },
+ "microsoft purview": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Microsoft Purview"
  },
  "microsoft sql server": {
   "motivo": "sabe SQL, falta SQL Server específico",
@@ -1817,6 +1847,11 @@
   "motivo": "Redação de dados sensíveis não citada.",
   "nivel": "nao",
   "nome": "redaction"
+ },
+ "redshift": {
+  "motivo": "SQL forte, mas sem Redshift específico",
+  "nivel": "parcial",
+  "nome": "Redshift"
  },
  "reference data management": {
   "motivo": "Lida com registros de saúde como dados de referência",
