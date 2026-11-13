@@ -58,6 +58,11 @@
   "nivel": "tem",
   "nome": "AI/ML"
  },
+ "airbyte": {
+  "motivo": "sem evidência de uso de Airbyte",
+  "nivel": "nao",
+  "nome": "Airbyte"
+ },
  "airflow": {
   "motivo": "faz pipelines ETL batch, falta ferramenta específica",
   "nivel": "parcial",
@@ -297,6 +302,11 @@
   "motivo": "sem menção a compliance de privacidade EUA",
   "nivel": "nao",
   "nome": "CCPA"
+ },
+ "cdc": {
+  "motivo": "faz ETL/pipelines, mas sem CDC explícito",
+  "nivel": "parcial",
+  "nome": "CDC"
  },
  "cdi": {
   "motivo": "customer integration próximo de entity resolution",
@@ -663,6 +673,11 @@
   "nivel": "nao",
   "nome": "Dataset Documentation"
  },
+ "db2": {
+  "motivo": "sem evidência de uso de DB2",
+  "nivel": "nao",
+  "nome": "DB2"
+ },
  "dbeaver": {
   "motivo": "usa SQL/bancos, cliente GUI é trivial aprender",
   "nivel": "parcial",
@@ -677,6 +692,11 @@
   "motivo": "não mencionado",
   "nivel": "nao",
   "nome": "dbt tests"
+ },
+ "debezium": {
+  "motivo": "sem evidência de uso de Debezium",
+  "nivel": "nao",
+  "nome": "Debezium"
  },
  "dedupe": {
   "motivo": "deduplicação é parte central do trabalho",
@@ -998,6 +1018,11 @@
   "nivel": "parcial",
   "nome": "golden-record"
  },
+ "governança de dados": {
+  "motivo": "faz qualidade/padronização de dados, próximo de governança",
+  "nivel": "parcial",
+  "nome": "Governança de Dados"
+ },
  "grafana": {
   "motivo": "sem evidência de monitoramento/visualização Grafana",
   "nivel": "nao",
@@ -1232,6 +1257,11 @@
   "motivo": "Sem menção a JavaScript",
   "nivel": "nao",
   "nome": "JavaScript"
+ },
+ "jd edwards": {
+  "motivo": "sem evidência de ERP JD Edwards",
+  "nivel": "nao",
+  "nome": "JD Edwards"
  },
  "jira": {
   "motivo": "não citado",
@@ -1577,6 +1607,11 @@
   "motivo": "Uso implícito em scikit-learn e Python",
   "nivel": "parcial",
   "nome": "NumPy"
+ },
+ "obiee": {
+  "motivo": "sem evidência de uso de OBIEE",
+  "nivel": "nao",
+  "nome": "OBIEE"
  },
  "observability": {
   "motivo": "não há menção a ferramentas de observabilidade",

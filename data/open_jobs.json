@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -108,6 +108,56 @@
       ],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Scientist, AI chez Volta Software — Paris | LinkedIn Jobs",
+    "url": "https://fr.linkedin.com/jobs/view/data-scientist-ai-at-volta-software-4486362286",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 8,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Data Scientist com foco explícito em entity resolution e record linkage, tecnologias alinhadas (Elasticsearch) e avaliação rigorosa de qualidade.",
+    "resumo": "Vaga de Data Scientist na Volta Software (Paris) com responsabilidades centrais em entity resolution, record linkage e product search, incluindo uso de Elasticsearch e avaliação disciplinada com métricas e tracking de regressão.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Record Linkage",
+        "Elasticsearch"
+      ],
+      "desejaveis": [
+        "Elasticsearch/OpenSearch"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.8,
+    "encaixe": 0.49,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 97,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-13",
+    "verificada_em": "2026-11-13",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -154,7 +204,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -199,7 +249,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -246,7 +296,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -297,7 +347,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -347,7 +397,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -360,7 +410,7 @@
     "nao_verificado": true,
     "motivo": "Anúncio de vaga de Data Engineer focada em Identity Resolution e Consent Data.",
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "juiz": "groq",
     "resumo": "A publicação convida a se candidatar ao cargo de Data Engineer, Identity Resolution & Consent Data na Thomson Reuters, detalhando responsabilidades e requisitos.",
@@ -446,7 +496,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -491,7 +541,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -541,7 +591,7 @@
       "estimado": false
     },
     "desde": "2026-10-17",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -587,7 +637,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -636,8 +686,8 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-12",
-    "nova": true
+    "verificada_em": "2026-11-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -685,7 +735,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -736,7 +786,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -784,8 +834,8 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-12",
-    "nova": true
+    "verificada_em": "2026-11-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -833,7 +883,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -882,7 +932,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -931,7 +981,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -986,7 +1036,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1041,7 +1091,7 @@
       "estimado": false
     },
     "desde": "2026-10-23",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1092,7 +1142,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1154,7 +1204,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1204,7 +1254,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1254,7 +1304,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1300,7 +1350,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1343,7 +1393,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1383,7 +1433,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1426,7 +1476,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1481,7 +1531,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1530,7 +1580,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1570,7 +1620,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1610,7 +1660,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1650,7 +1700,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1694,8 +1744,8 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-12",
-    "nova": true
+    "verificada_em": "2026-11-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1743,7 +1793,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1790,7 +1840,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1866,7 +1916,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1906,7 +1956,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -1966,7 +2016,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2008,7 +2058,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2050,7 +2100,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2090,7 +2140,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2130,7 +2180,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2173,7 +2223,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2216,7 +2266,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2259,7 +2309,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2299,7 +2349,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2339,7 +2389,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2379,7 +2429,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2426,53 +2476,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Bristol Myers Squibb hiring Senior Manager RWE Biostats in ... - LinkedIn",
-    "url": "https://www.linkedin.com/jobs/view/senior-manager-rwe-biostats-at-bristol-myers-squibb-4470630851",
-    "empresa": "",
-    "local": "",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "publicada_em": null,
-    "score": 5,
-    "motivo": "Vaga concreta em farmacêutica com responsabilidade central em deduplication, record linkage e limpeza de dados em contextos de real-world data (RWD), domínio próximo ao do leitor em saúde.",
-    "resumo": "Bristol Myers Squibb contrata Senior Manager RWE Biostats para desenvolver e aplicar algoritmos de limpeza, deduplicação, record linkage e tratamento de dados faltantes em dados do mundo real.",
-    "confianca": 0.88,
-    "requisitos": {
-      "obrigatorios": [],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "nao_informado",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.3,
-    "encaixe": 0.27,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 75,
-      "local": 60,
-      "ingles": 100,
-      "foco": 90,
-      "senioridade_txt": "nível senior",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-10-14",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2531,7 +2535,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2579,7 +2583,7 @@
       "estimado": false
     },
     "desde": "2026-10-20",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2638,7 +2642,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2709,7 +2713,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2760,8 +2764,108 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Head of Data Science, Identity Graph at Socure - LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/head-of-data-science-identity-graph-at-socure-4411745034",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 10,
+    "juiz": "anthropic",
+    "motivo": "Vaga concreta de liderança em Identity Graph com foco explícito em entity resolution, record linkage e entity linking como competências principais.",
+    "resumo": "Vaga de Head of Data Science na Socure para liderar equipe de Identity Graph com expertise em entity resolution, record linkage e entity linking.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Record Linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "gerencia",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "encaixe": 0.21,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 35,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível gerencia",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-13",
+    "verificada_em": "2026-11-13",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Head of Data Science, Identity Graph at Socure - LinkedIn",
+    "url": "https://www.linkedin.com/jobs/view/head-of-data-science-identity-graph-at-socure-4411727524",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 10,
+    "juiz": "anthropic",
+    "motivo": "Duplicata do item anterior: vaga concreta de liderança em Identity Graph com foco explícito em entity resolution, record linkage e entity linking.",
+    "resumo": "Vaga de Head of Data Science na Socure para liderar equipe de Identity Graph com expertise em entity resolution, record linkage e entity linking.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Record Linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "gerencia",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "encaixe": 0.21,
+    "compat_detalhe": {
+      "habilidades": 100,
+      "senioridade": 35,
+      "local": 60,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível gerencia",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-13",
+    "verificada_em": "2026-11-13",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2830,7 +2934,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2898,7 +3002,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -2967,7 +3071,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3014,7 +3118,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3078,7 +3182,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3128,8 +3232,8 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-12",
-    "nova": true
+    "verificada_em": "2026-11-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -3176,7 +3280,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3220,7 +3324,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3287,7 +3391,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3339,7 +3443,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3396,7 +3500,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3444,7 +3548,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3494,8 +3598,8 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-12",
-    "nova": true
+    "verificada_em": "2026-11-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -3536,7 +3640,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3606,7 +3710,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3654,7 +3758,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3722,7 +3826,7 @@
       "estimado": true
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3777,7 +3881,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3831,7 +3935,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -3892,7 +3996,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3929,7 +4033,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3990,7 +4094,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4079,7 +4183,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4136,7 +4240,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4205,7 +4309,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4270,7 +4374,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4331,7 +4435,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -4396,7 +4500,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -4451,7 +4555,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -4519,7 +4623,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -4580,7 +4684,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4636,7 +4740,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4685,7 +4789,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4741,7 +4845,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4796,7 +4900,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4845,7 +4949,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -4897,7 +5001,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
@@ -4935,7 +5039,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4993,7 +5097,7 @@
     "senioridade": "nao_informado",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -5024,6 +5128,65 @@
       "parciais": [],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Harnham hiring Data Scientis/Data Analyst in Windsor ... - LinkedIn",
+    "url": "https://uk.linkedin.com/jobs/view/data-scientis-data-analyst-at-harnham-4481152584",
+    "empresa": "",
+    "local": "",
+    "fonte": "Post · linkedin.com",
+    "social": true,
+    "publicada_em": null,
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Vaga que lista entity resolution, record linkage e fuzzy matching como competências requisitadas, embora pareça ser role genérico de Data Scientist/Analyst.",
+    "resumo": "Vaga de Data Scientist/Data Analyst via Harnham em Windsor com requisito explícito de experiência em entity resolution, record linkage ou fuzzy matching techniques.",
+    "confianca": 0.8,
+    "requisitos": {
+      "obrigatorios": [
+        "Power BI"
+      ],
+      "desejaveis": [
+        "Entity Resolution",
+        "Record Linkage",
+        "Fuzzy Matching"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United Kingdom"
+      ],
+      "cidades": [
+        "Windsor"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.3,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 100,
+      "foco": 90,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "em United Kingdom, sem patrocínio de visto",
+      "faltam": [
+        "Power BI"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-13",
+    "verificada_em": "2026-11-13",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -5082,8 +5245,8 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-12",
-    "nova": true
+    "verificada_em": "2026-11-13",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -5155,7 +5318,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5213,7 +5376,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5272,7 +5435,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5340,7 +5503,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -5415,7 +5578,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -5482,7 +5645,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -5560,7 +5723,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -5628,7 +5791,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5682,7 +5845,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5737,7 +5900,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5803,7 +5966,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5881,7 +6044,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -5948,7 +6111,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6024,7 +6187,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6079,7 +6242,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6146,7 +6309,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6206,7 +6369,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6270,7 +6433,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -6345,7 +6508,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6416,7 +6579,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false
   },
   {
@@ -6441,7 +6604,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-12",
+    "verificada_em": "2026-11-13",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

@@ -1,5 +1,56 @@
 [
  {
+  "data": "2026-11-13",
+  "habilidade": "PostgreSQL",
+  "pct_vagas": 2,
+  "nivel_atual": "parcial",
+  "o_que_e": "PostgreSQL é um banco de dados relacional open source robusto, muito usado como armazenamento transacional e analítico em projetos de MDM e entity resolution. Tem recursos avançados como extensões (pg_trgm, fuzzystrmatch), índices especializados (GIN, GiST) e suporte a window functions e CTEs recursivas. Em contextos de record linkage, é comum usá-lo para armazenar golden records, histórico de merges e para rodar buscas fuzzy em escala menor que Spark/Elasticsearch.",
+  "por_que_pedem": "Vagas de ER/linkage pedem PostgreSQL porque muitos sistemas de MDM usam ele como camada de persistência final (golden records, survivorship, auditoria) e porque é o banco relacional mais comum em empresas que não usam big data o tempo todo. Também pedem para avaliar se o candidato sabe otimizar queries, criar índices e lidar com dados em escala moderada sem precisar de Spark.",
+  "ponte_com_o_que_voce_sabe": "Você já domina SQL avançado, modelagem de dados e lógica de matching/blocking. A transição é essencialmente aprender as particularidades do PostgreSQL: sintaxe de extensões (pg_trgm para similaridade de texto, que é conceitualmente parecido com o que você já faz com RapidFuzz), tipos de índice (GIN/GiST), EXPLAIN ANALYZE para tuning de performance, e window functions/CTEs recursivas que você provavelmente já usa em Spark SQL com pequenas diferenças de sintaxe.",
+  "minimo_para_ficar_apto": [
+   "Saber instalar e configurar extensões (pg_trgm, fuzzystrmatch, uuid-ossp)",
+   "Entender índices GIN e GiST e quando usar cada um para buscas fuzzy/full-text",
+   "Ler e interpretar EXPLAIN ANALYZE para otimizar queries lentas",
+   "Escrever CTEs recursivas e window functions nativas do Postgres",
+   "Conhecer diferenças práticas entre Postgres e Spark SQL (transações ACID, locks, VACUUM)",
+   "Saber modelar schema simples com constraints, foreign keys e triggers básicos"
+  ],
+  "plano_rapido": [
+   "2h: instalar Postgres localmente (ou usar Docker) e revisar sintaxe básica/diferenças com Spark SQL",
+   "3h: estudar pg_trgm e fuzzystrmatch para similarity matching, comparando com RapidFuzz",
+   "3h: praticar criação de índices GIN/GiST e rodar EXPLAIN ANALYZE em queries de teste",
+   "2h: escrever CTEs recursivas e window functions resolvendo 5-10 exercícios práticos",
+   "2h: estudar conceitos de transações, VACUUM, e triggers para auditoria de merges",
+   "2h: montar um mini schema de MDM com golden record, histórico e survivorship rules"
+  ],
+  "mini_projeto": "Criar um banco Postgres com tabela de registros brutos, tabela de golden records e tabela de histórico de merges. Usar pg_trgm para implementar uma busca fuzzy por similaridade de nome, criar índice GIN para acelerar, escrever uma query recursiva para rastrear a árvore de merges de uma entidade, e documentar o plano de execução otimizado com EXPLAIN ANALYZE. Publicar no GitHub com README explicando as decisões de indexação.",
+  "como_colocar_no_curriculo": "Modelagem e otimização de dados relacionais em PostgreSQL (pg_trgm, índices GIN/GiST, CTEs recursivas) para persistência de golden records e auditoria de merges em pipelines de entity resolution.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Como você implementaria busca fuzzy de nomes no PostgreSQL sem usar Elasticsearch?",
+    "resposta": "Usaria a extensão pg_trgm para calcular similaridade por trigramas com a função similarity() ou o operador %, combinada com um índice GIN ou GiST sobre a coluna de texto para tornar a busca performática. Para casos mais específicos, complementaria com fuzzystrmatch (soundex, levenshtein) dependendo do tipo de erro esperado no dado."
+   },
+   {
+    "pergunta": "Qual a diferença entre índice GIN e GiST no Postgres e quando usar cada um?",
+    "resposta": "GIN é mais rápido para buscas (leitura) em dados como arrays, full-text search e trigramas, mas mais lento para escrita/atualização. GiST é mais flexível e eficiente para dados geométricos, ranges e quando há muita escrita, com um pequeno custo em performance de leitura. Para pg_trgm com dados majoritariamente estáticos, geralmente prefiro GIN."
+   },
+   {
+    "pergunta": "Como você usaria CTEs recursivas em um cenário de entity resolution?",
+    "resposta": "Usaria para rastrear cadeias de merge de entidades, por exemplo quando um registro A foi mesclado com B, que depois foi mesclado com C. Uma CTE recursiva percorreria a tabela de histórico de merges para reconstruir a árvore completa e encontrar o golden record final a partir de qualquer registro intermediário."
+   },
+   {
+    "pergunta": "Postgres escala para bilhões de registros como Spark?",
+    "resposta": "Não da mesma forma. Postgres é ótimo até dezenas/centenas de milhões de linhas com boa modelagem, particionamento e índices, mas para processamento distribuído em bilhões de registros com joins pesados, Spark é mais adequado. Na prática, uso Postgres para servir os golden records finais e consultas pontuais, e Spark para o processamento pesado de matching."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do PostgreSQL (postgresql.org/docs)",
+   "Documentação da extensão pg_trgm no site oficial do PostgreSQL",
+   "Curso 'The Complete SQL Bootcamp' ou documentação do Postgres Tutorial (postgresqltutorial.com)",
+   "Use The Index, Luke (site sobre otimização de índices em SQL)"
+  ]
+ },
+ {
   "data": "2026-11-12",
   "habilidade": "Kubernetes",
   "pct_vagas": 2,

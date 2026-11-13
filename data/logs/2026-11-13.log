@@ -1,0 +1,83 @@
+===== coleta 2026-11-13 00:35 =====
+INFO serpapi: 109 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 98
+INFO jobs/remotive: 210
+INFO jobs/greenhouse: 1430
+INFO jobs/lever: 302
+INFO jobs/ashby: 47
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'entity resolution engineer contractor': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 2
+INFO jobs/gupy: 186
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 148
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 217
+INFO jobs/social_linkedin/ddg: 4 aceitos de 4
+INFO jobs/social_posts: 4
+INFO linkedin_guest: 32 vagas, 25 descrições abertas, 33 consultas no total
+INFO jobs/linkedin_guest: 32
+INFO judge: tokens in=1604 out=517
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2381 out=538
+INFO vagas: {'brutos': 3057, 'pos_palavras_chave': 4, 'aprovados': 3}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 9
+INFO papers/openalex: 175
+INFO judge: tokens in=1570 out=299
+INFO papers: {'brutos': 184, 'pos_palavras_chave': 2, 'aprovados': 1}
+INFO linkedin/ddg: 9 aceitos de 9
+INFO linkedin: 9 candidatos
+INFO judge: tokens in=1083 out=158
+INFO requisitos: tokens in=2093 out=181
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO open_jobs: fechou Bristol Myers Squibb hiring Senior Manager RWE Biostats in ... - LinkedIn
+INFO open_jobs: 121 abertas (4 novas)
+INFO mercado: 181 vagas no nicho, 160 no mercado amplo
+INFO network/ddg: 8 aceitos de 8
+INFO network: 8 perfis após a consulta
+INFO judge: tokens in=2110 out=1032
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/8)
+INFO network: 77 pessoas (2 novas), 41 empresas (0 novas)
+INFO carreira: tokens in=1443 out=2124
+INFO brasil/inhire 'klavi' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ultragaz' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 214
+INFO brasil/gupy: 371
+INFO brasil/google_jobs_br: 12
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 34 vagas, 34 descrições abertas, 77 consultas no total
+INFO brasil/linkedin_guest_br: 34
+INFO brasil/linkedin_local: 12
+INFO brasil/greenhouse: 1086
+INFO brasil/lever: 153
+INFO brasil/ashby: 110
+INFO brasil: 5049 brutas, 12 candidatas para o juiz
+INFO judge: tokens in=3798 out=1182
+INFO judge: tokens in=1435 out=559
+INFO requisitos: tokens in=7509 out=820
+INFO open_jobs: fechou Analista de Requisitos, Governança e Qualidade de Dados (QA) Sênior
+INFO open_jobs: 39 abertas (4 novas)
+INFO mercado: 68 vagas no nicho, 160 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network: 45 pessoas (0 novas), 56 empresas (3 novas)
+INFO brasil: {'novas': 9, 'abertas': 39, 'arquivadas': 68, 'rede': {'pessoas_novas': 0, 'empresas_novas': 3}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-13.json
+
