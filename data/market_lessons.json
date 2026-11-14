@@ -1,5 +1,52 @@
 [
  {
+  "data": "2026-11-14",
+  "habilidade": "Salesforce",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Salesforce é a plataforma de CRM líder de mercado, com um ecossistema próprio chamado Salesforce Platform, que inclui objetos de dados (Accounts, Contacts, Leads), o módulo de dados mestres Customer 360/MDM e ferramentas de integração como MuleSoft e Data Cloud. Em contextos de MDM, Salesforce costuma ser tanto fonte quanto destino de dados mestres de clientes, exigindo entendimento de seu modelo de objetos, API REST/Bulk e regras de deduplicação nativas (matching rules, duplicate rules).",
+  "por_que_pedem": "Vagas de MDM e Entity Resolution que citam Salesforce geralmente envolvem integrar ou sincronizar entidades resolvidas (clientes, fornecedores) com o CRM da empresa, que é o sistema de registro para vendas e atendimento. Pedem isso para garantir que o engenheiro consiga mapear o resultado do match/merge para os objetos do Salesforce e lidar com as regras de deduplicação e APIs de integração da plataforma, não porque exijam expertise em desenvolvimento Apex ou administração completa do CRM.",
+  "ponte_com_o_que_voce_sabe": "Você já resolve o problema mais difícil do MDM, que é decidir quais registros são a mesma entidade; Salesforce só adiciona uma camada de API e modelo de dados específico para consumir esse resultado. Sua experiência com ingestão via Spark/SQL e exportação para Elasticsearch é diretamente transferível para exportar clusters de entidades resolvidas via Salesforce Bulk API ou MuleSoft, e seu conhecimento de regras determinísticas/probabilísticas facilita entender as Duplicate Rules e Matching Rules nativas do Salesforce, que são uma versão simplificada do que você já faz com Splink.",
+  "minimo_para_ficar_apto": [
+   "Entender o modelo de dados do Salesforce: Objects, Fields, Records, relacionamentos (lookup/master-detail)",
+   "Saber o que são Duplicate Rules e Matching Rules nativas e como elas se comparam a blocking/scoring",
+   "Conhecer a Salesforce REST API e Bulk API para leitura/escrita de registros em lote",
+   "Entender o conceito de Salesforce Data Cloud / Customer 360 e seu papel em MDM",
+   "Saber citar MuleSoft como ferramenta de integração entre sistemas externos e Salesforce"
+  ],
+  "plano_rapido": [
+   "2h: Trilha 'Data Modeling' no Salesforce Trailhead para entender Objects, Fields e Relationships",
+   "2h: Trilha 'Duplicate Management' no Trailhead (Duplicate Rules e Matching Rules)",
+   "2h: Trilha 'Data Cloud Basics' no Trailhead para contextualizar MDM/Customer 360",
+   "1,5h: Documentação oficial da Bulk API 2.0 do Salesforce, focando em upsert em lote",
+   "1h: Visão geral do MuleSoft Anypoint Platform (o que é, para que integra)",
+   "1h: Simular no Trailhead Playground (ambiente gratuito) um upload de registros e aplicar uma Duplicate Rule"
+  ],
+  "mini_projeto": "Crie uma conta gratuita no Salesforce Developer Edition e monte um fluxo simples: exporte um conjunto de clusters de entidades resolvidas pelo Splink (CSV com cluster_id e dados normalizados) e faça upsert desses registros como Accounts/Contacts via Bulk API 2.0 usando um script Python com a biblioteca simple-salesforce. Em seguida, configure uma Duplicate Rule nativa no Salesforce e compare o resultado dela com o seu matching do Splink, documentando as diferenças de abordagem (regras fixas vs. probabilístico).",
+  "como_colocar_no_curriculo": "Conhecimento prático de integração de pipelines de Entity Resolution com Salesforce (Bulk API, Duplicate/Matching Rules) para sincronização de dados mestres de clientes.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Você já trabalhou com Salesforce em produção?",
+    "resposta": "Não trabalhei em produção, mas entendo o modelo de dados do Salesforce, sei usar a Bulk API para integração em lote e conheço as Duplicate/Matching Rules nativas, que se relacionam diretamente com o trabalho de blocking e scoring que faço com Splink."
+   },
+   {
+    "pergunta": "Como você integraria o resultado de um pipeline de entity resolution externo com o Salesforce?",
+    "resposta": "Exportaria os clusters resolvidos para um formato intermediário e usaria a Bulk API 2.0 (ou MuleSoft, se já existir essa infraestrutura) para fazer upsert dos registros mestres como Accounts/Contacts, mapeando o cluster_id para um external ID, evitando duplicação na carga."
+   },
+   {
+    "pergunta": "Qual a diferença entre as Duplicate Rules do Salesforce e uma solução como Splink?",
+    "resposta": "As Duplicate Rules do Salesforce são baseadas em regras determinísticas simples (exact match ou fuzzy match configurável por campo), enquanto o Splink usa matching probabilístico com modelo Fellegi-Sunter, permitindo lidar com erros, variações e pesos calibrados por evidência, o que é mais robusto para bases grandes e ruidosas."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Salesforce Trailhead (trilhas Data Modeling, Duplicate Management, Data Cloud Basics)",
+   "Documentação oficial Salesforce Bulk API 2.0",
+   "Documentação oficial Salesforce REST API",
+   "Documentação oficial MuleSoft Anypoint Platform",
+   "Documentação oficial Salesforce Data Cloud (Customer 360)"
+  ]
+ },
+ {
   "data": "2026-11-13",
   "habilidade": "PostgreSQL",
   "pct_vagas": 2,

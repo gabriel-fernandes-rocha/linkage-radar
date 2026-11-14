@@ -1,0 +1,473 @@
+{
+  "data": "2026-11-14",
+  "gerado_em": "2026-11-14T00:13-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Remote Entity Resolution",
+      "url": "https://us.trabajo.org/job-28662-7706041df65fc32b6f0e6818f50c78d5",
+      "empresa": "NimbleFig",
+      "local": "California",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-10-20",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga remota centralmente focada em design, implementação e avaliação de entity resolution systems e entity graphs em escala.",
+      "resumo": "NimbleFig procura engenheiro para design e implementação de sistemas de entity resolution, ranking e knowledge graphs sobre dados públicos estruturados em tempo real.",
+      "confianca": 0.96,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior ML Scientist: Entity Resolution",
+      "url": "https://us.trabajo.org/job-28652-6b9debec70012b409730c178fd2cbd0e",
+      "empresa": "Cognizant Technology Solutions Corporation",
+      "local": "Phoenix, AZ",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-12",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga explícita de ML Scientist focada em entity resolution, matching, golden records e labeling models em produção.",
+      "resumo": "Cognizant procura ML/AI Data Scientist para construir modelos de matching e inference que resolvam entidades em golden records, com deploy em Vertex AI e monitoramento de model drift.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Vertex AI"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Phoenix"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Vertex AI"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Entity Resolution Associate (R-19562)",
+      "url": "https://tsenta.com/jobs/dun-bradstreet-entity-resolution-associate-r-19562-8ab3c84c-9170-420d-9a7c-42966d36fe83",
+      "empresa": "Dun & Bradstreet",
+      "local": "Vienna, VA",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 10,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Entity Resolution Associate em programa governamental (GSA) com responsabilidade explícita em entity matching accuracy, match logic e SLA performance.",
+      "resumo": "Dun & Bradstreet contrata Entity Resolution Associate como especialista em avaliação de entity matching contra requisitos GSA, identificação de gaps em match logic e performance de resolução.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Vienna"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Entity Resolution",
+      "url": "https://www.dice.com/job-detail/964a3076-d3f4-48d0-9318-51a54ad325b3",
+      "empresa": "Thinking Minds Inc.",
+      "local": "Atlanta, GA",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-05",
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Forward Deployed Engineer com entity resolution como top skill; foco em matching, data enrichment e production development em enterprise.",
+      "resumo": "Thinking Minds busca engenheiro para embed com clientes enterprise, construindo aplicações de inteligência que combinam dados próprios e terceirizados com foco em entity resolution e matching.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "Snowflake",
+          "BigQuery",
+          "Databricks",
+          "LLMs"
+        ],
+        "desejaveis": [
+          "GraphQL",
+          "REST",
+          "Postman",
+          "JWT",
+          "OAuth",
+          "Salesforce",
+          "HubSpot",
+          "Clearbit"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 27,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Snowflake",
+          "BigQuery",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL",
+          "LLMs"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Business Analyst (Reach & On Premise) at Red Bull - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/business-analyst-reach-on-premise-at-red-bull-4489487964",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando vaga concreta em Red Bull com responsabilidades de entity matching, deduplication e address/geospatial data cleaning em SQL e Python.",
+      "resumo": "Red Bull contrata Business Analyst para desenvolver abordagens robustas de entity matching e deduplicação, limpeza de dados de outlets, endereços e dados geoespaciais.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Python"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.41,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Identity solutions & Audience Specialist at DataBeat — Hyderabad ...",
+      "url": "https://in.linkedin.com/jobs/view/identity-solutions-audience-specialist-at-databeat-4480510360",
+      "texto": "Design identity resolution approaches for both anonymous and registered users across web, app and CTV. Work with identifiers such as hashed email, device IDs, MAIDs, ECID, UID2, publisher/account IDs and CTV IDs. Support cross-device and cross-brand identity resolution and creation of unified audience profiles.",
+      "data": "Nov 7, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Descreve design e implementação de identity resolution para múltiplos canais e tipos de identificadores, com foco em cross-device matching e unified audience profiles.",
+      "resumo": "Especialista que projeta abordagens de identity resolution para usuários anônimos e registrados, trabalhando com múltiplos identificadores e criação de perfis de audiência unificados.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "India"
+        ],
+        "cidades": [
+          "Hyderabad"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em India, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "CRM & CDP Solution Analyst at Air Canada Vacations — Greater ...",
+      "url": "https://ca.linkedin.com/jobs/view/crm-cdp-solution-analyst-at-air-canada-vacations-4489051854",
+      "texto": "Customer 360 concepts: identity resolution, deduplication, unified profiles CRM-CDP integration literacy (data flows and dependencies) Data ingestion concepts: real‑time and batch Journey and campaign analytics requirements (ROI, conversion, response rates) Leadership & Interpersonal Skills Strong verbal and written communication skills",
+      "data": "Nov 12, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Foca em identity resolution, deduplication e unified profiles (Customer 360/CDP), competências centrais em entity resolution e MDM.",
+      "resumo": "Analista de solução CRM e CDP que trabalha com identity resolution, deduplicação e criação de perfis unificados em iniciativas de Customer 360.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Salesforce Marketing and Data Cloud Consultant",
+      "url": "https://ca.linkedin.com/jobs/view/salesforce-marketing-and-data-cloud-consultant-at-accenture-4481190658",
+      "texto": "Build and validate Data 360 components including data ingestions, mapping, data modelling, identity resolution rules, segmentation, and activations Collaborate with client stakeholders and internal delivery teams throughout various phases of the project Contribute to technical documentation, and other delivery artifacts throughout the engagement.",
+      "data": "Oct 22, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Menciona identity resolution rules como componente central do Data 360, junto com data ingestion, mapping e modelling, alinhado com MDM e CDP.",
+      "resumo": "Consultor que constrói componentes de Data 360 incluindo ingestão, mapping, data modelling e regras de identity resolution em projetos Salesforce.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [
+          "Salesforce Data Cloud"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.16,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Salesforce Data Cloud"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 128,
+  "vagas_arquivadas_total": 190,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": "Salesforce",
+  "brasil": {
+    "novas": 7,
+    "abertas": 41,
+    "arquivadas": 70,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 44,
+    "semana": 7,
+    "tema": "Segmentação por regras e estatística",
+    "tipo": "conceito",
+    "titulo": "Modelos estatísticos de segmentação: a intuição",
+    "modulo": "Semana 7: Segmentação por regras e estatística",
+    "versao": 2,
+    "objetivo": "Entender por que abordagens estatísticas de segmentação superam regras rígidas ao modelar a tarefa como classificação sequencial baseada em probabilidades aprendidas de dados de treino.",
+    "conceito": "Sistemas baseados em regras tomam decisões binárias: uma condição dispara ou não dispara. Isso funciona bem para variações já previstas, mas quebra diante de qualquer padrão novo que não esteja explicitamente coberto no conjunto de regras, exigindo manutenção constante (Christen, 2012, seç. 3.7, p.60). A alternativa estatística abandona decisões rígidas e passa a estimar, para cada token de uma sequência de entrada, a probabilidade de ele pertencer a cada campo de saída possível, aprendendo essas probabilidades a partir de dados de treino segmentados.\n\nO ponto central da intuição é que segmentar um endereço ou nome não é uma classificação independente token a token: a classificação do token atual depende da classificação do(s) token(s) anterior(es) (e em alguns modelos também dos seguintes). Isso transforma o problema em classificação sequencial com dependências, não em classificação pontual isolada (Christen, 2012, p.59).\n\nUm detalhe crucial do design: tanto regras quanto modelos estatísticos treinam sobre a sequência de tags (categorias genéricas de token, como NU para número, WN para nome de rua), e não sobre os tokens originais (Christen, 2012, p.59). Isso reduz drasticamente o espaço de estados a modelar, já que o número de tags possíveis é muito menor que o número de valores distintos de texto, tornando o modelo mais genérico, robusto e computacionalmente barato.",
+    "como_funciona": "1. Tokenize o campo de entrada e atribua a cada token uma tag genérica (NU, WN, WT, LN, TR, PC etc., conforme tabela de tags do livro).\n2. Em vez de decidir o campo de saída por condição lógica fixa, estime P(campo_saída | tag_atual, campo_anterior) a partir de frequências observadas em dados de treino segmentados.\n3. Trate a atribuição de campos como uma cadeia: a probabilidade de uma sequência completa de campos é o produto das probabilidades de transição entre campos consecutivos e das probabilidades de emissão de cada tag dado o campo.\n4. Escolha, entre todas as sequências possíveis de campos, aquela de maior probabilidade conjunta (isso é o que HMM e CRF fazem de formas diferentes, mas a ideia de fundo, maximizar verossimilhança sobre a sequência, é a mesma).\n5. Treine os parâmetros contando frequências relativas nos dados rotulados (máxima verossimilhança), sem precisar escrever regra alguma manualmente.",
+    "exemplo": "Considere dados de treino com 100 endereços segmentados. Em 93 deles, o campo 'Wayfare type' é seguido imediatamente por 'Locality name'; em 4, é seguido por 'Territory'; em 3, por 'Postcode'. A probabilidade de transição estimada é P(Locality name | Wayfare type) = 93/100 = 0,93, P(Territory | Wayfare type) = 4/100 = 0,04 e P(Postcode | Wayfare type) = 3/100 = 0,03 (Christen, 2012, p.61). Nenhuma regra foi escrita à mão: essas probabilidades emergem diretamente da contagem de frequências nos dados rotulados, e um novo padrão de endereço nunca visto ainda recebe uma probabilidade não nula, diferente de um sistema de regras que simplesmente falharia.",
+    "na_pratica": "Em pipelines reais, essa intuição aparece antes de rodar qualquer HMM ou CRF: você precisa de uma etapa de tagging (tokenizar e atribuir tags genéricas) e depois contar transições. Em Python isso pode ser prototipado com pandas simplesmente contando pares consecutivos de tags/campos num dataset rotulado antes de alimentar uma lib de CRF como sklearn-crfsuite ou treinar libpostal:\nimport pandas as pd\ntransitions = df.groupby(['campo_atual','campo_seguinte']).size()\nprobs = transitions / transitions.groupby(level=0).sum()\nIsso já dá a matriz de transição que viraria insumo de um HMM na próxima aula.",
+    "armadilha": "Treinar o modelo estatístico sobre os tokens brutos (texto literal) em vez das tags genéricas infla o espaço de estados, torna o modelo frágil a variações de grafia e destrói a generalização que é justamente a vantagem sobre regras; sempre tagueie antes de treinar.",
+    "desafio": "Você tem um dataset de treino com 200 registros de nomes segmentados. Em 150 deles, o campo 'Given name' é seguido por 'Surname'; em 30, é seguido por 'Middle name'; em 20, por 'Suffix' (como Jr., Sobrinho). Calcule as três probabilidades de transição a partir de 'Given name' e explique, em uma frase, por que um sistema baseado em regras teria dificuldade em capturar essa distribuição de forma flexível.",
+    "gabarito": "P(Surname|Given name) = 150/200 = 0,75. P(Middle name|Given name) = 30/200 = 0,15. P(Suffix|Given name) = 20/200 = 0,10. As três somam 1,0, como esperado para uma distribuição de probabilidade condicional completa. Um sistema de regras teria dificuldade porque precisaria de uma regra explícita e hierárquica para cada um dos três casos (e suas combinações com outros campos), enquanto o modelo estatístico captura naturalmente a incerteza e a proporção relativa de cada caminho sem decisões binárias.",
+    "fontes": [
+      "Christen (2012), seç. 3.7, p. 59-61",
+      "Churches, Christen, Lim & Zhu (2002)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        58,
+        66
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3084,
+      "pos_palavras_chave": 5,
+      "aprovados": 5
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 189,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 8,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

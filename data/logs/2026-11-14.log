@@ -1,0 +1,84 @@
+===== coleta 2026-11-14 00:23 =====
+INFO serpapi: 101 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 97
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1413
+INFO jobs/lever: 302
+INFO jobs/ashby: 47
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'master data management engineer remote Brazil': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 10
+INFO jobs/gupy: 178
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 147
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 226
+INFO jobs/social_linkedin/ddg: 1 aceitos de 2
+INFO jobs/social_linkedin/google: 0 aceitos de 10
+INFO jobs/social_posts: 1
+INFO linkedin_guest: 42 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 42
+INFO judge: tokens in=1991 out=627
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=4126 out=640
+INFO requisitos: tokens in=2103 out=158
+INFO vagas: {'brutos': 3084, 'pos_palavras_chave': 5, 'aprovados': 5}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 14
+INFO papers/openalex: 175
+INFO papers: {'brutos': 189, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 8 aceitos de 8
+INFO linkedin: 8 candidatos
+INFO judge: tokens in=1606 out=640
+INFO requisitos: tokens in=2493 out=450
+INFO linkedin: {'brutos': 8, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: fechou Harnham hiring Data Scientis/Data Analyst in Windsor ... - LinkedIn
+INFO open_jobs: 128 abertas (8 novas)
+INFO mercado: 189 vagas no nicho, 160 no mercado amplo
+INFO network/ddg: 9 aceitos de 9
+INFO network: 9 perfis após a consulta
+INFO judge: tokens in=2278 out=1002
+INFO judge: tokens in=1158 out=156
+INFO network: 77 pessoas (0 novas), 44 empresas (3 novas)
+INFO carreira: tokens in=1451 out=2043
+INFO brasil/inhire 'klavi' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ultragaz' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 210
+INFO brasil/gupy: 356
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 22 vagas, 22 descrições abertas, 60 consultas no total
+INFO brasil/linkedin_guest_br: 22
+INFO brasil/linkedin_local: 14
+INFO brasil/greenhouse: 1079
+INFO brasil/lever: 150
+INFO brasil/ashby: 113
+INFO brasil/inhire: novas empresas descobertas: atlantico, ninecon
+INFO brasil: 5038 brutas, 8 candidatas para o juiz
+INFO judge: tokens in=2588 out=1301
+INFO requisitos: tokens in=3634 out=356
+INFO open_jobs: 41 abertas (2 novas)
+INFO mercado: 70 vagas no nicho, 160 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 46 pessoas (0 novas), 57 empresas (1 novas)
+INFO brasil: {'novas': 7, 'abertas': 41, 'arquivadas': 70, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-14.json
+

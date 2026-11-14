@@ -273,6 +273,11 @@
   "nivel": "tem",
   "nome": "blocking"
  },
+ "bods": {
+  "motivo": "sem evidência de SAP BusinessObjects Data Services",
+  "nivel": "nao",
+  "nome": "BODS"
+ },
  "braze": {
   "motivo": "sem relação com marketing/CRM",
   "nivel": "nao",
@@ -337,6 +342,11 @@
   "motivo": "Realiza limpeza e normalização nos pipelines de dados",
   "nivel": "tem",
   "nome": "cleansing"
+ },
+ "clearbit": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Clearbit"
  },
  "clinical ontologies": {
   "motivo": "trabalha com registros não ontologias clínicas",
@@ -1068,6 +1078,11 @@
   "nivel": "parcial",
   "nome": "GraphFrames"
  },
+ "graphql": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "GraphQL"
+ },
  "graphrag": {
   "motivo": "sem evidência de RAG ou LLM com grafos",
   "nivel": "nao",
@@ -1127,6 +1142,11 @@
   "motivo": "Entende deduplicação, mas householding não mencionado",
   "nivel": "parcial",
   "nome": "householding"
+ },
+ "hubspot": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "HubSpot"
  },
  "hugging face": {
   "motivo": "sem evidência de uso de Hugging Face",
@@ -1287,6 +1307,11 @@
   "motivo": "listado nas competências técnicas",
   "nivel": "tem",
   "nome": "Jupyter"
+ },
+ "jwt": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "JWT"
  },
  "kafka": {
   "motivo": "sem evidência de streaming com Kafka",
@@ -1608,6 +1633,11 @@
   "nivel": "parcial",
   "nome": "NumPy"
  },
+ "oauth": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "OAuth"
+ },
  "obiee": {
   "motivo": "sem evidência de uso de OBIEE",
   "nivel": "nao",
@@ -1712,6 +1742,11 @@
   "motivo": "domina SQL, fácil adaptação a Postgres",
   "nivel": "parcial",
   "nome": "PostgreSQL"
+ },
+ "postman": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Postman"
  },
  "power bi": {
   "motivo": "sem evidência de uso de Power BI",
@@ -1993,6 +2028,11 @@
   "nivel": "nao",
   "nome": "SAP Migration Cockpit"
  },
+ "sap mm": {
+  "motivo": "sem evidência de módulo SAP MM",
+  "nivel": "nao",
+  "nome": "SAP MM"
+ },
  "sap s/4hana": {
   "motivo": "não citado",
   "nivel": "nao",
@@ -2228,6 +2268,11 @@
   "nivel": "parcial",
   "nome": "SVN"
  },
+ "syniti": {
+  "motivo": "sem evidência de ferramenta Syniti",
+  "nivel": "nao",
+  "nome": "Syniti"
+ },
  "tableau": {
   "motivo": "sem evidência de BI visual",
   "nivel": "nao",
@@ -2322,6 +2367,11 @@
   "motivo": "Não há menção a bancos vetoriais",
   "nivel": "nao",
   "nome": "vector databases"
+ },
+ "vertex ai": {
+  "motivo": "sem evidência, só scikit-learn/Jupyter local",
+  "nivel": "nao",
+  "nome": "Vertex AI"
  },
  "web research automation": {
   "motivo": "Automação de pesquisa web não mencionada.",
