@@ -1,0 +1,404 @@
+{
+  "data": "2026-11-15",
+  "gerado_em": "2026-11-14T23:38-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Head of Ontology - Platform (m/f/d)",
+      "url": "https://br.linkedin.com/jobs/view/head-of-ontology-platform-m-f-d-at-bain-company-4482151173",
+      "texto": "The problems span entity resolution at scale, knowledge graph and taxonomy design, retrieval and embedding architecture, and the data pipelines that keep all of it fresh and correct — hard engineering problems where a wrong call quietly propagates into every downstream model and agent.",
+      "data": "Nov 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga clara de Head of Ontology com entity resolution at scale como problema central, knowledge graphs, pipelines de dados e QA.",
+      "resumo": "Vaga de Head of Ontology focada em entity resolution em escala, design de knowledge graph e taxonomia, com ênfase em pipelines de dados e qualidade.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "Entity resolution",
+          "Knowledge graph",
+          "Embeddings"
+        ]
+      },
+      "senioridade": "gerencia",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.13,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 35,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Patent Data Specialist (Enrichment Quality & AI Readiness)",
+      "url": "https://uk.linkedin.com/jobs/view/patent-data-specialist-enrichment-quality-ai-readiness-at-relx-4487600060",
+      "texto": "It would be great if you also have. Experience with company ownership data, corporate hierarchies, or entity resolution Experience with non-English patent data, for example Chinese, Japanese or Korean Familiarity with data modelling, taxonomies, or classification systems Experience with data quality tooling or automated testing of data",
+      "data": "Nov 7, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Vaga explícita de especialista em qualidade de dados com experiência em entity resolution e dados corporativos, diretamente alinhada ao tema.",
+      "resumo": "Vaga de Patent Data Specialist com requisito claro de experiência em entity resolution, dados de propriedade corporativa e qualidade de dados.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "Entity resolution",
+          "Data modelling",
+          "Taxonomies",
+          "Classification systems",
+          "Data quality tooling"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 60,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Applied Scientist - Knowledge Graphs & AI",
+      "url": "https://in.linkedin.com/jobs/view/senior-applied-scientist-knowledge-graphs-ai-at-fde-times-4486644065",
+      "texto": "Knowledge Graph Design & Construction: Design and implement entity resolution and ontology population within established graph schemas. Write and optimize queries for graph traversal and feature extraction.",
+      "data": "Nov 7, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Applied Scientist com design e implementação de entity resolution em schemas de knowledge graph como responsabilidade central.",
+      "resumo": "Vaga de Senior Applied Scientist em Knowledge Graphs que inclui design e implementação de entity resolution dentro de esquemas de grafo estabelecidos.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity resolution",
+          "Knowledge graph",
+          "Graph database"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.24,
+      "compat_detalhe": {
+        "habilidades": 33,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Knowledge graph",
+          "Graph database"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Principal Embedded Engineer, AI Solutions - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/principal-embedded-engineer-ai-solutions-at-autodesk-4487680951",
+      "texto": "Retrieval and data readiness. You've built retrieval systems end-to-end (chunking, embeddings, hybrid search, reranking) over a vector store and can assess and fix messy enterprise data - lineage, permissions, entity resolution, schema mapping Knowledge architecture for AI.",
+      "data": "Nov 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Principal Engineer que menciona construção end-to-end de sistemas de retrieval incluindo entity resolution em dados empresariais desordenados.",
+      "resumo": "Vaga de Principal Embedded Engineer que requer experiência em sistemas de retrieval end-to-end com entity resolution, lineage, permissions e schema mapping em dados empresariais.",
+      "confianca": 0.87,
+      "requisitos": {
+        "obrigatorios": [
+          "Embeddings",
+          "Vector store",
+          "Entity resolution",
+          "Schema mapping"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.16,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 45,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível staff/principal",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Vector store"
+        ],
+        "parciais": [
+          "Embeddings",
+          "Schema mapping"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Product Manager, Mapping & Content en Nuitée - LinkedIn",
+      "url": "https://es.linkedin.com/jobs/view/senior-product-manager-mapping-content-at-nuit%C3%A9e-4488846301",
+      "texto": "Understand entity resolution and can go deep into data or ML product problems: search, matching, catalogues, identity, recommendations, knowledge graphs, or content quality. Can go deep into data and technical mechanics and turn that into product decisions, without needing to be the person building the algorithm.",
+      "data": "Nov 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post menciona entity resolution como core skill para PM em produtos de matching, search e identity, alinhado ao perfil técnico do leitor.",
+      "resumo": "Post sobre competências de Senior Product Manager em Mapping & Content que deve entender entity resolution, matching, identity e knowledge graphs em profundidade técnica.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "Entity Resolution",
+          "Knowledge Graphs"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "AI Engineering Lead, Evals and Systems Integration (m/f/d)",
+      "url": "https://br.linkedin.com/jobs/view/ai-engineering-lead-evals-and-systems-integration-m-f-d-at-bain-company-4481177846",
+      "texto": "Familiarity with knowledge graph and ontology evaluation, understanding what entity resolution correctness, taxonomy consistency, and semantic layer quality mean in practice and how to measure them programmatically",
+      "data": "Nov 11, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de AI Engineering Lead que exige compreensão de entity resolution correctness, consistência de taxonomia e avaliação programática de qualidade semântica.",
+      "resumo": "Vaga de AI Engineering Lead em Evals com requisito de familiaridade em avaliação de entity resolution correctness, consistência de taxonomia e qualidade de semantic layer.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": [
+          "Entity Resolution",
+          "Knowledge Graphs",
+          "Ontology"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.31,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Assessing proxy indicators of record linkage bias in the establishment of a cohort from a Portuguese community-based screening network",
+      "url": "https://doi.org/10.3389/fpubh.2026.1919823",
+      "autores": "I. Viseu et al.",
+      "data": "2026-11-13",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre record linkage em dados de saúde pública com foco em avaliação de viés, erros de linkage e qualidade de identificadores pseudonymizados em coorte epidemiológica.",
+      "resumo": "Estudo que analisa viés de linkage em programa de rastreamento comunitário português (HIV, hepatite, sífilis) usando identificadores pseudonymizados baseados em dados demográficos, avaliando erros de codificação e entropia dos componentes de identificação para garantir validade de pesquisa longitudinal.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "What factors affect the match rates of police and emergency department data in Sweden’s road traffic crash database Strada?",
+      "url": "https://doi.org/10.1186/s12544-026-00870-w",
+      "autores": "Åsa Forsman et al.",
+      "data": "2026-11-13",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre data linkage entre datasets de polícia e emergência hospitalar em banco de dados de acidentes de trânsito, investigando fatores que afetam match rates e qualidade do matching.",
+      "resumo": "Estudo que examina fatores associados às taxas de matching entre relatórios policiais e dados de departamentos de emergência no registro nacional sueco Strada, analisando como características de crash (severidade, sexo, idade, tipo de usuário) afetam o sucesso do linkage.",
+      "confianca": 0.92
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Your AI Agent Doesn't Have a Prompt Problem. It Has a ... - LinkedIn 日本",
+      "url": "https://jp.linkedin.com/pulse/your-ai-agent-doesnt-have-prompt-problem-has-business-antonio-ortega-ywvyf?tl=ja",
+      "data": "Nov 8, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post técnico anunciando prototype hands-on que demonstra entity resolution em cenário real (SAP/CRM), com foco em dados governados e confiabilidade.",
+      "resumo": "Post técnico sobre prototipagem de AI agent que integra entity resolution, semântica de negócio governada e autorização baseada em políticas em dados SAP/CRM.",
+      "confianca": 0.8
+    }
+  ],
+  "vagas_abertas_total": 131,
+  "vagas_arquivadas_total": 196,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Salesforce Data Cloud",
+  "brasil": {
+    "novas": 5,
+    "abertas": 40,
+    "arquivadas": 70,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 45,
+    "semana": 7,
+    "tema": "Segmentação por regras e estatística",
+    "tipo": "conceito",
+    "titulo": "Hidden Markov Models para nomes e endereços",
+    "modulo": "Semana 7: Segmentação por regras e estatística",
+    "versao": 2,
+    "objetivo": "Entender como um Hidden Markov Model segmenta sequências de tokens de nomes e endereços em campos de saída, usando o algoritmo de Viterbi para encontrar o caminho de estados mais provável.",
+    "conceito": "Um HMM trata a segmentação como um processo probabilístico sequencial. Existe um conjunto de estados ocultos (os campos de saída, como número de via, nome de via, localidade) e um conjunto de símbolos observáveis (as tags atribuídas a cada token, como NU, WN, WT). O modelo não observa diretamente os estados: ele observa apenas a sequência de tags e precisa inferir a sequência de estados mais provável que a gerou. Isso é diferente das abordagens de regras vistas nas aulas 43 e 44, que são determinísticas (a regra dispara ou não); o HMM é probabilístico e aprende as probabilidades a partir de dados de treino.\n\nDois conjuntos de probabilidades definem o modelo: a matriz de transição, que dá a probabilidade de ir de um estado para outro (por exemplo, de Wayfare type para Locality name), e a matriz de emissão (ou saída), que dá a probabilidade de um estado emitir uma determinada tag. Christen (2012, seç. 3.7.1, p. 60-61) mostra que a classificação de um token no HMM depende apenas do token anterior (propriedade de Markov de primeira ordem), diferente dos CRFs, que também olham o estado seguinte.\n\nO treinamento ajusta essas probabilidades contando frequências relativas em sequências de treino já rotuladas (tag, campo). Dado um HMM treinado, o Viterbi encontra, por programação dinâmica, o caminho de estados com maior probabilidade conjunta para gerar uma sequência de tags observada, resolvendo a ambiguidade de segmentação de forma ótima e eficiente (Christen, 2012, p. 61; Churches et al., 2002).",
+    "como_funciona": "1. Defina os estados ocultos = campos de saída desejados (ex.: Wayfare number, Wayfare name, Wayfare type, Locality name, Territory, Postcode) mais Start e End.\n2. Defina os símbolos observáveis = tags de tokens (NU, WN, WT, LN, TR, PC, N4, UN).\n3. Treine com sequências de (tag, campo) rotuladas manualmente: conte P(transição) = frequência de ir do estado i para j / total de ocorrências do estado i; conte P(emissão) = frequência da tag k ser emitida no estado i / total de emissões do estado i.\n4. Para uma nova sequência de tags, aplique Viterbi: para cada posição da sequência e cada estado, calcule a probabilidade do melhor caminho até ali, combinando probabilidade do caminho anterior, transição e emissão; guarde o estado predecessor.\n5. No final da sequência, faça backtracking a partir do estado com maior probabilidade acumulada até End, recuperando a sequência de estados.\n6. Atribua cada token ao campo de saída correspondente ao estado encontrado nessa posição.",
+    "exemplo": "Usando a tabela de transição e emissão do HMM de endereços de Christen (2012, Fig. 3.7, p. 61): sequência de tags de entrada é NU WN WT LN PC TR, correspondente a '32 Garden Place Brisbane 7014 Queensland'.\n\nO Viterbi percorre token a token. No token 1 (NU), o estado mais provável vindo de Start é Wayfare number (P=0.85 de transição Start→Wayfare number, vezes 0.9 de emissão NU|Wayfare number). No token 2 (WN), a melhor transição é Wayfare number→Wayfare name (0.97) com emissão WN|Wayfare name (0.5). No token 3 (WT), Wayfare name→Wayfare type (0.9) com emissão WT|Wayfare type (0.92). No token 4 (LN), Wayfare type→Locality name (0.93) com emissão LN|Locality name (0.8). No token 5 (PC), Locality name→Postcode (0.45) com emissão PC|Postcode (0.8). No token 6 (TR), Postcode→Territory (0.1, única opção não nula) com emissão TR|Territory (0.93), e depois Territory→End (0.15).\n\nO caminho de maior probabilidade acumulada é: Start → Wayfare number → Wayfare name → Wayfare type → Locality name → Postcode → Territory → End. Resultado: 32=número, Garden=nome de via, Place=tipo de via, Brisbane=localidade, 7014=CEP, Queensland=território. Note que a ordem espacial (CEP antes do território) foi corrigida pelo modelo, mesmo não sendo a ordem 'natural' do endereço.",
+    "na_pratica": "Em pipelines de padronização de endereços, HMMs treinados em dados regionais (ex.: Correios no Brasil) servem de pré-processador antes do matching, convertendo texto livre em campos estruturados (logradouro, bairro, CEP) que alimentam blocking e comparação no Splink ou Elasticsearch. Hoje a abordagem prática mais comum é usar libpostal (parsing baseado em CRF) em vez de implementar um HMM do zero, mas entender Viterbi ajuda a diagnosticar erros de segmentação:\npython\nfrom hmmlearn import hmm\nimport numpy as np\nmodel = hmm.CategoricalHMM(n_components=6, n_iter=100)\nmodel.fit(X_tags_treino)\nestados = model.predict(X_tags_novo)",
+    "armadilha": "Treinar o HMM com poucos exemplos de endereços atípicos (ex.: sem CEP, ou com abreviações regionais) faz o Viterbi forçar uma segmentação plausível, mas errada, porque o modelo sempre escolhe o caminho mais provável mesmo quando nenhum caminho é realmente bom; valide a saída com métricas de precisão por campo, não apenas confiança do modelo.",
+    "desafio": "Dada a matriz de transição da Fig. 3.7 (Christen, 2012, p. 61), calcule manualmente: se um endereço tiver a sequência de tags WT LN TR (Wayfare type, Locality name, Territory), qual é mais provável como estado final, assumindo que o estado anterior a WT já foi fixado em Wayfare type? Compare a probabilidade do caminho Wayfare type→Locality name→Territory→End versus Wayfare type→Territory→... (usando os valores 0.93, 0.04, 0.03 de Wayfare type, e 0.35, 0.45, 0.17 de Locality name, e 0.85, 0.15 de Territory).",
+    "gabarito": "Caminho A: Wayfare type→Locality name (0.93) × Locality name→Territory (0.45) × Territory→End (0.15) = 0.93×0.45×0.15 = 0.062775.\nCaminho B: Wayfare type→Territory (0.04) direto, pulando Locality name, × Territory→End (0.15) = 0.04×0.15 = 0.006. Mas isso não gera a tag LN observada, então é inválido para essa sequência; teria que emitir LN em Territory, o que tem probabilidade de emissão baixa (0.01), tornando esse caminho ainda menos provável (0.04×0.01×0.15≈0.00006). Logo o caminho A (passar por Locality name) é muito mais provável e é o escolhido pelo Viterbi, confirmando que a sequência de tags WT LN TR corresponde aos estados Wayfare type, Locality name, Territory.",
+    "fontes": [
+      "Christen (2012), seç. 3.7 e 3.7.1, p. 58-63",
+      "Churches, Christen, Lim & Zhu (2002), BMC Medical Informatics and Decision Making, 2(9)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        58,
+        66
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3085,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 189,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 11,
+      "pos_palavras_chave": 8,
+      "aprovados": 1
+    }
+  },
+  "saude": "ok"
+}

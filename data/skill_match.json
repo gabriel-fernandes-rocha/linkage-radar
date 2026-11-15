@@ -333,6 +333,11 @@
   "nivel": "nao",
   "nome": "CI/CD"
  },
+ "classification systems": {
+  "motivo": "classificação de matches via scoring, próximo de ML",
+  "nivel": "parcial",
+  "nome": "Classification systems"
+ },
  "claude": {
   "motivo": "sem menção a LLMs/Claude",
   "nivel": "nao",
@@ -568,6 +573,11 @@
   "nivel": "parcial",
   "nome": "Data modeling"
  },
+ "data modelling": {
+  "motivo": "modela dados em pipelines, não design formal de esquemas",
+  "nivel": "parcial",
+  "nome": "Data modelling"
+ },
  "data normalization": {
   "motivo": "normalização faz parte explícita do pipeline",
   "nivel": "tem",
@@ -607,6 +617,11 @@
   "motivo": "faz validação e garantia de qualidade nos pipelines",
   "nivel": "parcial",
   "nome": "data quality monitoring"
+ },
+ "data quality tooling": {
+  "motivo": "garantia de qualidade de dados é parte do pipeline",
+  "nivel": "tem",
+  "nome": "Data quality tooling"
  },
  "data reconciliation": {
   "motivo": "deduplicação e matching são formas de reconciliação de dados",
@@ -2053,6 +2068,11 @@
   "nivel": "nao",
   "nome": "Scala"
  },
+ "schema mapping": {
+  "motivo": "integra fontes heterogêneas sem chave única, próximo",
+  "nivel": "parcial",
+  "nome": "Schema mapping"
+ },
  "scikit-learn": {
   "motivo": "listado explicitamente como conhecimento usado",
   "nivel": "tem",
@@ -2367,6 +2387,11 @@
   "motivo": "Não há menção a bancos vetoriais",
   "nivel": "nao",
   "nome": "vector databases"
+ },
+ "vector store": {
+  "motivo": "sem evidência de uso de bancos vetoriais",
+  "nivel": "nao",
+  "nome": "Vector store"
  },
  "vertex ai": {
   "motivo": "sem evidência, só scikit-learn/Jupyter local",

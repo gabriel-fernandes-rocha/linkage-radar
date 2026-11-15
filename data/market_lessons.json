@@ -1,5 +1,51 @@
 [
  {
+  "data": "2026-11-15",
+  "habilidade": "Salesforce Data Cloud",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Salesforce Data Cloud é a plataforma de CDP (Customer Data Platform) da Salesforce, que ingere dados de múltiplas fontes, faz identity resolution (unificação de perfis de clientes), harmonização de dados e ativação em tempo real para marketing, vendas e atendimento. Ela roda sobre uma arquitetura de lakehouse própria (baseada em Hyperforce) com modelo de dados semântico (Data Model Objects, DMOs) e usa SQL/Python (via Data Cloud Query API e Snowflake-like engine) para transformações. O core de 'Identity Resolution' dentro dela é conceitualmente um motor de record linkage configurável via UI, com regras de matching e reconciliação.",
+  "por_que_pedem": "Empresas que usam o ecossistema Salesforce (muito comum em CRM, varejo e setor financeiro) precisam de gente que configure o módulo de Identity Resolution do Data Cloud, que é essencialmente record linkage produtizado dentro de uma plataforma SaaS. Vagas de 'Solution Architect' e 'Developer' pedem isso porque é uma ferramenta proprietária cara e específica do ecossistema Salesforce, não porque exige conhecimento teórico novo de matching.",
+  "ponte_com_o_que_voce_sabe": "Você já domina os conceitos difíceis: blocking, scoring determinístico/probabilístico, normalização, QA de matches, estratégias de merge/survivorship. O Data Cloud só empacota isso numa interface declarativa (point-and-click) com regras de match e reconciliation rules, além de um modelo de dados próprio (DMOs, DLOs). Sua curva de aprendizado é majoritariamente sobre nomenclatura, UI e integração com o ecossistema Salesforce (Flows, DMOs, Data Streams), não sobre teoria de entity resolution.",
+  "minimo_para_ficar_apto": [
+   "Entender a arquitetura do Data Cloud: Data Lake Objects (DLOs), Data Model Objects (DMOs), Calculated Insights, Data Streams",
+   "Saber configurar Identity Resolution: match rules, matching methods (exact, fuzzy), reconciliation rules e ranking de sobrevivência de dados",
+   "Conhecer o fluxo de ingestão de dados (conectores, Data Streams) e ativação (Activation Target, Segments)",
+   "Noções básicas de SOQL e do modelo de objetos padrão do Salesforce (Account, Contact, Lead)",
+   "Familiaridade com a interface e terminologia oficial para não travar em triagem técnica ou prova de certificação"
+  ],
+  "plano_rapido": [
+   "2h: Trailhead módulo 'Salesforce Data Cloud Basics' (visão geral e arquitetura)",
+   "3h: Trailhead 'Data Cloud Identity Resolution' (conceitos de match/reconciliation, equivalente ao que você já faz no Splink)",
+   "2h: Trailhead 'Data Cloud for Marketers' e 'Data Model Objects' para entender DMOs e DLOs",
+   "2h: Assistir vídeos oficiais Salesforce (Data Cloud Office Hours / Demos) no YouTube para ver a UI em ação",
+   "3h: Montar um trial gratuito (Salesforce Developer Org + Data Cloud trial) e configurar um Identity Resolution ruleset simples com dados fictícios",
+   "2h: Revisar documentação oficial 'Data Cloud Query Guide' para entender a sintaxe de SQL dentro da plataforma"
+  ],
+  "mini_projeto": "Crie uma conta de desenvolvedor Salesforce (gratuita) com trial de Data Cloud, importe um CSV fictício de clientes com duplicatas propositais (nomes variantes, emails similares), configure um Identity Resolution ruleset (exact + fuzzy match) e documente num PDF/README comparando as decisões de match com o que você faria no Splink (blocking, scoring, reconciliation), explicando as similaridades conceituais. Isso mostra que você entende o motor por trás da ferramenta, não só clica na UI.",
+  "como_colocar_no_curriculo": "Conhecimento prático de Salesforce Data Cloud (Identity Resolution, DMOs/DLOs) aplicando experiência sólida em record linkage e entity resolution para configuração de regras de matching e reconciliação de dados de clientes.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é Identity Resolution no Salesforce Data Cloud e como ela se relaciona com record linkage tradicional?",
+    "resposta": "É o módulo que unifica perfis de clientes vindos de múltiplas fontes usando match rules (exact e fuzzy) e reconciliation rules para decidir qual valor sobrevive em caso de conflito. Conceitualmente é o mesmo pipeline de blocking, scoring e merge/survivorship que uso em produção com Splink, só que configurado via UI declarativa em vez de código."
+   },
+   {
+    "pergunta": "Qual a diferença entre DLO e DMO no Data Cloud?",
+    "resposta": "DLO (Data Lake Object) é a representação bruta dos dados ingeridos, próxima do schema original da fonte. DMO (Data Model Object) é o dado mapeado para o modelo semântico do Data Cloud, usado para harmonização, Identity Resolution e ativação."
+   },
+   {
+    "pergunta": "Como você lidaria com dados de saúde/clientes com duplicatas no Data Cloud comparado ao que faz hoje com Splink?",
+    "resposta": "Aplicaria os mesmos princípios: normalização de campos antes do match, blocking keys para reduzir comparações, regras de match combinando exato e fuzzy, e reconciliation rules para survivorship. A diferença é que no Data Cloud isso é configurado via match/reconciliation rulesets na interface, sem necessidade de tunar probabilidades manualmente como no Splink."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Trailhead (trilhas oficiais 'Data Cloud Basics', 'Data Cloud Identity Resolution', 'Data Cloud for Developers')",
+   "Documentação oficial Salesforce Data Cloud (help.salesforce.com, seção Data Cloud)",
+   "Salesforce Data Cloud Query Guide (documentação oficial de SQL/Query API)",
+   "Salesforce Architects YouTube channel (demos e office hours de Data Cloud)"
+  ]
+ },
+ {
   "data": "2026-11-14",
   "habilidade": "Salesforce",
   "pct_vagas": 2,

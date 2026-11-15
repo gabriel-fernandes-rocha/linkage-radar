@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-14",
+ "atualizado_em": "2026-11-15",
  "geral": {
   "vagas_analisadas": 70,
   "ranking": [
@@ -100,6 +100,14 @@
     "voce": "nao"
    },
    {
+    "nome": "modelagem de dados",
+    "vagas": 7,
+    "pct": 10,
+    "obrigatorio": 5,
+    "desejavel": 2,
+    "voce": "parcial"
+   },
+   {
     "nome": "IA",
     "vagas": 7,
     "pct": 10,
@@ -108,10 +116,10 @@
     "voce": "parcial"
    },
    {
-    "nome": "modelagem de dados",
-    "vagas": 7,
-    "pct": 10,
-    "obrigatorio": 5,
+    "nome": "Airflow",
+    "vagas": 6,
+    "pct": 9,
+    "obrigatorio": 4,
     "desejavel": 2,
     "voce": "parcial"
    },
@@ -122,14 +130,6 @@
     "obrigatorio": 4,
     "desejavel": 2,
     "voce": "nao"
-   },
-   {
-    "nome": "Airflow",
-    "vagas": 6,
-    "pct": 9,
-    "obrigatorio": 4,
-    "desejavel": 2,
-    "voce": "parcial"
    },
    {
     "nome": "Git",
@@ -188,20 +188,20 @@
     "voce": "nao"
    },
    {
-    "nome": "RAG",
-    "vagas": 4,
-    "pct": 6,
-    "obrigatorio": 4,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "Data Governance",
     "vagas": 4,
     "pct": 6,
     "obrigatorio": 4,
     "desejavel": 0,
     "voce": "parcial"
+   },
+   {
+    "nome": "RAG",
+    "vagas": 4,
+    "pct": 6,
+    "obrigatorio": 4,
+    "desejavel": 0,
+    "voce": "nao"
    },
    {
     "nome": "MarTech",
@@ -268,19 +268,19 @@
     "voce": "nao"
    },
    {
-    "nome": "Retrieval",
-    "vagas": 3,
-    "pct": 4,
-    "obrigatorio": 3,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "Amazon Neptune",
     "vagas": 3,
     "pct": 4,
     "obrigatorio": 2,
     "desejavel": 1,
+    "voce": "nao"
+   },
+   {
+    "nome": "Retrieval",
+    "vagas": 3,
+    "pct": 4,
+    "obrigatorio": 3,
+    "desejavel": 0,
     "voce": "nao"
    },
    {
@@ -372,7 +372,7 @@
     "voce": "nao"
    },
    {
-    "nome": "matching",
+    "nome": "Golden Record",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -380,7 +380,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Golden Record",
+    "nome": "matching",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -404,14 +404,6 @@
     "voce": "parcial"
    },
    {
-    "nome": "Entity Matching",
-    "vagas": 2,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "graph databases",
     "vagas": 2,
     "pct": 3,
@@ -420,12 +412,12 @@
     "voce": "parcial"
    },
    {
-    "nome": "Braze",
+    "nome": "Entity Matching",
     "vagas": 2,
     "pct": 3,
-    "obrigatorio": 1,
-    "desejavel": 1,
-    "voce": "nao"
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "tem"
    },
    {
     "nome": "S3",
@@ -436,7 +428,15 @@
     "voce": "nao"
    },
    {
-    "nome": "Cypher",
+    "nome": "Braze",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 1,
+    "desejavel": 1,
+    "voce": "nao"
+   },
+   {
+    "nome": "Neo4j",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -444,7 +444,7 @@
     "voce": "nao"
    },
    {
-    "nome": "Neo4j",
+    "nome": "Cypher",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -468,14 +468,6 @@
     "voce": "nao"
    },
    {
-    "nome": "mock loads",
-    "vagas": 2,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "cutover",
     "vagas": 2,
     "pct": 3,
@@ -484,7 +476,7 @@
     "voce": "nao"
    },
    {
-    "nome": "Excel",
+    "nome": "mock loads",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -500,6 +492,14 @@
     "voce": "nao"
    },
    {
+    "nome": "SAP Migration Cockpit",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 0,
+    "desejavel": 2,
+    "voce": "nao"
+   },
+   {
     "nome": "SAP MDG",
     "vagas": 2,
     "pct": 3,
@@ -508,11 +508,11 @@
     "voce": "nao"
    },
    {
-    "nome": "SAP Migration Cockpit",
+    "nome": "Excel",
     "vagas": 2,
     "pct": 3,
-    "obrigatorio": 0,
-    "desejavel": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
     "voce": "nao"
    },
    {
@@ -564,14 +564,6 @@
     "voce": "nao"
    },
    {
-    "nome": "Oracle",
-    "vagas": 2,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "parcial"
-   },
-   {
     "nome": "Glue",
     "vagas": 2,
     "pct": 3,
@@ -580,7 +572,15 @@
     "voce": "nao"
    },
    {
-    "nome": "Splink",
+    "nome": "Oracle",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "parcial"
+   },
+   {
+    "nome": "Record linkage",
     "vagas": 1,
     "pct": 1,
     "obrigatorio": 0,
@@ -596,7 +596,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Record linkage",
+    "nome": "Splink",
     "vagas": 1,
     "pct": 1,
     "obrigatorio": 0,
@@ -620,20 +620,20 @@
     "voce": "nao"
    },
    {
-    "nome": "mParticle",
-    "vagas": 1,
-    "pct": 1,
-    "obrigatorio": 0,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "Identity resolution",
     "vagas": 1,
     "pct": 1,
     "obrigatorio": 1,
     "desejavel": 0,
     "voce": "tem"
+   },
+   {
+    "nome": "mParticle",
+    "vagas": 1,
+    "pct": 1,
+    "obrigatorio": 0,
+    "desejavel": 1,
+    "voce": "nao"
    },
    {
     "nome": "Infrastructure as Code",
@@ -773,9 +773,9 @@
     "vagas": 1,
     "pct": 1,
     "exemplos": [
-     "PyTorch",
+     "Deep Learning",
      "TensorFlow",
-     "Deep Learning"
+     "PyTorch"
     ],
     "voce": "parcial"
    },
@@ -890,6 +890,14 @@
     "voce": "nao"
    },
    {
+    "nome": "modelagem de dados",
+    "vagas": 7,
+    "pct": 10,
+    "obrigatorio": 5,
+    "desejavel": 2,
+    "voce": "parcial"
+   },
+   {
     "nome": "IA",
     "vagas": 7,
     "pct": 10,
@@ -898,10 +906,10 @@
     "voce": "parcial"
    },
    {
-    "nome": "modelagem de dados",
-    "vagas": 7,
-    "pct": 10,
-    "obrigatorio": 5,
+    "nome": "Airflow",
+    "vagas": 6,
+    "pct": 9,
+    "obrigatorio": 4,
     "desejavel": 2,
     "voce": "parcial"
    },
@@ -912,14 +920,6 @@
     "obrigatorio": 4,
     "desejavel": 2,
     "voce": "nao"
-   },
-   {
-    "nome": "Airflow",
-    "vagas": 6,
-    "pct": 9,
-    "obrigatorio": 4,
-    "desejavel": 2,
-    "voce": "parcial"
    },
    {
     "nome": "Git",
@@ -978,20 +978,20 @@
     "voce": "nao"
    },
    {
-    "nome": "RAG",
-    "vagas": 4,
-    "pct": 6,
-    "obrigatorio": 4,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "Data Governance",
     "vagas": 4,
     "pct": 6,
     "obrigatorio": 4,
     "desejavel": 0,
     "voce": "parcial"
+   },
+   {
+    "nome": "RAG",
+    "vagas": 4,
+    "pct": 6,
+    "obrigatorio": 4,
+    "desejavel": 0,
+    "voce": "nao"
    },
    {
     "nome": "MarTech",
@@ -1058,19 +1058,19 @@
     "voce": "nao"
    },
    {
-    "nome": "Retrieval",
-    "vagas": 3,
-    "pct": 4,
-    "obrigatorio": 3,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "Amazon Neptune",
     "vagas": 3,
     "pct": 4,
     "obrigatorio": 2,
     "desejavel": 1,
+    "voce": "nao"
+   },
+   {
+    "nome": "Retrieval",
+    "vagas": 3,
+    "pct": 4,
+    "obrigatorio": 3,
+    "desejavel": 0,
     "voce": "nao"
    },
    {
@@ -1162,7 +1162,7 @@
     "voce": "nao"
    },
    {
-    "nome": "matching",
+    "nome": "Golden Record",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -1170,7 +1170,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Golden Record",
+    "nome": "matching",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -1194,14 +1194,6 @@
     "voce": "parcial"
    },
    {
-    "nome": "Entity Matching",
-    "vagas": 2,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "graph databases",
     "vagas": 2,
     "pct": 3,
@@ -1210,12 +1202,12 @@
     "voce": "parcial"
    },
    {
-    "nome": "Braze",
+    "nome": "Entity Matching",
     "vagas": 2,
     "pct": 3,
-    "obrigatorio": 1,
-    "desejavel": 1,
-    "voce": "nao"
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "tem"
    },
    {
     "nome": "S3",
@@ -1226,7 +1218,15 @@
     "voce": "nao"
    },
    {
-    "nome": "Cypher",
+    "nome": "Braze",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 1,
+    "desejavel": 1,
+    "voce": "nao"
+   },
+   {
+    "nome": "Neo4j",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -1234,7 +1234,7 @@
     "voce": "nao"
    },
    {
-    "nome": "Neo4j",
+    "nome": "Cypher",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -1258,14 +1258,6 @@
     "voce": "nao"
    },
    {
-    "nome": "mock loads",
-    "vagas": 2,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "nao"
-   },
-   {
     "nome": "cutover",
     "vagas": 2,
     "pct": 3,
@@ -1274,7 +1266,7 @@
     "voce": "nao"
    },
    {
-    "nome": "Excel",
+    "nome": "mock loads",
     "vagas": 2,
     "pct": 3,
     "obrigatorio": 2,
@@ -1290,6 +1282,14 @@
     "voce": "nao"
    },
    {
+    "nome": "SAP Migration Cockpit",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 0,
+    "desejavel": 2,
+    "voce": "nao"
+   },
+   {
     "nome": "SAP MDG",
     "vagas": 2,
     "pct": 3,
@@ -1298,11 +1298,11 @@
     "voce": "nao"
    },
    {
-    "nome": "SAP Migration Cockpit",
+    "nome": "Excel",
     "vagas": 2,
     "pct": 3,
-    "obrigatorio": 0,
-    "desejavel": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
     "voce": "nao"
    },
    {
@@ -1354,14 +1354,6 @@
     "voce": "nao"
    },
    {
-    "nome": "Oracle",
-    "vagas": 2,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "parcial"
-   },
-   {
     "nome": "Glue",
     "vagas": 2,
     "pct": 3,
@@ -1370,7 +1362,15 @@
     "voce": "nao"
    },
    {
-    "nome": "Splink",
+    "nome": "Oracle",
+    "vagas": 2,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "parcial"
+   },
+   {
+    "nome": "Record linkage",
     "vagas": 1,
     "pct": 1,
     "obrigatorio": 0,
@@ -1386,7 +1386,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Record linkage",
+    "nome": "Splink",
     "vagas": 1,
     "pct": 1,
     "obrigatorio": 0,
@@ -1410,20 +1410,20 @@
     "voce": "nao"
    },
    {
-    "nome": "mParticle",
-    "vagas": 1,
-    "pct": 1,
-    "obrigatorio": 0,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "Identity resolution",
     "vagas": 1,
     "pct": 1,
     "obrigatorio": 1,
     "desejavel": 0,
     "voce": "tem"
+   },
+   {
+    "nome": "mParticle",
+    "vagas": 1,
+    "pct": 1,
+    "obrigatorio": 0,
+    "desejavel": 1,
+    "voce": "nao"
    },
    {
     "nome": "Infrastructure as Code",
@@ -1563,9 +1563,9 @@
     "vagas": 1,
     "pct": 1,
     "exemplos": [
-     "PyTorch",
+     "Deep Learning",
      "TensorFlow",
-     "Deep Learning"
+     "PyTorch"
     ],
     "voce": "parcial"
    },
@@ -1976,20 +1976,20 @@
     "voce": "parcial"
    },
    {
-    "nome": "Fivetran",
-    "vagas": 5,
-    "pct": 3,
-    "obrigatorio": 3,
-    "desejavel": 2,
-    "voce": "nao"
-   },
-   {
     "nome": "Claude",
     "vagas": 5,
     "pct": 3,
     "obrigatorio": 2,
     "desejavel": 3,
     "voce": "parcial"
+   },
+   {
+    "nome": "Fivetran",
+    "vagas": 5,
+    "pct": 3,
+    "obrigatorio": 3,
+    "desejavel": 2,
+    "voce": "nao"
    },
    {
     "nome": "data lineage",
@@ -2032,20 +2032,20 @@
     "voce": "parcial"
    },
    {
-    "nome": "NoSQL",
-    "vagas": 5,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 3,
-    "voce": "tem"
-   },
-   {
     "nome": "Dataform",
     "vagas": 5,
     "pct": 3,
     "obrigatorio": 3,
     "desejavel": 2,
     "voce": "pendente"
+   },
+   {
+    "nome": "NoSQL",
+    "vagas": 5,
+    "pct": 3,
+    "obrigatorio": 2,
+    "desejavel": 3,
+    "voce": "tem"
    },
    {
     "nome": "Cloud",
@@ -2184,20 +2184,20 @@
     "voce": "nao"
    },
    {
-    "nome": "estatística",
-    "vagas": 4,
-    "pct": 2,
-    "obrigatorio": 4,
-    "desejavel": 0,
-    "voce": "pendente"
-   },
-   {
     "nome": "SageMaker",
     "vagas": 4,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 3,
     "voce": "nao"
+   },
+   {
+    "nome": "estatística",
+    "vagas": 4,
+    "pct": 2,
+    "obrigatorio": 4,
+    "desejavel": 0,
+    "voce": "pendente"
    },
    {
     "nome": "Anomaly detection",
@@ -2534,14 +2534,14 @@
     "pct_nicho": 4
    },
    {
-    "nome": "Excel",
+    "nome": "SAP S/4HANA",
     "ganho_cobertura": 0.5,
     "vagas_completas_a_mais": 0,
     "voce": "nao",
     "pct_nicho": 3
    },
    {
-    "nome": "SAP S/4HANA",
+    "nome": "Excel",
     "ganho_cobertura": 0.5,
     "vagas_completas_a_mais": 0,
     "voce": "nao",

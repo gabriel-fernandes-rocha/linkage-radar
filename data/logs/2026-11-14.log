@@ -91,3 +91,88 @@ INFO mensagem 2 parte 1/2 enviada
 INFO mensagem 2 parte 2/2 enviada
 INFO envio concluído
 
+===== coleta 2026-11-14 23:51 =====
+INFO serpapi: 93 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 97
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1413
+INFO jobs/lever: 302
+INFO jobs/ashby: 47
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 9
+INFO jobs/gupy: 178
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 149
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 233
+INFO jobs/social_linkedin/ddg: 3 aceitos de 5
+INFO jobs/social_posts: 3
+INFO linkedin_guest: 33 vagas, 25 descrições abertas, 30 consultas no total
+INFO jobs/linkedin_guest: 33
+INFO judge: tokens in=1095 out=163
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO vagas: {'brutos': 3085, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 14
+INFO papers/openalex: 175
+INFO judge: tokens in=1607 out=348
+INFO papers: {'brutos': 189, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 11 aceitos de 11
+INFO linkedin: 11 candidatos
+INFO judge: tokens in=1863 out=972
+INFO requisitos: tokens in=2579 out=667
+INFO requisitos: tokens in=2248 out=329
+INFO linkedin: {'brutos': 11, 'pos_palavras_chave': 8, 'aprovados': 1}
+INFO open_jobs: fechou Senior Probabilistic Record Linkage Specialist - LinkedIn
+INFO open_jobs: fechou Identity solutions & Audience Specialist at DataBeat — Hyderabad ...
+INFO open_jobs: fechou Entity Resolution
+INFO open_jobs: 131 abertas (6 novas)
+INFO mercado: 195 vagas no nicho, 160 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2169 out=1084
+INFO judge: tokens in=1288 out=271
+INFO network: 78 pessoas (1 novas), 44 empresas (0 novas)
+INFO carreira: tokens in=1502 out=2223
+INFO carreira: tokens in=10174 out=4622
+INFO brasil/inhire 'klavi' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ultragaz' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 222
+INFO brasil/gupy: 353
+INFO google_jobs 'engenheiro de dados': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 34 vagas, 34 descrições abertas, 72 consultas no total
+INFO brasil/linkedin_guest_br: 34
+INFO brasil/linkedin_local: 12
+INFO brasil/greenhouse: 1079
+INFO brasil/lever: 150
+INFO brasil/ashby: 113
+INFO brasil/inhire: novas empresas descobertas: carreiras-semantix
+INFO brasil: 5058 brutas, 6 candidatas para o juiz
+INFO judge: tokens in=1961 out=741
+INFO open_jobs: fechou Caren Teixeira on LinkedIn: há 18 h Seguir 🚨 MASTER DATA COORDINATOR | MULTINACIONAL | CRUZEIRO-SP
+INFO open_jobs: 40 abertas (0 novas)
+INFO mercado: 70 vagas no nicho, 160 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 46 pessoas (0 novas), 57 empresas (0 novas)
+INFO brasil: {'novas': 5, 'abertas': 40, 'arquivadas': 70, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-15.json
+
