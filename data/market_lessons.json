@@ -1,5 +1,53 @@
 [
  {
+  "data": "2026-11-16",
+  "habilidade": "Informatica MDM",
+  "pct_vagas": 1,
+  "nivel_atual": "nao",
+  "o_que_e": "Informatica MDM é uma plataforma comercial de Master Data Management que oferece módulos prontos para matching, consolidação de dados mestres, hierarquias de negócio e governança de dados. Ela empacota conceitos que você já domina (blocking, scoring, matching determinístico/probabilístico) numa interface low-code com workflows de steward, IDD (Informatica Data Director) e regras de match configuráveis via UI em vez de código.",
+  "por_que_pedem": "Empresas que já compraram a licença da Informatica (bancos, seguradoras, grandes corporações) precisam de gente que saiba configurar e manter a ferramenta, porque é cara e amplamente usada em ambientes financeiros e de dados de referência. Vagas de MDM corporativo tradicionalmente pedem a ferramenta específica, não o conceito genérico de entity resolution.",
+  "ponte_com_o_que_voce_sabe": "Você já entende profundamente o problema que a Informatica MDM resolve: normalização, blocking, scoring de similaridade, classificação de matches e QA. A curva de aprendizado é majoritariamente sobre a interface, terminologia proprietária (Hub Store, Base Objects, Match Rules, Trust e Validation Rules) e fluxo operacional do produto, não sobre teoria de matching.",
+  "minimo_para_ficar_apto": [
+   "Saber explicar a arquitetura: Hub Store, Operational Reference Store, Base Objects, Landing/Staging tables",
+   "Entender o fluxo de match and merge: match rules, match columns, tokenização, match paths",
+   "Conhecer o conceito de Trust e Validation Rules para sobrepor dados de múltiplas fontes",
+   "Saber o que é IDD (Informatica Data Director) e o papel do data steward",
+   "Ter familiaridade básica com o Provisioning Tool e criação de schemas"
+  ],
+  "plano_rapido": [
+   "2h: assistir vídeos introdutórios oficiais da Informatica sobre MDM Hub e arquitetura",
+   "3h: ler a documentação oficial (Informatica MDM Multidomain Edition Guide) focando em Match and Merge",
+   "2h: fazer um tutorial guiado (trial ou sandbox se disponível) configurando Base Objects e Match Rules simples",
+   "2h: estudar Trust/Validation rules e o papel do IDD, com foco em terminologia para entrevista",
+   "1h: montar um documento comparando conceitos Informatica MDM vs Splink/Spark que você já domina, para usar como script de entrevista"
+  ],
+  "mini_projeto": "Como a ferramenta é proprietária e cara, o projeto prático viável é um documento técnico de 'tradução': pegue seu pipeline real de record linkage (blocking, scoring, classificação) e escreva um mapeamento explícito de como cada etapa seria implementada em Informatica MDM (ex: blocking vira match paths, scoring vira match rules com pesos, classificação vira thresholds de match/no-match/manual review). Isso demonstra domínio conceitual mesmo sem acesso à ferramenta.",
+  "como_colocar_no_curriculo": "Conhecimento conceitual em Informatica MDM (match/merge, Trust/Validation rules, IDD) aplicado a partir de experiência prática em record linkage e entity resolution com Spark e Splink.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre Base Object e Landing Table na Informatica MDM?",
+    "resposta": "Landing table é onde os dados brutos de origem são carregados inicialmente, antes de qualquer transformação. Base Object é a tabela central no Hub Store que armazena o registro mestre consolidado após o processo de match/merge, análogo ao que em Splink seria a tabela de clusters resolvidos."
+   },
+   {
+    "pergunta": "O que são Match Rules e como se relacionam com blocking?",
+    "resposta": "Match Rules definem quais colunas e algoritmos (exato, fuzzy, tokenizado) são usados para comparar registros candidatos. Elas atuam depois de um processo similar a blocking, chamado match paths, que reduz o espaço de comparação, exatamente como blocking keys fazem no Splink antes do scoring."
+   },
+   {
+    "pergunta": "O que são Trust e Validation Rules?",
+    "resposta": "Trust rules definem a confiabilidade relativa de cada fonte de dados para decidir qual valor prevalece num campo quando há conflito entre registros mesclados. Validation rules aplicam regras de qualidade de dados antes da consolidação. É o equivalente a lógica de survivorship que eu já implemento manualmente em pipelines Spark."
+   },
+   {
+    "pergunta": "Você tem experiência hands-on com Informatica MDM?",
+    "resposta": "Não tenho experiência prática na ferramenta específica, mas tenho profundo domínio dos conceitos que ela implementa, blocking, scoring probabilístico, classificação de matches e QA, construídos em produção com Spark e Splink em escala de bilhões de registros. Estou confiante que a transição para a interface da Informatica seria rápida dado esse background."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Informatica MDM Multidomain Edition documentation (Informatica Documentation Portal)",
+   "Informatica MDM Developer Guide",
+   "Cursos introdutórios no Informatica University / Informatica Learning Hub"
+  ]
+ },
+ {
   "data": "2026-11-15",
   "habilidade": "Salesforce Data Cloud",
   "pct_vagas": 2,

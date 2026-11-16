@@ -54,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -111,7 +111,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -168,7 +168,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -234,7 +234,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -302,7 +302,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -357,7 +357,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -377,7 +377,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil com foco explícito em Entity Resolution, Entity Matching, fuzzy matching e Deduplication usando Amazon Neptune e Python.",
+    "motivo": "Vaga de Master Data Developer com requisitos explícitos em entity resolution, entity matching, fuzzy matching, deduplication e graph databases, exatamente o perfil especializado em record linkage.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -430,11 +430,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer para resolução de entidades, matching fuzzy, deduplicação e graph databases (Amazon Neptune) em Python e AWS no Brasil.",
-    "confianca": 0.95
+    "resumo": "Master Data Developer com Amazon Neptune, especializado em entity resolution, entity matching, fuzzy matching e deduplication usando Python e graph databases em MarTech. Remoto, Brasil.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -498,8 +498,77 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Governança de Dados - Data Quality",
+    "url": "https://carreiras-semantix.inhire.app/vagas/9d965c5e-f7fa-4689-87ff-094f4ff6c598/governan-a-de-dados-data-quality",
+    "empresa": "Semantix",
+    "local": "Remoto · Brasil",
+    "fonte": "InHire",
+    "publicada_em": "2026-11-10",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data quality",
+      "qualidade de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga sênior com foco central em Data Quality, Governança de Dados, regras de qualidade, tratamento de inconsistências e validação automatizada; diretamente alinhada com qualidade e padronização de dados cadastrais.",
+    "resumo": "Data Quality Sênior com Databricks e Governança de Dados, responsável por definir regras, controles automatizados, análise de inconsistências e monitoramento em segmentos regulados. Remoto, Brasil.",
+    "confianca": 0.85,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Data Quality",
+        "Governança de Dados",
+        "Databricks",
+        "SQL",
+        "Python",
+        "Spark"
+      ],
+      "desejaveis": [
+        "Azure DevOps",
+        "Power BI"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.1,
+    "encaixe": 0.44,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 100,
+      "foco": 86,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "Databricks"
+      ],
+      "parciais": [
+        "Governança de Dados",
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-16",
+    "verificada_em": "2026-11-16",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -567,7 +636,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -621,7 +690,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -683,7 +752,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -701,7 +770,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota aceita Brasil com foco em Entity Resolution, Deduplication e Data Pipelines usando Neo4j, Python e tecnologias de ETL.",
+    "motivo": "Vaga sênior com foco em Entity Resolution, Deduplication e Data Pipelines em Neo4j, alinhada ao perfil de resolução de entidades e record linkage com ferramentas de graph databases.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -752,10 +821,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "AI Senior Engineer especializado em resolução de entidades, deduplicação e pipelines de dados com Neo4j, Python, Kafka e ETL em múltiplas regiões incluindo Brasil.",
+    "resumo": "AI Senior Engineer especializado em Entity Resolution, Deduplication, Data Pipelines e Neo4j/Cypher, com Python, Kafka e ETL. Remoto, aceita múltiplos países da América Latina incluindo Brasil.",
     "confianca": 0.92
   },
   {
@@ -823,7 +892,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -891,7 +960,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -949,7 +1018,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -969,7 +1038,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga no Brasil com requisitos centrais em Entity Resolution, Entity Matching, fuzzy matching e Deduplication em graph databases.",
+    "motivo": "Vaga de Master Data Developer com requisitos idênticos à vaga ID 3 (entity resolution, entity matching, fuzzy matching, deduplication), diretamente alinhada ao expertise em record linkage.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1021,11 +1090,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer para Entity Resolution, fuzzy matching, deduplicação e machine learning com Amazon Neptune, Python e graph databases no Brasil.",
-    "confianca": 0.95
+    "resumo": "Master Data Developer especializado em Entity Resolution, Entity Matching, fuzzy matching, Deduplication e graph databases com Amazon Neptune e Python. Brasil.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -1092,7 +1161,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1147,7 +1216,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1165,7 +1234,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil com Identity Resolution e Data Quality em Snowflake, alinhada com visão única do cliente e qualidade de dados cadastrais.",
+    "motivo": "Vaga sênior com requisito explícito de Identity Resolution (Customer 360), Data Quality e Data Governance em stack moderno (Snowflake, dbt, mParticle), alinhada a resolução de identidades e unificação de cadastros.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1217,11 +1286,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer focado em identity resolution, data governance e qualidade com Snowflake, Braze, Segment e mParticle no Brasil.",
-    "confianca": 0.85
+    "resumo": "Senior Data Engineer em Snowflake com foco em Identity Resolution e Customer 360, responsável por Data Quality, Governance e integração via Braze, mParticle e Segment. Remoto, Brasil.",
+    "confianca": 0.88
   },
   {
     "tipo": "vaga",
@@ -1279,7 +1348,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1346,7 +1415,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1417,7 +1486,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1466,8 +1535,90 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Consulto Sap Mdm",
+    "url": "https://br.trabajo.org/emprego-5129-5d8f6f17ebf818c1c2a5fac3225b7e58",
+    "empresa": "Neoris",
+    "local": "Brasil",
+    "fonte": "Google Jobs (Brasil)",
+    "publicada_em": null,
+    "score": 3,
+    "categoria": "integracao",
+    "termos": [
+      "data cleansing",
+      "data migration",
+      "data quality",
+      "migracao de dados",
+      "padronizacao de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Consultor SAP MDM com responsabilidades explícitas em saneamento, migração e carga de dados mestres, qualidade e governança, alinhado com o perfil de integração e qualidade de dados cadastrais.",
+    "resumo": "Consultor SAP MDM Sênior para implementação S/4HANA, responsável por estratégia, governança, modelagem, saneamento, migração e carga de dados mestres com foco em qualidade. Localidade: São Paulo, remoto.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SAP MDM",
+        "SAP S/4HANA",
+        "Business Partner",
+        "Material Master",
+        "SAP Migration Cockpit",
+        "LTMC",
+        "LTMOM",
+        "ETL"
+      ],
+      "desejaveis": [
+        "LSMW",
+        "SAP Activate",
+        "Data Quality",
+        "Data Governance"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.2,
+    "encaixe": 0.33,
+    "compat_detalhe": {
+      "habilidades": 23,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 100,
+      "foco": 88,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "SAP S/4HANA",
+        "Business Partner",
+        "Material Master",
+        "SAP Migration Cockpit",
+        "LTMC",
+        "LTMOM"
+      ],
+      "parciais": [
+        "SAP MDM"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-16",
+    "verificada_em": "2026-11-16",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1538,7 +1689,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1587,7 +1738,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1636,7 +1787,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1708,7 +1859,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1799,7 +1950,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1845,7 +1996,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -1864,7 +2015,7 @@
       "survivorship"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga em São Paulo com requisitos explícitos em Entity Resolution, Data Reconciliation e Master Data Management usando Spark, Databricks e Python.",
+    "motivo": "Vaga sênior com requisitos explícitos em Entity Resolution, Data Reconciliation, Data Quality, Master Data Management e Survivorship em Databricks/Spark, exatamente o perfil técnico de matching e deduplicação.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1928,11 +2079,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer em São Paulo especializado em entity resolution, reconciliação e governança de dados com Spark, Databricks, dbt e Delta Lake.",
-    "confianca": 0.9
+    "resumo": "Senior Data Engineer com Python, Spark, Databricks, Entity Resolution, Data Reconciliation, Data Quality e Master Data Management em arquiteturas de dados e MLOps. São Paulo, contrato.",
+    "confianca": 0.92
   },
   {
     "tipo": "vaga",
@@ -1991,7 +2142,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2063,7 +2214,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2127,7 +2278,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2206,7 +2357,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2276,7 +2427,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2344,7 +2495,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2419,7 +2570,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2508,7 +2659,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2602,7 +2753,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   },
   {
@@ -2672,7 +2823,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-15",
+    "verificada_em": "2026-11-16",
     "nova": false
   }
 ]

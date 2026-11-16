@@ -283,6 +283,11 @@
   "nivel": "nao",
   "nome": "Braze"
  },
+ "business partner": {
+  "motivo": "sem evidência de SAP no currículo",
+  "nivel": "nao",
+  "nome": "Business Partner"
+ },
  "calculated insights": {
   "motivo": "Nenhum trabalho de insights calculados descrito.",
   "nivel": "nao",
@@ -808,6 +813,11 @@
   "nivel": "nao",
   "nome": "DynamoDB"
  },
+ "edc": {
+  "motivo": "ferramenta Informatica específica, sem evidência",
+  "nivel": "nao",
+  "nome": "EDC"
+ },
  "ehr": {
   "motivo": "trabalha com dados de saúde pública, não EHR específico",
   "nivel": "parcial",
@@ -982,6 +992,11 @@
   "motivo": "sem evidência de compliance GDPR, dados são BR",
   "nivel": "nao",
   "nome": "GDPR"
+ },
+ "gemini": {
+  "motivo": "sem evidência de uso de Gemini/LLMs no currículo",
+  "nivel": "nao",
+  "nome": "Gemini"
  },
  "geopandas": {
   "motivo": "sem evidência de dados geoespaciais",
@@ -1213,6 +1228,11 @@
   "nivel": "tem",
   "nome": "Identity resolution"
  },
+ "idq": {
+  "motivo": "Informatica Data Quality não mencionado",
+  "nivel": "nao",
+  "nome": "IDQ"
+ },
  "iics": {
   "motivo": "sem evidência de Informatica Cloud",
   "nivel": "nao",
@@ -1227,6 +1247,11 @@
   "motivo": "sem evidência da ferramenta Informatica",
   "nivel": "nao",
   "nome": "Informatica"
+ },
+ "informatica axon": {
+  "motivo": "plataforma de governança específica, sem evidência",
+  "nivel": "nao",
+  "nome": "Informatica Axon"
  },
  "informatica cdgc": {
   "motivo": "sem evidência de produto Informatica",
@@ -1423,6 +1448,16 @@
   "nivel": "nao",
   "nome": "LSMW"
  },
+ "ltmc": {
+  "motivo": "ferramenta SAP específica, sem evidência",
+  "nivel": "nao",
+  "nome": "LTMC"
+ },
+ "ltmom": {
+  "motivo": "ferramenta SAP específica, sem evidência",
+  "nivel": "nao",
+  "nome": "LTMOM"
+ },
  "machine learning": {
   "motivo": "usa scikit-learn e classificação em matching",
   "nivel": "parcial",
@@ -1497,6 +1532,11 @@
   "motivo": "core do trabalho com matching determinístico/probabilístico",
   "nivel": "tem",
   "nome": "Matching Algorítmico"
+ },
+ "material master": {
+  "motivo": "conceito SAP, sem evidência",
+  "nivel": "nao",
+  "nome": "Material Master"
  },
  "matillion": {
   "motivo": "Não há menção ao Matillion",
@@ -1587,6 +1627,11 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "mParticle"
+ },
+ "mpi": {
+  "motivo": "faz matching probabilístico de identidades, conceito próximo",
+  "nivel": "parcial",
+  "nome": "MPI"
  },
  "mulesoft": {
   "motivo": "Plataforma de integração específica, sem evidência",
@@ -2013,6 +2058,11 @@
   "nivel": "nao",
   "nome": "SAP"
  },
+ "sap activate": {
+  "motivo": "metodologia SAP, sem evidência",
+  "nivel": "nao",
+  "nome": "SAP Activate"
+ },
  "sap business objects": {
   "motivo": "sem evidência de uso dessa ferramenta BI",
   "nivel": "nao",
@@ -2037,6 +2087,11 @@
   "motivo": "não citado",
   "nivel": "nao",
   "nome": "SAP MDG"
+ },
+ "sap mdm": {
+  "motivo": "conceitos MDM próximos, mas não SAP específico",
+  "nivel": "parcial",
+  "nome": "SAP MDM"
  },
  "sap migration cockpit": {
   "motivo": "não citado",
