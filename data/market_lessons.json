@@ -1,5 +1,55 @@
 [
  {
+  "data": "2026-11-17",
+  "habilidade": "Terraform",
+  "pct_vagas": 1,
+  "nivel_atual": "nao",
+  "o_que_e": "Terraform é uma ferramenta de Infraestrutura como Código (IaC) da HashiCorp que permite declarar, versionar e provisionar recursos de nuvem (clusters Spark, buckets S3, instâncias Elasticsearch, bancos de dados, permissões IAM) usando arquivos de configuração em HCL. Em vez de criar recursos manualmente no console da AWS/GCP/Azure, você escreve código declarativo que descreve o estado desejado da infraestrutura e o Terraform aplica as mudanças de forma idempotente.",
+  "por_que_pedem": "Em vagas de ER/linkage que lidam com pipelines de dados em produção (Spark clusters, Elasticsearch, storage de dados sensíveis de saúde), as empresas querem engenheiros que consigam provisionar e versionar a infraestrutura que sustenta esses pipelines, não só o código de matching. É um sinal de maturidade DevOps/MLOps, reduz erro humano em ambientes regulados e facilita reprodutibilidade entre dev/staging/produção.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em pipelines como sistemas completos (ingestão, blocking, scoring, QA) e provavelmente já usou clusters Spark e Elasticsearch gerenciados por alguém. Terraform é só a camada declarativa que descreve esses mesmos recursos que você já opera; a lógica de 'estado desejado vs estado atual' é parecida com versionamento de schema ou configuração de pipeline que você já domina. O salto é pequeno: aprender sintaxe HCL e o ciclo plan/apply/destroy.",
+  "minimo_para_ficar_apto": [
+   "Entender os conceitos de provider, resource, state, plan e apply",
+   "Saber escrever um arquivo .tf simples que cria um recurso AWS (ex: S3 bucket, instância EC2, IAM role)",
+   "Saber usar variables, outputs e um backend remoto de state (ex: S3+DynamoDB)",
+   "Conseguir explicar por que IaC é importante e como Terraform se diferencia de scripts imperativos ou do CloudFormation",
+   "Saber rodar terraform init, plan, apply, destroy e interpretar o output"
+  ],
+  "plano_rapido": [
+   "2h: ler a seção 'Get Started' da documentação oficial do Terraform (HashiCorp Learn) com provider AWS",
+   "3h: fazer o tutorial oficial de criar e destruir um recurso simples (EC2 ou S3) seguindo o passo a passo",
+   "3h: criar um projeto pessoal provisionando um bucket S3 + uma policy IAM + outputs, usando variables.tf e outputs.tf",
+   "2h: estudar remote state com S3 backend e o conceito de state locking com DynamoDB",
+   "2h: revisar módulos (modules) e como estruturar um repositório Terraform multi-ambiente (dev/prod)",
+   "1h: praticar respostas para perguntas de entrevista e montar um README explicando decisões"
+  ],
+  "mini_projeto": "Crie um repositório 'terraform-er-infra' que provisiona a infraestrutura mínima para um pipeline de entity resolution: um bucket S3 para dados brutos/normalizados, um cluster Elasticsearch gerenciado (ou um EC2 simulando) para indexação de blocking, e um role IAM com permissões restritas. Separe em módulos (storage, search, iam), use variables para ambiente (dev/prod) e documente no README como isso se conecta ao seu pipeline Spark/Splink existente.",
+  "como_colocar_no_curriculo": "Conhecimento prático em Terraform (IaC) para provisionamento de infraestrutura de dados (S3, Elasticsearch, IAM) em projetos pessoais de entity resolution, com familiaridade em módulos e remote state.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é Terraform e qual problema ele resolve?",
+    "resposta": "É uma ferramenta de Infraestrutura como Código que permite declarar recursos de nuvem em arquivos de configuração versionáveis, garantindo que a infraestrutura seja criada, atualizada ou destruída de forma previsível e reprodutível, eliminando configuração manual e divergência entre ambientes."
+   },
+   {
+    "pergunta": "Qual a diferença entre terraform plan e apply?",
+    "resposta": "Plan mostra o diff entre o estado atual (state) e o estado desejado (código), sem aplicar nada; apply executa de fato as mudanças necessárias para atingir o estado desejado, pedindo confirmação."
+   },
+   {
+    "pergunta": "O que é o state do Terraform e por que ele é importante?",
+    "resposta": "É um arquivo que mapeia os recursos declarados no código para os recursos reais na nuvem. Ele é crítico porque o Terraform usa esse arquivo para saber o que já existe e calcular as mudanças necessárias; por isso em times se usa remote state (ex: S3 com lock no DynamoDB) para evitar conflitos."
+   },
+   {
+    "pergunta": "Como você estruturaria Terraform para provisionar a infraestrutura de um pipeline de dados que usa Spark e Elasticsearch?",
+    "resposta": "Eu dividiria em módulos reutilizáveis (storage, compute, search, iam), usaria variables para parametrizar ambientes dev/staging/prod, versionaria o state remotamente e aplicaria least privilege nas roles IAM, documentando dependências entre módulos."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Terraform (terraform.io/docs)",
+   "HashiCorp Learn - Terraform Get Started",
+   "Curso 'Terraform for Beginners' da própria HashiCorp (hashicorp.com/resources)",
+   "Documentação do provider AWS no Terraform Registry"
+  ]
+ },
+ {
   "data": "2026-11-16",
   "habilidade": "Informatica MDM",
   "pct_vagas": 1,

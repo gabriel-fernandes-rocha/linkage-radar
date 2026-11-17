@@ -1,0 +1,83 @@
+===== coleta 2026-11-17 02:16 =====
+INFO serpapi: 77 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 97
+INFO jobs/remotive: 255
+INFO jobs/greenhouse: 1400
+INFO jobs/lever: 303
+INFO jobs/ashby: 48
+INFO jobs/hn_who_is_hiring: 2
+INFO google_jobs 'entity matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 4
+INFO jobs/gupy: 173
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 145
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 228
+INFO jobs/social_linkedin/ddg: 8 aceitos de 8
+INFO jobs/social_posts: 8
+INFO linkedin_guest: 35 vagas, 25 descrições abertas, 34 consultas no total
+INFO jobs/linkedin_guest: 35
+INFO judge: tokens in=1949 out=809
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2179 out=166
+INFO vagas: {'brutos': 3078, 'pos_palavras_chave': 6, 'aprovados': 1}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 14
+INFO papers/openalex: 175
+INFO judge: tokens in=1181 out=167
+INFO papers: {'brutos': 189, 'pos_palavras_chave': 1, 'aprovados': 1}
+INFO linkedin/ddg: 11 aceitos de 11
+INFO linkedin: 11 candidatos
+INFO judge: tokens in=1625 out=753
+INFO requisitos: tokens in=2579 out=630
+INFO requisitos: tokens in=2092 out=148
+INFO linkedin: {'brutos': 11, 'pos_palavras_chave': 6, 'aprovados': 0}
+INFO open_jobs: fechou Senior Engineer - LinkedIn
+INFO open_jobs: fechou Semantic AI Engineer - Remote Work - LinkedIn Brasil
+INFO open_jobs: 137 abertas (6 novas)
+INFO mercado: 207 vagas no nicho, 160 no mercado amplo
+INFO network/ddg: 11 aceitos de 11
+INFO network: 11 perfis após a consulta
+INFO judge: tokens in=2219 out=987
+INFO judge: tokens in=1308 out=267
+INFO network: 83 pessoas (2 novas), 44 empresas (0 novas)
+INFO carreira: tokens in=1410 out=1996
+INFO brasil/inhire 'klavi' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ifood' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'totvs' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'tray' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'ultragaz' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire 'zenvia' indisponível (404 Client Error: Not Found for url: https://api.inhire.app/)
+INFO brasil/inhire: 235
+INFO brasil/gupy: 344
+INFO brasil/google_jobs_br: 20
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 40 vagas, 40 descrições abertas, 86 consultas no total
+INFO brasil/linkedin_guest_br: 40
+INFO brasil/linkedin_local: 12
+INFO brasil/greenhouse: 1067
+INFO brasil/lever: 143
+INFO brasil/ashby: 114
+INFO brasil: 5053 brutas, 9 candidatas para o juiz
+INFO judge: tokens in=2886 out=1229
+INFO judge: tokens in=1064 out=159
+INFO open_jobs: fechou Consulto Sap Mdm
+INFO open_jobs: 41 abertas (0 novas)
+INFO mercado: 72 vagas no nicho, 160 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 46 pessoas (0 novas), 58 empresas (0 novas)
+INFO brasil: {'novas': 5, 'abertas': 41, 'arquivadas': 72, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-17.json
+

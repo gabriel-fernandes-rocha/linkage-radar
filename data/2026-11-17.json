@@ -1,0 +1,371 @@
+{
+  "data": "2026-11-17",
+  "gerado_em": "2026-11-17T02:04-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "ML Engineer: Entity Matching",
+      "url": "https://us.trabajo.org/job-2283-66f6fe508e829d5579487cbc47e93ff9",
+      "empresa": "Cognizant Technology Solutions Corporation",
+      "local": "Phoenix, AZ",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-11",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Vaga explicitamente de ML Engineer para Entity Matching, com design de modelos de matching, inferência e alinhamento a ontologia em Vertex AI.",
+      "resumo": "ML Engineer em Phoenix (Cognizant) para transformar dados em saídas confiáveis mediante modelos de entity matching, inferência e validação contra regras de ontologia com monitoramento contínuo.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Vertex AI",
+          "Gemini"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "presencial",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Phoenix"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "presencial em United States, sem patrocínio de visto",
+        "faltam": [
+          "Vertex AI",
+          "Gemini"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Head of Data and Artificial Intelligence - LinkedIn",
+      "url": "https://za.linkedin.com/jobs/view/head-of-data-and-artificial-intelligence-at-old-mutual-south-africa-4490717246",
+      "texto": "Build the customer identity resolution and single customer view needed across businesses (matching, consent and golden record), within privacy and legal constraints Design the data pipelines and integration architecture (batch, streaming and APIs) with Technology and Architecture, and agree service levels with source system owners",
+      "data": "Nov 13, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Foco central em customer identity resolution, matching e golden record, com pipeline de dados e integração de arquitetura.",
+      "resumo": "Liderança em data e IA na LinkedIn com responsabilidade de construir identity resolution, matching e single customer view em arquitetura de dados batch/streaming com restrições de privacidade.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "gerencia",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.13,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 35,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Enterprise Architecture Consultant - Enterprise Modernization",
+      "url": "https://ca.linkedin.com/jobs/view/senior-enterprise-architecture-consultant-%E2%80%93-enterprise-modernization-at-cgi-4482034348",
+      "texto": "Identity Resolution, Data, and Search Architecture Establish architectural patterns for high performance identity clustering and the unification and reconciliation of customer and organizational data.",
+      "data": "Oct 21, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Consultor de Arquitetura Empresarial com foco em identity clustering de alto desempenho e unificação/reconciliação de dados de clientes e organizações.",
+      "resumo": "Consultor Sênior de Arquitetura Empresarial especializado em padrões arquiteturais para identity clustering e unificação de dados organizacionais e de clientes.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Software Engineer, Identity at StackAdapt — Vancouver ... - LinkedIn",
+      "url": "https://ca.linkedin.com/jobs/view/software-engineer-identity-at-stackadapt-4490932136",
+      "texto": "Design and build identity resolution systems that connect users, devices, and households to support audience activation and measurement. Develop scalable backend services to ingest, process, and integrate first-party and third-party identity data and deliver reliable, low-latency performance.",
+      "data": "Nov 16, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Design e construção de sistemas de identity resolution que conectam usuários, dispositivos e famílias com processamento e integração de dados de identidade.",
+      "resumo": "Engenheiro de Software na StackAdapt especializado em sistemas de identity resolution escaláveis que ingerem, processam e integram dados de identidade first-party e third-party.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Canada"
+        ],
+        "cidades": [
+          "Vancouver"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em Canada, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Marketing Technology Engineer (BCN) en WPP Enterprise Solutions ...",
+      "url": "https://es.linkedin.com/jobs/view/marketing-technology-engineer-bcn-at-wpp-enterprise-solutions-4486978576",
+      "texto": "Identity resolution across fragmented sources. Build the integrations REST, SOAP, webhooks, batch or event-driven - you help select the right pattern, implement it and ensure failures recover safely. Work at the warehouse and CDP layer, not just the activation platform at the end of it. Build maintainable solutions",
+      "data": "Nov 6, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Identity resolution em fontes fragmentadas é o foco central, com construção de integrações em warehouse e CDP layer para unificação de dados.",
+      "resumo": "Engenheiro de Marketing Technology na WPP Enterprise Solutions responsável por identity resolution em fontes fragmentadas e integrações em warehouse e CDP.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "REST",
+          "SOAP"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Spain"
+        ],
+        "cidades": [
+          "Barcelona"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 25,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em Spain, sem patrocínio de visto",
+        "faltam": [
+          "SOAP"
+        ],
+        "parciais": [
+          "REST"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Manager - Salesforce Data Cloud & Agentforce",
+      "url": "https://uk.linkedin.com/jobs/view/senior-manager-salesforce-data-cloud-agentforce-at-tenth-revolution-group-4484671259",
+      "texto": "Drive customer data strategy, including: Data Streams, Unified Data Model, Identity Resolution, Segmentation & Activation, Insights & Transformations Lead technical workshops and stakeholder engagements, translating business requirements into scalable Salesforce solutions.",
+      "data": "Nov 3, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Estratégia de dados de cliente com identity resolution como componente central de Unified Data Model, segmentação e ativação em Salesforce Data Cloud.",
+      "resumo": "Gerente Sênior em Salesforce Data Cloud e Agentforce responsável por strategy de dados de cliente incluindo identity resolution e unified data model.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.27,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Real-World End-to-End Product Entity Resolution",
+      "url": "http://arxiv.org/abs/2611.19418v1",
+      "autores": "Dimitrios Karapiperis et al.",
+      "data": "2026-11-14",
+      "fonte": "arXiv",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper com foco central em Product Entity Resolution end-to-end, cobrindo blocking, scoring e verificação com técnicas lexicais e semânticas aplicadas a dados reais.",
+      "resumo": "Avaliação end-to-end de quatro pipelines de resolução de entidades de produtos em e-commerce, incluindo blocking (lexical e dense), verificação com cross-encoder e LLM, em datasets reais com ruído multilíngue e colisões de marca.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 137,
+  "vagas_arquivadas_total": 208,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Terraform",
+  "brasil": {
+    "novas": 5,
+    "abertas": 41,
+    "arquivadas": 72,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 47,
+    "semana": 7,
+    "tema": "Segmentação por regras e estatística",
+    "tipo": "conceito",
+    "titulo": "Considerações práticas e questões de pesquisa",
+    "modulo": "Semana 7: Segmentação por regras e estatística",
+    "versao": 2,
+    "objetivo": "Avaliar e decidir, com critérios práticos, quanto investimento em perfilamento de dados, tabelas de referência e modelos de segmentação faz sentido para um projeto real de data matching.",
+    "conceito": "Christen (2012, seç. 3.8, p. 63-64) fecha o capítulo de pré-processamento voltando a uma pergunta de engenharia: dado que regras, HMMs e CRFs todos dependem de dados de treino ou de listas de referência customizadas, como decidir o nível de esforço correto? Ele começa afirmando que toda iniciativa de matching ou deduplicação deve partir de data profiling (exploração de dados): para cada atributo candidato a chave de blocagem ou comparação, é preciso saber a cardinalidade de valores distintos, a distribuição de frequência, o tipo de dado e a taxa de nulos. Essa informação não é burocracia, ela condiciona escolhas técnicas discutidas nas semanas anteriores do curso, como blocking rules e funções de comparação.\n\nO segundo ponto é que tabelas de lookup (apelidos, variações de nomes, logradouros, códigos postais) e os dados de treino de modelos estatísticos precisam ser customizados à origem geográfica e cultural dos dados, porque uma tabela construída para endereços australianos ou nomes anglo-saxões degrada silenciosamente a qualidade em dados brasileiros. O terceiro ponto, mais estratégico, é o trade-off entre esforço de pré-processamento e natureza do projeto: se a base será reutilizada em múltiplos linkages futuros, o investimento em limpeza e padronização se paga ao longo do tempo; se é um projeto pontual, o retorno é menor e a régua de esforço deve ser mais modesta.",
+    "como_funciona": "Checklist de decisão para um projeto novo:\n1. Fazer profiling de cada atributo candidato: contar valores distintos, calcular distribuição de frequência, identificar tipo de dado, medir percentual de nulos.\n2. Classificar o projeto como 'one-off' ou 'recorrente/reusável'.\n3. Se recorrente: investir em tabelas de lookup customizadas à origem dos dados e em dados de treino para HMM/CRF, pois o custo se amortiza em projetos futuros.\n4. Se one-off: priorizar regras simples e lookup tables mínimas, aceitando menor cobertura.\n5. Customizar lookup tables e dados de treino sempre à proveniência real dos dados (país, convenção de nomes, formato de endereço), nunca usar tabela genérica de outro contexto sem validação.\n6. Documentar as decisões de profiling para retroalimentar a escolha de blocking keys e funções de comparação nas etapas seguintes do pipeline.",
+    "exemplo": "Um cadastro de clientes de uma rede de farmácias no Brasil tem 2 milhões de registros. Profiling do atributo 'logradouro' mostra: 180 mil valores distintos, 4% de nulos, tipo string livre, forte concentração em abreviações como 'R.', 'Av.', 'Trav.'. Como esse cadastro será usado em deduplicações mensais recorrentes (projeto reusável), decide-se investir: construir lookup table de abreviações de logradouro brasileiras (R. = Rua, Av. = Avenida) e gerar 5 mil endereços manualmente segmentados para treinar um HMM, seguindo o processo iterativo de bootstrap descrito na aula 45. Se fosse um projeto pontual de match único com uma base de fornecedores, a decisão seria usar só regras simples de normalização de abreviação, sem treinar modelo estatístico.",
+    "na_pratica": "Em Spark, o profiling inicial costuma ser feito direto com agregações antes de qualquer blocking: df.groupBy('logradouro').count().orderBy('count', ascending=False) para ver distribuição, e df.select([F.count(F.when(F.col(c).isNull(), c)).alias(c) for c in cols]).show() para taxa de nulos por coluna. Esse resultado deve ser documentado e revisitado ao escolher block_on() no Splink e as comparisons em cl.JaroWinklerAtThresholds, porque campos com alta cardinalidade e baixo nulo são melhores candidatos a blocking key do que campos quase constantes.",
+    "armadilha": "Pular o profiling e copiar a mesma lookup table e as mesmas regras de um projeto anterior sem revalidar contra a nova fonte de dados é um erro comum entre profissionais experientes, porque convenções de nome e endereço variam até dentro do mesmo país (ex: zona rural vs urbana no Brasil); sempre valide a tabela contra uma amostra real da base atual antes de aplicar em produção.",
+    "desafio": "Você recebe duas bases para um projeto de matching: Base A, 50 milhões de registros de um cadastro nacional que será atualizado e rematchado todo mês contra novas bases (projeto recorrente), e Base B, 30 mil registros de uma lista de fornecedores para um match único de auditoria (projeto one-off). Você tem 2 semanas de trabalho de engenharia disponíveis. Distribua as 2 semanas entre as duas atividades: (a) construir e validar lookup tables customizadas + gerar dados de treino para um HMM de segmentação de endereços, e (b) escrever regras simples de normalização. Justifique a alocação usando o critério de Christen (2012, p. 64) sobre reuso futuro dos dados.",
+    "gabarito": "Pelo critério de Christen (p. 64), o esforço de pré-processamento deve ser proporcional à probabilidade de reuso futuro dos dados. A Base A é recorrente (match mensal contínuo), então o investimento em lookup tables customizadas e treino de HMM se amortiza em dezenas de execuções futuras: alocar a maior parte do tempo, por exemplo 8 dos 10 dias úteis, para profiling detalhado da Base A, construção de lookup tables de abreviações e nomes brasileiros, e geração/curadoria de dados de treino via bootstrap iterativo (aula 45). A Base B é one-off, de baixo volume (30 mil registros), e seu retorno sobre investimento em modelo estatístico é baixo: alocar só 2 dias para regras simples de normalização (case, acentuação, abreviações óbvias) sem treinar modelo, pois o custo de um HMM supera o benefício de uma única execução pontual.",
+    "fontes": [
+      "Christen (2012), seç. 3.7 (HMM), p. 60-63",
+      "Christen (2012), seç. 3.8, p. 63-64",
+      "Churches, Christen, Lim & Zhu (2002)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        58,
+        66
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3078,
+      "pos_palavras_chave": 6,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 189,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 11,
+      "pos_palavras_chave": 6,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}
