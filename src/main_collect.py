@@ -125,6 +125,16 @@ def run(use_llm: bool = True, full_scan: bool = False, only_if_missing: bool = F
                                                                   max_age), None)
         if abertas is None:
             abertas = open_jobs.load()
+        def _enriquecer():
+            done, closed = open_jobs.enrich_linkedin(abertas)
+            for j in closed:
+                abertas.remove(j)
+            if done:
+                requirements.extract(done, cfg)  # relê requisitos e local de contratação com a descrição inteira
+            for j in done:
+                j.pop("texto", None)
+
+        safe("completar vagas do LinkedIn", _enriquecer)
         try:
             # habilidades de todas as vagas (garante vereditos; refaz tudo se o currículo mudou)
             all_skills = {s for j in abertas + job_archive.load() for s in

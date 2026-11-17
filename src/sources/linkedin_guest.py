@@ -107,6 +107,18 @@ def search_jobs(terms: list[str], *, geo: str | None = None, remote: bool = Fals
     return out
 
 
+def detail(job_id: str) -> dict | None:
+    """Página pública de UMA vaga: data ("Há 1 semana"), local, empresa, descrição e se foi encerrada."""
+    r = _get(DETAIL.format(job_id))
+    if r is None:
+        return None
+    t = r.text
+    pick = lambda pat: (lambda m: _text(m.group(1)) if m else "")(re.search(pat, t, re.S))
+    return {"postado": pick(r'posted-time-ago__text[^>]*>(.*?)<'), "local": pick(r'topcard__flavor--bullet[^>]*>(.*?)<'),
+            "empresa": pick(r'topcard__org-name-link[^>]*>(.*?)<'), "texto": pick(r'show-more-less-html__markup[^>]*>(.*?)</div>'),
+            "fechada": bool(re.search(r"(No longer accepting applications|Não aceita mais candidaturas|closed-job)", t))}
+
+
 def enrich_post(it: dict) -> dict:
     """Post público: troca o trecho da busca pelo texto inteiro e resolve os links lnkd.in da candidatura."""
     r = _get(it["url"])

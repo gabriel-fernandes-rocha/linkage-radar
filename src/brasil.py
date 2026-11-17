@@ -172,7 +172,8 @@ Regras por tipo:
 - vaga: aprove se a vaga for no Brasil (ou remota aceitando o Brasil) E envolver entity resolution ou variações: \
 resolução de identidade/entidades, record linkage, data matching, matching determinístico/probabilístico, \
 deduplicação de registros, unificação de cadastros, golden record, MDM com regras de match/merge, Customer 360 / \
-visão única do cliente, identity graph, fuzzy matching de nomes/endereços. TAMBÉM aprove vagas técnicas de INTEGRAÇÃO DE DADOS de várias fontes/sistemas: migração e importação de dados entre sistemas, mapeamento de campos (de-para), consolidação/unificação/cruzamento de bases, limpeza, padronização e qualidade de dados cadastrais, inclusive estágio e júnior. Reprove: vendas, suporte, vagas que só \
+visão única do cliente, identity graph, fuzzy matching de nomes/endereços. TAMBÉM aprove vagas técnicas de INTEGRAÇÃO DE DADOS de várias fontes/sistemas: migração e importação de dados entre sistemas, mapeamento de campos (de-para), consolidação/unificação/cruzamento de bases, limpeza, padronização e qualidade de dados cadastrais, inclusive estágio e júnior. Reprove: vendas, suporte, vagas de plataformas de CRM/marketing (Salesforce Data Cloud, Marketing Cloud, \
+Agentforce, martech), desenvolvimento full-stack/frontend genérico, vagas que só \
 citam o termo de passagem na descrição da empresa, BI/relatórios financeiros (FP&A) em que integração é só detalhe, e "dados mestres" que é só cadastro manual de materiais/\
 fornecedores no ERP (sem matching, deduplicação, regras ou qualidade de dados). Não reprove por senioridade.
 - vaga vinda de POST em rede social: aprove só se anunciar uma vaga concreta e aberta com esse tema.
@@ -305,6 +306,17 @@ def run(cfg: dict, day: str, raw_jobs: list[dict], use_llm: bool) -> dict:
     abertas = _safe("vagas abertas", lambda: open_jobs.update(approved, pool, day, max_age, path=OPEN), None)
     if abertas is None:
         abertas = open_jobs.load(OPEN)
+
+    def _enriquecer():
+        done, closed = open_jobs.enrich_linkedin(abertas)
+        for j in closed:
+            abertas.remove(j)
+        if done:
+            requirements.extract(done, cfg)  # relê requisitos e local de contratação com a descrição inteira
+        for j in done:
+            j.pop("texto", None)
+
+    _safe("completar vagas do LinkedIn", _enriquecer)
 
     def rescore():
         requirements.ensure(abertas)

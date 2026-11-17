@@ -117,3 +117,17 @@ def test_health_warns_when_logged_linkedin_stops(tmp_path, monkeypatch):
     monkeypatch.setattr(health, "HISTORY", tmp_path / "hh.json")
     r = health.check({"limits": {}}, "2026-11-04", {"estatisticas": {}})
     assert any(c["nome"] == "LinkedIn logado" for c in r["checks"])
+
+
+def test_linkedin_job_without_date_is_completed_or_closed(monkeypatch):
+    import open_jobs
+    from sources import linkedin_guest
+
+    pages = {"111": {"postado": "Há 1 semana", "local": "Pune, Índia", "empresa": "Onit", "texto": "x" * 400, "fechada": False},
+             "222": {"postado": "", "local": "", "empresa": "", "texto": "", "fechada": True}}
+    monkeypatch.setattr(linkedin_guest, "detail", lambda jid: pages[jid])
+    jobs = [{"url": "https://www.linkedin.com/jobs/view/data-engineer-111", "local": ""},
+            {"url": "https://br.linkedin.com/jobs/view/222"}]
+    done, closed = open_jobs.enrich_linkedin(jobs)
+    assert done[0]["publicada_em"] and done[0]["local"] == "Pune, Índia" and done[0]["empresa"] == "Onit"
+    assert closed == [jobs[1]]

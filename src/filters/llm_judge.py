@@ -17,7 +17,9 @@ Regras por tipo:
 MDM (dados mestres, golden record, customer 360, CDP) / data matching / geocodificação ou address matching for o \
 foco da função OU uma responsabilidade relevante descrita nas atividades/requisitos. A compatibilidade com o perfil \
 é calculada depois, então NÃO reprove por local, senioridade ou idioma. Reprove só vagas que não tratam do tema \
-(dados genéricos, BI, vendas, suporte), que citam o termo apenas na descrição institucional da empresa, ou vagas de "dados mestres" que são só cadastro operacional manual (cadastrar materiais/fornecedores no ERP, sem deduplicação, regras de matching, qualidade ou governança de dados mestres).
+(dados genéricos, BI, vendas, suporte), vagas de plataformas de CRM/marketing (Salesforce Data Cloud, \
+Marketing Cloud, Agentforce, CDP de marketing, martech) ou de desenvolvimento full-stack/frontend/backend genérico \
+mesmo que citem "identity resolution" como recurso da ferramenta, que citam o termo apenas na descrição institucional da empresa, ou vagas de "dados mestres" que são só cadastro operacional manual (cadastrar materiais/fornecedores no ERP, sem deduplicação, regras de matching, qualidade ou governança de dados mestres).
 - vaga vinda de POST em rede social (fonte "Post · ..."): aprove só se o post anunciar uma vaga concreta e aberta (quem contrata, qual função) com foco no tema. Post genérico de "open to work", curso ou opinião = reprovar.
 - pessoa (perfil do LinkedIn): aprove se a pessoa claramente trabalha, pesquisa ou lidera algo cujo foco é \
 entity resolution / record linkage / MDM matching / identity resolution / geocodificação. No "resumo_pt" diga em \

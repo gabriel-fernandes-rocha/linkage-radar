@@ -87,6 +87,40 @@ def still_open(job: dict, listed_today: set[str]) -> bool:
     return _link_alive(job["url"])
 
 
+def enrich_linkedin(jobs: list[dict], limit: int = 40) -> tuple[list[dict], list[dict]]:
+    """Vaga do LinkedIn que chegou só com o trecho da busca (sem data/local): lê a página pública da vaga.
+    Devolve (enriquecidas com 'texto' para reler requisitos, encerradas para tirar da lista)."""
+    from sources import linkedin_guest
+    from sources.jobs import published
+
+    done, closed = [], []
+    for j in jobs:
+        if len(done) + len(closed) >= limit:
+            break
+        m = re.search(r"linkedin\.com/jobs/view/(?:[^/?#]*-)?(\d+)", j.get("url", ""))
+        if not m or j.get("publicada_em") or j.get("enriquecida"):
+            continue
+        info = linkedin_guest.detail(m[1])
+        if info is None:
+            break  # LinkedIn recusou: tenta o resto amanhã
+        j["enriquecida"] = True
+        if info["fechada"]:
+            closed.append(j)
+            continue
+        if info["postado"]:
+            j["publicada_em"] = published(info["postado"]) or j.get("publicada_em")
+        if info["local"] and (not j.get("local") or j.get("local") in ("Brasil", "Remoto")):
+            j["local"] = info["local"]
+        if info["empresa"] and not j.get("empresa"):
+            j["empresa"] = info["empresa"]
+        if len(info["texto"]) > 300:
+            j["texto"] = info["texto"]
+            done.append(j)
+    if done or closed:
+        log.info("open_jobs: %d vagas do LinkedIn completadas pela página pública, %d encerradas", len(done), len(closed))
+    return done, closed
+
+
 def update(new_jobs: list[dict], raw_jobs: list[dict], day: str, max_age_days: int, path=None) -> list[dict]:
     """Adiciona as novas, revalida as antigas e devolve a carteira ordenada (mais compatíveis primeiro)."""
     listed_today = {_norm_url(j["url"]) for j in raw_jobs}
