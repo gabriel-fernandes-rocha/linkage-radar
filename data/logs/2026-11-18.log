@@ -1,0 +1,101 @@
+===== coleta 2026-11-18 01:39 =====
+INFO serpapi: 69 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 97
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1408
+INFO jobs/lever: 301
+INFO jobs/ashby: 48
+INFO jobs/hn_who_is_hiring: 2
+INFO google_jobs 'data matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 3
+INFO jobs/gupy: 174
+INFO jobs/himalayas: 98
+INFO jobs/jobicy: 150
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 230
+INFO jobs/social_linkedin/ddg: 3 aceitos de 4
+INFO jobs/social_posts: 3
+INFO linkedin_guest: 42 vagas, 25 descrições abertas, 31 consultas no total
+INFO jobs/linkedin_guest: 42
+INFO judge: tokens in=2717 out=1097
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=6115 out=677
+INFO vagas: {'brutos': 3076, 'pos_palavras_chave': 7, 'aprovados': 3}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 14
+INFO papers/openalex: 175
+INFO judge: tokens in=2375 out=657
+INFO papers: {'brutos': 189, 'pos_palavras_chave': 4, 'aprovados': 3}
+INFO linkedin/ddg: 7 aceitos de 8
+INFO linkedin: 7 candidatos
+INFO judge: tokens in=1145 out=166
+INFO requisitos: tokens in=2074 out=149
+INFO linkedin: {'brutos': 7, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO open_jobs: fechou Director, Product Management, Data Foundation and Ontology
+INFO open_jobs: 134 abertas (4 novas)
+INFO open_jobs: 31 vagas do LinkedIn completadas pela página pública, 9 encerradas
+INFO requisitos: tokens in=9288 out=989
+INFO requisitos: tokens in=10487 out=845
+INFO requisitos: tokens in=10095 out=901
+INFO requisitos: tokens in=9602 out=881
+INFO requisitos: tokens in=9364 out=746
+INFO requisitos: tokens in=8022 out=855
+INFO requisitos: tokens in=9833 out=786
+INFO requisitos: tokens in=8582 out=592
+INFO requisitos: tokens in=7063 out=826
+INFO requisitos: tokens in=5488 out=694
+INFO requisitos: tokens in=7658 out=795
+INFO requisitos: tokens in=7230 out=807
+INFO requisitos: tokens in=6151 out=925
+INFO requisitos: tokens in=7561 out=1040
+INFO requisitos: tokens in=5595 out=891
+INFO requisitos: tokens in=6748 out=1049
+INFO mercado amplo: +40 vagas na amostra (total 200)
+INFO mercado: 203 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2228 out=946
+INFO judge: tokens in=1361 out=288
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/8)
+INFO network: 84 pessoas (1 novas), 46 empresas (2 novas)
+INFO carreira: tokens in=1463 out=1902
+INFO brasil/inhire: 237
+INFO brasil/gupy: 354
+INFO brasil/google_jobs_br: 13
+INFO brasil/linkedin/ddg: 8 aceitos de 8
+INFO brasil/linkedin_jobs_br: 8
+INFO linkedin_guest: 19 vagas, 19 descrições abertas, 100 consultas no total
+INFO brasil/linkedin_guest_br: 19
+INFO brasil/linkedin_local: 10
+INFO brasil/greenhouse: 1042
+INFO brasil/lever: 146
+INFO brasil/ashby: 112
+INFO brasil/inhire: novas empresas descobertas: grupomoovenfornax, reclameaqui
+INFO brasil: 5017 brutas, 19 candidatas para o juiz
+INFO judge: tokens in=4158 out=1305
+INFO judge: tokens in=2036 out=961
+INFO judge: tokens in=1326 out=408
+INFO requisitos: tokens in=6971 out=1443
+INFO open_jobs: fechou ENGENHEIRO DE INTEGRAÇÃO DE DADOS [INTEGRAL - SINOP MT]
+INFO open_jobs: fechou Engenheiro de Dados - Microsoft Fabric
+INFO open_jobs: fechou Staff Reltio Data Engineer
+INFO open_jobs: 42 abertas (4 novas)
+INFO open_jobs: 8 vagas do LinkedIn completadas pela página pública, 1 encerradas
+INFO requisitos: tokens in=7501 out=1160
+INFO requisitos: tokens in=7535 out=1740
+INFO mercado: 76 vagas no nicho, 200 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network: 50 pessoas (0 novas), 60 empresas (2 novas)
+INFO brasil: {'novas': 9, 'abertas': 41, 'arquivadas': 76, 'rede': {'pessoas_novas': 0, 'empresas_novas': 2}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-18.json
+

@@ -23,10 +23,20 @@
   "nivel": "nao",
   "nome": "activation"
  },
+ "active directory": {
+  "motivo": "sem evidência, só suporte básico",
+  "nivel": "nao",
+  "nome": "Active Directory"
+ },
  "address standardization": {
   "motivo": "Normaliza dados, mas não há foco específico em endereços.",
   "nivel": "parcial",
   "nome": "address standardization"
+ },
+ "adobe": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Adobe"
  },
  "adtech": {
   "motivo": "atua em saúde pública, não adtech",
@@ -93,6 +103,11 @@
   "nivel": "nao",
   "nome": "Angular"
  },
+ "apache jena": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Apache Jena"
+ },
  "api": {
   "motivo": "Integra dados via Elasticsearch, próximo de APIs",
   "nivel": "parcial",
@@ -123,6 +138,11 @@
   "nivel": "parcial",
   "nome": "arquitetura de dados medalhão"
  },
+ "asp": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "ASP"
+ },
  "ataccama": {
   "motivo": "Ferramenta específica não mencionada",
   "nivel": "nao",
@@ -148,10 +168,25 @@
   "nivel": "nao",
   "nome": "audience building"
  },
+ "aurora": {
+  "motivo": "sem uso de AWS",
+  "nivel": "nao",
+  "nome": "Aurora"
+ },
+ "auto loader": {
+  "motivo": "específico Databricks, não usado",
+  "nivel": "nao",
+  "nome": "Auto Loader"
+ },
  "automated data testing": {
   "motivo": "Realiza garantia de qualidade, porém testes automatizados não citados.",
   "nivel": "parcial",
   "nome": "automated data testing"
+ },
+ "automation": {
+  "motivo": "automatiza pipelines de resolução de entidades",
+  "nivel": "tem",
+  "nome": "automation"
  },
  "aws": {
   "motivo": "nenhuma menção a cloud AWS",
@@ -203,6 +238,11 @@
   "nivel": "nao",
   "nome": "Azure Data Factory"
  },
+ "azure databricks": {
+  "motivo": "usa Spark, não Databricks/Azure",
+  "nivel": "parcial",
+  "nome": "Azure Databricks"
+ },
  "azure devops": {
   "motivo": "não há evidência de uso do Azure DevOps",
   "nivel": "nao",
@@ -228,6 +268,11 @@
   "nivel": "nao",
   "nome": "B2B company data"
  },
+ "bamboohr": {
+  "motivo": "nunca usado, sem relação",
+  "nivel": "nao",
+  "nome": "BambooHR"
+ },
  "batch processing": {
   "motivo": "Desenvolve pipelines de ETL em lote",
   "nivel": "tem",
@@ -237,6 +282,16 @@
   "motivo": "experiência com pipelines batch similares ao Beam",
   "nivel": "parcial",
   "nome": "Beam"
+ },
+ "bedrock": {
+  "motivo": "sem evidência AWS",
+  "nivel": "nao",
+  "nome": "Bedrock"
+ },
+ "bedrock agents": {
+  "motivo": "sem evidência de AWS/Bedrock",
+  "nivel": "nao",
+  "nome": "Bedrock Agents"
  },
  "bfmdw": {
   "motivo": "Sem evidência de modelo bancário específico",
@@ -273,6 +328,11 @@
   "nivel": "tem",
   "nome": "blocking"
  },
+ "bloomreach": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Bloomreach"
+ },
  "bods": {
   "motivo": "sem evidência de SAP BusinessObjects Data Services",
   "nivel": "nao",
@@ -287,6 +347,11 @@
   "motivo": "sem evidência de SAP no currículo",
   "nivel": "nao",
   "nome": "Business Partner"
+ },
+ "c-cda": {
+  "motivo": "sem evidência saúde técnica",
+  "nivel": "nao",
+  "nome": "C-CDA"
  },
  "calculated insights": {
   "motivo": "Nenhum trabalho de insights calculados descrito.",
@@ -308,6 +373,16 @@
   "nivel": "nao",
   "nome": "causal inference"
  },
+ "cbap": {
+  "motivo": "certificação não mencionada",
+  "nivel": "nao",
+  "nome": "CBAP"
+ },
+ "ccba": {
+  "motivo": "certificação não mencionada",
+  "nivel": "nao",
+  "nome": "CCBA"
+ },
  "ccpa": {
   "motivo": "sem menção a compliance de privacidade EUA",
   "nivel": "nao",
@@ -323,6 +398,16 @@
   "nivel": "parcial",
   "nome": "CDI"
  },
+ "cdk": {
+  "motivo": "sem uso AWS",
+  "nivel": "nao",
+  "nome": "CDK"
+ },
+ "cdp": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "CDP"
+ },
  "cdr": {
   "motivo": "sem menção a call detail records/telecom",
   "nivel": "nao",
@@ -332,6 +417,11 @@
   "motivo": "Ferramenta específica nunca usada, sem relação próxima",
   "nivel": "nao",
   "nome": "Census"
+ },
+ "chunking": {
+  "motivo": "blocking similar a chunking de dados",
+  "nivel": "parcial",
+  "nome": "Chunking"
  },
  "ci/cd": {
   "motivo": "sem evidência de pipelines CI/CD",
@@ -347,6 +437,11 @@
   "motivo": "sem menção a LLMs/Claude",
   "nivel": "nao",
   "nome": "Claude"
+ },
+ "clean rooms": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Clean Rooms"
  },
  "cleansing": {
   "motivo": "Realiza limpeza e normalização nos pipelines de dados",
@@ -398,6 +493,11 @@
   "nivel": "nao",
   "nome": "Collibra"
  },
+ "containers": {
+  "motivo": "sem evidência de Docker/containers",
+  "nivel": "nao",
+  "nome": "containers"
+ },
  "control-m": {
   "motivo": "não há referência ao uso do Control-M",
   "nivel": "nao",
@@ -407,6 +507,11 @@
   "motivo": "sem menção a compliance de privacidade EUA",
   "nivel": "nao",
   "nome": "CPRA"
+ },
+ "cpt": {
+  "motivo": "codificação médica não mencionada",
+  "nivel": "nao",
+  "nome": "CPT"
  },
  "crm": {
   "motivo": "Não há experiência declarada com sistemas CRM",
@@ -463,15 +568,30 @@
   "nivel": "tem",
   "nome": "customer identity resolution"
  },
+ "customer vendor integration (cvi)": {
+  "motivo": "ferramenta SAP específica não mencionada",
+  "nivel": "nao",
+  "nome": "Customer Vendor Integration (CVI)"
+ },
  "cutover": {
   "motivo": "Nenhuma evidência de atuação em cutover",
   "nivel": "nao",
   "nome": "cutover"
  },
+ "cvi": {
+  "motivo": "conceito MDM próximo de entity resolution",
+  "nivel": "parcial",
+  "nome": "CVI"
+ },
  "cypher": {
   "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
   "nome": "Cypher"
+ },
+ "dag": {
+  "motivo": "pipelines ETL implicam DAGs",
+  "nivel": "parcial",
+  "nome": "DAG"
  },
  "dagster": {
   "motivo": "sem evidência, orquestrador específico não mencionado",
@@ -683,6 +803,11 @@
   "nivel": "parcial",
   "nome": "Databricks"
  },
+ "databricks certification": {
+  "motivo": "usa Spark, próximo de Databricks",
+  "nivel": "parcial",
+  "nome": "Databricks certification"
+ },
  "databricks sql": {
   "motivo": "nenhum uso de Databricks SQL mencionado",
   "nivel": "nao",
@@ -698,10 +823,20 @@
   "nivel": "nao",
   "nome": "Datahub"
  },
+ "datalog": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Datalog"
+ },
  "dataset documentation": {
   "motivo": "sem evidência de documentação formal de datasets",
   "nivel": "nao",
   "nome": "Dataset Documentation"
+ },
+ "dayforce": {
+  "motivo": "HRIS não relacionado ao perfil",
+  "nivel": "nao",
+  "nome": "Dayforce"
  },
  "db2": {
   "motivo": "sem evidência de uso de DB2",
@@ -773,6 +908,11 @@
   "nivel": "tem",
   "nome": "Deterministic Matching"
  },
+ "dgl": {
+  "motivo": "sem evidência deep learning grafos",
+  "nivel": "nao",
+  "nome": "DGL"
+ },
  "dimensional modeling": {
   "motivo": "cursos de DW/BI sugerem conhecimento básico",
   "nivel": "parcial",
@@ -798,6 +938,11 @@
   "nivel": "nao",
   "nome": "DQX"
  },
+ "duckdb": {
+  "motivo": "SQL forte, fácil adaptação",
+  "nivel": "parcial",
+  "nome": "DuckDB"
+ },
  "duplicate detection": {
   "motivo": "Implementa deduplicação em pipelines de record linkage",
   "nivel": "tem",
@@ -813,6 +958,16 @@
   "nivel": "nao",
   "nome": "DynamoDB"
  },
+ "ecs": {
+  "motivo": "sem uso AWS",
+  "nivel": "nao",
+  "nome": "ECS"
+ },
+ "ecs/fargate": {
+  "motivo": "sem uso AWS",
+  "nivel": "nao",
+  "nome": "ECS/Fargate"
+ },
  "edc": {
   "motivo": "ferramenta Informatica específica, sem evidência",
   "nivel": "nao",
@@ -822,6 +977,11 @@
   "motivo": "trabalha com dados de saúde pública, não EHR específico",
   "nivel": "parcial",
   "nome": "EHR"
+ },
+ "eks": {
+  "motivo": "sem uso AWS/Kubernetes",
+  "nivel": "nao",
+  "nome": "EKS"
  },
  "elasticsearch": {
   "motivo": "Pipeline de matching integra Elasticsearch",
@@ -913,10 +1073,20 @@
   "nivel": "nao",
   "nome": "event-driven integration"
  },
+ "eventbridge": {
+  "motivo": "sem uso AWS",
+  "nivel": "nao",
+  "nome": "EventBridge"
+ },
  "excel": {
   "motivo": "não há referência ao uso de Excel",
   "nivel": "nao",
   "nome": "Excel"
+ },
+ "experian": {
+  "motivo": "sem evidência ferramenta MDM comercial",
+  "nivel": "nao",
+  "nome": "Experian"
  },
  "external apis (factset, sec tools)": {
   "motivo": "Sem experiência declarada com APIs externas",
@@ -927,6 +1097,11 @@
   "motivo": "Redução de falsos positivos em record linkage",
   "nivel": "tem",
   "nome": "false-positive optimisation"
+ },
+ "fastapi": {
+  "motivo": "Python forte, fácil adaptação",
+  "nivel": "parcial",
+  "nome": "FastAPI"
  },
  "feature stores": {
   "motivo": "sem evidência no currículo",
@@ -968,6 +1143,11 @@
   "nivel": "nao",
   "nome": "Flowable"
  },
+ "freewheel": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "FreeWheel"
+ },
  "fsldm": {
   "motivo": "Modelo financeiro específico não mencionado",
   "nivel": "nao",
@@ -983,6 +1163,11 @@
   "nivel": "tem",
   "nome": "fuzzy matching"
  },
+ "ga4": {
+  "motivo": "sem evidência analytics",
+  "nivel": "nao",
+  "nome": "GA4"
+ },
  "gcp": {
   "motivo": "sem evidência de cloud GCP",
   "nivel": "nao",
@@ -992,6 +1177,11 @@
   "motivo": "sem evidência de compliance GDPR, dados são BR",
   "nivel": "nao",
   "nome": "GDPR"
+ },
+ "gdsn": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "GDSN"
  },
  "gemini": {
   "motivo": "sem evidência de uso de Gemini/LLMs no currículo",
@@ -1028,6 +1218,11 @@
   "nivel": "parcial",
   "nome": "GitHub Actions"
  },
+ "github copilot": {
+  "motivo": "não mencionado no currículo",
+  "nivel": "nao",
+  "nome": "GitHub Copilot"
+ },
  "gitlab ci/cd": {
   "motivo": "usa Git, CI/CD é extensão natural",
   "nivel": "parcial",
@@ -1037,6 +1232,11 @@
   "motivo": "sem evidência de AWS Glue",
   "nivel": "nao",
   "nome": "Glue"
+ },
+ "go": {
+  "motivo": "sem evidência linguagem Go",
+  "nivel": "nao",
+  "nome": "Go"
  },
  "go-live": {
   "motivo": "não há evidência de gerenciamento de go-live",
@@ -1058,10 +1258,20 @@
   "nivel": "parcial",
   "nome": "golden-record"
  },
+ "google cloud pub/sub": {
+  "motivo": "sem experiência em GCP",
+  "nivel": "nao",
+  "nome": "Google Cloud Pub/Sub"
+ },
  "governança de dados": {
   "motivo": "faz qualidade/padronização de dados, próximo de governança",
   "nivel": "parcial",
   "nome": "Governança de Dados"
+ },
+ "gpc": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "GPC"
  },
  "grafana": {
   "motivo": "sem evidência de monitoramento/visualização Grafana",
@@ -1128,6 +1338,16 @@
   "nivel": "nao",
   "nome": "Gremlin"
  },
+ "gs1": {
+  "motivo": "sem evidência padrões varejo",
+  "nivel": "nao",
+  "nome": "GS1"
+ },
+ "gtm": {
+  "motivo": "sem evidência tag manager",
+  "nivel": "nao",
+  "nome": "GTM"
+ },
  "h2o": {
   "motivo": "sem evidência de uso de H2O.ai",
   "nivel": "nao",
@@ -1168,6 +1388,11 @@
   "nivel": "nao",
   "nome": "HL7"
  },
+ "hl7 v2": {
+  "motivo": "sem evidência padrão saúde técnico",
+  "nivel": "nao",
+  "nome": "HL7 v2"
+ },
  "householding": {
   "motivo": "Entende deduplicação, mas householding não mencionado",
   "nivel": "parcial",
@@ -1183,6 +1408,11 @@
   "nivel": "nao",
   "nome": "Hugging Face"
  },
+ "hybrid retrieval": {
+  "motivo": "Elasticsearch/matching próximo de retrieval",
+  "nivel": "parcial",
+  "nome": "Hybrid Retrieval"
+ },
  "ia": {
   "motivo": "scikit-learn e matching probabilístico, sem IA avançada",
   "nivel": "parcial",
@@ -1192,6 +1422,11 @@
   "motivo": "sem evidência de infraestrutura como código",
   "nivel": "nao",
   "nome": "IAC"
+ },
+ "iam": {
+  "motivo": "sem uso AWS IAM",
+  "nivel": "nao",
+  "nome": "IAM"
  },
  "ibm infosphere mdm": {
   "motivo": "sem evidência de ferramenta específica",
@@ -1207,6 +1442,16 @@
   "motivo": "sem certificação IBM MDM",
   "nivel": "nao",
   "nome": "IBM MDM Certification"
+ },
+ "icd-10": {
+  "motivo": "sem evidência codificação médica",
+  "nivel": "nao",
+  "nome": "ICD-10"
+ },
+ "iceberg": {
+  "motivo": "big data/Spark próximo de Iceberg",
+  "nivel": "parcial",
+  "nome": "Iceberg"
  },
  "identity graph": {
   "motivo": "entity resolution próximo do conceito de identity graph",
@@ -1288,6 +1533,11 @@
   "nivel": "nao",
   "nome": "Information Steward"
  },
+ "infosum": {
+  "motivo": "ferramenta específica não usada",
+  "nivel": "nao",
+  "nome": "InfoSum"
+ },
  "infrastructure as code": {
   "motivo": "sem evidência de IaC no currículo",
   "nivel": "nao",
@@ -1297,6 +1547,11 @@
   "motivo": "Nenhuma menção a testes integrados",
   "nivel": "nao",
   "nome": "integrated testing"
+ },
+ "isolved": {
+  "motivo": "plataforma HR não mencionada",
+  "nivel": "nao",
+  "nome": "iSolved"
  },
  "j2ee": {
   "motivo": "sem evidência de Java EE",
@@ -1393,10 +1648,20 @@
   "nivel": "nao",
   "nome": "LangChain"
  },
+ "langfuse": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Langfuse"
+ },
  "langgraph": {
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "LangGraph"
+ },
+ "ldap": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "LDAP"
  },
  "lemit": {
   "motivo": "sem evidência no currículo",
@@ -1432,6 +1697,11 @@
   "motivo": "sem evidência de uso de LLMs",
   "nivel": "nao",
   "nome": "LLMs"
+ },
+ "loinc": {
+  "motivo": "sem evidência codificação laboratorial",
+  "nivel": "nao",
+  "nome": "LOINC"
  },
  "looker": {
   "motivo": "BI tool não mencionada, mas BI próximo",
@@ -1488,6 +1758,11 @@
   "nivel": "parcial",
   "nome": "master data"
  },
+ "master data governance": {
+  "motivo": "conceitos próximos via MDM/matching/golden record",
+  "nivel": "parcial",
+  "nome": "Master Data Governance"
+ },
  "master data management": {
   "motivo": "conceitos próximos ao golden record",
   "nivel": "parcial",
@@ -1543,6 +1818,11 @@
   "nivel": "nao",
   "nome": "Matillion"
  },
+ "mcp": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "MCP"
+ },
  "mdm platform (informatica mdm/semarchy/stibo step)": {
   "motivo": "conceitos MDM próximos, sem ferramenta específica",
   "nivel": "parcial",
@@ -1567,6 +1847,11 @@
   "motivo": "sem evidência de uso dessa ferramenta",
   "nivel": "nao",
   "nome": "Metaflow"
+ },
+ "microservices": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Microservices"
  },
  "microsoft dynamics 365": {
   "motivo": "sem evidência de CRM Microsoft",
@@ -1698,6 +1983,11 @@
   "nivel": "nao",
   "nome": "OAuth"
  },
+ "oauth 2.0": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "OAuth 2.0"
+ },
  "obiee": {
   "motivo": "sem evidência de uso de OBIEE",
   "nivel": "nao",
@@ -1723,6 +2013,11 @@
   "nivel": "nao",
   "nome": "OFSDF"
  },
+ "oidc": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "OIDC"
+ },
  "ontology": {
   "motivo": "sem evidência de modelagem ontológica",
   "nivel": "nao",
@@ -1738,20 +2033,45 @@
   "nivel": "nao",
   "nome": "Open-source energy modeling tools"
  },
+ "opencypher": {
+  "motivo": "sem evidência de grafos/Neo4j",
+  "nivel": "nao",
+  "nome": "openCypher"
+ },
  "openshift": {
   "motivo": "sem evidência de containers/orquestração",
   "nivel": "nao",
   "nome": "OpenShift"
+ },
+ "opentelemetry": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "OpenTelemetry"
  },
  "oracle": {
   "motivo": "sabe SQL, falta Oracle específico",
   "nivel": "parcial",
   "nome": "Oracle"
  },
+ "oracle data integrator": {
+  "motivo": "sem evidência de ETL Oracle específico",
+  "nivel": "nao",
+  "nome": "Oracle Data Integrator"
+ },
+ "oracle database": {
+  "motivo": "usa SQL mas não Oracle especificamente",
+  "nivel": "nao",
+  "nome": "Oracle Database"
+ },
  "owl": {
   "motivo": "sem evidência de ontologias formais",
   "nivel": "nao",
   "nome": "OWL"
+ },
+ "oxigraph": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Oxigraph"
  },
  "pairwise scoring": {
   "motivo": "parte do Fellegi-Sunter/matching probabilístico",
@@ -1762,6 +2082,11 @@
   "motivo": "possível uso de Pandas, porém não citado",
   "nivel": "parcial",
   "nome": "Pandas"
+ },
+ "parquet": {
+  "motivo": "pipelines Spark/ETL usam formatos colunares comumente",
+  "nivel": "parcial",
+  "nome": "Parquet"
  },
  "patient matching": {
   "motivo": "integra registros de saúde pública com matching",
@@ -1778,6 +2103,11 @@
   "nivel": "nao",
   "nome": "Phoenix"
  },
+ "piano": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Piano"
+ },
  "pii detection": {
   "motivo": "lida com dados sensíveis de saúde/identidade, próximo",
   "nivel": "parcial",
@@ -1788,10 +2118,25 @@
   "nivel": "parcial",
   "nome": "PIM"
  },
+ "pinecone": {
+  "motivo": "similar a Elasticsearch/vector search",
+  "nivel": "parcial",
+  "nome": "Pinecone"
+ },
+ "pl/sql": {
+  "motivo": "sabe SQL, não PL/SQL Oracle",
+  "nivel": "nao",
+  "nome": "PL/SQL"
+ },
  "playwright": {
   "motivo": "sem evidência de automação web/testes",
   "nivel": "nao",
   "nome": "Playwright"
+ },
+ "pmi-pba": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "PMI-PBA"
  },
  "postgis": {
   "motivo": "sem evidência de extensão espacial de SQL",
@@ -1827,6 +2172,11 @@
   "motivo": "Avaliação de modelo inclui métrica de precisão",
   "nivel": "tem",
   "nome": "precision"
+ },
+ "prefect": {
+  "motivo": "orquestra pipelines, ferramenta próxima",
+  "nivel": "parcial",
+  "nome": "Prefect"
  },
  "pricing intelligence": {
   "motivo": "sem relação com matching/dados de saúde",
@@ -1883,6 +2233,11 @@
   "nivel": "tem",
   "nome": "programming"
  },
+ "prolog": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Prolog"
+ },
  "protobuf": {
   "motivo": "sem evidência de serialização Protobuf",
   "nivel": "nao",
@@ -1907,6 +2262,11 @@
   "motivo": "sem evidência de deep learning frameworks",
   "nivel": "nao",
   "nome": "PyTorch"
+ },
+ "pytorch geometric": {
+  "motivo": "sem evidência de deep learning/grafos",
+  "nivel": "nao",
+  "nome": "PyTorch Geometric"
  },
  "qgis": {
   "motivo": "sem evidência de ferramentas GIS",
@@ -1952,6 +2312,16 @@
   "motivo": "sem evidência de modelos semânticos RDF",
   "nivel": "nao",
   "nome": "RDF"
+ },
+ "rdf/owl": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "RDF/OWL"
+ },
+ "rds": {
+  "motivo": "sem evidência de AWS",
+  "nivel": "nao",
+  "nome": "RDS"
  },
  "react": {
   "motivo": "sem evidência de desenvolvimento frontend",
@@ -2003,6 +2373,16 @@
   "nivel": "nao",
   "nome": "Reltio Cloud"
  },
+ "reltio integration hub": {
+  "motivo": "nunca usou Reltio",
+  "nivel": "nao",
+  "nome": "Reltio Integration Hub"
+ },
+ "reltio mdm": {
+  "motivo": "conceitos de MDM próximos via matching/golden record",
+  "nivel": "parcial",
+  "nome": "Reltio MDM"
+ },
  "reproducible data pipelines": {
   "motivo": "constrói pipelines ETL reprodutíveis em produção",
   "nivel": "tem",
@@ -2033,10 +2413,20 @@
   "nivel": "nao",
   "nome": "Ruby"
  },
+ "rxnorm": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "RxNorm"
+ },
  "s3": {
   "motivo": "sem evidência de uso AWS S3",
   "nivel": "nao",
   "nome": "S3"
+ },
+ "safe": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "SAFe"
  },
  "sagemaker": {
   "motivo": "sem evidência de AWS",
@@ -2047,6 +2437,11 @@
   "motivo": "não há experiência com Salesforce",
   "nivel": "nao",
   "nome": "Salesforce"
+ },
+ "salesforce cdp": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Salesforce CDP"
  },
  "salesforce data cloud": {
   "motivo": "Plataforma específica, sem experiência declarada",
@@ -2068,10 +2463,20 @@
   "nivel": "nao",
   "nome": "SAP Business Objects"
  },
+ "sap business partner": {
+  "motivo": "módulo SAP específico, sem evidência",
+  "nivel": "nao",
+  "nome": "SAP Business Partner"
+ },
  "sap data services": {
   "motivo": "não citado",
   "nivel": "nao",
   "nome": "SAP Data Services"
+ },
+ "sap data services (bods)": {
+  "motivo": "ferramenta ETL SAP não usada",
+  "nivel": "nao",
+  "nome": "SAP Data Services (BODS)"
  },
  "sap hcm": {
   "motivo": "Nenhuma experiência ou menção ao SAP HCM",
@@ -2082,6 +2487,11 @@
   "motivo": "sem evidência de integração SAP",
   "nivel": "nao",
   "nome": "SAP IDocs"
+ },
+ "sap master data governance": {
+  "motivo": "conceitos MDM próximos, não SAP",
+  "nivel": "parcial",
+  "nome": "SAP Master Data Governance"
  },
  "sap mdg": {
   "motivo": "não citado",
@@ -2127,6 +2537,11 @@
   "motivo": "integra fontes heterogêneas sem chave única, próximo",
   "nivel": "parcial",
   "nome": "Schema mapping"
+ },
+ "schema.org": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "schema.org"
  },
  "scikit-learn": {
   "motivo": "listado explicitamente como conhecimento usado",
@@ -2213,15 +2628,35 @@
   "nivel": "parcial",
   "nome": "Single Customer View"
  },
+ "skos": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "SKOS"
+ },
  "small language models": {
   "motivo": "Nenhum trabalho com modelos de linguagem pequeno",
   "nivel": "nao",
   "nome": "small language models"
  },
+ "snomed ct": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "SNOMED CT"
+ },
  "snowflake": {
   "motivo": "sabe SQL, base próxima",
   "nivel": "parcial",
   "nome": "Snowflake"
+ },
+ "snowflake data clean rooms": {
+  "motivo": "sem experiência em Snowflake",
+  "nivel": "nao",
+  "nome": "Snowflake Data Clean Rooms"
+ },
+ "snowpark": {
+  "motivo": "sabe Spark/SQL, próximo de Snowflake",
+  "nivel": "parcial",
+  "nome": "Snowpark"
  },
  "soap": {
   "motivo": "Nenhum uso de serviços SOAP indicado",
@@ -2318,6 +2753,11 @@
   "nivel": "parcial",
   "nome": "Structured output"
  },
+ "structured streaming": {
+  "motivo": "usa Spark batch, próximo de streaming",
+  "nivel": "parcial",
+  "nome": "Structured Streaming"
+ },
  "successfactors": {
   "motivo": "Nenhuma experiência ou menção ao SuccessFactors",
   "nivel": "nao",
@@ -2368,6 +2808,11 @@
   "nivel": "parcial",
   "nome": "Taxonomy mapping"
  },
+ "tealium": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Tealium"
+ },
  "tensorflow": {
   "motivo": "sem evidência, usa scikit-learn",
   "nivel": "nao",
@@ -2413,6 +2858,11 @@
   "nivel": "nao",
   "nome": "TypeScript"
  },
+ "uid2": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "UID2"
+ },
  "unified customer profiles": {
   "motivo": "Trabalha golden record, perfil unificado implícito.",
   "nivel": "parcial",
@@ -2443,6 +2893,11 @@
   "nivel": "nao",
   "nome": "vector databases"
  },
+ "vector search": {
+  "motivo": "usa Elasticsearch, próximo de busca vetorial",
+  "nivel": "parcial",
+  "nome": "vector search"
+ },
  "vector store": {
   "motivo": "sem evidência de uso de bancos vetoriais",
   "nivel": "nao",
@@ -2452,6 +2907,11 @@
   "motivo": "sem evidência, só scikit-learn/Jupyter local",
   "nivel": "nao",
   "nome": "Vertex AI"
+ },
+ "weaviate": {
+  "motivo": "similar a Elasticsearch/vector search",
+  "nivel": "parcial",
+  "nome": "Weaviate"
  },
  "web research automation": {
   "motivo": "Automação de pesquisa web não mencionada.",
@@ -2463,15 +2923,40 @@
   "nivel": "nao",
   "nome": "Web scraping"
  },
+ "weights & biases": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Weights & Biases"
+ },
  "wildfly": {
   "motivo": "sem evidência de servidor de aplicação Java",
   "nivel": "nao",
   "nome": "WildFly"
  },
+ "workday": {
+  "motivo": "plataforma HR não mencionada",
+  "nivel": "nao",
+  "nome": "Workday"
+ },
  "xgboost": {
   "motivo": "sabe scikit-learn, base próxima",
   "nivel": "parcial",
   "nome": "XGBoost"
+ },
+ "xml": {
+  "motivo": "provável exposição via ETL/dados heterogêneos",
+  "nivel": "parcial",
+  "nome": "XML"
+ },
+ "z3": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Z3"
+ },
+ "zephr": {
+  "motivo": "sem evidência",
+  "nivel": "nao",
+  "nome": "Zephr"
  },
  "zingg": {
   "motivo": "ferramenta similar a Splink",

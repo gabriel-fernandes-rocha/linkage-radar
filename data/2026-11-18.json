@@ -1,0 +1,372 @@
+{
+  "data": "2026-11-18",
+  "gerado_em": "2026-11-18T01:17-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer",
+      "url": "https://himalayas.app/companies/acxiom/jobs/senior-data-engineer",
+      "empresa": "Acxiom",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-18",
+      "score": 11,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenheiro sênior com foco explícito em arquitetura de identity graphs em larga escala, entity resolution e match/merge logic em bilhões de registros.",
+      "resumo": "Acxiom busca Senior Data Engineer para projetar infraestrutura de dados que conecta mídia, comércio e dados de engajamento através de identity graphs de bilhões de registros. Responsabilidades incluem ingestão, resolução de entidades, lógica de match/merge e manutenção de grafos de identidade em escala massiva.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Python",
+          "Scala",
+          "Java",
+          "Snowflake",
+          "Databricks",
+          "AWS",
+          "Airflow",
+          "Entity Resolution",
+          "Identity Graphs",
+          "Record Linkage",
+          "Graph Databases",
+          "Neo4j",
+          "TigerGraph",
+          "Clean Rooms"
+        ],
+        "desejaveis": [
+          "Kafka",
+          "Kinesis",
+          "Snowflake Data Clean Rooms",
+          "LiveRamp",
+          "InfoSum",
+          "REST",
+          "GraphQL",
+          "LLMs",
+          "RAG",
+          "MCP",
+          "GitHub Copilot"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 27,
+        "senioridade": 60,
+        "local": 12,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Scala",
+          "Java",
+          "Snowflake",
+          "Databricks",
+          "AWS",
+          "Neo4j",
+          "TigerGraph",
+          "Clean Rooms"
+        ],
+        "parciais": [
+          "SQL",
+          "Airflow",
+          "Identity Graphs",
+          "Graph Databases"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Quantexa Developer",
+      "url": "https://himalayas.app/companies/matrix-global/jobs/quantexa-developer",
+      "empresa": "Matrix Global",
+      "local": "Remoto · India",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-17",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga Quantexa Developer com responsabilidades centrais em entity resolution, otimização de modelos de scoring, validação e tuning de accuracy.",
+      "resumo": "Matrix Global busca Quantexa Developer para desenhar, desenvolver e entregar soluções end-to-end com foco em entity resolution, otimização de modelos de scoring e calibração de thresholds. Inclui simulações e validação de modelos para melhorar acurácia de detecção.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Quantexa",
+          "Entity Resolution",
+          "Data Modeling"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "pleno",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "India"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 3,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 33,
+        "senioridade": 100,
+        "local": 12,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 3+ anos (você tem 2.9)",
+        "local_txt": "remoto só para India: exige autorização de trabalho lá",
+        "faltam": [
+          "Quantexa",
+          "Data Modeling"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Reltio MDM & Integration Hub Engineer",
+      "url": "https://www.learn4good.com/jobs/austin/texas/software_development/5599368429/e/",
+      "empresa": "N2P Systems",
+      "local": "Austin, TX",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-06",
+      "score": 10,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Engineer em Reltio MDM com expertise em data modeling, match and merge strategies, survivorship rules e qualidade de dados mestres.",
+      "resumo": "N2P Systems busca Senior Reltio MDM Engineer com experiência em design de modelos, estratégias de match/merge, regras de sobrevivência e qualidade de dados mestres. Inclui integração com sistemas upstream e downstream via Reltio Integration Hub.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "Reltio MDM",
+          "Reltio Integration Hub",
+          "REST",
+          "JSON",
+          "XML",
+          "SQL",
+          "Match/Merge",
+          "Survivorship Rules"
+        ],
+        "desejaveis": [
+          "GCP",
+          "Kafka",
+          "Google Cloud Pub/Sub",
+          "CI/CD",
+          "Git"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 6,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.17,
+      "compat_detalhe": {
+        "habilidades": 35,
+        "senioridade": 60,
+        "local": 60,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "pede 6+ anos (você tem 2.9)",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Reltio Integration Hub",
+          "Survivorship Rules"
+        ],
+        "parciais": [
+          "Reltio MDM",
+          "REST",
+          "JSON",
+          "XML",
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Semantic AI Engineer - Remote Work | REF#310694",
+      "url": "https://uy.linkedin.com/jobs/view/semantic-ai-engineer-remote-work-ref%23310694-at-bairesdev-4491716502",
+      "texto": "Build entity resolution and semantic alignment pipelines, mapping model-generated concepts to canonical ontology entities. Implement formal constraint reasoning for satisfiability, contradiction detection, and counterexample generation.",
+      "data": "Nov 17, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Foco explícito em entity resolution e semantic alignment pipelines, com matching de conceitos a ontologias canônicas, alinhado ao perfil de record linkage e entity matching.",
+      "resumo": "Vaga de Semantic AI Engineer para construir pipelines de entity resolution e alinhamento semântico, mapeando conceitos para entidades de ontologia canônica com raciocínio formal de constraints. Remoto, sem informação de empresa contratante na fonte.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.33,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "How Ethnic Name Characteristics Influence String Similarities and Cause Bias when Linking Large Population Databases",
+      "url": "https://doi.org/10.23889/ijpds.v11i1.3767",
+      "autores": "Yashithi Dharmawimala et al.",
+      "data": "2026-11-16",
+      "fonte": "OpenAlex",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Paper central sobre viés em record linkage: compara funções de string similarity (Jaro-Winkler, edit distance, q-gram) em nomes diversos etnicamente em population databases, tema core do perfil.",
+      "resumo": "Investiga como diferentes funções de similaridade de strings (Jaro-Winkler, edit distance, q-gram) causam viés em record linkage de nomes etnicamente diversos. Demonstra que a escolha da função de comparação é crucial para fairness em linkage de grandes bases de dados populacionais.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Growing Clusters Lower the Bar: Profile Accretion in LLM-Based Incremental Entity Resolution",
+      "url": "http://arxiv.org/abs/2611.22485v1",
+      "autores": "Huixue Han et al.",
+      "data": "2026-11-17",
+      "fonte": "arXiv",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre incremental entity resolution com LLMs: analisa como cluster size afeta decisões de matching, relevante para scoring e classificação em pipelines de linkage.",
+      "resumo": "Estuda entity resolution incremental onde LLMs decidem se novo registro pertence a cluster existente. Mostra que modelos diminuem o limiar de matching conforme cluster cresce, com aplicação em linkage de fornecedores com identificadores como ground truth.",
+      "confianca": 0.9
+    },
+    {
+      "tipo": "paper",
+      "titulo": "EpiLedger: Privacy-Safe Disease Tracking, Clinical Text Screening, and Outbreak Monitoring",
+      "url": "https://doi.org/10.5281/zenodo.24222382",
+      "autores": "Bryan White",
+      "data": "2026-11-14",
+      "fonte": "OpenAlex",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre rastreamento de doenças com foco em record linkage encriptado entre clínicas e privacidade em saúde pública, alinhado com experiência em linkage em produção.",
+      "resumo": "EpiLedger é um sistema de vigilância epidemiológica que usa record linkage encriptado com Bloom filters, privacidade diferencial e ledger tamper-evident para rastrear surtos mantendo confidencialidade em dados de saúde. O trabalho valida matching F1=1.0 em linkage de registros clínicos.",
+      "confianca": 0.85
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 125,
+  "vagas_arquivadas_total": 204,
+  "rede": {
+    "pessoas_novas": 1,
+    "empresas_novas": 2
+  },
+  "pilula_mercado": "Kafka",
+  "brasil": {
+    "novas": 9,
+    "abertas": 41,
+    "arquivadas": 76,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 2
+    }
+  },
+  "aula": {
+    "dia": 48,
+    "semana": 7,
+    "tema": "Segmentação por regras e estatística",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Comparar um parser de regras com o libpostal em 30 endereços",
+    "modulo": "Semana 7: Segmentação por regras e estatística",
+    "versao": 2,
+    "objetivo": "Comparar empiricamente um parser de endereços baseado em regras (regex) com o libpostal (modelo estatístico/CRF treinado em escala global), medindo acurácia campo a campo em um conjunto de 30 endereços brasileiros sintéticos.",
+    "contexto": "Uma fintech brasileira recebe endereços de cadastro em formato livre vindos de diferentes canais (app, call center, parceiros). O time de dados precisa decidir se mantém o parser de regex feito internamente ou migra para o libpostal, que foi citado na Aula 46 como abordagem estatística moderna (CRF) de segmentação. Este laboratório gera dados sintéticos com gabarito conhecido para comparar as duas abordagens de forma objetiva, retomando a discussão de Christen (2012, Seção 3.6-3.7, p. 58-62) sobre regras rígidas versus modelos estatísticos.",
+    "passos": [
+      "Gere 30 endereços sintéticos brasileiros combinando rua, número, bairro, cidade, UF e CEP, guardando o gabarito (valor correto de cada campo) junto com o texto concatenado.",
+      "Implemente um parser de regras simples usando expressões regulares para extrair CEP, UF e número, inspirado nas regras 'hard' descritas por Christen (2012, p. 60): elas ou disparam ou não disparam, sem tolerância a variação de ordem.",
+      "Tente importar o parser do libpostal (biblioteca 'postal'); se não estiver instalado, exiba instrução de instalação e continue o experimento apenas com o parser de regras.",
+      "Rode os dois parsers sobre os 30 endereços e compare cada campo extraído contra o gabarito, contando acertos por campo.",
+      "Calcule a acurácia por campo (CEP e UF) para cada abordagem e registre os casos em que o parser de regras falhou.",
+      "Discuta, usando a tabela de transição da Fig. 3.7 (Christen, 2012, p. 61), por que um modelo baseado em HMM/CRF tolera melhor variações de ordem dos tokens do que uma regra fixa."
+    ],
+    "codigo": "import re, random\nrandom.seed(42)\nruas=[\"Rua das Flores\",\"Av Paulista\",\"Alameda Santos\",\"Rua XV de Novembro\",\"Travessa Bela Vista\"]\nbairros=[\"Centro\",\"Jardim America\",\"Vila Nova\",\"Boa Vista\"]\ncidades=[(\"Sao Paulo\",\"SP\"),(\"Curitiba\",\"PR\"),(\"Recife\",\"PE\")]\ndados=[]\nfor i in range(30):\n    rua=random.choice(ruas); num=random.randint(1,999); bairro=random.choice(bairros)\n    cidade,uf=random.choice(cidades); cep=f\"{random.randint(10000,99999)}-{random.randint(100,999)}\"\n    end=f\"{rua}, {num} - {bairro}, {cidade}-{uf}, {cep}\"\n    dados.append({\"texto\":end,\"uf\":uf,\"cep\":cep})\n\ndef parse_regras(t):\n    cep=re.search(r\"\\d{5}-\\d{3}\",t); uf=re.search(r\"-([A-Z]{2}),\",t)\n    return {\"uf\":uf.group(1) if uf else None,\"cep\":cep.group(0) if cep else None}\n\ntry:\n    from postal.parser import parse_address\n    LIBPOSTAL=True\nexcept ImportError:\n    LIBPOSTAL=False\n    print(\"libpostal nao instalado: pip install postal (requer lib C libpostal)\")\n\nacertos_regras=acertos_lp=0\nfor d in dados:\n    r=parse_regras(d[\"texto\"])\n    acertos_regras += (r[\"cep\"]==d[\"cep\"]) + (r[\"uf\"]==d[\"uf\"])\n    if LIBPOSTAL:\n        comp=dict((v,k) for k,v in parse_address(d[\"texto\"]))\n        acertos_lp += (comp.get(\"postcode\")==d[\"cep\"].lower())\n\nprint(\"Regras: acertos cep+uf:\", acertos_regras, \"/60\")\nif LIBPOSTAL:\n    print(\"libpostal: acertos cep:\", acertos_lp, \"/30\")",
+    "como_avaliar": "Compare a acurácia por campo: acertos_regras/60 (CEP+UF juntos) versus acertos_lp/30 (apenas CEP, pois o libpostal retorna rótulos próprios como 'postcode', 'city', 'state'). Espere que o parser de regras tenha acurácia alta (próxima de 100%) neste cenário controlado, já que os dados sintéticos seguem exatamente o padrão esperado pela regex; isso evidencia a limitação do experimento, não a superioridade do parser de regras. Para avaliação justa, o próximo passo (desafio) introduz variação, que é onde a diferença real aparece.",
+    "desafio": "Modifique o gerador de dados para introduzir 3 tipos de ruído em pelo menos 40% dos 30 endereços: (1) omitir a vírgula antes do número, (2) trocar a ordem para 'cidade, UF, CEP, rua, número', (3) abreviar 'Avenida' para 'Av.' sem padronização fixa. Rode novamente os dois parsers e recalcule as acurácias por campo.",
+    "gabarito": "Com as regras fixas do parser de regex, a acurácia do campo UF e CEP deve cair significativamente nos casos de reordenação (regra 2), porque a regex assume uma posição fixa de token, exatamente o problema descrito por Christen (2012, p. 60): regras são rígidas e falham em variações não previstas no condition-part da regra. O libpostal, por ser baseado em um modelo estatístico (análogo ao HMM/CRF discutido nas Aulas 44-46 e em Churches et al., 2002), tende a manter acurácia mais estável porque aprendeu distribuições de probabilidade sobre a posição relativa dos campos a partir de grandes volumes de endereços reais, em vez de depender de uma ordem fixa de tokens. Isso ilustra concretamente a diferença entre coverage/precision de regras (Christen, 2012, p. 58) e a robustez de modelos probabilísticos a sequências não vistas (p. 59, Seção 3.7).",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer.",
+      "Churches, T., Christen, P., Lim, K. & Zhu, J. X. (2002). Preparation of name and address data for record linkage using hidden Markov models. BMC Medical Informatics and Decision Making, 2(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        58,
+        66
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3076,
+      "pos_palavras_chave": 7,
+      "aprovados": 3
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 189,
+      "pos_palavras_chave": 4,
+      "aprovados": 3
+    },
+    "linkedin": {
+      "brutos": 7,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

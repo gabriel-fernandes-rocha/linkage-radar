@@ -1,5 +1,52 @@
 [
  {
+  "data": "2026-11-18",
+  "habilidade": "Kafka",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Kafka é uma plataforma distribuída de streaming de eventos, usada para transportar dados em tempo real entre sistemas de forma desacoplada e escalável. Funciona com produtores publicando mensagens em tópicos particionados e consumidores lendo esses dados, com garantias de ordenação e replay. Em contextos de MDM e entity resolution, é comum usar Kafka para capturar mudanças em registros (CDC) e disparar pipelines de matching incrementais em vez de rodar tudo em batch.",
+  "por_que_pedem": "Vagas de MDM/linkage que pedem Kafka geralmente lidam com atualização contínua de dados mestre (golden records) que precisam refletir mudanças em sistemas fonte quase em tempo real. Ferramentas como Reltio e IBM MDM se integram nativamente com Kafka para orquestrar esse fluxo de eventos de criação/atualização/merge de entidades.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em termos de pipelines de dados em etapas (ingestão, normalização, blocking, scoring) e já trabalha com Spark, que tem integração nativa via Spark Structured Streaming com Kafka. A transição é mais conceitual que técnica: trocar leitura de arquivos batch por leitura de tópicos, e entender conceitos de partição, offset e consumer group, que são análogos a paralelismo e particionamento que você já usa no Spark.",
+  "minimo_para_ficar_apto": [
+   "Entender a arquitetura: brokers, tópicos, partições, producers, consumers, consumer groups, offsets",
+   "Saber escrever um producer e consumer simples em Python (biblioteca kafka-python ou confluent-kafka)",
+   "Entender a diferença entre batch e streaming e quando usar cada um",
+   "Saber integrar Kafka com Spark Structured Streaming (readStream/writeStream)",
+   "Conhecer conceitos de CDC (Change Data Capture) e como isso se aplica a MDM/golden records",
+   "Saber explicar garantias de entrega (at-least-once, exactly-once) em linhas gerais"
+  ],
+  "plano_rapido": [
+   "2h: ler a documentação oficial do Apache Kafka (conceitos básicos, Introduction e Quickstart)",
+   "3h: rodar Kafka localmente via Docker, criar um tópico, publicar e consumir mensagens pelo CLI",
+   "3h: fazer um producer e consumer simples em Python com confluent-kafka ou kafka-python",
+   "4h: integrar um exemplo com Spark Structured Streaming lendo de um tópico Kafka e aplicando uma transformação simples",
+   "2h: ler sobre CDC com Debezium e como ele publica eventos no Kafka (não precisa implementar, só entender o padrão)",
+   "2h: revisar conceitos de consumer groups, partições e garantias de entrega para entrevista"
+  ],
+  "mini_projeto": "Simule um pipeline de entity resolution incremental: um producer Python gera eventos JSON simulando atualizações de registros (nome, CPF, endereço) e publica em um tópico Kafka. Um consumidor via Spark Structured Streaming lê esses eventos, aplica normalização básica (reaproveitando suas funções de limpeza) e grava os registros normalizados em uma tabela (Delta ou Parquet). Isso demonstra que você entende o conceito de streaming aplicado a um domínio que você já domina.",
+  "como_colocar_no_curriculo": "Conhecimento prático de Apache Kafka para ingestão de dados em streaming, incluindo integração com Spark Structured Streaming para pipelines incrementais de atualização de registros.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é um consumer group no Kafka e por que isso importa para escalabilidade?",
+    "resposta": "Um consumer group é um conjunto de consumidores que dividem entre si o processamento das partições de um tópico, permitindo paralelismo horizontal. Cada partição é lida por apenas um consumidor do grupo por vez, garantindo que a carga seja distribuída sem duplicar processamento dentro do mesmo grupo."
+   },
+   {
+    "pergunta": "Como você integraria Kafka com um pipeline de entity resolution existente baseado em Spark batch?",
+    "resposta": "Usaria Spark Structured Streaming para ler os eventos do tópico Kafka em micro-batches, aplicando as mesmas etapas de normalização e blocking já existentes, mas de forma incremental, atualizando apenas os registros afetados em vez de reprocessar a base inteira, o que é essencial para MDM em tempo real."
+   },
+   {
+    "pergunta": "O que é CDC e como ele se relaciona com Kafka em contextos de MDM?",
+    "resposta": "CDC (Change Data Capture) é a captura de mudanças em bancos de dados (inserts, updates, deletes) para propagá-las a outros sistemas. Ferramentas como Debezium capturam essas mudanças e publicam como eventos no Kafka, permitindo que sistemas de MDM atualizem golden records em tempo quase real conforme os dados fonte mudam."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Apache Kafka (Introduction, Quickstart, Kafka Streams)",
+   "Documentação do Spark Structured Streaming com Kafka (Apache Spark Structured Streaming + Kafka Integration Guide)",
+   "Documentação do Debezium (Change Data Capture)",
+   "Curso Apache Kafka Series da Confluent (Confluent Developer, gratuito)"
+  ]
+ },
+ {
   "data": "2026-11-17",
   "habilidade": "Terraform",
   "pct_vagas": 1,
