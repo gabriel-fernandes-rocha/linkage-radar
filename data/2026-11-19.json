@@ -1,0 +1,333 @@
+{
+  "data": "2026-11-19",
+  "gerado_em": "2026-11-19T01:10-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Science & Engineering Fellow",
+      "url": "https://himalayas.app/companies/multiplier/jobs/data-science-engineering-fellow",
+      "empresa": "Multiplier",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-18",
+      "score": 11,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenharia de dados focada em deduplicação de dados (de-duplicating data submissions) e padronização de pipelines, com objetivo de melhorar qualidade e usabilidade de dados oceanográficos globais.",
+      "resumo": "Fellowship de 1 ano em Intertidal Agency para melhorar pipelines de dados do World Ocean Database através de soluções algorítmicas de deduplicação de submissões de sistemas não tripulados e padronização de workflows de ingestão.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "NumPy",
+          "pandas",
+          "SciPy",
+          "Git",
+          "Unix",
+          "netCDF",
+          "ERDDAP",
+          "THREDDS",
+          "OPeNDAP"
+        ],
+        "desejaveis": [
+          "record linkage",
+          "entity resolution",
+          "fuzzy matching",
+          "deduplication",
+          "blocking",
+          "approximate nearest neighbor search",
+          "locality-sensitive hashing",
+          "clustering"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 47,
+        "senioridade": 85,
+        "local": 12,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "netCDF",
+          "ERDDAP",
+          "THREDDS",
+          "OPeNDAP"
+        ],
+        "parciais": [
+          "NumPy",
+          "pandas",
+          "SciPy",
+          "Git",
+          "Unix"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Healthcare Data Engineer at ASSYST — Austin, TX | LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/senior-healthcare-data-engineer-at-assyst-4485637312",
+      "texto": "Create automated rules for deterministic and probabilistic record linkage, entity deduplication, and integration across relational databases.",
+      "data": "Oct 30, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Healthcare Data Engineer com responsabilidade central em deterministic/probabilistic record linkage e entity deduplication, alinhada perfeitamente com o perfil.",
+      "resumo": "Vaga de Senior Healthcare Data Engineer na ASSYST (Austin) focada em criar regras automatizadas para record linkage determinístico/probabilístico, deduplicação de entidades e integração em bancos de dados relacionais.",
+      "confianca": 0.98,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Austin"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer en Cross Atlantic Partners — Medellín, Antioquia ...",
+      "url": "https://co.linkedin.com/jobs/view/senior-data-engineer-at-cross-atlantic-partners-4487148256",
+      "texto": "Direct experience building and operating data solutions on AWS. Practical experience with entity resolution, record linkage or identity matching. Experience implementing medallion architecture and integrating multiple data sources. Ability to work independently and adapt within a small, evolving team. Strong English communication skills.",
+      "data": "Nov 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Vaga sênior de Data Engineer com requisito explícito de entity resolution, record linkage e identity matching em stack AWS.",
+      "resumo": "Vaga de Senior Data Engineer em Cross Atlantic Partners (Medellín) exigindo experiência prática com entity resolution, record linkage, identity matching, arquitetura medallion e integração de múltiplas fontes de dados em AWS.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "AWS"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "Colombia"
+        ],
+        "cidades": [
+          "Medellín"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em Colombia, sem patrocínio de visto",
+        "faltam": [
+          "AWS"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Founding Engineer (Data, ML, Product) Intern",
+      "url": "https://www.linkedin.com/jobs/view/founding-engineer-data-ml-product-intern-at-anonymous-4491421675",
+      "texto": "Record linkage, entity resolution, or graph data experience. Background in fintech, credit, real estate, or public records data. You have been an early engineer or founder at a startup before. Stack",
+      "data": "Nov 17, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga de founding engineer mencionando record linkage e entity resolution como requisito principal, com foco em dados de crédito/real estate/registros públicos.",
+      "resumo": "Vaga de Founding Engineer (Data, ML, Product) internship exigindo experiência em record linkage, entity resolution ou graph data, com background em fintech, crédito, real estate ou dados de registros públicos.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Who cites the grant? Grant-number reporting, record linkage and the regional geography of research-funding evaluation in Brazil",
+      "url": "https://doi.org/10.21203/rs.3.rs-11158070/v1",
+      "autores": "Marco Antônio Kerbeg et al.",
+      "data": "2026-11-17",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper com foco central em record linkage: vincula 28.491 publicações a 6.806 bolsas usando códigos de concessão, investigando padrões de matching e visibilidade regional.",
+      "resumo": "Estudo que aplica record linkage para vincular publicações (OpenAlex) a grants brasileiros (Finep 2004-2021), analisando quais bolsas e autores ficam visíveis quando o matching é feito por número de concessão. Encontra apenas 17.6% das obras com código Finep e 5.7% dos grants vinculados a publicações, com disparidades regionais significativas.",
+      "confianca": 0.85
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 119,
+  "vagas_arquivadas_total": 208,
+  "rede": {
+    "pessoas_novas": 3,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "RAG",
+  "brasil": {
+    "novas": 9,
+    "abertas": 45,
+    "arquivadas": 80,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 3
+    }
+  },
+  "aula": {
+    "dia": 49,
+    "semana": 7,
+    "tema": "Segmentação por regras e estatística",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 7: Segmentação por regras e estatística",
+    "modulo": "Semana 7: Segmentação por regras e estatística",
+    "versao": 2,
+    "objetivo": "Consolidar o mapa conceitual da semana 7, ligando segmentação por regras, segmentação estatística, HMM, CRF/libpostal e os critérios práticos de investimento, de modo que Gabriel consiga explicar e recalcular cada etapa de cor, sem recorrer ao livro.",
+    "conexao": "Pense nessa semana como uma escada de rigidez decrescente e custo crescente de treino. Na base está a segmentação por regras (aula 43), onde cobertura s(r) e precisão p=|s'(r)|/|s(r)| decidem se uma condição lógica basta, mas que quebra assim que aparece uma variação não prevista. Subindo um nível, a intuição estatística (aula 44) troca decisões binárias por probabilidades condicionais aprendidas de dados rotulados, o que já resolve o problema de rigidez mas ainda precisa de alguma estrutura sequencial. O HMM (aula 45) formaliza essa estrutura como uma cadeia de Markov de estados ocultos (campos de saída) e símbolos observáveis (tags), usando Viterbi para achar o caminho mais provável, mas sofrendo da limitação de só olhar para o token anterior. O CRF, usado pela libpostal (aula 46), remove essa limitação ao condicionar cada rótulo no contexto bidirecional inteiro da sequência. E tudo isso só vale a pena, segundo a aula 47, se o profiling dos dados e a natureza do projeto (one-off versus recorrente, exatamente o critério testado no laboratório da aula 48 comparando regex contra libpostal) justificarem o custo de gerar dados de treino customizados. Ou seja: regras, estatística, HMM e CRF não são técnicas concorrentes isoladas, são pontos de um mesmo espectro de trade-off entre esforço de engenharia e robustez a variação.",
+    "perguntas": [
+      {
+        "pergunta": "Em segmentação baseada em regras, qual é a diferença operacional entre cobertura s(r) e precisão p, e por que uma regra pode ter cobertura alta e ainda ser perigosa de usar isoladamente?",
+        "resposta": "Cobertura s(r) é o número de registros de treino em que a condição da regra dispara; precisão p = |s'(r)|/|s(r)| é a fração desses disparos que estão corretos. Uma regra pode disparar em muitos registros (cobertura alta) mas acertar poucos deles (precisão baixa), como no caso de R1 do exercício da aula 43 (p=0,85 em 120 disparos). Usá-la isoladamente propaga erros sistemáticos para campos adjacentes na sequência de segmentação."
+      },
+      {
+        "pergunta": "Por que Christen (2012, seç. 3.7, p.60) considera que modelos estatísticos superam regras mesmo quando as regras foram aprendidas automaticamente (Rapier, FOIL, WHISK)?",
+        "resposta": "Porque regras, aprendidas ou manuais, continuam sendo decisões hard: disparam ou não disparam conforme uma condição lógica fixa, exigindo nova regra para toda variação não prevista nos dados de treino. Modelos estatísticos substituem essa decisão binária por uma distribuição de probabilidade sobre os campos de saída, capturando naturalmente a incerteza e a proporção relativa de cada padrão sem precisar enumerar cada caso."
+      },
+      {
+        "pergunta": "No HMM de segmentação de endereços (Fig. 3.7, Christen 2012), o que são exatamente os estados ocultos e os símbolos observáveis, e qual algoritmo encontra o caminho de estados mais provável dado uma sequência de tags?",
+        "resposta": "Os estados ocultos são os campos de saída do endereço (Wayfare number, Wayfare name, Wayfare type, Locality name, Territory, Postcode, mais Start e End). Os símbolos observáveis são as tags atribuídas a cada token (NU, WN, WT, LN, TR, PC etc). O algoritmo de Viterbi, baseado em programação dinâmica, encontra o caminho de estados que maximiza o produto das probabilidades de transição e emissão para a sequência de tags observada."
+      },
+      {
+        "pergunta": "Qual é a diferença estrutural entre HMM e CRF que explica por que o CRF (usado na libpostal) lida melhor com endereços em ordem não padrão, como bairro antes da rua?",
+        "resposta": "O HMM é uma cadeia de Markov unidirecional: a classificação do token atual depende apenas do estado anterior, nunca do que vem depois. O CRF modela uma distribuição conjunta sobre toda a sequência de rótulos condicionada em toda a sequência de tokens, usando contexto anterior e seguinte simultaneamente. Isso permite ao CRF corrigir uma hipótese inicial à luz de evidência posterior, algo estruturalmente impossível no HMM unidirecional de Christen (2012, p.60-61)."
+      },
+      {
+        "pergunta": "Segundo o checklist prático de Christen (2012, seç. 3.8, p.63-64), qual critério decide se vale investir em lookup tables customizadas e dados de treino para HMM/CRF em vez de regras simples?",
+        "resposta": "O critério central é se o projeto é recorrente ou one-off. Se os dados serão reutilizados em futuras rodadas de matching, o custo de profiling detalhado, construção de lookup tables customizadas e curadoria de dados de treino se amortiza ao longo de execuções futuras, justificando o investimento em HMM ou CRF. Se é um match único, prioriza-se regras simples e lookup tables mínimas."
+      },
+      {
+        "pergunta": "(Aula 22) Dado o conjunto de pares match M = {(r1,r2),(r2,r3),(r4,r5),(r3,r6)}, quantos clusters resultam do fecho transitivo, e por que isso formaliza ER como clustering em vez de decisões par a par?",
+        "resposta": "O fecho transitivo liga r1-r2-r3-r6 em um único componente e r4-r5 em outro, resultando em 2 clusters. Isso mostra que ER como clustering (Binette e Steorts, 2022, retomado na aula 22) exige uma partição consistente do conjunto D em classes de equivalência via a função latente e: D->E, e não apenas decisões isoladas de match/non-match par a par, que podem gerar inconsistências como a de r1 e r6 revisados manualmente como non-match."
+      },
+      {
+        "pergunta": "(Aula 25) Em um dataset estilo Abt-Buy com 1000 produtos na loja A e 1200 na loja B, sem blocking, quantos pares existem no total? Se o blocking por categoria gerar 8 blocos de 125 produtos de A e 150 de B cada, qual a razão de redução?",
+        "resposta": "Sem blocking: 1000 x 1200 = 1.200.000 pares. Com blocking: cada bloco gera 125 x 150 = 18.750 pares, e 8 blocos geram 8 x 18.750 = 150.000 pares candidatos. Razão de redução = 1 - 150.000/1.200.000 = 0,875, ou seja, 87,5% dos pares são eliminados antes da comparação detalhada."
+      }
+    ],
+    "desafio": "Uma rede hospitalar brasileira recebe endereços de pacientes em formato livre e quer decidir entre manter um parser de regras ou treinar um HMM customizado, pensando num projeto recorrente (linkage mensal contra o cadastro nacional de saúde). Usando a matriz de transição e emissão da Fig. 3.7 de Christen (2012, p.61), calcule a probabilidade do caminho Start -> Wayfare number -> Wayfare name -> Wayfare type -> Locality name -> Territory para a sequência de tags NU WN WT LN TR (emissões: NU em Wayfare number = 0,9; WN em Wayfare name = 0,5; WT em Wayfare type = 0,92; LN em Locality name = 0,8; TR em Territory = 0,93). Em seguida, explique por que um caminho alternativo que tentasse pular Locality name (indo direto de Wayfare type para Territory e emitindo LN e TR ambos dentro do estado Territory) é estruturalmente inválido na matriz de transição dada. Por fim, usando o critério da aula 47, justifique se vale a pena treinar um HMM customizado (estilo Churches et al., 2002) para este projeto hospitalar recorrente.",
+    "gabarito": "Probabilidade do caminho A: P = [P(Start->Wayfare number) x P(NU|Wayfare number)] x [P(Wayfare number->Wayfare name) x P(WN|Wayfare name)] x [P(Wayfare name->Wayfare type) x P(WT|Wayfare type)] x [P(Wayfare type->Locality name) x P(LN|Locality name)] x [P(Locality name->Territory) x P(TR|Territory)]. Substituindo: (0,85x0,9) x (0,97x0,5) x (0,9x0,92) x (0,93x0,8) x (0,35x0,93) = 0,765 x 0,485 x 0,828 x 0,744 x 0,3255. Multiplicando passo a passo: 0,765x0,485=0,371025; x0,828=0,307209; x0,744=0,228563; x0,3255=0,074397. Logo P(caminho A) aproximadamente 0,0744 (7,44%). O caminho alternativo é inválido porque a matriz de transição de Christen (Fig.3.7) não tem self-loop para o estado Territory (a linha Territory só tem probabilidade não nula para Postcode e End), então é estruturalmente impossível permanecer em Territory para emitir dois tokens consecutivos (LN e depois TR); a única forma de o modelo emitir a tag LN com probabilidade razoável é passando pelo estado Locality name, cuja emissão de LN é 0,8, muito maior que a emissão de LN em Territory (tipicamente em torno de 0,01 nessas matrizes). Isso confirma que o caminho A é o único caminho estruturalmente coerente e de fato o mais provável. Quanto ao investimento: como o projeto é recorrente (linkage mensal contra o cadastro nacional), o critério da aula 47 (Christen 2012, p.63-64) recomenda investir em dados de treino customizados e treinar um HMM (ou CRF via libpostal) no estilo bootstrap iterativo descrito por Churches et al. (2002): segmentar manualmente uma amostra pequena, treinar um primeiro modelo, usá-lo para segmentar um lote maior, corrigir manualmente os erros e retreinar, repetindo até qualidade satisfatória. O custo desse processo se amortiza nas execuções mensais futuras, ao contrário de um parser de regras que exigiria manutenção constante a cada nova variação de endereço.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.6-3.7, p.58-62 (regras, modelos estatísticos, HMM e Fig. 3.7).",
+      "Christen, P. (2012). Data Matching. Springer. Seção 3.8, p.63-64 (considerações práticas e profiling).",
+      "Churches, T., Christen, P., Lim, K. & Zhu, J. X. (2002). Preparation of name and address data for record linkage using hidden Markov models. BMC Medical Informatics and Decision Making, 2(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        58,
+        66
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 2973,
+      "pos_palavras_chave": 2,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 10,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 187,
+      "pos_palavras_chave": 2,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 7,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

@@ -54,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "enriquecida": true
   },
@@ -112,7 +112,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -169,7 +169,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -235,7 +235,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -303,7 +303,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -365,8 +365,8 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-18",
-    "nova": true
+    "verificada_em": "2026-11-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -385,7 +385,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota Brasil com requisitos diretos do tema: entity resolution, entity matching, fuzzy matching, deduplication em Amazon Neptune e graph databases, Python.",
+    "motivo": "Vaga remota no Brasil com foco direto em entity resolution, fuzzy matching, entity matching e deduplicação com stack moderno (Python, Neptune, AWS).",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -438,11 +438,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer (Amazon Neptune) remoto no Brasil com foco em entity resolution, entity matching, fuzzy matching, deduplication e graph databases (Neptune, Python, AWS).",
-    "confianca": 0.95
+    "resumo": "Master Data Developer na CI&T para trabalhar com entity resolution, fuzzy matching, deduplicação e graph databases em Amazon Neptune com Python e AWS.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -506,7 +506,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -571,7 +571,69 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
+    "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer (Databricks & Informatica Data Quality) - Remote Work | REF#310970",
+    "url": "https://www.linkedin.com/jobs/view/4491709566",
+    "empresa": "BairesDev",
+    "local": "Rio de Janeiro e Região",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-17",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "data quality"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro de dados focada em pipelines de ingestão e transformação de múltiplas fontes com data quality embarcada, definição de regras de qualidade e detecção de anomalias.",
+    "resumo": "Data Engineer que constrói lakehouse pipelines com ingestão de múltiplas fontes, define regras de qualidade para completude e consistência, e embarca validações em workflows com Databricks e Informatica.",
+    "confianca": 0.86,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Databricks",
+        "Informatica Data Quality",
+        "SQL",
+        "Spark",
+        "Python"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "pleno",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": 4,
+    "ingles": "fluente",
+    "foco_er": 0.1,
+    "encaixe": 0.44,
+    "compat_detalhe": {
+      "habilidades": 60,
+      "senioridade": 80,
+      "local": 100,
+      "ingles": 85,
+      "foco": 86,
+      "senioridade_txt": "pede 4+ anos (você tem 2.9)",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "Databricks"
+      ],
+      "parciais": [
+        "Informatica Data Quality",
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-19",
+    "verificada_em": "2026-11-19",
     "nova": true
   },
   {
@@ -640,7 +702,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -709,7 +771,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -763,7 +825,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "enriquecida": true
   },
@@ -782,7 +844,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota aceitando Brasil com requisitos centrais: entity resolution, deduplication, data pipelines, Neo4j, ETL em contexto de grafos de identidades.",
+    "motivo": "Vaga remota aceitando Brasil com entity resolution e deduplicação como requisitos principais em arquitetura de graph e pipelines de dados.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -833,10 +895,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "AI Senior Engineer - Graph remoto na Able (América Latina incluindo Brasil) especializado em entity resolution, deduplication, data pipelines, Neo4j, Cypher, Kafka e ETL.",
+    "resumo": "AI Senior Engineer para pipelines de dados em Neo4j com entity resolution, deduplicação, Kafka e Python em operação multi-país da Able.",
     "confianca": 0.9
   },
   {
@@ -904,7 +966,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -972,7 +1034,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "enriquecida": true
   },
@@ -993,7 +1055,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga no Brasil com entity resolution, entity matching, fuzzy matching e deduplication como requisitos centrais, stack técnico alinhado (Python, graph databases, AWS).",
+    "motivo": "Vaga no Brasil com requisitos centrais em entity resolution, entity matching, fuzzy matching e deduplicação com graph databases.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1045,11 +1107,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T Brasil com foco em entity resolution, entity matching, fuzzy matching e deduplication usando Python, graph databases (Amazon Neptune) e AWS.",
-    "confianca": 0.95
+    "resumo": "Master Data Developer na CI&T focado em entity resolution, fuzzy matching, deduplicação e graph databases com Python, Machine Learning e Amazon Neptune.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -1116,7 +1178,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1171,7 +1233,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1189,7 +1251,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota aceitando Brasil com identity resolution e customer 360 como requisitos, indica trabalho com unificação de identidades e visão única do cliente.",
+    "motivo": "Vaga remota no Brasil com identity resolution e customer 360 como requisitos em stack de dados moderno (Snowflake, dbt, ETL).",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1241,11 +1303,70 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer remoto (Brasil) na Massive Rocket com foco em identity resolution e customer 360 usando Snowflake, dbt e plataformas de CDP (Braze, mParticle, Segment).",
+    "resumo": "Senior Data Engineer na Massive Rocket para identity resolution, data quality e customer 360 com Snowflake, Braze, Segment e mParticle.",
     "confianca": 0.85
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto | REF#309354",
+    "url": "https://www.linkedin.com/jobs/view/4489667238",
+    "empresa": "BairesDev",
+    "local": "Curitiba, PR",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-10",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados",
+      "qualidade de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Engenheiro de Integração de Dados com foco em pipelines ETL conectando múltiplas fontes, qualidade de dados e workflows de integração, alinhada com experiência do leitor em consolidação de bases e normalização.",
+    "resumo": "BairesDev procura Engenheiro de Integração de Dados remoto para projetar e construir pipelines ETL conectando múltiplas fontes, implementar verificações de qualidade e colaborar com equipes de analytics e engenharia.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "ETL"
+      ],
+      "desejaveis": [
+        "APIs"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "nao_informado",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 3,
+    "ingles": "fluente",
+    "foco_er": 0,
+    "encaixe": 0.35,
+    "compat_detalhe": {
+      "habilidades": 69,
+      "senioridade": 100,
+      "local": 60,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
+      "local_txt": "local de contratação não informado",
+      "faltam": [],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-11",
+    "verificada_em": "2026-11-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1318,69 +1439,10 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Engenheiro de Integração de Dados - Trabalho Remoto | REF#309354",
-    "url": "https://www.linkedin.com/jobs/view/4489667238",
-    "empresa": "BairesDev",
-    "local": "Curitiba, PR",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "publicada_em": "2026-11-10",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "integracao de dados",
-      "qualidade de dados"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Vaga de Engenheiro de Integração de Dados com foco em pipelines ETL conectando múltiplas fontes, qualidade de dados e workflows de integração, alinhada com experiência do leitor em consolidação de bases e normalização.",
-    "resumo": "BairesDev procura Engenheiro de Integração de Dados remoto para projetar e construir pipelines ETL conectando múltiplas fontes, implementar verificações de qualidade e colaborar com equipes de analytics e engenharia.",
-    "confianca": 0.95,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "ETL"
-      ],
-      "desejaveis": [
-        "APIs"
-      ]
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "nao_informado",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": 3,
-    "ingles": "fluente",
-    "foco_er": 0,
-    "encaixe": 0.35,
-    "compat_detalhe": {
-      "habilidades": 69,
-      "senioridade": 100,
-      "local": 60,
-      "ingles": 85,
-      "foco": 85,
-      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
-      "local_txt": "local de contratação não informado",
-      "faltam": [],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-11",
-    "verificada_em": "2026-11-18",
-    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1446,7 +1508,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1517,7 +1579,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1589,8 +1651,68 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Quality Analyst - Remote Work",
+    "url": "https://www.linkedin.com/jobs/view/4492042167",
+    "empresa": "INDI Staffing Services",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-18",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "data quality"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de data quality analyst focada em validação de integridade, consistência e confiabilidade de datasets e pipelines ETL/ELT, com testes de transformação e detecção de anomalias.",
+    "resumo": "Analista de qualidade de dados responsável por validar integridade, consistência e confiabilidade de grandes datasets em pipelines ETL/ELT através de testes de transformação e detecção de anomalias.",
+    "confianca": 0.8,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "ETL"
+      ],
+      "desejaveis": [
+        "Databricks"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.0,
+    "encaixe": 0.31,
+    "compat_detalhe": {
+      "habilidades": 56,
+      "senioridade": 60,
+      "local": 100,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-19",
+    "verificada_em": "2026-11-19",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1638,7 +1760,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1687,7 +1809,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1759,7 +1881,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1850,7 +1972,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -1869,7 +1991,7 @@
       "survivorship"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga em São Paulo com entity resolution, data reconciliation e survivorship como requisitos, stack robusto (Spark, Databricks, dbt) alinhado ao perfil.",
+    "motivo": "Vaga em São Paulo com entity resolution, master data management e survivorship como requisitos em stack robusto (Spark, Databricks, dbt).",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1933,11 +2055,77 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer em São Paulo na First Help Financial com entity resolution, data reconciliation, survivorship e data governance em stack Spark, Databricks, dbt e AWS.",
-    "confianca": 0.9
+    "resumo": "Senior Data Engineer na First Help Financial com entity resolution, data reconciliation, master data management e AI architectures usando Spark, Databricks, dbt e Python.",
+    "confianca": 0.92
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Integration & ETL Engineer",
+    "url": "https://www.linkedin.com/jobs/view/4491861415",
+    "empresa": "HCLTech",
+    "local": "São Paulo, SP",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-18",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "data integration"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro de dados focada em design e desenvolvimento de soluções de integração de dados (ETL), interfaces, controles de reconciliação e garantia de acurácia de dados entre sistemas.",
+    "resumo": "Data Integration & ETL Engineer que projeta e mantém workflows de integração de dados usando SQL, Informatica e automação de workload, com foco em reconciliação e controles de erro.",
+    "confianca": 0.82,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "NET",
+        "Informatica",
+        "CA Workload Automation"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.0,
+    "encaixe": 0.27,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 85,
+      "local": 85,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "NET",
+        "CA Workload Automation"
+      ],
+      "parciais": [
+        "SQL",
+        "Informatica"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-19",
+    "verificada_em": "2026-11-19",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2001,7 +2189,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12"
@@ -2063,79 +2251,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-18",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Analista de Dados e BI",
-    "url": "https://casadofitness.gupy.io/job/eyJqb2JJZCI6MTI4MTE0NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-    "empresa": "CASA DO FITNESS",
-    "local": "São José dos Campos, São Paulo",
-    "fonte": "Gupy",
-    "publicada_em": "2026-10-30",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "integracao de dados",
-      "qualidade de dados",
-      "tratamento de dados"
-    ],
-    "juiz": "groq",
-    "motivo": "Vaga inclui construção de pipelines ETL, integração de ERP, e‑commerce e definição de governança e qualidade de dados, temas centrais de integração e limpeza de dados.",
-    "resumo": "Analista de Dados e BI na Casa do Fitness será responsável por projetar a arquitetura de dados, desenvolver pipelines ETL integrando múltiplas fontes e definir padrões de governança e qualidade.",
-    "confianca": 0.9,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Power BI",
-        "Python",
-        "ETL",
-        "REST APIs",
-        "Data Warehouse",
-        "dimensional modeling",
-        "data governance"
-      ],
-      "desejaveis": [
-        "NetSuite",
-        "Git",
-        "Scrum",
-        "Kanban",
-        "LGPD"
-      ]
-    },
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.0,
-    "encaixe": 0.26,
-    "compat_detalhe": {
-      "habilidades": 40,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 85,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Power BI",
-        "REST APIs"
-      ],
-      "parciais": [
-        "SQL",
-        "Data Warehouse",
-        "dimensional modeling",
-        "data governance"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-31",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -2213,9 +2329,81 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-18",
-    "nova": true,
+    "verificada_em": "2026-11-19",
+    "nova": false,
     "enriquecida": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Analista de Dados e BI",
+    "url": "https://casadofitness.gupy.io/job/eyJqb2JJZCI6MTI4MTE0NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "CASA DO FITNESS",
+    "local": "São José dos Campos, São Paulo",
+    "fonte": "Gupy",
+    "publicada_em": "2026-10-30",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados",
+      "qualidade de dados",
+      "tratamento de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Vaga inclui construção de pipelines ETL, integração de ERP, e‑commerce e definição de governança e qualidade de dados, temas centrais de integração e limpeza de dados.",
+    "resumo": "Analista de Dados e BI na Casa do Fitness será responsável por projetar a arquitetura de dados, desenvolver pipelines ETL integrando múltiplas fontes e definir padrões de governança e qualidade.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Power BI",
+        "Python",
+        "ETL",
+        "REST APIs",
+        "Data Warehouse",
+        "dimensional modeling",
+        "data governance"
+      ],
+      "desejaveis": [
+        "NetSuite",
+        "Git",
+        "Scrum",
+        "Kanban",
+        "LGPD"
+      ]
+    },
+    "senioridade": null,
+    "modalidade": null,
+    "local_contratacao": null,
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.0,
+    "encaixe": 0.26,
+    "compat_detalhe": {
+      "habilidades": 40,
+      "senioridade": 85,
+      "local": 60,
+      "ingles": 100,
+      "foco": 85,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "local de contratação não informado",
+      "faltam": [
+        "Power BI",
+        "REST APIs"
+      ],
+      "parciais": [
+        "SQL",
+        "Data Warehouse",
+        "dimensional modeling",
+        "data governance"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-31",
+    "verificada_em": "2026-11-19",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2293,7 +2481,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -2363,7 +2551,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -2431,7 +2619,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   },
   {
@@ -2506,73 +2694,8 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Desenvolvedor (a) de Integração de Dados - Sênior (112088)",
-    "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-de-integra%C3%A7%C3%A3o-de-dados-s%C3%AAnior-112088-at-prezensa-people-tech-4485225411",
-    "empresa": "Prezensa People Tech",
-    "local": "Brasil",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "score": 0,
-    "categoria": "integracao",
-    "termos": [
-      "integracao de dados"
-    ],
-    "juiz": "groq",
-    "motivo": "Cargo de Desenvolvedor de Integração de Dados envolve criação de pipelines e consolidação de fontes, atendendo ao critério de integração de dados.",
-    "resumo": "Desenvolvedor de Integração de Dados na Prezensa People Tech será responsável por projetar e implementar soluções de integração e consolidação de dados.",
-    "confianca": 0.9,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Oracle Data Integrator",
-        "Oracle Database",
-        "SQL",
-        "PL/SQL"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": null,
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Brazil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0,
-    "encaixe": 0.18,
-    "compat_detalhe": {
-      "habilidades": 12,
-      "senioridade": 75,
-      "local": 75,
-      "ingles": 85,
-      "foco": 85,
-      "senioridade_txt": "nível senior",
-      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "Oracle Data Integrator",
-        "Oracle Database",
-        "PL/SQL"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-31",
-    "verificada_em": "2026-11-18",
-    "nova": false,
-    "enriquecida": true,
-    "publicada_em": "2026-11-04"
   },
   {
     "tipo": "vaga",
@@ -2660,8 +2783,144 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Desenvolvedor (a) de Integração de Dados - Sênior (112088)",
+    "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-de-integra%C3%A7%C3%A3o-de-dados-s%C3%AAnior-112088-at-prezensa-people-tech-4485225411",
+    "empresa": "Prezensa People Tech",
+    "local": "Brasil",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "score": 0,
+    "categoria": "integracao",
+    "termos": [
+      "integracao de dados"
+    ],
+    "juiz": "groq",
+    "motivo": "Cargo de Desenvolvedor de Integração de Dados envolve criação de pipelines e consolidação de fontes, atendendo ao critério de integração de dados.",
+    "resumo": "Desenvolvedor de Integração de Dados na Prezensa People Tech será responsável por projetar e implementar soluções de integração e consolidação de dados.",
+    "confianca": 0.9,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "Oracle Data Integrator",
+        "Oracle Database",
+        "SQL",
+        "PL/SQL"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": null,
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0,
+    "encaixe": 0.18,
+    "compat_detalhe": {
+      "habilidades": 12,
+      "senioridade": 75,
+      "local": 75,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "nível senior",
+      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "Oracle Data Integrator",
+        "Oracle Database",
+        "PL/SQL"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-10-31",
+    "verificada_em": "2026-11-19",
+    "nova": false,
+    "enriquecida": true,
+    "publicada_em": "2026-11-04"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Especialista Master Data",
+    "url": "https://www.linkedin.com/jobs/view/4490472800",
+    "empresa": "Caldic LATAM",
+    "local": "São Paulo, SP",
+    "fonte": "LinkedIn Jobs (Brasil)",
+    "publicada_em": "2026-11-17",
+    "score": 2,
+    "categoria": "integracao",
+    "termos": [
+      "data cleansing",
+      "mapeamento de dados",
+      "padronizacao de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Master Data com foco em padronização, limpeza, mapeamento de dados e regras de negócio para deduplicação e qualidade de cadastros em nível LATAM.",
+    "resumo": "Especialista responsável pela operacionalização e otimização de processos de cadastros de clientes, fornecedores e materiais com foco em data cleansing, mapeamento de dados e mitigação de redundância através de padronização e automação.",
+    "confianca": 0.85,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "SAP S/4HANA",
+        "Master Data Management",
+        "Power BI",
+        "SQL"
+      ],
+      "desejaveis": [
+        "Salesforce",
+        "DAMA-DMBOK"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "São Paulo"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.1,
+    "encaixe": 0.17,
+    "compat_detalhe": {
+      "habilidades": 16,
+      "senioridade": 60,
+      "local": 85,
+      "ingles": 85,
+      "foco": 86,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "SAP S/4HANA",
+        "Master Data Management",
+        "Power BI"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-19",
+    "verificada_em": "2026-11-19",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2729,8 +2988,8 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-18",
-    "nova": true,
+    "verificada_em": "2026-11-19",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04"
   },
@@ -2801,7 +3060,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-18",
+    "verificada_em": "2026-11-19",
     "nova": false
   }
 ]

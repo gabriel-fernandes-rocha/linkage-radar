@@ -1,5 +1,56 @@
 [
  {
+  "data": "2026-11-19",
+  "habilidade": "RAG",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "RAG (Retrieval Augmented Generation) é uma arquitetura onde um sistema busca trechos relevantes de uma base de conhecimento (via busca vetorial ou lexical) e injeta esse contexto no prompt de um LLM para gerar respostas mais precisas e atualizadas. Em vez de depender só do conhecimento treinado no modelo, o LLM consulta documentos externos em tempo real. É composto por três partes: indexação dos dados, recuperação (retrieval) e geração (generation) com o LLM.",
+  "por_que_pedem": "Vagas de AI Automation e produto de IA usam RAG para construir assistentes e sistemas de knowledge graph que respondem perguntas com base em dados da empresa, reduzindo alucinação. Como envolve busca semântica, embeddings e indexação, é uma habilidade natural para quem já trabalha com matching e Elasticsearch.",
+  "ponte_com_o_que_voce_sabe": "Você já faz blocking e scoring de similaridade em Elasticsearch e Splink, que são essencialmente formas de recuperação de informação. RAG troca o matching determinístico/probabilístico por busca vetorial (embeddings) mas o conceito de indexar, buscar candidatos e rankear é o mesmo. Elasticsearch moderno já suporta busca vetorial (kNN), então você pode reaproveitar sua stack diretamente.",
+  "minimo_para_ficar_apto": [
+   "Entender a arquitetura RAG: indexação, embeddings, retrieval, geração, e quando usar vs fine-tuning",
+   "Saber gerar embeddings com um modelo (OpenAI, sentence-transformers) e armazenar em um vector store (FAISS, Elasticsearch kNN, Pinecone ou Chroma)",
+   "Montar um pipeline simples: chunking de documentos, embedding, busca por similaridade, montagem de prompt com contexto, chamada a um LLM via API",
+   "Conhecer conceitos de chunking, top-k retrieval, reranking e prompt engineering básico",
+   "Noção de frameworks como LangChain ou LlamaIndex, mesmo que superficial"
+  ],
+  "plano_rapido": [
+   "2h: assistir introdução conceitual a RAG (vídeo ou doc oficial LangChain/LlamaIndex)",
+   "3h: tutorial prático de embeddings + FAISS ou Elasticsearch kNN em Python",
+   "4h: montar um pipeline mínimo de RAG usando LangChain com um LLM via API (OpenAI ou modelo aberto)",
+   "3h: testar chunking strategies e comparar qualidade das respostas",
+   "2h: ler sobre reranking e avaliação de RAG (métricas de retrieval)",
+   "2h: documentar o projeto e preparar explicação para entrevista"
+  ],
+  "mini_projeto": "Construa um RAG sobre sua própria área: indexe documentos de metodologia de record linkage (artigos, documentação do Splink, relatórios internos fictícios) no Elasticsearch usando busca vetorial kNN, e crie um pipeline em Python que recebe uma pergunta, recupera os trechos mais relevantes e gera uma resposta via LLM citando as fontes. Isso mostra que você une sua expertise em ES/matching com IA generativa.",
+  "como_colocar_no_curriculo": "Desenvolvimento de protótipo RAG (retrieval augmented generation) com Elasticsearch kNN e LangChain para busca semântica em documentação técnica de record linkage.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é RAG e por que é usado em vez de apenas um LLM puro?",
+    "resposta": "RAG combina um sistema de recuperação de informação com um LLM: busca documentos relevantes numa base externa e injeta esse contexto no prompt, reduzindo alucinação e permitindo acesso a dados atualizados ou proprietários sem precisar re-treinar o modelo."
+   },
+   {
+    "pergunta": "Como você lidaria com chunking de documentos grandes?",
+    "resposta": "Dividiria em pedaços menores com overlap (ex: 300-500 tokens com 10-20% de sobreposição) para preservar contexto nas bordas, testando o tamanho ideal conforme a qualidade das respostas recuperadas."
+   },
+   {
+    "pergunta": "Qual a diferença entre busca vetorial e busca lexical, e como você combinaria as duas?",
+    "resposta": "Busca lexical (BM25) encontra correspondências por termos exatos; busca vetorial encontra similaridade semântica via embeddings. Uma abordagem híbrida, como a que já uso em matching com Elasticsearch, combina ambos os scores para melhorar o retrieval, técnica comum em RAG avançado."
+   },
+   {
+    "pergunta": "Como avaliar a qualidade de um sistema RAG?",
+    "resposta": "Avaliando tanto o retrieval (precision/recall dos documentos recuperados) quanto a geração final (faithfulness, relevância da resposta), usando frameworks como RAGAS ou avaliação manual com golden set de perguntas e respostas esperadas."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do LangChain",
+   "Documentação oficial do LlamaIndex",
+   "Documentação do Elasticsearch sobre kNN e busca vetorial",
+   "OpenAI Cookbook (seção sobre embeddings e RAG)",
+   "Curso DeepLearning.AI 'LangChain for LLM Application Development'"
+  ]
+ },
+ {
   "data": "2026-11-18",
   "habilidade": "Kafka",
   "pct_vagas": 2,

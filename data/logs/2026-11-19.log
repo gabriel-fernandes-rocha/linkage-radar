@@ -1,0 +1,90 @@
+===== coleta 2026-11-19 01:28 =====
+INFO serpapi: 61 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 97
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1412
+INFO jobs/lever: 306
+INFO jobs/ashby: 47
+INFO jobs/hn_who_is_hiring: 2
+INFO google_jobs 'master data management matching engineer': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 3
+INFO jobs/gupy: 172
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 150
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 127
+INFO jobs/social_linkedin/ddg: 2 aceitos de 2
+INFO jobs/social_linkedin/google: 0 aceitos de 5
+INFO jobs/social_posts: 2
+INFO linkedin_guest: 35 vagas, 25 descrições abertas, 32 consultas no total
+INFO jobs/linkedin_guest: 35
+INFO judge: tokens in=1653 out=329
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=4104 out=252
+INFO vagas: {'brutos': 2973, 'pos_palavras_chave': 2, 'aprovados': 1}
+INFO events: 10 candidatos
+INFO judge: tokens in=1231 out=272
+INFO eventos: {'brutos': 10, 'pos_palavras_chave': 2, 'aprovados': 0}
+INFO papers/arxiv: 12
+INFO papers/openalex: 175
+INFO judge: tokens in=1732 out=352
+INFO papers: {'brutos': 187, 'pos_palavras_chave': 2, 'aprovados': 1}
+INFO linkedin/ddg: 7 aceitos de 7
+INFO linkedin: 7 candidatos
+INFO judge: tokens in=1559 out=674
+INFO requisitos: tokens in=2370 out=440
+INFO linkedin: {'brutos': 7, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: fechou Senior Analytics Implementation Specialist - LinkedIn
+INFO open_jobs: fechou Quantexa Developer (Contract) – Real-Time Entity Resolution Specialist
+INFO open_jobs: 127 abertas (4 novas)
+INFO open_jobs: 31 vagas do LinkedIn completadas pela página pública, 8 encerradas
+INFO requisitos: tokens in=9651 out=1155
+INFO requisitos: tokens in=10753 out=1017
+INFO requisitos: tokens in=9060 out=1890
+INFO requisitos: tokens in=10194 out=779
+INFO requisitos: tokens in=10046 out=717
+INFO requisitos: tokens in=8135 out=2012
+INFO requisitos: tokens in=10029 out=820
+INFO requisitos: tokens in=6498 out=616
+INFO mercado: 207 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2170 out=1128
+INFO judge: tokens in=1330 out=244
+INFO network: 87 pessoas (3 novas), 47 empresas (1 novas)
+INFO carreira: tokens in=1468 out=1868
+INFO brasil/inhire: 242
+INFO brasil/gupy: 347
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/google_jobs_br: 0
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 39 vagas, 39 descrições abertas, 123 consultas no total
+INFO brasil/linkedin_guest_br: 39
+INFO brasil/linkedin_local: 7
+INFO brasil/greenhouse: 1003
+INFO brasil/lever: 146
+INFO brasil/ashby: 113
+INFO brasil: 4870 brutas, 14 candidatas para o juiz
+INFO judge: tokens in=3702 out=1210
+INFO judge: tokens in=2107 out=734
+INFO requisitos: tokens in=6682 out=1887
+INFO open_jobs: 45 abertas (4 novas)
+INFO mercado: 80 vagas no nicho, 200 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 50 pessoas (0 novas), 63 empresas (3 novas)
+INFO brasil: {'novas': 9, 'abertas': 45, 'arquivadas': 80, 'rede': {'pessoas_novas': 0, 'empresas_novas': 3}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-19.json
+
