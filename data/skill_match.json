@@ -988,6 +988,11 @@
   "nivel": "nao",
   "nome": "derived analytics"
  },
+ "desenvolvimento de agentes": {
+  "motivo": "sem evidência de agentes de IA no currículo",
+  "nivel": "nao",
+  "nome": "Desenvolvimento de agentes"
+ },
  "deterministic": {
   "motivo": "usa correspondência determinística em produção",
   "nivel": "tem",
@@ -1332,6 +1337,11 @@
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "Gemma"
+ },
+ "genai": {
+  "motivo": "sem menção a LLMs ou GenAI",
+  "nivel": "nao",
+  "nome": "GenAI"
  },
  "geopandas": {
   "motivo": "sem evidência de dados geoespaciais",

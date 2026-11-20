@@ -1,0 +1,91 @@
+{
+  "data": "2026-11-20",
+  "gerado_em": "2026-11-20T00:58-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Beyond Data Integration: A Trust-Centric Architecture for Customer Identity Resolution, Master Data Governance, and Intelligent Enterprise Data Platforms",
+      "url": "https://doi.org/10.47119/ijrp1002071111020269877",
+      "autores": "Somnath Banerjee",
+      "data": "2026-11-17",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper com foco central em customer identity resolution, master data governance e matching de registros duplicados em plataformas de dados empresariais.",
+      "resumo": "Propõe arquitetura centrada em confiança para resolução de identidades de clientes, governança de dados mestres e proveniência de dados em plataformas empresariais. Trata identidade do cliente como afirmação baseada em evidências, abordando deduplicação, associação de registros e survivorship de atributos.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 117,
+  "vagas_arquivadas_total": 208,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "NumPy",
+  "brasil": {
+    "novas": 6,
+    "abertas": 45,
+    "arquivadas": 81,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 50,
+    "semana": 8,
+    "tema": "Por que indexar e como definir blocking keys",
+    "tipo": "conceito",
+    "titulo": "Por que indexar: o custo de comparar tudo",
+    "modulo": "Semana 8: Por que indexar e como definir blocking keys",
+    "versao": 2,
+    "objetivo": "Demonstrar por que a comparação exaustiva de todos os pares de registros é inviável em escala e entender o papel da indexação (blocking) como etapa obrigatória antes da comparação detalhada.",
+    "conceito": "Em record linkage e deduplicação, a etapa de comparação detalhada (cálculo de similaridade atributo a atributo) é cara computacionalmente. Se compararmos todo registro de uma base A com todo registro de uma base B, o número de pares candidatos cresce de forma quadrática: para deduplicação de uma única base com n registros, o total de pares é n(n-1)/2; para linkage entre duas bases de tamanho n_A e n_B, é n_A vezes n_B. Christen (2012, cap. 4, p. 69-70) chama essa etapa ingênua de 'força bruta' e mostra que ela se torna impraticável mesmo para bases de tamanho moderado, porque o tempo de execução cresce muito mais rápido que o tamanho dos dados.\n\nA indexação (ou blocking) resolve isso particionando as bases em blocos menores, de modo que só se comparem pares de registros que caem no mesmo bloco. Cada registro recebe um Blocking Key Value (BKV), derivado de um ou mais atributos (possivelmente codificados foneticamente), e só registros com o mesmo BKV, ou BKVs próximos numa chave de ordenação, são comparados entre si. Christen (2012, p. 69) destaca que o objetivo é alcançar um equilíbrio: blocos devem ser pequenos o suficiente para reduzir drasticamente o número de pares, mas sem descartar pares que são verdadeiros matches.\n\nEssa redução tem um custo: se a chave de blocking for mal escolhida, matches verdadeiros com erro justamente no atributo usado como chave caem em blocos diferentes e nunca são comparados, gerando falsos negativos antes mesmo da etapa de comparação.",
+    "como_funciona": "1. Sem indexação: número de comparações = n(n-1)/2 (dedup) ou n_A * n_B (linkage), ambos crescimento quadrático em relação ao tamanho da base.\n2. Com indexação: cada registro recebe um BKV = f(atributo(s)), por exemplo BKV = primeiros 2 dígitos do CEP + Soundex do sobrenome.\n3. Registros são agrupados em blocos pelo BKV.\n4. Comparação detalhada só ocorre dentro de cada bloco: custo total = soma, para cada bloco b, de |bloco_b|^2 (ou |bloco_b_A| * |bloco_b_B| em linkage).\n5. Trade-off (Christen, 2012, p. 69-70): BKV muito genérico gera poucos blocos grandes (mais pares, mais recall, mais custo); BKV muito específico gera muitos blocos pequenos (menos pares, menos custo, risco de perder matches).",
+    "exemplo": "Base com n = 100.000 registros, deduplicação.\nSem blocking: 100.000 * 99.999 / 2 = 4.999.950.000 pares, cerca de 5 bilhões de comparações.\nCom blocking por CEP (supondo 1.000 CEPs distintos, distribuição uniforme, 100 registros por bloco): custo = 1.000 blocos * (100 * 99 / 2) = 1.000 * 4.950 = 4.950.000 pares.\nRedução: de 5 bilhões para 4,95 milhões, um fator de aproximadamente 1.010 vezes menos comparações. Se a distribuição for desigual (um CEP concentra 50.000 registros), esse bloco isolado já gera 50.000 * 49.999 / 2 = 1.249.975.000 pares, maior que todo o resto somado, mostrando por que a uniformidade da chave de blocking (p. 69) importa tanto quanto sua existência.",
+    "na_pratica": "Em Spark, a materialização do produto cartesiano de duas bases grandes sem blocking trava o cluster por explosão de shuffle. Na prática define-se uma blocking key e faz-se join por ela antes de qualquer cálculo de similaridade:\nblocking_key = df.withColumn('bkv', concat(substring('cep',1,2), soundex('sobrenome')))\ncandidatos = a.join(b, a.bkv == b.bkv)\nNo Splink, isso é exatamente o papel de blocking_rules_to_generate_predictions: block_on('sobrenome', 'cep') restringe os pares candidatos antes da etapa de predict, evitando o full cross join.",
+    "armadilha": "Profissionais experientes às vezes escolhem uma única blocking key muito 'limpa' (ex.: CPF truncado) achando que isso basta; mas se o atributo tiver erros de digitação ou dados ausentes, matches verdadeiros nunca entram no mesmo bloco. A solução é usar múltiplas definições de blocking key (múltiplos blocking passes) e unir os candidatos gerados, como recomenda Christen (2012, p. 70).",
+    "desafio": "Você tem duas bases para linkage: A com 200.000 registros e B com 150.000 registros. Sem blocking, quantos pares candidatos seriam gerados? Agora você define uma blocking key por UF (27 valores possíveis, distribuição aproximadamente uniforme em ambas as bases). Estime quantos pares candidatos restam após o blocking e calcule o fator de redução.",
+    "gabarito": "Sem blocking: 200.000 * 150.000 = 30.000.000.000 pares (30 bilhões).\nCom blocking por UF uniforme: cada bloco de A tem aproximadamente 200.000/27 ≈ 7.407 registros, e cada bloco de B tem aproximadamente 150.000/27 ≈ 5.556 registros. Custo por bloco ≈ 7.407 * 5.556 ≈ 41.151.000. Total para 27 blocos ≈ 27 * 41.151.000 ≈ 1.111.080.000 pares (aproximadamente 1,11 bilhão).\nFator de redução: 30.000.000.000 / 1.111.080.000 ≈ 27 vezes, exatamente igual ao número de blocos, como esperado quando a distribuição é uniforme (o custo quadrático dentro de cada bloco escala com 1/k quando se divide em k blocos uniformes, já que (n/k)*(m/k)*k = n*m/k).",
+    "fontes": [
+      "Christen (2012), Data Matching, cap. 4, seç. 4.1-4.2, p. 69-71",
+      "Christen (2012), A survey of indexing techniques for scalable record linkage and deduplication, IEEE TKDE 24(9)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        69,
+        77
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3001,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 1,
+      "aprovados": 1
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

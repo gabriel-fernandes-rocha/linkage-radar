@@ -1,5 +1,54 @@
 [
  {
+  "data": "2026-11-20",
+  "habilidade": "NumPy",
+  "pct_vagas": 2,
+  "nivel_atual": "parcial",
+  "o_que_e": "NumPy é a biblioteca fundamental de computação numérica em Python, baseada em arrays multidimensionais (ndarray) e operações vetorizadas em C. Ela sustenta praticamente todo o ecossistema de ciência de dados (pandas, scikit-learn, scipy) fazendo cálculos matemáticos e de álgebra linear de forma rápida, sem loops explícitos em Python.",
+  "por_que_pedem": "Vagas de entity resolution e data science pedem NumPy porque scoring probabilístico, cálculos de similaridade, vetorização de features e otimizações de performance em matching dependem de operações matriciais eficientes. É também pré-requisito implícito para usar bem scikit-learn, que você já conhece, e para lidar com embeddings e distâncias vetoriais usadas em linkage moderno.",
+  "ponte_com_o_que_voce_sabe": "Você já usa scikit-learn e RapidFuzz, que internamente usam NumPy, e já pensa em termos de operações em lote no Spark. A transição é entender que NumPy faz em memória local o que Spark faz distribuído: vetorização de arrays em vez de map/loop. Quem já evita loops em Spark e pensa em transformações colunares aprende NumPy rápido, pois é o mesmo raciocínio aplicado a arrays menores.",
+  "minimo_para_ficar_apto": [
+   "Criar, indexar e fatiar ndarrays (slicing, boolean indexing, fancy indexing)",
+   "Entender broadcasting e operações elementwise vs operações matriciais (dot, matmul)",
+   "Saber usar funções de agregação (sum, mean, std, argmax) por eixo (axis=0/1)",
+   "Conhecer diferença de performance entre loop Python puro e vetorização NumPy",
+   "Manipular dtypes, reshape, concatenate, stack e lidar com NaN (isnan, nanmean)",
+   "Usar NumPy para calcular distâncias/similaridades (cosine, euclidiana) em vetores de features, já que isso aparece direto em scoring de matching"
+  ],
+  "plano_rapido": [
+   "2h: tutorial oficial NumPy (Quickstart) fazendo todos os exemplos no Jupyter",
+   "2h: exercícios de indexing, slicing e broadcasting (resolver 20-30 problemas práticos)",
+   "2h: reimplementar com NumPy puro um cálculo que você já faz com scikit-learn ou RapidFuzz (ex: similaridade de cosseno entre vetores de features de registros)",
+   "1h: comparar performance de um loop Python vs versão vetorizada no seu próprio dataset de matching (medir com %timeit)",
+   "1h: revisar documentação de linear algebra (numpy.linalg) e funções estatísticas usadas em scoring"
+  ],
+  "mini_projeto": "Pegue um subconjunto de pares candidatos do seu pipeline de record linkage (saída do blocking) e implemente, usando só NumPy puro (sem sklearn), uma função que calcula similaridade de cosseno e distância euclidiana entre vetores de features (idade normalizada, embeddings de nome, etc) para cada par, comparando o tempo de execução vetorizado vs loop Python. Documente no GitHub mostrando ganho de performance e como isso se encaixa no estágio de scoring do seu pipeline Splink.",
+  "como_colocar_no_curriculo": "Otimização de pipelines de scoring e feature engineering em entity resolution usando NumPy para operações vetorizadas de similaridade, reduzindo tempo de processamento em etapas de matching complementares ao Spark.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença de performance entre um loop Python e uma operação vetorizada em NumPy, e por quê?",
+    "resposta": "NumPy executa operações em arrays usando código C compilado e contíguo em memória, evitando overhead do interpretador Python a cada iteração. Isso traz ganhos de 10x a 100x em operações elementwise, especialmente relevante em cálculos de similaridade em larga escala antes de distribuir no Spark."
+   },
+   {
+    "pergunta": "O que é broadcasting em NumPy e dê um exemplo de uso em feature engineering.",
+    "resposta": "Broadcasting permite operar arrays de shapes diferentes sem replicar dados explicitamente, como subtrair um vetor de médias de uma matriz de features para normalizar colunas, essencial antes de calcular distâncias em matching probabilístico."
+   },
+   {
+    "pergunta": "Como você calcularia similaridade de cosseno entre dois vetores usando só NumPy?",
+    "resposta": "Com o produto escalar dividido pelo produto das normas: np.dot(a,b) / (np.linalg.norm(a) * np.linalg.norm(b)), aplicável em lote com broadcasting para matrizes inteiras de pares candidatos."
+   },
+   {
+    "pergunta": "Quando você usaria NumPy puro em vez de pandas ou Spark num pipeline de record linkage?",
+    "resposta": "Em cálculos numéricos intensivos e locais sobre arrays já extraídos, como scoring de pares candidatos pós-blocking em memória, onde pandas adiciona overhead desnecessário e Spark não compensa para volumes que cabem na memória de um worker."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial NumPy (NumPy Quickstart tutorial e NumPy User Guide)",
+   "Curso 'Python for Data Science' da DataCamp ou Coursera (módulo de NumPy)",
+   "Livro 'Python for Data Analysis' de Wes McKinney (capítulos sobre NumPy)"
+  ]
+ },
+ {
   "data": "2026-11-19",
   "habilidade": "RAG",
   "pct_vagas": 2,
