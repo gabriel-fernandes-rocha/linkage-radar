@@ -1,0 +1,78 @@
+===== coleta 2026-11-21 01:17 =====
+INFO serpapi: 45 restantes no mês; orçamento de hoje = 9 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 98
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1406
+INFO jobs/lever: 308
+INFO jobs/ashby: 54
+INFO jobs/hn_who_is_hiring: 2
+INFO google_jobs 'address matching': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'deduplication data engineer': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 171
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 145
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 198
+INFO jobs/social_linkedin/ddg: 6 aceitos de 7
+INFO jobs/social_posts: 6
+INFO linkedin_guest: 34 vagas, 25 descrições abertas, 48 consultas no total
+INFO jobs/linkedin_guest: 34
+INFO judge: tokens in=1491 out=547
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2066 out=151
+INFO vagas: {'brutos': 3042, 'pos_palavras_chave': 4, 'aprovados': 1}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 9
+INFO papers/openalex: 175
+INFO papers: {'brutos': 184, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 8 aceitos de 9
+INFO linkedin: 8 candidatos
+INFO judge: tokens in=1639 out=565
+INFO requisitos: tokens in=2470 out=455
+INFO linkedin: {'brutos': 8, 'pos_palavras_chave': 5, 'aprovados': 1}
+INFO open_jobs: fechou Senior Data Engineer - São Paulo (Contract)
+INFO open_jobs: fechou Founding Engineer (Data, ML, Product) Intern
+INFO open_jobs: 119 abertas (4 novas)
+INFO open_jobs: 4 vagas do LinkedIn completadas pela página pública, 0 encerradas
+INFO requisitos: tokens in=8344 out=766
+INFO mercado: 211 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2255 out=1011
+INFO judge: tokens in=1347 out=298
+INFO network: 89 pessoas (2 novas), 47 empresas (0 novas)
+INFO carreira: tokens in=1455 out=1839
+INFO brasil/inhire: 227
+INFO brasil/gupy: 344
+INFO google_jobs 'dados mestres': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 2
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/9)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 36 vagas, 36 descrições abertas, 110 consultas no total
+INFO brasil/linkedin_guest_br: 36
+INFO brasil/linkedin_local: 5
+INFO brasil/greenhouse: 988
+INFO brasil/lever: 151
+INFO brasil/ashby: 118
+INFO brasil: 4913 brutas, 6 candidatas para o juiz
+INFO judge: tokens in=2021 out=779
+INFO open_jobs: fechou Senior Data Engineer na empresa BEES - LinkedIn Jobs
+INFO open_jobs: fechou Senior Data Engineer - São Paulo (Contract)
+INFO open_jobs: 43 abertas (0 novas)
+INFO mercado: 81 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 11 aceitos de 11
+INFO network: 11 perfis após a consulta
+INFO judge: tokens in=2478 out=1073
+INFO judge: tokens in=1535 out=376
+INFO network: 52 pessoas (1 novas), 64 empresas (0 novas)
+INFO brasil: {'novas': 5, 'abertas': 43, 'arquivadas': 81, 'rede': {'pessoas_novas': 1, 'empresas_novas': 0}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-21.json
+

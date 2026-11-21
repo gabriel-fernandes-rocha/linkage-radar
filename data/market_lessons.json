@@ -1,5 +1,57 @@
 [
  {
+  "data": "2026-11-21",
+  "habilidade": "Git",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Git é o sistema de controle de versão distribuído padrão da indústria, usado para rastrear mudanças em código, colaborar em equipe e gerenciar histórico de projetos. Inclui conceitos como commits, branches, merges, rebases e repositórios remotos (GitHub, GitLab, Bitbucket). É a base de qualquer fluxo de trabalho de desenvolvimento moderno, incluindo pipelines de dados versionados.",
+  "por_que_pedem": "Em vagas de MDM e integração (como as que você está mirando), Git é pré-requisito básico de empregabilidade, não um diferencial técnico. Equipes de engenharia esperam que qualquer candidato saiba versionar código, colaborar via pull requests e trabalhar com branches, especialmente em arquiteturas MDM que envolvem múltiplos times (dados, integração, arquitetura). A ausência total de Git é um filtro de triagem imediato, mesmo que apareça em poucas vagas como obrigatória, porque é assumido como conhecimento implícito em qualquer vaga sênior.",
+  "ponte_com_o_que_voce_sabe": "Você já trabalha com pipelines complexos em produção (Spark, Python, SQL) e certamente já lida com arquivos de configuração, scripts e código que precisa ser compartilhado com equipe ou versionado ao longo do tempo. A lógica de 'salvar estados', comparar diferenças e reverter mudanças é similar ao que você já faz mentalmente ao controlar versões de pipelines de matching ou scoring. A curva de aprendizado é baixa porque você já tem disciplina de engenharia e entende fluxos de trabalho técnicos complexos; Git é só uma ferramenta a mais no cinto, não um novo paradigma.",
+  "minimo_para_ficar_apto": [
+   "Criar repositório, fazer commit, push e pull",
+   "Entender e usar branches (criar, trocar, mergear)",
+   "Resolver conflitos de merge simples",
+   "Usar .gitignore corretamente",
+   "Trabalhar com repositório remoto (GitHub/GitLab): clone, fork, pull request",
+   "Entender diferença entre git merge e git rebase (nível conceitual)",
+   "Saber usar git log, git diff, git status no dia a dia"
+  ],
+  "plano_rapido": [
+   "2h: tutorial interativo 'Learn Git Branching' (prática visual de branches e merges)",
+   "2h: criar repositório no GitHub, fazer commits, push/pull, configurar .gitignore",
+   "2h: praticar branches, merge e resolver um conflito proposital",
+   "1h: criar um pull request em repositório próprio (simulando colaboração)",
+   "1h: ler sobre Git Flow / trunk-based development (conceitos usados em squads)",
+   "Total: 8h para ficar apto em triagem e entrevista básica"
+  ],
+  "mini_projeto": "Pegue um dos seus pipelines de record linkage (ex: script de blocking + scoring com Splink) e versione ele no GitHub com histórico de commits bem feito: estrutura de pastas, README explicando o pipeline, .gitignore adequado, pelo menos 2 branches (main e uma de feature simulando melhoria no matching) com um merge documentado. Isso mostra Git aplicado ao seu domínio real, não um exercício genérico.",
+  "como_colocar_no_curriculo": "Controle de versão e colaboração em código com Git/GitHub (branching, pull requests, resolução de conflitos) aplicado a pipelines de dados em produção.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre git merge e git rebase?",
+    "resposta": "Merge cria um commit novo juntando duas branches, preservando o histórico completo e paralelo. Rebase reescreve o histórico, aplicando os commits de uma branch sobre a outra, criando uma linha reta e mais limpa. Uso merge quando quero preservar o contexto de uma feature, e rebase para manter histórico linear antes de um merge final."
+   },
+   {
+    "pergunta": "Como você resolveria um conflito de merge?",
+    "resposta": "Eu identifico os arquivos conflitantes com git status, abro e analiso as marcações <<<<<<< e >>>>>>>, decido manualmente qual trecho manter ou combino as mudanças, removo as marcações, adiciono o arquivo resolvido com git add e finalizo com git commit."
+   },
+   {
+    "pergunta": "O que é um pull request e por que ele é importante?",
+    "resposta": "É uma solicitação para mesclar mudanças de uma branch em outra, geralmente usada para revisão de código antes de integrar ao branch principal. Ele permite colaboração, code review, discussão de mudanças e garante qualidade antes do merge em produção."
+   },
+   {
+    "pergunta": "Como você organiza seu .gitignore em um projeto de dados?",
+    "resposta": "Eu excluo arquivos temporários, ambientes virtuais, dados sensíveis ou pesados (como datasets brutos), credenciais e arquivos de cache gerados por Spark ou notebooks, mantendo o repositório limpo e sem vazamento de dados sensíveis."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Git (git-scm.com)",
+   "Learn Git Branching (tutorial interativo)",
+   "GitHub Docs (docs.github.com)",
+   "Pro Git Book (livro gratuito oficial do Git)"
+  ]
+ },
+ {
   "data": "2026-11-20",
   "habilidade": "NumPy",
   "pct_vagas": 2,

@@ -58,6 +58,11 @@
   "nivel": "nao",
   "nome": "Agentforce"
  },
+ "agentic workflows": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "agentic workflows"
+ },
  "agile/scrum": {
   "motivo": "não consta prática ou certificação Agile/Scrum",
   "nivel": "nao",
@@ -67,6 +72,11 @@
   "motivo": "usa scikit-learn para matching probabilístico, mas não IA avançada",
   "nivel": "parcial",
   "nome": "AI"
+ },
+ "ai agents": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "AI agents"
  },
  "ai architectures": {
   "motivo": "nenhuma experiência ou menção a arquiteturas de IA",
@@ -513,6 +523,11 @@
   "nivel": "nao",
   "nome": "Claude"
  },
+ "claude code": {
+  "motivo": "ferramenta específica não mencionada",
+  "nivel": "nao",
+  "nome": "Claude Code"
+ },
  "clean rooms": {
   "motivo": "sem evidência de uso",
   "nivel": "nao",
@@ -562,6 +577,11 @@
   "motivo": "resolução de entidades envolve clustering",
   "nivel": "tem",
   "nome": "clustering"
+ },
+ "codex": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Codex"
  },
  "collibra": {
   "motivo": "não citado no currículo",
@@ -2373,6 +2393,11 @@
   "nivel": "tem",
   "nome": "Patient matching"
  },
+ "perl": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Perl"
+ },
  "pgvector": {
   "motivo": "sem evidência de uso específico",
   "nivel": "nao",
@@ -2527,6 +2552,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "Prolog"
+ },
+ "prompt engineering": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "prompt engineering"
  },
  "protobuf": {
   "motivo": "sem evidência de serialização Protobuf",
@@ -3063,6 +3093,11 @@
   "nivel": "tem",
   "nome": "Statistical Analysis"
  },
+ "statistical modeling": {
+  "motivo": "usa Fellegi-Sunter/EM e estatística básica",
+  "nivel": "parcial",
+  "nome": "statistical modeling"
+ },
  "statistical sampling": {
   "motivo": "Usa estatística básica, mas amostragem não explicitada.",
   "nivel": "parcial",
@@ -3162,6 +3197,11 @@
   "motivo": "sem evidência de orquestração workflow",
   "nivel": "nao",
   "nome": "Temporal"
+ },
+ "temporal modeling": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "temporal modeling"
  },
  "tensorflow": {
   "motivo": "sem evidência, usa scikit-learn",

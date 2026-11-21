@@ -54,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true
   },
@@ -112,7 +112,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -169,7 +169,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -235,7 +235,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -297,7 +297,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -317,7 +317,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota para Brasil com entity resolution, entity matching, deduplication e fuzzy matching explícitos; stack inclui Python e Amazon Neptune.",
+    "motivo": "Vaga remota no Brasil com requisitos diretos em entity resolution, entity matching, fuzzy matching e deduplication usando Amazon Neptune e Python.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -370,11 +370,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T remoto para Brasil especializado em entity resolution, deduplication e fuzzy matching com Python, graph databases e AWS.",
-    "confianca": 0.95
+    "resumo": "CI&T contrata Master Data Developer remoto no Brasil especializado em entity resolution, fuzzy matching e deduplication com Amazon Neptune e Python.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -438,7 +438,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -500,8 +500,8 @@
       "estimado": false
     },
     "desde": "2026-11-20",
-    "verificada_em": "2026-11-20",
-    "nova": true
+    "verificada_em": "2026-11-21",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -565,7 +565,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -627,7 +627,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -696,7 +696,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -765,7 +765,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -819,7 +819,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true
   },
@@ -838,7 +838,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota aceitando Brasil com entity resolution e deduplication explícitos em pipelines de dados; stack inclui Kafka, ETL e Neo4j.",
+    "motivo": "Vaga remota aceitando Brasil com requisitos em entity resolution, deduplication e data pipelines em arquitetura graph (Neo4j), mesmo com escopo LATAM amplo.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -889,11 +889,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "AI Senior Engineer em Graph na Able remoto aceitando Brasil responsável por entity resolution, deduplication e pipelines de dados com Neo4j, Kafka e Python.",
-    "confianca": 0.9
+    "resumo": "Able contrata AI Senior Engineer remoto com suporte a Brasil especializado em entity resolution, deduplication e pipelines de dados em Neo4j.",
+    "confianca": 0.92
   },
   {
     "tipo": "vaga",
@@ -960,7 +960,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1028,7 +1028,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true
   },
@@ -1049,7 +1049,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga no Brasil com entity resolution, entity matching, deduplication e fuzzy matching explícitos; stack inclui Python, machine learning e graph databases.",
+    "motivo": "Vaga no Brasil para Master Data Developer com requisitos explícitos em entity resolution, entity matching, fuzzy matching e deduplication usando graph databases e Python.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1101,11 +1101,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T Brasil especializado em entity resolution, deduplication e fuzzy matching com Python, machine learning e Amazon Neptune.",
-    "confianca": 0.95
+    "resumo": "CI&T (ciandt) contrata Master Data Developer no Brasil especializado em entity resolution, fuzzy matching e deduplication com Amazon Neptune e Python.",
+    "confianca": 0.98
   },
   {
     "tipo": "vaga",
@@ -1172,7 +1172,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1227,7 +1227,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1245,7 +1245,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota para Brasil focada em identity resolution e data governance; stack inclui Snowflake e mParticle (plataforma de CDP que requer matching de identidades).",
+    "motivo": "Vaga remota no Brasil para Senior Data Engineer com identity resolution, data quality e customer 360 em stack moderno (Snowflake, dbt, Braze, mParticle).",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1297,11 +1297,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer na Massive Rocket remoto para Brasil especializado em identity resolution, data governance e qualidade com Snowflake, Braze e plataformas de CDP.",
-    "confianca": 0.8
+    "resumo": "Massive Rocket contrata Senior Data Engineer remoto no Brasil com foco em identity resolution, data quality e customer 360 usando Snowflake, dbt e plataformas de dados.",
+    "confianca": 0.9
   },
   {
     "tipo": "vaga",
@@ -1359,84 +1359,8 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Engineer na empresa BEES - LinkedIn Jobs",
-    "url": "https://br.linkedin.com/jobs/view/senior-data-engineer-at-bees-4483726838",
-    "empresa": "BEES",
-    "local": "Campinas, SP",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "score": 5,
-    "categoria": "linkage",
-    "termos": [
-      "blocking",
-      "duplicate detection",
-      "entity resolution",
-      "master data management",
-      "survivorship"
-    ],
-    "juiz": "groq",
-    "motivo": "Vaga no Brasil que menciona MDM com entity resolution, matching determinístico e probabilístico, blocking e deduplicação.",
-    "resumo": "Senior Data Engineer na BEES, responsável por master data management com resolução de entidades, regras de golden‑record e identidade entre sistemas.",
-    "confianca": 0.98,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "Python",
-        "Spark",
-        "Databricks",
-        "Unity Catalog",
-        "Entity Resolution",
-        "Master Data Management"
-      ],
-      "desejaveis": [
-        "Azure Databricks"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": null,
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "Brazil"
-      ],
-      "cidades": [
-        "Campinas"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "encaixe": 0.35,
-    "compat_detalhe": {
-      "habilidades": 50,
-      "senioridade": 75,
-      "local": 75,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível senior",
-      "local_txt": "modalidade não informada, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "Databricks",
-        "Unity Catalog",
-        "Master Data Management"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-27",
-    "verificada_em": "2026-11-20",
-    "nova": false,
-    "enriquecida": true,
-    "publicada_em": "2026-10-28"
   },
   {
     "tipo": "vaga",
@@ -1502,7 +1426,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1573,7 +1497,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1645,7 +1569,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1705,7 +1629,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1754,7 +1678,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1803,7 +1727,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1875,7 +1799,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -1966,94 +1890,8 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Data Engineer - São Paulo (Contract)",
-    "url": "https://jobs.workable.com/view/hd3xCTPUautSrA47L1mSSD/hybrid-senior-data-engineer---s%C3%A3o-paulo-(contract)-in-s%C3%A3o-paulo-at-first-help-financial",
-    "empresa": "First Help Financial",
-    "local": "São Paulo, Brazil",
-    "fonte": "Workable",
-    "publicada_em": "2026-10-16",
-    "score": 4,
-    "categoria": "linkage",
-    "termos": [
-      "entity resolution",
-      "master data management",
-      "survivorship"
-    ],
-    "nao_verificado": true,
-    "motivo": "Vaga presencial em São Paulo com entity resolution, master data management e survivorship explícitos; stack inclui Spark, Python, Databricks e qualidade de dados em arquitetura completa.",
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "Python",
-        "SQL",
-        "Spark",
-        "Databricks",
-        "Delta Lake",
-        "dbt",
-        "AWS",
-        "Terraform",
-        "PostgreSQL",
-        "GitHub Actions",
-        "Entity resolution",
-        "Data reconciliation",
-        "Data quality",
-        "Observability",
-        "Data modeling"
-      ],
-      "desejaveis": [
-        "Unity Catalog",
-        "Delta Live Tables",
-        "MLOps",
-        "Data governance",
-        "AI architectures"
-      ]
-    },
-    "anos_experiencia_min": null,
-    "senioridade": null,
-    "modalidade": null,
-    "local_contratacao": null,
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "ingles": "nao_informado",
-    "foco_er": 0.9,
-    "requisitos_estimados": true,
-    "encaixe": 0.29,
-    "compat_detalhe": {
-      "habilidades": 35,
-      "senioridade": 85,
-      "local": 60,
-      "ingles": 100,
-      "foco": 98,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "local de contratação não informado",
-      "faltam": [
-        "Databricks",
-        "dbt",
-        "AWS",
-        "Terraform",
-        "PostgreSQL",
-        "Observability",
-        "Data modeling"
-      ],
-      "parciais": [
-        "SQL",
-        "Delta Lake",
-        "GitHub Actions",
-        "Data reconciliation"
-      ],
-      "estimado": true
-    },
-    "desde": "2026-10-16",
-    "verificada_em": "2026-11-20",
-    "nova": false,
-    "juiz": "anthropic",
-    "resumo": "Senior Data Engineer na First Help Financial São Paulo especializado em entity resolution, master data management, data reconciliation e data quality com Spark, Databricks e Python.",
-    "confianca": 0.9
   },
   {
     "tipo": "vaga",
@@ -2118,7 +1956,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2183,7 +2021,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12"
@@ -2245,7 +2083,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2323,7 +2161,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true
   },
@@ -2396,7 +2234,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2475,7 +2313,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2545,7 +2383,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2613,7 +2451,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2688,7 +2526,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2777,7 +2615,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2840,7 +2678,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04"
@@ -2913,7 +2751,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   },
   {
@@ -2982,7 +2820,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04"
@@ -3054,7 +2892,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-20",
+    "verificada_em": "2026-11-21",
     "nova": false
   }
 ]
