@@ -1,5 +1,51 @@
 [
  {
+  "data": "2026-11-22",
+  "habilidade": "CI/CD",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "CI/CD é a prática de automatizar build, testes e deploy de código usando pipelines (ex: GitHub Actions, GitLab CI, Jenkins, Azure DevOps). Toda alteração passa por validação automática antes de ir para produção. Em contextos de dados, inclui testar transformações, validar schemas e versionar pipelines de dados/modelos como código.",
+  "por_que_pedem": "Vagas de MDM e identity resolution envolvem pipelines críticos rodando em produção com dados sensíveis (saúde, identidade). Empresas querem garantir que mudanças em regras de matching, scoring ou integrações não quebrem nada silenciosamente, e que deploys sejam rastreáveis, reversíveis e auditáveis, especialmente em ambientes regulados.",
+  "ponte_com_o_que_voce_sabe": "Você já tem pipelines complexos em produção (ingestão, blocking, scoring, QA) e testes de qualidade de dados. Isso é 80% do raciocínio de CI/CD: só falta formalizar isso em arquivos de pipeline (yaml) que rodam automaticamente a cada commit, usando testes que você já escreveria manualmente em Python/pytest.",
+  "minimo_para_ficar_apto": [
+   "Entender o conceito de pipeline declarativo (stages: build, test, deploy)",
+   "Saber escrever um arquivo básico de GitHub Actions ou GitLab CI (.yml)",
+   "Rodar testes automatizados (pytest) disparados por push/PR",
+   "Noção de ambientes (dev/staging/prod) e deploy controlado",
+   "Entender versionamento semântico e rollback"
+  ],
+  "plano_rapido": [
+   "2h: ler docs oficiais do GitHub Actions (conceitos de workflow, job, step)",
+   "3h: criar repositório de teste, escrever workflow que roda pytest a cada push",
+   "2h: adicionar lint (flake8/black) e badge de status no README",
+   "3h: simular deploy automático de um script Spark/Python para um 'ambiente' fake (ex: copiar artefato, rodar Docker build)",
+   "2h: ler sobre CI/CD aplicado a pipelines de dados (dbt, Airflow DAG tests) para contextualizar no seu domínio"
+  ],
+  "mini_projeto": "Pegue um pedaço do seu pipeline de record linkage (ex: função de normalização + blocking com Splink) e crie um repositório com GitHub Actions que: 1) roda testes unitários pytest a cada push, 2) valida lint, 3) simula deploy publicando o pacote Python em um ambiente de teste (ex: build Docker). Documente no README o fluão do pipeline.",
+  "como_colocar_no_curriculo": "Implementei pipelines de CI/CD (GitHub Actions) para automatizar testes e deploy de componentes de record linkage em Python, garantindo qualidade e rastreabilidade de mudanças em produção.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é CI/CD e qual a diferença entre integração contínua e entrega contínua?",
+    "resposta": "CI (integração contínua) é automatizar build e testes a cada commit para detectar erros cedo. CD (entrega/deploy contínuo) é automatizar o processo de levar código validado para produção, com ou sem aprovação manual final."
+   },
+   {
+    "pergunta": "Como você aplicaria CI/CD em um pipeline de Spark/record linkage?",
+    "resposta": "Criaria testes unitários para funções de normalização e scoring, testes de integração validando outputs de blocking/matching em amostras fixas, e um pipeline que roda esses testes a cada PR, além de versionar regras de matching e configs do Splink como código, com deploy automatizado para staging antes de produção."
+   },
+   {
+    "pergunta": "O que você faria se um deploy quebrasse em produção?",
+    "resposta": "Usaria rollback automático para a versão anterior (tag/release), analisaria logs do pipeline de CI para identificar em qual etapa falhou, e adicionaria um teste de regressão cobrindo esse caso antes de reabilitar o deploy."
+   }
+  ],
+  "fontes_para_estudar": [
+   "GitHub Actions Documentation (docs.github.com)",
+   "GitLab CI/CD Documentation",
+   "Documentação oficial do pytest",
+   "Curso 'CI/CD' no Coursera ou Udemy (buscar por GitHub Actions fundamentals)",
+   "Documentação do Docker (docs.docker.com)"
+  ]
+ },
+ {
   "data": "2026-11-21",
   "habilidade": "Git",
   "pct_vagas": 2,

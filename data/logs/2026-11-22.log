@@ -1,0 +1,80 @@
+===== coleta 2026-11-22 00:31 =====
+INFO serpapi: 36 restantes no mês; orçamento de hoje = 9 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 100
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1404
+INFO jobs/lever: 308
+INFO jobs/ashby: 54
+INFO jobs/hn_who_is_hiring: 2
+INFO google_jobs 'deduplication data engineer': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 10
+INFO jobs/gupy: 169
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 150
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 250
+INFO jobs/social_linkedin/ddg: 0 aceitos de 1
+INFO jobs/social_linkedin/google: 2 aceitos de 10
+INFO jobs/social_posts: 2
+INFO linkedin_guest: 34 vagas, 25 descrições abertas, 48 consultas no total
+INFO jobs/linkedin_guest: 34
+INFO judge: tokens in=2370 out=1115
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2899 out=680
+INFO requisitos: tokens in=2386 out=451
+INFO vagas: {'brutos': 3103, 'pos_palavras_chave': 8, 'aprovados': 6}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 7
+INFO papers/openalex: 175
+INFO judge: tokens in=1100 out=162
+INFO papers: {'brutos': 182, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1592 out=604
+INFO requisitos: tokens in=2596 out=696
+INFO requisitos: tokens in=2082 out=166
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 5, 'aprovados': 0}
+INFO open_jobs: 130 abertas (11 novas)
+INFO open_jobs: 2 vagas do LinkedIn completadas pela página pública, 3 encerradas
+INFO requisitos: tokens in=4585 out=403
+INFO mercado: 222 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 7 aceitos de 7
+INFO network: 7 perfis após a consulta
+INFO judge: tokens in=2011 out=953
+INFO network: 91 pessoas (2 novas), 48 empresas (1 novas)
+INFO carreira: tokens in=1464 out=1519
+INFO carreira: tokens in=10546 out=5532
+INFO brasil/inhire: 227
+INFO brasil/gupy: 342
+INFO brasil/google_jobs_br: 13
+INFO brasil/linkedin/ddg: 1 aceitos de 1
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 1
+INFO linkedin_guest: 16 vagas, 16 descrições abertas, 93 consultas no total
+INFO brasil/linkedin_guest_br: 16
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 988
+INFO brasil/lever: 151
+INFO brasil/ashby: 118
+INFO brasil: 4963 brutas, 8 candidatas para o juiz
+INFO judge: tokens in=2617 out=1117
+INFO requisitos: tokens in=3291 out=549
+INFO open_jobs: 45 abertas (2 novas)
+INFO open_jobs: 1 vagas do LinkedIn completadas pela página pública, 0 encerradas
+INFO requisitos: tokens in=3392 out=216
+INFO mercado: 83 vagas no nicho, 200 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 9/9)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 52 pessoas (0 novas), 65 empresas (1 novas)
+INFO brasil: {'novas': 6, 'abertas': 45, 'arquivadas': 83, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: ok (0 alertas)
+INFO OK → data/2026-11-22.json
+

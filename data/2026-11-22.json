@@ -1,0 +1,632 @@
+{
+  "data": "2026-11-22",
+  "gerado_em": "2026-11-22T00:09-03:00",
+  "llm": true,
+  "serpapi_orcamento": 9,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer - Remote",
+      "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-remote-acxiom-richmond--lensa-19327_0ea616adddb10039e08580b84fc45eba4fccf7b133235dc66c021538b4f94f20",
+      "empresa": "Acxiom",
+      "local": "Richmond, VA",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-12",
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Engenheiro especializado em identity e entity resolution com tecnologias Spark, SQL, Python, remoto, alinhamento forte com stack e experiência do leitor.",
+      "resumo": "Engenheiro de Software Sênior remoto na Acxiom no time de Identity Resolution, desenvolvendo sistemas de resolução de identidade e entidades em larga escala com workflows real-time e batch em Spark, SQL e Python.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS",
+          "Databricks",
+          "REST APIs"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Richmond"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 31,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS",
+          "Databricks",
+          "REST APIs"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer RealTime & Spark Remote",
+      "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-realtime-spark-remote-acxiom-madison--lensa-7428_8f3d3ad6e91775b0e392917da4a61f529b4ca247eb0533d003ea67c6979e620e",
+      "empresa": "Acxiom",
+      "local": "Madison, WI",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-13",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Engenheiro especializado em Identity Resolution em larga escala com Spark, SQL, Python, AWS e Databricks, experiência muito similar ao perfil.",
+      "resumo": "Engenheiro de Software Sênior na Acxiom no time de Identity Resolution, desenvolvendo sistemas distribuídos de alta escala para matching, linkage e resolução de identidades com Spark, SQL, Python e AWS.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS"
+        ],
+        "desejaveis": [
+          "Databricks"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Madison"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 31,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer - Real-Time, Large-Scale",
+      "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-real-time-large-scale-acxiom-lansing--lensa-7428_e83ffd0a43c3540d46ba0c8a88600c4316a6c9e6336360cc6b1cd822b2cf507c",
+      "empresa": "Acxiom",
+      "local": "Lansing, MI",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-13",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Engenheiro sênior em Identity Resolution com foco em sistemas de larga escala, real-time e batch, tecnologias Spark e SQL alinhadas ao perfil.",
+      "resumo": "Engenheiro de Software Sênior na Acxiom projetando e construindo sistemas de resolução de identidade em larga escala com APIs real-time e processamento batch usando Spark, SQL, Python, Java e AWS.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS",
+          "Databricks"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Lansing"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 36,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution & Master Data Engineer",
+      "url": "https://www.jobleads.com/us/job/senior-identity-resolution-master-data-engineer--irving--e3f80d75ac02f6cebd68d9a0e371574f3",
+      "empresa": "Caris Life Sciences",
+      "local": "Irving, TX",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-13",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Engenheiro sênior especializado em identity resolution e master data management para matching de pacientes e provedores em saúde.",
+      "resumo": "Engenheiro de Software Sênior na Caris Life Sciences responsável por desenhar e operar sistemas de resolução de identidade para correspondência e linkage de pacientes e provedores com compliance regulatório.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "CI/CD"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Irving"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "CI/CD"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer Hybrid",
+      "url": "https://us.trabajo.org/job-28643-197712a2405b11a92eb4e697bcfe1951",
+      "empresa": "Caris Life Sciences",
+      "local": "Irving, TX",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-03",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Engenheiro sênior em identity resolution e master data management para dados de saúde, hybrid em Irving TX, escopo técnico muito próximo ao perfil.",
+      "resumo": "Engenheiro de Software Sênior na Caris Life Sciences projetando e operando serviços de resolução de identidade e gestão de dados mestres para correspondência de registros de pacientes e provedores em fluxos complexos.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Irving, TX"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível senior",
+        "local_txt": "hibrido em United States, sem patrocínio de visto",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Remote IAM Architect - Identity Resolution & Zero Trust Lead",
+      "url": "https://www.jobleads.com/us/job/remote-iam-architect-identity-resolution-zero-trust-lead--hartford--e3a0944aff8b7cf33c6d5e16cd9296417",
+      "empresa": "GovCIO",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-17",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Arquiteto IAM com foco explícito em Identity Resolution, Person Matching, matching determinístico/probabilístico e MPI, alinhado ao perfil.",
+      "resumo": "Arquiteto IAM remoto na GovCIO para desenhar capacidades de resolução de identidade única e confiável em sistemas DoD, liderando matching determinístico/probabilístico e integração ICAM.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Master Data Management",
+          "Deterministic Matching",
+          "Probabilistic Matching",
+          "ICAM"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 60,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Master Data Management",
+          "ICAM"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer - Python ETL & Entity Resolution - Remote - Latin ...",
+      "url": "https://cr.linkedin.com/jobs/view/senior-data-engineer-python-etl-entity-resolution-remote-latin-america-at-fullstack-4492216889",
+      "texto": "Hands-on experience implementing entity resolution, including record linkage, fuzzy matching, and deduplicating records across multiple data sources. Proven experience modeling and tuning relational databases in PostgreSQL for both operational and analytical workloads.",
+      "data": "Nov 18, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 9,
+      "juiz": "anthropic",
+      "motivo": "Vaga remota de Senior Data Engineer focada em entity resolution, record linkage, fuzzy matching e deduplicação.",
+      "resumo": "Vaga de Senior Data Engineer remoto com ênfase em implementação prática de entity resolution, record linkage, fuzzy matching, deduplicação de registros e modelagem PostgreSQL.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "ETL",
+          "PostgreSQL",
+          "Entity Resolution",
+          "Record Linkage",
+          "Fuzzy Matching",
+          "Deduplication"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "regiao",
+        "paises": [
+          "LATAM"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.66,
+      "compat_detalhe": {
+        "habilidades": 86,
+        "senioridade": 75,
+        "local": 100,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto e aceita Brasil/LATAM",
+        "faltam": [
+          "PostgreSQL"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer at ACL Digital — United States | LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/data-engineer-at-acl-digital-4492107230",
+      "texto": "Identity Matching & Record Linkage: Execute and troubleshoot record-linkage logic to match newly ingested records to master profiles, resolving match exceptions and cross-source reconciliations.",
+      "data": "Nov 18, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Data Engineer com responsabilidade central em identity matching, record linkage e reconciliação de registros entre fontes.",
+      "resumo": "Vaga de Data Engineer em ACL Digital focada em executar e resolver lógica de record linkage, matching de registros a perfis mestres e reconciliação cross-source.",
+      "confianca": 0.94,
+      "requisitos": {
+        "obrigatorios": [
+          "Record Linkage",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer en Cross Atlantic Partners - LinkedIn",
+      "url": "https://ar.linkedin.com/jobs/view/senior-data-engineer-at-cross-atlantic-partners-4487150195",
+      "texto": "Direct experience building and operating data solutions on AWS. Practical experience with entity resolution, record linkage or identity matching. Experience implementing medallion architecture and integrating multiple data sources. Ability to work independently and adapt within a small, evolving team. Strong English communication skills.",
+      "data": "Nov 9, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Data Engineer com experiência prática em entity resolution, record linkage e identity matching em AWS.",
+      "resumo": "Vaga de Senior Data Engineer em Cross Atlantic Partners com requisitos de entity resolution, record linkage, identity matching, arquitetura medallion e AWS.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "AWS",
+          "Entity Resolution",
+          "Record Linkage",
+          "Identity Matching",
+          "Medallion Architecture"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.29,
+      "compat_detalhe": {
+        "habilidades": 70,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "AWS"
+        ],
+        "parciais": [
+          "Medallion Architecture"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "DATA SCIENTIST - SC CLEARED at Women Rock - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/data-scientist-%E2%80%93-sc-cleared-at-women-rock-4492586484",
+      "texto": "Practical experience working with Kubernetes and Bash. Experience with entity resolution, record linkage, data matching or complex data integration. Strong SQL skills and experience working with complex datasets. Ability to operate independently and contribute quickly within an established engineering team. Active UK SC security clearance.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 11,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Data Scientist com requisito explícito de entity resolution, record linkage e data matching.",
+      "resumo": "Vaga de Data Scientist com experiência prática em entity resolution, record linkage, data matching e integração complexa de dados, além de Kubernetes, Bash e SQL avançado.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Kubernetes",
+          "Bash",
+          "SQL",
+          "Entity Resolution",
+          "Record Linkage",
+          "Data Matching"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United Kingdom"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 67,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em United Kingdom, sem patrocínio de visto",
+        "faltam": [
+          "Kubernetes"
+        ],
+        "parciais": [
+          "Bash",
+          "SQL"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 127,
+  "vagas_arquivadas_total": 223,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "CI/CD",
+  "brasil": {
+    "novas": 6,
+    "abertas": 45,
+    "arquivadas": 83,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 52,
+    "semana": 8,
+    "tema": "Por que indexar e como definir blocking keys",
+    "tipo": "conceito",
+    "titulo": "Codificação fonética: Soundex",
+    "modulo": "Semana 8: Por que indexar e como definir blocking keys",
+    "versao": 2,
+    "objetivo": "Aplicar manualmente o algoritmo Soundex para gerar códigos fonéticos de nomes, entendendo suas regras, limitações e uso como blocking key.",
+    "conceito": "Soundex é o algoritmo de codificação fonética mais antigo e mais usado em data matching, criado por Russell e Odell em 1918 (Christen, 2012, seç. 4.3.1, p. 71). Sua função é transformar strings de nomes em um código curto que representa a pronúncia aproximada em inglês americano, de modo que grafias diferentes do mesmo nome caiam no mesmo bloco durante a etapa de indexação.\n\nO método mantém a primeira letra do nome e converte as letras seguintes em dígitos conforme uma tabela fixa de equivalência fonética (consoantes que soam parecido recebem o mesmo dígito; vogais, h, w e y recebem zero). Depois disso, zeros são removidos e dígitos repetidos consecutivos são colapsados, e o código final é padronizado em exatamente três dígitos após a letra inicial, truncando ou completando com zeros.\n\nO livro destaca duas fraquezas importantes (p. 71-72): primeiro, uma diferença na primeira letra (ex.: 'christina' vira c623, 'kristina' vira k623) já separa os nomes em blocos diferentes, mesmo sendo a mesma pessoa foneticamente. Segundo, como o código é curto e baseado no início da string, diferenças no final do nome tendem a se perder. Uma solução prática citada é gerar também o Soundex da string invertida e considerar dois nomes similares se qualquer um dos dois códigos coincidir.",
+    "como_funciona": "1. Mantenha a primeira letra do nome como está.\n2. Converta cada letra restante em dígito usando a tabela Soundex (aproximadamente: b,f,p,v=1; c,g,j,k,q,s,x,z=2; d,t=3; l=4; m,n=5; r=6; vogais,h,w,y=0).\n3. Remova todos os zeros da sequência de dígitos.\n4. Colapse dígitos repetidos consecutivos em um único dígito.\n5. Trunque o código para 3 dígitos após a letra inicial, ou complete com zeros à direita se tiver menos de 3.\n6. Formato final: 1 letra + 3 dígitos.",
+    "exemplo": "Codificando 'christen':\n1. Letra inicial: 'c'.\n2. Converter h,r,i,s,t,e,n: h=0, r=6, i=0, s=2, t=3, e=0, n=5. Sequência: 0 6 0 2 3 0 5.\n3. Remover zeros: 6 2 3 5.\n4. Não há repetições consecutivas, mantém 6235.\n5. Truncar para 3 dígitos: 623.\n6. Resultado: c623.\n\nAgora 'kristen': letra inicial 'k', resto r,i,s,t,e,n = 6,0,2,3,0,5 → remove zeros → 6235 → trunca → 623. Resultado: k623. Note que christen e kristen têm o mesmo som mas códigos diferentes (c623 vs k623) por causa da primeira letra, exatamente a falha descrita no livro (p. 72).",
+    "na_pratica": "Em pipelines de indexação, Soundex é usado para gerar blocking key values concatenados com outros atributos, como no exemplo do livro (PC + Soundex(given_name)). Em Python com jellyfish:\n\nimport jellyfish\ncode = jellyfish.soundex('christen')\n\nEm SQL (PostgreSQL com fuzzystrmatch):\nSELECT soundex('christen');\n\nPara mitigar o problema da primeira letra, gere também o código da string invertida:\ncode_rev = jellyfish.soundex('christen'[::-1])\ne use blocos baseados na união dos dois.",
+    "armadilha": "Confiar só no Soundex como blocking key gera blocos muito desbalanceados (alguns códigos como s530 agrupam milhares de 'smith', 'smyth' etc.), já que a distribuição de primeiras letras e sons não é uniforme; combine sempre com outro atributo (ex.: código postal) para reduzir o tamanho dos blocos, como mostrado na Fig. 4.1 do livro (p. 70).",
+    "desafio": "Calcule manualmente o código Soundex das strings 'knight' e 'night'. Siga os 6 passos do algoritmo. Depois diga se as duas ficariam no mesmo bloco e por quê isso é relevante para blocking.",
+    "gabarito": "'knight': letra inicial 'k'. Restante n,i,g,h,t → n=5, i=0, g=2, h=0, t=3 → sequência 5,0,2,0,3 → remove zeros → 5,2,3 → sem repetições → código 523 → resultado k523.\n\n'night': letra inicial 'n'. Restante i,g,h,t → i=0, g=2, h=0, t=3 → sequência 0,2,0,3 → remove zeros → 2,3 → código 230 (completa com zero à direita pois só tem 2 dígitos) → resultado n230.\n\nOs códigos são k523 e n230, totalmente diferentes, mesmo as palavras sendo foneticamente parecidas (o 'k' mudo não é tratado por Soundex puro). Isso ilustra a fraqueza da primeira letra: Soundex não trata silenciosamente letras mudas como k em 'kn', problema que o Phonex resolve explicitamente substituindo 'kn' por 'n' no pré-processamento (seç. 4.3.2, p. 72-73). Para blocking, essas duas strings cairiam em blocos diferentes, podendo perder pares verdadeiros.",
+    "fontes": [
+      "Christen (2012), seç. 4.2, p. 69-71",
+      "Christen (2012), seç. 4.3.1, p. 71-72"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        69,
+        77
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3103,
+      "pos_palavras_chave": 8,
+      "aprovados": 6
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 182,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 5,
+      "aprovados": 0
+    }
+  },
+  "saude": "ok"
+}

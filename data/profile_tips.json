@@ -1,14 +1,14 @@
 {
- "data": "2026-11-15",
- "perfis_analisados": 78,
- "diagnostico": "Gabriel já tem um nicho raro e bem definido (entity resolution, record linkage, matching determinístico/probabilístico em escala de bilhões de registros em saúde pública), o que o diferencia da maioria dos candidatos genéricos de dados. O stack técnico central (Spark, Python, SQL, Elasticsearch, Splink, RapidFuzz) está alinhado com o que o mercado pede e ele já usa a terminologia certa (entity resolution, record linkage, deduplication, fuzzy matching, probabilistic/deterministic matching). Falta, porém, prova de impacto quantificado (volumes, tempo, precisão, custo) nas bullets de experiência, e lacunas em nuvem (AWS/Azure/GCP), Databricks, graph databases/knowledge graphs e MDM, que aparecem com frequência relevante nas vagas e nos perfis de especialistas mais fortes. O currículo e o LinkedIn também carecem de uma narrativa de carreira mais ampla (ele só tem uma experiência formal na área, de 2024, e um gap de suporte técnico de 2015-2018), o que pode ser compensado com projetos pessoais, publicações, contribuições open source ou certificações. Comparado aos perfis públicos mais fortes (Olivier Binette, Tom Hepworth, Edwin Lotero), falta ainda evidência pública de thought leadership (posts, artigos, GitHub, Kaggle) e menção a cloud/MDM que reforçaria empregabilidade internacional.",
+ "data": "2026-11-22",
+ "perfis_analisados": 91,
+ "diagnostico": "Gabriel tem um posicionamento de nicho muito raro e valioso: experiência real em produção com entity resolution e record linkage em escala de bilhões de registros, em um projeto de infraestrutura nacional de saúde pública, algo que poucos candidatos júnior/pleno conseguem comprovar. O stack técnico central (Spark, Python, SQL, Elasticsearch, Splink, matching probabilístico e determinístico) está alinhado com os requisitos mais pedidos pelo mercado. Faltam, porém, evidências quantificadas de impacto (volumes, taxas de match, redução de tempo de processamento), exposição a cloud (AWS/Azure/GCP) e a plataformas como Databricks e Snowflake, que aparecem em grande parte das vagas comparáveis. Também há uma lacuna em MDM formal, graph databases/Neo4j e LLMs aplicados a matching, temas que os perfis de especialistas internacionais destacam com frequência. O currículo está descritivo demais e pouco orientado a resultados mensuráveis, o que reduz a conversão em entrevistas para vagas remotas internacionais.",
  "headlines_en": [
-  "Entity Resolution & Record Linkage Engineer | Probabilistic & Deterministic Matching | Spark, Python, Elasticsearch | Billion-Scale Public Health Data Pipelines",
-  "Data Engineer specializing in Entity Resolution, Identity Resolution & Deduplication | Spark/Python/SQL | Real-World Public Health Data at Scale",
-  "Entity Resolution | Record Linkage | Fuzzy & Probabilistic Matching | Data Pipelines for National-Scale Health & Social Registries (Spark, Python, Elasticsearch)"
+  "Data Engineer | Entity Resolution & Record Linkage at Scale | Probabilistic & Deterministic Matching | Spark, Python, SQL, Elasticsearch | Billions-Scale Public Health Data Pipelines",
+  "Entity & Identity Resolution Engineer | Record Linkage, Deduplication, Fuzzy Matching | Spark, Python, SQL | National-Scale Data Integration in Public Health",
+  "Data Engineer specialized in Entity Resolution, Record Linkage & Data Matching | Spark, Python, Elasticsearch, Splink | Open to Remote Opportunities"
  ],
- "headline_pt": "Engenheiro de Dados especializado em Resolução de Entidades, Record Linkage e Matching Probabilístico/Determinístico | Spark, Python, Elasticsearch | Pipelines em escala de bilhões de registros em saúde pública",
- "sobre_en": "I specialize in Entity Resolution, Record Linkage, and Identity Resolution, building production pipelines that match, deduplicate, and resolve identities across massive, heterogeneous datasets with no shared unique key. My work integrates national-scale administrative registries (health, social protection, civil registration) using deterministic and probabilistic matching with Spark, Python, SQL, and Elasticsearch, processing billions of records in one of Brazil's largest public health data infrastructure projects.\n\nBeyond matching logic, I own the full pipeline: ingestion, normalization, blocking, scoring, classification, and quality assurance, handling noisy, incomplete, and inconsistent real-world data at scale. I work with tools like Splink, RapidFuzz, and scikit-learn to balance precision and recall in high-stakes matching scenarios where false links and missed links both carry real costs.\n\nI'm currently pursuing a Master's in Computer Science (UFBA) and hold an MBA in Big Data and a specialization in Databases. I'm expanding into cloud platforms (AWS/Databricks), knowledge graphs, and MDM to broaden the scope of identity resolution systems I can design and operate.\n\nOpen to remote roles, international or Brazil-based, focused on entity resolution, record linkage, identity resolution, or data integration at scale.",
+ "headline_pt": "Engenheiro de Dados especializado em Resolução de Entidades e Record Linkage em escala | Matching Probabilístico e Determinístico | Spark, Python, SQL, Elasticsearch",
+ "sobre_en": "I design and maintain production-grade entity resolution and record linkage pipelines that process billions of records across heterogeneous administrative datasets, including health, social protection, and civil registry data, without a shared unique key. My work spans the full pipeline: ingestion, normalization, blocking, scoring, classification, and data quality assurance, using Spark, Python, SQL, Elasticsearch, Splink, and RapidFuzz to handle noisy, incomplete, and inconsistent data at national scale. I combine deterministic and probabilistic matching techniques to resolve identities reliably in one of Brazil's largest public health data infrastructure projects. I'm currently pursuing a Master's in Computer Science (UFBA) alongside an MBA in Big Data, deepening my focus on scalable data matching and identity resolution. I'm looking to bring this specialized expertise to remote and international teams working on entity resolution, identity resolution, master data management, or large-scale data integration problems, and I'm actively expanding into cloud platforms (AWS, Databricks, Snowflake) and graph-based approaches to identity resolution.",
  "competencias_linkedin": [
   "Entity Resolution",
   "Record Linkage",
@@ -16,71 +16,77 @@
   "Probabilistic Matching",
   "Deterministic Matching",
   "Fuzzy Matching",
-  "Data Deduplication",
+  "Deduplication",
   "Apache Spark",
   "Python",
   "SQL",
   "Elasticsearch",
-  "Splink",
-  "Data Pipelines",
-  "ETL",
+  "ETL Pipelines",
+  "Data Quality",
+  "Master Data Management",
   "Machine Learning"
  ],
  "bullets_experiencia": [
   {
-   "antes": "Engenheiro de Dados, instituto de pesquisa em saúde pública (2024 até hoje): desenvolvimento, manutenção e automação de pipelines de resolução de entidades.",
-   "depois": "Projetei e mantive pipelines de resolução de entidades e record linkage processando mais de [X] bilhões de registros de bases administrativas nacionais de saúde, proteção social e registro civil, usando matching determinístico e probabilístico em Spark, Python e Elasticsearch."
+   "antes": "Desenvolvimento, manutenção e automação de pipelines de resolução de entidades.",
+   "depois": "Designed, built, and automated end-to-end entity resolution pipelines (ingestion, normalization, blocking, scoring, classification) processing over [X] billion records from national health, social protection, and civil registry datasets."
   },
   {
-   "antes": "(implícito no sobre) Integra registros administrativos nacionais com matching probabilístico e determinístico.",
-   "depois": "Desenvolvi o pipeline completo de entity resolution (ingestão, normalização, blocking, scoring, classificação e QA) reduzindo em [X]% o tempo de processamento e elevando a precisão de matching para [X]% em bases com mais de [X] milhões de registros sem chave única compartilhada."
+   "antes": "Integra registros administrativos nacionais com matching probabilístico e determinístico em Spark, Python, SQL e Elasticsearch.",
+   "depois": "Integrated multiple national administrative databases lacking a shared unique key using probabilistic and deterministic matching in Spark, Python, SQL and Elasticsearch, achieving a match precision/recall of [X]% and reducing manual review effort by [X]%."
   },
   {
-   "antes": "(implícito) Automação de pipelines.",
-   "depois": "Automatizei etapas críticas do pipeline de deduplicação e resolução de identidades, eliminando [X] horas/semana de trabalho manual e padronizando o processo para [X] fontes de dados heterogêneas distintas."
+   "antes": "Projeta e mantém pipelines escaláveis capazes de relacionar, deduplicar e resolver identidades em conjuntos massivos e heterogêneos de dados.",
+   "depois": "Built scalable deduplication and identity resolution pipelines handling [X] million+ noisy, incomplete records daily, cutting duplicate rates from [X]% to [X]% and improving downstream data quality for public health analytics."
   },
   {
-   "antes": "Suporte Técnico, DM Informática (2015 a 2018): manutenção de hardware/software e suporte Office.",
-   "depois": "Prestei suporte técnico a hardware, software e pacote Office para [X] usuários/clientes, construindo base sólida em troubleshooting e sistemas que hoje aplico na depuração de pipelines de dados complexos."
+   "antes": "Manutenção de hardware/software e suporte Office.",
+   "depois": "Provided technical support for hardware, software, and Microsoft Office environments, resolving an average of [X] tickets per month while maintaining a [X]% customer satisfaction rate."
   }
  ],
  "ajustes_curriculo": [
-  "Adicionar números reais (ou estimativas defensáveis) de volume de registros, precisão/recall, tempo de execução e ganhos de eficiência em cada bullet; evitar afirmações vagas como 'bilhões de registros' sem contexto de métrica de qualidade.",
-  "Incluir uma seção de Projetos ou GitHub com exemplos de uso de Splink/RapidFuzz/scikit-learn, mesmo que sejam projetos pessoais ou de estudo, para compensar a experiência profissional ainda curta na área.",
-  "Adicionar seção de Publicações/Artigos se houver algo do mestrado relacionado a entity resolution ou record linkage, pois isso é um diferencial forte visto nos perfis de PhDs do nicho (Olivier Binette, Anushka Vidanage, Tom Hepworth).",
-  "Explicitar nível de inglês com evidência (certificação, projeto internacional, ou nota em teste) já que é requisito crítico para vagas remotas internacionais.",
-  "Reorganizar o 'Sobre' do currículo para abrir com uma frase de posicionamento curta e direta (quem é, especialidade, escala) antes dos detalhes técnicos, espelhando o padrão dos headlines fortes do LinkedIn.",
-  "Adicionar uma linha sobre interesse/aprendizado em cloud (AWS, Databricks) e knowledge graphs para sinalizar direção de crescimento, mesmo sem experiência prática ainda.",
-  "Remover ou resumir a experiência de Suporte Técnico (2015-2018) para um bullet curto, priorizando espaço para a experiência em entity resolution."
+  "Adicionar uma linha de contato completa no topo (e-mail, LinkedIn, GitHub/portfolio, localização com disponibilidade para remoto).",
+  "Quantificar todos os bullets de experiência com números reais: volume de registros, taxa de match, tempo de processamento, redução de erros, tamanho de equipe.",
+  "Separar 'Conhecimentos' em categorias: Linguagens, Big Data/Processamento, Matching & ML, Bancos de Dados/Search, Ferramentas, para facilitar leitura de recrutador e ATS.",
+  "Incluir uma seção de Projetos ou Destaques Técnicos, mesmo que internos, descrevendo arquitetura do pipeline de record linkage em mais detalhe técnico.",
+  "Adicionar nível de inglês de forma mais específica (ex: 'Intermediate, working proficiency for technical reading/writing') e indicar planos de evolução, já que grande parte das vagas-alvo é internacional.",
+  "Mencionar explicitamente 'Master Data Management' e 'Data Governance' mesmo que de forma introdutória, pois aparecem em 14% e 2% das vagas respectivamente e são buscados por ATS.",
+  "Remover ou resumir a experiência de Suporte Técnico (2015-2018) ou reposicioná-la como 'experiência inicial' já que está distante do foco atual e pode diluir a narrativa de especialista."
  ],
  "lacunas_prioritarias": [
   {
-   "habilidade": "Cloud (AWS, Databricks)",
-   "por_que": "Aparece em 8-9% das vagas e é mencionada constantemente nos perfis de especialistas mais bem posicionados (Tomasz Pilawa, Sonu Patel, Arundhati Ray), sendo quase padrão em stacks modernos de identity resolution.",
-   "como_fechar": "Fazer um projeto prático migrando um pipeline Spark local para Databricks Community Edition ou AWS Glue/EMR com um dataset público, documentar no GitHub e mencionar no LinkedIn."
+   "habilidade": "Cloud (AWS/Azure/GCP)",
+   "por_que": "Aparece em 10% (AWS), 5% (Azure) e 4% (GCP) das vagas e é frequentemente citado pelos perfis de especialistas como parte do stack de produção (ex: Nikola Markovic menciona 'billion-row scale on AWS').",
+   "como_fechar": "Fazer um projeto pessoal ou curso prático migrando um pipeline existente de record linkage para AWS (S3 + Glue/EMR) ou GCP (BigQuery + Dataflow), documentando no GitHub e mencionando no currículo e LinkedIn."
   },
   {
-   "habilidade": "Master Data Management (MDM) e ferramentas como Reltio/Informatica",
-   "por_que": "14% das vagas pedem MDM e vários perfis fortes do nicho (Arundhati Ray, Vincent Tran, Posidex) constroem carreira em torno de MDM combinado com entity resolution, ampliando empregabilidade em setores como life sciences e saúde.",
-   "como_fechar": "Fazer um curso introdutório gratuito de MDM (Reltio ou Informatica oferecem trials/certificações básicas) e relacionar explicitamente seu trabalho de deduplicação com conceitos de MDM (survivorship, golden record) no currículo."
+   "habilidade": "Databricks e Snowflake",
+   "por_que": "Combinados aparecem em 16% das vagas e são citados por especialistas como Tomasz Pilawa e Arundhati Ray como parte do stack moderno de MDM e entity resolution.",
+   "como_fechar": "Fazer o curso gratuito Databricks Academy (Data Engineering with Databricks) e replicar um pipeline Spark existente em notebooks Databricks, além de testar Snowflake via trial gratuito para um pequeno projeto de deduplicação."
   },
   {
-   "habilidade": "Graph databases e Knowledge Graphs",
-   "por_que": "5% das vagas pedem explicitamente, e é um tema recorrente entre os especialistas mais avançados (Cam Fortin, Matthew Evans, Adrien Jamelot), que tratam entity resolution como construção de knowledge graphs.",
-   "como_fechar": "Estudar Neo4j ou NetworkX aplicado a um problema de entity resolution (ex: modelar clusters de matching como grafo) e publicar um projeto curto demonstrando a conexão entre matching e grafos."
+   "habilidade": "Graph Databases / Knowledge Graphs (Neo4j)",
+   "por_que": "5% das vagas pedem graph databases e 4% knowledge graphs; múltiplos especialistas (Adrien Jamelot, Matthew Evans, Cam Fortin) descrevem entity resolution combinada com knowledge graphs como diferencial competitivo.",
+   "como_fechar": "Fazer um projeto curto modelando entidades resolvidas (clusters de matching) como grafo no Neo4j, demonstrando como resultados de record linkage alimentam um knowledge graph de identidades."
   },
   {
-   "habilidade": "LLMs/Embeddings aplicados a matching",
-   "por_que": "Tendência crescente (5% LLMs, 3% embeddings) e vários perfis novos (Pankaj Shinde, Prerna Goel) já combinam entity resolution com embeddings e RAG, o que pode se tornar diferencial competitivo em 1-2 anos.",
-   "como_fechar": "Testar embeddings de texto (sentence-transformers) como feature adicional de similaridade em um pipeline de matching existente e comparar resultados com fuzzy matching tradicional, documentando o experimento."
+   "habilidade": "LLMs aplicados a matching/entity resolution",
+   "por_que": "6% das vagas mencionam LLMs; é uma tendência crescente em entity resolution (uso de embeddings e LLMs para blocking e matching semântico), citada por perfis como Hanan Ather e Pankaj Shinde.",
+   "como_fechar": "Estudar e aplicar embeddings (ex: sentence-transformers) combinados com Splink ou scikit-learn para um protótipo de matching semântico, documentando comparação com abordagens puramente determinísticas/probabilísticas."
+  },
+  {
+   "habilidade": "Master Data Management (MDM) formal",
+   "por_que": "14% das vagas pedem MDM; perfis como Arundhati Ray e Vincent Tran têm MDM como eixo central de carreira, incluindo plataformas como Reltio e Informatica.",
+   "como_fechar": "Fazer um curso introdutório de MDM (ex: Informatica MDM fundamentals ou Reltio basics, muitos com trial gratuito) e relacionar explicitamente seu trabalho de entity resolution como componente de MDM no currículo e LinkedIn."
   }
  ],
  "padroes_dos_especialistas": [
-  "Headlines curtos com 4-6 termos-chave separados por barra vertical, priorizando 'Entity Resolution' e 'Identity Resolution' nas primeiras posições.",
-  "Menção explícita a métricas de escala (billion-row, milhões de registros) e ao stack cloud (AWS, Databricks, Snowflake) junto com as ferramentas de matching.",
-  "Combinação de entity resolution com um domínio vertical de autoridade (saúde, financeiro, MarTech, fraude) para mostrar aplicação de negócio, não só técnica pura.",
-  "Presença de conteúdo público (posts, artigos, repositórios) discutindo entity resolution, o que reforça autoridade e é algo que Gabriel ainda não tem.",
-  "Muitos combinam entity resolution com graph analytics ou knowledge graphs como evolução natural de carreira."
+  "Quantificam escala com números concretos no headline ou resumo (ex: '250M companies from 50+ sources', 'billion-row scale'), enquanto Gabriel usa apenas 'bilhões de registros' sem contexto de precisão/recall ou impacto de negócio.",
+  "Mencionam explicitamente plataformas cloud e ferramentas de MDM/Enterprise (AWS, Databricks, Snowflake, Reltio, Informatica) junto com entity resolution, posicionando-se como full-stack no domínio.",
+  "Combinam entity resolution com um domínio de aplicação claro e de alto valor comercial (fraude, saúde, fintech, adtech), o que Gabriel já tem (saúde pública) mas pode explorar mais no headline e about.",
+  "Muitos citam certificações ou especializações específicas em ferramentas de matching (Informatica Identity Resolution, Quantexa, Reltio), algo que Gabriel pode buscar para ganhar credibilidade adicional.",
+  "Destacam resultados de negócio (redução de fraude, aumento de match rate, economia de custo) em vez de apenas descrever atividades técnicas.",
+  "Vários combinam entity resolution com graph analytics ou knowledge graphs como evolução natural da especialidade, um caminho ainda não explorado por Gabriel."
  ],
  "palavras_chave_ats": [
   "Entity Resolution",
@@ -90,33 +96,35 @@
   "Deterministic Matching",
   "Fuzzy Matching",
   "Deduplication",
-  "Data Matching",
   "Master Data Management",
   "Apache Spark",
   "Python",
   "SQL",
   "Elasticsearch",
   "Databricks",
+  "Snowflake",
   "AWS",
   "ETL",
-  "Knowledge Graphs",
-  "Graph Databases",
-  "Machine Learning",
+  "Data Quality",
   "Data Governance",
-  "Airflow",
-  "Splink"
+  "Knowledge Graphs",
+  "Machine Learning"
  ],
  "plano_30_dias": [
-  "Semana 1: Reescrever headline e seção Sobre do LinkedIn, atualizar competências na ordem sugerida e revisar bullets de experiência com métricas estimadas (marcar [X] onde não houver dado exato, depois buscar o número real internamente).",
-  "Semana 1: Mapear 10 vagas-alvo (as mais compatíveis da lista) e ajustar o currículo em PT e EN para cada cluster de vaga, garantindo que as palavras-chave ATS apareçam literalmente no texto.",
-  "Semana 2: Criar um projeto público no GitHub usando Splink ou RapidFuzz sobre um dataset aberto (ex: dados de saúde pública simulados) e publicar um post no LinkedIn explicando o pipeline, citando blocking, scoring e QA.",
-  "Semana 2: Começar um curso curto e gratuito de Databricks ou AWS (ex: Databricks Academy ou AWS Skill Builder) focado em Spark na nuvem, para poder reivindicar 'parcial' com evidência concreta.",
-  "Semana 3: Estudar fundamentos de Neo4j/NetworkX e montar um pequeno experimento ligando clusters de matching a um grafo, documentando no GitHub e mencionando como 'exploração de knowledge graphs para entity resolution'.",
-  "Semana 3: Entrar em contato (comentar, interagir) com 5 a 10 perfis especialistas do nicho mapeados (ex: Olivier Binette, Tom Hepworth, Tomasz Pilawa) para começar a construir rede e visibilidade.",
-  "Semana 4: Aplicar formalmente nas 3-5 vagas mais compatíveis (Upwork Senior Data Engineer Entity Resolution, Thomson Reuters Identity Resolution, etc.), customizando carta de apresentação com os termos da vaga.",
-  "Semana 4: Revisar inglês escrito do currículo e LinkedIn com um nativo ou ferramenta (Grammarly/DeepL Write) e praticar uma apresentação verbal de 2 minutos sobre seu trabalho em entity resolution para entrevistas em inglês."
+  "Semana 1: Reescrever headline, About e experiência no LinkedIn seguindo as sugestões deste diagnóstico, incluindo métricas estimadas onde aplicável (marcar como aproximação até ter números exatos confirmados).",
+  "Semana 1: Atualizar currículo com seção de contato completa, categorização de skills e bullets quantificados.",
+  "Semana 2: Completar um curso introdutório de AWS (ex: AWS Cloud Practitioner) ou Databricks Lakehouse Fundamentals, documentando aprendizado em um post no LinkedIn.",
+  "Semana 2: Criar repositório público no GitHub com um projeto pessoal de record linkage usando Splink ou RapidFuzz sobre um dataset público (ex: dados abertos de saúde ou censo), demonstrando blocking, scoring e avaliação de qualidade.",
+  "Semana 3: Prototipar uma extensão do projeto pessoal incluindo Neo4j para modelar entidades resolvidas como grafo, ou embeddings para matching semântico com LLM/sentence-transformers.",
+  "Semana 3: Aplicar para as vagas mais compatíveis identificadas (Upwork Senior Data Engineer Entity Resolution, FullStack Latin America, KPMG Data Engineer Entity Resolution), personalizando a carta de apresentação com os termos exatos da vaga.",
+  "Semana 4: Buscar 3 a 5 conversas informais (coffee chats) com profissionais de entity resolution/MDM no LinkedIn (ex: perfis citados como Tomasz Pilawa, Arundhati Ray) para entender gaps reais de mercado e pedir feedback no perfil.",
+  "Semana 4: Revisar e medir resultados do mês: número de visualizações de perfil, convites recebidos, respostas a candidaturas, e ajustar headline/About com base no que gerou mais engajamento."
  ],
  "historico": [
+  {
+   "data": "2026-11-15",
+   "diagnostico": "Gabriel já tem um nicho raro e bem definido (entity resolution, record linkage, matching determinístico/probabilístico em escala de bilhões de registros em saúde pública), o que o diferencia da maioria dos candidatos genéricos de dados. O stack técnico central (Spark, Python, SQL, Elasticsearch, Splink, RapidFuzz) está alinhado com o que o mercado pede e ele já usa a terminologia certa (entity resolution, record linkage, deduplication, fuzzy matching, probabilistic/deterministic matching). Falta, porém, prova de impacto quantificado (volumes, tempo, precisão, custo) nas bullets de experiência, e lacunas em nuvem (AWS/Azure/GCP), Databricks, graph databases/knowledge graphs e MDM, que aparecem com frequência relevante nas vagas e nos perfis de especialistas mais fortes. O currículo e o LinkedIn também carecem de uma narrativa de carreira mais ampla (ele só tem uma experiência formal na área, de 2024, e um gap de suporte técnico de 2015-2018), o que pode ser compensado com projetos pessoais, publicações, contribuições open source ou certificações. Comparado aos perfis públicos mais fortes (Olivier Binette, Tom Hepworth, Edwin Lotero), falta ainda evidência pública de thought leadership (posts, artigos, GitHub, Kaggle) e menção a cloud/MDM que reforçaria empregabilidade internacional."
+  },
   {
    "data": "2026-11-08",
    "diagnostico": "Gabriel tem um nicho raro e valioso: entity resolution/record linkage em escala de produção (bilhões de registros), com stack técnica sólida (Spark, Python, SQL, Elasticsearch, Splink, RapidFuzz). Isso o coloca à frente de 90% dos candidatos genéricos de dados, mas o currículo ainda fala em termos de responsabilidades e não de resultados mensuráveis (não há números de redução de duplicatas, ganho de precisão, volume exato, SLA). Falta presença em nuvem (AWS/Azure/GCP), ferramentas de MDM/Graph (Neo4j, knowledge graphs) e menção a LLMs/embeddings, que aparecem com frequência crescente nas vagas do nicho. O perfil de LinkedIn provavelmente está fraco em headline e resumo comparado aos especialistas que usam palavras-chave fortes logo na primeira linha. Ele precisa também mostrar inglês mais fluente no perfil, já que o mercado é global."

@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -108,6 +108,141 @@
       ],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "DATA SCIENTIST - SC CLEARED at Women Rock - LinkedIn",
+    "url": "https://uk.linkedin.com/jobs/view/data-scientist-%E2%80%93-sc-cleared-at-women-rock-4492586484",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 11,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Data Scientist com requisito explícito de entity resolution, record linkage e data matching.",
+    "resumo": "Vaga de Data Scientist com experiência prática em entity resolution, record linkage, data matching e integração complexa de dados, além de Kubernetes, Bash e SQL avançado.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "AWS",
+        "Python",
+        "Elasticsearch",
+        "Kubernetes",
+        "Bash",
+        "SQL",
+        "Entity Resolution",
+        "Record Linkage"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "pleno",
+    "modalidade": "presencial",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United Kingdom"
+      ],
+      "cidades": [
+        "London"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.53,
+    "compat_detalhe": {
+      "habilidades": 62,
+      "senioridade": 100,
+      "local": 85,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível pleno",
+      "local_txt": "freelance/contractor (United Kingdom)",
+      "faltam": [
+        "AWS",
+        "Kubernetes"
+      ],
+      "parciais": [
+        "Bash",
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true,
+    "enriquecida": true,
+    "publicada_em": "2026-11-21",
+    "local": "Londres e Região, Reino Unido",
+    "empresa": "Women Rock"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Data Engineer - Python ETL & Entity Resolution - Remote - Latin ...",
+    "url": "https://cr.linkedin.com/jobs/view/senior-data-engineer-python-etl-entity-resolution-remote-latin-america-at-fullstack-4492216889",
+    "data": "Nov 18, 2026",
+    "fonte": "LinkedIn Jobs",
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Vaga remota de Senior Data Engineer focada em entity resolution, record linkage, fuzzy matching e deduplicação.",
+    "resumo": "Vaga de Senior Data Engineer remoto com ênfase em implementação prática de entity resolution, record linkage, fuzzy matching, deduplicação de registros e modelagem PostgreSQL.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "PostgreSQL",
+        "Entity Resolution",
+        "Record Linkage",
+        "Fuzzy Matching"
+      ],
+      "desejaveis": [
+        "Databricks",
+        "Snowflake",
+        "Go",
+        "TypeScript",
+        "LLMs",
+        "RAG"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "regiao",
+      "paises": [
+        "LATAM"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": false,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": 5,
+    "ingles": "intermediario",
+    "foco_er": 0.5,
+    "encaixe": 0.4,
+    "compat_detalhe": {
+      "habilidades": 58,
+      "senioridade": 60,
+      "local": 100,
+      "ingles": 100,
+      "foco": 92,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "remoto e aceita Brasil/LATAM",
+      "faltam": [
+        "PostgreSQL"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true,
+    "enriquecida": true,
+    "publicada_em": "2026-11-19",
+    "local": "San José, San José, Costa Rica",
+    "empresa": "FullStack"
   },
   {
     "tipo": "vaga",
@@ -164,7 +299,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -215,7 +350,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -291,7 +426,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -351,7 +486,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -393,7 +528,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -435,7 +570,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -495,8 +630,8 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-21",
-    "nova": true,
+    "verificada_em": "2026-11-22",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-20",
     "local": "Índia",
@@ -562,8 +697,8 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-21",
-    "nova": true,
+    "verificada_em": "2026-11-22",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-19",
     "local": "Manta, Província Manabí, Equador",
@@ -625,7 +760,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -684,7 +819,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -754,7 +889,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -822,7 +957,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -898,7 +1033,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -971,7 +1106,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1035,7 +1170,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1093,7 +1228,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-29",
@@ -1167,7 +1302,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1250,7 +1385,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -1318,7 +1453,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1387,7 +1522,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-18",
@@ -1464,7 +1599,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-16",
@@ -1525,7 +1660,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1567,7 +1702,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1637,7 +1772,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1720,7 +1855,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-13",
@@ -1787,7 +1922,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -1845,12 +1980,69 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
     "local": "Estados Unidos",
     "empresa": "Vida Health"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Remote IAM Architect - Identity Resolution & Zero Trust Lead",
+    "url": "https://www.jobleads.com/us/job/remote-iam-architect-identity-resolution-zero-trust-lead--hartford--e3a0944aff8b7cf33c6d5e16cd9296417",
+    "empresa": "GovCIO",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-17",
+    "score": 4,
+    "juiz": "anthropic",
+    "motivo": "Arquiteto IAM com foco explícito em Identity Resolution, Person Matching, matching determinístico/probabilístico e MPI, alinhado ao perfil.",
+    "resumo": "Arquiteto IAM remoto na GovCIO para desenhar capacidades de resolução de identidade única e confiável em sistemas DoD, liderando matching determinístico/probabilístico e integração ICAM.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Entity Resolution",
+        "Master Data Management",
+        "Deterministic Matching",
+        "Probabilistic Matching",
+        "ICAM"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.9,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 60,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 98,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Master Data Management",
+        "ICAM"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1904,7 +2096,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -1958,7 +2150,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -2034,7 +2226,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -2099,7 +2291,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2136,7 +2328,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2197,7 +2389,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2289,8 +2481,8 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-21",
-    "nova": true,
+    "verificada_em": "2026-11-22",
+    "nova": false,
     "enriquecida": true
   },
   {
@@ -2369,7 +2561,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -2427,7 +2619,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-17",
@@ -2486,7 +2678,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -2538,7 +2730,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -2598,7 +2790,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -2659,7 +2851,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2724,7 +2916,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2779,7 +2971,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -2847,9 +3039,196 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-02"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer - Remote",
+    "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-remote-acxiom-richmond--lensa-19327_0ea616adddb10039e08580b84fc45eba4fccf7b133235dc66c021538b4f94f20",
+    "empresa": "Acxiom",
+    "local": "Richmond, VA",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-12",
+    "score": 6,
+    "juiz": "anthropic",
+    "motivo": "Engenheiro especializado em identity e entity resolution com tecnologias Spark, SQL, Python, remoto, alinhamento forte com stack e experiência do leitor.",
+    "resumo": "Engenheiro de Software Sênior remoto na Acxiom no time de Identity Resolution, desenvolvendo sistemas de resolução de identidade e entidades em larga escala com workflows real-time e batch em Spark, SQL e Python.",
+    "confianca": 0.94,
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Python",
+        "Scala",
+        "Spark",
+        "SQL",
+        "AWS",
+        "Databricks",
+        "REST APIs"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Richmond"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.7,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 31,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Java",
+        "Scala",
+        "AWS",
+        "Databricks",
+        "REST APIs"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer RealTime & Spark Remote",
+    "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-realtime-spark-remote-acxiom-madison--lensa-7428_8f3d3ad6e91775b0e392917da4a61f529b4ca247eb0533d003ea67c6979e620e",
+    "empresa": "Acxiom",
+    "local": "Madison, WI",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-13",
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Engenheiro especializado em Identity Resolution em larga escala com Spark, SQL, Python, AWS e Databricks, experiência muito similar ao perfil.",
+    "resumo": "Engenheiro de Software Sênior na Acxiom no time de Identity Resolution, desenvolvendo sistemas distribuídos de alta escala para matching, linkage e resolução de identidades com Spark, SQL, Python e AWS.",
+    "confianca": 0.94,
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Python",
+        "Scala",
+        "Spark",
+        "SQL",
+        "AWS"
+      ],
+      "desejaveis": [
+        "Databricks"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Madison"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 31,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "Java",
+        "Scala",
+        "AWS"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer Hybrid",
+    "url": "https://us.trabajo.org/job-28643-197712a2405b11a92eb4e697bcfe1951",
+    "empresa": "Caris Life Sciences",
+    "local": "Irving, TX",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-03",
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Engenheiro sênior em identity resolution e master data management para dados de saúde, hybrid em Irving TX, escopo técnico muito próximo ao perfil.",
+    "resumo": "Engenheiro de Software Sênior na Caris Life Sciences projetando e operando serviços de resolução de identidade e gestão de dados mestres para correspondência de registros de pacientes e provedores em fluxos complexos.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "Master Data Management",
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Irving, TX"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 0.7,
+    "encaixe": 0.04,
+    "compat_detalhe": {
+      "habilidades": 50,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 100,
+      "foco": 96,
+      "senioridade_txt": "nível senior",
+      "local_txt": "hibrido em United States, sem patrocínio de visto",
+      "faltam": [
+        "Master Data Management"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2906,7 +3285,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -2970,7 +3349,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -3029,7 +3408,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3097,7 +3476,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-20",
@@ -3161,7 +3540,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -3227,7 +3606,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -3285,7 +3664,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -3360,7 +3739,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -3438,7 +3817,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -3496,7 +3875,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3554,7 +3933,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -3610,7 +3989,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
@@ -3648,7 +4027,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -3685,6 +4064,71 @@
       ],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer - Real-Time, Large-Scale",
+    "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-real-time-large-scale-acxiom-lansing--lensa-7428_e83ffd0a43c3540d46ba0c8a88600c4316a6c9e6336360cc6b1cd822b2cf507c",
+    "empresa": "Acxiom",
+    "local": "Lansing, MI",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-13",
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Engenheiro sênior em Identity Resolution com foco em sistemas de larga escala, real-time e batch, tecnologias Spark e SQL alinhadas ao perfil.",
+    "resumo": "Engenheiro de Software Sênior na Acxiom projetando e construindo sistemas de resolução de identidade em larga escala com APIs real-time e processamento batch usando Spark, SQL, Python, Java e AWS.",
+    "confianca": 0.94,
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Python",
+        "Scala",
+        "Spark",
+        "SQL",
+        "AWS",
+        "Databricks"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Lansing"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.8,
+    "encaixe": 0.03,
+    "compat_detalhe": {
+      "habilidades": 36,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 85,
+      "foco": 97,
+      "senioridade_txt": "nível senior",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [
+        "Java",
+        "Scala",
+        "AWS",
+        "Databricks"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -3773,7 +4217,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -3830,7 +4274,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -3890,7 +4334,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -3963,7 +4407,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -4029,7 +4473,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -4095,7 +4539,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -4168,7 +4612,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -4241,7 +4685,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -4301,7 +4745,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -4361,7 +4805,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -4431,7 +4875,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -4507,7 +4951,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -4566,7 +5010,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-15",
@@ -4620,7 +5064,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -4729,7 +5173,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-20",
@@ -4816,7 +5260,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -4885,7 +5329,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -4960,7 +5404,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -5027,7 +5471,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -5105,9 +5549,63 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-09-06"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution & Master Data Engineer",
+    "url": "https://www.jobleads.com/us/job/senior-identity-resolution-master-data-engineer--irving--e3f80d75ac02f6cebd68d9a0e371574f3",
+    "empresa": "Caris Life Sciences",
+    "local": "Irving, TX",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-13",
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Engenheiro sênior especializado em identity resolution e master data management para matching de pacientes e provedores em saúde.",
+    "resumo": "Engenheiro de Software Sênior na Caris Life Sciences responsável por desenhar e operar sistemas de resolução de identidade para correspondência e linkage de pacientes e provedores com compliance regulatório.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "CI/CD"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Irving"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.7,
+    "encaixe": 0.02,
+    "compat_detalhe": {
+      "habilidades": 0,
+      "senioridade": 75,
+      "local": 8,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "nível senior",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [
+        "CI/CD"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-22",
+    "verificada_em": "2026-11-22",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -5169,8 +5667,8 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-21",
-    "nova": true,
+    "verificada_em": "2026-11-22",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-21",
     "local": "Londres e Região, Reino Unido",
@@ -5241,7 +5739,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -5304,7 +5802,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -5364,7 +5862,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -5450,7 +5948,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-13",
@@ -5525,7 +6023,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-14",
@@ -5594,7 +6092,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -5662,7 +6160,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -5727,7 +6225,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -5802,7 +6300,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -5865,7 +6363,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -5940,7 +6438,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-16",
@@ -6034,7 +6532,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -6114,7 +6612,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -6185,7 +6683,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -6255,7 +6753,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -6313,7 +6811,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -6379,7 +6877,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -6457,7 +6955,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -6524,7 +7022,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -6600,7 +7098,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -6672,7 +7170,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -6746,7 +7244,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -6824,7 +7322,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -6893,7 +7391,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -6964,7 +7462,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -7036,7 +7534,7 @@
       "estimado": false
     },
     "desde": "2026-10-14",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19"
@@ -7094,7 +7592,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -7158,7 +7656,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -7222,7 +7720,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -7275,7 +7773,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-14",
@@ -7349,7 +7847,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -7410,7 +7908,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -7485,7 +7983,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -7556,7 +8054,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false
   },
   {
@@ -7618,7 +8116,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -7693,7 +8191,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-22",
@@ -7804,7 +8302,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -7876,7 +8374,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true
   },
@@ -7937,7 +8435,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -7966,7 +8464,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-21",
+    "verificada_em": "2026-11-22",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
