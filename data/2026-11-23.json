@@ -1,0 +1,671 @@
+{
+  "data": "2026-11-23",
+  "gerado_em": "2026-11-23T00:43-03:00",
+  "llm": true,
+  "serpapi_orcamento": 9,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer – Legal Entity Platform (AWS / Snowflake) (102)",
+      "url": "https://himalayas.app/companies/opsbrasil-servicos-cloud-ltda/jobs/data-engineer-legal-entity-platform-aws-snowflake-102",
+      "empresa": "OpsBrasil Serviços Cloud LTDA",
+      "local": "Remoto · Brazil",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-22",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenheiro de dados focada em legal entity resolution com Entity ID único, fuzzy matching de nomes, ownership graph e matching determinístico, diretamente alinhada com record linkage e resolução de entidades.",
+      "resumo": "OpsBrasil busca Data Engineer para construir plataforma de entidades jurídicas com unified entity model, Entity ID único, fuzzy name resolution, ownership graph determinístico em 14+ níveis e controle de qualidade de dados em AWS e Snowflake.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "SQL",
+          "Python",
+          "AWS",
+          "Entity Resolution",
+          "Master Data Management",
+          "Terraform",
+          "CloudFormation",
+          "Git"
+        ],
+        "desejaveis": [
+          "Snowflake",
+          "Snowpipe",
+          "Neptune",
+          "Neo4j",
+          "Amazon Bedrock"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "contractor_global",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 0.5,
+      "encaixe": 0.21,
+      "compat_detalhe": {
+        "habilidades": 28,
+        "senioridade": 60,
+        "local": 85,
+        "ingles": 85,
+        "foco": 92,
+        "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+        "local_txt": "freelance/contractor (United States)",
+        "faltam": [
+          "AWS",
+          "Master Data Management",
+          "Terraform",
+          "CloudFormation"
+        ],
+        "parciais": [
+          "SQL",
+          "Git"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer — Remote, Low-Latency APIs",
+      "url": "https://www.jobleads.com/us/job/senior-identity-resolution-engineer-remote-low-latency-apis--austin--e560b3eafe8aeca193bc7177cf8c9c984",
+      "empresa": "Acxiom",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-11",
+      "score": 10,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Engineer em Acxiom explicitamente para identity resolution e entity resolution em larga escala, com tecnologias (Spark, SQL, Python, Scala, Databricks, AWS) e requisitos alinhados ao perfil do leitor.",
+      "resumo": "Acxiom contrata Senior Software Engineer remoto para identity resolution e entity resolution em larga escala com Spark, SQL, Python, Scala, Databricks e AWS, focando APIs low-latency e workflows batch/real-time.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "SQL",
+          "Spark",
+          "Databricks",
+          "AWS",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "global",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": 5,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 44,
+        "senioridade": 60,
+        "local": 100,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+        "local_txt": "aceita candidatos do mundo todo",
+        "faltam": [
+          "Java",
+          "Scala",
+          "Databricks",
+          "AWS"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Software Engineer, Entity Resolution",
+      "url": "https://www.ycombinator.com/companies/crustdata/jobs/mI4YUK9-software-engineer-entity-resolution",
+      "empresa": "Crustdata",
+      "local": "San Francisco, CA",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-18",
+      "score": 9,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenheiro de software em Crustdata focada em entity resolution para pessoas e empresas, com blocking, candidate generation, matching probabilístico, clustering e operacionalização em produção em escala de bilhões de registros.",
+      "resumo": "Crustdata contrata Software Engineer para entity resolution de pessoas e empresas com foco em candidate generation (blocking, LSH), matching com confiança calibrada e clustering de pairwise scores em produção para 1B+ registros.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "Entity Resolution",
+          "Record Linkage"
+        ],
+        "desejaveis": [
+          "LSH",
+          "MinHash",
+          "Spark",
+          "Ray"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "presencial",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "San Francisco"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 88,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "presencial em United States, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer",
+      "url": "https://us.trabajo.org/job-2283-eb43e667e460bf2c60436422a478579f",
+      "empresa": "Acxiom",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-09",
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Senior Engineer em Acxiom focada em identity resolution e entity resolution systems em larga escala com tecnologias (Java, Python, Scala, Spark, SQL, AWS, Databricks), workflows real-time e batch, perfeitamente alinhada.",
+      "resumo": "Acxiom busca Senior Software Engineer para identity resolution e entity resolution em larga escala com Java, Python, Scala, Spark, SQL, AWS e Databricks, desenvolvendo serviços cloud-native low-latency.",
+      "confianca": 0.93,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS",
+          "Databricks",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "global",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.4,
+      "compat_detalhe": {
+        "habilidades": 44,
+        "senioridade": 75,
+        "local": 100,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "aceita candidatos do mundo todo",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Identity Resolution Engineer Scalable",
+      "url": "https://www.learn4good.com/jobs/youngstown/ohio/software_development/5658927015/e/",
+      "empresa": "Acxiom",
+      "local": "Youngstown, OH",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-22",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de engenheiro sênior na Acxiom focada exclusivamente em identity resolution systems em larga escala, com tecnologias (Spark, Python, Scala, SQL, AWS, Databricks) e workflows batch/real-time compatíveis com o perfil.",
+      "resumo": "Acxiom contrata Senior Identity Resolution Engineer para desenhar e desenvolver sistemas de identity resolution em larga escala com workflows real-time e batch usando Java, Python, Scala, Spark, SQL, AWS e Databricks.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Java",
+          "Python",
+          "Scala",
+          "Spark",
+          "SQL",
+          "AWS",
+          "Databricks"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Columbus, OH"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 36,
+        "senioridade": 75,
+        "local": 8,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "Java",
+          "Scala",
+          "AWS",
+          "Databricks"
+        ],
+        "parciais": [
+          "SQL"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer – Customer 360 & Identity Resolution",
+      "url": "https://bebee.com/us/jobs/data-engineer-customer-360-identity-resolution-tuppl-dallas-tx--t7xk-952130288",
+      "empresa": "Tuppl",
+      "local": "Dallas, TX",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-18",
+      "score": 23,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Data Engineer/Scientist focada em entity resolution, identity matching e customer 360 com ênfase em algoritmos de matching, modelos ML/estatísticos, pipelines de dados e operacionalização em escala, muito próxima ao escopo do perfil.",
+      "resumo": "Tuppl busca Data Scientist/Engineer especializado em entity resolution, identity matching e customer 360 para construir matching de identidades unificadas entre múltiplas plataformas e enriquecer perfis com inteligência externa em escala.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "SQL",
+          "Spark",
+          "Pandas",
+          "NumPy",
+          "Scikit-learn",
+          "SciPy",
+          "Splink",
+          "Dedupe",
+          "Record Linkage Toolkit",
+          "GCP",
+          "BigQuery",
+          "Dataflow",
+          "Dataproc",
+          "Vertex AI",
+          "Master Data Management"
+        ],
+        "desejaveis": [
+          "CDP"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "United States"
+        ],
+        "cidades": [
+          "Dallas, TX"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 1,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 40,
+        "senioridade": 40,
+        "local": 8,
+        "ingles": 85,
+        "foco": 100,
+        "senioridade_txt": "pede 8+ anos (você tem 2.9)",
+        "local_txt": "em United States, sem patrocínio de visto",
+        "faltam": [
+          "GCP",
+          "BigQuery",
+          "Vertex AI",
+          "Master Data Management"
+        ],
+        "parciais": [
+          "SQL",
+          "Pandas",
+          "NumPy",
+          "SciPy",
+          "Record Linkage Toolkit",
+          "Dataflow",
+          "Dataproc"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Principal Software Engineer - Identity Graph",
+      "url": "https://us.jobrapido.com/jobpreview/3069590896774217728",
+      "empresa": "Twilio",
+      "local": "United States",
+      "fonte": "Google Jobs",
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Identity Graph, relationship tracking e resolution são centrais em record linkage e entity resolution; alinha com expertise em identity resolution.",
+      "resumo": "Vaga de Principal Software Engineer na Twilio/Stytch para liderar identity storage, relationship tracking e resolution de entidades.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "graph databases"
+        ],
+        "desejaveis": [
+          "Go",
+          "Kubernetes",
+          "DynamoDB"
+        ]
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 8,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 38,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "pede 8+ anos (você tem 2.9)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [
+          "graph databases"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Remote IAM Architect, Identity Resolution",
+      "url": "https://us.trabajo.org/job-2283-9bff252b90192be795b5e7d2443b5406",
+      "empresa": "GovCIO",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-14",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Vaga de IAM Architect com foco em identity resolution e person matching, MPI e matching determinístico/probabilístico em contexto de governo; embora seja IAM/governo (não dados de saúde/proteção social), a essência técnica é record linkage e resolução de identidades.",
+      "resumo": "GovCIO busca IAM Architect com especialidade em identity resolution e person matching para desenhar capacidades de MPI com matching determinístico e probabilístico entre sistemas em contexto governamental.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "MPI",
+          "IAM",
+          "federated identity protocols",
+          "Zero Trust",
+          "deterministic matching",
+          "probabilistic matching"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 42,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "IAM",
+          "federated identity protocols",
+          "Zero Trust"
+        ],
+        "parciais": [
+          "MPI"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Remote IAM Architect: Identity Resolution & Zero Trust",
+      "url": "https://www.jobleads.com/us/job/remote-iam-architect-identity-resolution-zero-trust--pierre--ef9b38d49b705b4e661e36da50c852b7b",
+      "empresa": "GovCIO",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-11",
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga de IAM Architect com foco em identity resolution, person matching, MPI e matching determinístico/probabilístico em contexto governamental; similar à id 4, essência é record linkage embora em contexto de identidade de pessoas entre sistemas.",
+      "resumo": "GovCIO recruta IAM Architect remoto com especialidade em identity resolution e person matching para desenhar MPI combinando matching determinístico e probabilístico em sistemas governamentais.",
+      "confianca": 0.84,
+      "requisitos": {
+        "obrigatorios": [
+          "ICAM",
+          "Deterministic Matching",
+          "Probabilistic Matching",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.7,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 96,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "ICAM"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "P03 at TransUnion — Bengaluru, Karnataka, India | LinkedIn Jobs",
+      "url": "https://in.linkedin.com/jobs/view/p03-at-transunion-4492186403",
+      "texto": "The team works on identity resolution and data-driven solutions, where linking identities and analyzing relationships across devices, digital identifiers, and other data signals are important.",
+      "data": "Nov 19, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga em identity resolution e linking de identidades entre múltiplos sinais de dados, foco direto no tema de record linkage.",
+      "resumo": "Vaga P03 na TransUnion para trabalhar com identity resolution, linking de identidades e análise de relacionamentos entre dispositivos e identificadores digitais.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "India"
+        ],
+        "cidades": [
+          "Bengaluru"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 8,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "em India, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 133,
+  "vagas_arquivadas_total": 233,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 3
+  },
+  "pilula_mercado": "REST",
+  "brasil": {
+    "novas": 4,
+    "abertas": 44,
+    "arquivadas": 83,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 0
+    }
+  },
+  "aula": {
+    "dia": 53,
+    "semana": 8,
+    "tema": "Por que indexar e como definir blocking keys",
+    "tipo": "conceito",
+    "titulo": "Phonex e Phonix",
+    "modulo": "Semana 8: Por que indexar e como definir blocking keys",
+    "versao": 2,
+    "objetivo": "Entender como Phonex e Phonix corrigem as fraquezas do Soundex através de pré-processamento fonético e regras de transformação mais ricas, e saber quando preferi-los a Soundex num pipeline de indexação.",
+    "conceito": "Phonex e Phonix são variações do Soundex apresentadas por Christen (2012, seç. 4.3.2 e 4.3.3, p. 72-73) que tentam resolver dois problemas clássicos do Soundex: a sensibilidade à primeira letra (ex.: 'christina' vira c623 e 'kristina' vira k623, mesmo soando igual) e a perda de informação no fim da string. O Phonex ataca isso aplicando uma etapa de pré-processamento antes da codificação: normaliza prefixos e a primeira letra segundo regras fonéticas do inglês (por exemplo 'kn-' vira 'n-', 'ph-' vira 'f-', primeira letra 'k' ou 'q' vira 'c', 'v' vira 'f' etc.), e só depois gera um código no formato letra+3 dígitos, com uma tabela de transformação um pouco diferente da do Soundex, levando em conta sequências de caracteres.\n\nO Phonix vai além: aplica mais de cem regras de transformação, não apenas em caracteres isolados mas em sequências, distribuídas entre início (19 regras), meio (12 regras) e fim (28 regras) da string. O formato de saída continua letra+3 dígitos, mas a tabela de conversão letra-para-dígito é diferente da do Soundex (Fig. 4.3). Essa riqueza de regras torna o Phonix mais preciso, porém sensivelmente mais lento: experimentos citados por Christen mostram o Phonix cerca de dez vezes mais lento que o Soundex em bases com milhares de nomes.",
+    "como_funciona": "Phonex, passos: 1. Remover 's' final da string. 2. Substituir 'kn-' inicial por 'n', 'ph-' por 'f', 'wr-' por 'r'. 3. Remover 'h' inicial. 4. Se a primeira letra for vogal (ou 'y'), trocar por 'a'. 5. Se for 'p' trocar por 'b', 'v' por 'f', 'k'/'q' por 'c', 'j' por 'g', 'z' por 's'. 6. Codificar a string resultante como no Soundex (letra inicial + 3 dígitos), usando uma tabela de conversão própria que considera sequências de letras.\nPhonix, passos: 1. Aplicar mais de 100 regras de substituição (início, meio, fim da string) sobre sequências de caracteres. 2. Codificar o resultado no formato letra+3 dígitos com tabela de conversão específica (Fig. 4.3), removendo zeros e dígitos repetidos como no Soundex.",
+    "exemplo": "Usando a Tabela 4.1 de Christen (2012, p. 72): 'christina' e 'kristina' têm Soundex diferentes: c623 e k623 (primeira letra diferente). Com Phonex, a regra 'se a primeira letra for k ou q, trocar por c' normaliza ambas as strings antes da codificação, e o resultado é idêntico para as duas: c623. Já para 'peter', 'pete' e 'pedro', o Phonex aplica a regra 'p inicial vira b' no pré-processamento, gerando os códigos b360, b300 e b360, enquanto o Soundex original mantinha p360, p300, p360 (mesma agrupação final, mas por caminhos diferentes). No caso de 'christine'/'christina'/'kristina' com Phonix, a tabela de conversão diferente gera k683 para as três, mostrando maior uniformidade que o Soundex puro (c623 e k623).",
+    "na_pratica": "Em bibliotecas Python como 'phonetics' ou 'jellyfish' você normalmente só encontra Soundex, Metaphone e NYSIIS prontos; Phonex e Phonix raramente têm implementação mantida, então o engenheiro costuma implementar a etapa de pré-processamento manualmente antes de aplicar uma codificação tipo Soundex. Num pipeline Spark, isso vira uma UDF de normalização (regex para prefixos 'kn-', 'ph-', 'wr-', mapeamento da primeira letra) seguida de uma função de encoding, usada para gerar a blocking key: df.withColumn('bkv', phonex_udf(col('surname'))). O ganho prático é reduzir blocos perdidos por causa de nomes como 'kristen' vs 'christen' que o Soundex separaria.",
+    "armadilha": "Achar que Phonix, por ter mais de cem regras, sempre produz blocos melhores: na prática ele é bem mais lento (cerca de 10x o Soundex, conforme Christen) e, como qualquer encoding fonético mais agressivo, pode juntar nomes diferentes demais no mesmo bloco, aumentando falsos candidatos; sempre valide o trade-off em uma amostra real antes de trocar o Soundex em produção.",
+    "desafio": "Usando as regras de pré-processamento do Phonex, aplique-as mentalmente aos nomes 'Wright' e 'Knight' e explique por que, apesar de soarem parecido em português mas serem fonologicamente distintos em inglês, o Phonex pode ou não colocá-los no mesmo bloco. Justifique com as regras específicas de prefixo.",
+    "gabarito": "'Wright' começa com 'wr-', que pela regra do Phonex é substituído por 'r', resultando em 'right'. 'Knight' começa com 'kn-', substituído por 'n', resultando em 'night'. Depois desse pré-processamento as strings são 'right' e 'night', que começam com letras diferentes (r e n) e não sofrem mais nenhuma normalização de primeira letra (essas regras só valem para vogais, p, v, k/q, j, z). Logo, apesar do pré-processamento remover os dígrafos silenciosos, os códigos finais ainda terão letras iniciais distintas (r... e n...) e os dois nomes cairão em blocos diferentes, mostrando que o Phonex resolve apenas casos específicos de prefixo, não toda sobreposição fonética do inglês.",
+    "fontes": [
+      "Christen (2012), Data Matching, seç. 4.3.2 (Phonex), p. 72-73",
+      "Christen (2012), Data Matching, seç. 4.3.3 (Phonix), p. 73",
+      "Christen (2012), Data Matching, Tabela 4.1, p. 72"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        69,
+        77
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3155,
+      "pos_palavras_chave": 14,
+      "aprovados": 9
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 175,
+      "pos_palavras_chave": 1,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    }
+  },
+  "saude": "atencao"
+}

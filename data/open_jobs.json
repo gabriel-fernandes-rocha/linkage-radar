@@ -23,7 +23,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -77,7 +77,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -169,12 +169,74 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true,
+    "verificada_em": "2026-11-23",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-21",
     "local": "Londres e Região, Reino Unido",
     "empresa": "Women Rock"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer",
+    "url": "https://us.trabajo.org/job-2283-eb43e667e460bf2c60436422a478579f",
+    "empresa": "Acxiom",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-09",
+    "score": 6,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Senior Engineer em Acxiom focada em identity resolution e entity resolution systems em larga escala com tecnologias (Java, Python, Scala, Spark, SQL, AWS, Databricks), workflows real-time e batch, perfeitamente alinhada.",
+    "resumo": "Acxiom busca Senior Software Engineer para identity resolution e entity resolution em larga escala com Java, Python, Scala, Spark, SQL, AWS e Databricks, desenvolvendo serviços cloud-native low-latency.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Python",
+        "Scala",
+        "Spark",
+        "SQL",
+        "AWS",
+        "Databricks",
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.4,
+    "compat_detalhe": {
+      "habilidades": 44,
+      "senioridade": 75,
+      "local": 100,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "Java",
+        "Scala",
+        "AWS",
+        "Databricks"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -237,12 +299,74 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true,
+    "verificada_em": "2026-11-23",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-19",
     "local": "San José, San José, Costa Rica",
     "empresa": "FullStack"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Senior Identity Resolution Engineer — Remote, Low-Latency APIs",
+    "url": "https://www.jobleads.com/us/job/senior-identity-resolution-engineer-remote-low-latency-apis--austin--e560b3eafe8aeca193bc7177cf8c9c984",
+    "empresa": "Acxiom",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-11",
+    "score": 10,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Senior Engineer em Acxiom explicitamente para identity resolution e entity resolution em larga escala, com tecnologias (Spark, SQL, Python, Scala, Databricks, AWS) e requisitos alinhados ao perfil do leitor.",
+    "resumo": "Acxiom contrata Senior Software Engineer remoto para identity resolution e entity resolution em larga escala com Spark, SQL, Python, Scala, Databricks e AWS, focando APIs low-latency e workflows batch/real-time.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "Java",
+        "Python",
+        "Scala",
+        "SQL",
+        "Spark",
+        "Databricks",
+        "AWS",
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "global",
+      "paises": [],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.32,
+    "compat_detalhe": {
+      "habilidades": 44,
+      "senioridade": 60,
+      "local": 100,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "aceita candidatos do mundo todo",
+      "faltam": [
+        "Java",
+        "Scala",
+        "Databricks",
+        "AWS"
+      ],
+      "parciais": [
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -299,7 +423,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -350,7 +474,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -426,7 +550,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -486,7 +610,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -496,7 +620,7 @@
     "empresa": "NimbleFig",
     "local": "California",
     "fonte": "Google Jobs",
-    "publicada_em": null,
+    "publicada_em": "2026-11-15",
     "score": 3,
     "juiz": "groq",
     "motivo": "Cargo centraliza design e implementação de sistemas de entity resolution e ranking.",
@@ -528,7 +652,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -570,7 +694,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -630,7 +754,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-20",
@@ -697,7 +821,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-19",
@@ -760,7 +884,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -819,8 +943,79 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer – Legal Entity Platform (AWS / Snowflake) (102)",
+    "url": "https://himalayas.app/companies/opsbrasil-servicos-cloud-ltda/jobs/data-engineer-legal-entity-platform-aws-snowflake-102",
+    "empresa": "OpsBrasil Serviços Cloud LTDA",
+    "local": "Remoto · Brazil",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-11-22",
+    "score": 8,
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro de dados focada em legal entity resolution com Entity ID único, fuzzy matching de nomes, ownership graph e matching determinístico, diretamente alinhada com record linkage e resolução de entidades.",
+    "resumo": "OpsBrasil busca Data Engineer para construir plataforma de entidades jurídicas com unified entity model, Entity ID único, fuzzy name resolution, ownership graph determinístico em 14+ níveis e controle de qualidade de dados em AWS e Snowflake.",
+    "confianca": 0.95,
+    "requisitos": {
+      "obrigatorios": [
+        "SQL",
+        "Python",
+        "AWS",
+        "Entity Resolution",
+        "Master Data Management",
+        "Terraform",
+        "CloudFormation",
+        "Git"
+      ],
+      "desejaveis": [
+        "Snowflake",
+        "Snowpipe",
+        "Neptune",
+        "Neo4j",
+        "Amazon Bedrock"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.5,
+    "encaixe": 0.21,
+    "compat_detalhe": {
+      "habilidades": 28,
+      "senioridade": 60,
+      "local": 85,
+      "ingles": 85,
+      "foco": 92,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "freelance/contractor (United States)",
+      "faltam": [
+        "AWS",
+        "Master Data Management",
+        "Terraform",
+        "CloudFormation"
+      ],
+      "parciais": [
+        "SQL",
+        "Git"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -889,7 +1084,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -957,7 +1152,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1033,7 +1228,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -1106,7 +1301,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1170,7 +1365,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1228,7 +1423,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-29",
@@ -1302,7 +1497,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1385,7 +1580,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -1453,7 +1648,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1522,7 +1717,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-18",
@@ -1599,7 +1794,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-16",
@@ -1660,7 +1855,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1702,7 +1897,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1772,7 +1967,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -1855,7 +2050,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-13",
@@ -1922,7 +2117,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -1980,12 +2175,128 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
     "local": "Estados Unidos",
     "empresa": "Vida Health"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Remote IAM Architect, Identity Resolution",
+    "url": "https://us.trabajo.org/job-2283-9bff252b90192be795b5e7d2443b5406",
+    "empresa": "GovCIO",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-14",
+    "score": 4,
+    "juiz": "anthropic",
+    "motivo": "Vaga de IAM Architect com foco em identity resolution e person matching, MPI e matching determinístico/probabilístico em contexto de governo; embora seja IAM/governo (não dados de saúde/proteção social), a essência técnica é record linkage e resolução de identidades.",
+    "resumo": "GovCIO busca IAM Architect com especialidade em identity resolution e person matching para desenhar capacidades de MPI com matching determinístico e probabilístico entre sistemas em contexto governamental.",
+    "confianca": 0.85,
+    "requisitos": {
+      "obrigatorios": [
+        "MPI",
+        "IAM",
+        "federated identity protocols",
+        "Zero Trust",
+        "deterministic matching",
+        "probabilistic matching"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "nao_informado",
+    "foco_er": 1,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 42,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 100,
+      "foco": 100,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "IAM",
+        "federated identity protocols",
+        "Zero Trust"
+      ],
+      "parciais": [
+        "MPI"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Remote IAM Architect: Identity Resolution & Zero Trust",
+    "url": "https://www.jobleads.com/us/job/remote-iam-architect-identity-resolution-zero-trust--pierre--ef9b38d49b705b4e661e36da50c852b7b",
+    "empresa": "GovCIO",
+    "local": "Anywhere",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-11",
+    "score": 6,
+    "juiz": "anthropic",
+    "motivo": "Vaga de IAM Architect com foco em identity resolution, person matching, MPI e matching determinístico/probabilístico em contexto governamental; similar à id 4, essência é record linkage embora em contexto de identidade de pessoas entre sistemas.",
+    "resumo": "GovCIO recruta IAM Architect remoto com especialidade em identity resolution e person matching para desenhar MPI combinando matching determinístico e probabilístico em sistemas governamentais.",
+    "confianca": 0.84,
+    "requisitos": {
+      "obrigatorios": [
+        "ICAM",
+        "Deterministic Matching",
+        "Probabilistic Matching",
+        "Entity Resolution"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "senior",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 0.7,
+    "encaixe": 0.06,
+    "compat_detalhe": {
+      "habilidades": 75,
+      "senioridade": 75,
+      "local": 12,
+      "ingles": 85,
+      "foco": 96,
+      "senioridade_txt": "nível senior",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [
+        "ICAM"
+      ],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2041,8 +2352,8 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true
+    "verificada_em": "2026-11-23",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -2096,7 +2407,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -2150,7 +2461,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -2226,7 +2537,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -2291,7 +2602,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -2328,7 +2639,7 @@
     "senioridade": "nao_informado",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2389,7 +2700,7 @@
     "senioridade": "senior",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -2420,6 +2731,65 @@
       "parciais": [],
       "estimado": false
     }
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Software Engineer, Entity Resolution",
+    "url": "https://www.ycombinator.com/companies/crustdata/jobs/mI4YUK9-software-engineer-entity-resolution",
+    "empresa": "Crustdata",
+    "local": "San Francisco, CA",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-18",
+    "score": 9,
+    "juiz": "anthropic",
+    "motivo": "Vaga de engenheiro de software em Crustdata focada em entity resolution para pessoas e empresas, com blocking, candidate generation, matching probabilístico, clustering e operacionalização em produção em escala de bilhões de registros.",
+    "resumo": "Crustdata contrata Software Engineer para entity resolution de pessoas e empresas com foco em candidate generation (blocking, LSH), matching com confiança calibrada e clustering de pairwise scores em produção para 1B+ registros.",
+    "confianca": 0.93,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "Entity Resolution",
+        "Record Linkage"
+      ],
+      "desejaveis": [
+        "LSH",
+        "MinHash",
+        "Spark",
+        "Ray"
+      ]
+    },
+    "senioridade": "nao_informado",
+    "modalidade": "presencial",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "San Francisco"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": null,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.05,
+    "compat_detalhe": {
+      "habilidades": 88,
+      "senioridade": 85,
+      "local": 8,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "presencial em United States, sem patrocínio de visto",
+      "faltam": [],
+      "parciais": [],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2481,7 +2851,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -2561,7 +2931,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -2619,7 +2989,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-17",
@@ -2678,7 +3048,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -2730,7 +3100,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -2790,7 +3160,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -2851,7 +3221,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -2916,7 +3286,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -2971,7 +3341,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -3039,141 +3409,76 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
   {
     "tipo": "vaga",
-    "titulo": "Senior Identity Resolution Engineer - Remote",
-    "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-remote-acxiom-richmond--lensa-19327_0ea616adddb10039e08580b84fc45eba4fccf7b133235dc66c021538b4f94f20",
-    "empresa": "Acxiom",
-    "local": "Richmond, VA",
-    "fonte": "Google Jobs",
-    "publicada_em": "2026-11-12",
-    "score": 6,
-    "juiz": "anthropic",
-    "motivo": "Engenheiro especializado em identity e entity resolution com tecnologias Spark, SQL, Python, remoto, alinhamento forte com stack e experiência do leitor.",
-    "resumo": "Engenheiro de Software Sênior remoto na Acxiom no time de Identity Resolution, desenvolvendo sistemas de resolução de identidade e entidades em larga escala com workflows real-time e batch em Spark, SQL e Python.",
-    "confianca": 0.94,
-    "requisitos": {
-      "obrigatorios": [
-        "Java",
-        "Python",
-        "Scala",
-        "Spark",
-        "SQL",
-        "AWS",
-        "Databricks",
-        "REST APIs"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "Richmond"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.7,
-    "encaixe": 0.04,
-    "compat_detalhe": {
-      "habilidades": 31,
-      "senioridade": 75,
-      "local": 12,
-      "ingles": 85,
-      "foco": 96,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [
-        "Java",
-        "Scala",
-        "AWS",
-        "Databricks",
-        "REST APIs"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Identity Resolution Engineer RealTime & Spark Remote",
-    "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-realtime-spark-remote-acxiom-madison--lensa-7428_8f3d3ad6e91775b0e392917da4a61f529b4ca247eb0533d003ea67c6979e620e",
-    "empresa": "Acxiom",
-    "local": "Madison, WI",
-    "fonte": "Google Jobs",
-    "publicada_em": "2026-11-13",
+    "titulo": "P03 at TransUnion — Bengaluru, Karnataka, India | LinkedIn Jobs",
+    "url": "https://in.linkedin.com/jobs/view/p03-at-transunion-4492186403",
+    "data": "Nov 19, 2026",
+    "fonte": "LinkedIn Jobs",
     "score": 3,
     "juiz": "anthropic",
-    "motivo": "Engenheiro especializado em Identity Resolution em larga escala com Spark, SQL, Python, AWS e Databricks, experiência muito similar ao perfil.",
-    "resumo": "Engenheiro de Software Sênior na Acxiom no time de Identity Resolution, desenvolvendo sistemas distribuídos de alta escala para matching, linkage e resolução de identidades com Spark, SQL, Python e AWS.",
-    "confianca": 0.94,
+    "motivo": "Vaga em identity resolution e linking de identidades entre múltiplos sinais de dados, foco direto no tema de record linkage.",
+    "resumo": "Vaga P03 na TransUnion para trabalhar com identity resolution, linking de identidades e análise de relacionamentos entre dispositivos e identificadores digitais.",
+    "confianca": 0.85,
     "requisitos": {
       "obrigatorios": [
-        "Java",
-        "Python",
-        "Scala",
         "Spark",
-        "SQL",
-        "AWS"
+        "Scala",
+        "Python",
+        "GCP"
       ],
       "desejaveis": [
-        "Databricks"
+        "AWS",
+        "BigQuery",
+        "Parquet",
+        "LLMs",
+        "Entity Resolution",
+        "Graph databases"
       ]
     },
     "senioridade": "senior",
-    "modalidade": "remoto",
+    "modalidade": "hibrido",
     "local_contratacao": {
-      "escopo": "pais",
+      "escopo": "cidade",
       "paises": [
-        "United States"
+        "India"
       ],
       "cidades": [
-        "Madison"
+        "Bangalore"
       ]
     },
     "patrocina_visto": null,
     "contratacao": "clt_ou_fulltime",
     "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
+    "ingles": "nao_informado",
+    "foco_er": 0.3,
     "encaixe": 0.04,
     "compat_detalhe": {
-      "habilidades": 31,
+      "habilidades": 48,
       "senioridade": 75,
-      "local": 12,
-      "ingles": 85,
-      "foco": 97,
+      "local": 8,
+      "ingles": 100,
+      "foco": 90,
       "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "local_txt": "hibrido em India, sem patrocínio de visto",
       "faltam": [
-        "Java",
         "Scala",
-        "AWS"
+        "GCP"
       ],
-      "parciais": [
-        "SQL"
-      ],
+      "parciais": [],
       "estimado": false
     },
-    "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true,
+    "enriquecida": true,
+    "publicada_em": "2026-11-20",
+    "local": "Bangalore, Carnataca, Índia",
+    "empresa": "TransUnion"
   },
   {
     "tipo": "vaga",
@@ -3227,8 +3532,8 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true
+    "verificada_em": "2026-11-23",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -3285,7 +3590,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3349,7 +3654,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -3408,7 +3713,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3476,7 +3781,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-20",
@@ -3540,7 +3845,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -3606,7 +3911,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -3664,7 +3969,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -3739,7 +4044,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -3817,7 +4122,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -3875,7 +4180,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3933,7 +4238,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -3989,7 +4294,7 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
@@ -4027,7 +4332,7 @@
     "senioridade": "senior",
     "modalidade": "nao_informado",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",
@@ -4067,17 +4372,17 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Senior Identity Resolution Engineer - Real-Time, Large-Scale",
-    "url": "https://bebee.com/us/jobs/senior-identity-resolution-engineer-real-time-large-scale-acxiom-lansing--lensa-7428_e83ffd0a43c3540d46ba0c8a88600c4316a6c9e6336360cc6b1cd822b2cf507c",
+    "titulo": "Senior Identity Resolution Engineer Scalable",
+    "url": "https://www.learn4good.com/jobs/youngstown/ohio/software_development/5658927015/e/",
     "empresa": "Acxiom",
-    "local": "Lansing, MI",
+    "local": "Youngstown, OH",
     "fonte": "Google Jobs",
-    "publicada_em": "2026-11-13",
+    "publicada_em": "2026-11-22",
     "score": 3,
     "juiz": "anthropic",
-    "motivo": "Engenheiro sênior em Identity Resolution com foco em sistemas de larga escala, real-time e batch, tecnologias Spark e SQL alinhadas ao perfil.",
-    "resumo": "Engenheiro de Software Sênior na Acxiom projetando e construindo sistemas de resolução de identidade em larga escala com APIs real-time e processamento batch usando Spark, SQL, Python, Java e AWS.",
-    "confianca": 0.94,
+    "motivo": "Vaga de engenheiro sênior na Acxiom focada exclusivamente em identity resolution systems em larga escala, com tecnologias (Spark, Python, Scala, SQL, AWS, Databricks) e workflows batch/real-time compatíveis com o perfil.",
+    "resumo": "Acxiom contrata Senior Identity Resolution Engineer para desenhar e desenvolver sistemas de identity resolution em larga escala com workflows real-time e batch usando Java, Python, Scala, Spark, SQL, AWS e Databricks.",
+    "confianca": 0.92,
     "requisitos": {
       "obrigatorios": [
         "Java",
@@ -4098,21 +4403,21 @@
         "United States"
       ],
       "cidades": [
-        "Lansing"
+        "Columbus, OH"
       ]
     },
     "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
+    "contratacao": "nao_informado",
     "anos_experiencia_min": null,
     "ingles": "fluente",
-    "foco_er": 0.8,
+    "foco_er": 1,
     "encaixe": 0.03,
     "compat_detalhe": {
       "habilidades": 36,
       "senioridade": 75,
       "local": 8,
       "ingles": 85,
-      "foco": 97,
+      "foco": 100,
       "senioridade_txt": "nível senior",
       "local_txt": "em United States, sem patrocínio de visto",
       "faltam": [
@@ -4126,8 +4431,8 @@
       ],
       "estimado": false
     },
-    "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
     "nova": true
   },
   {
@@ -4217,7 +4522,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -4274,7 +4579,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -4334,7 +4639,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -4407,7 +4712,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -4473,7 +4778,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -4539,7 +4844,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -4612,7 +4917,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -4685,7 +4990,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -4745,7 +5050,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -4805,7 +5110,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -4875,7 +5180,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -4951,7 +5256,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -5010,7 +5315,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-15",
@@ -5064,7 +5369,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -5173,7 +5478,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-20",
@@ -5260,7 +5565,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -5329,7 +5634,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -5404,7 +5709,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -5471,7 +5776,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -5549,9 +5854,147 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-09-06"
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer – Customer 360 & Identity Resolution",
+    "url": "https://bebee.com/us/jobs/data-engineer-customer-360-identity-resolution-tuppl-dallas-tx--t7xk-952130288",
+    "empresa": "Tuppl",
+    "local": "Dallas, TX",
+    "fonte": "Google Jobs",
+    "publicada_em": "2026-11-18",
+    "score": 23,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Data Engineer/Scientist focada em entity resolution, identity matching e customer 360 com ênfase em algoritmos de matching, modelos ML/estatísticos, pipelines de dados e operacionalização em escala, muito próxima ao escopo do perfil.",
+    "resumo": "Tuppl busca Data Scientist/Engineer especializado em entity resolution, identity matching e customer 360 para construir matching de identidades unificadas entre múltiplas plataformas e enriquecer perfis com inteligência externa em escala.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "Python",
+        "SQL",
+        "Spark",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "SciPy",
+        "Splink",
+        "Dedupe",
+        "Record Linkage Toolkit",
+        "GCP",
+        "BigQuery",
+        "Dataflow",
+        "Dataproc",
+        "Vertex AI",
+        "Master Data Management"
+      ],
+      "desejaveis": [
+        "CDP"
+      ]
+    },
+    "senioridade": "senior",
+    "modalidade": "nao_informado",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Dallas, TX"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 8,
+    "ingles": "fluente",
+    "foco_er": 1,
+    "encaixe": 0.02,
+    "compat_detalhe": {
+      "habilidades": 40,
+      "senioridade": 40,
+      "local": 8,
+      "ingles": 85,
+      "foco": 100,
+      "senioridade_txt": "pede 8+ anos (você tem 2.9)",
+      "local_txt": "em United States, sem patrocínio de visto",
+      "faltam": [
+        "GCP",
+        "BigQuery",
+        "Vertex AI",
+        "Master Data Management"
+      ],
+      "parciais": [
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Record Linkage Toolkit",
+        "Dataflow",
+        "Dataproc"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Principal Software Engineer - Identity Graph",
+    "url": "https://us.jobrapido.com/jobpreview/3069590896774217728",
+    "empresa": "Twilio",
+    "local": "United States",
+    "fonte": "Google Jobs",
+    "publicada_em": null,
+    "score": 3,
+    "juiz": "anthropic",
+    "motivo": "Identity Graph, relationship tracking e resolution são centrais em record linkage e entity resolution; alinha com expertise em identity resolution.",
+    "resumo": "Vaga de Principal Software Engineer na Twilio/Stytch para liderar identity storage, relationship tracking e resolution de entidades.",
+    "confianca": 0.9,
+    "requisitos": {
+      "obrigatorios": [
+        "graph databases"
+      ],
+      "desejaveis": [
+        "Go",
+        "Kubernetes",
+        "DynamoDB"
+      ]
+    },
+    "senioridade": "staff/principal",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "pais",
+      "paises": [
+        "United States"
+      ],
+      "cidades": []
+    },
+    "patrocina_visto": null,
+    "contratacao": "nao_informado",
+    "anos_experiencia_min": 8,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.02,
+    "compat_detalhe": {
+      "habilidades": 38,
+      "senioridade": 40,
+      "local": 12,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "pede 8+ anos (você tem 2.9)",
+      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "faltam": [],
+      "parciais": [
+        "graph databases"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-23",
+    "verificada_em": "2026-11-23",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -5604,8 +6047,8 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-22",
-    "nova": true
+    "verificada_em": "2026-11-23",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -5667,7 +6110,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-21",
@@ -5739,7 +6182,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -5802,7 +6245,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -5862,7 +6305,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -5948,7 +6391,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-13",
@@ -6023,7 +6466,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-14",
@@ -6092,7 +6535,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -6160,7 +6603,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -6225,7 +6668,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -6300,7 +6743,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -6363,7 +6806,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -6438,7 +6881,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-16",
@@ -6532,7 +6975,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -6612,7 +7055,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -6683,7 +7126,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -6753,7 +7196,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -6811,7 +7254,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -6877,7 +7320,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -6955,7 +7398,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -7022,7 +7465,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -7098,7 +7541,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -7170,7 +7613,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -7244,7 +7687,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -7322,7 +7765,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -7391,7 +7834,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -7462,82 +7905,8 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "National Basketball Association (NBA) hiring Analytics Engineer ...",
-    "url": "https://www.linkedin.com/jobs/view/analytics-engineer-integrity-at-national-basketball-association-nba-4470788706",
-    "empresa": "National Basketball Association (NBA)",
-    "local": "Nova York, Nova York, Estados Unidos",
-    "fonte": "Post · linkedin.com",
-    "social": true,
-    "score": 8,
-    "motivo": "Post de rede social anunciando vaga concreta (NBA, Analytics Engineer) com entity resolution e record linkage como requisitos explícitos.",
-    "resumo": "NBA contrata Analytics Engineer com experiência em entity resolution, identity matching, record linkage e MLOps.",
-    "confianca": 0.92,
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "dbt",
-        "Snowflake",
-        "Python",
-        "Git"
-      ],
-      "desejaveis": [
-        "Databricks",
-        "Spark",
-        "Delta Lake",
-        "Unity Catalog",
-        "MLflow",
-        "Airflow",
-        "Dagster",
-        "Prefect",
-        "Entity Resolution",
-        "Record Linkage"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "hibrido",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United States"
-      ],
-      "cidades": [
-        "New York"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 5,
-    "ingles": "fluente",
-    "foco_er": 0.2,
-    "encaixe": 0.02,
-    "compat_detalhe": {
-      "habilidades": 41,
-      "senioridade": 60,
-      "local": 8,
-      "ingles": 85,
-      "foco": 88,
-      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
-      "local_txt": "hibrido em United States, sem patrocínio de visto",
-      "faltam": [
-        "dbt",
-        "Snowflake"
-      ],
-      "parciais": [
-        "SQL",
-        "Git"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-10-14",
-    "verificada_em": "2026-11-22",
-    "nova": false,
-    "enriquecida": true,
-    "publicada_em": "2026-10-19"
   },
   {
     "tipo": "vaga",
@@ -7592,7 +7961,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -7656,7 +8025,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -7720,7 +8089,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -7773,7 +8142,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-14",
@@ -7847,7 +8216,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -7908,7 +8277,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -7983,7 +8352,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -8054,7 +8423,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false
   },
   {
@@ -8116,7 +8485,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -8191,7 +8560,7 @@
       "estimado": false
     },
     "desde": "2026-11-02",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-22",
@@ -8302,7 +8671,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -8374,7 +8743,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true
   },
@@ -8435,7 +8804,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -8464,7 +8833,7 @@
     "senioridade": "staff/principal",
     "modalidade": "remoto",
     "desde": "2026-09-28",
-    "verificada_em": "2026-11-22",
+    "verificada_em": "2026-11-23",
     "nova": false,
     "primeira_vez": "2026-09-28",
     "status": "aberta",

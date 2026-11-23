@@ -1,5 +1,52 @@
 [
  {
+  "data": "2026-11-23",
+  "habilidade": "REST",
+  "pct_vagas": 2,
+  "nivel_atual": "parcial",
+  "o_que_e": "REST (Representational State Transfer) é um estilo arquitetural para construir APIs web que expõem recursos via HTTP usando verbos (GET, POST, PUT, DELETE), URLs semânticas, status codes e geralmente payloads JSON. Em contextos de MDM e entity resolution, REST é a forma padrão de expor serviços de matching, consulta e atualização de entidades mestres para sistemas externos. Dominar REST significa saber projetar, consumir e também construir APIs seguindo boas práticas (idempotência, versionamento, autenticação).",
+  "por_que_pedem": "Ferramentas de MDM como Reltio, IBM MDM e plataformas de entity resolution expõem quase todas suas funcionalidades via APIs REST: cadastro de regras de match, consulta de golden records, trigger de reprocessamento, integração com sistemas downstream. Um engenheiro que vai integrar pipelines de record linkage com essas plataformas precisa consumir e às vezes construir endpoints REST para orquestrar o fluxo de dados entre sistemas.",
+  "ponte_com_o_que_voce_sabe": "Você já expõe e consome serviços via Elasticsearch, que é essencialmente uma API REST (índices, buscas, bulk inserts via HTTP). Isso significa que você já entende verbos HTTP, JSON como payload, status codes e paginação na prática, só falta formalizar esse conhecimento e aplicá-lo fora do contexto Elastic, incluindo construir uma API própria com FastAPI ou Flask, o que é rápido para quem já programa bem em Python.",
+  "minimo_para_ficar_apto": [
+   "Entender os verbos HTTP (GET, POST, PUT, PATCH, DELETE) e quando usar cada um",
+   "Saber o que são status codes (2xx, 4xx, 5xx) e seu significado prático",
+   "Conhecer autenticação comum em APIs REST (API key, OAuth2, Bearer token)",
+   "Saber construir um endpoint simples com FastAPI ou Flask que recebe e retorna JSON",
+   "Entender conceitos de versionamento de API e paginação de resultados",
+   "Saber ler uma documentação Swagger/OpenAPI e montar requisições com requests ou curl"
+  ],
+  "plano_rapido": [
+   "2h: revisar conceitos REST (verbos, status codes, recursos) via documentação do MDN sobre HTTP",
+   "3h: criar uma API simples com FastAPI que expõe endpoints de busca e cadastro de entidades (reaproveitando lógica de matching que você já tem em Python)",
+   "2h: consumir essa API com a lib requests, testando autenticação simples via API key",
+   "2h: estudar Swagger/OpenAPI, gerar documentação automática da sua API FastAPI",
+   "1h: ler sobre REST APIs do Reltio ou IBM MDM (visão geral, não precisa dominar) para entender o padrão usado no nicho"
+  ],
+  "mini_projeto": "Construa uma API REST com FastAPI que expõe seu pipeline de entity resolution: endpoint POST /match que recebe dois registros e retorna score de similaridade (usando RapidFuzz ou Splink por trás), endpoint GET /entity/{id} que busca um golden record no Elasticsearch, e endpoint POST /entities/bulk para ingestão em lote. Documente com Swagger automático do FastAPI e publique o código no GitHub com um README explicando a arquitetura.",
+  "como_colocar_no_curriculo": "Desenvolvimento de API REST (FastAPI) para exposição de serviços de entity resolution e consulta de golden records, incluindo autenticação, documentação OpenAPI e integração com Elasticsearch.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que diferencia REST de outros estilos de API como SOAP ou gRPC?",
+    "resposta": "REST usa HTTP padrão com recursos identificados por URLs e verbos semânticos, é stateless e geralmente usa JSON, sendo mais leve e simples que SOAP (que usa XML e envelope rígido). gRPC é mais performático e usa Protocol Buffers, bom para comunicação interna entre microsserviços, enquanto REST é mais comum para APIs públicas e integrações por sua simplicidade e legibilidade."
+   },
+   {
+    "pergunta": "Como você garantiria idempotência em um endpoint de matching de entidades?",
+    "resposta": "Usaria PUT em vez de POST quando a operação deve ser idempotente, ou implementaria uma chave de idempotência (idempotency key) no header da requisição, armazenando o resultado da primeira chamada para retornar a mesma resposta em chamadas repetidas, evitando reprocessamento duplicado de matches."
+   },
+   {
+    "pergunta": "Como você documentaria e versionaria uma API REST de entity resolution?",
+    "resposta": "Usaria o padrão OpenAPI/Swagger para documentação automática, incluiria a versão no path da URL (ex: /v1/match) ou no header Accept, e manteria changelog claro para evitar quebrar integrações de clientes que já consomem versões anteriores."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do FastAPI (fastapi.tiangolo.com)",
+   "MDN Web Docs - seção HTTP (developer.mozilla.org)",
+   "Documentação do Swagger/OpenAPI (swagger.io/docs)",
+   "Documentação da API REST do Reltio (docs.reltio.com)",
+   "Curso REST API da freeCodeCamp (YouTube)"
+  ]
+ },
+ {
   "data": "2026-11-22",
   "habilidade": "CI/CD",
   "pct_vagas": 2,

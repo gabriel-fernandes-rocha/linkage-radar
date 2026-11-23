@@ -1,0 +1,83 @@
+===== coleta 2026-11-23 01:00 =====
+INFO serpapi: 27 restantes no mês; orçamento de hoje = 9 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 100
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1404
+INFO jobs/lever: 308
+INFO jobs/ashby: 54
+INFO jobs/hn_who_is_hiring: 1
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 19
+INFO jobs/gupy: 167
+INFO jobs/himalayas: 100
+INFO jobs/jobicy: 150
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 292
+INFO jobs/social_linkedin/ddg: 7 aceitos de 7
+INFO jobs/social_posts: 7
+INFO linkedin_guest: 33 vagas, 25 descrições abertas, 35 consultas no total
+INFO jobs/linkedin_guest: 33
+INFO judge: tokens in=3016 out=1322
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO judge: tokens in=1899 out=700
+INFO requisitos: tokens in=4763 out=726
+INFO requisitos: tokens in=6991 out=1508
+INFO requisitos: tokens in=2154 out=214
+INFO vagas: {'brutos': 3155, 'pos_palavras_chave': 14, 'aprovados': 9}
+INFO events: 0 candidatos
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+WARNING papers/arxiv falhou: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28abs%3A%22record+linkage%22+OR+abs%3A%22entity+resolution%22+OR+abs%3A%22entity+matching%22+OR+abs%3A%22address+matching%22+OR+abs%3A%22geocoding%22+OR+abs%3A%22data+linkage%22+OR+abs%3A%22deduplication%22%29+AND+%28cat%3Acs.DB+OR+cat%3Acs.IR+OR+cat%3Acs.LG+OR+cat%3Astat.ME+OR+cat%3Acs.CL+OR+cat%3Acs.AI%29&sortBy=submittedDate&sortOrder=descending&max_results=60
+INFO papers/openalex: 175
+INFO judge: tokens in=1351 out=186
+INFO papers: {'brutos': 175, 'pos_palavras_chave': 1, 'aprovados': 0}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1252 out=266
+INFO requisitos: tokens in=2064 out=158
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 2, 'aprovados': 0}
+INFO open_jobs: fechou Senior Identity Resolution Engineer - Remote
+INFO open_jobs: fechou Senior Identity Resolution Engineer RealTime & Spark Remote
+INFO open_jobs: fechou Senior Identity Resolution Engineer - Real-Time, Large-Scale
+INFO open_jobs: fechou National Basketball Association (NBA) hiring Analytics Engineer ...
+INFO open_jobs: 133 abertas (10 novas)
+INFO open_jobs: 1 vagas do LinkedIn completadas pela página pública, 0 encerradas
+INFO requisitos: tokens in=4074 out=207
+INFO mercado: 232 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 9 aceitos de 9
+INFO network: 9 perfis após a consulta
+INFO judge: tokens in=2167 out=1006
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/9)
+INFO network: 91 pessoas (0 novas), 51 empresas (3 novas)
+INFO carreira: tokens in=1439 out=1895
+INFO brasil/inhire: 227
+INFO brasil/gupy: 338
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 7
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 32 vagas, 32 descrições abertas, 90 consultas no total
+INFO brasil/linkedin_guest_br: 32
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 988
+INFO brasil/lever: 151
+INFO brasil/ashby: 118
+INFO brasil: 5020 brutas, 5 candidatas para o juiz
+INFO judge: tokens in=1751 out=644
+INFO open_jobs: fechou Desenvolvedor (a) de Integração de Dados - Sênior (112088)
+INFO open_jobs: 44 abertas (0 novas)
+INFO mercado: 83 vagas no nicho, 200 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 9/9)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO network: 52 pessoas (0 novas), 65 empresas (0 novas)
+INFO brasil: {'novas': 4, 'abertas': 44, 'arquivadas': 83, 'rede': {'pessoas_novas': 0, 'empresas_novas': 0}}
+INFO saúde: atencao (2 alertas)
+INFO OK → data/2026-11-23.json
+

@@ -1,16 +1,16 @@
 {
- "data": "2026-11-22",
- "status": "ok",
+ "data": "2026-11-23",
+ "status": "atencao",
  "checks": [
   {
-   "status": "ok",
-   "nome": "Juiz usado",
-   "detalhe": "anthropic"
+   "status": "atencao",
+   "nome": "Cota SerpAPI",
+   "detalhe": "18 buscas restantes para 8 dias (~2/dia; LinkedIn e pessoas têm prioridade)"
   },
   {
-   "status": "ok",
-   "nome": "Cota SerpAPI",
-   "detalhe": "27 buscas restantes para 9 dias (~3/dia; LinkedIn e pessoas têm prioridade)"
+   "status": "atencao",
+   "nome": "LinkedIn logado",
+   "detalhe": "sem varredura com sucesso há 4 dias (computador desligado ou sem login: python scripts/linkedin_local.py --login)"
   }
  ],
  "fontes": {
@@ -20,19 +20,21 @@
   "jobs/greenhouse": 1404,
   "jobs/lever": 308,
   "jobs/ashby": 54,
-  "jobs/hn_who_is_hiring": 2,
-  "jobs/serpapi_google_jobs": 10,
-  "jobs/gupy": 169,
+  "jobs/hn_who_is_hiring": 1,
+  "jobs/serpapi_google_jobs": 19,
+  "jobs/gupy": 167,
   "jobs/himalayas": 100,
   "jobs/jobicy": 150,
   "jobs/workable": 280,
-  "jobs/weworkremotely": 250,
-  "jobs/social_posts": 2,
-  "jobs/linkedin_guest": 34,
-  "papers/arxiv": 7,
+  "jobs/weworkremotely": 292,
+  "jobs/social_posts": 7,
+  "jobs/linkedin_guest": 33,
+  "papers/arxiv": -1,
   "papers/openalex": 175,
   "linkedin/posts": 10,
-  "network/perfis": 7
+  "network/perfis": 9
  },
- "falhas": []
+ "falhas": [
+  "papers/arxiv falhou: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28abs%3A%22record+linkage%22+OR+abs%3A%22entity+resolution%22+OR+abs%3A%22entity+matching%22+OR+abs%3A%22addr"
+ ]
 }

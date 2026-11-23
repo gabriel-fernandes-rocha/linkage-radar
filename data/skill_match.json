@@ -108,6 +108,11 @@
   "nivel": "nao",
   "nome": "Alteryx"
  },
+ "amazon bedrock": {
+  "motivo": "sem evidência de uso de serviços AWS",
+  "nivel": "nao",
+  "nome": "Amazon Bedrock"
+ },
  "amazon neptune": {
   "motivo": "sem evidência de grafo/Neptune",
   "nivel": "nao",
@@ -928,6 +933,11 @@
   "nivel": "nao",
   "nome": "Datadog"
  },
+ "dataflow": {
+  "motivo": "experiência com pipelines ETL similares, não GCP específico",
+  "nivel": "parcial",
+  "nome": "Dataflow"
+ },
  "datahub": {
   "motivo": "não mencionado",
   "nivel": "nao",
@@ -937,6 +947,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "Datalog"
+ },
+ "dataproc": {
+  "motivo": "usa Spark, próximo de Dataproc gerenciado",
+  "nivel": "parcial",
+  "nome": "Dataproc"
  },
  "dataset documentation": {
   "motivo": "sem evidência de documentação formal de datasets",
@@ -1272,6 +1287,11 @@
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "Feature stores"
+ },
+ "federated identity protocols": {
+  "motivo": "sem evidência de protocolos de identidade federada",
+  "nivel": "nao",
+  "nome": "federated identity protocols"
  },
  "fellegi-sunter": {
   "motivo": "usa matching probabilístico, base Fellegi-Sunter",
@@ -1993,6 +2013,11 @@
   "nivel": "nao",
   "nome": "Looker Studio"
  },
+ "lsh": {
+  "motivo": "faz blocking, técnica próxima de LSH",
+  "nivel": "parcial",
+  "nome": "LSH"
+ },
  "lsmw": {
   "motivo": "ferramenta SAP sem evidência no currículo",
   "nivel": "nao",
@@ -2172,6 +2197,11 @@
   "motivo": "sabe SQL, falta SQL Server específico",
   "nivel": "parcial",
   "nome": "Microsoft SQL Server"
+ },
+ "minhash": {
+  "motivo": "conceito próximo de blocking/similaridade usado",
+  "nivel": "parcial",
+  "nome": "MinHash"
  },
  "ml-assisted matching": {
   "motivo": "Usa Splink e scikit-learn para matching probabilístico",
@@ -2663,6 +2693,11 @@
   "nivel": "tem",
   "nome": "RapidFuzz"
  },
+ "ray": {
+  "motivo": "sem evidência de uso de Ray",
+  "nivel": "nao",
+  "nome": "Ray"
+ },
  "rdf": {
   "motivo": "sem evidência de modelos semânticos RDF",
   "nivel": "nao",
@@ -2697,6 +2732,11 @@
   "motivo": "especialidade central do candidato",
   "nivel": "tem",
   "nome": "Record linkage"
+ },
+ "record linkage toolkit": {
+  "motivo": "usa Splink, ferramenta similar de record linkage",
+  "nivel": "parcial",
+  "nome": "Record Linkage Toolkit"
  },
  "redaction": {
   "motivo": "Redação de dados sensíveis não citada.",
@@ -3042,6 +3082,11 @@
   "motivo": "sabe Spark/SQL, próximo de Snowflake",
   "nivel": "parcial",
   "nome": "Snowpark"
+ },
+ "snowpipe": {
+  "motivo": "sem evidência de uso de Snowflake/Snowpipe",
+  "nivel": "nao",
+  "nome": "Snowpipe"
  },
  "soap": {
   "motivo": "Nenhum uso de serviços SOAP indicado",
@@ -3402,6 +3447,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "Zephr"
+ },
+ "zero trust": {
+  "motivo": "sem evidência de segurança/arquitetura Zero Trust",
+  "nivel": "nao",
+  "nome": "Zero Trust"
  },
  "zingg": {
   "motivo": "ferramenta similar a Splink",

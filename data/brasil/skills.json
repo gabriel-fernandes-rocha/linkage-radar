@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-22",
+ "atualizado_em": "2026-11-23",
  "geral": {
   "vagas_analisadas": 83,
   "ranking": [
@@ -124,20 +124,20 @@
     "voce": "parcial"
    },
    {
-    "nome": "Airflow",
-    "vagas": 6,
-    "pct": 7,
-    "obrigatorio": 4,
-    "desejavel": 2,
-    "voce": "parcial"
-   },
-   {
     "nome": "dbt",
     "vagas": 6,
     "pct": 7,
     "obrigatorio": 4,
     "desejavel": 2,
     "voce": "nao"
+   },
+   {
+    "nome": "Airflow",
+    "vagas": 6,
+    "pct": 7,
+    "obrigatorio": 4,
+    "desejavel": 2,
+    "voce": "parcial"
    },
    {
     "nome": "Machine Learning",
@@ -220,12 +220,12 @@
     "voce": "nao"
    },
    {
-    "nome": "MarTech",
+    "nome": "Deduplication",
     "vagas": 4,
     "pct": 5,
     "obrigatorio": 4,
     "desejavel": 0,
-    "voce": "nao"
+    "voce": "tem"
    },
    {
     "nome": "fuzzy matching",
@@ -236,12 +236,12 @@
     "voce": "tem"
    },
    {
-    "nome": "Deduplication",
+    "nome": "MarTech",
     "vagas": 4,
     "pct": 5,
     "obrigatorio": 4,
     "desejavel": 0,
-    "voce": "tem"
+    "voce": "nao"
    },
    {
     "nome": "Kafka",
@@ -380,14 +380,6 @@
     "voce": "nao"
    },
    {
-    "nome": "SAP MDG",
-    "vagas": 3,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 3,
-    "voce": "nao"
-   },
-   {
     "nome": "SAP Migration Cockpit",
     "vagas": 3,
     "pct": 4,
@@ -401,6 +393,14 @@
     "pct": 4,
     "obrigatorio": 2,
     "desejavel": 1,
+    "voce": "nao"
+   },
+   {
+    "nome": "SAP MDG",
+    "vagas": 3,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 3,
     "voce": "nao"
    },
    {
@@ -420,19 +420,19 @@
     "voce": "nao"
    },
    {
-    "nome": "Golden Record",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "Record linkage",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 1,
+    "voce": "tem"
+   },
+   {
+    "nome": "Golden Record",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
     "voce": "tem"
    },
    {
@@ -460,20 +460,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Entity Matching",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "graph databases",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 0,
     "desejavel": 2,
     "voce": "parcial"
+   },
+   {
+    "nome": "Entity Matching",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "tem"
    },
    {
     "nome": "Braze",
@@ -516,7 +516,7 @@
     "voce": "nao"
    },
    {
-    "nome": "cutover",
+    "nome": "mock loads",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 2,
@@ -524,7 +524,7 @@
     "voce": "nao"
    },
    {
-    "nome": "mock loads",
+    "nome": "cutover",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 2,
@@ -540,7 +540,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Jira",
+    "nome": "Datahub",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
@@ -548,7 +548,7 @@
     "voce": "nao"
    },
    {
-    "nome": "Datahub",
+    "nome": "Jira",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
@@ -580,19 +580,19 @@
     "voce": "nao"
    },
    {
-    "nome": "SAP S/4HANA Migration Cockpit",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "LSMW",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 0,
     "desejavel": 2,
+    "voce": "nao"
+   },
+   {
+    "nome": "SAP S/4HANA Migration Cockpit",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 1,
+    "desejavel": 1,
     "voce": "nao"
    },
    {
@@ -612,20 +612,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Oracle",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "parcial"
-   },
-   {
     "nome": "Glue",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
+   },
+   {
+    "nome": "Oracle",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "parcial"
    },
    {
     "nome": "SQL Server",
@@ -723,8 +723,8 @@
     "exemplos": [
      "Informatica",
      "SAP MDG",
-     "Profisee",
      "Reltio",
+     "Profisee",
      "Informatica Data Quality"
     ],
     "voce": "parcial"
@@ -917,20 +917,20 @@
     "voce": "parcial"
    },
    {
-    "nome": "Airflow",
-    "vagas": 6,
-    "pct": 7,
-    "obrigatorio": 4,
-    "desejavel": 2,
-    "voce": "parcial"
-   },
-   {
     "nome": "dbt",
     "vagas": 6,
     "pct": 7,
     "obrigatorio": 4,
     "desejavel": 2,
     "voce": "nao"
+   },
+   {
+    "nome": "Airflow",
+    "vagas": 6,
+    "pct": 7,
+    "obrigatorio": 4,
+    "desejavel": 2,
+    "voce": "parcial"
    },
    {
     "nome": "Machine Learning",
@@ -1013,12 +1013,12 @@
     "voce": "nao"
    },
    {
-    "nome": "MarTech",
+    "nome": "Deduplication",
     "vagas": 4,
     "pct": 5,
     "obrigatorio": 4,
     "desejavel": 0,
-    "voce": "nao"
+    "voce": "tem"
    },
    {
     "nome": "fuzzy matching",
@@ -1029,12 +1029,12 @@
     "voce": "tem"
    },
    {
-    "nome": "Deduplication",
+    "nome": "MarTech",
     "vagas": 4,
     "pct": 5,
     "obrigatorio": 4,
     "desejavel": 0,
-    "voce": "tem"
+    "voce": "nao"
    },
    {
     "nome": "Kafka",
@@ -1173,14 +1173,6 @@
     "voce": "nao"
    },
    {
-    "nome": "SAP MDG",
-    "vagas": 3,
-    "pct": 4,
-    "obrigatorio": 0,
-    "desejavel": 3,
-    "voce": "nao"
-   },
-   {
     "nome": "SAP Migration Cockpit",
     "vagas": 3,
     "pct": 4,
@@ -1194,6 +1186,14 @@
     "pct": 4,
     "obrigatorio": 2,
     "desejavel": 1,
+    "voce": "nao"
+   },
+   {
+    "nome": "SAP MDG",
+    "vagas": 3,
+    "pct": 4,
+    "obrigatorio": 0,
+    "desejavel": 3,
     "voce": "nao"
    },
    {
@@ -1213,19 +1213,19 @@
     "voce": "nao"
    },
    {
-    "nome": "Golden Record",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "Record linkage",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 1,
+    "voce": "tem"
+   },
+   {
+    "nome": "Golden Record",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
     "voce": "tem"
    },
    {
@@ -1253,20 +1253,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Entity Matching",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "tem"
-   },
-   {
     "nome": "graph databases",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 0,
     "desejavel": 2,
     "voce": "parcial"
+   },
+   {
+    "nome": "Entity Matching",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "tem"
    },
    {
     "nome": "Braze",
@@ -1309,7 +1309,7 @@
     "voce": "nao"
    },
    {
-    "nome": "cutover",
+    "nome": "mock loads",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 2,
@@ -1317,7 +1317,7 @@
     "voce": "nao"
    },
    {
-    "nome": "mock loads",
+    "nome": "cutover",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 2,
@@ -1333,7 +1333,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Jira",
+    "nome": "Datahub",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
@@ -1341,7 +1341,7 @@
     "voce": "nao"
    },
    {
-    "nome": "Datahub",
+    "nome": "Jira",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
@@ -1373,19 +1373,19 @@
     "voce": "nao"
    },
    {
-    "nome": "SAP S/4HANA Migration Cockpit",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 1,
-    "desejavel": 1,
-    "voce": "nao"
-   },
-   {
     "nome": "LSMW",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 0,
     "desejavel": 2,
+    "voce": "nao"
+   },
+   {
+    "nome": "SAP S/4HANA Migration Cockpit",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 1,
+    "desejavel": 1,
     "voce": "nao"
    },
    {
@@ -1405,20 +1405,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Oracle",
-    "vagas": 2,
-    "pct": 2,
-    "obrigatorio": 2,
-    "desejavel": 0,
-    "voce": "parcial"
-   },
-   {
     "nome": "Glue",
     "vagas": 2,
     "pct": 2,
     "obrigatorio": 1,
     "desejavel": 1,
     "voce": "nao"
+   },
+   {
+    "nome": "Oracle",
+    "vagas": 2,
+    "pct": 2,
+    "obrigatorio": 2,
+    "desejavel": 0,
+    "voce": "parcial"
    },
    {
     "nome": "SQL Server",
@@ -1516,8 +1516,8 @@
     "exemplos": [
      "Informatica",
      "SAP MDG",
-     "Profisee",
      "Reltio",
+     "Profisee",
      "Informatica Data Quality"
     ],
     "voce": "parcial"
@@ -1886,20 +1886,20 @@
     "voce": "nao"
    },
    {
-    "nome": "Terraform",
-    "vagas": 10,
-    "pct": 5,
-    "obrigatorio": 2,
-    "desejavel": 8,
-    "voce": "nao"
-   },
-   {
     "nome": "Data warehouse",
     "vagas": 10,
     "pct": 5,
     "obrigatorio": 2,
     "desejavel": 8,
     "voce": "parcial"
+   },
+   {
+    "nome": "Terraform",
+    "vagas": 10,
+    "pct": 5,
+    "obrigatorio": 2,
+    "desejavel": 8,
+    "voce": "nao"
    },
    {
     "nome": "R",
@@ -1926,7 +1926,7 @@
     "voce": "tem"
    },
    {
-    "nome": "Oracle",
+    "nome": "SQL Server",
     "vagas": 9,
     "pct": 4,
     "obrigatorio": 9,
@@ -1934,7 +1934,7 @@
     "voce": "parcial"
    },
    {
-    "nome": "SQL Server",
+    "nome": "Oracle",
     "vagas": 9,
     "pct": 4,
     "obrigatorio": 9,
@@ -2003,7 +2003,7 @@
     "pct": 4,
     "obrigatorio": 6,
     "desejavel": 1,
-    "voce": "pendente"
+    "voce": "parcial"
    },
    {
     "nome": "MLOps",
@@ -2014,20 +2014,20 @@
     "voce": "parcial"
    },
    {
-    "nome": "Amazon Redshift",
-    "vagas": 6,
-    "pct": 3,
-    "obrigatorio": 4,
-    "desejavel": 2,
-    "voce": "pendente"
-   },
-   {
     "nome": "Claude",
     "vagas": 6,
     "pct": 3,
     "obrigatorio": 2,
     "desejavel": 4,
     "voce": "parcial"
+   },
+   {
+    "nome": "Amazon Redshift",
+    "vagas": 6,
+    "pct": 3,
+    "obrigatorio": 4,
+    "desejavel": 2,
+    "voce": "pendente"
    },
    {
     "nome": "Generative AI",
@@ -2062,28 +2062,28 @@
     "voce": "parcial"
    },
    {
-    "nome": "Dataproc",
-    "vagas": 6,
-    "pct": 3,
-    "obrigatorio": 6,
-    "desejavel": 0,
-    "voce": "pendente"
-   },
-   {
-    "nome": "NoSQL",
-    "vagas": 6,
-    "pct": 3,
-    "obrigatorio": 2,
-    "desejavel": 4,
-    "voce": "tem"
-   },
-   {
     "nome": "Cloud Storage",
     "vagas": 6,
     "pct": 3,
     "obrigatorio": 6,
     "desejavel": 0,
     "voce": "pendente"
+   },
+   {
+    "nome": "Dataform",
+    "vagas": 6,
+    "pct": 3,
+    "obrigatorio": 4,
+    "desejavel": 2,
+    "voce": "pendente"
+   },
+   {
+    "nome": "Dataproc",
+    "vagas": 6,
+    "pct": 3,
+    "obrigatorio": 6,
+    "desejavel": 0,
+    "voce": "parcial"
    },
    {
     "nome": "Vertex AI",
@@ -2094,12 +2094,12 @@
     "voce": "nao"
    },
    {
-    "nome": "Dataform",
+    "nome": "NoSQL",
     "vagas": 6,
     "pct": 3,
-    "obrigatorio": 4,
-    "desejavel": 2,
-    "voce": "pendente"
+    "obrigatorio": 2,
+    "desejavel": 4,
+    "voce": "tem"
    },
    {
     "nome": "NLP",
