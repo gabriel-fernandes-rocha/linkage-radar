@@ -1,0 +1,80 @@
+===== coleta 2026-11-24 04:10 =====
+INFO serpapi: 18 restantes no mês; orçamento de hoje = 9 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 100
+INFO jobs/remotive: 225
+INFO jobs/greenhouse: 1393
+INFO jobs/lever: 306
+INFO jobs/ashby: 53
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'splink': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 2
+INFO jobs/gupy: 168
+INFO jobs/himalayas: 102
+INFO jobs/jobicy: 39
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 351
+INFO jobs/social_linkedin/ddg: 7 aceitos de 8
+INFO jobs/social_posts: 7
+INFO linkedin_guest: 43 vagas, 25 descrições abertas, 38 consultas no total
+INFO jobs/linkedin_guest: 43
+INFO judge: tokens in=1723 out=837
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=2530 out=642
+INFO requisitos: tokens in=2062 out=151
+INFO vagas: {'brutos': 3070, 'pos_palavras_chave': 7, 'aprovados': 5}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 8
+INFO papers/openalex: 175
+INFO judge: tokens in=1973 out=528
+INFO papers: {'brutos': 183, 'pos_palavras_chave': 3, 'aprovados': 2}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1511 out=524
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 4, 'aprovados': 3}
+INFO open_jobs: fechou Data Engineer – Customer 360 & Identity Resolution
+INFO open_jobs: fechou Senior Technical Lead Master Data Management
+INFO open_jobs: 136 abertas (5 novas)
+INFO open_jobs: 4 vagas do LinkedIn completadas pela página pública, 1 encerradas
+INFO requisitos: tokens in=9609 out=1630
+INFO mercado: 237 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2263 out=995
+INFO judge: tokens in=1360 out=275
+INFO network: 91 pessoas (0 novas), 51 empresas (0 novas)
+INFO carreira: tokens in=1460 out=1920
+INFO brasil/inhire: 227
+INFO brasil/gupy: 337
+INFO google_jobs 'engenheiro de dados': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/9)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 16 vagas, 16 descrições abertas, 72 consultas no total
+INFO brasil/linkedin_guest_br: 16
+INFO brasil/linkedin_local: 4
+INFO brasil/greenhouse: 984
+INFO brasil/lever: 156
+INFO brasil/ashby: 114
+INFO brasil: 4918 brutas, 7 candidatas para o juiz
+INFO judge: tokens in=2617 out=1064
+INFO requisitos: tokens in=2946 out=479
+INFO open_jobs: fechou Master Data Business Analyst
+INFO open_jobs: fechou Latin America (ALAC) AIML Data Quality & Governance Scientist
+INFO open_jobs: fechou SAP Business Partner & Data Migration - LinkedIn Brasil
+INFO open_jobs: 42 abertas (1 novas)
+INFO mercado: 84 vagas no nicho, 200 no mercado amplo
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 52 pessoas (0 novas), 66 empresas (1 novas)
+INFO brasil: {'novas': 5, 'abertas': 42, 'arquivadas': 84, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: atencao (3 alertas)
+INFO OK → data/2026-11-24.json
+

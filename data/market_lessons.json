@@ -1,5 +1,50 @@
 [
  {
+  "data": "2026-11-24",
+  "habilidade": "Vertex AI",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Vertex AI é a plataforma unificada de machine learning do Google Cloud, cobrindo desde treinamento e tuning de modelos (incluindo AutoML e modelos customizados) até deploy, versionamento, monitoramento e pipelines de MLOps. Inclui também acesso a LLMs do Google (Gemini, PaLM) via Vertex AI Studio e Model Garden. Para entity resolution, é usada principalmente para orquestrar pipelines de ML em escala, servir modelos de matching/scoring como endpoints, e rodar jobs de labeling com LLMs.",
+  "por_que_pedem": "Vagas de ML Scientist/Engineer em entity resolution que mencionam Vertex AI geralmente são de empresas que já usam GCP como nuvem padrão e querem produtizar modelos de matching ou usar LLMs para labeling/augmentação de dados de treino. Pedem Vertex AI como prova de que você sabe operacionalizar ML em nuvem, não só treinar modelo localmente.",
+  "ponte_com_o_que_voce_sabe": "Você já tem a parte mais difícil: pipeline de record linkage ponta a ponta (blocking, scoring, classificação, QA) com Spark e scikit-learn. Vertex AI é só a camada de infraestrutura gerenciada para rodar isso na nuvem do Google; os conceitos de MLOps (versionamento de modelo, pipeline, monitoramento) são universais e você provavelmente já aplica isso de forma manual ou com outras ferramentas. A curva de aprendizado é sobre a API e o ecossistema GCP, não sobre o problema de ML em si.",
+  "minimo_para_ficar_apto": [
+   "Criar e rodar um notebook no Vertex AI Workbench",
+   "Treinar um modelo customizado (scikit-learn ou XGBoost) e registrar no Vertex AI Model Registry",
+   "Fazer deploy de um modelo como endpoint e testar predição via API",
+   "Criar um pipeline simples com Vertex AI Pipelines (Kubeflow) com 2-3 steps (ex: pré-processamento, treino, avaliação)",
+   "Entender diferença entre AutoML, modelos customizados e uso do Model Garden/Gemini para labeling"
+  ],
+  "plano_rapido": [
+   "2h: criar conta GCP free tier, entender console e Vertex AI Workbench",
+   "3h: seguir tutorial oficial de treino de modelo customizado (scikit-learn) e deploy como endpoint",
+   "3h: criar um pipeline básico com Vertex AI Pipelines usando um componente customizado em Python",
+   "2h: testar Vertex AI Studio com Gemini para uma tarefa de labeling/classificação de texto (simulando matching de entidades)",
+   "2h: ler documentação sobre MLOps no Vertex AI (model monitoring, versionamento) para falar com propriedade em entrevista"
+  ],
+  "mini_projeto": "Pegue um subconjunto sintético do seu pipeline de record linkage (pares de registros com features de similaridade tipo RapidFuzz scores) e treine um classificador scikit-learn no Vertex AI Workbench. Registre o modelo no Model Registry, faça deploy como endpoint, e crie um pipeline simples no Vertex AI Pipelines que automatiza pré-processamento, treino e avaliação. Documente no GitHub comparando a experiência com seu pipeline Spark local.",
+  "como_colocar_no_curriculo": "Experiência prática em treino, deploy e orquestração de modelos de matching/classificação no Vertex AI (GCP), aplicando conhecimento prévio em record linkage e MLOps.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Como você usaria o Vertex AI para produtizar um modelo de entity resolution que hoje roda em Spark?",
+    "resposta": "Eu manteria o pré-processamento e blocking pesado em Spark (Dataproc ou Dataflow), e usaria o Vertex AI para treinar o modelo de scoring/classificação final, registrar no Model Registry, fazer deploy como endpoint para predições em tempo real, e orquestrar o retraining periódico via Vertex AI Pipelines."
+   },
+   {
+    "pergunta": "Qual a diferença entre AutoML e um modelo customizado no Vertex AI?",
+    "resposta": "AutoML automatiza a escolha de arquitetura e hyperparameters para tarefas comuns (tabular, imagem, texto) com pouco código, bom para prototipagem rápida. Modelo customizado dá controle total sobre o código de treino (ex: meu próprio scikit-learn/XGBoost), necessário quando já tenho um pipeline de features específico como no matching probabilístico."
+   },
+   {
+    "pergunta": "Você já usou LLMs para labeling de dados de entity resolution? Como o Vertex AI ajudaria nisso?",
+    "resposta": "Ainda não em produção, mas o Vertex AI Studio permite usar Gemini via prompt para gerar labels de pares candidatos (match/não-match) em larga escala, o que pode acelerar a criação de datasets de treino para o classificador, complementando o processo manual de QA que já faço."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do Google Cloud Vertex AI (cloud.google.com/vertex-ai/docs)",
+   "Google Cloud Skills Boost - trilha de Machine Learning Engineer",
+   "Qwiklabs/Vertex AI quickstarts oficiais do Google Cloud",
+   "Curso 'Machine Learning Engineer Learning Path' no Google Cloud Training"
+  ]
+ },
+ {
   "data": "2026-11-23",
   "habilidade": "REST",
   "pct_vagas": 2,

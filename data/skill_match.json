@@ -58,6 +58,11 @@
   "nivel": "nao",
   "nome": "Agentforce"
  },
+ "agentic ai": {
+  "motivo": "sem evidência de uso de agentes de IA",
+  "nivel": "nao",
+  "nome": "Agentic AI"
+ },
  "agentic workflows": {
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
@@ -1508,6 +1513,11 @@
   "nivel": "parcial",
   "nome": "Graph algorithms"
  },
+ "graph data modeling": {
+  "motivo": "conexões de clusters de entidades próximas a modelagem em grafos",
+  "nivel": "parcial",
+  "nome": "Graph Data Modeling"
+ },
  "graph data structures": {
   "motivo": "Usa clustering de componentes conexos em pipelines",
   "nivel": "tem",
@@ -2613,6 +2623,11 @@
   "nivel": "nao",
   "nome": "prompt engineering"
  },
+ "property graphs": {
+  "motivo": "clustering de entidades próximo, mas sem experiência explícita em grafos",
+  "nivel": "parcial",
+  "nome": "Property Graphs"
+ },
  "protobuf": {
   "motivo": "sem evidência de serialização Protobuf",
   "nivel": "nao",
@@ -3382,6 +3397,11 @@
   "motivo": "usa Elasticsearch, próximo de busca vetorial",
   "nivel": "parcial",
   "nome": "vector search"
+ },
+ "vector similarity search": {
+  "motivo": "usa Elasticsearch e TF-IDF/cosseno, base próxima",
+  "nivel": "parcial",
+  "nome": "Vector Similarity Search"
  },
  "vector store": {
   "motivo": "sem evidência de uso de bancos vetoriais",

@@ -1,0 +1,386 @@
+{
+  "data": "2026-11-24",
+  "gerado_em": "2026-11-24T03:57-03:00",
+  "llm": true,
+  "serpapi_orcamento": 9,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data Engineer (Ontology & Knowledge Graphs)",
+      "url": "https://uk.linkedin.com/jobs/view/senior-data-engineer-ontology-knowledge-graphs-at-dex-4493323398",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post concreto de vaga focado em entity resolution, deduplicação e reconciliação de fontes como atividades centrais do cargo.",
+      "resumo": "Vaga de Senior Data Engineer em Ontology e Knowledge Graphs com foco em implementar sistemas robustos de entity resolution, deduplicação e reconciliação de fontes.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.42,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Staff Data Engineer (Databricks specialist) - LinkedIn",
+      "url": "https://nl.linkedin.com/jobs/view/staff-data-engineer-databricks-specialist-at-jobgether-4488662669",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post concreto de vaga Staff Data Engineer que cita entity resolution e match-and-merge como requisitos centrais de MDM.",
+      "resumo": "Vaga de Staff Data Engineer especializado em Databricks com experiência requerida em entity resolution, match-and-merge e golden records.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "Entity Resolution"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "staff/principal",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.18,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 45,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível staff/principal",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Mid-Level/Lead DA Engineer (GRAPH DATABASE ENGINEER): HYBRID",
+      "url": "https://www.linkedin.com/jobs/view/mid-level-lead-da-engineer-graph-database-engineer-hybrid-at-state-farm-4484104086",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post concreto de vaga que cita entity resolution e identity matching como experiências relevantes para graph database engineer.",
+      "resumo": "Vaga híbrida de Lead Data/Graph Database Engineer com requisito de experiência em entity resolution, identity matching e integração de múltiplas fontes.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Graph Database"
+        ],
+        "desejaveis": [
+          "Graph Embeddings",
+          "Vector Similarity Search"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "hibrido",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.3,
+      "compat_detalhe": {
+        "habilidades": 44,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Graph Database"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Director, Product Management, Data Foundation and Ontology",
+      "url": "https://sg.linkedin.com/jobs/view/director-product-management-data-foundation-and-ontology-at-univers-4492818332",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Post concreto de vaga que cita entity resolution explicitamente como experiência requerida entre ferramentas de MDM e ontologia.",
+      "resumo": "Vaga de Director de Product Management em Data Foundation e Ontology com requisito de experiência em entity resolution, MDM e ferramentas de catálogos de dados.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "Entity Resolution"
+        ],
+        "desejaveis": [
+          "RAG",
+          "Agentic AI"
+        ]
+      },
+      "senioridade": "gerencia",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.11,
+      "compat_detalhe": {
+        "habilidades": 38,
+        "senioridade": 35,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Ontology Architect and Knowledge Modeling Specialist - SME",
+      "url": "https://www.linkedin.com/jobs/view/ontology-architect-and-knowledge-modeling-specialist-sme-at-fantom-corporation-4485649477",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post concreto citando entity resolution como atividade central apoiada pela arquitetura de ontologia e resolução de inconsistências semânticas entre fontes.",
+      "resumo": "Vaga de Ontology Architect focada em suportar entity resolution, busca semântica e IA contextual através de modelagem de dados e resolução de inconsistências semânticas.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.31,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Identity Resolution Across Fragmented Customer Touchpoints in Global Commerce Ecosystems",
+      "url": "https://theamericanjournals.com/index.php/tajmei/article/view/8651/7890",
+      "autores": "Ashok Apati",
+      "data": "2026-11-19",
+      "fonte": "OpenAlex",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre identity resolution de clientes fragmentados em múltiplos sistemas e plataformas, discutindo decisões de matching e governança de atribuição de dados.",
+      "resumo": "O paper endereça como clientes que interagem com múltiplos sistemas comerciais, marketing e autenticação criam registros duplicados e inconsistentes, e propõe framework para decisões de resolution e governança, separando a decisão de matching da de propagação de atributos e consentimento.",
+      "confianca": 0.98
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Similarity-Based Record Linkage and False Attribution: Why Sharing a Name Can Mean Sharing a Stranger's Story",
+      "url": "https://doi.org/10.5281/zenodo.24439815",
+      "autores": "Alexandra Cary",
+      "data": "2026-11-22",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper conceitual sobre record linkage por similitude e falsa atribuição, discutindo mecanismos de matching de registros e consequências de erros de linkage.",
+      "resumo": "O paper analisa como dois registros que compartilham nomes ou características identificadores podem ser erroneamente tratados como o mesmo indivíduo, causando propagação de informações entre históricos distintos. Usa casos reais de confusão de identidades (David Hearn canoeista vs. golfista, e defendants confundidos em processo legal) para examinar quais características suportam o match e evidências necessárias para estabelecer a correta identidade.",
+      "confianca": 0.95
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Un cliente, tres registros: Entity Resolution seguro con GenAI",
+      "url": "https://es.linkedin.com/pulse/un-cliente-tres-registros-entity-resolution-seguro-con-monsalves-ewcmf",
+      "data": "Nov 5, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post que explica entity resolution e sua aplicação com GenAI, foco claro no problema de identificar e unificar registros de mesma entidade.",
+      "resumo": "Post educativo em espanhol explicando entity resolution como descoberta de registros que representam mesma pessoa, empresa ou produto em sistemas diferentes, com aplicação de GenAI.",
+      "confianca": 0.98
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Confident Entity Match ≠ Permission to Merge | Agentic ER",
+      "url": "https://www.linkedin.com/pulse/confident-entity-match-not-permission-to-merge-agent-daniel-ber%C3%A1nek-486gf/",
+      "data": "Nov 21, 2026",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post técnico que discute um problema central em entity resolution: confiança no match vs. autorização para merge, tema crítico em governança de ER.",
+      "resumo": "Discussão técnica sobre como alta confiança em entity resolution não autoriza automaticamente o merge de registros, abordando governança e agentic ER.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "DLP for LLMs: How to Protect Personal Data Without Breaking ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/dlp-llms-how-protect-personal-data-without-breaking-your-ai-n6ndf",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Post que menciona entity resolution como componente necessário em privacidade de dados para LLMs, discutindo mapeamento e proteção de dados pessoais.",
+      "resumo": "Post sobre proteção de dados pessoais em LLMs que menciona entity resolution como requisito técnico para mapeamento e policy decisions em governança de dados.",
+      "confianca": 0.85
+    }
+  ],
+  "vagas_abertas_total": 135,
+  "vagas_arquivadas_total": 238,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Vertex AI",
+  "brasil": {
+    "novas": 5,
+    "abertas": 42,
+    "arquivadas": 84,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 54,
+    "semana": 8,
+    "tema": "Por que indexar e como definir blocking keys",
+    "tipo": "conceito",
+    "titulo": "NYSIIS",
+    "modulo": "Semana 8: Por que indexar e como definir blocking keys",
+    "versao": 2,
+    "objetivo": "Aplicar manualmente as regras do algoritmo NYSIIS para gerar uma blocking key fonética e entender por que ele é a segunda técnica fonética mais usada em data matching, depois do Soundex.",
+    "conceito": "NYSIIS (New York State Identification and Intelligence System) é um algoritmo fonético que, diferente de Soundex, Phonex e Phonix, gera um código composto apenas por letras, sem dígitos (Christen 2012, seç. 4.3.4, p. 73-74). Ele aplica transformações no início e no fim da string (por exemplo 'mac'->'mcc', 'kn'->'n', 'k'->'c', 'ph'/'pf'->'ff', 'sch'->'sss' no início; 'ee'/'ie'->'y', 'dt'/'rt'/'rd'/'nt'/'nd'->'d' no fim), depois processa letra a letra reduzindo vogais a 'a', simplificando 'q','z','m', tratando sequências 'kn', 'k', 'sch', 'ph' e o 'h' e o 'w' conforme o contexto fonético. Uma letra só é adicionada ao código final se for diferente da letra imediatamente anterior já incluída, evitando duplicações consecutivas. Ao final, remove-se 'a' ou 's' terminal, substitui-se 'ay' terminal por 'y', e o código é truncado a seis caracteres. O resultado é mais informativo que Soundex em termos de forma da palavra, mas ainda assim é uma técnica pensada para nomes de origem inglesa, o que limita sua aplicação a bases multiculturais.",
+    "como_funciona": "1. Transformar o início da string conforme regras fixas (mac->mcc, kn->n, k->c, ph/pf->ff, sch->sss). 2. Transformar o final da string (ee/ie->y; dt/rt/rd/nt/nd->d). 3. A primeira letra da string já transformada vira a primeira letra do código NYSIIS. 4. Para cada letra restante, aplicar na ordem: ev->af; e,i,o,u->a; q->g, z->s, m->n; kn->n, k->c; sch->sss, ph->ff; se h está entre duas consoantes (ou no fim após consoante) substituir h pela letra anterior; se w vem depois de vogal, substituir w por a. 5. Só adicionar a letra processada ao código se ela for diferente da última letra já incluída. 6. Ao final: remover 'a' ou 's' terminal; se terminar em 'ay', trocar por 'y'. 7. Truncar o código a no máximo seis letras.",
+    "exemplo": "Comparando 'carl' e 'karl'. Para 'karl', a regra de início substitui o 'k' inicial por 'c', resultando na string de trabalho 'carl', igual à de 'carl'. A partir daí o processamento letra a letra é idêntico nos dois casos: primeira letra 'c' vira o início do código; 'a' é adicionado (diferente de 'c'); 'r' é adicionado (diferente de 'a'); 'l' é adicionado (diferente de 'r'). Nenhuma regra de redução de vogal ou de 'h'/'w' se aplica. As regras finais (remover 'a'/'s' terminal, trocar 'ay' por 'y') também não se aplicam porque o código termina em 'l'. Como tem só quatro letras, não há truncamento. Resultado: NYSIIS('carl') = NYSIIS('karl') = 'carl'. Isso mostra o objetivo central da técnica: variações gráficas que soam igual caem na mesma blocking key.",
+    "na_pratica": "A biblioteca jellyfish implementa NYSIIS prontinho em Python, útil para gerar a coluna de blocking key antes de alimentar o Splink, o recordlinkage ou um índice invertido no Elasticsearch:\nimport jellyfish\ndf['bkv_nysiis'] = df['surname'].apply(jellyfish.nysiis)\nNo Splink, essa coluna pode entrar direto em block_on('bkv_nysiis'), geralmente combinada com outro atributo (como CEP ou data de nascimento) para reduzir o tamanho dos blocos, seguindo o princípio de concatenar chaves discutido na aula sobre critérios de blocking key (Christen 2012, p. 69-71, Fig. 4.1).",
+    "armadilha": "Truncar o código a seis letras pode fazer nomes longos e genuinamente diferentes colapsarem no mesmo código, inflando blocos; sempre combine NYSIIS com um segundo atributo (CEP, data de nascimento) em vez de usá-lo isolado como única blocking key.",
+    "desafio": "Usando apenas as regras do NYSIIS descritas nesta aula, calcule manualmente o código para 'allen' e para 'allan'. Eles cairiam no mesmo bloco? Depois, diga em uma frase por que esse par seria mais fácil de tratar com NYSIIS do que com Soundex puro (sem considerar reversão de string).",
+    "gabarito": "Para 'allen': sem transformação de início ou fim. Primeira letra 'a'. Letra 'l' é adicionada (diferente de 'a') -> 'al'. Segundo 'l' é igual ao anterior, não é adicionado. 'e' vira 'a' pela regra de redução de vogal e é adicionado (diferente de 'l') -> 'ala'. 'n' é adicionado (diferente de 'a') -> 'alan'. Nenhuma regra final se aplica. Código: 'alan'. Para 'allan': mesmo processo, só que o quarto caractere já é 'a' (não precisa de redução de vogal) e é adicionado por ser diferente do 'l' anterior -> 'ala'; depois 'n' é adicionado -> 'alan'. Código: 'alan'. Os dois caem no mesmo bloco. Isso ocorre porque Soundex trataria 'e' e 'a' como o mesmo dígito zero (removido), mas a diferença no número de 'l's consecutivos e a presença de vogais diferentes no meio da palavra não geram divergência no NYSIIS graças à regra de deduplicação de letras consecutivas e à normalização de vogais para 'a', algo que o Soundex também faz de forma parecida, mas NYSIIS preserva mais a estrutura da palavra sendo por isso considerado mais informativo.",
+    "fontes": [
+      "Christen (2012), Data Matching, seç. 4.3.4, p. 73-74",
+      "Christen (2012), Data Matching, seç. 4.2, p. 69-71",
+      "Christen, P. (2012). A survey of indexing techniques for scalable record linkage and deduplication. IEEE TKDE, 24(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        69,
+        77
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3070,
+      "pos_palavras_chave": 7,
+      "aprovados": 5
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 183,
+      "pos_palavras_chave": 3,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 4,
+      "aprovados": 3
+    }
+  },
+  "saude": "atencao"
+}
