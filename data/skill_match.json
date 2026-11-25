@@ -453,6 +453,11 @@
   "nivel": "tem",
   "nome": "candidate generation"
  },
+ "carin blue button": {
+  "motivo": "sem evidência de FHIR/interoperabilidade saúde no currículo",
+  "nivel": "nao",
+  "nome": "CARIN Blue Button"
+ },
  "catalog matching": {
   "motivo": "equivalente a record linkage/entity matching que já faz",
   "nivel": "tem",
@@ -703,10 +708,20 @@
   "nivel": "parcial",
   "nome": "CVI"
  },
+ "cvx": {
+  "motivo": "Sem evidência de códigos de vacinação CVX no currículo",
+  "nivel": "nao",
+  "nome": "CVX"
+ },
  "cypher": {
   "motivo": "sem evidência de uso de Neo4j/Cypher",
   "nivel": "nao",
   "nome": "Cypher"
+ },
+ "da vinci implementation guides": {
+  "motivo": "nenhuma menção a HL7 FHIR Da Vinci",
+  "nivel": "nao",
+  "nome": "Da Vinci implementation guides"
  },
  "dag": {
   "motivo": "pipelines ETL implicam DAGs",
@@ -1278,6 +1293,11 @@
   "nivel": "nao",
   "nome": "external APIs (FactSet, SEC tools)"
  },
+ "fabric data factory": {
+  "motivo": "ferramenta Microsoft específica, sem evidência",
+  "nivel": "nao",
+  "nome": "Fabric Data Factory"
+ },
  "false-positive optimisation": {
   "motivo": "Redução de falsos positivos em record linkage",
   "nivel": "tem",
@@ -1632,6 +1652,11 @@
   "motivo": "Ferramenta de reverse ETL específica não mencionada",
   "nivel": "nao",
   "nome": "Hightouch"
+ },
+ "hipaa": {
+  "motivo": "Trabalho no Brasil, sem menção a conformidade HIPAA",
+  "nivel": "nao",
+  "nome": "HIPAA"
  },
  "hl7": {
   "motivo": "sem evidência de padrão de interoperabilidade em saúde",
@@ -2367,6 +2392,11 @@
   "motivo": "sem evidência",
   "nivel": "nao",
   "nome": "OIDC"
+ },
+ "onelake": {
+  "motivo": "plataforma específica não mencionada no currículo",
+  "nivel": "nao",
+  "nome": "OneLake"
  },
  "ontology": {
   "motivo": "sem evidência de modelagem ontológica",
@@ -3207,6 +3237,11 @@
   "motivo": "sem evidência de MDM específico",
   "nivel": "nao",
   "nome": "Stibo STEP"
+ },
+ "stibo systems": {
+  "motivo": "conceitos MDM próximos, mas não usa Stibo",
+  "nivel": "parcial",
+  "nome": "Stibo Systems"
  },
  "structured output": {
   "motivo": "pipelines estruturados, não explícito em LLM",

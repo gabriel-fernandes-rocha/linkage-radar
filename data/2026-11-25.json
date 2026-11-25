@@ -1,0 +1,444 @@
+{
+  "data": "2026-11-25",
+  "gerado_em": "2026-11-25T02:25-03:00",
+  "llm": true,
+  "serpapi_orcamento": 9,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "MDM Technical Architect",
+      "url": "https://himalayas.app/companies/marlabs-inc/jobs/mdm-technical-architect",
+      "empresa": "Marlabs Inc.",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-24",
+      "score": 16,
+      "juiz": "anthropic",
+      "motivo": "Vaga de MDM Technical Architect centrada em entity resolution, match strategies, survivorship e arquitetura de dados mestres em cloud.",
+      "resumo": "Marlabs Inc. busca MDM Technical Architect para definir arquitetura end-to-end de identity resolution, match strategies, survivorship e integração em ecossistema Microsoft Fabric com golden records.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "entity resolution",
+          "Microsoft Fabric",
+          "OneLake",
+          "Fabric Data Factory",
+          "dbt",
+          "Azure",
+          "Power BI"
+        ],
+        "desejaveis": [
+          "Profisee",
+          "Informatica MDM",
+          "Reltio",
+          "Ataccama",
+          "Stibo Systems"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 10,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.02,
+      "compat_detalhe": {
+        "habilidades": 12,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "pede 10+ anos (você tem 2.9)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Master Data Management",
+          "Microsoft Fabric",
+          "OneLake",
+          "Fabric Data Factory",
+          "dbt",
+          "Azure",
+          "Power BI"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "MDM Subject Matter Expert",
+      "url": "https://himalayas.app/companies/marlabs-inc/jobs/mdm-subject-matter-expert",
+      "empresa": "Marlabs Inc.",
+      "local": "Remoto · United States",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-25",
+      "score": 13,
+      "juiz": "anthropic",
+      "motivo": "Vaga de MDM focada em identity resolution, golden record design, matching e survivorship, competências centrais do perfil.",
+      "resumo": "Marlabs Inc. busca MDM Subject Matter Expert para design de enterprise identity resolution, golden records, matching, survivorship e data governance em implementações reais de MDM.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "entity resolution",
+          "data governance",
+          "data quality"
+        ],
+        "desejaveis": [
+          "Profisee",
+          "Informatica MDM",
+          "Reltio",
+          "Ataccama",
+          "Stibo Systems"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": 12,
+      "ingles": "fluente",
+      "foco_er": 0.9,
+      "encaixe": 0.03,
+      "compat_detalhe": {
+        "habilidades": 49,
+        "senioridade": 40,
+        "local": 12,
+        "ingles": 85,
+        "foco": 98,
+        "senioridade_txt": "pede 12+ anos (você tem 2.9)",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [
+          "data governance"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Remote Data​/ML Engineer — Python, NLP & Entity Resolution",
+      "url": "https://www.learn4good.com/jobs/online_remote/software_development/5652056539/e/",
+      "empresa": "Python Software Foundation",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-20",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Data/ML Engineer focada em entity resolution, information extraction e NLP com Python, alinhada ao stack e especialização do perfil.",
+      "resumo": "Python Software Foundation contrata Data/ML Engineer para construir pipelines de entity resolution, information extraction e avaliação de qualidade em dados abertos multilíngues.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "entity resolution",
+          "NLP",
+          "LLMs"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.07,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 85,
+        "local": 12,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [],
+        "parciais": [
+          "NLP",
+          "LLMs"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Quantexa Lead Developer | Entity Resolution & Scoring",
+      "url": "https://www.jobleads.com/us/job/quantexa-lead-developer-entity-resolution-scoring--united-states--e0c77bf807e1821fd533750c3b2e0bdac",
+      "empresa": "Matrix Global",
+      "local": "Anywhere",
+      "fonte": "Google Jobs",
+      "publicada_em": "2026-11-16",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Quantexa Lead Developer focada em entity resolution, scoring, data governance e CDE definition, tecnologias de matching determinístico/probabilístico.",
+      "resumo": "Matrix Global busca Quantexa Lead Developer para design e entrega de soluções end-to-end com entity resolution, scoring, e model calibration em data governance.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [
+          "Quantexa",
+          "entity resolution",
+          "data governance"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.8,
+      "encaixe": 0.25,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 85,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Quantexa"
+        ],
+        "parciais": [
+          "data governance"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Science & Engineering Fellow at Multiplier - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/data-science-engineering-fellow-at-multiplier-4492442621",
+      "empresa": "",
+      "local": "",
+      "fonte": "Post · linkedin.com",
+      "social": true,
+      "publicada_em": null,
+      "score": 10,
+      "juiz": "anthropic",
+      "motivo": "Post anunciando vaga concreta de Fellowship em data science/engineering com requisito explícito de record linkage, entity resolution, fuzzy matching ou deduplication.",
+      "resumo": "Multiplier contrata Data Science & Engineering Fellow com experiência em record linkage, entity resolution, fuzzy matching ou deduplication em qualquer domínio.",
+      "confianca": 0.88,
+      "requisitos": {
+        "obrigatorios": [
+          "record linkage",
+          "entity resolution",
+          "fuzzy matching",
+          "deduplication"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 1.0,
+      "encaixe": 0.51,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 100,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Lead Healthcare Data Engineer en Intellias — España - LinkedIn",
+      "url": "https://es.linkedin.com/jobs/view/lead-healthcare-data-engineer-at-intellias-4487017212",
+      "texto": "Experience with Master Patient Index (MPI), patient matching, identity resolution, or large-scale record linkage. Experience with payer data exchange, including CARIN Blue Button, Da Vinci implementation guides, or similar standards. Experience working with pharmacy, laboratory, or other specialized healthcare datasets.",
+      "data": "Nov 3, 2026",
+      "fonte": "LinkedIn Jobs",
+      "score": 8,
+      "juiz": "anthropic",
+      "motivo": "Lead Healthcare Data Engineer com foco explícito em Master Patient Index, patient matching, identity resolution e record linkage em larga escala, alinhado ao perfil do leitor em saúde pública.",
+      "resumo": "Vaga de Lead Healthcare Data Engineer em Intellias (Espanha) focada em Master Patient Index, patient matching, identity resolution e record linkage em contexto de healthcare data exchange.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "MPI",
+          "patient matching",
+          "identity resolution",
+          "record linkage"
+        ],
+        "desejaveis": [
+          "CARIN Blue Button",
+          "Da Vinci implementation guides"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.34,
+      "compat_detalhe": {
+        "habilidades": 66,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "MPI"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Uncertainty-Aware Candidate Generation for Entity Linking in Cyber Threat Intelligence",
+      "url": "http://arxiv.org/abs/2611.33086v1",
+      "autores": "Nasser Alkhulaifi et al.",
+      "data": "2026-11-24",
+      "fonte": "arXiv",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Paper sobre entity resolution com foco em tratamento de incerteza em pipelines de NER e entity linking, técnicas aplicáveis a matching de registros sob ambiguidade.",
+      "resumo": "Paper que apresenta abordagem uncertainty-aware para entity resolution, capturando sinais de incerteza em NER e leveraging-os em entity linking via Monte Carlo dropout e fuzzy entropy para melhorar recuperação de candidatos sob ambiguidade.",
+      "confianca": 0.92
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search",
+      "url": "https://doi.org/10.48550/arxiv.2611.27910",
+      "autores": "Aadharsh Kannan et al.",
+      "data": "2026-11-20",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Paper focado em entity matching e entity resolution com embeddings interpretáveis para matching de registros e recuperação, diretamente alinhado ao problema de record linkage.",
+      "resumo": "Paper propõe embeddings interpretáveis baseadas em decision columns para entity matching e busca, decomposição de similaridade por questão e explicabilidade exata para matches aceitos em sistemas de dados.",
+      "confianca": 0.88
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 138,
+  "vagas_arquivadas_total": 244,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 2
+  },
+  "pilula_mercado": "dbt",
+  "brasil": {
+    "novas": 5,
+    "abertas": 41,
+    "arquivadas": 85,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 55,
+    "semana": 8,
+    "tema": "Por que indexar e como definir blocking keys",
+    "tipo": "laboratorio",
+    "titulo": "Laboratório: Medir tamanho dos blocos e pares perdidos com 3 blocking keys diferentes",
+    "modulo": "Semana 8: Por que indexar e como definir blocking keys",
+    "versao": 2,
+    "objetivo": "Medir, com dados reais (FEBRL1), como três definições diferentes de blocking key afetam o número de pares candidatos gerados e a proporção de pares verdadeiros perdidos (missed matches), relacionando o resultado ao trade-off descrito por Christen (2012, Seção 4.2, p.69-70).",
+    "contexto": "Você recebe uma base de clientes com duplicatas sintéticas (FEBRL1), usada para testes de deduplicação, e precisa decidir qual chave de blocking usar antes de rodar comparação detalhada. Three candidatos de BKV estão disponíveis: código postal exato, Soundex do primeiro nome e NYSIIS do sobrenome. Seu gerente quer um número que justifique a escolha: quantos pares seriam comparados e quantos matches verdadeiros seriam perdidos em cada opção.",
+    "passos": [
+      "Carregue load_febrl1(), que já traz uma coluna 'match_id' indicando quais registros são duplicatas do mesmo indivíduo.",
+      "Gere os pares verdadeiros (true matches) agrupando registros por match_id (todas as combinações dentro do mesmo grupo).",
+      "Para cada uma das 3 blocking keys (postcode exato, Soundex(given_name), NYSIIS(surname)), use recordlinkage.Index().block() para gerar os pares candidatos.",
+      "Calcule o número total de pares candidatos gerados por cada chave (proxy de custo computacional).",
+      "Calcule a Reduction Ratio (RR = 1 - pares_candidatos / pares_totais_possiveis) e a Pairs Completeness (PC = pares_verdadeiros_capturados / pares_verdadeiros_totais) para cada chave.",
+      "Monte uma tabela comparando as 3 chaves nessas duas métricas e identifique qual chave tem blocos mais equilibrados (menor desvio no tamanho dos blocos, conforme Christen p.69)."
+    ],
+    "codigo": "import recordlinkage\nfrom recordlinkage.datasets import load_febrl1\nimport jellyfish\nimport itertools\n\ndf = load_febrl1()\ndf['soundex_gn'] = df['given_name'].astype(str).apply(jellyfish.soundex)\ndf['nysiis_sn'] = df['surname'].astype(str).apply(jellyfish.nysiis)\n\ntrue_pairs = set()\nfor mid, grp in df.groupby('match_id'):\n    ids = list(grp.index)\n    if mid != -1 and len(ids) > 1:\n        for a, b in itertools.combinations(ids, 2):\n            true_pairs.add(frozenset((a, b)))\n\nn_total = len(df) * (len(df) - 1) // 2\nresultados = {}\nfor key, col in [('postcode_exact','postcode'), ('soundex_given_name','soundex_gn'), ('nysiis_surname','nysiis_sn')]:\n    idx = recordlinkage.Index()\n    idx.block(col)\n    pairs = idx.index(df)\n    cand = set(frozenset(p) for p in pairs)\n    pc = len(cand & true_pairs) / len(true_pairs)\n    rr = 1 - len(cand) / n_total\n    resultados[key] = {'n_pares_candidatos': len(cand), 'RR': round(rr,4), 'PC': round(pc,4)}\n\nfor k, v in resultados.items():\n    print(k, v)",
+    "como_avaliar": "O resultado está correto se: (1) a soma dos pares candidatos de cada chave for bem menor que n_total (prova de que o blocking está reduzindo custo); (2) PC=1.0 significa nenhum match verdadeiro perdido por essa chave; (3) a chave com maior RR tende a ter menor PC (trade-off), confirmando a Seção 4.2 do livro (blocos pequenos = menos custo, mais risco de perder match). Se alguma chave tiver PC muito baixo (ex: <0.5), investigue se a coluna usada como BKV tem muitos erros de digitação ou alta cardinalidade repetida.",
+    "desafio": "Combine as 3 blocking keys usando união dos pares candidatos (como sugerido no livro, p.69-70: usar múltiplas definições e unir os resultados). Calcule a nova RR e PC combinadas. Depois, responda: a RR combinada necessariamente cai em relação à melhor chave isolada? Por quê, em termos de teoria de conjuntos?",
+    "gabarito": "A união de candidatos de 3 chaves sempre gera |A ∪ B ∪ C| <= |A|+|B|+|C|, logo o número total de pares candidatos aumenta (ou no mínimo não diminui) em relação a qualquer chave isolada, o que reduz a RR (menos economia computacional). Em contrapartida, a PC da união é sempre >= a PC de qualquer chave isolada, porque um par verdadeiro só é perdido se não aparecer em NENHUMA das chaves (interseção dos erros, evento raro). Isso reproduz exatamente o argumento do livro (p.69-70): múltiplas blocking keys aumentam a chance de que pelo menos uma delas agrupe corretamente o par, à custa de mais pares a comparar. Na prática, FEBRL1 tem poucos erros de digitação, então mesmo soundex/nysiis isolados devem atingir PC alto (>0.95), mas postcode exato tende a ter RR mais alta e levemente menor PC se houver erro de digitação no CEP.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 4.2, p.69-70 (trade-off entre número e tamanho de blocos; múltiplas blocking keys).",
+      "Christen, P. (2012). A survey of indexing techniques for scalable record linkage and deduplication. IEEE TKDE, 24(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        69,
+        77
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3193,
+      "pos_palavras_chave": 6,
+      "aprovados": 5
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 186,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 2,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

@@ -1,0 +1,93 @@
+===== coleta 2026-11-25 02:40 =====
+INFO serpapi: 9 restantes no mês; orçamento de hoje = 9 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 100
+INFO jobs/remotive: 225
+INFO jobs/greenhouse: 1396
+INFO jobs/lever: 305
+INFO jobs/ashby: 51
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'data linkage analyst': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 3
+INFO jobs/gupy: 172
+INFO jobs/himalayas: 103
+INFO jobs/jobicy: 150
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 371
+INFO jobs/social_linkedin/ddg: 2 aceitos de 2
+INFO jobs/social_linkedin/google: 0 aceitos de 8
+INFO jobs/social_posts: 2
+INFO linkedin_guest: 34 vagas, 25 descrições abertas, 32 consultas no total
+INFO jobs/linkedin_guest: 34
+INFO judge: tokens in=2384 out=740
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=5060 out=710
+INFO requisitos: tokens in=2068 out=175
+INFO vagas: {'brutos': 3193, 'pos_palavras_chave': 6, 'aprovados': 5}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 11
+INFO papers/openalex: 175
+INFO judge: tokens in=1666 out=288
+INFO papers: {'brutos': 186, 'pos_palavras_chave': 2, 'aprovados': 2}
+INFO linkedin/ddg: 9 aceitos de 9
+INFO linkedin: 9 candidatos
+INFO judge: tokens in=1283 out=287
+INFO requisitos: tokens in=2113 out=190
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 2, 'aprovados': 0}
+INFO open_jobs: fechou Senior AI Platform Engineer en Encora Inc. - LinkedIn México
+INFO open_jobs: fechou Senior Applied AI Engineer | LLMs | RAG | Claude Code | Hybrid - LinkedIn
+INFO open_jobs: 139 abertas (6 novas)
+INFO open_jobs: 1 vagas do LinkedIn completadas pela página pública, 1 encerradas
+INFO requisitos: tokens in=4242 out=286
+INFO requisitos: tokens in=5588 out=702
+INFO requisitos: tokens in=6513 out=909
+INFO requisitos: tokens in=6226 out=655
+INFO requisitos: tokens in=8676 out=978
+INFO requisitos: tokens in=6740 out=1006
+INFO requisitos: tokens in=6185 out=933
+INFO requisitos: tokens in=7159 out=657
+INFO requisitos: tokens in=6666 out=772
+INFO mercado amplo: +40 vagas na amostra (total 240)
+INFO mercado: 243 vagas no nicho, 240 no mercado amplo
+INFO network/ddg: 5 aceitos de 5
+INFO network: 5 perfis após a consulta
+INFO judge: tokens in=1725 out=743
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 6/9)
+INFO network: 91 pessoas (0 novas), 53 empresas (2 novas)
+INFO carreira: tokens in=1458 out=1743
+INFO brasil/inhire: 214
+INFO brasil/gupy: 333
+INFO google_jobs 'dados mestres': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 40 vagas, 40 descrições abertas, 91 consultas no total
+INFO brasil/linkedin_guest_br: 40
+INFO brasil/linkedin_local: 4
+INFO jobs/greenhouse 'thoughtworks' indisponível (404 Client Error: Not Found for url: https://boards-api.gree)
+INFO brasil/greenhouse: 946
+INFO brasil/lever: 146
+INFO brasil/ashby: 114
+INFO brasil: 5000 brutas, 5 candidatas para o juiz
+INFO judge: tokens in=1856 out=848
+INFO requisitos: tokens in=3677 out=205
+INFO open_jobs: fechou Governança de Dados - Data Quality
+INFO open_jobs: fechou Data Integration & ETL Engineer
+INFO open_jobs: 41 abertas (1 novas)
+INFO mercado: 85 vagas no nicho, 240 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 9/9)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 9/9)
+INFO network: 52 pessoas (0 novas), 67 empresas (1 novas)
+INFO brasil: {'novas': 5, 'abertas': 41, 'arquivadas': 85, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: problema (2 alertas)
+INFO OK → data/2026-11-25.json
+

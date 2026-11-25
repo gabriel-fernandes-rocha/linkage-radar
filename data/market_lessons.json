@@ -1,5 +1,53 @@
 [
  {
+  "data": "2026-11-25",
+  "habilidade": "dbt",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "dbt (data build tool) é uma ferramenta de transformação de dados que roda SQL versionado, modular e testável dentro do data warehouse (Snowflake, BigQuery, Redshift etc). Ele organiza modelos SQL em camadas (staging, intermediate, marts), gerencia dependências automaticamente via ref() e gera documentação e testes de qualidade de dados. É o padrão de mercado para transformação analítica em times de dados modernos.",
+  "por_que_pedem": "Vagas de MDM e entity resolution frequentemente envolvem pipelines de dados corporativos em warehouses cloud (Snowflake, BigQuery), e dbt virou o padrão para versionar e testar as transformações SQL antes de chegar nas etapas de matching. Empresas querem engenheiros que consigam integrar dbt com pipelines de resolução de entidades, garantindo rastreabilidade e qualidade dos dados de origem.",
+  "ponte_com_o_que_voce_sabe": "Você já pensa em pipelines como DAGs de transformação (ingestão, normalização, blocking, scoring), que é exatamente a filosofia do dbt. Sua experiência com SQL avançado, modelagem de dados e testes de qualidade (QA de matching) se traduz quase diretamente para os conceitos de models, tests e macros do dbt. A curva de aprendizado é baixa porque o raciocínio de pipeline declarativo já é seu dia a dia.",
+  "minimo_para_ficar_apto": [
+   "Entender a estrutura de um projeto dbt (models, sources, seeds, snapshots, tests)",
+   "Saber escrever um model SQL usando ref() e source()",
+   "Conhecer os testes genéricos (unique, not_null, relationships, accepted_values)",
+   "Saber rodar dbt run, dbt test e dbt docs generate localmente",
+   "Entender a diferença entre dbt Core e dbt Cloud"
+  ],
+  "plano_rapido": [
+   "2h: ler a documentação oficial do dbt Labs (Quickstart) e entender conceitos básicos",
+   "3h: fazer o tutorial oficial dbt Fundamentals (dbt Labs, gratuito) usando um warehouse de teste (ex: BigQuery sandbox ou DuckDB)",
+   "3h: criar um projeto pequeno transformando dados fictícios com staging + marts",
+   "2h: adicionar testes customizados e documentação (schema.yml)",
+   "1h: estudar integração dbt com Snowflake, já que aparece nas vagas-alvo"
+  ],
+  "mini_projeto": "Criar um projeto dbt que simula uma pipeline de MDM: ingerir uma tabela bruta de registros de pessoas (nome, documento, endereço) via source, criar models de staging para normalização (lower, trim, remoção de acentos), um model intermediate aplicando regras de deduplicação simples (ex: flag de duplicata por documento), e um mart final com métricas de qualidade. Adicionar testes (unique no documento final, not_null em campos chave) e gerar a documentação com dbt docs generate. Pode usar DuckDB ou Snowflake free tier para rodar localmente.",
+  "como_colocar_no_curriculo": "Conhecimento prático em dbt (dbt Core) para modelagem, testes e documentação de pipelines de transformação SQL, aplicado em projeto pessoal de qualidade e deduplicação de dados mestres (MDM).",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "O que é dbt e qual problema ele resolve?",
+    "resposta": "dbt é uma ferramenta que permite escrever transformações de dados em SQL de forma modular, versionada e testável, aplicando engenharia de software (DRY, testes, CI/CD) ao processo de ELT dentro do warehouse."
+   },
+   {
+    "pergunta": "Qual a diferença entre dbt e uma orquestração tradicional com Airflow?",
+    "resposta": "dbt foca na camada de transformação (o T do ELT), gerenciando dependências entre models SQL e testes de qualidade; Airflow orquestra pipelines mais amplos, incluindo extração, carga e até a execução do dbt como uma task."
+   },
+   {
+    "pergunta": "Como você garantiria qualidade de dados em um pipeline MDM usando dbt?",
+    "resposta": "Usaria tests genéricos (unique, not_null, relationships) nos campos chave de entidade resolvida, tests customizados para regras de negócio específicas de matching, e dbt docs para rastreabilidade do linhagem dos dados."
+   },
+   {
+    "pergunta": "Você já usou dbt em produção?",
+    "resposta": "Ainda não em produção, mas tenho experiência equivalente construindo pipelines de qualidade e QA em Spark/SQL para record linkage; estudei dbt e apliquei os conceitos em projeto próprio simulando um fluxo de MDM."
+   }
+  ],
+  "fontes_para_estudar": [
+   "dbt Labs - documentação oficial (docs.getdbt.com)",
+   "dbt Fundamentals - curso gratuito da dbt Labs",
+   "Documentação oficial do Snowflake sobre integração com dbt"
+  ]
+ },
+ {
   "data": "2026-11-24",
   "habilidade": "Vertex AI",
   "pct_vagas": 2,
