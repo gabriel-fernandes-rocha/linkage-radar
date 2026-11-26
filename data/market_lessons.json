@@ -1,5 +1,53 @@
 [
  {
+  "data": "2026-11-26",
+  "habilidade": "Profisee",
+  "pct_vagas": 2,
+  "nivel_atual": "nao",
+  "o_que_e": "Profisee é uma plataforma comercial de Master Data Management (MDM) construída sobre a stack Microsoft (SQL Server, Azure), que oferece governança de dados mestre, modelagem de domínios, workflows de aprovação, matching/merge de registros e integração com Data Governance. É low-code, voltada para times de negócio e TI híbridos, concorrendo com Informatica MDM, Reltio e SAP MDG.",
+  "por_que_pedem": "Vagas de MDM Architect/SME pedem Profisee porque empresas que já compraram a licença precisam de alguém que configure modelos de domínio, regras de match/merge, hierarquias e workflows dentro da ferramenta específica, sem reescrever lógica do zero. É mais uma habilidade de 'ferramenta corporativa' do que de engenharia pura, então aparece como desejável, não obrigatória.",
+  "ponte_com_o_que_voce_sabe": "Você já domina a parte mais difícil de qualquer MDM: o motor de matching (determinístico/probabilístico, blocking, scoring) que o Splink implementa de forma open-source e mais sofisticada do que a maioria das ferramentas comerciais. Profisee por baixo dos panos faz algo conceitualmente parecido mas com UI low-code e regras configuráveis; o salto é entender a terminologia e o fluxo de configuração da ferramenta, não aprender matching de novo. Sua experiência com registros em escala (saúde, proteção social) é exatamente o caso de uso central do MDM corporativo.",
+  "minimo_para_ficar_apto": [
+   "Entender os conceitos de MDM: domínios mestre (cliente, produto, fornecedor), golden record, survivorship rules, hierarquias",
+   "Saber explicar o que é Profisee em alto nível: arquitetura (.NET/SQL Server/Azure), módulos de matching, workflow de stewardship, e como ele se compara a Informatica/Reltio",
+   "Conseguir mapear seu vocabulário (blocking, scoring, clusterização) para os termos do Profisee (match rules, merge rules, survivorship)",
+   "Assistir 1-2 demos oficiais da Profisee para entender a interface e o fluxo de configuração de um domínio"
+  ],
+  "plano_rapido": [
+   "2h: ler a documentação oficial da Profisee (site e docs.profisee.com) sobre arquitetura e conceitos de match/merge",
+   "2h: assistir webinars/demos oficiais da Profisee no YouTube (canal oficial) sobre configuração de domínio e survivorship rules",
+   "1h: comparar mentalmente Profisee vs Splink/Elasticsearch, anotando equivalências de conceitos para usar em entrevista",
+   "1h: revisar conceitos gerais de MDM (DAMA-DMBOK, capítulo de Master Data) para falar a língua de governança de dados",
+   "1h: preparar 3-4 frases prontas conectando sua experiência em record linkage com os conceitos de golden record e survivorship do Profisee"
+  ],
+  "mini_projeto": "Não compensa tentar simular Profisee (é proprietário, sem trial fácil e sem valor de portfólio). Em vez disso, documente um case curto escrito: 'Como eu desenharia a camada de matching de um domínio de Cliente em uma plataforma MDM tipo Profisee usando os mesmos princípios que apliquei no meu pipeline Splink/Elasticsearch', mostrando blocking, regras de match, scoring probabilístico e survivorship rules. Isso prova transferência de conhecimento sem precisar da ferramenta.",
+  "como_colocar_no_curriculo": "Não coloque 'Profisee' como skill no currículo já que você nunca usou; em vez disso, mantenha 'Record Linkage e Entity Resolution em escala (Splink, Elasticsearch)' e, se perguntado, diga que tem conhecimento conceitual de plataformas MDM comerciais (Profisee, Informatica MDM) e facilidade de aprendizado rápido dado domínio do motor de matching subjacente.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Você já trabalhou com Profisee ou outra ferramenta de MDM comercial?",
+    "resposta": "Não trabalhei diretamente com Profisee, mas tenho experiência profunda construindo o núcleo de qualquer solução MDM: pipelines de resolução de entidades com matching determinístico e probabilístico em escala de bilhões de registros usando Splink e Elasticsearch. Os conceitos de blocking, scoring, golden record e survivorship são os mesmos que o Profisee implementa via UI; eu teria curva de aprendizado curta para me adaptar à ferramenta."
+   },
+   {
+    "pergunta": "O que é um golden record e como ele é formado?",
+    "resposta": "É o registro consolidado e mais confiável de uma entidade, formado a partir da fusão de múltiplos registros duplicados ou relacionados, aplicando regras de survivorship (qual fonte ou campo prevalece) após o processo de matching/clusterização identificar quais registros pertencem à mesma entidade real."
+   },
+   {
+    "pergunta": "Como você compararia o processo de match/merge do Profisee com o que você já fez?",
+    "resposta": "Conceitualmente é o mesmo pipeline: normalização, blocking para reduzir comparações, scoring de similaridade (determinístico ou probabilístico) e depois agrupamento/clusterização em entidades únicas, seguido de regras para formar o registro final. Profisee encapsula isso em uma interface low-code com workflows de governança e aprovação manual, enquanto eu implementei essa lógica de forma customizada e escalável com Spark e Splink."
+   },
+   {
+    "pergunta": "Por que vagas de MDM valorizam conhecimento de ferramentas como Profisee além de habilidades de engenharia?",
+    "resposta": "Porque empresas que já investiram em uma plataforma comercial precisam de alguém que configure e mantenha os domínios dentro dela rapidamente, sem necessariamente reescrever a lógica de matching. Mas o conhecimento de engenharia por trás (que eu tenho) é o que garante que as regras configuradas façam sentido e tenham qualidade, o que é mais raro e valioso que apenas saber clicar na ferramenta."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial Profisee (docs.profisee.com)",
+   "Webinars e demos no canal oficial do YouTube da Profisee",
+   "DAMA-DMBOK (capítulo de Master Data Management)",
+   "Documentação comparativa de mercado (Gartner Magic Quadrant for Master Data Management Solutions, resumo público)"
+  ]
+ },
+ {
   "data": "2026-11-25",
   "habilidade": "dbt",
   "pct_vagas": 2,

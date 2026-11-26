@@ -54,7 +54,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "enriquecida": true
   },
@@ -112,7 +112,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -169,7 +169,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -235,69 +235,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-25",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Consultor em Migração de Dados - Dayforce",
-    "url": "https://eu.dev.br/vagas/m4nadr9oworp5gxp-workana-consultor-em-migracao-de-dados-dayforce/",
-    "empresa": "Workana",
-    "local": "Qualquer lugar",
-    "fonte": "Google Jobs (Brasil)",
-    "publicada_em": null,
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "mapeamento de dados",
-      "migracao de dados"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Vaga de consultor em migração de dados de sistemas legados para Dayforce (HRIS), com responsabilidades em extração, transformação, limpeza, mapeamento de dados e garantia de integridade, qualificações muito próximas ao tema.",
-    "resumo": "Consultor em Migração de Dados para Dayforce (trabalho remoto) responsável por extrair, transformar, limpar e carregar dados de sistemas de RH legados (como iSolved) com garantia de integridade.",
-    "confianca": 0.8,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "ETL"
-      ],
-      "desejaveis": [
-        "Dayforce",
-        "iSolved",
-        "Workday",
-        "BambooHR"
-      ]
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "global",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "freelance",
-    "anos_experiencia_min": null,
-    "ingles": "intermediario",
-    "foco_er": 0.1,
-    "encaixe": 0.53,
-    "compat_detalhe": {
-      "habilidades": 56,
-      "senioridade": 85,
-      "local": 100,
-      "ingles": 100,
-      "foco": 86,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "aceita candidatos do mundo todo",
-      "faltam": [],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-18",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -317,7 +255,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil com requisitos diretos e explícitos em entity resolution, entity matching, fuzzy matching e deduplicação, tecnologias centrais do perfil.",
+    "motivo": "Vaga remota no Brasil de Master Data Developer com requisitos explícitos de Entity Resolution, Entity Matching, Deduplication, fuzzy matching e Amazon Neptune, exatamente no escopo do perfil.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -370,10 +308,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T (remoto, Brasil) com foco em entity resolution, entity matching, fuzzy matching e deduplicação utilizando Amazon Neptune, graph databases e Python. Atua em projetos de qualidade de dados mestres com machine learning e integração de múltiplas fontes.",
+    "resumo": "Busca Master Data Developer remoto no Brasil especializado em Entity Resolution, Entity Matching, Deduplication e fuzzy matching com Amazon Neptune e Python.",
     "confianca": 0.98
   },
   {
@@ -438,7 +376,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -500,7 +438,7 @@
       "estimado": false
     },
     "desde": "2026-11-20",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -565,7 +503,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -627,7 +565,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -696,7 +634,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -750,7 +688,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "enriquecida": true
   },
@@ -769,7 +707,7 @@
       "entity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota aceitando Brasil com requisitos de entity resolution e deduplicação em pipelines de dados, ainda que a descrição seja resumida.",
+    "motivo": "Vaga remota aceitando Brasil de AI Senior Engineer Graph com requisitos de Entity Resolution, Deduplication, Data Pipelines e ETL em stack de Neo4j e Kafka.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -820,11 +758,11 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "AI Senior Engineer - Graph na Able (remoto, múltiplos países incluindo Brasil) com requisitos em entity resolution, deduplicação, data pipelines e Neo4j. Trabalha com ETL, Cypher, Python e Kafka em contextos de resolução de entidades e construção de grafos de dados.",
-    "confianca": 0.92
+    "resumo": "Busca AI Senior Engineer Graph remoto (aceitando Brasil) especializado em Entity Resolution, Deduplication, Data Pipelines, Neo4j, Kafka e ETL com Python.",
+    "confianca": 0.95
   },
   {
     "tipo": "vaga",
@@ -891,7 +829,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -964,7 +902,7 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-19"
@@ -1037,8 +975,8 @@
       "estimado": false
     },
     "desde": "2026-11-25",
-    "verificada_em": "2026-11-25",
-    "nova": true
+    "verificada_em": "2026-11-26",
+    "nova": false
   },
   {
     "tipo": "vaga",
@@ -1105,7 +1043,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "enriquecida": true
   },
@@ -1126,7 +1064,7 @@
       "fuzzy matching"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga no Brasil com requisitos centrais e explícitos em entity resolution, entity matching, fuzzy matching e deduplicação, perfeitamente alinhada com a especialização.",
+    "motivo": "Vaga no Brasil de Master Data Developer com requisitos explícitos de Entity Resolution, Entity Matching, Deduplication, fuzzy matching, graph databases e Amazon Neptune.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1178,10 +1116,10 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Master Data Developer na CI&T (Brasil) focado em entity resolution, entity matching, fuzzy matching e deduplicação com Amazon Neptune, graph databases e Python. Trabalha em machine learning e resolução de identidades em ambientes de dados mestres.",
+    "resumo": "Busca Master Data Developer no Brasil especializado em Entity Resolution, Entity Matching, Deduplication, fuzzy matching, graph databases e Amazon Neptune com Python.",
     "confianca": 0.98
   },
   {
@@ -1249,7 +1187,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1304,7 +1242,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1322,7 +1260,7 @@
       "identity resolution"
     ],
     "nao_verificado": true,
-    "motivo": "Vaga remota no Brasil com requisito direto de identity resolution e foco em data quality e governance, alinhada com integração e unificação de identidades.",
+    "motivo": "Vaga remota no Brasil com identity resolution e customer 360 como requisitos centrais, stack técnico (Snowflake, dbt, SQL, ETL) alinhado ao perfil.",
     "trilha": "brasil",
     "requisitos": {
       "obrigatorios": [
@@ -1374,11 +1312,89 @@
       "estimado": true
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "juiz": "anthropic",
-    "resumo": "Senior Data Engineer (Snowflake) na Massive Rocket (remoto, Brasil) responsável por identity resolution, data governance e data quality. Utiliza Snowflake, ETL, dbt, SQL e plataformas como Braze, Segment e mParticle para construir visão única do cliente (Customer 360).",
-    "confianca": 0.9
+    "resumo": "Vaga de Senior Data Engineer focada em identity resolution, customer 360 e data governance com Snowflake, dbt e ETL. Requisitos incluem plataformas de CDP (Braze, mParticle, Segment) para unificação de identidades de clientes.",
+    "confianca": 0.95
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Engenheiro(a) de Integração de Dados Pl. - Curitiba/PR",
+    "url": "https://prophixlatam.gupy.io/job/eyJqb2JJZCI6MTI5NDY3MjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+    "empresa": "Prophix Latam",
+    "local": "Curitiba, Paraná (híbrido)",
+    "fonte": "Gupy",
+    "publicada_em": "2026-11-26",
+    "score": 1,
+    "categoria": "integracao",
+    "termos": [
+      "data integration",
+      "integracao de dados"
+    ],
+    "juiz": "anthropic",
+    "motivo": "Vaga de Engenheiro de Integração de Dados em Curitiba (híbrido), viabilizando conexões e automatização entre fontes de dados e plataforma, alinhado com integração de dados entre sistemas.",
+    "resumo": "Busca Engenheiro de Integração de Dados na Prophix para viabilizar conexões contínuas e automatizadas entre fontes de dados de clientes e a plataforma, integrando e otimizando dados.",
+    "confianca": 0.95,
+    "trilha": "brasil",
+    "requisitos": {
+      "obrigatorios": [
+        "JavaScript",
+        "Java",
+        "Python",
+        "SQL",
+        "SOQL",
+        "AWS",
+        "SQL Server",
+        "Windows",
+        "REST",
+        "JSON"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "pleno",
+    "modalidade": "hibrido",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "Brazil"
+      ],
+      "cidades": [
+        "Curitiba"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "clt_ou_fulltime",
+    "anos_experiencia_min": 3,
+    "ingles": "fluente",
+    "foco_er": 0,
+    "encaixe": 0.35,
+    "compat_detalhe": {
+      "habilidades": 35,
+      "senioridade": 100,
+      "local": 85,
+      "ingles": 85,
+      "foco": 85,
+      "senioridade_txt": "pede 3+ anos (você tem 2.9)",
+      "local_txt": "hibrido, no Brasil (talvez mudança de cidade)",
+      "faltam": [
+        "JavaScript",
+        "Java",
+        "SOQL",
+        "AWS"
+      ],
+      "parciais": [
+        "SQL",
+        "SQL Server",
+        "Windows",
+        "REST",
+        "JSON"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-26",
+    "verificada_em": "2026-11-26",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -1436,84 +1452,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-25",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Analista de TI Pleno (Migração de Dados)",
-    "url": "https://www.linkedin.com/jobs/view/4491956346",
-    "empresa": "Lora Clinic",
-    "local": "Poços de Caldas, MG",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "publicada_em": "2026-11-20",
-    "score": 2,
-    "categoria": "integracao",
-    "termos": [
-      "de-para",
-      "limpeza de dados",
-      "mapeamento de dados",
-      "migracao de dados"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Migração de dados entre sistemas legados com mapeamento de campos, ETL, validação e integração de múltiplas fontes (SQL Server, PostgreSQL, MySQL, Firebird).",
-    "resumo": "Vaga presencial em Poços de Caldas para Analista de TI Pleno focada em migração de dados de sistemas legados para a plataforma Lora Clinic, incluindo mapeamento de-para, ETL, validação de integridade e migração de imagens DICOM.",
-    "confianca": 0.92,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "PostgreSQL",
-        "SQL Server",
-        "MySQL",
-        "Firebird"
-      ],
-      "desejaveis": [
-        "Python",
-        "AWS",
-        "DICOM",
-        "HL7",
-        "TISS/TUSS"
-      ]
-    },
-    "senioridade": "pleno",
-    "modalidade": "presencial",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "Brasil"
-      ],
-      "cidades": [
-        "Poços de Caldas"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.1,
-    "encaixe": 0.34,
-    "compat_detalhe": {
-      "habilidades": 27,
-      "senioridade": 100,
-      "local": 75,
-      "ingles": 100,
-      "foco": 86,
-      "senioridade_txt": "nível pleno",
-      "local_txt": "presencial, no Brasil (talvez mudança de cidade)",
-      "faltam": [
-        "PostgreSQL",
-        "Firebird"
-      ],
-      "parciais": [
-        "SQL",
-        "SQL Server",
-        "MySQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-22",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1580,7 +1519,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1651,7 +1590,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1723,67 +1662,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-25",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Data Quality Analyst - Remote Work",
-    "url": "https://www.linkedin.com/jobs/view/4492042167",
-    "empresa": "INDI Staffing Services",
-    "local": "Brasil",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "publicada_em": "2026-11-18",
-    "score": 0,
-    "categoria": "integracao",
-    "termos": [
-      "data quality"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Vaga de data quality analyst focada em validação de integridade, consistência e confiabilidade de datasets e pipelines ETL/ELT, com testes de transformação e detecção de anomalias.",
-    "resumo": "Analista de qualidade de dados responsável por validar integridade, consistência e confiabilidade de grandes datasets em pipelines ETL/ELT através de testes de transformação e detecção de anomalias.",
-    "confianca": 0.8,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SQL",
-        "ETL"
-      ],
-      "desejaveis": [
-        "Databricks"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Brazil"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": 5,
-    "ingles": "fluente",
-    "foco_er": 0.0,
-    "encaixe": 0.31,
-    "compat_detalhe": {
-      "habilidades": 56,
-      "senioridade": 60,
-      "local": 100,
-      "ingles": 85,
-      "foco": 85,
-      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
-      "local_txt": "remoto e aceita Brasil/LATAM",
-      "faltam": [],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-19",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1832,7 +1711,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1881,7 +1760,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -1953,7 +1832,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2044,7 +1923,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2109,7 +1988,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12"
@@ -2171,7 +2050,7 @@
       "estimado": false
     },
     "desde": "2026-10-18",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2249,7 +2128,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false,
     "enriquecida": true
   },
@@ -2322,7 +2201,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2401,7 +2280,7 @@
       "estimado": false
     },
     "desde": "2026-11-24",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2480,77 +2359,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-25",
-    "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Consultor Funcional Data Owner SAP",
-    "url": "https://www.linkedin.com/jobs/view/4489508623",
-    "empresa": "Addvisor Group",
-    "local": "Campinas, SP",
-    "fonte": "LinkedIn Jobs (Brasil)",
-    "publicada_em": "2026-11-13",
-    "score": 1,
-    "categoria": "integracao",
-    "termos": [
-      "data migration",
-      "data quality",
-      "data reconciliation"
-    ],
-    "juiz": "anthropic",
-    "motivo": "Consultor SAP sênior com experiência em Data Migration, Data Mapping, Data Quality e Data Reconciliation em migrações S/4HANA, core de integração de dados e matching de registros entre sistemas.",
-    "resumo": "Consultor Funcional Data Owner sênior em projetos de migração SAP S/4HANA com especialidade em Data Migration, Data Mapping, Data Quality e Data Reconciliation. Experiência em Mock Loads, Cutover e Go-live com conhecimento em SAP MDM e ferramentas como Migration Cockpit e Syniti.",
-    "confianca": 0.82,
-    "trilha": "brasil",
-    "requisitos": {
-      "obrigatorios": [
-        "SAP",
-        "SAP S/4HANA",
-        "SAP MM"
-      ],
-      "desejaveis": [
-        "SAP Migration Cockpit",
-        "BODS",
-        "Syniti",
-        "SAP MDG"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "Brazil"
-      ],
-      "cidades": [
-        "Campinas"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.2,
-    "encaixe": 0.2,
-    "compat_detalhe": {
-      "habilidades": 0,
-      "senioridade": 75,
-      "local": 100,
-      "ingles": 85,
-      "foco": 88,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto e aceita Brasil/LATAM",
-      "faltam": [
-        "SAP",
-        "SAP S/4HANA",
-        "SAP MM"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-11-14",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2625,7 +2434,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2696,7 +2505,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   },
   {
@@ -2766,7 +2575,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-25",
+    "verificada_em": "2026-11-26",
     "nova": false
   }
 ]

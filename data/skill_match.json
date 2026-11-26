@@ -43,6 +43,11 @@
   "nivel": "nao",
   "nome": "Adobe"
  },
+ "adobe real-time cdp": {
+  "motivo": "sem evidência de uso de CDPs comerciais",
+  "nivel": "nao",
+  "nome": "Adobe Real-Time CDP"
+ },
  "adtech": {
   "motivo": "atua em saúde pública, não adtech",
   "nivel": "nao",
@@ -3148,6 +3153,11 @@
   "nivel": "parcial",
   "nome": "Solr"
  },
+ "soql": {
+  "motivo": "Sem evidência de Salesforce/SOQL no currículo",
+  "nivel": "nao",
+  "nome": "SOQL"
+ },
  "spacy": {
   "motivo": "sem menção a NLP com spaCy no currículo",
   "nivel": "nao",
@@ -3373,6 +3383,11 @@
   "nivel": "nao",
   "nome": "TransUnion"
  },
+ "treasure data": {
+  "motivo": "sem evidência de plataforma CDP específica",
+  "nivel": "nao",
+  "nome": "Treasure Data"
+ },
  "trino": {
   "motivo": "similar a SQL distribuído/Spark",
   "nivel": "parcial",
@@ -3472,6 +3487,11 @@
   "motivo": "sem evidência de servidor de aplicação Java",
   "nivel": "nao",
   "nome": "WildFly"
+ },
+ "windows": {
+  "motivo": "Suporte técnico com Office/hardware implica uso de Windows",
+  "nivel": "parcial",
+  "nome": "Windows"
  },
  "wordpress": {
   "motivo": "sem evidência de uso",

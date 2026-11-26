@@ -1,0 +1,203 @@
+{
+  "data": "2026-11-26",
+  "gerado_em": "2026-11-26T02:01-03:00",
+  "llm": true,
+  "serpapi_orcamento": 0,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "MDM Solutions Architect",
+      "url": "https://www.linkedin.com/jobs/view/4491961081",
+      "empresa": "OP",
+      "local": "Estados Unidos",
+      "fonte": "LinkedIn Jobs (remoto)",
+      "publicada_em": "2026-11-20",
+      "score": 14,
+      "juiz": "anthropic",
+      "motivo": "Vaga de MDM Solution Architect com foco claro em arquitetura de matching, merging, deduplicação, survivorship rules e golden record management, alinhado ao perfil de record linkage e entity resolution.",
+      "resumo": "OP busca Solution Architect em MDM para desenhar e implementar arquiteturas de gerenciamento de dados mestres com matching, deduplicação, regras de survivorship e integração com CDP, incluindo design de modelos de entidades e qualidade de dados.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Master Data Management",
+          "SQL",
+          "ETL",
+          "API"
+        ],
+        "desejaveis": [
+          "Informatica MDM",
+          "Reltio",
+          "Semarchy",
+          "Profisee",
+          "IBM InfoSphere MDM",
+          "Salesforce Data Cloud",
+          "Adobe Real-Time CDP",
+          "Treasure Data",
+          "Tealium",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Snowflake",
+          "Databricks",
+          "entity resolution"
+        ]
+      },
+      "senioridade": "senior",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United States"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.6,
+      "encaixe": 0.04,
+      "compat_detalhe": {
+        "habilidades": 39,
+        "senioridade": 75,
+        "local": 12,
+        "ingles": 85,
+        "foco": 94,
+        "senioridade_txt": "nível senior",
+        "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+        "faltam": [
+          "Master Data Management"
+        ],
+        "parciais": [
+          "SQL",
+          "API"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Automating the ETL Pipeline: Machine Learning Approaches to Data Cleaning and Integration",
+      "url": "https://doi.org/10.66838/ma.248",
+      "autores": "Venkata Siva Kishor Tatavarty",
+      "data": "2026-11-24",
+      "fonte": "OpenAlex",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Paper com foco central em entity resolution dentro de pipeline ETL automatizado com ML, incluindo normalização, matching de schema e QA.",
+      "resumo": "AutoETL é um framework de machine learning que automatiza detecção de erros, reparo de valores, matching de schema e entity resolution em pipelines ETL orquestrados, usando Isolation Forest, gradient-boosted classifiers e active learning sob restrição de budget de labeling.",
+      "confianca": 0.92
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Using Neo4j for Knowledge Graph Construction in Enterprise NLP",
+      "url": "https://doi.org/10.63345/wjcdsr.v1.i2.201",
+      "autores": "Justin Rajakumar Maria Thason",
+      "data": "2026-11-23",
+      "fonte": "OpenAlex",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Paper que trata entity resolution como componente central de pipeline de NLP para construção de knowledge graph, agregando 241 mil menções em 184 mil entidades com F1 de 0.92.",
+      "resumo": "Pipeline de construção de knowledge graph em Neo4j que usa NER, relation extraction e entity resolution (F1 0.92) para transformar 12,4 mil documentos não estruturados em grafo queryável com 184,2 mil nós e 612,5 mil relacionamentos.",
+      "confianca": 0.85
+    }
+  ],
+  "linkedin": [],
+  "vagas_abertas_total": 134,
+  "vagas_arquivadas_total": 245,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "Profisee",
+  "brasil": {
+    "novas": 5,
+    "abertas": 38,
+    "arquivadas": 86,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 56,
+    "semana": 8,
+    "tema": "Por que indexar e como definir blocking keys",
+    "tipo": "revisao",
+    "titulo": "Revisão ativa da semana 8: Por que indexar e como definir blocking keys",
+    "modulo": "Semana 8: Por que indexar e como definir blocking keys",
+    "versao": 2,
+    "objetivo": "Consolidar a semana 8 integrando o raciocínio de custo quadrático da comparação exaustiva, os critérios formais de Christen para escolher blocking keys e as quatro técnicas de codificação fonética (Soundex, Phonex, Phonix, NYSIIS), de modo que Gabriel consiga projetar, calcular e justificar esquemas de indexação completos em pipelines reais de record linkage.",
+    "conexao": "Pense nesta semana como um funil: primeiro a Aula 50 mostrou que comparar tudo contra tudo é quadrático e inviável em bilhões de registros, criando a necessidade de indexação; a Aula 51 deu os três critérios de Christen (qualidade do atributo, distribuição de frequência próxima à uniforme, trade-off número x tamanho de blocos) para projetar uma BKV que resolva esse problema sem perder pares verdadeiros; como nomes são a matéria-prima mais comum e mais suja dessas chaves, as Aulas 52 a 54 mergulharam em como codificar nomes foneticamente (Soundex como base histórica simples mas sensível à primeira letra, Phonex e Phonix como pré-processadores que corrigem prefixos e dígrafos antes de codificar, e NYSIIS como alternativa só-letras mais específica e popular) para aumentar a chance de duas grafias do mesmo nome caírem no mesmo bloco; e a Aula 55 fechou o ciclo medindo na prática, com FEBRL1, como a escolha da chave (isolada ou em união) afeta diretamente a Reduction Ratio e a Pairs Completeness, provando empiricamente o trade-off teórico da Aula 51. Tudo isso se conecta ainda com a Aula 29 (qualidade de dados determina se a BKV vai funcionar) e a Aula 32 (saber se o erro é tipográfico, fonético, de OCR ou de transcrição orienta qual codificação fonética ou função de comparação escolher).",
+    "perguntas": [
+      {
+        "pergunta": "Por que a comparação exaustiva entre duas bases de tamanho n_A e n_B é descrita como custo quadrático, e qual é a fórmula do número de pares sem blocking para deduplicação de uma única base com n registros?",
+        "resposta": "Porque o número de comparações cresce proporcionalmente ao produto dos tamanhos das bases (n_A * n_B em linkage), e não linearmente; para deduplicação de uma base única o total de pares é n(n-1)/2, que também cresce quadraticamente com n (Christen, 2012, cap. 4, p. 69-70)."
+      },
+      {
+        "pergunta": "Quais são os três critérios de Christen (seção 4.2, p. 69) para escolher uma boa blocking key, e o que acontece quando se ignora o critério de distribuição de frequência?",
+        "resposta": "Os três critérios são: qualidade do atributo (estável, bem preenchido, pouco propenso a erro), distribuição de frequência dos valores próxima da uniforme, e o trade-off entre número de blocos e tamanho dos blocos. Ignorar a distribuição de frequência gera blocos gigantes e desbalanceados (ex.: 'silva' isolado), cujo custo quadrático interno domina o processamento, mesmo que os demais blocos sejam pequenos."
+      },
+      {
+        "pergunta": "Aplique os 6 passos do Soundex para codificar a palavra 'peter' e diga qual seria o código.",
+        "resposta": "Primeira letra 'p'. Restante e,t,e,r → e=0,t=3,e=0,r=6 → sequência 0,3,0,6 → remove zeros → 3,6 → sem repetições consecutivas → código 36 → completa com zero à direita (só 2 dígitos) → 360 → resultado final: p360."
+      },
+      {
+        "pergunta": "Qual problema estrutural do Soundex o Phonex tenta resolver com seu pré-processamento de prefixos, e cite duas das regras de substituição de prefixo usadas.",
+        "resposta": "O Phonex tenta resolver a sensibilidade excessiva à primeira letra do Soundex, que faz nomes foneticamente iguais gerarem códigos diferentes (ex.: 'christina' c623 vs 'kristina' k623). Duas regras de prefixo: 'kn-' no início é substituído por 'n', e 'wr-' no início é substituído por 'r' (Christen, 2012, seç. 4.3.2, p. 72-73)."
+      },
+      {
+        "pergunta": "Diferente de Soundex, Phonex e Phonix, o código NYSIIS é composto só de letras. Calcule manualmente o código NYSIIS para o nome 'allan' seguindo as regras de redução de vogal e remoção de repetição.",
+        "resposta": "Sem transformação de início/fim aplicável. Primeira letra 'a' inicia o código. 'l' é adicionado (diferente de 'a') → 'al'. Segundo 'l' é igual ao anterior, não adicionado. 'a' já é 'a' (não precisa reduzir vogal), diferente do 'l' anterior, é adicionado → 'ala'. 'n' é adicionado (diferente de 'a') → 'alan'. Código final: 'alan' (mesmo código de 'allen', mostrando a vantagem do NYSIIS sobre Soundex nesse par)."
+      },
+      {
+        "pergunta": "(Aula 29) Você recebe uma base de clientes onde 15% dos CPFs são '00000000000' e o campo 'profissao' de 2019 foi substituído por 'segmento_cliente' em 2023. Qual é o primeiro passo recomendado antes de usar esses campos em comparação de matching?",
+        "resposta": "Tratar o CPF sentinela como ausente (nulo), criando uma flag e removendo-o da função de comparação em vez de comparar strings idênticas (o que geraria falsos positivos em massa); para o campo descontinuado, construir um mapeamento de categorias equivalentes entre 'profissao' e 'segmento_cliente' em vez de comparar diretamente strings de campos diferentes (Christen, 2012, seção 3.1, p. 39-40)."
+      },
+      {
+        "pergunta": "(Aula 32) Classifique o par 'Johnson' / 'J0hnson' quanto ao tipo de erro e justifique.",
+        "resposta": "É um erro de OCR: o caractere '0' substitui a letra 'o', dois símbolos visualmente parecidos em muitas fontes digitalizadas, diferente de um erro tipográfico de digitação humana ou de uma mudança fonética real (Christen, 2012, seç. 3.3, p. 43-45)."
+      }
+    ],
+    "desafio": "Você é responsável por projetar o blocking de um pipeline de deduplicação de uma base de hospitais no Brasil com 5 milhões de registros de pacientes. Testou isoladamente a chave 'Soundex(nome) + 2 primeiros dígitos do CEP' e obteve: Reduction Ratio (RR) = 0,9995 e Pairs Completeness (PC) = 0,82. Testou isoladamente a chave 'NYSIIS(sobrenome) + dia e mês de nascimento' e obteve RR = 0,998 e PC = 0,91. Seu gerente pede uma única recomendação que maximize a captura de pares verdadeiros sem tornar o processamento inviável. (a) Calcule o que aconteceria, em termos de RR e PC, se você unisse as duas chaves (sem calcular números exatos, caracterize a direção da mudança e justifique com teoria de conjuntos). (b) Decida e justifique se a união vale o custo computacional extra.",
+    "gabarito": "(a) A união de candidatos de duas chaves sempre satisfaz |A ∪ B| <= |A| + |B|, portanto o número total de pares candidatos aumenta ou no mínimo não diminui em relação a qualquer chave isolada, o que faz a RR da união cair abaixo da RR de qualquer chave isolada (menos redução, mais pares para comparar). Em contrapartida, a PC da união é sempre maior ou igual à PC de qualquer chave isolada, pois um par verdadeiro só é perdido se não aparecer em NENHUMA das duas chaves (evento de interseção dos erros, mais raro que o erro isolado de uma única chave). Logo esperamos PC da união maior que 0,91 e RR da união menor que 0,998, mas ainda muito próxima de 1 porque blocking manual bem feito costuma manter RR alta mesmo após união (Christen, 2012, p. 69-70, Fig. 4.1). (b) Vale a pena: em contexto hospitalar, perder um match verdadeiro (ex.: o mesmo paciente com registros duplicados) tem custo clínico e operacional alto, enquanto o aumento no número de pares candidatos é absorvido pela etapa de comparação detalhada que é mais barata que processar erros clínicos de duplicação; a perda marginal de RR é aceitável frente ao ganho de PC.",
+    "fontes": [
+      "Christen, P. (2012). Data Matching. Springer. Seção 4.1-4.2, p. 69-71 (custo de comparação exaustiva e critérios de blocking key).",
+      "Christen, P. (2012). Data Matching. Springer. Seção 4.3.1-4.3.4, p. 71-74 (Soundex, Phonex, Phonix, NYSIIS).",
+      "Christen, P. (2012). A survey of indexing techniques for scalable record linkage and deduplication. IEEE TKDE, 24(9)."
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        69,
+        77
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3162,
+      "pos_palavras_chave": 4,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 185,
+      "pos_palavras_chave": 2,
+      "aprovados": 2
+    },
+    "linkedin": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    }
+  },
+  "saude": "problema"
+}

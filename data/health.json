@@ -1,38 +1,48 @@
 {
- "data": "2026-11-25",
+ "data": "2026-11-26",
  "status": "problema",
  "checks": [
   {
    "status": "problema",
+   "nome": "Posts do LinkedIn",
+   "detalhe": "0 itens (esperado pelo menos 3)"
+  },
+  {
+   "status": "problema",
+   "nome": "Perfis para seguir",
+   "detalhe": "0 itens (esperado pelo menos 1)"
+  },
+  {
+   "status": "problema",
    "nome": "Cota SerpAPI",
-   "detalhe": "0 buscas restantes para 6 dias (~0/dia; LinkedIn e pessoas têm prioridade)"
+   "detalhe": "0 buscas restantes para 5 dias (~0/dia; LinkedIn e pessoas têm prioridade)"
   },
   {
    "status": "atencao",
    "nome": "LinkedIn logado",
-   "detalhe": "sem varredura com sucesso há 6 dias (computador desligado ou sem login: python scripts/linkedin_local.py --login)"
+   "detalhe": "sem varredura com sucesso há 7 dias (computador desligado ou sem login: python scripts/linkedin_local.py --login)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 100,
-  "jobs/remotive": 225,
-  "jobs/greenhouse": 1396,
+  "jobs/remotive": 240,
+  "jobs/greenhouse": 1385,
   "jobs/lever": 305,
-  "jobs/ashby": 51,
+  "jobs/ashby": 58,
   "jobs/hn_who_is_hiring": 1,
-  "jobs/serpapi_google_jobs": 3,
-  "jobs/gupy": 172,
+  "jobs/serpapi_google_jobs": 0,
+  "jobs/gupy": 176,
   "jobs/himalayas": 103,
-  "jobs/jobicy": 150,
+  "jobs/jobicy": 52,
   "jobs/workable": 280,
-  "jobs/weworkremotely": 371,
-  "jobs/social_posts": 2,
-  "jobs/linkedin_guest": 34,
-  "papers/arxiv": 11,
+  "jobs/weworkremotely": 418,
+  "jobs/social_posts": 0,
+  "jobs/linkedin_guest": 44,
+  "papers/arxiv": 10,
   "papers/openalex": 175,
-  "linkedin/posts": 9,
-  "network/perfis": 5
+  "linkedin/posts": 0,
+  "network/perfis": 0
  },
  "falhas": [
   "Greenhouse: empresa 'thoughtworks' não responde mais (remova de config.yaml)"
