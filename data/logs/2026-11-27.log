@@ -1,0 +1,80 @@
+===== coleta 2026-11-27 02:14 =====
+INFO serpapi: 250 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 100
+INFO jobs/remotive: 240
+INFO jobs/greenhouse: 1389
+INFO jobs/lever: 305
+INFO jobs/ashby: 59
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'record linkage remote LATAM': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'entity resolution engineer contractor': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 176
+INFO jobs/himalayas: 103
+INFO jobs/jobicy: 56
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 440
+INFO jobs/social_linkedin/ddg: 5 aceitos de 6
+INFO jobs/social_posts: 5
+INFO linkedin_guest: 29 vagas, 25 descrições abertas, 35 consultas no total
+INFO jobs/linkedin_guest: 29
+INFO judge: tokens in=1375 out=457
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO vagas: {'brutos': 3183, 'pos_palavras_chave': 3, 'aprovados': 0}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 9
+INFO papers/openalex: 175
+INFO papers: {'brutos': 184, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO linkedin/ddg: 9 aceitos de 10
+INFO linkedin: 9 candidatos
+INFO judge: tokens in=1495 out=571
+INFO requisitos: tokens in=2442 out=463
+INFO linkedin: {'brutos': 9, 'pos_palavras_chave': 4, 'aprovados': 0}
+INFO open_jobs: fechou Senior Data Engineer (Ontology & Knowledge Graphs)
+INFO open_jobs: fechou Head of Entity Data at Intelix.AI — Greater London ... - LinkedIn
+INFO open_jobs: 135 abertas (3 novas)
+INFO open_jobs: 2 vagas do LinkedIn completadas pela página pública, 1 encerradas
+INFO requisitos: tokens in=4583 out=455
+INFO mercado: 247 vagas no nicho, 240 no mercado amplo
+INFO network/ddg: 10 aceitos de 10
+INFO network: 10 perfis após a consulta
+INFO judge: tokens in=2252 out=927
+INFO judge: tokens in=1360 out=319
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 5/8)
+INFO network: 93 pessoas (2 novas), 54 empresas (0 novas)
+INFO carreira: tokens in=1437 out=1556
+INFO brasil/inhire: 208
+INFO brasil/gupy: 343
+INFO google_jobs 'governança de dados': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 4
+INFO brasil/linkedin_posts/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin_posts/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 34 vagas, 34 descrições abertas, 85 consultas no total
+INFO brasil/linkedin_guest_br: 34
+INFO brasil/linkedin_local: 0
+INFO jobs/greenhouse 'thoughtworks' indisponível (404 Client Error: Not Found for url: https://boards-api.gree)
+INFO brasil/greenhouse: 919
+INFO brasil/lever: 147
+INFO brasil/ashby: 116
+INFO brasil: 4954 brutas, 7 candidatas para o juiz
+INFO judge: tokens in=2578 out=1029
+INFO requisitos: tokens in=3978 out=220
+INFO open_jobs: 39 abertas (1 novas)
+INFO mercado: 87 vagas no nicho, 240 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network: 52 pessoas (0 novas), 69 empresas (1 novas)
+INFO brasil: {'novas': 5, 'abertas': 39, 'arquivadas': 87, 'rede': {'pessoas_novas': 0, 'empresas_novas': 1}}
+INFO saúde: atencao (1 alertas)
+INFO OK → data/2026-11-27.json
+

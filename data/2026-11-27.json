@@ -1,0 +1,218 @@
+{
+  "data": "2026-11-27",
+  "gerado_em": "2026-11-27T02:01-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Scientist - Core Analytics at Ripjar - LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/data-scientist-core-analytics-at-ripjar-4494922386",
+      "texto": "Entity resolution across tens of millions of news articles, at a scale where naive pairwise comparison is intractable. Using LLMs to summarise news articles linking an entity to financial crime (or other similar risks), with LLM judges to monitor performance.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 3,
+      "juiz": "anthropic",
+      "motivo": "Vaga que trata entity resolution em escala massiva (dezenas de milhões de registros) onde comparação pairwise é intratável, com LLMs para sumarização e julgamento de performance.",
+      "resumo": "Vaga de Data Scientist na Ripjar focada em entity resolution em escala (dezenas de milhões de artigos de notícias), incluindo aplicação de LLMs para sumarização e monitoramento de desempenho com julgadores automáticos.",
+      "confianca": 0.9,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.6,
+      "encaixe": 0.32,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 94,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Python & AI/LLM Engineering Intern at TRYST IIT Bombay — Mumbai ...",
+      "url": "https://in.linkedin.com/jobs/view/python-ai-llm-engineering-intern-at-tryst-iit-bombay-4492387884",
+      "texto": "Work on entity resolution and matching techniques to identify researchers, institutions, research topics, and related information across different data sources. Experiment with prompt engineering and structured outputs using LLMs. Collaborate with AI/ML engineers and the programme team to develop and enhance the ATLAS platform.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Oportunidade de estágio que foca diretamente em entity resolution e matching techniques para identificar pesquisadores, instituições e tópicos em múltiplas fontes de dados.",
+      "resumo": "Estágio em Python e AI/LLM na TRYST IIT Bombay com foco em entity resolution e matching de pesquisadores, instituições e tópicos de pesquisa através de diferentes fontes de dados usando LLMs.",
+      "confianca": 0.85,
+      "requisitos": {
+        "obrigatorios": [],
+        "desejaveis": []
+      },
+      "senioridade": "junior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "cidade",
+        "paises": [
+          "India"
+        ],
+        "cidades": [
+          "Mumbai"
+        ]
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.5,
+      "encaixe": 0.05,
+      "compat_detalhe": {
+        "habilidades": 50,
+        "senioridade": 100,
+        "local": 8,
+        "ingles": 100,
+        "foco": 92,
+        "senioridade_txt": "nível junior",
+        "local_txt": "em India, sem patrocínio de visto",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Senior Data & AI Engineer (Azure Databricks) - LinkedIn",
+      "url": "https://sg.linkedin.com/jobs/view/senior-data-ai-engineer-azure-databricks-at-ascendion-4494490129",
+      "texto": "Experience building data dictionaries or business glossaries, including cross-system record matching and entity resolution. Practical experience developing AI agents using Microsoft Copilot Studio or Microsoft Foundry (Azure AI Foundry), connected to trusted data sources.",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga que destaca cross-system record matching e entity resolution como responsabilidades centrais na construção de data dictionaries e business glossaries.",
+      "resumo": "Vaga de Senior Data & AI Engineer em Azure Databricks que inclui desenvolvimento de dicionários de dados com record matching entre sistemas e entity resolution como atividades principais.",
+      "confianca": 0.8,
+      "requisitos": {
+        "obrigatorios": [
+          "Databricks",
+          "Azure",
+          "Microsoft Copilot Studio",
+          "Azure AI Foundry"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "senior",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.3,
+      "encaixe": 0.14,
+      "compat_detalhe": {
+        "habilidades": 0,
+        "senioridade": 75,
+        "local": 60,
+        "ingles": 100,
+        "foco": 90,
+        "senioridade_txt": "nível senior",
+        "local_txt": "local de contratação não informado",
+        "faltam": [
+          "Databricks",
+          "Azure",
+          "Microsoft Copilot Studio",
+          "Azure AI Foundry"
+        ],
+        "parciais": [],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [],
+  "linkedin": [],
+  "vagas_abertas_total": 134,
+  "vagas_arquivadas_total": 248,
+  "rede": {
+    "pessoas_novas": 2,
+    "empresas_novas": 0
+  },
+  "pilula_mercado": "Power BI",
+  "brasil": {
+    "novas": 5,
+    "abertas": 39,
+    "arquivadas": 87,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 1
+    }
+  },
+  "aula": {
+    "dia": 57,
+    "semana": 9,
+    "tema": "Codificações fonéticas e standard blocking",
+    "tipo": "conceito",
+    "titulo": "Oxford Name Compression Algorithm (ONCA)",
+    "modulo": "Semana 9: Codificações fonéticas e standard blocking",
+    "versao": 2,
+    "objetivo": "Entender o algoritmo ONCA (Oxford Name Compression Algorithm), seus três estágios (normalização, NYSIIS, Soundex) e por que ele foi criado para corrigir falhas do Soundex puro em nomes britânicos e irlandeses com prefixos e apóstrofos.",
+    "conceito": "O ONCA foi desenvolvido pelo Office of Population Censuses and Surveys (OPCS) do Reino Unido para melhorar o matching de registros de saúde (NHS), um domínio onde sobrenomes como O'Brien, McDonald, MacKenzie e De La Cruz são comuns e onde o Soundex puro, por depender fortemente da primeira letra do nome, falha sistematicamente: variações de grafia de prefixos (Mc/Mac, O'/O, espaços e apóstrofos) alteram a primeira letra codificada e geram códigos completamente diferentes para a mesma pessoa. Christen (2012, seç. 4.3) descreve o Soundex e o NYSIIS como codificações fonéticas de propósito geral; o ONCA nasce justamente da combinação dessas duas técnicas precedida por uma etapa de normalização específica de nomes.\n\nO ONCA não é um algoritmo fonético novo do zero: é um pipeline de três estágios. Primeiro normaliza o nome bruto (remove pontuação, expande ou padroniza prefixos conhecidos). Depois aplica as regras do NYSIIS (que Gabriel já viu na aula 54) para gerar uma representação fonética intermediária mais rica que a do Soundex. Por fim, aplica o Soundex sobre esse resultado intermediário, produzindo um código compacto de 1 letra mais 3 dígitos, compatível com sistemas legados que esperam o formato Soundex, mas que carrega a maior precisão fonética herdada do NYSIIS.\n\nO ganho prático é duplo: compatibilidade de formato (4 caracteres, como Soundex) com qualidade fonética superior (herdada do NYSIIS), desde que a etapa de normalização de prefixos seja feita corretamente antes de tudo.",
+    "como_funciona": "1. Normalização: remover espaços internos, apóstrofos e hífens; padronizar prefixos (Mc -> Mac, O' -> O, De La -> Dela, etc.) conforme uma tabela de regras de transliteração definida para a população-alvo.\n2. Aplicar NYSIIS sobre o nome normalizado, gerando um código fonético intermediário (string alfabética, mais longa que o Soundex).\n3. Aplicar Soundex sobre o código intermediário do passo 2 (não sobre o nome original), produzindo o código final no formato letra+3 dígitos.\n4. Usar esse código final de 4 caracteres como blocking key value (BKV), do mesmo jeito que se usaria um Soundex puro (ver Christen 2012, seç. 4.4, sobre standard blocking).",
+    "exemplo": "Nomes de entrada com erro de digitação comum: 'OBrien' (apóstrofo perdido) e 'Brien' (apóstrofo tratado erradamente como separador de palavra, mantendo só o sobrenome).\n\nSoundex ingênuo (sem normalização):\nSoundex('Brien') = letras B,R,I,E,N. Primeira letra fixa: B. Demais consoantes codificadas: R=6, I e E são vogais (não codificam), N=5. Sequência de dígitos: 6,5. Completa com zero: código final B650.\nSoundex('OBrien') = letras O,B,R,I,E,N. Primeira letra fixa: O. Demais: B=1, R=6, I/E vogais, N=5. Sequência: 1,6,5. Código final O165.\n\nResultado: B650 versus O165, nomes da mesma pessoa caem em blocos totalmente diferentes, porque a primeira letra codificada muda (B vs O).\n\nCom o passo 1 do ONCA (normalização): o apóstrofo é removido e o prefixo 'O' é mantido como parte do token único 'OBrien' em ambos os casos (a variante 'Brien' sem o O é tratada como erro de captura e corrigida pela regra de prefixo, ou pelo menos ambos passam a ser processados a partir da mesma forma normalizada 'OBRIEN'). Depois disso, os passos 2 (NYSIIS) e 3 (Soundex) são aplicados sobre a mesma string normalizada, produzindo o mesmo código em ambos os casos, eliminando o falso negativo que o Soundex puro geraria.",
+    "na_pratica": "Não há implementação oficial de ONCA em bibliotecas Python populares (jellyfish, recordlinkage), então na prática o padrão é montar o pipeline manualmente: normalizar prefixos com um dicionário de regras, aplicar jellyfish.nysiis, e depois aplicar uma função Soundex sobre o resultado.\nimport jellyfish\ndef onca(name):\n norm = name.replace(\"'\", \"\").replace(\"Mc\", \"Mac\")\n nys = jellyfish.nysiis(norm)\n return jellyfish.soundex(nys)\nEsse código final entra como blocking key value em standard blocking (Christen 2012, seç. 4.4), exatamente como um Soundex comum.",
+    "armadilha": "Achar que ONCA é apenas 'NYSIIS seguido de Soundex' e pular a etapa de normalização de prefixos e pontuação: sem ela, o algoritmo perde justamente a motivação original (nomes britânicos/irlandeses com Mc/Mac/O') e se comporta como um NYSIIS+Soundex genérico, sem ganho real sobre usar NYSIIS puro.",
+    "desafio": "Calcule o código Soundex (sem nenhuma normalização) para 'McKay' e para 'MacKay'. Depois diga se a primeira letra codificada muda entre os dois e explique, em uma frase, por que esse caso específico não demonstra o problema que o ONCA resolve, enquanto o caso O'Brien/Brien demonstra.",
+    "gabarito": "Soundex('McKay'): letras M,C,K,A,Y. Primeira letra fixa M. Demais consoantes: C=2, K=2 (mesmo código que C, consecutivo, colapsa em um só dígito), A e Y não codificam. Sequência: 2. Completa com zeros: M200.\nSoundex('MacKay'): letras M,A,C,K,A,Y. Primeira letra fixa M. Demais: A não codifica, C=2, K=2 (colapsa com C), A e Y não codificam. Sequência: 2. Código final M200.\nAmbos dão M200: a primeira letra (M) não muda entre as variantes Mc/Mac porque o M é preservado em ambas as grafias. Já no caso O'Brien/Brien a primeira letra codificada muda de O para B quando o apóstrofo é tratado como separador, o que é exatamente o tipo de falha estrutural (mudança da primeira letra) que a etapa de normalização do ONCA foi desenhada para eliminar; o caso Mc/Mac não expõe esse problema porque a primeira letra permanece estável independentemente da grafia do prefixo.",
+    "fontes": [
+      "Christen (2012), seç. 4.3, p. 73-77 (codificação fonética, contexto de Soundex e NYSIIS)",
+      "Christen (2012), seç. 4.4, p. 80-81 (standard blocking e uso de BKVs)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        77,
+        81
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3183,
+      "pos_palavras_chave": 3,
+      "aprovados": 0
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 184,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "linkedin": {
+      "brutos": 9,
+      "pos_palavras_chave": 4,
+      "aprovados": 0
+    }
+  },
+  "saude": "atencao"
+}

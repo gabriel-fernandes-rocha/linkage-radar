@@ -1,5 +1,50 @@
 [
  {
+  "data": "2026-11-27",
+  "habilidade": "Power BI",
+  "pct_vagas": 1,
+  "nivel_atual": "nao",
+  "o_que_e": "Power BI é uma ferramenta de business intelligence da Microsoft para criar dashboards e relatórios interativos conectados a diversas fontes de dados. Permite modelagem de dados (com linguagem DAX), criação de visualizações e publicação para compartilhamento com stakeholders. É amplamente usado em empresas para análise de negócio e reporting.",
+  "por_que_pedem": "Vagas de entity resolution e MDM muitas vezes envolvem apresentar resultados de qualidade de dados, métricas de matching e indicadores de governança para áreas de negócio não técnicas. Power BI é o padrão de mercado para esse tipo de comunicação visual, então recrutadores pedem como diferencial mesmo que não seja o core da função.",
+  "ponte_com_o_que_voce_sabe": "Você já extrai e trata dados com SQL e Spark, já entende modelagem de dados e já tem noção de métricas de qualidade de matching (precisão, recall, taxas de duplicatas). Isso cobre quase todo o trabalho pesado do Power BI, que é só a camada final de visualização; a curva de aprendizado é baixa porque você só precisa aprender a interface, DAX básico e boas práticas de dashboard.",
+  "minimo_para_ficar_apto": [
+   "Instalar o Power BI Desktop e conhecer a interface (Get Data, Modelagem, Relatório)",
+   "Conectar a uma fonte SQL/CSV e criar um modelo simples com relacionamentos",
+   "Escrever medidas básicas em DAX (SUM, COUNTROWS, CALCULATE, FILTER)",
+   "Criar 3-4 tipos de visualização (tabela, gráfico de barras, cartão, mapa)",
+   "Publicar um relatório no Power BI Service e configurar atualização de dados"
+  ],
+  "plano_rapido": [
+   "2h: instalar Power BI Desktop e fazer tour guiado da interface",
+   "3h: curso introdutório oficial Microsoft Learn sobre Power BI Desktop",
+   "3h: importar um dataset de exemplo (ex: resultados de matching) e montar modelo de dados",
+   "4h: aprender DAX básico com exercícios práticos (medidas simples)",
+   "3h: construir um dashboard com KPIs de qualidade de matching (taxa de duplicatas, score médio, distribuição por blocking)",
+   "2h: publicar no Power BI Service e explorar compartilhamento/agendamento de atualização"
+  ],
+  "mini_projeto": "Criar um dashboard de 'Qualidade de Entity Resolution' usando dados sintéticos ou de um projeto Splink seu: mostrar número de registros processados, taxa de matches confirmados vs duvidosos, distribuição de scores de similaridade, e evolução temporal de duplicatas detectadas. Isso conecta diretamente sua experiência técnica com uma entrega visual que recrutadores entendem.",
+  "como_colocar_no_curriculo": "Conhecimento básico em Power BI para construção de dashboards de métricas de qualidade de dados e matching, aplicado em projeto pessoal de entity resolution.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Você já usou Power BI em produção?",
+    "resposta": "Tenho conhecimento básico, usei para criar dashboards de métricas de qualidade de matching em projetos pessoais. Minha força principal é a parte de engenharia de dados e entity resolution, mas tenho facilidade para evoluir em BI pois já domino modelagem de dados e SQL."
+   },
+   {
+    "pergunta": "O que é DAX e para que serve?",
+    "resposta": "DAX é a linguagem de fórmulas do Power BI usada para criar medidas e colunas calculadas, similar em lógica a funções agregadas de SQL, mas otimizada para modelos de dados tabulares e contexto de filtro dinâmico."
+   },
+   {
+    "pergunta": "Como você conectaria o Power BI a um pipeline de entity resolution em Spark?",
+    "resposta": "Exportaria os resultados finais (tabelas agregadas de matches e métricas) para um data warehouse ou arquivo intermediário (Parquet/SQL), e conectaria o Power BI a essa camada curada, evitando processar dados brutos de bilhões de registros diretamente na ferramenta."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Microsoft Learn: Power BI Desktop trilha oficial",
+   "Documentação oficial do Power BI (learn.microsoft.com/power-bi)",
+   "Curso Power BI para iniciantes (Microsoft Learn Guided Learning)"
+  ]
+ },
+ {
   "data": "2026-11-26",
   "habilidade": "Profisee",
   "pct_vagas": 2,

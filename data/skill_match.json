@@ -298,6 +298,11 @@
   "nivel": "nao",
   "nome": "Azure"
  },
+ "azure ai foundry": {
+  "motivo": "sem evidência de uso de plataformas Azure/AI no currículo",
+  "nivel": "nao",
+  "nome": "Azure AI Foundry"
+ },
  "azure data factory": {
   "motivo": "não há menção ao uso do Azure Data Factory",
   "nivel": "nao",
@@ -947,6 +952,11 @@
   "motivo": "usa Spark, próximo de Databricks",
   "nivel": "parcial",
   "nome": "Databricks certification"
+ },
+ "databricks genie": {
+  "motivo": "usa Spark, próximo do ecossistema Databricks",
+  "nivel": "parcial",
+  "nome": "Databricks Genie"
  },
  "databricks sql": {
   "motivo": "nenhum uso de Databricks SQL mencionado",
@@ -2208,6 +2218,11 @@
   "nivel": "nao",
   "nome": "Microservices"
  },
+ "microsoft copilot studio": {
+  "motivo": "sem evidência de uso dessa ferramenta Microsoft",
+  "nivel": "nao",
+  "nome": "Microsoft Copilot Studio"
+ },
  "microsoft dynamics 365": {
   "motivo": "sem evidência de CRM Microsoft",
   "nivel": "nao",
@@ -2557,6 +2572,16 @@
   "motivo": "sem evidência no currículo",
   "nivel": "nao",
   "nome": "Postman"
+ },
+ "power apps": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Power Apps"
+ },
+ "power automate": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "Power Automate"
  },
  "power bi": {
   "motivo": "sem evidência de uso de Power BI",
@@ -3073,6 +3098,11 @@
   "nivel": "nao",
   "nome": "shadcn/ui"
  },
+ "sharepoint": {
+  "motivo": "sem evidência de uso",
+  "nivel": "nao",
+  "nome": "SharePoint"
+ },
  "shell": {
   "motivo": "pipelines implicam scripts básicos",
   "nivel": "parcial",
@@ -3468,6 +3498,11 @@
   "nivel": "parcial",
   "nome": "Weaviate"
  },
+ "web iq": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Web IQ"
+ },
  "web research automation": {
   "motivo": "Automação de pesquisa web não mencionada.",
   "nivel": "nao",
@@ -3497,6 +3532,11 @@
   "motivo": "sem evidência de uso",
   "nivel": "nao",
   "nome": "WordPress"
+ },
+ "work iq": {
+  "motivo": "sem evidência no currículo",
+  "nivel": "nao",
+  "nome": "Work IQ"
  },
  "workday": {
   "motivo": "plataforma HR não mencionada",
