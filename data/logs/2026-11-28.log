@@ -1,0 +1,92 @@
+===== coleta 2026-11-28 01:56 =====
+INFO serpapi: 242 restantes no mês; orçamento de hoje = 8 buscas
+INFO jobs/adzuna: sem chave, pulando
+INFO jobs/adzuna: 0
+INFO jobs/remoteok: 100
+INFO jobs/remotive: 255
+INFO jobs/greenhouse: 1392
+INFO jobs/lever: 305
+INFO jobs/ashby: 58
+INFO jobs/hn_who_is_hiring: 1
+INFO google_jobs 'entity resolution engineer contractor': 0 vagas (Google hasn't returned any results for this query.)
+INFO google_jobs 'master data management engineer remote Brazil': 0 vagas (Google hasn't returned any results for this query.)
+INFO jobs/google: 2 buscas SerpAPI
+INFO jobs/serpapi_google_jobs: 0
+INFO jobs/gupy: 176
+INFO jobs/himalayas: 103
+INFO jobs/jobicy: 135
+INFO jobs/workable: 280
+INFO jobs/weworkremotely: 485
+INFO jobs/social_linkedin/ddg: 2 aceitos de 4
+INFO jobs/social_linkedin/google: 0 aceitos de 7
+INFO jobs/social_posts: 2
+INFO linkedin_guest: 38 vagas, 25 descrições abertas, 33 consultas no total
+INFO jobs/linkedin_guest: 38
+INFO judge: tokens in=1440 out=352
+INFO judge: usando anthropic (claude-haiku-4-5)
+INFO requisitos: tokens in=3667 out=211
+INFO vagas: {'brutos': 3330, 'pos_palavras_chave': 2, 'aprovados': 1}
+INFO events: hoje não é dia de buscar eventos (config web_search.events_weekdays)
+INFO eventos: {'brutos': 0, 'pos_palavras_chave': 0, 'aprovados': 0}
+INFO papers/arxiv: 7
+INFO papers/openalex: 175
+INFO judge: tokens in=2012 out=452
+INFO papers: {'brutos': 182, 'pos_palavras_chave': 3, 'aprovados': 3}
+INFO linkedin/ddg: 10 aceitos de 10
+INFO linkedin: 10 candidatos
+INFO judge: tokens in=1421 out=549
+INFO requisitos: tokens in=2247 out=317
+INFO linkedin: {'brutos': 10, 'pos_palavras_chave': 4, 'aprovados': 2}
+INFO open_jobs: expirou (61d) Senior Data Engineer — Entity Resolution / Record Linkage
+INFO open_jobs: expirou (61d) Enterprise TAM Pipeline (Waterfall API Enrichment, Entity Resolution & Partner Mapping) - Contract to Hire
+INFO open_jobs: fechou DATA SCIENTIST - SC CLEARED at Women Rock - LinkedIn
+INFO open_jobs: fechou Dynamics 365 Customer Insights - Data Consultant - LinkedIn
+INFO open_jobs: fechou Remote IAM Architect, Identity Resolution
+INFO open_jobs: expirou (61d) Integration Engineer - Customer Data Platform (CDP)
+INFO open_jobs: expirou (61d) Senior Software Engineer
+INFO open_jobs: expirou (61d) Software Engineer 5 - Ads Identity Graph
+INFO open_jobs: expirou (61d) Lead Software Development Engineer
+INFO open_jobs: 128 abertas (3 novas)
+INFO open_jobs: 2 vagas do LinkedIn completadas pela página pública, 0 encerradas
+INFO requisitos: tokens in=6160 out=338
+INFO mercado: 250 vagas no nicho, 240 no mercado amplo
+INFO network/ddg: 6 aceitos de 6
+INFO network: 6 perfis após a consulta
+INFO judge: tokens in=1840 out=763
+INFO network: 93 pessoas (0 novas), 55 empresas (1 novas)
+INFO carreira: tokens in=1473 out=1950
+INFO brasil/inhire: 206
+INFO brasil/gupy: 340
+INFO google_jobs 'entity resolution': 0 vagas (Google hasn't returned any results for this query.)
+INFO brasil/google_jobs_br: 10
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO brasil/linkedin/google: 0 aceitos de 0
+INFO brasil/linkedin_jobs_br: 0
+INFO linkedin_guest: 23 vagas, 23 descrições abertas, 69 consultas no total
+INFO brasil/linkedin_guest_br: 23
+INFO brasil/linkedin_local: 0
+INFO jobs/greenhouse 'thoughtworks' indisponível (404 Client Error: Not Found for url: https://boards-api.gree)
+INFO brasil/greenhouse: 911
+INFO brasil/lever: 148
+INFO brasil/ashby: 115
+INFO brasil/inhire: novas empresas descobertas: onevc
+INFO brasil: 5083 brutas, 6 candidatas para o juiz
+INFO judge: tokens in=2143 out=853
+INFO requisitos: tokens in=5952 out=414
+INFO brasil: 1 vaga(s) não verificadas removidas após o juiz
+INFO open_jobs: fechou Engenheiro de Dados
+INFO open_jobs: fechou Engenheiro de dados
+INFO open_jobs: 38 abertas (2 novas)
+INFO mercado: 89 vagas no nicho, 240 no mercado amplo
+INFO serpapi: busca de prioridade alta pulada (orçamento do dia: 8/8)
+INFO network/ddg: 0 aceitos de 0
+INFO serpapi: busca de prioridade baixa pulada (orçamento do dia: 8/8)
+INFO network/google: 0 aceitos de 0
+INFO network: 0 perfis após a consulta
+INFO network: 52 pessoas (0 novas), 71 empresas (2 novas)
+INFO brasil: {'novas': 5, 'abertas': 38, 'arquivadas': 89, 'rede': {'pessoas_novas': 0, 'empresas_novas': 2}}
+INFO saúde: atencao (1 alertas)
+INFO OK → data/2026-11-28.json
+

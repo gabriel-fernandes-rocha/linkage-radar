@@ -1,33 +1,33 @@
 {
- "data": "2026-11-27",
+ "data": "2026-11-28",
  "status": "atencao",
  "checks": [
   {
    "status": "atencao",
    "nome": "LinkedIn logado",
-   "detalhe": "sem varredura com sucesso há 8 dias (computador desligado ou sem login: python scripts/linkedin_local.py --login)"
+   "detalhe": "sem varredura com sucesso há 9 dias (computador desligado ou sem login: python scripts/linkedin_local.py --login)"
   }
  ],
  "fontes": {
   "jobs/adzuna": 0,
   "jobs/remoteok": 100,
-  "jobs/remotive": 240,
-  "jobs/greenhouse": 1389,
+  "jobs/remotive": 255,
+  "jobs/greenhouse": 1392,
   "jobs/lever": 305,
-  "jobs/ashby": 59,
+  "jobs/ashby": 58,
   "jobs/hn_who_is_hiring": 1,
   "jobs/serpapi_google_jobs": 0,
   "jobs/gupy": 176,
   "jobs/himalayas": 103,
-  "jobs/jobicy": 56,
+  "jobs/jobicy": 135,
   "jobs/workable": 280,
-  "jobs/weworkremotely": 440,
-  "jobs/social_posts": 5,
-  "jobs/linkedin_guest": 29,
-  "papers/arxiv": 9,
+  "jobs/weworkremotely": 485,
+  "jobs/social_posts": 2,
+  "jobs/linkedin_guest": 38,
+  "papers/arxiv": 7,
   "papers/openalex": 175,
-  "linkedin/posts": 9,
-  "network/perfis": 10
+  "linkedin/posts": 10,
+  "network/perfis": 6
  },
  "falhas": [
   "Greenhouse: empresa 'thoughtworks' não responde mais (remova de config.yaml)"

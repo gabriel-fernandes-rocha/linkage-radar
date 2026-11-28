@@ -1,183 +1,6 @@
 [
   {
     "tipo": "vaga",
-    "titulo": "Senior Data Engineer — Entity Resolution / Record Linkage",
-    "url": "https://www.upwork.com/freelance-jobs/apply/Senior-Data-Engineer-Entity-Resolution-Record-Linkage_~022097747252088515405/",
-    "empresa": "Upwork",
-    "local": "Anywhere",
-    "fonte": "Google Jobs",
-    "score": 15,
-    "motivo": "Vaga especializada em entity resolution e record linkage com foco em deduplicação e matching sem identificadores únicos confiáveis, problema central da expertise do leitor.",
-    "resumo": "Senior Data Engineer para entity resolution de base de 40-50k registros de livros hebraicos antigos. Desafio principal é matching sem identificadores confiáveis, lidando com múltiplas transliterações e fontes inconsistentes.",
-    "confianca": 0.95,
-    "encaixe": 0.75,
-    "nota_perfil": "Perfeitamente alinhado ao core da especialidade (ER, record linkage, deduplicação); scale pequena mas problema técnico sofisticado; Upwork permite trabalho remoto global.",
-    "requisitos": {
-      "obrigatorios": [
-        "Entity Resolution",
-        "Record Linkage",
-        "Fuzzy Matching"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "global",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "freelance",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 1,
-    "compat_detalhe": {
-      "habilidades": 100,
-      "senioridade": 75,
-      "local": 100,
-      "ingles": 100,
-      "foco": 100,
-      "senioridade_txt": "nível senior",
-      "local_txt": "aceita candidatos do mundo todo",
-      "faltam": [],
-      "parciais": [],
-      "estimado": false
-    }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Enterprise TAM Pipeline (Waterfall API Enrichment, Entity Resolution & Partner Mapping) - Contract to Hire",
-    "url": "https://www.upwork.com/freelance-jobs/apply/Enterprise-TAM-Pipeline-Waterfall-API-Enrichment-Entity-Resolution-Partner-Mapping_~022098143497837661689/",
-    "empresa": "Upwork",
-    "local": "Anywhere",
-    "fonte": "Google Jobs",
-    "score": 11,
-    "motivo": "Vaga focada em TAM pipeline com entity resolution, deduplicação algorítmica e hierarquias parent-child, alinhada a matching determinístico e account resolution.",
-    "resumo": "GTM Engineer/Data Architect para construir base de dados TAM automatizada com hierarquias parent-child, matching de stakeholders e SI networks via APIs e deduplicação algorítmica. Trabalho em manutenção de integridade de dados de alto volume.",
-    "confianca": 0.85,
-    "encaixe": 0.66,
-    "nota_perfil": "Record linkage de accounts e entidades é núcleo, porém contexto GTM/SaaS difere do perfil saúde/pública; Upwork remoto global viabiliza.",
-    "requisitos": {
-      "obrigatorios": [
-        "API Enrichment",
-        "Entity Resolution",
-        "Deduplication",
-        "Matching Algorítmico",
-        "Hierarquias Parent-Child"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "global",
-      "paises": [],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "contractor_global",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.8,
-    "compat_detalhe": {
-      "habilidades": 70,
-      "senioridade": 85,
-      "local": 100,
-      "ingles": 100,
-      "foco": 97,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "aceita candidatos do mundo todo",
-      "faltam": [
-        "API Enrichment"
-      ],
-      "parciais": [
-        "Hierarquias Parent-Child"
-      ],
-      "estimado": false
-    }
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "DATA SCIENTIST - SC CLEARED at Women Rock - LinkedIn",
-    "url": "https://uk.linkedin.com/jobs/view/data-scientist-%E2%80%93-sc-cleared-at-women-rock-4492586484",
-    "data": "",
-    "fonte": "LinkedIn Jobs",
-    "score": 11,
-    "juiz": "anthropic",
-    "motivo": "Vaga de Data Scientist com requisito explícito de entity resolution, record linkage e data matching.",
-    "resumo": "Vaga de Data Scientist com experiência prática em entity resolution, record linkage, data matching e integração complexa de dados, além de Kubernetes, Bash e SQL avançado.",
-    "confianca": 0.92,
-    "requisitos": {
-      "obrigatorios": [
-        "AWS",
-        "Python",
-        "Elasticsearch",
-        "Kubernetes",
-        "Bash",
-        "SQL",
-        "Entity Resolution",
-        "Record Linkage"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "pleno",
-    "modalidade": "presencial",
-    "local_contratacao": {
-      "escopo": "cidade",
-      "paises": [
-        "United Kingdom"
-      ],
-      "cidades": [
-        "London"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "contractor_global",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "encaixe": 0.53,
-    "compat_detalhe": {
-      "habilidades": 62,
-      "senioridade": 100,
-      "local": 85,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível pleno",
-      "local_txt": "freelance/contractor (United Kingdom)",
-      "faltam": [
-        "AWS",
-        "Kubernetes"
-      ],
-      "parciais": [
-        "Bash",
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "desde": "2026-11-22",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "enriquecida": true,
-    "publicada_em": "2026-11-21",
-    "local": "Londres e Região, Reino Unido",
-    "empresa": "Women Rock"
-  },
-  {
-    "tipo": "vaga",
     "titulo": "Senior Data Engineer - Python ETL & Entity Resolution - Remote - Latin ...",
     "url": "https://cr.linkedin.com/jobs/view/senior-data-engineer-python-etl-entity-resolution-remote-latin-america-at-fullstack-4492216889",
     "data": "Nov 18, 2026",
@@ -237,7 +60,7 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-19",
@@ -303,7 +126,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -361,7 +184,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -412,7 +235,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -488,7 +311,7 @@
       "estimado": false
     },
     "desde": "2026-10-26",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -548,7 +371,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -590,7 +413,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -632,7 +455,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -692,7 +515,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-20",
@@ -750,7 +573,7 @@
       "estimado": false
     },
     "desde": "2026-11-25",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -813,7 +636,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-19",
@@ -876,7 +699,7 @@
       "estimado": false
     },
     "desde": "2026-10-22",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -935,7 +758,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1006,7 +829,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1076,7 +899,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1144,8 +967,71 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
+  },
+  {
+    "tipo": "vaga",
+    "titulo": "Data Engineer (Informatica/CDGC) at Calance - LinkedIn Jobs",
+    "url": "https://www.linkedin.com/jobs/view/data-engineer-informatica-cdgc-at-calance-4494079158",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 5,
+    "juiz": "anthropic",
+    "motivo": "Vaga de Data Engineer com responsabilidade explícita em record linkage e identity matching para vincular registros a perfis mestres de alunos e workforce.",
+    "resumo": "Vaga de Data Engineer com foco em Record Linkage e Identity Matching para executar lógica de matching interno, vinculando novos registros a perfis longitudinais mestres de estudantes e workforce.",
+    "confianca": 0.92,
+    "requisitos": {
+      "obrigatorios": [
+        "Snowflake",
+        "Informatica",
+        "Terraform",
+        "SQL"
+      ],
+      "desejaveis": []
+    },
+    "senioridade": "pleno",
+    "modalidade": "remoto",
+    "local_contratacao": {
+      "escopo": "cidade",
+      "paises": [
+        "United States"
+      ],
+      "cidades": [
+        "Denver"
+      ]
+    },
+    "patrocina_visto": null,
+    "contratacao": "contractor_global",
+    "anos_experiencia_min": 5,
+    "ingles": "fluente",
+    "foco_er": 0.3,
+    "encaixe": 0.2,
+    "compat_detalhe": {
+      "habilidades": 25,
+      "senioridade": 60,
+      "local": 85,
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "pede 5+ anos (você tem 2.9)",
+      "local_txt": "freelance/contractor (United States)",
+      "faltam": [
+        "Snowflake",
+        "Terraform"
+      ],
+      "parciais": [
+        "Informatica",
+        "SQL"
+      ],
+      "estimado": false
+    },
+    "desde": "2026-11-28",
+    "verificada_em": "2026-11-28",
+    "nova": true,
+    "enriquecida": true,
+    "publicada_em": "2026-11-24",
+    "local": "Denver, Colorado, Estados Unidos",
+    "empresa": "Calance"
   },
   {
     "tipo": "vaga",
@@ -1220,7 +1106,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -1293,7 +1179,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1357,70 +1243,8 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Dynamics 365 Customer Insights - Data Consultant - LinkedIn",
-    "url": "https://au.linkedin.com/jobs/view/dynamics-365-customer-insights-%E2%80%93-data-consultant-at-dynamo-recruitment-4483832761",
-    "data": "Oct 28, 2026",
-    "fonte": "LinkedIn Jobs",
-    "score": 4,
-    "juiz": "anthropic",
-    "motivo": "Identity resolution, matching rules, duplicate record consolidation e unified profiles são centrais ao record linkage e MDM.",
-    "resumo": "Vaga de Data Consultant em Dynamics 365 Customer Insights focada em configurar regras de matching, reconciliação e resolução de identidades de clientes com consolidação de duplicatas.",
-    "confianca": 0.85,
-    "requisitos": {
-      "obrigatorios": [
-        "Dynamics 365 Customer Insights",
-        "Dynamics 365 CRM"
-      ],
-      "desejaveis": [
-        "Dynamics 365 Real-Time Journeys",
-        "WordPress",
-        "Microsoft Entra External ID"
-      ]
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Australia"
-      ],
-      "cidades": [
-        "Melbourne"
-      ]
-    },
-    "patrocina_visto": null,
-    "contratacao": "contractor_global",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.6,
-    "encaixe": 0.18,
-    "compat_detalhe": {
-      "habilidades": 0,
-      "senioridade": 75,
-      "local": 85,
-      "ingles": 85,
-      "foco": 94,
-      "senioridade_txt": "nível senior",
-      "local_txt": "freelance/contractor (Australia)",
-      "faltam": [
-        "Dynamics 365 Customer Insights",
-        "Dynamics 365 CRM"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "desde": "2026-11-02",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "enriquecida": true,
-    "publicada_em": "2026-10-29",
-    "local": "Melbourne, Vitória, Austrália",
-    "empresa": "Dynamo Recruitment"
   },
   {
     "tipo": "vaga",
@@ -1489,7 +1313,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1556,7 +1380,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1625,7 +1449,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-18",
@@ -1702,7 +1526,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-16",
@@ -1763,7 +1587,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1805,7 +1629,7 @@
       "estimado": false
     },
     "desde": "2026-10-31",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1875,7 +1699,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -1958,7 +1782,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-13",
@@ -2025,7 +1849,7 @@
       "estimado": false
     },
     "desde": "2026-10-30",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -2082,7 +1906,7 @@
       "estimado": false
     },
     "desde": "2026-11-25",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2139,7 +1963,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -2148,64 +1972,71 @@
   },
   {
     "tipo": "vaga",
-    "titulo": "Remote IAM Architect, Identity Resolution",
-    "url": "https://us.trabajo.org/job-2283-9bff252b90192be795b5e7d2443b5406",
-    "empresa": "GovCIO",
-    "local": "Anywhere",
-    "fonte": "Google Jobs",
-    "publicada_em": "2026-11-14",
-    "score": 4,
+    "titulo": "Data Scientist - Core Analytics",
+    "url": "https://himalayas.app/companies/ripjar/jobs/data-scientist-core-analytics",
+    "empresa": "Ripjar",
+    "local": "Remoto · United Kingdom",
+    "fonte": "Himalayas",
+    "publicada_em": "2026-11-27",
+    "score": 6,
     "juiz": "anthropic",
-    "motivo": "Vaga de IAM Architect com foco em identity resolution e person matching, MPI e matching determinístico/probabilístico em contexto de governo; embora seja IAM/governo (não dados de saúde/proteção social), a essência técnica é record linkage e resolução de identidades.",
-    "resumo": "GovCIO busca IAM Architect com especialidade em identity resolution e person matching para desenhar capacidades de MPI com matching determinístico e probabilístico entre sistemas em contexto governamental.",
-    "confianca": 0.85,
+    "motivo": "Vaga explícita em entity resolution, duplicate detection e matching de centenas de milhões de entidades em escala massiva, com foco em NLP e algoritmos eficientes.",
+    "resumo": "Ripjar procura Data Scientist para trabalhar em modelos de NLP e entity resolution em um arquivo de 10 bilhões de artigos multilíngues e dados de 250 milhões de organizações, incluindo detecção de duplicatas e geolocalização. O trabalho envolve comparação de centenas de milhões de entidades com ênfase em algoritmos eficientes e implementação computacional.",
+    "confianca": 0.92,
     "requisitos": {
       "obrigatorios": [
-        "MPI",
-        "IAM",
-        "federated identity protocols",
-        "Zero Trust",
-        "deterministic matching",
-        "probabilistic matching"
+        "Python",
+        "PyTorch",
+        "scikit-learn",
+        "NumPy",
+        "SciPy",
+        "NLP",
+        "Spark",
+        "Hadoop"
       ],
-      "desejaveis": []
+      "desejaveis": [
+        "LLMs",
+        "Cloud",
+        "MLOps"
+      ]
     },
-    "senioridade": "senior",
+    "senioridade": "nao_informado",
     "modalidade": "remoto",
     "local_contratacao": {
       "escopo": "pais",
       "paises": [
-        "United States"
+        "United Kingdom"
       ],
       "cidades": []
     },
     "patrocina_visto": null,
-    "contratacao": "nao_informado",
+    "contratacao": "clt_ou_fulltime",
     "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 1,
+    "ingles": "fluente",
+    "foco_er": 0.3,
     "encaixe": 0.06,
     "compat_detalhe": {
-      "habilidades": 42,
-      "senioridade": 75,
+      "habilidades": 55,
+      "senioridade": 85,
       "local": 12,
-      "ingles": 100,
-      "foco": 100,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
+      "ingles": 85,
+      "foco": 90,
+      "senioridade_txt": "nível nao informado",
+      "local_txt": "remoto só para United Kingdom: exige autorização de trabalho lá",
       "faltam": [
-        "IAM",
-        "federated identity protocols",
-        "Zero Trust"
+        "PyTorch"
       ],
       "parciais": [
-        "MPI"
+        "NumPy",
+        "SciPy",
+        "NLP",
+        "Hadoop"
       ],
       "estimado": false
     },
-    "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
-    "nova": false
+    "desde": "2026-11-28",
+    "verificada_em": "2026-11-28",
+    "nova": true
   },
   {
     "tipo": "vaga",
@@ -2259,7 +2090,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2316,7 +2147,7 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2371,7 +2202,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2425,7 +2256,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2501,7 +2332,7 @@
       "estimado": false
     },
     "desde": "2026-10-28",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -2566,135 +2397,9 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-02"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Integration Engineer - Customer Data Platform (CDP)",
-    "url": "https://himalayas.app/companies/blend360/jobs/integration-engineer-customer-data-platform-cdp",
-    "empresa": "Blend360",
-    "local": "Remoto · Argentina",
-    "fonte": "Himalayas",
-    "score": 8,
-    "motivo": "Vaga de Integration Engineer focada em data matching, identity resolution e gerenciamento de identificadores de clientes em CDP, alinhado com o tema de entity resolution e matching de dados.",
-    "resumo": "Integration Engineer na Blend360 para projetar e manter soluções de integração de dados, com foco em data matching, identity resolution e gerenciamento de identificadores de clientes em Customer Data Platforms.",
-    "confianca": 0.85,
-    "encaixe": 0.06,
-    "nota_perfil": "Vaga remota na Argentina com foco em identity resolution e data matching, alinhada com especialidade, stack e modalidade do leitor, embora CDP seja contexto mais genérico que healthtech.",
-    "requisitos": {
-      "obrigatorios": [
-        "REST APIs",
-        "Python",
-        "SQL",
-        "Snowflake",
-        "Identity resolution"
-      ],
-      "desejaveis": [
-        "Segment",
-        "LiveRamp",
-        "Braze",
-        "mParticle",
-        "AWS",
-        "Databricks"
-      ]
-    },
-    "senioridade": "nao_informado",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Argentina"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "nao_informado",
-    "anos_experiencia_min": null,
-    "ingles": "nao_informado",
-    "foco_er": 0.5,
-    "compat_detalhe": {
-      "habilidades": 38,
-      "senioridade": 85,
-      "local": 12,
-      "ingles": 100,
-      "foco": 92,
-      "senioridade_txt": "nível nao informado",
-      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
-      "faltam": [
-        "REST APIs",
-        "Snowflake"
-      ],
-      "parciais": [
-        "SQL"
-      ],
-      "estimado": false
-    },
-    "publicada_em": "2026-09-26"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Senior Software Engineer",
-    "url": "https://himalayas.app/companies/zoominfo/jobs/senior-software-engineer",
-    "empresa": "ZoomInfo",
-    "local": "Remoto · United States",
-    "fonte": "Himalayas",
-    "score": 9,
-    "motivo": "ZoomInfo Person Data team trabalha com entity resolution, deduplicação, e transformação de dados fragmentados em accurate contact profiles com 400M registros.",
-    "resumo": "Senior Software Engineer na ZoomInfo Person Data team para construir sistemas Java de alta throughput que processam dados fragmentados e os transformam em perfis de contato precisos, resolvendo desafios de entity resolution e data quality em escala de 400 milhões de registros.",
-    "confianca": 0.88,
-    "encaixe": 0.06,
-    "nota_perfil": "Especialização em entity resolution e deduplicação alinha perfeitamente, mas exige Java/backend em US remoto; stack de Python/Spark não é mencionado.",
-    "requisitos": {
-      "obrigatorios": [
-        "Java",
-        "Entity Resolution",
-        "Deduplication",
-        "Data Quality"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "senior",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "United States"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": null,
-    "ingles": "fluente",
-    "foco_er": 0.8,
-    "compat_detalhe": {
-      "habilidades": 75,
-      "senioridade": 75,
-      "local": 12,
-      "ingles": 85,
-      "foco": 97,
-      "senioridade_txt": "nível senior",
-      "local_txt": "remoto só para United States: exige autorização de trabalho lá",
-      "faltam": [
-        "Java"
-      ],
-      "parciais": [],
-      "estimado": false
-    }
   },
   {
     "tipo": "vaga",
@@ -2752,7 +2457,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2815,7 +2520,7 @@
       "estimado": false
     },
     "desde": "2026-11-21",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -2895,7 +2600,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -2953,7 +2658,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-17",
@@ -3012,7 +2717,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3064,7 +2769,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -3124,7 +2829,7 @@
       "estimado": false
     },
     "desde": "2026-11-11",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -3185,7 +2890,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-05"
   },
@@ -3250,7 +2955,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -3305,7 +3010,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-09-10"
   },
@@ -3373,7 +3078,7 @@
       "estimado": false
     },
     "desde": "2026-10-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-02"
   },
@@ -3442,8 +3147,8 @@
       "estimado": false
     },
     "desde": "2026-11-27",
-    "verificada_em": "2026-11-27",
-    "nova": true,
+    "verificada_em": "2026-11-28",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-26",
     "local": "Grande Londres, Inglaterra, Reino Unido",
@@ -3520,7 +3225,7 @@
       "estimado": false
     },
     "desde": "2026-11-26",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -3583,7 +3288,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-20",
@@ -3642,7 +3347,7 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -3700,7 +3405,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3764,7 +3469,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -3823,7 +3528,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -3891,7 +3596,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-20",
@@ -3955,7 +3660,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4021,7 +3726,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -4079,7 +3784,7 @@
       "estimado": false
     },
     "desde": "2026-11-05",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -4154,7 +3859,7 @@
       "estimado": false
     },
     "desde": "2026-10-29",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-28",
@@ -4215,7 +3920,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -4273,7 +3978,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -4329,59 +4034,40 @@
       "estimado": false
     },
     "desde": "2026-10-10",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-09"
   },
   {
     "tipo": "vaga",
-    "titulo": "Software Engineer 5 - Ads Identity Graph",
-    "url": "https://explore.jobs.netflix.net/careers/job/790315141428-software-engineer-5-ads-identity-graph-new-york-new-york-united-states-of-america?domain=netflix.com&microsite=netflix.com",
-    "empresa": "Netflix",
-    "local": "New York, NY (+3 others)",
-    "fonte": "Google Jobs",
-    "score": 4,
-    "motivo": "Vaga focada em Identity Graph e Identity Resolution, que são aplicações diretas de entity resolution e matching para ads.",
-    "resumo": "Software Engineer 5 na Netflix para trabalhar no Ads Identity Graph, desenvolvendo serviços de Identity Resolution e aumentar cobertura de identificadores com matching de dados publicitários. Foco em resolver identidades e proteger privacidade.",
-    "confianca": 0.82,
-    "encaixe": 0.04,
-    "nota_perfil": "Localização em New York exige visto; stack não mencionado explicitamente, mas o domínio técnico (identity resolution) é altamente relevante.",
+    "titulo": "Knowledge Graph Devloper / Associate Director, Service Management",
+    "url": "https://in.linkedin.com/jobs/view/knowledge-graph-devloper-associate-director-service-management-at-hsbc-4495282993",
+    "data": "",
+    "fonte": "LinkedIn Jobs",
+    "score": 7,
+    "juiz": "anthropic",
+    "motivo": "Vaga com foco direto em entity resolution, record linkage, deduplicação e reconciliação de dados heterogêneos, além de pipelines de limpeza e enriquecimento.",
+    "resumo": "Vaga de Knowledge Graph Developer / Associate Director focada em engineering de entity resolution, record linkage, deduplicação e reconciliação across fontes heterogêneas, com pipelines de extração, limpeza e enriquecimento de metadados.",
+    "confianca": 0.95,
     "requisitos": {
       "obrigatorios": [
-        "Spark",
-        "Identity Resolution",
-        "Identity Graph",
-        "Data Governance",
-        "Deterministic Matching",
-        "Probabilistic Matching"
+        "Python",
+        "SQL",
+        "Cypher",
+        "Git",
+        "CI/CD"
       ],
-      "desejaveis": [
-        "Machine Learning",
-        "Privacy Enhancing Technologies",
-        "GDPR",
-        "CCPA",
-        "CPRA",
-        "CTV"
-      ]
+      "desejaveis": []
     },
     "senioridade": "senior",
     "modalidade": "nao_informado",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
     "local_contratacao": {
       "escopo": "cidade",
       "paises": [
-        "United States"
+        "India"
       ],
       "cidades": [
-        "New York",
-        "Seattle",
-        "Los Angeles",
-        "Los Gatos"
+        "Hyderabad"
       ]
     },
     "patrocina_visto": null,
@@ -4389,21 +4075,32 @@
     "anos_experiencia_min": null,
     "ingles": "fluente",
     "foco_er": 0.6,
+    "encaixe": 0.03,
     "compat_detalhe": {
-      "habilidades": 67,
+      "habilidades": 40,
       "senioridade": 75,
       "local": 8,
       "ingles": 85,
       "foco": 94,
       "senioridade_txt": "nível senior",
-      "local_txt": "em United States, sem patrocínio de visto",
-      "faltam": [],
+      "local_txt": "em India, sem patrocínio de visto",
+      "faltam": [
+        "Cypher",
+        "CI/CD"
+      ],
       "parciais": [
-        "Identity Graph",
-        "Data Governance"
+        "SQL",
+        "Git"
       ],
       "estimado": false
-    }
+    },
+    "desde": "2026-11-28",
+    "verificada_em": "2026-11-28",
+    "nova": true,
+    "enriquecida": true,
+    "publicada_em": "2026-11-27",
+    "local": "Hyderabad, Telanganá, Índia",
+    "empresa": "HSBC"
   },
   {
     "tipo": "vaga",
@@ -4465,7 +4162,7 @@
       "estimado": false
     },
     "desde": "2026-11-25",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4529,7 +4226,7 @@
       "estimado": false
     },
     "desde": "2026-11-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -4595,7 +4292,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4685,7 +4382,7 @@
       "estimado": false
     },
     "desde": "2026-11-18",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4742,7 +4439,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4802,7 +4499,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4875,7 +4572,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -4940,7 +4637,7 @@
       "estimado": false
     },
     "desde": "2026-11-06",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -5013,7 +4710,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -5086,7 +4783,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -5146,7 +4843,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -5212,7 +4909,7 @@
       "estimado": false
     },
     "desde": "2026-10-27",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -5288,7 +4985,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -5347,7 +5044,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-15",
@@ -5401,7 +5098,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -5488,7 +5185,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -5557,7 +5254,7 @@
       "estimado": false
     },
     "desde": "2026-10-12",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-11"
   },
@@ -5632,7 +5329,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-08-12"
   },
@@ -5699,7 +5396,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-10-06"
   },
@@ -5777,7 +5474,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-09-06"
   },
@@ -5850,8 +5547,8 @@
       "estimado": false
     },
     "desde": "2026-11-27",
-    "verificada_em": "2026-11-27",
-    "nova": true,
+    "verificada_em": "2026-11-28",
+    "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-25",
     "local": "Cingapura, Cingapura",
@@ -5941,7 +5638,7 @@
       "estimado": false
     },
     "desde": "2026-11-25",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -6016,7 +5713,7 @@
       "estimado": false
     },
     "desde": "2026-11-25",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -6100,7 +5797,7 @@
       "estimado": false
     },
     "desde": "2026-11-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -6157,7 +5854,7 @@
       "estimado": false
     },
     "desde": "2026-11-23",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -6211,7 +5908,7 @@
       "estimado": false
     },
     "desde": "2026-11-22",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -6279,7 +5976,7 @@
       "estimado": false
     },
     "desde": "2026-11-19",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -6342,7 +6039,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -6402,7 +6099,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -6488,7 +6185,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-13",
@@ -6563,7 +6260,7 @@
       "estimado": false
     },
     "desde": "2026-11-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-14",
@@ -6632,7 +6329,7 @@
       "estimado": false
     },
     "desde": "2026-11-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -6700,7 +6397,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -6765,7 +6462,7 @@
       "estimado": false
     },
     "desde": "2026-11-14",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
@@ -6840,7 +6537,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -6903,7 +6600,7 @@
       "estimado": false
     },
     "desde": "2026-11-13",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -6978,7 +6675,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-16",
@@ -7072,7 +6769,7 @@
       "estimado": false
     },
     "desde": "2026-11-10",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -7152,7 +6849,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -7223,7 +6920,7 @@
       "estimado": false
     },
     "desde": "2026-11-08",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -7293,7 +6990,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-11",
@@ -7351,7 +7048,7 @@
       "estimado": false
     },
     "desde": "2026-11-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -7417,7 +7114,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -7495,7 +7192,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -7571,7 +7268,7 @@
       "estimado": false
     },
     "desde": "2026-11-03",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -7643,7 +7340,7 @@
       "estimado": false
     },
     "desde": "2026-11-01",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -7717,7 +7414,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -7795,7 +7492,7 @@
       "estimado": false
     },
     "desde": "2026-10-21",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-10-19",
@@ -7864,7 +7561,7 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-04",
@@ -7935,7 +7632,7 @@
       "estimado": false
     },
     "desde": "2026-10-15",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -7991,7 +7688,7 @@
       "estimado": false
     },
     "desde": "2026-10-13",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-05",
@@ -8055,7 +7752,7 @@
       "estimado": false
     },
     "desde": "2026-10-08",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -8119,7 +7816,7 @@
       "estimado": false
     },
     "desde": "2026-10-07",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "publicada_em": "2026-08-28"
   },
@@ -8189,7 +7886,7 @@
       "estimado": false
     },
     "desde": "2026-11-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -8253,7 +7950,7 @@
       "estimado": false
     },
     "desde": "2026-11-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -8306,7 +8003,7 @@
       "estimado": false
     },
     "desde": "2026-11-17",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-14",
@@ -8380,7 +8077,7 @@
       "estimado": false
     },
     "desde": "2026-11-12",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -8441,7 +8138,7 @@
       "estimado": false
     },
     "desde": "2026-11-09",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -8516,7 +8213,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -8587,7 +8284,7 @@
       "estimado": false
     },
     "desde": "2026-11-04",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false
   },
   {
@@ -8694,7 +8391,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -8766,7 +8463,7 @@
       "estimado": false
     },
     "desde": "2026-10-24",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true
   },
@@ -8827,66 +8524,11 @@
       "estimado": false
     },
     "desde": "2026-10-16",
-    "verificada_em": "2026-11-27",
+    "verificada_em": "2026-11-28",
     "nova": false,
     "enriquecida": true,
     "publicada_em": "2026-11-12",
     "local": "Londres, Inglaterra, Reino Unido",
     "empresa": "Fitch Solutions"
-  },
-  {
-    "tipo": "vaga",
-    "titulo": "Lead Software Development Engineer",
-    "url": "https://himalayas.app/companies/amperity/jobs/lead-software-development-engineer-7833063496",
-    "empresa": "Amperity",
-    "local": "Remoto · Argentina",
-    "fonte": "Himalayas",
-    "score": 3,
-    "motivo": "Amperity é empresa cuja proposta central é 'identity resolution' de bilhões de registros conflitantes, exatamente o foco de record linkage e entity resolution; vaga menciona isso como fundação do produto.",
-    "resumo": "Amperity é plataforma especializada em identity resolution de bilhões de registros conflitantes para criar visão unificada de clientes; busca Lead Software Development Engineer para reconstruir produto como AI-first.",
-    "confianca": 0.92,
-    "encaixe": 0.01,
-    "nota_perfil": "Perfeita sinergia técnica (identity resolution em escala), mas remoto na Argentina: não há indicação de foco em saúde/proteção social; salário e timezone podem ser desafio.",
-    "requisitos": {
-      "obrigatorios": [
-        "Clojure"
-      ],
-      "desejaveis": []
-    },
-    "senioridade": "staff/principal",
-    "modalidade": "remoto",
-    "desde": "2026-09-28",
-    "verificada_em": "2026-11-27",
-    "nova": false,
-    "primeira_vez": "2026-09-28",
-    "status": "aberta",
-    "ultima_vez_aberta": "2026-10-01",
-    "local_contratacao": {
-      "escopo": "pais",
-      "paises": [
-        "Argentina"
-      ],
-      "cidades": []
-    },
-    "patrocina_visto": null,
-    "contratacao": "clt_ou_fulltime",
-    "anos_experiencia_min": 12,
-    "ingles": "fluente",
-    "foco_er": 0.4,
-    "compat_detalhe": {
-      "habilidades": 0,
-      "senioridade": 40,
-      "local": 12,
-      "ingles": 85,
-      "foco": 91,
-      "senioridade_txt": "pede 12+ anos (você tem 2.9)",
-      "local_txt": "remoto só para Argentina: exige autorização de trabalho lá",
-      "faltam": [
-        "Clojure"
-      ],
-      "parciais": [],
-      "estimado": false
-    },
-    "publicada_em": "2026-09-05"
   }
 ]

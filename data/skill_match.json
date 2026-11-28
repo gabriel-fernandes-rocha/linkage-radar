@@ -298,10 +298,20 @@
   "nivel": "nao",
   "nome": "Azure"
  },
+ "azure ai document intelligence": {
+  "motivo": "sem evidência de uso de serviços Azure",
+  "nivel": "nao",
+  "nome": "Azure AI Document Intelligence"
+ },
  "azure ai foundry": {
   "motivo": "sem evidência de uso de plataformas Azure/AI no currículo",
   "nivel": "nao",
   "nome": "Azure AI Foundry"
+ },
+ "azure ai search": {
+  "motivo": "conhece Elasticsearch, busca similar na nuvem",
+  "nivel": "parcial",
+  "nome": "Azure AI Search"
  },
  "azure data factory": {
   "motivo": "não há menção ao uso do Azure Data Factory",
@@ -962,6 +972,11 @@
   "motivo": "nenhum uso de Databricks SQL mencionado",
   "nivel": "nao",
   "nome": "Databricks SQL"
+ },
+ "datacare": {
+  "motivo": "sem menção a essa ferramenta de MDM",
+  "nivel": "nao",
+  "nome": "DataCare"
  },
  "datadog": {
   "motivo": "sem evidência de ferramentas de monitoramento",
@@ -2472,6 +2487,11 @@
   "motivo": "usa SQL mas não Oracle especificamente",
   "nivel": "nao",
   "nome": "Oracle Database"
+ },
+ "oracle goldengate": {
+  "motivo": "sem evidência de replicação de dados Oracle",
+  "nivel": "nao",
+  "nome": "Oracle GoldenGate"
  },
  "owl": {
   "motivo": "sem evidência de ontologias formais",

@@ -1,0 +1,300 @@
+{
+  "data": "2026-11-28",
+  "gerado_em": "2026-11-28T01:44-03:00",
+  "llm": true,
+  "serpapi_orcamento": 8,
+  "vagas": [
+    {
+      "tipo": "vaga",
+      "titulo": "Data Scientist - Core Analytics",
+      "url": "https://himalayas.app/companies/ripjar/jobs/data-scientist-core-analytics",
+      "empresa": "Ripjar",
+      "local": "Remoto · United Kingdom",
+      "fonte": "Himalayas",
+      "publicada_em": "2026-11-27",
+      "score": 6,
+      "juiz": "anthropic",
+      "motivo": "Vaga explícita em entity resolution, duplicate detection e matching de centenas de milhões de entidades em escala massiva, com foco em NLP e algoritmos eficientes.",
+      "resumo": "Ripjar procura Data Scientist para trabalhar em modelos de NLP e entity resolution em um arquivo de 10 bilhões de artigos multilíngues e dados de 250 milhões de organizações, incluindo detecção de duplicatas e geolocalização. O trabalho envolve comparação de centenas de milhões de entidades com ênfase em algoritmos eficientes e implementação computacional.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Python",
+          "PyTorch",
+          "scikit-learn",
+          "NumPy",
+          "SciPy",
+          "NLP",
+          "Spark",
+          "Hadoop"
+        ],
+        "desejaveis": [
+          "LLMs",
+          "Cloud",
+          "MLOps"
+        ]
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "remoto",
+      "local_contratacao": {
+        "escopo": "pais",
+        "paises": [
+          "United Kingdom"
+        ],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "clt_ou_fulltime",
+      "anos_experiencia_min": null,
+      "ingles": "fluente",
+      "foco_er": 0.3,
+      "encaixe": 0.06,
+      "compat_detalhe": {
+        "habilidades": 55,
+        "senioridade": 85,
+        "local": 12,
+        "ingles": 85,
+        "foco": 90,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "remoto só para United Kingdom: exige autorização de trabalho lá",
+        "faltam": [
+          "PyTorch"
+        ],
+        "parciais": [
+          "NumPy",
+          "SciPy",
+          "NLP",
+          "Hadoop"
+        ],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Knowledge Graph Devloper / Associate Director, Service Management",
+      "url": "https://in.linkedin.com/jobs/view/knowledge-graph-devloper-associate-director-service-management-at-hsbc-4495282993",
+      "texto": "Engineer entity resolution, record linkage, de-duplication and reconciliation across heterogeneous sources to prevent conflicting identities and relationships Build AI-ready pipelines for structured and unstructured data including extraction, cleansing, chunking or segmentation, and metadata enrichment",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Vaga com foco direto em entity resolution, record linkage, deduplicação e reconciliação de dados heterogêneos, além de pipelines de limpeza e enriquecimento.",
+      "resumo": "Vaga de Knowledge Graph Developer / Associate Director focada em engineering de entity resolution, record linkage, deduplicação e reconciliação across fontes heterogêneas, com pipelines de extração, limpeza e enriquecimento de metadados.",
+      "confianca": 0.95,
+      "requisitos": {
+        "obrigatorios": [
+          "Entity Resolution",
+          "Record Linkage"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "gerencia",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.8,
+      "encaixe": 0.2,
+      "compat_detalhe": {
+        "habilidades": 100,
+        "senioridade": 35,
+        "local": 60,
+        "ingles": 100,
+        "foco": 97,
+        "senioridade_txt": "nível gerencia",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [],
+        "estimado": false
+      }
+    },
+    {
+      "tipo": "vaga",
+      "titulo": "Data Engineer (Informatica/CDGC) at Calance - LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/view/data-engineer-informatica-cdgc-at-calance-4494079158",
+      "texto": "• Record Linkage & Identity Matching: Execute the SLDS internal matching logic to link newly ingested agency records to master longitudinal student and workforce profiles, handling match ...",
+      "data": "",
+      "fonte": "LinkedIn Jobs",
+      "score": 5,
+      "juiz": "anthropic",
+      "motivo": "Vaga de Data Engineer com responsabilidade explícita em record linkage e identity matching para vincular registros a perfis mestres de alunos e workforce.",
+      "resumo": "Vaga de Data Engineer com foco em Record Linkage e Identity Matching para executar lógica de matching interno, vinculando novos registros a perfis longitudinais mestres de estudantes e workforce.",
+      "confianca": 0.92,
+      "requisitos": {
+        "obrigatorios": [
+          "Informatica",
+          "Record Linkage"
+        ],
+        "desejaveis": []
+      },
+      "senioridade": "nao_informado",
+      "modalidade": "nao_informado",
+      "local_contratacao": {
+        "escopo": "nao_informado",
+        "paises": [],
+        "cidades": []
+      },
+      "patrocina_visto": null,
+      "contratacao": "nao_informado",
+      "anos_experiencia_min": null,
+      "ingles": "nao_informado",
+      "foco_er": 0.7,
+      "encaixe": 0.41,
+      "compat_detalhe": {
+        "habilidades": 75,
+        "senioridade": 85,
+        "local": 60,
+        "ingles": 100,
+        "foco": 96,
+        "senioridade_txt": "nível nao informado",
+        "local_txt": "local de contratação não informado",
+        "faltam": [],
+        "parciais": [
+          "Informatica"
+        ],
+        "estimado": false
+      }
+    }
+  ],
+  "eventos": [],
+  "papers": [
+    {
+      "tipo": "paper",
+      "titulo": "Risk-Tiered Autonomous Entity Resolution for Banking Master Data: An Explainable, Audit-Ready Framework for AI-Driven Matching and Deduplication",
+      "url": "https://doi.org/10.70917/ijcisim-2026-6170",
+      "autores": "Krishna Ravichandran",
+      "data": "2026-11-25",
+      "fonte": "OpenAlex",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Paper central sobre entity resolution em master data bancário com matching probabilístico, scoring, classificação de risco e auditabilidade.",
+      "resumo": "Propõe framework de entity resolution em camadas de risco para dados mestres bancários, integrando matching probabilístico, machine learning e roteamento baseado em impacto. Cobre geração de candidatos, construção de features, calibração de limiares e monitoramento pós-decisão.",
+      "confianca": 0.95
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Guideline for Health Data Access Bodies on linkage of health datasets",
+      "url": "https://doi.org/10.5281/zenodo.20283841",
+      "autores": "Pia Brinkmann et al.",
+      "data": "2026-11-26",
+      "fonte": "OpenAlex",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Guideline operacional sobre linkage de datasets de saúde para corpos de acesso, cobrindo métodos, qualidade de validação e procedimentos técnicos de ligação.",
+      "resumo": "Guideline prático e legal para Health Data Access Bodies sobre linkage de datasets de saúde no EHDS, incluindo procedimentos, métodos, preparação de dados e avaliação de qualidade de ligação.",
+      "confianca": 0.92
+    },
+    {
+      "tipo": "paper",
+      "titulo": "Multi-Agent LLM Orchestration and Structured Web Data Extraction for Enterprise Workflows: A Comprehensive Technical Survey and Architectural Taxonomy",
+      "url": "https://doi.org/10.5281/zenodo.24567223",
+      "autores": "Muhammad Usman Raza",
+      "data": "2026-11-26",
+      "fonte": "OpenAlex",
+      "score": 7,
+      "juiz": "anthropic",
+      "motivo": "Survey sobre orquestração de agentes LLM para extração web e entity resolution com taxonomia de coordenação, extração, deduplicação e verificação.",
+      "resumo": "Survey de 55 trabalhos sobre pipelines multi-agentes que resolvem entidades duplicadas em dados web para CRM e knowledge stores. Cobre topologias de coordenação, extração, entity resolution, memória e governança com taxonomia estruturada.",
+      "confianca": 0.88
+    }
+  ],
+  "linkedin": [
+    {
+      "tipo": "linkedin",
+      "titulo": "Same, Version, Related or Different? Record Linkage Across Systems ...",
+      "url": "https://www.linkedin.com/pulse/same-version-related-different-record-linkage-across-systems-habibi-dgmhe",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post discutindo tecnicamente o desafio central de record linkage: decidir o tipo de relacionamento entre registros, não apenas se são iguais.",
+      "resumo": "Post analisando record linkage em sistemas de engenharia, discutindo por que é necessário definir o tipo de relacionamento entre dois registros, além de apenas verificar se correspondem.",
+      "confianca": 0.88
+    },
+    {
+      "tipo": "linkedin",
+      "titulo": "Real-World Evidence in 2026: Beyond More Data and Better Algorithms",
+      "url": "https://www.linkedin.com/pulse/real-world-evidence-2026-beyond-more-data-better-philippe-auvaro-u456c",
+      "data": "",
+      "fonte": "LinkedIn",
+      "score": 4,
+      "juiz": "anthropic",
+      "motivo": "Post abordando record linkage em saúde como ferramenta para reconstruir históricos longitudinais mais completos de pacientes across sistemas.",
+      "resumo": "Post sobre Real-World Evidence em saúde destacando que record linkage across sistemas de healthcare permite reconstruir históricos longitudinais mais completos de pacientes.",
+      "confianca": 0.85
+    }
+  ],
+  "vagas_abertas_total": 128,
+  "vagas_arquivadas_total": 251,
+  "rede": {
+    "pessoas_novas": 0,
+    "empresas_novas": 1
+  },
+  "pilula_mercado": "NLP",
+  "brasil": {
+    "novas": 5,
+    "abertas": 38,
+    "arquivadas": 89,
+    "rede": {
+      "pessoas_novas": 0,
+      "empresas_novas": 2
+    }
+  },
+  "aula": {
+    "dia": 58,
+    "semana": 9,
+    "tema": "Codificações fonéticas e standard blocking",
+    "tipo": "conceito",
+    "titulo": "Double Metaphone",
+    "modulo": "Semana 9: Codificações fonéticas e standard blocking",
+    "versao": 2,
+    "objetivo": "Entender como o Double Metaphone gera codificações fonéticas primária e secundária e usar essa técnica para construir blocking keys mais robustas que o Soundex e o NYSIIS.",
+    "conceito": "O Double Metaphone, proposto por Philips (2000), é uma evolução do Metaphone original criada para lidar com a diversidade de origens etimológicas de sobrenomes (anglo-saxões, eslavos, germânicos, hispânicos, italianos). A ideia central é que uma mesma sequência de letras pode ser pronunciada de formas diferentes dependendo da origem do nome, então o algoritmo gera até dois códigos para cada string: um código primário (pronúncia mais provável) e um código secundário (pronúncia alternativa). Isso resolve um problema real do Soundex e do NYSIIS, que produzem apenas um código fixo e por isso perdem pares verdadeiros quando a grafia reflete convenções fonéticas distintas.\n\nComo os demais métodos fonéticos discutidos nesta semana (Soundex na aula 52, Phonex/Phonix na aula 53, NYSIIS na aula 54, ONCA na aula 57), o Double Metaphone serve como gerador de blocking key value (BKV), conforme a lógica geral de indexação descrita por Christen (2012, seç. 4.3-4.4, p. 77-78): registros com o mesmo BKV caem no mesmo bloco e geram pares candidatos. A diferença prática é que, por ter dois códigos, cada registro pode ser inserido em até dois blocos distintos (via código primário e via código secundário), aumentando a chance de capturar pares verdadeiros que outros métodos fonéticos perderiam, ao custo de blocos levemente maiores.\n\nO algoritmo trata dígrafos e trígrafos de forma contextual (CH, GH, PH, SCH, MB, GN, KN, WR etc.), elimina letras mudas em posições específicas e normaliza consoantes com som equivalente (C e K, por exemplo) de maneira mais criteriosa que o Soundex.",
+    "como_funciona": "Passos gerais do algoritmo (Philips, 2000):\n1. Normalizar a string: maiúsculas, remover caracteres não alfabéticos.\n2. Tratar combinações iniciais especiais: GN, KN, PN, WR no começo da palavra descartam a primeira letra (ex: GNOMES vira NOMES na codificação); PF inicial é tratado como F.\n3. Percorrer a string caractere a caractere, aplicando regras de contexto (letra anterior, letra seguinte, posição na palavra) para mapear cada letra ou dígrafo a um ou dois códigos consonantais. Vogais só são mantidas se estiverem no início da palavra.\n4. Quando a pronúncia é ambígua (ex: X pode ser 'KS' ou mais raramente sons distintos conforme origem), o algoritmo grava dois códigos em paralelo: primário e secundário.\n5. Ao final, trunca-se cada código (tipicamente em 4 caracteres, como no Soundex) para padronizar o tamanho da BKV.\n6. Para blocking, usa-se o código primário como BKV principal e, opcionalmente, o secundário como uma segunda chave de indexação (segundo inverted index), seguindo o mesmo princípio de múltiplas blocking keys discutido na aula 56.",
+    "exemplo": "Considere os sobrenomes 'Smith' e 'Schmidt'. O Double Metaphone gera para 'Smith' o par de códigos (SMT, XMT) e para 'Schmidt' o par (XMT, SMT), porque o dígrafo SCH é reconhecido como variante germânica do som 'S/SH'. Note que o código secundário de um coincide com o primário do outro. Se o pipeline usar apenas o código primário como BKV, 'Smith' (SMT) e 'Schmidt' (XMT) cairiam em blocos diferentes e o par verdadeiro seria perdido. Se o pipeline gerar dois índices invertidos, um para o código primário e outro para o secundário, 'Schmidt' aparece no bloco XMT via primário e 'Smith' aparece no bloco XMT via secundário, formando um bloco comum e gerando o par candidato (Smith, Schmidt).",
+    "na_pratica": "Em Python, a biblioteca 'metaphone' implementa diretamente o algoritmo:\nfrom metaphone import doublemetaphone\ndoublemetaphone('Smith')\ndoublemetaphone('Schmidt')\nNum pipeline de blocking com recordlinkage ou Spark, aplica-se a função a cada coluna de sobrenome, gerando duas colunas (dm_primary, dm_secondary), e depois se faz block_on(dm_primary) e block_on(dm_secondary) separadamente, unindo os pares candidatos de ambos os índices antes da etapa de comparação detalhada, exatamente como Christen (2012, p. 78) recomenda ao descrever múltiplas blocking keys com índices invertidos independentes.",
+    "armadilha": "Usar somente o código primário acreditando que ele já captura tudo é o erro mais comum: isso descarta exatamente os casos em que o Double Metaphone foi desenhado para ajudar (nomes com origem etimológica ambígua). Sempre gere blocos a partir dos dois códigos e una os candidatos antes de comparar.",
+    "desafio": "Você tem quatro sobrenomes para gerar blocking keys: 'Gnomes', 'Nomes', 'Pfeiffer' e 'Fifer'. Sabendo que o Double Metaphone descarta a letra inicial muda em combinações GN e PF (regra do passo 2), explique quais pares desses quatro nomes cairão no mesmo bloco se o blocking key for apenas o código primário, e justifique com base na regra de normalização inicial.",
+    "gabarito": "Pela regra 2 do algoritmo, 'Gnomes' tem o G inicial descartado antes de GN, então sua codificação trata a palavra como se começasse em 'Nomes', gerando um código primário iniciado em N, idêntico ao gerado para 'Nomes' (que já começa em N). Logo (Gnomes, Nomes) formam par no mesmo bloco. Da mesma forma, 'Pfeiffer' tem o P inicial descartado antes de PF, sendo tratado como se começasse em 'F', e 'Fifer' já começa em F; a estrutura consonantal remanescente (F...FR) coincide o suficiente para gerar o mesmo código primário, colocando (Pfeiffer, Fifer) no mesmo bloco. Assim, os dois pares que caem juntos são (Gnomes, Nomes) e (Pfeiffer, Fifer); não há sobreposição entre os dois grupos porque as consoantes internas (N-M-S vs F-F-R) divergem completamente.",
+    "fontes": [
+      "Christen (2012), Data Matching, seç. 4.3-4.4, p. 77-78",
+      "Philips, L. (2000), The Double Metaphone Search Algorithm, C/C++ Users Journal, 18(6)"
+    ],
+    "gerada": true,
+    "livro": [
+      [
+        77,
+        81
+      ]
+    ]
+  },
+  "estatisticas": {
+    "vagas": {
+      "brutos": 3330,
+      "pos_palavras_chave": 2,
+      "aprovados": 1
+    },
+    "eventos": {
+      "brutos": 0,
+      "pos_palavras_chave": 0,
+      "aprovados": 0
+    },
+    "papers": {
+      "brutos": 182,
+      "pos_palavras_chave": 3,
+      "aprovados": 3
+    },
+    "linkedin": {
+      "brutos": 10,
+      "pos_palavras_chave": 4,
+      "aprovados": 2
+    }
+  },
+  "saude": "atencao"
+}

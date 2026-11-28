@@ -1,5 +1,55 @@
 [
  {
+  "data": "2026-11-28",
+  "habilidade": "NLP",
+  "pct_vagas": 2,
+  "nivel_atual": "parcial",
+  "o_que_e": "NLP (Processamento de Linguagem Natural) é o conjunto de técnicas para extrair estrutura e significado de texto livre: tokenização, normalização, embeddings, modelos de linguagem, classificação e extração de entidades (NER). No contexto de entity resolution, é usado para transformar nomes, endereços e descrições textuais em representações comparáveis além do fuzzy matching tradicional.",
+  "por_que_pedem": "Vagas de entity resolution e MDM cada vez mais lidam com dados não estruturados (textos livres, descrições de produtos, nomes em múltiplos formatos, redes sociais) e usam embeddings semânticos para melhorar blocking e scoring além de regras determinísticas. Empresas querem alguém que combine linkage clássico com representações vetoriais modernas (sentence embeddings, modelos tipo BERT) para generalizar melhor que regras fixas.",
+  "ponte_com_o_que_voce_sabe": "Você já faz normalização de texto, blocking e scoring com Splink e RapidFuzz, isso é NLP aplicado de forma clássica. O salto é aprender embeddings de texto (sentence-transformers) para gerar vetores de similaridade semântica e usá-los como feature adicional no seu pipeline de scoring, ou para blocking vetorial (ANN com FAISS/Elasticsearch kNN), que você já usa parcialmente.",
+  "minimo_para_ficar_apto": [
+   "Saber explicar tokenização, embeddings e a diferença entre matching lexical (fuzzy) e semântico (embeddings)",
+   "Rodar um modelo pré-treinado de sentence-transformers para gerar embeddings e calcular similaridade de cosseno",
+   "Entender NER (reconhecimento de entidades nomeadas) com spaCy e como usá-lo para extrair nomes/endereços de texto livre",
+   "Saber integrar embeddings como feature extra em um classificador de matching (ex: dentro do Splink ou scikit-learn)",
+   "Conhecer vetorização de busca aproximada (kNN vetorial no Elasticsearch ou FAISS) para blocking semântico"
+  ],
+  "plano_rapido": [
+   "2h: revisar conceitos de embeddings e arquitetura transformer (nível conceitual, sem matemática pesada)",
+   "3h: tutorial prático de sentence-transformers (gerar embeddings, calcular similaridade)",
+   "2h: spaCy quickstart, rodar NER em textos de exemplo (nomes, endereços)",
+   "3h: implementar busca kNN vetorial no Elasticsearch (você já conhece ES, só adicionar dense_vector)",
+   "4h: montar um mini pipeline combinando embeddings + regras de matching existentes"
+  ],
+  "mini_projeto": "Pegue um dataset público de nomes/empresas (ex: Companies House ou um dataset de produtos duplicados) e construa um pipeline que gera embeddings com sentence-transformers para cada registro, indexa no Elasticsearch com dense_vector, faz blocking via kNN vetorial, e depois combina a similaridade semântica com scores do RapidFuzz/Splink em um classificador final. Documente a melhoria de recall no blocking comparado a blocking lexical puro.",
+  "como_colocar_no_curriculo": "Aplicação de NLP (embeddings semânticos com sentence-transformers e NER com spaCy) para enriquecer pipelines de entity resolution, combinando matching semântico e lexical em blocking e scoring de registros.",
+  "perguntas_de_entrevista": [
+   {
+    "pergunta": "Qual a diferença entre matching baseado em similaridade lexical (ex: Jaro-Winkler) e matching semântico com embeddings?",
+    "resposta": "Lexical mede similaridade de caracteres/strings, bom para erros de digitação e variações ortográficas. Embeddings capturam significado semântico, úteis quando os textos são diferentes na forma mas equivalentes no sentido (sinônimos, descrições diferentes do mesmo produto). Idealmente combinamos os dois: lexical para blocking rápido e embeddings para casos semânticos."
+   },
+   {
+    "pergunta": "Como você usaria NER em um pipeline de entity resolution?",
+    "resposta": "NER extrai entidades estruturadas (nome, endereço, organização) de campos de texto livre não estruturado, permitindo normalizar e alimentar essas entidades no pipeline de blocking e matching já existente, em vez de comparar o texto bruto inteiro."
+   },
+   {
+    "pergunta": "O que é um modelo sentence-transformer e como ele ajuda em matching?",
+    "resposta": "É um modelo (geralmente baseado em BERT) treinado para gerar vetores de sentenças onde textos semanticamente similares ficam próximos no espaço vetorial. Usamos a similaridade de cosseno entre esses vetores como feature extra ou critério de blocking em entity resolution."
+   },
+   {
+    "pergunta": "Como escalar busca por similaridade vetorial em bilhões de registros?",
+    "resposta": "Usando índices de busca aproximada (ANN) como kNN vetorial do Elasticsearch, FAISS ou HNSW, que evitam comparação exaustiva e permitem recuperar os k vizinhos mais próximos de forma eficiente, similar ao blocking tradicional mas no espaço semântico."
+   }
+  ],
+  "fontes_para_estudar": [
+   "Documentação oficial do spaCy (spacy.io)",
+   "Documentação do Sentence-Transformers (sbert.net)",
+   "Documentação do Elasticsearch sobre dense_vector e kNN search",
+   "Curso 'NLP Specialization' da DeepLearning.AI (Coursera)",
+   "Documentação do Hugging Face Transformers"
+  ]
+ },
+ {
   "data": "2026-11-27",
   "habilidade": "Power BI",
   "pct_vagas": 1,
